@@ -1,0 +1,477 @@
+[
+{
+"section": "pliki",
+"desc": "Strona index.php",
+"type": "file",
+"name": "index.php"
+},
+{
+"section": "pliki",
+"desc": "Arkusz stylów styl.css",
+"type": "file",
+"name": "styl.css"
+},
+{
+"section": "html",
+"desc": "Zapisana w języku HTML5, polski język, kodowanie UTF-8",
+"type": "head",
+"lang": "pl",
+"charset": true
+},
+{
+"section": "html",
+"desc": "Tytuł strony „Konfigurator samochodów”",
+"type": "head",
+"doctype": false,
+"title": "Konfigurator samochodów"
+},
+{
+"section": "html",
+"desc": "Arkusz stylów styl.css prawidłowo połączony",
+"type": "head",
+"doctype": false,
+"stylesheet": "styl.css"
+},
+{
+"section": "html",
+"desc": "Podział na bloki semantyczne zgodnie z ilustracją 3: nagłówkowy, nawigacyjny, główny, stopka",
+"type": "exists",
+"selector": "header ~ nav ~ main ~ footer"
+},
+{
+"section": "html",
+"desc": "Blok główny: bloki sekcji lewej, środkowej i prawej",
+"type": "exists",
+"selector": "main section",
+"count": 3,
+"hint": "sekcje jako section wewnątrz main"
+},
+{
+"section": "html",
+"desc": "Blok nagłówkowy: nagłówek pierwszego stopnia „Serwis konfiguracji samochodów”",
+"type": "text",
+"selector": "header h1",
+"equals": "Serwis konfiguracji samochodów"
+},
+{
+"section": "html",
+"desc": "Blok nawigacyjny: trzy nagłówki drugiego stopnia",
+"type": "exists",
+"selector": "nav h2",
+"count": 3
+},
+{
+"section": "html",
+"desc": "Nagłówek nawigacji „Samochody”",
+"type": "text",
+"selector": "nav h2",
+"index": 0,
+"equals": "Samochody"
+},
+{
+"section": "html",
+"desc": "Nagłówek nawigacji „Konfigurator”",
+"type": "text",
+"selector": "nav h2",
+"index": 1,
+"equals": "Konfigurator"
+},
+{
+"section": "html",
+"desc": "Nagłówek nawigacji „Kontakt”",
+"type": "text",
+"selector": "nav h2",
+"index": 2,
+"equals": "Kontakt"
+},
+{
+"section": "php",
+"desc": "Sekcja lewa: tabela z czterema kolumnami, wypełniona skryptem 1",
+"type": "php"
+},
+{
+"section": "php",
+"desc": "Tabela w sekcji lewej wypełniona skryptem 1 (zapytanie 3, w czwartej kolumnie suma ceny i dopłaty, kolejne rekordy)",
+"type": "php"
+},
+{
+"section": "php",
+"desc": "Sekcja środkowa: tabela z trzema kolumnami i siedmioma wierszami",
+"type": "php"
+},
+{
+"section": "html",
+"desc": "Sekcja środkowa: niektóre komórki scalone zgodnie z ilustracją 2",
+"type": "exists",
+"selector": "main section:nth-of-type(2) table [colspan], main section:nth-of-type(2) table [rowspan]",
+"min": 1
+},
+{
+"section": "html",
+"desc": "Pierwszy wiersz: komórki nagłówkowe „Konfiguracja”",
+"type": "text",
+"selector": "main section:nth-of-type(2) tr:nth-child(1) th",
+"index": 0,
+"equals": "Konfiguracja"
+},
+{
+"section": "html",
+"desc": "Pierwszy wiersz: komórki nagłówkowe „Cena”",
+"type": "text",
+"selector": "main section:nth-of-type(2) tr:nth-child(1) th",
+"index": 1,
+"equals": "Cena"
+},
+{
+"section": "html",
+"desc": "Drugi wiersz: obraz a1.jpg",
+"type": "attr",
+"selector": "main section:nth-of-type(2) tr:nth-child(2) img",
+"attr": "src",
+"equals": "a1.jpg"
+},
+{
+"section": "html",
+"desc": "Drugi wiersz: tekst alternatywny „Konfiguracja 1”",
+"type": "attr",
+"selector": "main section:nth-of-type(2) tr:nth-child(2) img",
+"attr": "alt",
+"equals": "Konfiguracja 1"
+},
+{
+"section": "php",
+"desc": "Trzeci i czwarty wiersz oraz szósty i siódmy: działanie skryptu 2 (zapytanie 4, dwa losowe rekordy)",
+"type": "php"
+},
+{
+"section": "php",
+"desc": "W piątym wierszu tabeli obraz a2.jpg z tekstem alternatywnym „Konfiguracja 2”",
+"type": "php"
+},
+{
+"section": "html",
+"desc": "Sekcja prawa: nagłówek trzeciego stopnia „111 222 444”",
+"type": "text",
+"selector": "main section:nth-of-type(3) h3",
+"equals": "111 222 444"
+},
+{
+"section": "html",
+"desc": "Sekcja prawa: obraz a3.png",
+"type": "attr",
+"selector": "main section:nth-of-type(3) img",
+"attr": "src",
+"equals": "a3.png"
+},
+{
+"section": "html",
+"desc": "Sekcja prawa: tekst alternatywny „Samochód”",
+"type": "attr",
+"selector": "main section:nth-of-type(3) img",
+"attr": "alt",
+"equals": "Samochód"
+},
+{
+"section": "html",
+"desc": "Stopka: paragraf „Stronę wykonał: ” i numer zdającego",
+"type": "text",
+"selector": "footer p",
+"startsWith": "Stronę wykonał:"
+},
+{
+"section": "css",
+"desc": "Dla wszystkich selektorów: wyrównanie tekstu do środka",
+"type": "css",
+"selector": "h2",
+"prop": "text-align",
+"value": "center"
+},
+{
+"section": "css",
+"desc": "Dla wszystkich selektorów: krój czcionki Helvetica, sans-serif",
+"type": "css",
+"selector": "h2",
+"prop": "font-family",
+"value": "Helvetica, sans-serif"
+},
+{
+"section": "css",
+"desc": "Nagłówkowy, nawigacyjny, stopka: biały kolor czcionki",
+"type": "css",
+"selector": "header",
+"prop": "color",
+"value": "white"
+},
+{
+"section": "css",
+"desc": "Nawigacyjny: biały kolor czcionki",
+"type": "css",
+"selector": "nav",
+"prop": "color",
+"value": "white"
+},
+{
+"section": "css",
+"desc": "Stopka: biały kolor czcionki",
+"type": "css",
+"selector": "footer",
+"prop": "color",
+"value": "white"
+},
+{
+"section": "css",
+"desc": "Nagłówkowy: marginesy wewnętrzne 2 px",
+"type": "css",
+"selector": "header",
+"prop": "padding",
+"value": "2px"
+},
+{
+"section": "css",
+"desc": "Nawigacyjny: marginesy wewnętrzne 2 px",
+"type": "css",
+"selector": "nav",
+"prop": "padding",
+"value": "2px"
+},
+{
+"section": "css",
+"desc": "Stopka: marginesy wewnętrzne 2 px",
+"type": "css",
+"selector": "footer",
+"prop": "padding",
+"value": "2px"
+},
+{
+"section": "css",
+"desc": "Nagłówkowy: kolor tła DarkGreen",
+"type": "css",
+"selector": "header",
+"prop": "background-color",
+"value": "DarkGreen"
+},
+{
+"section": "css",
+"desc": "Stopka: kolor tła DarkGreen",
+"type": "css",
+"selector": "footer",
+"prop": "background-color",
+"value": "DarkGreen"
+},
+{
+"section": "css",
+"desc": "Nawigacyjny: kolor tła ForestGreen",
+"type": "css",
+"selector": "nav",
+"prop": "background-color",
+"value": "ForestGreen"
+},
+{
+"section": "css",
+"desc": "Bloki sekcji: kolor tła LightGreen",
+"type": "css",
+"selector": "main section",
+"all": true,
+"prop": "background-color",
+"value": "LightGreen"
+},
+{
+"section": "css",
+"desc": "Bloki sekcji: szerokość 33.3%",
+"type": "cssRule",
+"selector": "section",
+"prop": "width",
+"value": "33.3%",
+"hint": "bloki sekcji: selektor section"
+},
+{
+"section": "css",
+"desc": "Bloki sekcji: wysokość 550 px",
+"type": "css",
+"selector": "main section",
+"all": true,
+"prop": "height",
+"value": "550px"
+},
+{
+"section": "css",
+"desc": "Bloki sekcji: górny margines wewnętrzny 10 px",
+"type": "css",
+"selector": "main section",
+"all": true,
+"prop": "padding-top",
+"value": "10px"
+},
+{
+"section": "css",
+"desc": "Bloki sekcji: jedynie górny margines wewnętrzny (dolny 0)",
+"type": "css",
+"selector": "main section",
+"all": true,
+"prop": "padding-bottom",
+"value": "0px"
+},
+{
+"section": "css",
+"desc": "Bloki sekcji: jedynie górny margines wewnętrzny (lewy 0)",
+"type": "css",
+"selector": "main section",
+"all": true,
+"prop": "padding-left",
+"value": "0px"
+},
+{
+"section": "css",
+"desc": "Bloki sekcji: jedynie górny margines wewnętrzny (prawy 0)",
+"type": "css",
+"selector": "main section",
+"all": true,
+"prop": "padding-right",
+"value": "0px"
+},
+{
+"section": "css",
+"desc": "Bloki sekcji: paski przewijania tylko w razie przepełnienia",
+"type": "css",
+"selector": "main section",
+"all": true,
+"prop": "overflow",
+"value": "auto"
+},
+{
+"section": "css",
+"desc": "Nagłówek drugiego stopnia: szerokość 33% (wyłącznie selektor znacznika)",
+"type": "cssRule",
+"selector": "h2",
+"prop": "width",
+"value": "33%"
+},
+{
+"section": "css",
+"desc": "Nagłówek drugiego stopnia: wyświetlanie liniowo-blokowe (wyłącznie selektor znacznika)",
+"type": "cssRule",
+"selector": "h2",
+"prop": "display",
+"value": "inline-block"
+},
+{
+"section": "css",
+"desc": "Tabela: obramowanie 1px solid DarkGreen (wyłącznie selektor znacznika)",
+"type": "cssRule",
+"selector": "table",
+"prop": "border",
+"value": "1px solid DarkGreen"
+},
+{
+"section": "css",
+"desc": "Komórka tabeli: obramowanie 1px solid DarkGreen (wyłącznie selektor znacznika)",
+"type": "cssRule",
+"selector": "td",
+"prop": "border",
+"value": "1px solid DarkGreen"
+},
+{
+"section": "css",
+"desc": "Komórka nagłówkowa: obramowanie 1px solid DarkGreen (wyłącznie selektor znacznika)",
+"type": "cssRule",
+"selector": "th",
+"prop": "border",
+"value": "1px solid DarkGreen"
+},
+{
+"section": "css",
+"desc": "Tabela: szerokość 90% (wyłącznie selektor znacznika)",
+"type": "cssRule",
+"selector": "table",
+"prop": "width",
+"value": "90%"
+},
+{
+"section": "css",
+"desc": "Tabela: linie obramowania połączone (wyłącznie selektor znacznika)",
+"type": "cssRule",
+"selector": "table",
+"prop": "border-collapse",
+"value": "collapse"
+},
+{
+"section": "css",
+"desc": "Obrazy z bloku środkowego: szerokość 95%",
+"type": "css",
+"selector": "main section:nth-of-type(2) img",
+"all": true,
+"prop": "width",
+"value": "95%"
+},
+{
+"section": "css",
+"desc": "Obrazy z bloku środkowego: zaokrąglenie rogów 8 px",
+"type": "css",
+"selector": "main section:nth-of-type(2) img",
+"all": true,
+"prop": "border-top-left-radius",
+"value": "8px"
+},
+{
+"section": "css",
+"desc": "Wiersze tabeli w bloku lewym: po najechaniu kolor tła ForestGreen",
+"type": "cssRule",
+"selector": "#lewa tr:hover",
+"prop": "background-color",
+"value": "ForestGreen",
+"hint": "tabela w bloku lewym tworzona skryptem; blok lewy jako section#lewa"
+},
+{
+"section": "css",
+"desc": "Układ: blok nagłówkowy nad nawigacyjnym",
+"type": "layout",
+"a": "header",
+"b": "nav",
+"relation": "above"
+},
+{
+"section": "css",
+"desc": "Układ: blok nawigacyjny nad blokiem głównym",
+"type": "layout",
+"a": "nav",
+"b": "main",
+"relation": "above"
+},
+{
+"section": "css",
+"desc": "Układ: sekcja lewa na lewo od środkowej",
+"type": "layout",
+"a": "main section:nth-of-type(1)",
+"b": "main section:nth-of-type(2)",
+"relation": "leftOf"
+},
+{
+"section": "css",
+"desc": "Układ: sekcja środkowa na lewo od prawej",
+"type": "layout",
+"a": "main section:nth-of-type(2)",
+"b": "main section:nth-of-type(3)",
+"relation": "leftOf"
+},
+{
+"section": "css",
+"desc": "Układ: sekcje w jednym rzędzie",
+"type": "layout",
+"a": "main section:nth-of-type(1)",
+"b": "main section:nth-of-type(3)",
+"relation": "sameRow"
+},
+{
+"section": "css",
+"desc": "Układ: stopka pod blokiem głównym",
+"type": "layout",
+"a": "footer",
+"b": "main",
+"relation": "below"
+},
+{
+"section": "php",
+"desc": "Skrypty łączą się z serwerem localhost, root bez hasła, baza samochody, na końcu zamykają połączenie; znaczące nazwy zmiennych",
+"type": "php"
+}
+]

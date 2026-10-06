@@ -1,0 +1,597 @@
+[
+ {
+  "section": "grafika",
+  "desc": "obraz.jpg przeskalowany z zachowaniem proporcji do wysokości 610 px",
+  "type": "image",
+  "name": "obraz.jpg",
+  "height": 610
+ },
+ {
+  "section": "pliki",
+  "desc": "Strona o nazwie notatki.html",
+  "type": "file",
+  "name": "notatki.html"
+ },
+ {
+  "section": "pliki",
+  "desc": "Arkusz stylów w pliku styl.css",
+  "type": "file",
+  "name": "styl.css"
+ },
+ {
+  "section": "html",
+  "desc": "Zapisana w HTML5, polski język, kodowanie UTF-8",
+  "type": "head",
+  "lang": "pl",
+  "charset": true
+ },
+ {
+  "section": "html",
+  "desc": "Tytuł strony „Planer zadań”",
+  "type": "head",
+  "doctype": false,
+  "title": "Planer zadań"
+ },
+ {
+  "section": "html",
+  "desc": "Arkusz stylów styl.css połączony z kodem strony",
+  "type": "head",
+  "doctype": false,
+  "stylesheet": "styl.css"
+ },
+ {
+  "section": "html",
+  "desc": "Podział na semantyczne bloki: boczny, nagłówkowy, nawigacyjny, główny, stopka",
+  "type": "exists",
+  "selector": "aside ~ header ~ nav ~ main ~ footer",
+  "hint": "blok boczny jako aside, nagłówkowy header, nawigacyjny nav, główny main, stopka footer"
+ },
+ {
+  "section": "html",
+  "desc": "Układ bloków: blok nagłówkowy obok bloku bocznego",
+  "type": "layout",
+  "a": "header",
+  "b": "aside",
+  "relation": "rightOf"
+ },
+ {
+  "section": "html",
+  "desc": "Układ bloków: blok nawigacyjny pod nagłówkowym",
+  "type": "layout",
+  "a": "nav",
+  "b": "header",
+  "relation": "below"
+ },
+ {
+  "section": "html",
+  "desc": "Układ bloków: blok główny pod nawigacyjnym",
+  "type": "layout",
+  "a": "main",
+  "b": "nav",
+  "relation": "below"
+ },
+ {
+  "section": "html",
+  "desc": "Układ bloków: stopka pod blokiem głównym",
+  "type": "layout",
+  "a": "footer",
+  "b": "main",
+  "relation": "below"
+ },
+ {
+  "section": "html",
+  "desc": "Układ bloków: blok boczny z lewej strony bloku głównego",
+  "type": "layout",
+  "a": "aside",
+  "b": "main",
+  "relation": "leftOf"
+ },
+ {
+  "section": "html",
+  "desc": "Blok boczny: obraz obraz.jpg",
+  "type": "attr",
+  "selector": "aside img",
+  "attr": "src",
+  "equals": "obraz.jpg"
+ },
+ {
+  "section": "html",
+  "desc": "Blok boczny: obraz z tekstem alternatywnym „notatki”",
+  "type": "attr",
+  "selector": "aside img",
+  "attr": "alt",
+  "equals": "notatki"
+ },
+ {
+  "section": "html",
+  "desc": "Blok nagłówkowy: nagłówek drugiego stopnia „Moje zadania”",
+  "type": "text",
+  "selector": "header h2",
+  "equals": "Moje zadania"
+ },
+ {
+  "section": "html",
+  "desc": "Blok nawigacyjny: pole edycyjne z podpowiedzią „Dodaj zadanie...”",
+  "type": "attr",
+  "selector": "nav input",
+  "attr": "placeholder",
+  "equals": "Dodaj zadanie..."
+ },
+ {
+  "section": "html",
+  "desc": "Blok nawigacyjny: przycisk „Dodaj”",
+  "type": "text",
+  "selector": "nav button",
+  "equals": "Dodaj"
+ },
+ {
+  "section": "html",
+  "desc": "Blok nawigacyjny: przycisk wywołuje funkcję w skrypcie",
+  "type": "attr",
+  "selector": "nav button",
+  "attr": "onclick"
+ },
+ {
+  "section": "html",
+  "desc": "Blok główny: lista punktowana (nieuporządkowana)",
+  "type": "exists",
+  "selector": "main ul"
+ },
+ {
+  "section": "html",
+  "desc": "Lista zawiera w stanie początkowym 6 elementów",
+  "type": "exists",
+  "selector": "main ul > li",
+  "count": 6
+ },
+ {
+  "section": "html",
+  "desc": "Każdy element listy zawiera przycisk „Wykonane”",
+  "type": "text",
+  "selector": "main li button",
+  "equals": "Wykonane",
+  "all": true
+ },
+ {
+  "section": "html",
+  "desc": "Wpis 1: „Wyprowadzić psa”",
+  "type": "text",
+  "selector": "main li",
+  "index": 0,
+  "contains": "Wyprowadzić psa"
+ },
+ {
+  "section": "html",
+  "desc": "Wpis 2: „Gimnastyka”",
+  "type": "text",
+  "selector": "main li",
+  "index": 1,
+  "contains": "Gimnastyka"
+ },
+ {
+  "section": "html",
+  "desc": "Wpis 3: „Zakupy”",
+  "type": "text",
+  "selector": "main li",
+  "index": 2,
+  "contains": "Zakupy"
+ },
+ {
+  "section": "html",
+  "desc": "Wpis 4: „Spacer z kumplem”",
+  "type": "text",
+  "selector": "main li",
+  "index": 3,
+  "contains": "Spacer z kumplem"
+ },
+ {
+  "section": "html",
+  "desc": "Wpis 5: „Odrabianie lekcji z młodszą siostrą”",
+  "type": "text",
+  "selector": "main li",
+  "index": 4,
+  "contains": "Odrabianie lekcji z młodszą siostrą"
+ },
+ {
+  "section": "html",
+  "desc": "Wpis 6: „Projekt na geografię”",
+  "type": "text",
+  "selector": "main li",
+  "index": 5,
+  "contains": "Projekt na geografię"
+ },
+ {
+  "section": "html",
+  "desc": "Stopka: nagłówek trzeciego stopnia „Notatki: ” i numer zdającego",
+  "type": "text",
+  "selector": "footer h3",
+  "startsWith": "Notatki:"
+ },
+ {
+  "section": "css",
+  "desc": "Krój czcionki Verdana (domyślnie dla wszystkich selektorów)",
+  "type": "css",
+  "selector": "h2",
+  "prop": "font-family",
+  "value": "Verdana"
+ },
+ {
+  "section": "css",
+  "desc": "Blok boczny: szerokość 20%",
+  "type": "css",
+  "selector": "aside",
+  "prop": "width",
+  "value": "20%"
+ },
+ {
+  "section": "css",
+  "desc": "Blok boczny: wysokość 610 px",
+  "type": "css",
+  "selector": "aside",
+  "prop": "height",
+  "value": "610px"
+ },
+ {
+  "section": "css",
+  "desc": "Obraz: szerokość 100%",
+  "type": "css",
+  "selector": "aside img",
+  "prop": "width",
+  "value": "100%"
+ },
+ {
+  "section": "css",
+  "desc": "Obraz: wysokość 610 px",
+  "type": "css",
+  "selector": "aside img",
+  "prop": "height",
+  "value": "610px"
+ },
+ {
+  "section": "css",
+  "desc": "Nagłówkowy, stopka, nawigacyjny: kolor tła MediumPurple",
+  "type": "css",
+  "selector": "header, footer, nav",
+  "prop": "background-color",
+  "value": "MediumPurple",
+  "all": true
+ },
+ {
+  "section": "css",
+  "desc": "Nagłówkowy, stopka, nawigacyjny: biały kolor czcionki",
+  "type": "css",
+  "selector": "header, footer, nav",
+  "prop": "color",
+  "value": "white",
+  "all": true
+ },
+ {
+  "section": "css",
+  "desc": "Nagłówkowy, stopka, nawigacyjny: szerokość 80%",
+  "type": "css",
+  "selector": "header, footer, nav",
+  "prop": "width",
+  "value": "80%",
+  "all": true
+ },
+ {
+  "section": "css",
+  "desc": "Blok nagłówkowy: wysokość 50 px",
+  "type": "css",
+  "selector": "header",
+  "prop": "height",
+  "value": "50px"
+ },
+ {
+  "section": "css",
+  "desc": "Stopka: wysokość 50 px",
+  "type": "css",
+  "selector": "footer",
+  "prop": "height",
+  "value": "50px"
+ },
+ {
+  "section": "css",
+  "desc": "Nagłówkowy, stopka, nawigacyjny: wyrównanie tekstu do środka",
+  "type": "css",
+  "selector": "header, footer, nav",
+  "prop": "text-align",
+  "value": "center",
+  "all": true
+ },
+ {
+  "section": "css",
+  "desc": "Nagłówkowy, stopka, nawigacyjny: cień tekstu 4 px 4 px DimGray",
+  "type": "css",
+  "selector": "header, footer, nav",
+  "prop": "text-shadow",
+  "value": "4px 4px DimGray",
+  "all": true
+ },
+ {
+  "section": "css",
+  "desc": "Blok nawigacyjny: margines wewnętrzny górny 10 px",
+  "type": "css",
+  "selector": "nav",
+  "prop": "padding-top",
+  "value": "10px"
+ },
+ {
+  "section": "css",
+  "desc": "Blok główny: kolor tła Thistle",
+  "type": "css",
+  "selector": "main",
+  "prop": "background-color",
+  "value": "Thistle"
+ },
+ {
+  "section": "css",
+  "desc": "Blok główny: szerokość 80%",
+  "type": "css",
+  "selector": "main",
+  "prop": "width",
+  "value": "80%"
+ },
+ {
+  "section": "css",
+  "desc": "Blok główny: wysokość 450 px",
+  "type": "css",
+  "selector": "main",
+  "prop": "height",
+  "value": "450px"
+ },
+ {
+  "section": "css",
+  "desc": "Blok główny: paski przewijania tylko gdy potrzeba (overflow: auto)",
+  "type": "css",
+  "selector": "main",
+  "prop": "overflow",
+  "value": "auto"
+ },
+ {
+  "section": "css",
+  "desc": "Przyciski w liście: opływanie do prawej",
+  "type": "css",
+  "selector": "main li button",
+  "prop": "float",
+  "value": "right",
+  "all": true
+ },
+ {
+  "section": "css",
+  "desc": "Przyciski w liście: kolor tła MediumPurple",
+  "type": "css",
+  "selector": "main li button",
+  "prop": "background-color",
+  "value": "MediumPurple",
+  "all": true
+ },
+ {
+  "section": "css",
+  "desc": "Przyciski w liście: biały kolor czcionki",
+  "type": "css",
+  "selector": "main li button",
+  "prop": "color",
+  "value": "white",
+  "all": true
+ },
+ {
+  "section": "css",
+  "desc": "Przyciski w liście: wysokość 30 px",
+  "type": "css",
+  "selector": "main li button",
+  "prop": "height",
+  "value": "30px",
+  "all": true
+ },
+ {
+  "section": "css",
+  "desc": "Przyciski w liście: bez obramowania",
+  "type": "css",
+  "selector": "main li button",
+  "prop": "border-top-style",
+  "value": "none",
+  "all": true
+ },
+ {
+  "section": "css",
+  "desc": "Lista: margines zewnętrzny górny 40 px",
+  "type": "css",
+  "selector": "main ul",
+  "prop": "margin-top",
+  "value": "40px"
+ },
+ {
+  "section": "css",
+  "desc": "Lista: margines zewnętrzny dolny 40 px",
+  "type": "css",
+  "selector": "main ul",
+  "prop": "margin-bottom",
+  "value": "40px"
+ },
+ {
+  "section": "css",
+  "desc": "Lista: lewy i prawy margines wyliczane automatycznie (równe, wyśrodkowanie)",
+  "type": "css",
+  "selector": "main ul",
+  "prop": "margin-left",
+  "value": "auto"
+ },
+ {
+  "section": "css",
+  "desc": "Lista: szerokość 70%",
+  "type": "css",
+  "selector": "main ul",
+  "prop": "width",
+  "value": "70%"
+ },
+ {
+  "section": "css",
+  "desc": "Lista: rozmiar czcionki 25 px",
+  "type": "css",
+  "selector": "main ul",
+  "prop": "font-size",
+  "value": "25px"
+ },
+ {
+  "section": "css",
+  "desc": "Lista: obramowanie ciągłe 2 px MediumPurple",
+  "type": "css",
+  "selector": "main ul",
+  "prop": "border-top",
+  "value": "2px solid MediumPurple"
+ },
+ {
+  "section": "css",
+  "desc": "Lista: bez znaków punktora",
+  "type": "css",
+  "selector": "main ul",
+  "prop": "list-style-type",
+  "value": "none"
+ },
+ {
+  "section": "css",
+  "desc": "Element listy: marginesy wewnętrzne 10 px",
+  "type": "css",
+  "selector": "main li",
+  "prop": "padding",
+  "value": "10px",
+  "all": true
+ },
+ {
+  "section": "css",
+  "desc": "Parzyste elementy listy: kolor tła #DDCADD",
+  "type": "css",
+  "selector": "main li",
+  "index": 1,
+  "prop": "background-color",
+  "value": "#DDCADD"
+ },
+ {
+  "section": "css",
+  "desc": "Kursor na elemencie listy: kolor tła Lavender",
+  "type": "hover",
+  "selector": "main li",
+  "prop": "background-color",
+  "value": "Lavender"
+ },
+ {
+  "section": "js",
+  "desc": "Przycisk „Wykonane” przekreśla treść elementu (drugi element)",
+  "type": "js",
+  "steps": [
+   {
+    "click": "main li:nth-child(2) button"
+   }
+  ],
+  "expect": [
+   {
+    "selector": "main li:nth-child(2)",
+    "css": "text-decoration-line",
+    "value": "line-through"
+   }
+  ]
+ },
+ {
+  "section": "js",
+  "desc": "„Dodaj” tworzy nowy element na końcu listy z treścią z pola edycyjnego",
+  "type": "js",
+  "steps": [
+   {
+    "set": "nav input",
+    "value": "Lekarz"
+   },
+   {
+    "click": "nav button"
+   }
+  ],
+  "expect": [
+   {
+    "selector": "main ul > li",
+    "count": 7
+   },
+   {
+    "selector": "main ul > li:last-child",
+    "contains": "Lekarz"
+   }
+  ]
+ },
+ {
+  "section": "js",
+  "desc": "Nowy element ma przycisk „Wykonane”",
+  "type": "js",
+  "steps": [
+   {
+    "set": "nav input",
+    "value": "Lekarz"
+   },
+   {
+    "click": "nav button"
+   }
+  ],
+  "expect": [
+   {
+    "selector": "main ul > li:last-child button",
+    "equals": "Wykonane"
+   }
+  ]
+ },
+ {
+  "section": "js",
+  "desc": "Nowy przycisk jest sformatowany jak reszta przycisków (kolor tła)",
+  "type": "js",
+  "steps": [
+   {
+    "set": "nav input",
+    "value": "Lekarz"
+   },
+   {
+    "click": "nav button"
+   }
+  ],
+  "expect": [
+   {
+    "selector": "main ul > li:last-child button",
+    "css": "background-color",
+    "value": "MediumPurple"
+   }
+  ]
+ },
+ {
+  "section": "js",
+  "desc": "Przycisk „Wykonane” nowego elementu przekreśla jego treść",
+  "type": "js",
+  "steps": [
+   {
+    "set": "nav input",
+    "value": "Lekarz"
+   },
+   {
+    "click": "nav button"
+   },
+   {
+    "click": "main ul > li:last-child button"
+   }
+  ],
+  "expect": [
+   {
+    "selector": "main ul > li:last-child",
+    "css": "text-decoration-line",
+    "value": "line-through"
+   }
+  ]
+ },
+ {
+  "section": "js",
+  "desc": "Znaczące nazewnictwo zmiennych i funkcji",
+  "type": "manual"
+ },
+ {
+  "section": "css",
+  "desc": "Blok nawigacyjny: wysokość 50 px",
+  "type": "css",
+  "selector": "nav",
+  "prop": "height",
+  "value": "50px"
+ }
+]

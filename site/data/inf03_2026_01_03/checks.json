@@ -1,0 +1,941 @@
+[
+ {
+  "section": "grafika",
+  "desc": "kolo.gif: animacja 200 px na 200 px",
+  "type": "image",
+  "name": "kolo.gif",
+  "width": 200,
+  "height": 200
+ },
+ {
+  "section": "pliki",
+  "desc": "Plik index.html",
+  "type": "file",
+  "name": "index.html"
+ },
+ {
+  "section": "pliki",
+  "desc": "Plik kolo.html",
+  "type": "file",
+  "name": "kolo.html"
+ },
+ {
+  "section": "pliki",
+  "desc": "Plik styl.css",
+  "type": "file",
+  "name": "styl.css"
+ },
+ {
+  "section": "html",
+  "desc": "Zapisane w HTML5, polski język, kodowanie UTF-8",
+  "type": "head",
+  "page": "index.html",
+  "lang": "pl",
+  "charset": true
+ },
+ {
+  "section": "html",
+  "desc": "Tytuł strony „Pola figur”",
+  "type": "head",
+  "page": "index.html",
+  "doctype": false,
+  "title": "Pola figur"
+ },
+ {
+  "section": "html",
+  "desc": "Arkusz stylów styl.css połączony z kodem strony",
+  "type": "head",
+  "page": "index.html",
+  "doctype": false,
+  "stylesheet": "styl.css"
+ },
+ {
+  "section": "html",
+  "desc": "Bloki semantyczne: nagłówkowy, główny, stopka",
+  "type": "exists",
+  "page": "index.html",
+  "selector": "body > header ~ main ~ footer"
+ },
+ {
+  "section": "html",
+  "desc": "Blok główny zawiera blok nawigacyjny, sekcji i boczny",
+  "type": "exists",
+  "page": "index.html",
+  "selector": "main > nav ~ section ~ aside"
+ },
+ {
+  "section": "html",
+  "desc": "Blok nagłówkowy: nagłówek drugiego stopnia „Pola figur płaskich”",
+  "type": "text",
+  "page": "index.html",
+  "selector": "header h2",
+  "equals": "Pola figur płaskich"
+ },
+ {
+  "section": "html",
+  "desc": "Blok nawigacyjny: nagłówek trzeciego stopnia „MENU”",
+  "type": "text",
+  "page": "index.html",
+  "selector": "nav h3",
+  "equals": "MENU"
+ },
+ {
+  "section": "html",
+  "desc": "Blok nawigacyjny: lista punktowana z dwoma odsyłaczami",
+  "type": "exists",
+  "page": "index.html",
+  "selector": "nav ul li a",
+  "count": 2
+ },
+ {
+  "section": "html",
+  "desc": "Odsyłacz „Prostokąt i trójkąt”",
+  "type": "text",
+  "page": "index.html",
+  "selector": "nav ul li a",
+  "index": 0,
+  "equals": "Prostokąt i trójkąt"
+ },
+ {
+  "section": "html",
+  "desc": "Odsyłacz „Prostokąt i trójkąt” prowadzi do index.html",
+  "type": "attr",
+  "page": "index.html",
+  "selector": "nav ul li a",
+  "index": 0,
+  "attr": "href",
+  "equals": "index.html"
+ },
+ {
+  "section": "html",
+  "desc": "Odsyłacz „Okrąg i koło”",
+  "type": "text",
+  "page": "index.html",
+  "selector": "nav ul li a",
+  "index": 1,
+  "equals": "Okrąg i koło"
+ },
+ {
+  "section": "html",
+  "desc": "Odsyłacz „Okrąg i koło” prowadzi do kolo.html",
+  "type": "attr",
+  "page": "index.html",
+  "selector": "nav ul li a",
+  "index": 1,
+  "attr": "href",
+  "equals": "kolo.html"
+ },
+ {
+  "section": "html",
+  "desc": "Stopka: paragraf „Autor: ” i numer zdającego",
+  "type": "text",
+  "page": "index.html",
+  "selector": "footer p",
+  "startsWith": "Autor:"
+ },
+ {
+  "section": "html",
+  "desc": "Zapisane w HTML5, polski język, kodowanie UTF-8",
+  "type": "head",
+  "page": "kolo.html",
+  "lang": "pl",
+  "charset": true
+ },
+ {
+  "section": "html",
+  "desc": "Tytuł strony „Pola figur”",
+  "type": "head",
+  "page": "kolo.html",
+  "doctype": false,
+  "title": "Pola figur"
+ },
+ {
+  "section": "html",
+  "desc": "Arkusz stylów styl.css połączony z kodem strony",
+  "type": "head",
+  "page": "kolo.html",
+  "doctype": false,
+  "stylesheet": "styl.css"
+ },
+ {
+  "section": "html",
+  "desc": "Bloki semantyczne: nagłówkowy, główny, stopka",
+  "type": "exists",
+  "page": "kolo.html",
+  "selector": "body > header ~ main ~ footer"
+ },
+ {
+  "section": "html",
+  "desc": "Blok główny zawiera blok nawigacyjny, sekcji i boczny",
+  "type": "exists",
+  "page": "kolo.html",
+  "selector": "main > nav ~ section ~ aside"
+ },
+ {
+  "section": "html",
+  "desc": "Blok nagłówkowy: nagłówek drugiego stopnia „Pola figur płaskich”",
+  "type": "text",
+  "page": "kolo.html",
+  "selector": "header h2",
+  "equals": "Pola figur płaskich"
+ },
+ {
+  "section": "html",
+  "desc": "Blok nawigacyjny: nagłówek trzeciego stopnia „MENU”",
+  "type": "text",
+  "page": "kolo.html",
+  "selector": "nav h3",
+  "equals": "MENU"
+ },
+ {
+  "section": "html",
+  "desc": "Blok nawigacyjny: lista punktowana z dwoma odsyłaczami",
+  "type": "exists",
+  "page": "kolo.html",
+  "selector": "nav ul li a",
+  "count": 2
+ },
+ {
+  "section": "html",
+  "desc": "Odsyłacz „Prostokąt i trójkąt”",
+  "type": "text",
+  "page": "kolo.html",
+  "selector": "nav ul li a",
+  "index": 0,
+  "equals": "Prostokąt i trójkąt"
+ },
+ {
+  "section": "html",
+  "desc": "Odsyłacz „Prostokąt i trójkąt” prowadzi do index.html",
+  "type": "attr",
+  "page": "kolo.html",
+  "selector": "nav ul li a",
+  "index": 0,
+  "attr": "href",
+  "equals": "index.html"
+ },
+ {
+  "section": "html",
+  "desc": "Odsyłacz „Okrąg i koło”",
+  "type": "text",
+  "page": "kolo.html",
+  "selector": "nav ul li a",
+  "index": 1,
+  "equals": "Okrąg i koło"
+ },
+ {
+  "section": "html",
+  "desc": "Odsyłacz „Okrąg i koło” prowadzi do kolo.html",
+  "type": "attr",
+  "page": "kolo.html",
+  "selector": "nav ul li a",
+  "index": 1,
+  "attr": "href",
+  "equals": "kolo.html"
+ },
+ {
+  "section": "html",
+  "desc": "Stopka: paragraf „Autor: ” i numer zdającego",
+  "type": "text",
+  "page": "kolo.html",
+  "selector": "footer p",
+  "startsWith": "Autor:"
+ },
+ {
+  "section": "html",
+  "desc": "Sekcja: obraz 1d.bmp",
+  "type": "attr",
+  "page": "index.html",
+  "selector": "section img",
+  "index": 0,
+  "attr": "src",
+  "equals": "1d.bmp"
+ },
+ {
+  "section": "html",
+  "desc": "Sekcja: obraz 1d.bmp z tekstem alternatywnym „Figura”",
+  "type": "attr",
+  "page": "index.html",
+  "selector": "section img",
+  "index": 0,
+  "attr": "alt",
+  "equals": "Figura"
+ },
+ {
+  "section": "html",
+  "desc": "Sekcja: poniżej obraz 1m.bmp",
+  "type": "attr",
+  "page": "index.html",
+  "selector": "section img",
+  "index": 1,
+  "attr": "src",
+  "equals": "1m.bmp"
+ },
+ {
+  "section": "html",
+  "desc": "Obraz 1m.bmp z tekstem alternatywnym „Wybierz trójkąt”",
+  "type": "attr",
+  "page": "index.html",
+  "selector": "section img",
+  "index": 1,
+  "attr": "alt",
+  "equals": "Wybierz trójkąt"
+ },
+ {
+  "section": "html",
+  "desc": "Sekcja: obok obraz 2m.bmp",
+  "type": "attr",
+  "page": "index.html",
+  "selector": "section img",
+  "index": 2,
+  "attr": "src",
+  "equals": "2m.bmp"
+ },
+ {
+  "section": "html",
+  "desc": "Obraz 2m.bmp z tekstem alternatywnym „Wybierz prostokąt”",
+  "type": "attr",
+  "page": "index.html",
+  "selector": "section img",
+  "index": 2,
+  "attr": "alt",
+  "equals": "Wybierz prostokąt"
+ },
+ {
+  "section": "html",
+  "desc": "Do obu obrazów 1m.bmp i 2m.bmp przypisano tę samą klasę",
+  "type": "attr",
+  "page": "index.html",
+  "selector": "section img:nth-of-type(n+2)",
+  "attr": "class",
+  "all": true
+ },
+ {
+  "section": "html",
+  "desc": "Układ: 1m.bmp obok 2m.bmp",
+  "type": "layout",
+  "page": "index.html",
+  "a": "section img:nth-of-type(2)",
+  "b": "section img:nth-of-type(3)",
+  "relation": "leftOf"
+ },
+ {
+  "section": "html",
+  "desc": "Układ: obrazy miniatur poniżej dużego obrazu",
+  "type": "layout",
+  "page": "index.html",
+  "a": "section img:nth-of-type(1)",
+  "b": "section img:nth-of-type(2)",
+  "relation": "above"
+ },
+ {
+  "section": "html",
+  "desc": "Blok boczny: nagłówek trzeciego stopnia „Pole prostokąta / pole trójkąta”",
+  "type": "text",
+  "page": "index.html",
+  "selector": "aside h3",
+  "equals": "Pole prostokąta / pole trójkąta"
+ },
+ {
+  "section": "html",
+  "desc": "Etykieta „Bok prostokąta / podstawa trójkąta:”",
+  "type": "text",
+  "page": "index.html",
+  "selector": "aside label",
+  "index": 0,
+  "equals": "Bok prostokąta / podstawa trójkąta:"
+ },
+ {
+  "section": "html",
+  "desc": "Etykieta „Drugi bok prostokąta / wysokość trójkąta:”",
+  "type": "text",
+  "page": "index.html",
+  "selector": "aside label",
+  "index": 1,
+  "equals": "Drugi bok prostokąta / wysokość trójkąta:"
+ },
+ {
+  "section": "html",
+  "desc": "Dwa pola edycyjne",
+  "type": "exists",
+  "page": "index.html",
+  "selector": "aside input",
+  "count": 2
+ },
+ {
+  "section": "html",
+  "desc": "Pola edycyjne powiązane z etykietami (atrybut for)",
+  "type": "attr",
+  "page": "index.html",
+  "selector": "aside label",
+  "attr": "for",
+  "all": true
+ },
+ {
+  "section": "html",
+  "desc": "Przycisk „Oblicz”",
+  "type": "text",
+  "page": "index.html",
+  "selector": "aside button",
+  "equals": "Oblicz"
+ },
+ {
+  "section": "html",
+  "desc": "Paragraf na wynik, w stanie początkowym pusty",
+  "type": "text",
+  "page": "index.html",
+  "selector": "aside p",
+  "equals": ""
+ },
+ {
+  "section": "html",
+  "desc": "Układ: etykiety i pola, przycisk, paragraf pod sobą (przycisk pod polem)",
+  "type": "layout",
+  "page": "index.html",
+  "a": "aside input:nth-of-type(2)",
+  "b": "aside button",
+  "relation": "above"
+ },
+ {
+  "section": "html",
+  "desc": "Układ: paragraf wyniku pod przyciskiem",
+  "type": "layout",
+  "page": "index.html",
+  "a": "aside button",
+  "b": "aside p",
+  "relation": "above"
+ },
+ {
+  "section": "html",
+  "desc": "Sekcja: animacja kolo.gif",
+  "type": "attr",
+  "page": "kolo.html",
+  "selector": "section img",
+  "attr": "src",
+  "equals": "kolo.gif"
+ },
+ {
+  "section": "html",
+  "desc": "Animacja z tekstem alternatywnym „koło”",
+  "type": "attr",
+  "page": "kolo.html",
+  "selector": "section img",
+  "attr": "alt",
+  "equals": "koło"
+ },
+ {
+  "section": "html",
+  "desc": "Blok boczny: paragraf „Pole koła: P = Π * r2”",
+  "type": "text",
+  "page": "kolo.html",
+  "selector": "aside p",
+  "equals": "Pole koła: P = Π * r2"
+ },
+ {
+  "section": "html",
+  "desc": "Litera Pi zapisana znakiem specjalnym (Π)",
+  "type": "text",
+  "page": "kolo.html",
+  "selector": "aside p",
+  "contains": "Π"
+ },
+ {
+  "section": "html",
+  "desc": "Oznaczenie potęgi w indeksie górnym",
+  "type": "text",
+  "page": "kolo.html",
+  "selector": "aside p sup",
+  "equals": "2"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: nawigacyjny, sekcji i boczny obok siebie",
+  "type": "layout",
+  "page": "index.html",
+  "a": "nav",
+  "b": "section",
+  "relation": "leftOf"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: blok sekcji obok bloku bocznego",
+  "type": "layout",
+  "page": "index.html",
+  "a": "section",
+  "b": "aside",
+  "relation": "leftOf"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: blok nagłówkowy nad blokiem głównym",
+  "type": "layout",
+  "page": "index.html",
+  "a": "header",
+  "b": "main",
+  "relation": "above"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: stopka pod blokiem głównym",
+  "type": "layout",
+  "page": "index.html",
+  "a": "footer",
+  "b": "main",
+  "relation": "below"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: nagłówek na całą szerokość",
+  "type": "layout",
+  "page": "index.html",
+  "a": "header",
+  "relation": "fullWidth"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: nawigacyjny, sekcji i boczny obok siebie",
+  "type": "layout",
+  "page": "kolo.html",
+  "a": "nav",
+  "b": "section",
+  "relation": "leftOf"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: blok sekcji obok bloku bocznego",
+  "type": "layout",
+  "page": "kolo.html",
+  "a": "section",
+  "b": "aside",
+  "relation": "leftOf"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: blok nagłówkowy nad blokiem głównym",
+  "type": "layout",
+  "page": "kolo.html",
+  "a": "header",
+  "b": "main",
+  "relation": "above"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: stopka pod blokiem głównym",
+  "type": "layout",
+  "page": "kolo.html",
+  "a": "footer",
+  "b": "main",
+  "relation": "below"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: nagłówek na całą szerokość",
+  "type": "layout",
+  "page": "kolo.html",
+  "a": "header",
+  "relation": "fullWidth"
+ },
+ {
+  "section": "css",
+  "desc": "Domyślnie dla wszystkich selektorów: krój Garamond, serif",
+  "type": "css",
+  "page": "index.html",
+  "selector": "h2",
+  "prop": "font-family",
+  "value": "Garamond, serif"
+ },
+ {
+  "section": "css",
+  "desc": "Blok nagłówkowy i stopka (header): kolor tła Navy",
+  "type": "css",
+  "page": "index.html",
+  "selector": "header",
+  "prop": "background-color",
+  "value": "Navy"
+ },
+ {
+  "section": "css",
+  "desc": "Blok nagłówkowy i stopka (header): biały kolor czcionki",
+  "type": "css",
+  "page": "index.html",
+  "selector": "header",
+  "prop": "color",
+  "value": "white"
+ },
+ {
+  "section": "css",
+  "desc": "Blok nagłówkowy i stopka (header): wyrównanie tekstu do środka",
+  "type": "css",
+  "page": "index.html",
+  "selector": "header",
+  "prop": "text-align",
+  "value": "center"
+ },
+ {
+  "section": "css",
+  "desc": "Blok nagłówkowy i stopka (header): marginesy wewnętrzne 5 px",
+  "type": "css",
+  "page": "index.html",
+  "selector": "header",
+  "prop": "padding",
+  "value": "5px"
+ },
+ {
+  "section": "css",
+  "desc": "Blok nagłówkowy i stopka (header): odstępy między literami 3 px",
+  "type": "css",
+  "page": "index.html",
+  "selector": "header",
+  "prop": "letter-spacing",
+  "value": "3px"
+ },
+ {
+  "section": "css",
+  "desc": "Blok nagłówkowy i stopka (footer): kolor tła Navy",
+  "type": "css",
+  "page": "index.html",
+  "selector": "footer",
+  "prop": "background-color",
+  "value": "Navy"
+ },
+ {
+  "section": "css",
+  "desc": "Blok nagłówkowy i stopka (footer): biały kolor czcionki",
+  "type": "css",
+  "page": "index.html",
+  "selector": "footer",
+  "prop": "color",
+  "value": "white"
+ },
+ {
+  "section": "css",
+  "desc": "Blok nagłówkowy i stopka (footer): wyrównanie tekstu do środka",
+  "type": "css",
+  "page": "index.html",
+  "selector": "footer",
+  "prop": "text-align",
+  "value": "center"
+ },
+ {
+  "section": "css",
+  "desc": "Blok nagłówkowy i stopka (footer): marginesy wewnętrzne 5 px",
+  "type": "css",
+  "page": "index.html",
+  "selector": "footer",
+  "prop": "padding",
+  "value": "5px"
+ },
+ {
+  "section": "css",
+  "desc": "Blok nagłówkowy i stopka (footer): odstępy między literami 3 px",
+  "type": "css",
+  "page": "index.html",
+  "selector": "footer",
+  "prop": "letter-spacing",
+  "value": "3px"
+ },
+ {
+  "section": "css",
+  "desc": "Blok nawigacyjny, sekcji i boczny (nav): wysokość 500 px",
+  "type": "css",
+  "page": "index.html",
+  "selector": "nav",
+  "prop": "height",
+  "value": "500px"
+ },
+ {
+  "section": "css",
+  "desc": "Blok nawigacyjny, sekcji i boczny (section): wysokość 500 px",
+  "type": "css",
+  "page": "index.html",
+  "selector": "section",
+  "prop": "height",
+  "value": "500px"
+ },
+ {
+  "section": "css",
+  "desc": "Blok nawigacyjny, sekcji i boczny (aside): wysokość 500 px",
+  "type": "css",
+  "page": "index.html",
+  "selector": "aside",
+  "prop": "height",
+  "value": "500px"
+ },
+ {
+  "section": "css",
+  "desc": "Blok nawigacyjny i boczny (nav): kolor tła DodgerBlue",
+  "type": "css",
+  "page": "index.html",
+  "selector": "nav",
+  "prop": "background-color",
+  "value": "DodgerBlue"
+ },
+ {
+  "section": "css",
+  "desc": "Blok nawigacyjny i boczny (nav): szerokość 35%",
+  "type": "css",
+  "page": "index.html",
+  "selector": "nav",
+  "prop": "width",
+  "value": "35%"
+ },
+ {
+  "section": "css",
+  "desc": "Blok nawigacyjny i boczny (aside): kolor tła DodgerBlue",
+  "type": "css",
+  "page": "index.html",
+  "selector": "aside",
+  "prop": "background-color",
+  "value": "DodgerBlue"
+ },
+ {
+  "section": "css",
+  "desc": "Blok nawigacyjny i boczny (aside): szerokość 35%",
+  "type": "css",
+  "page": "index.html",
+  "selector": "aside",
+  "prop": "width",
+  "value": "35%"
+ },
+ {
+  "section": "css",
+  "desc": "Blok sekcji: kolor tła SkyBlue",
+  "type": "css",
+  "page": "index.html",
+  "selector": "section",
+  "prop": "background-color",
+  "value": "SkyBlue"
+ },
+ {
+  "section": "css",
+  "desc": "Blok sekcji: szerokość 30%",
+  "type": "css",
+  "page": "index.html",
+  "selector": "section",
+  "prop": "width",
+  "value": "30%"
+ },
+ {
+  "section": "css",
+  "desc": "Blok sekcji: wyrównanie tekstu do środka",
+  "type": "css",
+  "page": "index.html",
+  "selector": "section",
+  "prop": "text-align",
+  "value": "center"
+ },
+ {
+  "section": "css",
+  "desc": "Pole edycyjne: marginesy zewnętrzne 10 px",
+  "type": "css",
+  "page": "index.html",
+  "selector": "aside input",
+  "prop": "margin",
+  "value": "10px",
+  "all": true
+ },
+ {
+  "section": "css",
+  "desc": "Przycisk: marginesy zewnętrzne 10 px",
+  "type": "css",
+  "page": "index.html",
+  "selector": "aside button",
+  "prop": "margin",
+  "value": "10px"
+ },
+ {
+  "section": "css",
+  "desc": "Nagłówek trzeciego stopnia: wyrównanie tekstu do środka (selektor h3)",
+  "type": "cssRule",
+  "page": "index.html",
+  "selector": "h3",
+  "prop": "text-align",
+  "value": "center"
+ },
+ {
+  "section": "css",
+  "desc": "Nagłówek trzeciego stopnia: pierwsza litera rozmiar czcionki 200% (selektor h3)",
+  "type": "cssRule",
+  "page": "index.html",
+  "selector": "h3::first-letter",
+  "prop": "font-size",
+  "value": "200%"
+ },
+ {
+  "section": "css",
+  "desc": "Paragraf: rozmiar czcionki 150% (selektor p)",
+  "type": "cssRule",
+  "page": "index.html",
+  "selector": "p",
+  "prop": "font-size",
+  "value": "150%"
+ },
+ {
+  "section": "css",
+  "desc": "Klasa grafik 1m.bmp i 2m.bmp: cień 5 px w pionie i poziomie, rozmycie 10 px, DimGray",
+  "type": "css",
+  "page": "index.html",
+  "selector": "section img:nth-of-type(n+2)",
+  "prop": "box-shadow",
+  "value": "rgb(105, 105, 105) 5px 5px 10px 0px",
+  "all": true
+ },
+ {
+  "section": "css",
+  "desc": "Klasa grafik 1m.bmp i 2m.bmp: zaokrąglenie rogów 10 px",
+  "type": "css",
+  "page": "index.html",
+  "selector": "section img:nth-of-type(n+2)",
+  "prop": "border-top-left-radius",
+  "value": "10px",
+  "all": true
+ },
+ {
+  "section": "css",
+  "desc": "Klasa grafik 1m.bmp i 2m.bmp: marginesy zewnętrzne 5 px",
+  "type": "css",
+  "page": "index.html",
+  "selector": "section img:nth-of-type(n+2)",
+  "prop": "margin",
+  "value": "5px",
+  "all": true
+ },
+ {
+  "section": "css",
+  "desc": "Klasa grafik 1m.bmp i 2m.bmp: kursor pointer",
+  "type": "css",
+  "page": "index.html",
+  "selector": "section img:nth-of-type(n+2)",
+  "prop": "cursor",
+  "value": "pointer",
+  "all": true
+ },
+ {
+  "section": "js",
+  "desc": "Skrypt 1: kliknięcie 1m.bmp ustawia duży obraz na 1d.bmp",
+  "type": "js",
+  "page": "index.html",
+  "steps": [
+   {
+    "click": "section img:nth-of-type(3)"
+   },
+   {
+    "click": "section img:nth-of-type(2)"
+   }
+  ],
+  "expect": [
+   {
+    "selector": "section img:nth-of-type(1)",
+    "attr": "src",
+    "contains": "1d.bmp"
+   }
+  ]
+ },
+ {
+  "section": "js",
+  "desc": "Skrypt 1: kliknięcie 2m.bmp ustawia duży obraz na 2d.bmp",
+  "type": "js",
+  "page": "index.html",
+  "steps": [
+   {
+    "click": "section img:nth-of-type(3)"
+   }
+  ],
+  "expect": [
+   {
+    "selector": "section img:nth-of-type(1)",
+    "attr": "src",
+    "contains": "2d.bmp"
+   }
+  ]
+ },
+ {
+  "section": "js",
+  "desc": "Skrypt 2: stan początkowy, liczone pole trójkąta (5, 10 daje 25)",
+  "type": "js",
+  "page": "index.html",
+  "steps": [
+   {
+    "set": "aside input:nth-of-type(1)",
+    "value": "5"
+   },
+   {
+    "set": "aside input:nth-of-type(2)",
+    "value": "10"
+   },
+   {
+    "click": "aside button"
+   }
+  ],
+  "expect": [
+   {
+    "selector": "aside p",
+    "equals": "25"
+   }
+  ]
+ },
+ {
+  "section": "js",
+  "desc": "Skrypt 2: po wybraniu trójkąta liczone pole trójkąta (25)",
+  "type": "js",
+  "page": "index.html",
+  "steps": [
+   {
+    "click": "section img:nth-of-type(3)"
+   },
+   {
+    "click": "section img:nth-of-type(2)"
+   },
+   {
+    "set": "aside input:nth-of-type(1)",
+    "value": "5"
+   },
+   {
+    "set": "aside input:nth-of-type(2)",
+    "value": "10"
+   },
+   {
+    "click": "aside button"
+   }
+  ],
+  "expect": [
+   {
+    "selector": "aside p",
+    "equals": "25"
+   }
+  ]
+ },
+ {
+  "section": "js",
+  "desc": "Skrypt 2: po wybraniu prostokąta liczone pole prostokąta (5, 10 daje 50)",
+  "type": "js",
+  "page": "index.html",
+  "steps": [
+   {
+    "click": "section img:nth-of-type(3)"
+   },
+   {
+    "set": "aside input:nth-of-type(1)",
+    "value": "5"
+   },
+   {
+    "set": "aside input:nth-of-type(2)",
+    "value": "10"
+   },
+   {
+    "click": "aside button"
+   }
+  ],
+  "expect": [
+   {
+    "selector": "aside p",
+    "equals": "50"
+   }
+  ]
+ },
+ {
+  "section": "js",
+  "desc": "Znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim",
+  "type": "manual"
+ }
+]

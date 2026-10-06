@@ -1,0 +1,495 @@
+[
+{
+"section": "grafika",
+"desc": "obraz2.png przeskalowany do 32 px na 32 px (szerokość)",
+"type": "image",
+"name": "obraz2.png",
+"width": 32
+},
+{
+"section": "grafika",
+"desc": "obraz2.png przeskalowany do 32 px na 32 px (wysokość)",
+"type": "image",
+"name": "obraz2.png",
+"height": 32
+},
+{
+"section": "pliki",
+"desc": "Strona medica.php",
+"type": "file",
+"name": "medica.php"
+},
+{
+"section": "pliki",
+"desc": "Arkusz stylów styl.css",
+"type": "file",
+"name": "styl.css"
+},
+{
+"section": "pliki",
+"desc": "Plik opis.html",
+"type": "file",
+"name": "opis.html"
+},
+{
+"section": "html",
+"desc": "HTML5, język polski, kodowanie UTF-8",
+"type": "head",
+"lang": "pl",
+"charset": true
+},
+{
+"section": "html",
+"desc": "Tytuł strony „Przychodnia Medica”",
+"type": "head",
+"doctype": false,
+"title": "Przychodnia Medica"
+},
+{
+"section": "html",
+"desc": "Arkusz stylów styl.css połączony z kodem strony",
+"type": "head",
+"doctype": false,
+"stylesheet": "styl.css"
+},
+{
+"section": "html",
+"desc": "Favicon: obraz2.png",
+"type": "attr",
+"selector": "link[rel~='icon']",
+"attr": "href",
+"equals": "obraz2.png"
+},
+{
+"section": "html",
+"desc": "Układ bloków: nagłówkowy, artykuł, główny, stopka",
+"type": "exists",
+"selector": "header ~ article ~ main ~ footer"
+},
+{
+"section": "html",
+"desc": "Blok główny: trzy sekcje",
+"type": "exists",
+"selector": "main section",
+"count": 3
+},
+{
+"section": "html",
+"desc": "Blok nagłówkowy: nagłówek pierwszego stopnia „Abonamenty w przychodni Medica”",
+"type": "text",
+"selector": "header h1",
+"equals": "Abonamenty w przychodni Medica"
+},
+{
+"section": "php",
+"desc": "Blok artykułu: efekt działania skryptu 1 (h3 „Pakiet <nazwa> - cena <cena> zł” i paragraf z opisem)",
+"type": "php"
+},
+{
+"section": "html",
+"desc": "Blok artykułu: odnośnik „Dowiedz się więcej”",
+"type": "text",
+"selector": "article a",
+"equals": "Dowiedz się więcej"
+},
+{
+"section": "html",
+"desc": "Odnośnik prowadzi do opis.html",
+"type": "attr",
+"selector": "article a",
+"attr": "href",
+"equals": "opis.html"
+},
+{
+"section": "html",
+"desc": "Pierwsza sekcja: nagłówek drugiego stopnia „Standardowy”",
+"type": "text",
+"selector": "main section:nth-of-type(1) h2",
+"equals": "Standardowy"
+},
+{
+"section": "html",
+"desc": "Pierwsza sekcja: lista punktowana",
+"type": "exists",
+"selector": "main section:nth-of-type(1) ul"
+},
+{
+"section": "php",
+"desc": "Pierwsza sekcja: elementy listy z efektem skryptu 2 (tylko cecha)",
+"type": "php"
+},
+{
+"section": "html",
+"desc": "Druga sekcja: nagłówek drugiego stopnia „Premium”",
+"type": "text",
+"selector": "main section:nth-of-type(2) h2",
+"equals": "Premium"
+},
+{
+"section": "html",
+"desc": "Druga sekcja: lista punktowana",
+"type": "exists",
+"selector": "main section:nth-of-type(2) ul"
+},
+{
+"section": "php",
+"desc": "Druga sekcja: skrypt 2 zmodyfikowany dla id abonamentu 2",
+"type": "php"
+},
+{
+"section": "html",
+"desc": "Trzecia sekcja: nagłówek drugiego stopnia „Dziecko”",
+"type": "text",
+"selector": "main section:nth-of-type(3) h2",
+"equals": "Dziecko"
+},
+{
+"section": "html",
+"desc": "Trzecia sekcja: lista punktowana",
+"type": "exists",
+"selector": "main section:nth-of-type(3) ul"
+},
+{
+"section": "php",
+"desc": "Trzecia sekcja: skrypt 2 zmodyfikowany dla id abonamentu 3",
+"type": "php"
+},
+{
+"section": "html",
+"desc": "Stopka: paragraf z obrazem obraz2.png",
+"type": "attr",
+"selector": "footer p img",
+"attr": "src",
+"equals": "obraz2.png"
+},
+{
+"section": "html",
+"desc": "Obraz z tekstem alternatywnym „przychodnia”",
+"type": "attr",
+"selector": "footer p img",
+"attr": "alt",
+"equals": "przychodnia"
+},
+{
+"section": "html",
+"desc": "Stopka: treść „Stronę przygotował:” i numer zdającego",
+"type": "text",
+"selector": "footer p",
+"startsWith": "Stronę przygotował:"
+},
+{
+"section": "html",
+"desc": "Układ: blok artykułu pod nagłówkowym",
+"type": "layout",
+"a": "article",
+"b": "header",
+"relation": "below"
+},
+{
+"section": "html",
+"desc": "Układ: sekcja pierwsza obok drugiej",
+"type": "layout",
+"a": "main section:nth-of-type(1)",
+"b": "main section:nth-of-type(2)",
+"relation": "leftOf"
+},
+{
+"section": "html",
+"desc": "Układ: sekcja druga obok trzeciej",
+"type": "layout",
+"a": "main section:nth-of-type(2)",
+"b": "main section:nth-of-type(3)",
+"relation": "leftOf"
+},
+{
+"section": "html",
+"desc": "Układ: stopka pod blokiem głównym",
+"type": "layout",
+"a": "footer",
+"b": "main",
+"relation": "below"
+},
+{
+"section": "css",
+"desc": "Domyślnie krój czcionki Georgia",
+"type": "css",
+"selector": "h2",
+"prop": "font-family",
+"value": "Georgia"
+},
+{
+"section": "css",
+"desc": "Nagłówkowy: kolor tła #1B5E20",
+"type": "css",
+"selector": "header",
+"prop": "background-color",
+"value": "#1B5E20"
+},
+{
+"section": "css",
+"desc": "Stopka: kolor tła #1B5E20",
+"type": "css",
+"selector": "footer",
+"prop": "background-color",
+"value": "#1B5E20"
+},
+{
+"section": "css",
+"desc": "Nagłówkowy: biały kolor czcionki",
+"type": "css",
+"selector": "header",
+"prop": "color",
+"value": "white"
+},
+{
+"section": "css",
+"desc": "Stopka: biały kolor czcionki",
+"type": "css",
+"selector": "footer",
+"prop": "color",
+"value": "white"
+},
+{
+"section": "css",
+"desc": "Nagłówkowy: wyrównanie do środka",
+"type": "css",
+"selector": "header",
+"prop": "text-align",
+"value": "center"
+},
+{
+"section": "css",
+"desc": "Stopka: wyrównanie do środka",
+"type": "css",
+"selector": "footer",
+"prop": "text-align",
+"value": "center"
+},
+{
+"section": "css",
+"desc": "Nagłówkowy: marginesy wewnętrzne 5 px",
+"type": "css",
+"selector": "header",
+"prop": "padding",
+"value": "5px"
+},
+{
+"section": "css",
+"desc": "Stopka: marginesy wewnętrzne 5 px",
+"type": "css",
+"selector": "footer",
+"prop": "padding",
+"value": "5px"
+},
+{
+"section": "css",
+"desc": "Artykuł: tło obraz1.jpg",
+"type": "css",
+"selector": "article",
+"prop": "background-image",
+"value": "obraz1.jpg",
+"match": "contains"
+},
+{
+"section": "css",
+"desc": "Artykuł: kolor czcionki DimGray",
+"type": "css",
+"selector": "article",
+"prop": "color",
+"value": "DimGray"
+},
+{
+"section": "css",
+"desc": "Artykuł: rozmiar czcionki 150%",
+"type": "css",
+"selector": "article",
+"prop": "font-size",
+"value": "24px"
+},
+{
+"section": "css",
+"desc": "Artykuł: wysokość 350 px",
+"type": "css",
+"selector": "article",
+"prop": "height",
+"value": "350px"
+},
+{
+"section": "css",
+"desc": "Artykuł: widoczne paski przewijania",
+"type": "css",
+"selector": "article",
+"prop": "overflow",
+"value": "scroll"
+},
+{
+"section": "css",
+"desc": "Sekcje: kolor tła #00E676",
+"type": "css",
+"selector": "main section",
+"prop": "background-color",
+"value": "#00E676",
+"all": true
+},
+{
+"section": "css",
+"desc": "Sekcje: kolor czcionki #1B5E20",
+"type": "css",
+"selector": "main section",
+"prop": "color",
+"value": "#1B5E20",
+"all": true
+},
+{
+"section": "css",
+"desc": "Sekcje: szerokość 28%",
+"type": "css",
+"selector": "main section",
+"prop": "width",
+"value": "28%",
+"all": true
+},
+{
+"section": "css",
+"desc": "Sekcje: wysokość 560 px",
+"type": "css",
+"selector": "main section",
+"prop": "height",
+"value": "560px",
+"all": true
+},
+{
+"section": "css",
+"desc": "Sekcje: marginesy zewnętrzne 2%",
+"type": "css",
+"selector": "main section",
+"prop": "margin",
+"value": "2%",
+"all": true
+},
+{
+"section": "css",
+"desc": "Sekcje: zaokrąglenie rogów 10 px",
+"type": "css",
+"selector": "main section",
+"prop": "border-top-left-radius",
+"value": "10px",
+"all": true
+},
+{
+"section": "css",
+"desc": "Sekcje: cień 8px 8px 6px DimGray",
+"type": "css",
+"selector": "main section",
+"prop": "box-shadow",
+"value": "DimGray 8px 8px 6px",
+"all": true
+},
+{
+"section": "css",
+"desc": "Sekcja pod kursorem: tło #10EF84",
+"type": "hover",
+"selector": "main section",
+"prop": "background-color",
+"value": "#10EF84"
+},
+{
+"section": "css",
+"desc": "Paragraf pod kursorem: czarny kolor czcionki",
+"type": "hover",
+"selector": "p",
+"prop": "color",
+"value": "black"
+},
+{
+"section": "css",
+"desc": "Nagłówki h2: kolor #1B5E20",
+"type": "css",
+"selector": "h2",
+"prop": "color",
+"value": "#1B5E20",
+"all": true
+},
+{
+"section": "css",
+"desc": "Nagłówki h3: kolor #1B5E20",
+"type": "cssRule",
+"selector": "h3",
+"prop": "color",
+"value": "#1B5E20",
+"hint": "nagłówki h3 tworzone skryptem: selektor h3"
+},
+{
+"section": "css",
+"desc": "Nagłówki h2: wyrównanie do środka",
+"type": "css",
+"selector": "h2",
+"prop": "text-align",
+"value": "center",
+"all": true
+},
+{
+"section": "css",
+"desc": "Nagłówki h3: wyrównanie do środka",
+"type": "cssRule",
+"selector": "h3",
+"prop": "text-align",
+"value": "center",
+"hint": "nagłówki h3 tworzone skryptem: selektor h3"
+},
+{
+"section": "css",
+"desc": "Nagłówki h2: odstępy między literami 3 px",
+"type": "css",
+"selector": "h2",
+"prop": "letter-spacing",
+"value": "3px",
+"all": true
+},
+{
+"section": "css",
+"desc": "Nagłówki h3: odstępy między literami 3 px",
+"type": "cssRule",
+"selector": "h3",
+"prop": "letter-spacing",
+"value": "3px",
+"hint": "nagłówki h3 tworzone skryptem: selektor h3"
+},
+{
+"section": "css",
+"desc": "Nagłówki h2: margines wewnętrzny górny 20 px",
+"type": "css",
+"selector": "h2",
+"prop": "padding-top",
+"value": "20px",
+"all": true
+},
+{
+"section": "css",
+"desc": "Nagłówki h3: margines wewnętrzny górny 20 px",
+"type": "cssRule",
+"selector": "h3",
+"prop": "padding-top",
+"value": "20px",
+"hint": "nagłówki h3 tworzone skryptem: selektor h3"
+},
+{
+"section": "css",
+"desc": "Lista punktowana: punktor obraz3.png",
+"type": "css",
+"selector": "ul",
+"prop": "list-style-image",
+"value": "obraz3.png",
+"match": "contains"
+},
+{
+"section": "php",
+"desc": "Skrypty łączą się z localhost, root bez hasła, baza medica; stosują znaczące nazwy; na końcu zamykają połączenie",
+"type": "php"
+},
+{
+"section": "php",
+"desc": "Skrypt 1 wysyła zapytanie 1; Skrypt 2 wysyła zapytanie 3",
+"type": "php"
+}
+]

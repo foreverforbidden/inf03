@@ -1,0 +1,476 @@
+[
+{
+"section": "grafika",
+"desc": "zamczysko.jpg przeskalowany z zachowaniem proporcji do szerokości 550 px",
+"type": "image",
+"name": "zamczysko.jpg",
+"width": 550
+},
+{
+"section": "pliki",
+"desc": "Strona gry.php",
+"type": "file",
+"name": "gry.php"
+},
+{
+"section": "pliki",
+"desc": "Arkusz stylów styl.css",
+"type": "file",
+"name": "styl.css"
+},
+{
+"section": "html",
+"desc": "HTML5, polski język, kodowanie UTF-8",
+"type": "head",
+"lang": "pl",
+"charset": true
+},
+{
+"section": "html",
+"desc": "Tytuł strony „Gry komputerowe”",
+"type": "head",
+"doctype": false,
+"title": "Gry komputerowe"
+},
+{
+"section": "html",
+"desc": "Arkusz styl.css połączony z kodem strony",
+"type": "head",
+"doctype": false,
+"stylesheet": "styl.css"
+},
+{
+"section": "html",
+"desc": "Bloki semantyczne: nagłówkowy, trzy sekcje, stopka",
+"type": "exists",
+"selector": "header ~ section ~ section ~ section ~ footer"
+},
+{
+"section": "html",
+"desc": "Trzy sekcje",
+"type": "exists",
+"selector": "section",
+"count": 3
+},
+{
+"section": "html",
+"desc": "Układ bloków: sekcja lewa obok środkowej",
+"type": "layout",
+"a": "section:nth-of-type(1)",
+"b": "section:nth-of-type(2)",
+"relation": "leftOf"
+},
+{
+"section": "html",
+"desc": "Układ bloków: sekcja środkowa obok prawej",
+"type": "layout",
+"a": "section:nth-of-type(2)",
+"b": "section:nth-of-type(3)",
+"relation": "leftOf"
+},
+{
+"section": "html",
+"desc": "Układ bloków: nagłówek nad sekcją lewą",
+"type": "layout",
+"a": "header",
+"b": "section:nth-of-type(1)",
+"relation": "above"
+},
+{
+"section": "html",
+"desc": "Układ bloków: stopka pod sekcją środkową",
+"type": "layout",
+"a": "footer",
+"b": "section:nth-of-type(2)",
+"relation": "below"
+},
+{
+"section": "html",
+"desc": "Blok nagłówkowy: nagłówek pierwszego stopnia „Ranking gier komputerowych”",
+"type": "text",
+"selector": "header h1",
+"equals": "Ranking gier komputerowych"
+},
+{
+"section": "html",
+"desc": "Sekcja lewa: nagłówek trzeciego stopnia „Top 5 gier w tym miesiącu”",
+"type": "text",
+"selector": "section:nth-of-type(1) h3",
+"index": 0,
+"equals": "Top 5 gier w tym miesiącu"
+},
+{
+"section": "php",
+"desc": "Sekcja lewa: lista punktowana wypełniona przez skrypt 1 (zapytanie 3, wzór „<nazwa> <punkty>”)",
+"type": "php"
+},
+{
+"section": "html",
+"desc": "Sekcja lewa: lista punktowana (nieuporządkowana)",
+"type": "exists",
+"selector": "section:nth-of-type(1) ul"
+},
+{
+"section": "html",
+"desc": "Sekcja lewa: nagłówek trzeciego stopnia „Nasz sklep”",
+"type": "text",
+"selector": "section:nth-of-type(1) h3",
+"index": 1,
+"equals": "Nasz sklep"
+},
+{
+"section": "html",
+"desc": "Sekcja lewa: odnośnik „Tu kupisz gry”",
+"type": "text",
+"selector": "section:nth-of-type(1) a",
+"equals": "Tu kupisz gry"
+},
+{
+"section": "html",
+"desc": "Odnośnik prowadzi do http://sklep.gry.pl",
+"type": "attr",
+"selector": "section:nth-of-type(1) a",
+"attr": "href",
+"equals": "http://sklep.gry.pl"
+},
+{
+"section": "html",
+"desc": "Sekcja lewa: nagłówek trzeciego stopnia „Stronę wykonał”",
+"type": "text",
+"selector": "section:nth-of-type(1) h3",
+"index": 2,
+"equals": "Stronę wykonał"
+},
+{
+"section": "html",
+"desc": "Sekcja lewa: paragraf z numerem zdającego",
+"type": "exists",
+"selector": "section:nth-of-type(1) p"
+},
+{
+"section": "php",
+"desc": "Sekcja środkowa: efekt działania skryptu 2 (zapytanie 1, obraz z src=zdjecie, alt=nazwa, title=id, paragraf z nazwą)",
+"type": "php"
+},
+{
+"section": "html",
+"desc": "Sekcja prawa: nagłówek trzeciego stopnia „Dodaj nową grę”",
+"type": "text",
+"selector": "section:nth-of-type(3) h3",
+"equals": "Dodaj nową grę"
+},
+{
+"section": "html",
+"desc": "Sekcja prawa: formularz wysyłający dane metodą bezpieczną (post)",
+"type": "attr",
+"selector": "section:nth-of-type(3) form",
+"attr": "method",
+"equals": "post"
+},
+{
+"section": "html",
+"desc": "Sekcja prawa: formularz do tego samego pliku (gry.php lub brak action)",
+"type": "exists",
+"selector": "section:nth-of-type(3) form"
+},
+{
+"section": "html",
+"desc": "Formularz w sekcji prawej: cztery pola edycyjne",
+"type": "exists",
+"selector": "section:nth-of-type(3) form input:not([type=submit])",
+"count": 4
+},
+{
+"section": "html",
+"desc": "Formularz w sekcji prawej: cztery etykiety (nazwa, opis, cena, zdjęcie)",
+"type": "exists",
+"selector": "section:nth-of-type(3) form label",
+"count": 4
+},
+{
+"section": "html",
+"desc": "Formularz w sekcji prawej: przycisk DODAJ",
+"type": "attr",
+"selector": "section:nth-of-type(3) form input[type=submit]",
+"attr": "value",
+"equals": "DODAJ"
+},
+{
+"section": "php",
+"desc": "Skrypt 4: przy wypełnionym polu nazwa wstawia do bazy zapytanie 4 z wartościami z formularza i punktami 0",
+"type": "php"
+},
+{
+"section": "html",
+"desc": "Stopka: formularz wysyłający dane metodą bezpieczną (post)",
+"type": "attr",
+"selector": "footer form",
+"attr": "method",
+"equals": "post"
+},
+{
+"section": "html",
+"desc": "Stopka: formularz zawiera pole edycyjne",
+"type": "exists",
+"selector": "footer form input:not([type=submit])",
+"count": 1
+},
+{
+"section": "html",
+"desc": "Stopka: przycisk „Pokaż opis”",
+"type": "attr",
+"selector": "footer form input[type=submit]",
+"attr": "value",
+"equals": "Pokaż opis"
+},
+{
+"section": "php",
+"desc": "Skrypt 3: dla podanego id wyświetla pod formularzem h2 „<nazwa>, <punkty> punktów, <cena> zł” i opis w paragrafie",
+"type": "php"
+},
+{
+"section": "php",
+"desc": "Skrypty łączą się z localhost, root bez hasła, baza gry; na końcu zamknięcie połączenia",
+"type": "php"
+},
+{
+"section": "php",
+"desc": "Znaczące nazewnictwo zmiennych i funkcji",
+"type": "manual"
+},
+{
+"section": "css",
+"desc": "Domyślnie: krój czcionki Garamond",
+"type": "css",
+"selector": "h1",
+"prop": "font-family",
+"value": "Garamond"
+},
+{
+"section": "css",
+"desc": "Domyślnie: biały kolor czcionki",
+"type": "css",
+"selector": "h1",
+"prop": "color",
+"value": "white"
+},
+{
+"section": "css",
+"desc": "Blok nagłówkowy: kolor tła Indigo",
+"type": "css",
+"selector": "header",
+"prop": "background-color",
+"value": "Indigo"
+},
+{
+"section": "css",
+"desc": "Blok nagłówkowy: wyrównanie tekstu do środka",
+"type": "css",
+"selector": "header",
+"prop": "text-align",
+"value": "center"
+},
+{
+"section": "css",
+"desc": "Blok nagłówkowy: marginesy wewnętrzne 2 px",
+"type": "css",
+"selector": "header",
+"prop": "padding",
+"value": "2px"
+},
+{
+"section": "css",
+"desc": "Sekcja lewa: kolor tła Indigo",
+"type": "css",
+"selector": "section:nth-of-type(1)",
+"prop": "background-color",
+"value": "Indigo"
+},
+{
+"section": "css",
+"desc": "Sekcja prawa: kolor tła Indigo",
+"type": "css",
+"selector": "section:nth-of-type(3)",
+"prop": "background-color",
+"value": "Indigo"
+},
+{
+"section": "css",
+"desc": "Sekcja lewa: wysokość 600 px",
+"type": "css",
+"selector": "section:nth-of-type(1)",
+"prop": "height",
+"value": "600px"
+},
+{
+"section": "css",
+"desc": "Sekcja prawa: wysokość 600 px",
+"type": "css",
+"selector": "section:nth-of-type(3)",
+"prop": "height",
+"value": "600px"
+},
+{
+"section": "css",
+"desc": "Sekcja środkowa: czarny kolor tła",
+"type": "css",
+"selector": "section:nth-of-type(2)",
+"prop": "background-color",
+"value": "black"
+},
+{
+"section": "css",
+"desc": "Sekcja środkowa: wysokość 600 px",
+"type": "css",
+"selector": "section:nth-of-type(2)",
+"prop": "height",
+"value": "600px"
+},
+{
+"section": "css",
+"desc": "Sekcja środkowa: zawsze widoczne paski przewijania",
+"type": "css",
+"selector": "section:nth-of-type(2)",
+"prop": "overflow",
+"value": "scroll"
+},
+{
+"section": "css",
+"desc": "Ekran szerszy niż 800 px: szerokość sekcji lewej 20%",
+"type": "css",
+"selector": "section:nth-of-type(1)",
+"prop": "width",
+"value": "20%"
+},
+{
+"section": "css",
+"desc": "Ekran szerszy niż 800 px: szerokość sekcji prawej 20%",
+"type": "css",
+"selector": "section:nth-of-type(3)",
+"prop": "width",
+"value": "20%"
+},
+{
+"section": "css",
+"desc": "Ekran szerszy niż 800 px: szerokość sekcji środkowej 60%",
+"type": "css",
+"selector": "section:nth-of-type(2)",
+"prop": "width",
+"value": "60%"
+},
+{
+"section": "css",
+"desc": "Ekran do 800 px: sekcje lewa i środkowa jedna pod drugą",
+"type": "layout",
+"a": "section:nth-of-type(2)",
+"b": "section:nth-of-type(1)",
+"relation": "below",
+"viewport": 600
+},
+{
+"section": "css",
+"desc": "Ekran do 800 px: sekcje środkowa i prawa jedna pod drugą",
+"type": "layout",
+"a": "section:nth-of-type(3)",
+"b": "section:nth-of-type(2)",
+"relation": "below",
+"viewport": 600
+},
+{
+"section": "css",
+"desc": "Stopka: kolor tła Indigo",
+"type": "css",
+"selector": "footer",
+"prop": "background-color",
+"value": "Indigo"
+},
+{
+"section": "css",
+"desc": "Stopka: wysokość 150 px",
+"type": "css",
+"selector": "footer",
+"prop": "height",
+"value": "150px"
+},
+{
+"section": "css",
+"desc": "Liczba punktów: kolor tła Tomato",
+"type": "cssRule",
+"selector": ".punkty",
+"prop": "background-color",
+"value": "Tomato",
+"hint": "elementy tworzone skryptem: liczba punktów w span.punkty"
+},
+{
+"section": "css",
+"desc": "Liczba punktów: zaokrąglenie rogów 50%",
+"type": "cssRule",
+"selector": ".punkty",
+"prop": "border-radius",
+"value": "50%",
+"hint": "elementy tworzone skryptem: liczba punktów w span.punkty"
+},
+{
+"section": "css",
+"desc": "Liczba punktów: marginesy wewnętrzne 5 px",
+"type": "cssRule",
+"selector": ".punkty",
+"prop": "padding",
+"value": "5px",
+"hint": "elementy tworzone skryptem: liczba punktów w span.punkty"
+},
+{
+"section": "css",
+"desc": "Element listy: marginesy wewnętrzne 5 px",
+"type": "cssRule",
+"selector": "li",
+"prop": "padding",
+"value": "5px",
+"hint": "elementy listy tworzone skryptem: selektor li"
+},
+{
+"section": "css",
+"desc": "Bloki gier w sekcji środkowej: jeden obok drugiego",
+"type": "cssRule",
+"selector": ".gra",
+"prop": "float",
+"value": "left",
+"hint": "bloki tworzone skryptem: div.gra"
+},
+{
+"section": "css",
+"desc": "Bloki gier: wyrównanie tekstu do środka",
+"type": "cssRule",
+"selector": ".gra",
+"prop": "text-align",
+"value": "center",
+"hint": "bloki tworzone skryptem: div.gra"
+},
+{
+"section": "css",
+"desc": "Bloki gier: marginesy wewnętrzne 3 px",
+"type": "cssRule",
+"selector": ".gra",
+"prop": "padding",
+"value": "3px",
+"hint": "bloki tworzone skryptem: div.gra"
+},
+{
+"section": "css",
+"desc": "Pole edycyjne: marginesy zewnętrzne 10 px",
+"type": "css",
+"selector": "input[type=text]",
+"prop": "margin",
+"value": "10px",
+"all": true
+},
+{
+"section": "css",
+"desc": "Pole edycyjne: kolor czcionki Indigo",
+"type": "css",
+"selector": "input[type=text]",
+"prop": "color",
+"value": "Indigo",
+"all": true
+}
+]
