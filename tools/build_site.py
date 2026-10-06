@@ -326,13 +326,13 @@ def web_text(task):
     return text.strip()
 
 
-def save_image(src, dst, max_side=1000):
-    """Kopia grafiki do podgladu; duze zmniejszane (te same nazwa i format)."""
+def save_image(src, dst, max_side=1600):
+    """Kopia materialu do podgladu; bardzo duze zmniejszane (te same nazwa i format)."""
     try:
         im = Image.open(src)
         if (im.format or "").upper() == "BMP":
-            max_side = 640
-        if max(im.size) <= max_side and os.path.getsize(src) <= 300_000:
+            max_side = 800
+        if max(im.size) <= max_side and os.path.getsize(src) <= 1_000_000:
             shutil.copy2(src, dst)
             return
         im.thumbnail((max_side, max_side))
@@ -386,7 +386,7 @@ def build_web(code, meta, task, out_dir):
             orig = next(iter(glob.glob(os.path.join(mat, "**", f), recursive=True)), None)
             if orig and open(orig, "rb").read() == open(src, "rb").read():
                 continue  # taka sama jak w materialach - podglad wezmie ja z assets/
-            save_image(src, os.path.join(sol_dir, f))
+            shutil.copy2(src, os.path.join(sol_dir, f))  # bez zmian: kryteria sprawdzaja wymiary
             solution.append(f)
     assets, texts = [], []
     for dp, _, names in os.walk(mat):

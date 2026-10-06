@@ -28,6 +28,11 @@ function replaceAssetRefs(text, uploads, html = false) {
 const PRELUDE = `<script>
 window.__alerts = [];
 window.__errors = [];
+window.__console = [];
+(function () {
+  var log = console.log;
+  console.log = function () { window.__console.push(Array.prototype.join.call(arguments, ' ')); return log.apply(console, arguments); };
+})();
 window.addEventListener('error', function (e) {
   var m = (e.message || 'błąd') + (e.lineno ? ' (wiersz ' + e.lineno + ')' : '');
   window.__errors.push(m);
@@ -134,6 +139,9 @@ function cmpCss(el, prop, expected, actual, tol = 1.5) {
     return { ok: first(got) === first(expected) || first(got) === first(want), got };
   }
   if (norm(want) === norm(got)) return { ok: true, got };
+  // url(...): liczy sie nazwa pliku (grafika moze byc z materialow albo wgrana przez kursanta)
+  const files = (v) => [...String(v).matchAll(/url\(["']?([^"')]+)["']?\)/g)].map((m) => decodeURIComponent(m[1]).split(/[/?#]/).filter(Boolean).pop());
+  if (/url\(/.test(want) && /url\(/.test(got) && files(want).join() === files(got).join()) return { ok: true, got };
   // dlugosci: tolerancja zaokraglen
   const nw = norm(want).split(' '), ng = norm(got).split(' ');
   if (LENGTH_PROPS.test(prop) && nw.length === ng.length && nw.every((w, i) => {
@@ -149,6 +157,10 @@ function ruleValueMatches(el, style, prop, expected) {
   if (!v) return false;
   if (!el) return norm(v).toLowerCase() === norm(expected).toLowerCase();
   const a = computedFor(el, prop, v), b = computedFor(el, prop, expected);
+  if (/url\(/.test(a) && /url\(/.test(b)) {
+    const f = (x) => [...String(x).matchAll(/url\(["']?([^"')]+)["']?\)/g)].map((m) => decodeURIComponent(m[1]).split(/[/?#]/).filter(Boolean).pop()).join();
+    return f(a) === f(b);
+  }
   if (prop === 'font-family') return v.split(',')[0].replace(/["']/g, '').trim().toLowerCase() === expected.split(',')[0].replace(/["']/g, '').trim().toLowerCase();
   return norm(a) === norm(b);
 }
@@ -237,13 +249,21 @@ function checkStatic(doc, c, project, entry) {
       return { ok: true };
     }
     case 'cssRule': {
-      const el = doc.querySelector(c.match || c.selector);
+      let el = doc.querySelector(c.match || c.selector);
+      // gdy elementu nie ma (np. tworzy go PHP), porownujemy na tymczasowym elemencie, zeby przegladarka
+      // znormalizowala obie wartosci (np. kolejnosc w box-shadow)
+      const temp = el ? null : doc.body.appendChild(doc.createElement('div'));
+      if (temp) el = temp;
       const want = normSel(c.selector);
-      for (const { rule, media } of allRules(doc)) {
-        if (!!c.media !== !!media) continue;
-        const parts = rule.selectorText.split(',').map(normSel);
-        if (!parts.includes(want)) continue;
-        if (!c.prop || ruleValueMatches(el, rule.style, c.prop, c.value)) return { ok: true };
+      try {
+        for (const { rule, media } of allRules(doc)) {
+          if (!!c.media !== !!media) continue;
+          const parts = rule.selectorText.split(',').map(normSel);
+          if (!parts.includes(want)) continue;
+          if (!c.prop || ruleValueMatches(el, rule.style, c.prop, c.value)) return { ok: true };
+        }
+      } finally {
+        if (temp) temp.remove();
       }
       return { ok: false, msg: c.prop ? `brak reguły „${c.selector} { ${c.prop}: ${c.value} }”` : `brak reguły dla selektora „${c.selector}”` };
     }
@@ -342,6 +362,11 @@ async function checkJs(project, entry, c) {
     await new Promise((r) => setTimeout(r, 30));
     const errs = () => ((win.__errors || []).length ? ` (błąd JS: ${win.__errors[0]})` : '');
     for (const e of c.expect || []) {
+      if (e.console != null) {
+        const lines = win.__console || [];
+        if (!lines.some((l) => norm(l).includes(norm(e.console)))) return { ok: false, msg: `w konsoli brak „${e.console}”${errs()}` };
+        continue;
+      }
       if (e.alert != null) {
         const al = win.__alerts || [];
         if (!al.some((a) => textMatch(a, { ...e, contains: e.alert === true ? undefined : e.alert }))) return { ok: false, msg: `brak komunikatu „${e.alert}”${errs()}` };

@@ -1,0 +1,908 @@
+[
+ {
+  "section": "grafika",
+  "desc": "Na grafice tulipany.jpg filtr rozmycia Gaussa 3,5 w obu osiach (zrzut rozmycie.png)",
+  "type": "manual"
+ },
+ {
+  "section": "pliki",
+  "desc": "Strona rejestracja.html",
+  "type": "file",
+  "name": "rejestracja.html"
+ },
+ {
+  "section": "pliki",
+  "desc": "Arkusz stylów styl.css",
+  "type": "file",
+  "name": "styl.css"
+ },
+ {
+  "section": "html",
+  "desc": "Zapisana w języku HTML5, język zawartości polski",
+  "type": "head",
+  "page": "rejestracja.html",
+  "lang": "pl"
+ },
+ {
+  "section": "html",
+  "desc": "Jawnie zastosowane kodowanie polskich znaków (UTF-8)",
+  "type": "head",
+  "page": "rejestracja.html",
+  "doctype": false,
+  "charset": true
+ },
+ {
+  "section": "html",
+  "desc": "Tytuł strony „Rejestracja”",
+  "type": "head",
+  "page": "rejestracja.html",
+  "doctype": false,
+  "title": "Rejestracja"
+ },
+ {
+  "section": "html",
+  "desc": "Arkusz stylów styl.css połączony z kodem strony",
+  "type": "head",
+  "page": "rejestracja.html",
+  "doctype": false,
+  "stylesheet": "styl.css"
+ },
+ {
+  "section": "html",
+  "desc": "Podział strony: baner (header) na górze",
+  "type": "exists",
+  "page": "rejestracja.html",
+  "selector": "body > header",
+  "count": 1
+ },
+ {
+  "section": "html",
+  "desc": "Blok główny (main) poniżej banera",
+  "type": "exists",
+  "page": "rejestracja.html",
+  "selector": "body > header ~ main",
+  "count": 1
+ },
+ {
+  "section": "html",
+  "desc": "Na dole cztery bloki stopki (footer)",
+  "type": "exists",
+  "page": "rejestracja.html",
+  "selector": "body > main ~ footer",
+  "count": 4
+ },
+ {
+  "section": "html",
+  "desc": "Baner: nagłówek pierwszego stopnia „Formularz rejestracyjny konferencji Nasze Kwiaty”",
+  "type": "text",
+  "page": "rejestracja.html",
+  "selector": "header h1",
+  "equals": "Formularz rejestracyjny konferencji Nasze Kwiaty"
+ },
+ {
+  "section": "html",
+  "desc": "Fraza „Nasze Kwiaty” w znaczniku tekstu uwypuklonego (em)",
+  "type": "text",
+  "page": "rejestracja.html",
+  "selector": "header h1 em",
+  "equals": "Nasze Kwiaty"
+ },
+ {
+  "section": "html",
+  "desc": "Blok główny: formularz",
+  "type": "exists",
+  "page": "rejestracja.html",
+  "selector": "main form",
+  "count": 1
+ },
+ {
+  "section": "html",
+  "desc": "Formularz złożony z trzech bloków",
+  "type": "exists",
+  "page": "rejestracja.html",
+  "selector": "main form section",
+  "count": 3,
+  "hint": "bloki formularza jako section"
+ },
+ {
+  "section": "html",
+  "desc": "Blok 1: nagłówek drugiego stopnia „Dane osobowe”",
+  "type": "text",
+  "page": "rejestracja.html",
+  "selector": "main form section:nth-of-type(1) h2",
+  "equals": "Dane osobowe"
+ },
+ {
+  "section": "html",
+  "desc": "Blok 1: dwa pola edycyjne i przycisk",
+  "type": "exists",
+  "page": "rejestracja.html",
+  "selector": "main form section:nth-of-type(1) input",
+  "count": 3
+ },
+ {
+  "section": "html",
+  "desc": "Blok 1: pole z podpowiedzią „Wpisz imię...”",
+  "type": "attr",
+  "page": "rejestracja.html",
+  "selector": "main form section:nth-of-type(1) input",
+  "index": 0,
+  "attr": "placeholder",
+  "equals": "Wpisz imię..."
+ },
+ {
+  "section": "html",
+  "desc": "Blok 1: pole „Wpisz imię...” jest wymagane",
+  "type": "attr",
+  "page": "rejestracja.html",
+  "selector": "main form section:nth-of-type(1) input",
+  "index": 0,
+  "attr": "required"
+ },
+ {
+  "section": "html",
+  "desc": "Blok 1: pole z podpowiedzią „Wpisz nazwisko...”",
+  "type": "attr",
+  "page": "rejestracja.html",
+  "selector": "main form section:nth-of-type(1) input",
+  "index": 1,
+  "attr": "placeholder",
+  "equals": "Wpisz nazwisko..."
+ },
+ {
+  "section": "html",
+  "desc": "Blok 1: pole „Wpisz nazwisko...” jest wymagane",
+  "type": "attr",
+  "page": "rejestracja.html",
+  "selector": "main form section:nth-of-type(1) input",
+  "index": 1,
+  "attr": "required"
+ },
+ {
+  "section": "html",
+  "desc": "Blok 1: przycisk o treści „Następna karta”",
+  "type": "attr",
+  "page": "rejestracja.html",
+  "selector": "main form section:nth-of-type(1) input[type=button], main form section:nth-of-type(1) button",
+  "attr": "value",
+  "equals": "Następna karta",
+  "hint": "przycisk jako input type=button"
+ },
+ {
+  "section": "html",
+  "desc": "Blok 1: przycisk wywołuje funkcję skryptu (onclick)",
+  "type": "attr",
+  "page": "rejestracja.html",
+  "selector": "main form section:nth-of-type(1) input[type=button], main form section:nth-of-type(1) button",
+  "attr": "onclick"
+ },
+ {
+  "section": "html",
+  "desc": "Blok 2: nagłówek drugiego stopnia „Dane kontaktowe”",
+  "type": "text",
+  "page": "rejestracja.html",
+  "selector": "main form section:nth-of-type(2) h2",
+  "equals": "Dane kontaktowe"
+ },
+ {
+  "section": "html",
+  "desc": "Blok 2: pole z podpowiedzią „Twój e-mail...”",
+  "type": "attr",
+  "page": "rejestracja.html",
+  "selector": "main form section:nth-of-type(2) input",
+  "index": 0,
+  "attr": "placeholder",
+  "equals": "Twój e-mail..."
+ },
+ {
+  "section": "html",
+  "desc": "Blok 2: pole typu dedykowanego do adresu e-mail",
+  "type": "attr",
+  "page": "rejestracja.html",
+  "selector": "main form section:nth-of-type(2) input",
+  "index": 0,
+  "attr": "type",
+  "equals": "email"
+ },
+ {
+  "section": "html",
+  "desc": "Blok 2: pole z podpowiedzią „Twój numer telefonu...”",
+  "type": "attr",
+  "page": "rejestracja.html",
+  "selector": "main form section:nth-of-type(2) input",
+  "index": 1,
+  "attr": "placeholder",
+  "equals": "Twój numer telefonu..."
+ },
+ {
+  "section": "html",
+  "desc": "Blok 2: pole typu dedykowanego do numeru telefonu",
+  "type": "attr",
+  "page": "rejestracja.html",
+  "selector": "main form section:nth-of-type(2) input",
+  "index": 1,
+  "attr": "type",
+  "equals": "tel"
+ },
+ {
+  "section": "html",
+  "desc": "Blok 2: przycisk o treści „Następna karta”",
+  "type": "attr",
+  "page": "rejestracja.html",
+  "selector": "main form section:nth-of-type(2) input[type=button], main form section:nth-of-type(2) button",
+  "attr": "value",
+  "equals": "Następna karta"
+ },
+ {
+  "section": "html",
+  "desc": "Blok 2: przycisk wywołuje funkcję skryptu (onclick)",
+  "type": "attr",
+  "page": "rejestracja.html",
+  "selector": "main form section:nth-of-type(2) input[type=button], main form section:nth-of-type(2) button",
+  "attr": "onclick"
+ },
+ {
+  "section": "html",
+  "desc": "Blok 3: nagłówek drugiego stopnia „Hasło do logowania”",
+  "type": "text",
+  "page": "rejestracja.html",
+  "selector": "main form section:nth-of-type(3) h2",
+  "equals": "Hasło do logowania"
+ },
+ {
+  "section": "html",
+  "desc": "Blok 3: pole z podpowiedzią „Podaj hasło”",
+  "type": "attr",
+  "page": "rejestracja.html",
+  "selector": "main form section:nth-of-type(3) input",
+  "index": 0,
+  "attr": "placeholder",
+  "equals": "Podaj hasło"
+ },
+ {
+  "section": "html",
+  "desc": "Blok 3: pole „Podaj hasło” ukrywa wpisywane hasło",
+  "type": "attr",
+  "page": "rejestracja.html",
+  "selector": "main form section:nth-of-type(3) input",
+  "index": 0,
+  "attr": "type",
+  "equals": "password"
+ },
+ {
+  "section": "html",
+  "desc": "Blok 3: pole z podpowiedzią „Powtórz hasło”",
+  "type": "attr",
+  "page": "rejestracja.html",
+  "selector": "main form section:nth-of-type(3) input",
+  "index": 1,
+  "attr": "placeholder",
+  "equals": "Powtórz hasło"
+ },
+ {
+  "section": "html",
+  "desc": "Blok 3: pole „Powtórz hasło” ukrywa wpisywane hasło",
+  "type": "attr",
+  "page": "rejestracja.html",
+  "selector": "main form section:nth-of-type(3) input",
+  "index": 1,
+  "attr": "type",
+  "equals": "password"
+ },
+ {
+  "section": "html",
+  "desc": "Blok 3: przycisk o treści „Zatwierdź”",
+  "type": "attr",
+  "page": "rejestracja.html",
+  "selector": "main form section:nth-of-type(3) input[type=button], main form section:nth-of-type(3) button",
+  "attr": "value",
+  "equals": "Zatwierdź"
+ },
+ {
+  "section": "html",
+  "desc": "Blok 3: przycisk wywołuje funkcję skryptu (onclick)",
+  "type": "attr",
+  "page": "rejestracja.html",
+  "selector": "main form section:nth-of-type(3) input[type=button], main form section:nth-of-type(3) button",
+  "attr": "onclick"
+ },
+ {
+  "section": "html",
+  "desc": "Pierwszy blok stopki: film motyl.mp4",
+  "type": "attr",
+  "page": "rejestracja.html",
+  "selector": "footer:nth-of-type(1) video, footer:nth-of-type(1) video source",
+  "attr": "src",
+  "equals": "motyl.mp4"
+ },
+ {
+  "section": "html",
+  "desc": "Pierwszy blok stopki: film z kontrolkami sterowania",
+  "type": "exists",
+  "page": "rejestracja.html",
+  "selector": "footer:nth-of-type(1) video[controls]"
+ },
+ {
+  "section": "html",
+  "desc": "Pierwszy blok stopki: tekst „Przeglądarka nie obsługuje tego formatu”",
+  "type": "text",
+  "page": "rejestracja.html",
+  "selector": "footer:nth-of-type(1) video",
+  "contains": "Przeglądarka nie obsługuje tego formatu"
+ },
+ {
+  "section": "html",
+  "desc": "Drugi blok stopki: nagłówek trzeciego stopnia „Plan konferencji”",
+  "type": "text",
+  "page": "rejestracja.html",
+  "selector": "footer:nth-of-type(2) h3",
+  "equals": "Plan konferencji"
+ },
+ {
+  "section": "html",
+  "desc": "Drugi blok stopki: tabela o dwóch wierszach",
+  "type": "exists",
+  "page": "rejestracja.html",
+  "selector": "footer:nth-of-type(2) table tr",
+  "count": 2
+ },
+ {
+  "section": "html",
+  "desc": "Drugi blok stopki: tabela o dwóch kolumnach (4 komórki)",
+  "type": "exists",
+  "page": "rejestracja.html",
+  "selector": "footer:nth-of-type(2) table td",
+  "count": 4
+ },
+ {
+  "section": "html",
+  "desc": "Tabela: „9:00 - 12:00”",
+  "type": "text",
+  "page": "rejestracja.html",
+  "selector": "footer:nth-of-type(2) table tr:nth-child(1) td:nth-child(1)",
+  "equals": "9:00 - 12:00"
+ },
+ {
+  "section": "html",
+  "desc": "Tabela: „Pielęgnacja roślin”",
+  "type": "text",
+  "page": "rejestracja.html",
+  "selector": "footer:nth-of-type(2) table tr:nth-child(1) td:nth-child(2)",
+  "equals": "Pielęgnacja roślin"
+ },
+ {
+  "section": "html",
+  "desc": "Tabela: „13:00 - 15:00”",
+  "type": "text",
+  "page": "rejestracja.html",
+  "selector": "footer:nth-of-type(2) table tr:nth-child(2) td:nth-child(1)",
+  "equals": "13:00 - 15:00"
+ },
+ {
+  "section": "html",
+  "desc": "Tabela: „Targi kwiatowe”",
+  "type": "text",
+  "page": "rejestracja.html",
+  "selector": "footer:nth-of-type(2) table tr:nth-child(2) td:nth-child(2)",
+  "equals": "Targi kwiatowe"
+ },
+ {
+  "section": "html",
+  "desc": "Trzeci blok stopki: paragraf z odnośnikiem",
+  "type": "exists",
+  "page": "rejestracja.html",
+  "selector": "footer:nth-of-type(3) p a"
+ },
+ {
+  "section": "html",
+  "desc": "Odnośnik prowadzi do adresu https://kwiaty.pl/",
+  "type": "attr",
+  "page": "rejestracja.html",
+  "selector": "footer:nth-of-type(3) p a",
+  "attr": "href",
+  "equals": "https://kwiaty.pl/"
+ },
+ {
+  "section": "html",
+  "desc": "Odnośnik o treści „Internetowa kwiaciarnia”",
+  "type": "text",
+  "page": "rejestracja.html",
+  "selector": "footer:nth-of-type(3) p a",
+  "equals": "Internetowa kwiaciarnia"
+ },
+ {
+  "section": "html",
+  "desc": "Czwarty blok stopki: paragraf „Formularz wykonał: ” i numer zdającego",
+  "type": "text",
+  "page": "rejestracja.html",
+  "selector": "footer:nth-of-type(4) p",
+  "startsWith": "Formularz wykonał:"
+ },
+ {
+  "section": "css",
+  "desc": "Domyślne formatowanie wszystkich selektorów: krój czcionki Cambria",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "h2",
+  "prop": "font-family",
+  "value": "Cambria"
+ },
+ {
+  "section": "css",
+  "desc": "Baner: kolor tła #C2185B",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "header",
+  "prop": "background-color",
+  "value": "#C2185B"
+ },
+ {
+  "section": "css",
+  "desc": "Baner: biały kolor czcionki",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "header",
+  "prop": "color",
+  "value": "white"
+ },
+ {
+  "section": "css",
+  "desc": "Baner: wyrównanie tekstu do środka",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "header",
+  "prop": "text-align",
+  "value": "center"
+ },
+ {
+  "section": "css",
+  "desc": "Baner: marginesy wewnętrzne 15 px",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "header",
+  "prop": "padding",
+  "value": "15px"
+ },
+ {
+  "section": "css",
+  "desc": "Blok główny: tło stanowi obraz tulipany.jpg",
+  "type": "manual",
+  "hint": "background-image: url(tulipany.jpg) dla main"
+ },
+ {
+  "section": "css",
+  "desc": "Blok główny: wysokość 500 px",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "main",
+  "prop": "height",
+  "value": "500px"
+ },
+ {
+  "section": "css",
+  "desc": "Bloki stopki: kolor tła #C2185B",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "footer",
+  "all": true,
+  "prop": "background-color",
+  "value": "#C2185B"
+ },
+ {
+  "section": "css",
+  "desc": "Bloki stopki: biały kolor czcionki",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "footer",
+  "all": true,
+  "prop": "color",
+  "value": "white"
+ },
+ {
+  "section": "css",
+  "desc": "Bloki stopki: szerokość 25%",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "footer",
+  "all": true,
+  "prop": "width",
+  "value": "25%"
+ },
+ {
+  "section": "css",
+  "desc": "Bloki stopki: wysokość 240 px",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "footer",
+  "all": true,
+  "prop": "height",
+  "value": "240px"
+ },
+ {
+  "section": "css",
+  "desc": "Bloki formularza: kolor tła #FCE4EC",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "main form section",
+  "all": true,
+  "prop": "background-color",
+  "value": "#FCE4EC"
+ },
+ {
+  "section": "css",
+  "desc": "Bloki formularza: szerokość 25%",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "main form section",
+  "all": true,
+  "prop": "width",
+  "value": "25%"
+ },
+ {
+  "section": "css",
+  "desc": "Bloki formularza: wysokość 300 px",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "main form section",
+  "all": true,
+  "prop": "height",
+  "value": "300px"
+ },
+ {
+  "section": "css",
+  "desc": "Bloki formularza: marginesy zewnętrzne 25 px",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "main form section",
+  "all": true,
+  "prop": "margin",
+  "value": "25px"
+ },
+ {
+  "section": "css",
+  "desc": "Bloki formularza: marginesy wewnętrzne 16 px",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "main form section",
+  "all": true,
+  "prop": "padding",
+  "value": "16px"
+ },
+ {
+  "section": "css",
+  "desc": "Pierwszy blok formularza jest widoczny",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "main form section:nth-of-type(1)",
+  "prop": "visibility",
+  "value": "visible"
+ },
+ {
+  "section": "css",
+  "desc": "Drugi blok formularza ukryty (visibility, blok nie jest usunięty)",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "main form section:nth-of-type(2)",
+  "prop": "visibility",
+  "value": "hidden"
+ },
+ {
+  "section": "css",
+  "desc": "Trzeci blok formularza ukryty (visibility, blok nie jest usunięty)",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "main form section:nth-of-type(3)",
+  "prop": "visibility",
+  "value": "hidden"
+ },
+ {
+  "section": "css",
+  "desc": "Paragraf: margines wewnętrzny górny 20 px",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "p",
+  "prop": "padding-top",
+  "value": "20px"
+ },
+ {
+  "section": "css",
+  "desc": "Paragraf: styl zdefiniowany wyłącznie selektorem znacznika paragrafu",
+  "type": "cssRule",
+  "page": "rejestracja.html",
+  "selector": "p",
+  "prop": "padding-top",
+  "value": "20px"
+ },
+ {
+  "section": "css",
+  "desc": "Odnośnik: biały kolor czcionki",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "a",
+  "prop": "color",
+  "value": "white"
+ },
+ {
+  "section": "css",
+  "desc": "Pola edycyjne oprócz przycisków: szerokość 80%",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "main form input:not([type=button]):not([type=submit])",
+  "all": true,
+  "prop": "width",
+  "value": "80%"
+ },
+ {
+  "section": "css",
+  "desc": "Pola edycyjne oprócz przycisków: wysokość 30 px",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "main form input:not([type=button]):not([type=submit])",
+  "all": true,
+  "prop": "height",
+  "value": "30px"
+ },
+ {
+  "section": "css",
+  "desc": "Pola edycyjne oprócz przycisków: marginesy zewnętrzne 10 px",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "main form input:not([type=button]):not([type=submit])",
+  "all": true,
+  "prop": "margin",
+  "value": "10px"
+ },
+ {
+  "section": "css",
+  "desc": "Przyciski: kolor tła #c2185b",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "main form input[type=button], main form button",
+  "all": true,
+  "prop": "background-color",
+  "value": "#c2185b"
+ },
+ {
+  "section": "css",
+  "desc": "Przyciski: biały kolor czcionki",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "main form input[type=button], main form button",
+  "all": true,
+  "prop": "color",
+  "value": "white"
+ },
+ {
+  "section": "css",
+  "desc": "Przyciski: margines zewnętrzny górny 50 px",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "main form input[type=button], main form button",
+  "all": true,
+  "prop": "margin-top",
+  "value": "50px"
+ },
+ {
+  "section": "css",
+  "desc": "Przyciski: margines zewnętrzny lewy 60%",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "main form input[type=button], main form button",
+  "all": true,
+  "prop": "margin-left",
+  "value": "60%"
+ },
+ {
+  "section": "css",
+  "desc": "Przyciski: marginesy wewnętrzne 20 px",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "main form input[type=button], main form button",
+  "all": true,
+  "prop": "padding",
+  "value": "20px"
+ },
+ {
+  "section": "css",
+  "desc": "Przyciski: brak obramowania",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "main form input[type=button], main form button",
+  "all": true,
+  "prop": "border-top-style",
+  "value": "none"
+ },
+ {
+  "section": "css",
+  "desc": "Film: szerokość 100%",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "video",
+  "prop": "width",
+  "value": "100%"
+ },
+ {
+  "section": "css",
+  "desc": "Film: wysokość 100%",
+  "type": "css",
+  "page": "rejestracja.html",
+  "selector": "video",
+  "prop": "height",
+  "value": "100%"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: baner na całej szerokości",
+  "type": "layout",
+  "page": "rejestracja.html",
+  "a": "header",
+  "relation": "fullWidth"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: blok główny pod banerem",
+  "type": "layout",
+  "page": "rejestracja.html",
+  "a": "main",
+  "b": "header",
+  "relation": "below"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: bloki stopki pod blokiem głównym",
+  "type": "layout",
+  "page": "rejestracja.html",
+  "a": "footer:nth-of-type(1)",
+  "b": "main",
+  "relation": "below"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: bloki formularza obok siebie (1 i 2)",
+  "type": "layout",
+  "page": "rejestracja.html",
+  "a": "main form section:nth-of-type(1)",
+  "b": "main form section:nth-of-type(2)",
+  "relation": "leftOf"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: bloki formularza obok siebie (2 i 3)",
+  "type": "layout",
+  "page": "rejestracja.html",
+  "a": "main form section:nth-of-type(2)",
+  "b": "main form section:nth-of-type(3)",
+  "relation": "leftOf"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: bloki stopki obok siebie (1 i 2)",
+  "type": "layout",
+  "page": "rejestracja.html",
+  "a": "footer:nth-of-type(1)",
+  "b": "footer:nth-of-type(2)",
+  "relation": "leftOf"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: bloki stopki obok siebie (3 i 4)",
+  "type": "layout",
+  "page": "rejestracja.html",
+  "a": "footer:nth-of-type(3)",
+  "b": "footer:nth-of-type(4)",
+  "relation": "leftOf"
+ },
+ {
+  "section": "js",
+  "desc": "Skrypt: klik w przycisk bloku 1 ukrywa blok 1",
+  "type": "js",
+  "page": "rejestracja.html",
+  "steps": [
+   {
+    "click": "main form section:nth-of-type(1) input[type=button], main form section:nth-of-type(1) button"
+   }
+  ],
+  "expect": [
+   {
+    "selector": "main form section:nth-of-type(1)",
+    "css": "visibility",
+    "value": "hidden"
+   }
+  ]
+ },
+ {
+  "section": "js",
+  "desc": "Skrypt: klik w przycisk bloku 1 pokazuje blok 2",
+  "type": "js",
+  "page": "rejestracja.html",
+  "steps": [
+   {
+    "click": "main form section:nth-of-type(1) input[type=button], main form section:nth-of-type(1) button"
+   }
+  ],
+  "expect": [
+   {
+    "selector": "main form section:nth-of-type(2)",
+    "css": "visibility",
+    "value": "visible"
+   }
+  ]
+ },
+ {
+  "section": "js",
+  "desc": "Skrypt: klik w przycisk bloku 2 ukrywa blok 2",
+  "type": "js",
+  "page": "rejestracja.html",
+  "steps": [
+   {
+    "click": "main form section:nth-of-type(1) input[type=button], main form section:nth-of-type(1) button"
+   },
+   {
+    "click": "main form section:nth-of-type(2) input[type=button], main form section:nth-of-type(2) button"
+   }
+  ],
+  "expect": [
+   {
+    "selector": "main form section:nth-of-type(2)",
+    "css": "visibility",
+    "value": "hidden"
+   }
+  ]
+ },
+ {
+  "section": "js",
+  "desc": "Skrypt: klik w przycisk bloku 2 pokazuje blok 3",
+  "type": "js",
+  "page": "rejestracja.html",
+  "steps": [
+   {
+    "click": "main form section:nth-of-type(1) input[type=button], main form section:nth-of-type(1) button"
+   },
+   {
+    "click": "main form section:nth-of-type(2) input[type=button], main form section:nth-of-type(2) button"
+   }
+  ],
+  "expect": [
+   {
+    "selector": "main form section:nth-of-type(3)",
+    "css": "visibility",
+    "value": "visible"
+   }
+  ]
+ },
+ {
+  "section": "js",
+  "desc": "Skrypt: różne hasła: okienko popup „Podane hasła różnią się”",
+  "type": "js",
+  "page": "rejestracja.html",
+  "steps": [
+   {
+    "click": "main form section:nth-of-type(1) input[type=button], main form section:nth-of-type(1) button"
+   },
+   {
+    "click": "main form section:nth-of-type(2) input[type=button], main form section:nth-of-type(2) button"
+   },
+   {
+    "set": "main form section:nth-of-type(3) input:nth-of-type(1)",
+    "value": "haslo123"
+   },
+   {
+    "set": "main form section:nth-of-type(3) input:nth-of-type(2)",
+    "value": "innehaslo"
+   },
+   {
+    "click": "main form section:nth-of-type(3) input[type=button], main form section:nth-of-type(3) button"
+   }
+  ],
+  "expect": [
+   {
+    "alert": "Podane hasła różnią się"
+   }
+  ]
+ },
+ {
+  "section": "js",
+  "desc": "Skrypt: imię i nazwisko z bloku 1 wyświetlone w konsoli jako „Witaj <imie> <nazwisko>” (np. „Witaj Alicja Kowalska”)",
+  "type": "manual"
+ }
+]

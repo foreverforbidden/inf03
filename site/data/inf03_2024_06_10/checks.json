@@ -1,0 +1,722 @@
+[
+ {
+  "section": "grafika",
+  "desc": "logo.png: przezroczyste tło",
+  "type": "image",
+  "name": "logo.png",
+  "alpha": true
+ },
+ {
+  "section": "grafika",
+  "desc": "logo.png przeskalowane z zachowaniem proporcji do dokładnej wysokości 100 px",
+  "type": "image",
+  "name": "logo.png",
+  "height": 100
+ },
+ {
+  "section": "pliki",
+  "desc": "Strona pracownicy.html",
+  "type": "file",
+  "name": "pracownicy.html"
+ },
+ {
+  "section": "pliki",
+  "desc": "Arkusz stylów styl.css",
+  "type": "file",
+  "name": "styl.css"
+ },
+ {
+  "section": "pliki",
+  "desc": "Skrypt w języku JavaScript",
+  "type": "file",
+  "name": "skrypt.js"
+ },
+ {
+  "section": "html",
+  "desc": "Strona zapisana w języku HTML5, język zawartości polski, jawne kodowanie UTF-8",
+  "type": "head",
+  "lang": "pl",
+  "charset": true
+ },
+ {
+  "section": "html",
+  "desc": "Tytuł strony „Nasz zespół”",
+  "type": "head",
+  "doctype": false,
+  "title": "Nasz zespół"
+ },
+ {
+  "section": "html",
+  "desc": "Arkusz stylów styl.css prawidłowo połączony z kodem strony",
+  "type": "head",
+  "doctype": false,
+  "stylesheet": "styl.css"
+ },
+ {
+  "section": "html",
+  "desc": "Podział strony semantycznymi znacznikami: dwa bloki banera, blok główny, blok cytatu, stopka",
+  "type": "exists",
+  "selector": "body > header:nth-of-type(2) ~ main ~ section ~ footer",
+  "hint": "baner jako dwa znaczniki header, blok cytatów jako section"
+ },
+ {
+  "section": "html",
+  "desc": "Pierwszy baner: obraz logo.png",
+  "type": "attr",
+  "selector": "header:nth-of-type(1) img",
+  "attr": "src",
+  "equals": "logo.png"
+ },
+ {
+  "section": "html",
+  "desc": "Pierwszy baner: obraz z tekstem alternatywnym „logo firmy”",
+  "type": "attr",
+  "selector": "header:nth-of-type(1) img",
+  "attr": "alt",
+  "equals": "logo firmy"
+ },
+ {
+  "section": "html",
+  "desc": "Drugi baner: nagłówek pierwszego stopnia „Nasz zespół”",
+  "type": "text",
+  "selector": "header:nth-of-type(2) h1",
+  "equals": "Nasz zespół"
+ },
+ {
+  "section": "html",
+  "desc": "Blok główny: trzy bloki kart pracowniczych",
+  "type": "exists",
+  "selector": "main > section",
+  "count": 3,
+  "hint": "karta pracownicza jako section w main"
+ },
+ {
+  "section": "html",
+  "desc": "Każda karta: obraz",
+  "type": "exists",
+  "selector": "main section:nth-of-type(1) img"
+ },
+ {
+  "section": "html",
+  "desc": "Każda karta: obraz z tekstem alternatywnym",
+  "type": "attr",
+  "selector": "main section img",
+  "attr": "alt",
+  "all": true
+ },
+ {
+  "section": "html",
+  "desc": "Karta 1: obraz osoba1.jpg",
+  "type": "attr",
+  "selector": "main section:nth-of-type(1) img",
+  "attr": "src",
+  "equals": "osoba1.jpg"
+ },
+ {
+  "section": "html",
+  "desc": "Karta 2: obraz osoba2.jpg",
+  "type": "attr",
+  "selector": "main section:nth-of-type(2) img",
+  "attr": "src",
+  "equals": "osoba2.jpg"
+ },
+ {
+  "section": "html",
+  "desc": "Karta 3: obraz osoba3.jpg",
+  "type": "attr",
+  "selector": "main section:nth-of-type(3) img",
+  "attr": "src",
+  "equals": "osoba3.jpg"
+ },
+ {
+  "section": "html",
+  "desc": "Karta 1: imię i nazwisko w nagłówku drugiego stopnia",
+  "type": "text",
+  "selector": "main section:nth-of-type(1) h2",
+  "equals": "Krzysztof Dobromilski"
+ },
+ {
+  "section": "html",
+  "desc": "Karta 2: imię i nazwisko w nagłówku drugiego stopnia",
+  "type": "text",
+  "selector": "main section:nth-of-type(2) h2",
+  "equals": "Joanna Trojanowska"
+ },
+ {
+  "section": "html",
+  "desc": "Karta 3: imię i nazwisko w nagłówku drugiego stopnia",
+  "type": "text",
+  "selector": "main section:nth-of-type(3) h2",
+  "equals": "Ewa Nowak"
+ },
+ {
+  "section": "html",
+  "desc": "Karta 1: stanowisko w nagłówku trzeciego stopnia",
+  "type": "text",
+  "selector": "main section:nth-of-type(1) h3",
+  "equals": "Dyrektor"
+ },
+ {
+  "section": "html",
+  "desc": "Karta 2: stanowisko w nagłówku trzeciego stopnia",
+  "type": "text",
+  "selector": "main section:nth-of-type(2) h3",
+  "equals": "Kierownik logistyków"
+ },
+ {
+  "section": "html",
+  "desc": "Karta 3: stanowisko w nagłówku trzeciego stopnia",
+  "type": "text",
+  "selector": "main section:nth-of-type(3) h3",
+  "equals": "Księgowość i kadry"
+ },
+ {
+  "section": "html",
+  "desc": "Każda karta: opis i numer telefonu w dwóch paragrafach",
+  "type": "exists",
+  "selector": "main section:nth-of-type(1) p",
+  "count": 2
+ },
+ {
+  "section": "html",
+  "desc": "Karta 1: numer telefonu w paragrafie",
+  "type": "text",
+  "selector": "main section:nth-of-type(1) p",
+  "index": 1,
+  "equals": "telefon: 111222333"
+ },
+ {
+  "section": "html",
+  "desc": "Karta 2: numer telefonu w paragrafie",
+  "type": "text",
+  "selector": "main section:nth-of-type(2) p",
+  "index": 1,
+  "equals": "telefon: 222333444"
+ },
+ {
+  "section": "html",
+  "desc": "Karta 3: numer telefonu w paragrafie",
+  "type": "text",
+  "selector": "main section:nth-of-type(3) p",
+  "index": 1,
+  "equals": "telefon: 333444555"
+ },
+ {
+  "section": "html",
+  "desc": "Karta 1: opis w paragrafie",
+  "type": "text",
+  "selector": "main section:nth-of-type(1) p",
+  "index": 0,
+  "startsWith": "Firma logistyczna była jego marzeniem"
+ },
+ {
+  "section": "html",
+  "desc": "Karta 2: opis w paragrafie",
+  "type": "text",
+  "selector": "main section:nth-of-type(2) p",
+  "index": 0,
+  "startsWith": "Od początku firmy z nami"
+ },
+ {
+  "section": "html",
+  "desc": "Karta 3: opis w paragrafie",
+  "type": "text",
+  "selector": "main section:nth-of-type(3) p",
+  "index": 0,
+  "startsWith": "Od lat finanse powierzamy"
+ },
+ {
+  "section": "html",
+  "desc": "Każda karta: odnośnik „Kontakt” w nagłówku piątego stopnia",
+  "type": "text",
+  "selector": "main section h5 a",
+  "equals": "Kontakt",
+  "index": 0
+ },
+ {
+  "section": "html",
+  "desc": "Karta 1: odnośnik pocztowy do adresu e-mail osoby",
+  "type": "attr",
+  "selector": "main section:nth-of-type(1) h5 a",
+  "attr": "href",
+  "equals": "mailto:Krzysztof.Dobromilski@firma.pl"
+ },
+ {
+  "section": "html",
+  "desc": "Karta 2: odnośnik pocztowy do adresu e-mail osoby",
+  "type": "attr",
+  "selector": "main section:nth-of-type(2) h5 a",
+  "attr": "href",
+  "equals": "mailto:Joanna.Trojanowska@firma.pl"
+ },
+ {
+  "section": "html",
+  "desc": "Karta 3: odnośnik pocztowy do adresu e-mail osoby",
+  "type": "attr",
+  "selector": "main section:nth-of-type(3) h5 a",
+  "attr": "href",
+  "equals": "mailto:Ewa.Nowak@firma.pl"
+ },
+ {
+  "section": "html",
+  "desc": "Blok cytatów: trzy cytaty w znaczniku semantycznym przeznaczonym dla cytatu",
+  "type": "exists",
+  "selector": "body > section blockquote",
+  "count": 3,
+  "hint": "blok cytatów jako section, cytaty jako blockquote"
+ },
+ {
+  "section": "html",
+  "desc": "Cytat 1: treść w cudzysłowach",
+  "type": "text",
+  "selector": "body > section blockquote",
+  "index": 0,
+  "matches": "^[\"„”“]Każdego dnia stawiam sobie nieosiągalne wyzwania i próbuję je wykonać[\"”“„]"
+ },
+ {
+  "section": "html",
+  "desc": "Cytat 2: treść w cudzysłowach",
+  "type": "text",
+  "selector": "body > section blockquote",
+  "index": 1,
+  "matches": "^[\"„”“]Nie bój się porażek, im więcej ich rozwiążesz, tym szybciej osiągniesz cel[\"”“„]"
+ },
+ {
+  "section": "html",
+  "desc": "Cytat 3: treść w cudzysłowach",
+  "type": "text",
+  "selector": "body > section blockquote",
+  "index": 2,
+  "matches": "^[\"„”“]Niezadowolony pracownik jest dla mnie źródłem nauki[\"”“„]"
+ },
+ {
+  "section": "html",
+  "desc": "Cytaty: imię w paragrafie",
+  "type": "exists",
+  "selector": "body > section blockquote p",
+  "count": 3
+ },
+ {
+  "section": "html",
+  "desc": "Cytat 1: imię w paragrafie",
+  "type": "text",
+  "selector": "body > section blockquote:nth-of-type(1) p",
+  "contains": "Krzysztof"
+ },
+ {
+  "section": "html",
+  "desc": "Stopka: paragraf „Stronę wykonał: ” i numer zdającego",
+  "type": "text",
+  "selector": "footer p",
+  "startsWith": "Stronę wykonał:"
+ },
+ {
+  "section": "css",
+  "desc": "Domyślnie dla wszystkich selektorów: krój czcionki Bookman Old Style, zapasowo Serif",
+  "type": "cssRule",
+  "selector": "*",
+  "prop": "font-family",
+  "value": "Bookman Old Style, serif"
+ },
+ {
+  "section": "css",
+  "desc": "Bloki banera: kolor tła DarkCyan",
+  "type": "css",
+  "selector": "header",
+  "all": true,
+  "prop": "background-color",
+  "value": "DarkCyan"
+ },
+ {
+  "section": "css",
+  "desc": "Bloki banera: biały kolor czcionki",
+  "type": "css",
+  "selector": "header",
+  "all": true,
+  "prop": "color",
+  "value": "white"
+ },
+ {
+  "section": "css",
+  "desc": "Bloki banera: szerokość 50%",
+  "type": "css",
+  "selector": "header",
+  "all": true,
+  "prop": "width",
+  "value": "50%"
+ },
+ {
+  "section": "css",
+  "desc": "Bloki banera: wysokość 100 px",
+  "type": "css",
+  "selector": "header",
+  "all": true,
+  "prop": "height",
+  "value": "100px"
+ },
+ {
+  "section": "css",
+  "desc": "Bloki banera: odstępy między literami 15 px",
+  "type": "css",
+  "selector": "header",
+  "all": true,
+  "prop": "letter-spacing",
+  "value": "15px"
+ },
+ {
+  "section": "css",
+  "desc": "Stopka: kolor tła DarkCyan",
+  "type": "css",
+  "selector": "footer",
+  "prop": "background-color",
+  "value": "DarkCyan"
+ },
+ {
+  "section": "css",
+  "desc": "Stopka: biały kolor czcionki",
+  "type": "css",
+  "selector": "footer",
+  "prop": "color",
+  "value": "white"
+ },
+ {
+  "section": "css",
+  "desc": "Karta pracownicza: kolor tła Azure",
+  "type": "css",
+  "selector": "main section",
+  "all": true,
+  "prop": "background-color",
+  "value": "Azure"
+ },
+ {
+  "section": "css",
+  "desc": "Karta pracownicza: szerokość 30%",
+  "type": "css",
+  "selector": "main section",
+  "all": true,
+  "prop": "width",
+  "value": "30%"
+ },
+ {
+  "section": "css",
+  "desc": "Karta pracownicza: marginesy zewnętrzne 1%",
+  "type": "css",
+  "selector": "main section",
+  "all": true,
+  "prop": "margin-left",
+  "value": "1%"
+ },
+ {
+  "section": "css",
+  "desc": "Karta pracownicza: cień bloku 4 px 4 px, rozmycie 8 px, kolor DimGray",
+  "type": "css",
+  "selector": "main section",
+  "all": true,
+  "prop": "box-shadow",
+  "value": "DimGray 4px 4px 8px 0px"
+ },
+ {
+  "section": "css",
+  "desc": "Jedynie obrazy w karcie pracowniczej: szerokość 100%",
+  "type": "css",
+  "selector": "main section img",
+  "all": true,
+  "prop": "width",
+  "value": "100%"
+ },
+ {
+  "section": "css",
+  "desc": "Paragraf: marginesy zewnętrzne 15 px",
+  "type": "css",
+  "selector": "main section p",
+  "all": true,
+  "prop": "margin",
+  "value": "15px"
+ },
+ {
+  "section": "css",
+  "desc": "Nagłówek drugiego stopnia: marginesy zewnętrzne 15 px",
+  "type": "css",
+  "selector": "main section h2",
+  "all": true,
+  "prop": "margin",
+  "value": "15px"
+ },
+ {
+  "section": "css",
+  "desc": "Nagłówek trzeciego stopnia: marginesy zewnętrzne 15 px",
+  "type": "css",
+  "selector": "main section h3",
+  "all": true,
+  "prop": "margin",
+  "value": "15px"
+ },
+ {
+  "section": "css",
+  "desc": "Odnośnik: biały kolor czcionki",
+  "type": "css",
+  "selector": "a",
+  "all": true,
+  "prop": "color",
+  "value": "white"
+ },
+ {
+  "section": "css",
+  "desc": "Odnośnik: styl zdefiniowany wyłącznie selektorem znacznika odnośnika",
+  "type": "cssRule",
+  "selector": "a",
+  "prop": "color",
+  "value": "white"
+ },
+ {
+  "section": "css",
+  "desc": "Nagłówek piątego stopnia: kolor tła Teal",
+  "type": "css",
+  "selector": "h5",
+  "all": true,
+  "prop": "background-color",
+  "value": "Teal"
+ },
+ {
+  "section": "css",
+  "desc": "Nagłówek piątego stopnia: szerokość 100%",
+  "type": "css",
+  "selector": "h5",
+  "all": true,
+  "prop": "width",
+  "value": "100%"
+ },
+ {
+  "section": "css",
+  "desc": "Nagłówek piątego stopnia: wyrównanie tekstu do środka",
+  "type": "css",
+  "selector": "h5",
+  "all": true,
+  "prop": "text-align",
+  "value": "center"
+ },
+ {
+  "section": "css",
+  "desc": "Nagłówek piątego stopnia: marginesy wewnętrzne górny 10 px",
+  "type": "css",
+  "selector": "h5",
+  "all": true,
+  "prop": "padding-top",
+  "value": "10px"
+ },
+ {
+  "section": "css",
+  "desc": "Nagłówek piątego stopnia: marginesy wewnętrzne dolny 10 px",
+  "type": "css",
+  "selector": "h5",
+  "all": true,
+  "prop": "padding-bottom",
+  "value": "10px"
+ },
+ {
+  "section": "css",
+  "desc": "Nagłówek piątego stopnia: pozostałe marginesy wewnętrzne 0",
+  "type": "css",
+  "selector": "h5",
+  "all": true,
+  "prop": "padding-left",
+  "value": "0px"
+ },
+ {
+  "section": "css",
+  "desc": "Nagłówek piątego stopnia po najechaniu kursorem: kolor tła LightSeaGreen",
+  "type": "hover",
+  "selector": "h5",
+  "prop": "background-color",
+  "value": "LightSeaGreen"
+ },
+ {
+  "section": "css",
+  "desc": "Blok cytatów: wyrównanie tekstu do środka",
+  "type": "css",
+  "selector": "body > section",
+  "prop": "text-align",
+  "value": "center"
+ },
+ {
+  "section": "css",
+  "desc": "Blok cytatów: marginesy wewnętrzne górny 30 px",
+  "type": "css",
+  "selector": "body > section",
+  "prop": "padding-top",
+  "value": "30px"
+ },
+ {
+  "section": "css",
+  "desc": "Blok cytatów: marginesy wewnętrzne dolny 30 px",
+  "type": "css",
+  "selector": "body > section",
+  "prop": "padding-bottom",
+  "value": "30px"
+ },
+ {
+  "section": "css",
+  "desc": "Blok cytatów: pozostałe marginesy wewnętrzne 0",
+  "type": "css",
+  "selector": "body > section",
+  "prop": "padding-left",
+  "value": "0px"
+ },
+ {
+  "section": "css",
+  "desc": "Blok cytatów: czcionka pochylona",
+  "type": "css",
+  "selector": "body > section blockquote:nth-of-type(1)",
+  "prop": "font-style",
+  "value": "italic"
+ },
+ {
+  "section": "css",
+  "desc": "Drugi cytat jest usunięty (nie jest wyświetlany)",
+  "type": "css",
+  "selector": "body > section blockquote:nth-of-type(2)",
+  "prop": "display",
+  "value": "none"
+ },
+ {
+  "section": "css",
+  "desc": "Trzeci cytat jest usunięty (nie jest wyświetlany)",
+  "type": "css",
+  "selector": "body > section blockquote:nth-of-type(3)",
+  "prop": "display",
+  "value": "none"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: dwa bloki banera obok siebie",
+  "type": "layout",
+  "a": "header:nth-of-type(1)",
+  "b": "header:nth-of-type(2)",
+  "relation": "leftOf"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: blok główny poniżej banera",
+  "type": "layout",
+  "a": "main",
+  "b": "header:nth-of-type(1)",
+  "relation": "below"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: trzy karty obok siebie",
+  "type": "layout",
+  "a": "main section:nth-of-type(1)",
+  "b": "main section:nth-of-type(2)",
+  "relation": "leftOf"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: druga i trzecia karta obok siebie",
+  "type": "layout",
+  "a": "main section:nth-of-type(2)",
+  "b": "main section:nth-of-type(3)",
+  "relation": "leftOf"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: blok cytatów poniżej bloku głównego",
+  "type": "layout",
+  "a": "body > section",
+  "b": "main",
+  "relation": "below"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: stopka na dole, poniżej bloku cytatów",
+  "type": "layout",
+  "a": "footer",
+  "b": "body > section",
+  "relation": "below"
+ },
+ {
+  "section": "js",
+  "desc": "Kliknięcie w pierwszy cytat: pierwszy ukryty, drugi uwidoczniony blokowo",
+  "type": "js",
+  "steps": [
+   {
+    "click": "body > section blockquote:nth-of-type(1)"
+   }
+  ],
+  "expect": [
+   {
+    "selector": "body > section blockquote:nth-of-type(1)",
+    "css": "display",
+    "value": "none"
+   },
+   {
+    "selector": "body > section blockquote:nth-of-type(2)",
+    "css": "display",
+    "value": "block"
+   }
+  ]
+ },
+ {
+  "section": "js",
+  "desc": "Kliknięcie w drugi cytat: drugi ukryty, trzeci uwidoczniony blokowo",
+  "type": "js",
+  "steps": [
+   {
+    "click": "body > section blockquote:nth-of-type(1)"
+   },
+   {
+    "click": "body > section blockquote:nth-of-type(2)"
+   }
+  ],
+  "expect": [
+   {
+    "selector": "body > section blockquote:nth-of-type(2)",
+    "css": "display",
+    "value": "none"
+   },
+   {
+    "selector": "body > section blockquote:nth-of-type(3)",
+    "css": "display",
+    "value": "block"
+   }
+  ]
+ },
+ {
+  "section": "js",
+  "desc": "Kliknięcie w trzeci cytat: trzeci ukryty, pierwszy uwidoczniony blokowo",
+  "type": "js",
+  "steps": [
+   {
+    "click": "body > section blockquote:nth-of-type(1)"
+   },
+   {
+    "click": "body > section blockquote:nth-of-type(2)"
+   },
+   {
+    "click": "body > section blockquote:nth-of-type(3)"
+   }
+  ],
+  "expect": [
+   {
+    "selector": "body > section blockquote:nth-of-type(3)",
+    "css": "display",
+    "value": "none"
+   },
+   {
+    "selector": "body > section blockquote:nth-of-type(1)",
+    "css": "display",
+    "value": "block"
+   }
+  ]
+ },
+ {
+  "section": "js",
+  "desc": "Skrypt: znaczące nazewnictwo wszystkich zmiennych i funkcji",
+  "type": "manual"
+ },
+ {
+  "section": "js",
+  "desc": "Skrypt: ukrywanie i uwidacznianie cytatów przez zmianę wartości właściwości CSS",
+  "type": "manual"
+ }
+]

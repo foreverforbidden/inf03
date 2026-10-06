@@ -1,0 +1,570 @@
+[
+ {
+  "section": "grafika",
+  "desc": "crested.jpg: skadrowana do dokładnie 500 px szerokości",
+  "type": "image",
+  "name": "crested.jpg",
+  "width": 500
+ },
+ {
+  "section": "grafika",
+  "desc": "crested.jpg: skadrowana do dokładnie 330 px wysokości",
+  "type": "image",
+  "name": "crested.jpg",
+  "height": 330
+ },
+ {
+  "section": "grafika",
+  "desc": "Na skadrowanym obrazie musi być widoczny pysk zwierzęcia",
+  "type": "manual"
+ },
+ {
+  "section": "pliki",
+  "desc": "Plik peruwianka.php",
+  "type": "file",
+  "name": "peruwianka.php"
+ },
+ {
+  "section": "pliki",
+  "desc": "Plik american.php",
+  "type": "file",
+  "name": "american.php"
+ },
+ {
+  "section": "pliki",
+  "desc": "Plik crested.php",
+  "type": "file",
+  "name": "crested.php"
+ },
+ {
+  "section": "pliki",
+  "desc": "Plik styl.css",
+  "type": "file",
+  "name": "styl.css"
+ },
+ {
+  "section": "html",
+  "page": "peruwianka.php",
+  "desc": "Strona zapisana w HTML5, język zawartości polski, jawnie kodowanie UTF-8",
+  "type": "head",
+  "lang": "pl",
+  "charset": true
+ },
+ {
+  "section": "html",
+  "page": "peruwianka.php",
+  "desc": "Tytuł strony „Hodowla świnek morskich”",
+  "type": "head",
+  "doctype": false,
+  "title": "Hodowla świnek morskich"
+ },
+ {
+  "section": "html",
+  "page": "peruwianka.php",
+  "desc": "Arkusz stylów w pliku styl.css prawidłowo połączony z kodem strony",
+  "type": "head",
+  "doctype": false,
+  "stylesheet": "styl.css"
+ },
+ {
+  "section": "html",
+  "page": "peruwianka.php",
+  "desc": "Podział strony na bloki semantycznymi znacznikami sekcji: baner, blok menu, blok główny, blok prawy, stopka",
+  "type": "exists",
+  "selector": "header ~ nav ~ aside ~ main ~ footer, header ~ nav ~ main ~ aside ~ footer",
+  "hint": "baner jako header, blok menu jako nav, blok główny jako main, blok prawy jako aside, stopka jako footer"
+ },
+ {
+  "section": "html",
+  "page": "peruwianka.php",
+  "desc": "Baner: nagłówek pierwszego stopnia „Hodowla świnek morskich - zamów świnkowe maluszki”",
+  "type": "text",
+  "selector": "header h1",
+  "equals": "Hodowla świnek morskich - zamów świnkowe maluszki"
+ },
+ {
+  "section": "html",
+  "page": "peruwianka.php",
+  "desc": "Blok menu: odnośnik do pliku peruwianka.php o treści „Rasa Peruwianka”",
+  "type": "text",
+  "selector": "nav a",
+  "index": 0,
+  "equals": "Rasa Peruwianka",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "html",
+  "page": "peruwianka.php",
+  "desc": "Blok menu: odnośnik „Rasa Peruwianka” prowadzi do pliku peruwianka.php",
+  "type": "attr",
+  "selector": "nav a",
+  "index": 0,
+  "attr": "href",
+  "equals": "peruwianka.php",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "html",
+  "page": "peruwianka.php",
+  "desc": "Blok menu: odnośnik do pliku american.php o treści „Rasa American”",
+  "type": "text",
+  "selector": "nav a",
+  "index": 1,
+  "equals": "Rasa American",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "html",
+  "page": "peruwianka.php",
+  "desc": "Blok menu: odnośnik „Rasa American” prowadzi do pliku american.php",
+  "type": "attr",
+  "selector": "nav a",
+  "index": 1,
+  "attr": "href",
+  "equals": "american.php",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "html",
+  "page": "peruwianka.php",
+  "desc": "Blok menu: odnośnik do pliku crested.php o treści „Rasa Crested”",
+  "type": "text",
+  "selector": "nav a",
+  "index": 2,
+  "equals": "Rasa Crested",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "html",
+  "page": "peruwianka.php",
+  "desc": "Blok menu: odnośnik „Rasa Crested” prowadzi do pliku crested.php",
+  "type": "attr",
+  "selector": "nav a",
+  "index": 2,
+  "attr": "href",
+  "equals": "crested.php",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "html",
+  "page": "peruwianka.php",
+  "desc": "Prawy blok: nagłówek trzeciego stopnia „Poznaj wszystkie rasy świnek morskich”",
+  "type": "text",
+  "selector": "aside h3",
+  "equals": "Poznaj wszystkie rasy świnek morskich",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "html",
+  "page": "peruwianka.php",
+  "desc": "Prawy blok: lista numerowana (uporządkowana)",
+  "type": "exists",
+  "selector": "aside ol",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "php",
+  "desc": "Lista numerowana wypełniona elementami przez skrypt 1 (rasy z zapytania 4)",
+  "type": "php"
+ },
+ {
+  "section": "html",
+  "page": "peruwianka.php",
+  "desc": "Lewy blok główny (peruwianka.php): obraz peruwianka.jpg",
+  "type": "attr",
+  "selector": "main img",
+  "attr": "src",
+  "equals": "peruwianka.jpg",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "html",
+  "page": "peruwianka.php",
+  "desc": "Lewy blok główny (peruwianka.php): tekst alternatywny „Świnka morska rasy peruwianka”",
+  "type": "attr",
+  "selector": "main img",
+  "attr": "alt",
+  "equals": "Świnka morska rasy peruwianka",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "html",
+  "page": "american.php",
+  "desc": "Lewy blok główny (american.php): obraz american.jpg",
+  "type": "attr",
+  "selector": "main img",
+  "attr": "src",
+  "equals": "american.jpg",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "html",
+  "page": "american.php",
+  "desc": "Lewy blok główny (american.php): tekst alternatywny „Świnka morska rasy american”",
+  "type": "attr",
+  "selector": "main img",
+  "attr": "alt",
+  "equals": "Świnka morska rasy american",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "html",
+  "page": "crested.php",
+  "desc": "Lewy blok główny (crested.php): obraz crested.jpg",
+  "type": "attr",
+  "selector": "main img",
+  "attr": "src",
+  "equals": "crested.jpg",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "html",
+  "page": "crested.php",
+  "desc": "Lewy blok główny (crested.php): tekst alternatywny „Świnka morska rasy crested”",
+  "type": "attr",
+  "selector": "main img",
+  "attr": "alt",
+  "equals": "Świnka morska rasy crested",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "php",
+  "desc": "Lewy blok główny: efekt działania skryptu 2 (h2 „Rasa: <rasa>”, p „Data urodzenia: <data-ur>”, p „Oznaczenie miotu: <miot>”)",
+  "type": "php"
+ },
+ {
+  "section": "html",
+  "page": "peruwianka.php",
+  "desc": "Lewy blok główny: linia pozioma",
+  "type": "exists",
+  "selector": "main hr",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "html",
+  "page": "peruwianka.php",
+  "desc": "Lewy blok główny: nagłówek drugiego stopnia „Świnki w tym miocie”",
+  "type": "text",
+  "selector": "main h2",
+  "equals": "Świnki w tym miocie",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "php",
+  "desc": "Lewy blok główny: efekt działania skryptu 3 (h3 „<imie> - <cena> zł”, p z opisem)",
+  "type": "php"
+ },
+ {
+  "section": "php",
+  "desc": "Strony american.php i crested.php: zmienione obraz oraz warunki zapytań 2 i 3 (id rasy 6 i 7)",
+  "type": "php"
+ },
+ {
+  "section": "html",
+  "page": "peruwianka.php",
+  "desc": "Stopka: paragraf o treści „Stronę wykonał: ” i numer zdającego",
+  "type": "text",
+  "selector": "footer p",
+  "startsWith": "Stronę wykonał:"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Domyślne formatowanie wszystkich selektorów: krój czcionki Helvetica",
+  "type": "css",
+  "selector": "h1",
+  "prop": "font-family",
+  "value": "Helvetica"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Domyślne formatowanie wszystkich selektorów: krój czcionki Helvetica (stopka)",
+  "type": "css",
+  "selector": "footer p",
+  "prop": "font-family",
+  "value": "Helvetica"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Baner i stopka: kolor tła SaddleBrown",
+  "type": "css",
+  "selector": "header, footer",
+  "all": true,
+  "prop": "background-color",
+  "value": "SaddleBrown"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Baner i stopka: biały kolor czcionki",
+  "type": "css",
+  "selector": "header, footer",
+  "all": true,
+  "prop": "color",
+  "value": "white"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Baner i stopka: wyrównanie tekstu do środka",
+  "type": "css",
+  "selector": "header, footer",
+  "all": true,
+  "prop": "text-align",
+  "value": "center"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Baner i stopka: marginesy wewnętrzne 7 px",
+  "type": "css",
+  "selector": "header, footer",
+  "all": true,
+  "prop": "padding",
+  "value": "7px"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Lewy blok menu: kolor tła Peru",
+  "type": "css",
+  "selector": "nav",
+  "prop": "background-color",
+  "value": "Peru",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Lewy blok menu: szerokość 80%",
+  "type": "css",
+  "selector": "nav",
+  "prop": "width",
+  "value": "80%",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Lewy blok menu: wysokość 40 px",
+  "type": "css",
+  "selector": "nav",
+  "prop": "height",
+  "value": "40px",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Lewy blok menu: margines wewnętrzny górny 20 px",
+  "type": "css",
+  "selector": "nav",
+  "prop": "padding-top",
+  "value": "20px",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Lewy blok główny: szerokość 80%",
+  "type": "css",
+  "selector": "main",
+  "prop": "width",
+  "value": "80%",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Lewy blok główny: wysokość 700 px",
+  "type": "css",
+  "selector": "main",
+  "prop": "height",
+  "value": "700px",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Lewy blok główny: rozmiar czcionki 120%",
+  "type": "css",
+  "selector": "main",
+  "prop": "font-size",
+  "value": "120%",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Lewy blok główny: paski przewijania tylko, gdy tekst nie mieści się w oknie",
+  "type": "css",
+  "selector": "main",
+  "prop": "overflow",
+  "value": "auto",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Blok prawy: kolor tła Peru",
+  "type": "css",
+  "selector": "aside",
+  "prop": "background-color",
+  "value": "Peru",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Blok prawy: biały kolor czcionki",
+  "type": "css",
+  "selector": "aside",
+  "prop": "color",
+  "value": "white",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Blok prawy: szerokość 20%",
+  "type": "css",
+  "selector": "aside",
+  "prop": "width",
+  "value": "20%",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Blok prawy: wysokość 760 px",
+  "type": "css",
+  "selector": "aside",
+  "prop": "height",
+  "value": "760px",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Odnośnik (wyłącznie selektor znacznika a): kolor czcionki #DDD",
+  "type": "cssRule",
+  "selector": "a",
+  "prop": "color",
+  "value": "#DDD"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Odnośnik (wyłącznie selektor znacznika a): margines wewnętrzny lewy 90 px",
+  "type": "cssRule",
+  "selector": "a",
+  "prop": "padding-left",
+  "value": "90px"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Odnośnik (wyłącznie selektor znacznika a): rozmiar czcionki 140%",
+  "type": "cssRule",
+  "selector": "a",
+  "prop": "font-size",
+  "value": "140%"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Odnośnik (wyłącznie selektor znacznika a): brak podkreślenia",
+  "type": "cssRule",
+  "selector": "a",
+  "prop": "text-decoration",
+  "value": "none"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Kursor na odnośniku: kolor czcionki biały",
+  "type": "hover",
+  "selector": "a",
+  "prop": "color",
+  "value": "white"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Obraz (wyłącznie selektor znacznika img): opływanie tekstem po prawej stronie (obraz po lewej)",
+  "type": "cssRule",
+  "selector": "img",
+  "prop": "float",
+  "value": "left"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Obraz (wyłącznie selektor znacznika img): marginesy zewnętrzne 30 px",
+  "type": "cssRule",
+  "selector": "img",
+  "prop": "margin",
+  "value": "30px"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Układ: baner na górze, nad blokami",
+  "type": "layout",
+  "a": "header",
+  "b": "nav",
+  "relation": "above"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Układ: blok menu nad blokiem głównym",
+  "type": "layout",
+  "a": "nav",
+  "b": "main",
+  "relation": "above",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Układ: blok menu po lewej od bloku prawego",
+  "type": "layout",
+  "a": "nav",
+  "b": "aside",
+  "relation": "leftOf",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Układ: blok główny po lewej od bloku prawego",
+  "type": "layout",
+  "a": "main",
+  "b": "aside",
+  "relation": "leftOf",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "css",
+  "page": "peruwianka.php",
+  "desc": "Układ: stopka na dole, pod blokami",
+  "type": "layout",
+  "a": "footer",
+  "b": "aside",
+  "relation": "below",
+  "hint": "blok menu jako nav, blok główny jako main, blok prawy jako aside"
+ },
+ {
+  "section": "php",
+  "desc": "Skrypty łączą się z serwerem na localhost, użytkownik root bez hasła, baza hodowla, na końcu zamykają połączenie",
+  "type": "php"
+ },
+ {
+  "section": "php",
+  "desc": "Znaczące nazewnictwo wszystkich zmiennych lub funkcji",
+  "type": "manual"
+ }
+]

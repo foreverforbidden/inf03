@@ -1,0 +1,441 @@
+[
+ {
+  "section": "pliki",
+  "desc": "Strona biuro.php",
+  "type": "file",
+  "name": "biuro.php"
+ },
+ {
+  "section": "pliki",
+  "desc": "Arkusz stylów styl9.css",
+  "type": "file",
+  "name": "styl9.css"
+ },
+ {
+  "section": "html",
+  "desc": "Zapisana w języku HTML 5, polski język zawartości, jawne kodowanie UTF-8",
+  "type": "head",
+  "lang": "pl",
+  "charset": true
+ },
+ {
+  "section": "html",
+  "desc": "Tytuł strony „Poznaj Europę”",
+  "type": "head",
+  "doctype": false,
+  "title": "Poznaj Europę"
+ },
+ {
+  "section": "html",
+  "desc": "Arkusz stylów w pliku styl9.css prawidłowo połączony z kodem strony",
+  "type": "head",
+  "doctype": false,
+  "stylesheet": "styl9.css"
+ },
+ {
+  "section": "html",
+  "desc": "Podział na bloki znacznikami sekcji: baner, lewy, środkowy, prawy, blok z danymi, a pod nimi stopka",
+  "type": "exists",
+  "selector": "section ~ section ~ section ~ section ~ section ~ footer",
+  "hint": "pięć bloków jako section (baner, lewy, środkowy, prawy, dane), potem footer"
+ },
+ {
+  "section": "html",
+  "desc": "Pięć bloków wykonanych znacznikami sekcji (baner, lewy, środkowy, prawy, dane)",
+  "type": "exists",
+  "selector": "section",
+  "count": 5
+ },
+ {
+  "section": "html",
+  "desc": "Zawartość banera: nagłówek pierwszego stopnia „BIURO PODRÓŻY”",
+  "type": "text",
+  "selector": "section:nth-of-type(1) h1",
+  "equals": "BIURO PODRÓŻY",
+  "hint": "baner jako pierwszy section"
+ },
+ {
+  "section": "html",
+  "desc": "Blok lewy: nagłówek drugiego stopnia „Promocje”",
+  "type": "text",
+  "selector": "section:nth-of-type(2) h2",
+  "equals": "Promocje",
+  "hint": "blok lewy jako drugi section"
+ },
+ {
+  "section": "html",
+  "desc": "Blok lewy: tabela",
+  "type": "exists",
+  "selector": "section:nth-of-type(2) table"
+ },
+ {
+  "section": "html",
+  "desc": "Tabela: trzy wiersze",
+  "type": "exists",
+  "selector": "section:nth-of-type(2) table tr",
+  "count": 3
+ },
+ {
+  "section": "html",
+  "desc": "Tabela: dwie kolumny (sześć komórek)",
+  "type": "exists",
+  "selector": "section:nth-of-type(2) table td",
+  "count": 6
+ },
+ {
+  "section": "html",
+  "desc": "Tabela: „Warszawa”",
+  "type": "text",
+  "selector": "section:nth-of-type(2) table tr:nth-of-type(1) td:nth-of-type(1)",
+  "equals": "Warszawa"
+ },
+ {
+  "section": "html",
+  "desc": "Tabela: „od 600 zł”",
+  "type": "text",
+  "selector": "section:nth-of-type(2) table tr:nth-of-type(1) td:nth-of-type(2)",
+  "equals": "od 600 zł"
+ },
+ {
+  "section": "html",
+  "desc": "Tabela: „Wenecja”",
+  "type": "text",
+  "selector": "section:nth-of-type(2) table tr:nth-of-type(2) td:nth-of-type(1)",
+  "equals": "Wenecja"
+ },
+ {
+  "section": "html",
+  "desc": "Tabela: „od 1200 zł”",
+  "type": "text",
+  "selector": "section:nth-of-type(2) table tr:nth-of-type(2) td:nth-of-type(2)",
+  "equals": "od 1200 zł"
+ },
+ {
+  "section": "html",
+  "desc": "Tabela: „Paryż”",
+  "type": "text",
+  "selector": "section:nth-of-type(2) table tr:nth-of-type(3) td:nth-of-type(1)",
+  "equals": "Paryż"
+ },
+ {
+  "section": "html",
+  "desc": "Tabela: „od 1200 zł”",
+  "type": "text",
+  "selector": "section:nth-of-type(2) table tr:nth-of-type(3) td:nth-of-type(2)",
+  "equals": "od 1200 zł"
+ },
+ {
+  "section": "html",
+  "desc": "Blok środkowy: nagłówek drugiego stopnia „W tym roku jedziemy do...”",
+  "type": "text",
+  "selector": "section:nth-of-type(3) h2",
+  "equals": "W tym roku jedziemy do...",
+  "hint": "blok środkowy jako trzeci section"
+ },
+ {
+  "section": "php",
+  "desc": "Blok środkowy: efekt działania skryptu 1 (obrazy: nazwaPliku jako źródło, podpis jako tekst alternatywny i dymek title)",
+  "type": "php"
+ },
+ {
+  "section": "html",
+  "desc": "Blok prawy: nagłówek drugiego stopnia „Kontakt”",
+  "type": "text",
+  "selector": "section:nth-of-type(4) h2",
+  "equals": "Kontakt",
+  "hint": "blok prawy jako czwarty section"
+ },
+ {
+  "section": "html",
+  "desc": "Blok prawy: odnośnik o treści „napisz do nas”",
+  "type": "text",
+  "selector": "section:nth-of-type(4) a",
+  "equals": "napisz do nas"
+ },
+ {
+  "section": "html",
+  "desc": "Blok prawy: odnośnik do adresu e-mail biuro@wycieczki.pl",
+  "type": "attr",
+  "selector": "section:nth-of-type(4) a",
+  "attr": "href",
+  "equals": "mailto:biuro@wycieczki.pl"
+ },
+ {
+  "section": "html",
+  "desc": "Blok prawy: paragraf „telefon: 444555666”",
+  "type": "text",
+  "selector": "section:nth-of-type(4) p",
+  "equals": "telefon: 444555666"
+ },
+ {
+  "section": "html",
+  "desc": "Blok z danymi: nagłówek trzeciego stopnia „W poprzednich latach byliśmy...”",
+  "type": "text",
+  "selector": "section:nth-of-type(5) h3",
+  "equals": "W poprzednich latach byliśmy...",
+  "hint": "blok z danymi jako piąty section"
+ },
+ {
+  "section": "html",
+  "desc": "Blok z danymi: lista numerowana (uporządkowana)",
+  "type": "exists",
+  "selector": "section:nth-of-type(5) ol"
+ },
+ {
+  "section": "php",
+  "desc": "Lista numerowana: efekt działania skryptu 2 („Dnia <data> pojechaliśmy do <cel>” w elementach listy)",
+  "type": "php"
+ },
+ {
+  "section": "html",
+  "desc": "Stopka: paragraf „Stronę wykonał: ” i numer zdającego",
+  "type": "text",
+  "selector": "footer p",
+  "startsWith": "Stronę wykonał:"
+ },
+ {
+  "section": "css",
+  "desc": "Domyślnie dla wszystkich selektorów: krój czcionki Georgia",
+  "type": "cssRule",
+  "selector": "*",
+  "prop": "font-family",
+  "value": "Georgia"
+ },
+ {
+  "section": "css",
+  "desc": "Domyślnie dla wszystkich selektorów: wyrównanie tekstu do środka",
+  "type": "cssRule",
+  "selector": "*",
+  "prop": "text-align",
+  "value": "center"
+ },
+ {
+  "section": "css",
+  "desc": "Baner i stopka: kolor tła #BA6B6C",
+  "type": "css",
+  "selector": "section:nth-of-type(1), footer",
+  "all": true,
+  "prop": "background-color",
+  "value": "#BA6B6C"
+ },
+ {
+  "section": "css",
+  "desc": "Baner i stopka: biały kolor czcionki",
+  "type": "css",
+  "selector": "section:nth-of-type(1), footer",
+  "all": true,
+  "prop": "color",
+  "value": "white"
+ },
+ {
+  "section": "css",
+  "desc": "Baner i stopka: marginesy wewnętrzne 7 px",
+  "type": "css",
+  "selector": "section:nth-of-type(1), footer",
+  "all": true,
+  "prop": "padding",
+  "value": "7px"
+ },
+ {
+  "section": "css",
+  "desc": "Blok lewy i prawy: kolor tła #EF9A9A",
+  "type": "css",
+  "selector": "section:nth-of-type(2), section:nth-of-type(4)",
+  "all": true,
+  "prop": "background-color",
+  "value": "#EF9A9A"
+ },
+ {
+  "section": "css",
+  "desc": "Blok lewy i prawy: szerokość 20%",
+  "type": "css",
+  "selector": "section:nth-of-type(2), section:nth-of-type(4)",
+  "all": true,
+  "prop": "width",
+  "value": "20%"
+ },
+ {
+  "section": "css",
+  "desc": "Blok lewy i prawy: wysokość 500 px",
+  "type": "css",
+  "selector": "section:nth-of-type(2), section:nth-of-type(4)",
+  "all": true,
+  "prop": "height",
+  "value": "500px"
+ },
+ {
+  "section": "css",
+  "desc": "Blok środkowy: kolor tła MistyRose",
+  "type": "css",
+  "selector": "section:nth-of-type(3)",
+  "prop": "background-color",
+  "value": "MistyRose"
+ },
+ {
+  "section": "css",
+  "desc": "Blok środkowy: szerokość 60%",
+  "type": "css",
+  "selector": "section:nth-of-type(3)",
+  "prop": "width",
+  "value": "60%"
+ },
+ {
+  "section": "css",
+  "desc": "Blok środkowy: wysokość 500 px",
+  "type": "css",
+  "selector": "section:nth-of-type(3)",
+  "prop": "height",
+  "value": "500px"
+ },
+ {
+  "section": "css",
+  "desc": "Blok z danymi: kolor tła MistyRose",
+  "type": "css",
+  "selector": "section:nth-of-type(5)",
+  "prop": "background-color",
+  "value": "MistyRose"
+ },
+ {
+  "section": "css",
+  "desc": "Blok z danymi: marginesy wewnętrzne 50 px",
+  "type": "css",
+  "selector": "section:nth-of-type(5)",
+  "prop": "padding",
+  "value": "50px"
+ },
+ {
+  "section": "css",
+  "desc": "Lista numerowana: punktor wielką cyfrą rzymską (wyłącznie selektor znacznika ol)",
+  "type": "cssRule",
+  "selector": "ol",
+  "prop": "list-style-type",
+  "value": "upper-roman"
+ },
+ {
+  "section": "css",
+  "desc": "Element listy: wyrównanie tekstu do lewej strony (wyłącznie selektor znacznika li)",
+  "type": "cssRule",
+  "selector": "li",
+  "prop": "text-align",
+  "value": "left"
+ },
+ {
+  "section": "css",
+  "desc": "Pierwsza litera nagłówka drugiego stopnia: rozmiar czcionki 170%",
+  "type": "cssRule",
+  "selector": "h2::first-letter",
+  "match": "h2",
+  "prop": "font-size",
+  "value": "170%"
+ },
+ {
+  "section": "css",
+  "desc": "Pierwsza litera nagłówka drugiego stopnia: kolor czcionki Maroon",
+  "type": "cssRule",
+  "selector": "h2::first-letter",
+  "match": "h2",
+  "prop": "color",
+  "value": "Maroon"
+ },
+ {
+  "section": "css",
+  "desc": "Tabela: marginesy zewnętrzne automatycznie (wyłącznie selektor znacznika table)",
+  "type": "cssRule",
+  "selector": "table",
+  "prop": "margin",
+  "value": "auto"
+ },
+ {
+  "section": "css",
+  "desc": "Tabela: szerokość 80% (wyłącznie selektor znacznika table)",
+  "type": "cssRule",
+  "selector": "table",
+  "prop": "width",
+  "value": "80%"
+ },
+ {
+  "section": "css",
+  "desc": "Tabela: obramowanie linią ciągłą 1 px w kolorze Maroon (wyłącznie selektor znacznika table)",
+  "type": "cssRule",
+  "selector": "table",
+  "prop": "border",
+  "value": "1px solid Maroon"
+ },
+ {
+  "section": "css",
+  "desc": "Obraz: wysokość 120 px (wyłącznie selektor znacznika img)",
+  "type": "cssRule",
+  "selector": "img",
+  "prop": "height",
+  "value": "120px"
+ },
+ {
+  "section": "css",
+  "desc": "Obraz: marginesy zewnętrzne 7 px (wyłącznie selektor znacznika img)",
+  "type": "cssRule",
+  "selector": "img",
+  "prop": "margin",
+  "value": "7px"
+ },
+ {
+  "section": "css",
+  "desc": "Obraz: cień o przesunięciu 7 px w obu osiach, rozmyciu 7 px, kolor DimGray (wyłącznie selektor znacznika img)",
+  "type": "cssRule",
+  "selector": "img",
+  "prop": "box-shadow",
+  "value": "7px 7px 7px DimGray"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: baner na górze, nad blokiem lewym",
+  "type": "layout",
+  "a": "section:nth-of-type(1)",
+  "b": "section:nth-of-type(2)",
+  "relation": "above"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: blok lewy z lewej strony bloku środkowego",
+  "type": "layout",
+  "a": "section:nth-of-type(2)",
+  "b": "section:nth-of-type(3)",
+  "relation": "leftOf"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: blok środkowy z lewej strony bloku prawego",
+  "type": "layout",
+  "a": "section:nth-of-type(3)",
+  "b": "section:nth-of-type(4)",
+  "relation": "leftOf"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: blok lewy, środkowy i prawy obok siebie",
+  "type": "layout",
+  "a": "section:nth-of-type(2)",
+  "b": "section:nth-of-type(4)",
+  "relation": "sameRow"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: blok z danymi pod blokami lewym, środkowym i prawym",
+  "type": "layout",
+  "a": "section:nth-of-type(5)",
+  "b": "section:nth-of-type(3)",
+  "relation": "below"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: stopka pod blokiem z danymi",
+  "type": "layout",
+  "a": "footer",
+  "b": "section:nth-of-type(5)",
+  "relation": "below"
+ },
+ {
+  "section": "php",
+  "desc": "Skrypty łączą się z bazą podroze (localhost, root, bez hasła), mają znaczące nazwy zmiennych, a na końcu zamykają połączenie",
+  "type": "php"
+ }
+]

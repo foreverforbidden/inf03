@@ -17,7 +17,7 @@ Wzorcowe przykłady (sprawdzone, przejdź je w całości przed pisaniem):
 3. **Selektory wynikają z treści, nie ze wzorca.** Używaj znaczników nazwanych w treści (header, nav, main, section, aside, footer, h1…h6, p, ul, ol, table, form, img, a) i kolejności (`section:nth-of-type(2)`). Identyfikatorów i klas używaj tylko, gdy treść je podaje. Jeśli treść nie mówi, jakim znacznikiem zrobić blok (np. „blok lewy”), a musisz go wskazać, użyj tego, co ma wzorzec, i dodaj pole `hint`, np. `"hint": "blok lewy jako section#lewy"`.
 4. **Nie używaj selektorów atrybutów plików** (`img[src='x.png']`, `a[href='y']`). Plik obrazu lub odnośnika sprawdzasz typem `attr` z `"attr": "src"` / `"href"` i `"equals"`.
 5. Teksty (`equals`) przepisuj dokładnie z treści. Gdy po tekście jest numer zdającego, użyj `startsWith`.
-6. Treść generowana przez PHP (pętle, dane z bazy, obsługa formularza) to kryterium `{"type": "php"}` z opisem. Nie sprawdzasz jej automatycznie.
+6. Treść generowana przez PHP (pętle, dane z bazy, obsługa formularza) to kryterium `{"type": "php"}` z opisem. Nie sprawdzasz jej automatycznie. **Style** elementów tworzonych przez PHP (np. bloki generowane skryptem) sprawdzaj jednak typem `cssRule` z selektorem z wzorca i polem `hint` (np. `"hint": "bloki tworzone skryptem: selektor main section"`), a nie `manual`; wartość jest porównywana po normalizacji przez przeglądarkę, więc kolejność zapisu nie ma znaczenia.
 7. Coś, czego nie da się sprawdzić automatycznie (np. „znaczące nazewnictwo zmiennych”), to `{"type": "manual"}`. Używaj oszczędnie.
 8. Wartości CSS jak w treści (kolory nazwami lub szesnastkowo, jednostki jak w treści).
 
@@ -44,7 +44,7 @@ Wzorcowe przykłady (sprawdzone, przejdź je w całości przed pisaniem):
 | `image` | `name`, `width` / `height` (px), `alpha: true` (przezroczystość) | grafika wgrana przez kursanta; tylko dla `web.graphics` |
 | `php`, `manual` | tylko `desc` | wyświetlane, nie liczone automatycznie |
 
-Oczekiwania w `js.expect`: `{"selector", "equals"|"contains"}` (tekst), `{"selector", "css": prop, "value"}`, `{"selector", "attr", "equals"|"contains"|"absent"}`, `{"selector", "count"}`, `{"alert": "tekst"}` (komunikat `alert`).
+Oczekiwania w `js.expect`: `{"selector", "equals"|"contains"}` (tekst), `{"selector", "css": prop, "value"}`, `{"selector", "attr", "equals"|"contains"|"absent"}`, `{"selector", "count"}`, `{"alert": "tekst"}` (komunikat `alert`), `{"console": "tekst"}` (wypisane przez `console.log`).
 Pole wyboru zaznaczasz krokiem `{"set": "#id", "value": true}`.
 
 ### CSS: praktyka
