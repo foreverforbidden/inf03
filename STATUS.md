@@ -1,6 +1,6 @@
 # Status arkuszy INF.03
 
-**done**: 74 · **review_fail**: 4 · **verify_fail**: 0 · **todo**: 1 · **razem**: 79
+**done**: 75 · **review_fail**: 3 · **verify_fail**: 0 · **todo**: 1 · **razem**: 79
 
 | Arkusz | Stan | Próby | verify | review | Uwagi |
 |---|---|---|---|---|---|
@@ -79,7 +79,7 @@
 | inf03_2026_06_06 | done | 1 | PASS | PASS 45/45 |  |
 | inf03_2026_06_07 | done | 1 | PASS | PASS 44/44 |  |
 | inf03_2026_06_08 | done | 1 | PASS | PASS  |  |
-| inf03_2026_06_09 | review_fail | 1 | PASS | FAIL 44/45 | Uwaga: styl CSS obrazu znajdującego się w bloku z  |
+| inf03_2026_06_09 | done | 1 | PASS | PASS 46/46 |  |
 | inf03_2026_06_10 | done | 1 | PASS | PASS 62/62 |  |
 | inf03_2026_06_11 | done | 1 | PASS | PASS 58/58 |  |
 | inf03_2026_06_12 | done | 1 | PASS | PASS 52/52 |  |
