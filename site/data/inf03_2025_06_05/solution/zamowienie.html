@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Fotografia</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>Fotografia artystyczna</h1></header>
+<section id="obrazy"><img src="1.jpg" alt="obrazy do sprzedaży" title="1.jpg"><img src="2.jpg" alt="obrazy do sprzedaży" title="2.jpg"><img src="3.jpg" alt="obrazy do sprzedaży" title="3.jpg"><img src="4.jpg" alt="obrazy do sprzedaży" title="4.jpg"><img src="5.jpg" alt="obrazy do sprzedaży" title="5.jpg"><img src="6.jpg" alt="obrazy do sprzedaży" title="6.jpg"><img src="7.jpg" alt="obrazy do sprzedaży" title="7.jpg"><img src="8.jpg" alt="obrazy do sprzedaży" title="8.jpg"><img src="9.jpg" alt="obrazy do sprzedaży" title="9.jpg"><img src="10.jpg" alt="obrazy do sprzedaży" title="10.jpg"></section>
+<main>
+<section id="lewy">
+<h3>Zamówienie</h3>
+<label for="plik">Wybierz obraz: </label><input type="file" id="plik" accept="image/jpeg"><br>
+<label for="kopie">Liczba Kopii: </label><input type="number" id="kopie"><br>
+<input type="radio" name="papier" id="blyszczacy" value="blyszczacy" checked><label for="blyszczacy">Papier błyszczący</label><br>
+<input type="radio" name="papier" id="matowy" value="matowy"><label for="matowy">Papier matowy</label><br>
+<button type="button" onclick="dodajDoKoszyka()">Dodaj do koszyka</button>
+</section>
+<nav>
+<ul>
+<li><a href="regulamin.html">Regulamin</a></li>
+<li><a href="uslugi.html">Usługi</a></li>
+<li><a href="https://pixabay.com">Zdjęcia</a></li>
+</ul>
+</nav>
+<section id="prawy">
+<h3>Koszyk</h3>
+<div id="koszyk"></div>
+</section>
+</main>
+<footer><p>Autor strony: <em>00000000000</em></p></footer>
+<script>
+function dodajDoKoszyka() {
+  var kopie = parseInt(document.getElementById("kopie").value);
+  if (isNaN(kopie)) { kopie = 0; }
+  var cenaJednostkowa = document.getElementById("matowy").checked ? 2 : 1.5;
+  var cena = kopie * cenaJednostkowa;
+  var sciezka = document.getElementById("plik").value;
+  var nazwaPliku = sciezka.substring(Math.max(sciezka.lastIndexOf("\\"), sciezka.lastIndexOf("/")) + 1);
+  var koszyk = document.getElementById("koszyk");
+  var obraz = document.createElement("img");
+  obraz.src = nazwaPliku;
+  var paragrafKopie = document.createElement("p");
+  paragrafKopie.innerHTML = "Liczba kopii: " + kopie;
+  var paragrafCena = document.createElement("p");
+  paragrafCena.innerHTML = "Cena: " + cena;
+  koszyk.appendChild(obraz);
+  koszyk.appendChild(paragrafKopie);
+  koszyk.appendChild(paragrafCena);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Rejestracja</title>
+<link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<header>
+<h1>Formularz rejestracyjny konferencji <em>Nasze Kwiaty</em></h1>
+</header>
+<main>
+<form>
+<section id="blok1">
+<h2>Dane osobowe</h2>
+<input type="text" id="imie" placeholder="Wpisz imię..." required>
+<input type="text" id="nazwisko" placeholder="Wpisz nazwisko..." required>
+<input type="button" value="Następna karta" onclick="pokazBlokDrugi()">
+</section>
+<section id="blok2">
+<h2>Dane kontaktowe</h2>
+<input type="email" placeholder="Twój e-mail...">
+<input type="tel" placeholder="Twój numer telefonu...">
+<input type="button" value="Następna karta" onclick="pokazBlokTrzeci()">
+</section>
+<section id="blok3">
+<h2>Hasło do logowania</h2>
+<input type="password" id="haslo1" placeholder="Podaj hasło">
+<input type="password" id="haslo2" placeholder="Powtórz hasło">
+<input type="button" value="Zatwierdź" onclick="zatwierdzFormularz()">
+</section>
+</form>
+</main>
+<footer>
+<video src="motyl.mp4" controls>Przeglądarka nie obsługuje tego formatu</video>
+</footer>
+<footer>
+<h3>Plan konferencji</h3>
+<table>
+<tr><td>9:00 - 12:00</td><td>Pielęgnacja roślin</td></tr>
+<tr><td>13:00 - 15:00</td><td>Targi kwiatowe</td></tr>
+</table>
+</footer>
+<footer>
+<p><a href="https://kwiaty.pl/">Internetowa kwiaciarnia</a></p>
+</footer>
+<footer>
+<p>Formularz wykonał: 00000000000</p>
+</footer>
+<script>
+function pokazBlokDrugi() {
+    document.getElementById("blok1").style.visibility = "hidden";
+    document.getElementById("blok2").style.visibility = "visible";
+}
+function pokazBlokTrzeci() {
+    document.getElementById("blok2").style.visibility = "hidden";
+    document.getElementById("blok3").style.visibility = "visible";
+}
+function zatwierdzFormularz() {
+    var haslo = document.getElementById("haslo1").value;
+    var hasloPowtorzone = document.getElementById("haslo2").value;
+    if (haslo !== hasloPowtorzone) {
+        alert("Podane hasła różnią się");
+    }
+    var imie = document.getElementById("imie").value;
+    var nazwisko = document.getElementById("nazwisko").value;
+    console.log("Witaj " + imie + " " + nazwisko);
+}
+</script>
+</body>
+</html>

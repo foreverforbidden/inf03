@@ -1,0 +1,47 @@
+* {
+    font-family: "Trebuchet MS", sans-serif;
+}
+aside {
+    background-color: #C5CAE9;
+    width: 40%;
+    height: 600px;
+    overflow: auto;
+    float: left;
+}
+section {
+    width: 60%;
+    height: 300px;
+    float: left;
+}
+#sekcja1 {
+    background-color: #9FA8DA;
+}
+#sekcja2 {
+    background-color: #7986CB;
+}
+footer {
+    background-color: #283593;
+    color: white;
+    padding: 20px;
+    clear: both;
+}
+.opona {
+    background-color: #9FA8DA;
+    margin: 40px;
+    border: 2px dotted #283593;
+    border-radius: 30px;
+}
+img {
+    float: left;
+    padding: 20px;
+}
+h2 {
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+}
+h3 {
+    background-color: #7986CB;
+    color: white;
+    font-size: 140%;
+}

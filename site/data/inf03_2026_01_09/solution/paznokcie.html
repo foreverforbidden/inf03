@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Stylizacja paznokci</title>
+<link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<aside>
+<img src="manicure.jpg" alt="Stylizacja paznokci">
+</aside>
+<main>
+<header>
+<h1>Twoje wymarzone paznokcie</h1>
+</header>
+<nav>
+<button id="przycisk1" onmouseover="pokazSekcje(1)">Kolor</button>
+<button id="przycisk2" onmouseover="pokazSekcje(2)">Kształt</button>
+<button id="przycisk3" onmouseover="pokazSekcje(3)">Wzór</button>
+</nav>
+<section id="sekcja1">
+<h2>Kolor</h2>
+<img src="kolory.png" alt="Kolory paznokci"><br>
+<input type="color" value="#FF0000">
+</section>
+<section id="sekcja2">
+<h2>Kształt</h2>
+<img src="ksztalt.png" alt="Kształty paznokci"><br>
+<select>
+<option>migdał</option>
+<option>zaokrąglony</option>
+<option>kwadratowy</option>
+<option>balerina</option>
+<option>zaokrąglony kwadrat</option>
+</select>
+</section>
+<section id="sekcja3">
+<h2>Wzór</h2>
+<script>
+for (var numer = 1; numer <= 10; numer++) {
+  document.write('<img class="wzory" src="' + numer + '.jpg" alt="Wzór ' + numer + '" title="' + numer + '">');
+}
+</script>
+<br>
+<input type="number" min="1" max="10" step="1">
+</section>
+</main>
+<footer>
+<p>Autor strony: <em>00000000000</em></p>
+</footer>
+<script>
+function pokazSekcje(numer) {
+  for (var i = 1; i <= 3; i++) {
+    var sekcja = document.getElementById("sekcja" + i);
+    var przycisk = document.getElementById("przycisk" + i);
+    if (i === numer) {
+      sekcja.style.display = "block";
+      przycisk.style.backgroundColor = "Salmon";
+    } else {
+      sekcja.style.display = "none";
+      przycisk.style.backgroundColor = "Crimson";
+    }
+  }
+}
+</script>
+</body>
+</html>

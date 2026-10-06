@@ -1,0 +1,61 @@
+header {
+    background-image: url("naglowek.png");
+    height: 170px;
+}
+aside {
+    float: left;
+    width: 25%;
+    height: 720px;
+    text-align: center;
+}
+nav {
+    float: left;
+    width: 55%;
+    height: 90px;
+}
+main {
+    float: left;
+    width: 55%;
+    padding: 22px;
+    margin: 0 0 0 3%;
+    box-shadow: 0 0 25px Grey;
+}
+#obrazy, main {
+    height: 530px;
+    overflow: auto;
+}
+footer {
+    clear: both;
+    background-color: Crimson;
+}
+.opis {
+    font-size: 150%;
+    line-height: 150%;
+    text-align: justify;
+}
+li {
+    display: inline-block;
+    width: 30%;
+}
+a {
+    display: block;
+    color: #382828;
+    font-size: 180%;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+aside img {
+    border-right: 4px solid Crimson;
+    border-bottom: 4px solid Crimson;
+    border-radius: 25px;
+}
+aside img:hover {
+    border-color: Teal;
+}
+h1 {
+    font-family: Chiller, fantasy;
+    color: Crimson;
+    font-size: 152px;
+    letter-spacing: 30px;
+    margin: 0;
+}

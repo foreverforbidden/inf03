@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Restauracja Marchewka</title>
+  <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+  <header>
+    <section id="naglowekLewy">
+      <h1>Restauracja Marchewka</h1>
+      <h3>Twoje wegetariańskie miejsce na mapie miasta</h3>
+    </section>
+    <section id="naglowekPrawy">
+      <img src="logo.png" alt="logo">
+    </section>
+  </header>
+  <main>
+    <section id="glownyLewy">
+      <h4>Twoje zamówienie</h4>
+      <ul id="listaZamowien"></ul>
+      <button onclick="wyczyscListe()">Wyczyść</button>
+      <button onclick="zatwierdzZamowienie()">Zatwierdź</button>
+    </section>
+    <section id="glownyPrawy">
+      <div class="potrawa" onclick="dodajPotrawe('Naleśniki')">
+        <img src="nalesniki.webp" alt="Naleśniki">
+        <p>Naleśniki</p>
+      </div>
+      <div class="potrawa" onclick="dodajPotrawe('Lasagne szpinakowa')">
+        <img src="lasagne.webp" alt="Lasagne szpinakowa">
+        <p>Lasagne szpinakowa</p>
+      </div>
+      <div class="potrawa" onclick="dodajPotrawe('Pieczona marchewka')">
+        <img src="marchewka.webp" alt="Pieczona marchewka">
+        <p>Pieczona marchewka</p>
+      </div>
+      <div class="potrawa" onclick="dodajPotrawe('Wege rosół')">
+        <img src="rosol.webp" alt="Wege rosół">
+        <p>Wege rosół</p>
+      </div>
+      <div class="potrawa" onclick="dodajPotrawe('Tarta szparagowa')">
+        <img src="tarta.webp" alt="Tarta szparagowa">
+        <p>Tarta szparagowa</p>
+      </div>
+      <div class="potrawa" onclick="dodajPotrawe('Kompot')">
+        <img src="kompot.webp" alt="Kompot">
+        <p>Kompot</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Wykonał: 00000000000</p>
+  </footer>
+  <script>
+    function dodajPotrawe(nazwa) {
+      var element = document.createElement("li");
+      element.innerHTML = nazwa;
+      document.getElementById("listaZamowien").appendChild(element);
+    }
+    function wyczyscListe() {
+      document.getElementById("listaZamowien").innerHTML = "";
+    }
+    function zatwierdzZamowienie() {
+      alert("Zamówienie zostało przekazane do realizacji");
+      wyczyscListe();
+    }
+  </script>
+</body>
+</html>

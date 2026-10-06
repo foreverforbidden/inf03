@@ -1,0 +1,53 @@
+* {
+    font-family: "Trebuchet MS", sans-serif;
+}
+header, footer {
+    background-color: #B17948;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+nav {
+    background-color: #D9A97E;
+    color: white;
+    text-align: center;
+}
+.lewa1, .lewa2 {
+    width: 40%;
+    height: 200px;
+}
+.prawa1 {
+    width: 60%;
+    height: 120px;
+}
+.prawa2 {
+    width: 60%;
+    height: 400px;
+    overflow: scroll;
+}
+.lewa1, .lewa2 { float: left; }
+.prawa1, .prawa2 { float: right; }
+footer { clear: both; }
+img {
+    float: left;
+    margin: 20px;
+}
+h4 {
+    text-align: right;
+    color: red;
+    font-size: 120%;
+}
+a {
+    color: white;
+    font-size: 150%;
+    margin: 30px;
+}
+.recepty {
+    background-color: PeachPuff;
+    padding: 20px;
+    margin: 40px;
+    border-radius: 20px;
+}
+.recepty:hover {
+    background-color: #D9A97E;
+}

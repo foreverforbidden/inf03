@@ -18,7 +18,11 @@ import shutil
 import sqlite3
 import sys
 
+import glob
+import subprocess
+
 import pymysql
+from PIL import Image
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from verify import ROOT, WORK, mysql, split_sql  # noqa: E402
@@ -297,6 +301,129 @@ def run_reference(conn, db, n, sql, kind):
     return exp
 
 
+# --- czesc "witryna": pliki, materialy, ilustracje ------------------------------------
+
+IMG_EXT = (".jpg", ".jpeg", ".png", ".gif", ".webp", ".bmp", ".svg")
+CODE_EXT = (".html", ".htm", ".css", ".js", ".php")
+SCREENSHOT = re.compile(r"^(import|kw\d+|kwerenda\d*|zrzut\w*|baza\w*|czcionka)\.(png|jpe?g)$", re.I)
+REPO_URL = "https://github.com/foreverforbidden/inf03"
+
+
+def web_text(task):
+    """Fragment tresci od czesci o witrynie (zwykle 'Witryna internetowa') do konca zadania."""
+    lines = task.splitlines()
+    start = next((i for i, l in enumerate(lines) if re.search(r"^\s*(Witryna internetowa|Cechy witryny|Cechy grafiki|Grafika)", l)), None)
+    if start is None:
+        start = next((i for i, l in enumerate(lines) if re.search(r"Operacje na bazie danych", l)), 0)
+    end = next((i for i, l in enumerate(lines) if i > start and re.search(r"^\s*(UWAGA: po zakończeniu|Nagraj płytę|Po zakończeniu pracy)", l)), len(lines))
+    out = []
+    for l in lines[start:end]:
+        if re.search(r"Strona \d+ z \d+|^\s*INF\.0\d-\d", l) or re.match(r"^\s*Więcej arkuszy", l):
+            continue
+        out.append(l.rstrip())
+    text = "\n".join(out)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip()
+
+
+def save_image(src, dst, max_side=1000):
+    """Kopia grafiki do podgladu; duze zmniejszane (te same nazwa i format)."""
+    try:
+        im = Image.open(src)
+        if (im.format or "").upper() == "BMP":
+            max_side = 640
+        if max(im.size) <= max_side and os.path.getsize(src) <= 300_000:
+            shutil.copy2(src, dst)
+            return
+        im.thumbnail((max_side, max_side))
+        fmt = (im.format or Image.open(src).format or "PNG")
+        if fmt.upper() in ("JPEG", "JPG") and im.mode not in ("RGB", "L"):
+            im = im.convert("RGB")
+        kw = {"quality": 82, "optimize": True} if fmt.upper() in ("JPEG", "JPG") else {"optimize": True}
+        im.save(dst, format=fmt, **kw)
+    except Exception:  # noqa: BLE001
+        shutil.copy2(src, dst)
+
+
+def illustrations(pdf, out_dir):
+    """Strony PDF z ilustracjami (poza okladka) jako JPG."""
+    os.makedirs(out_dir, exist_ok=True)
+    for f in glob.glob(os.path.join(out_dir, "*.jpg")):
+        os.remove(f)
+    n = int(re.search(r"Pages:\s+(\d+)", subprocess.run(["pdfinfo", pdf], capture_output=True, text=True).stdout).group(1))
+    pages = []
+    for i in range(2, n + 1):
+        t = subprocess.run(["pdftotext", "-f", str(i), "-l", str(i), pdf, "-"], capture_output=True, text=True).stdout
+        if re.search(r"Ilustracja \d", t):
+            pages.append(i)
+    names = []
+    for i in pages:
+        prefix = os.path.join(out_dir, f"s{i}")
+        subprocess.run(["pdftoppm", "-r", "80", "-jpeg", "-jpegopt", "quality=72", "-f", str(i), "-l", str(i), "-singlefile", pdf, prefix], check=True)
+        names.append(f"s{i}.jpg")
+    return names
+
+
+def build_web(code, meta, task, out_dir):
+    d = os.path.join(WORK, code)
+    wynik = os.path.join(d, "wynik")
+    mat = os.path.join(d, "materialy")
+    sol_dir, as_dir = os.path.join(out_dir, "solution"), os.path.join(out_dir, "assets")
+    for x in (sol_dir, as_dir):
+        if os.path.isdir(x):
+            shutil.rmtree(x)
+        os.makedirs(x)
+    solution = []
+    for f in sorted(os.listdir(wynik)):
+        src = os.path.join(wynik, f)
+        if not os.path.isfile(src) or f.startswith("."):
+            continue
+        if f.lower().endswith(CODE_EXT):
+            shutil.copy2(src, os.path.join(sol_dir, f))
+            solution.append(f)
+        elif f.lower().endswith(IMG_EXT) and not SCREENSHOT.match(f):
+            orig = next(iter(glob.glob(os.path.join(mat, "**", f), recursive=True)), None)
+            if orig and open(orig, "rb").read() == open(src, "rb").read():
+                continue  # taka sama jak w materialach - podglad wezmie ja z assets/
+            save_image(src, os.path.join(sol_dir, f))
+            solution.append(f)
+    assets, texts = [], []
+    for dp, _, names in os.walk(mat):
+        for f in sorted(names):
+            src = os.path.join(dp, f)
+            if f.lower().endswith(IMG_EXT):
+                if f in assets:
+                    continue
+                save_image(src, os.path.join(as_dir, f))
+                assets.append(f)
+            elif f.lower().endswith(".txt") and "OFL" not in f:
+                shutil.copy2(src, os.path.join(as_dir, f))
+                texts.append(f)
+    required = meta.get("required_files", [])
+    files = [f for f in required if f.lower().endswith(CODE_EXT)]
+    for f in solution:  # pliki kodu ze wzorca, ktorych lista z tresci nie wymienila
+        if f.lower().endswith(CODE_EXT) and f not in files:
+            files.append(f)
+    graphics = [f for f in required if f.lower().endswith(IMG_EXT) and not SCREENSHOT.match(f) and f in solution]  # obrobione grafiki
+    archive = next(iter(sorted(glob.glob(os.path.join(ROOT, "inf03_arkusze", f"{code}_materialy.*")))), None)
+    ill = illustrations(os.path.join(ROOT, meta["pdf"]), os.path.join(out_dir, "illustrations")) if meta.get("pdf") else []
+    pages = [f for f in files if f.lower().endswith((".html", ".htm", ".php"))]
+    entry = next((f for f in pages if f.lower().startswith("index")), pages[0] if pages else None)
+    return {
+        "files": files,
+        "entry": entry,
+        "graphics": graphics,
+        "assets": assets,
+        "texts": texts,
+        "solution": solution,
+        "illustrations": ill,
+        "text": web_text(task),
+        "archive": f"{REPO_URL}/raw/main/inf03_arkusze/{os.path.basename(archive)}" if archive else None,
+        "password": meta.get("password"),
+        "has_checks": os.path.exists(os.path.join(out_dir, "checks.json")),
+    }
+
+
 # --- glowna petla ----------------------------------------------------------------
 
 def build_sheet(code):
@@ -377,6 +504,8 @@ def build_sheet(code):
             for m in re.finditer(r"create\s+user\s+(?:if\s+not\s+exists\s+)?([^\s;]+)", "\n".join(queries), re.I):
                 mysql(["-e", f"DROP USER IF EXISTS {m.group(1)};"])
 
+    sheet["web"] = build_web(code, meta, task, out_dir)
+
     with open(os.path.join(out_dir, "sheet.json"), "w", encoding="utf-8") as f:
         json.dump(sheet, f, ensure_ascii=False, separators=(",", ":"))
 
@@ -389,6 +518,8 @@ def build_sheet(code):
         "db": sheet["db"],
         "queries": [{"n": q["n"], "tags": q["tags"], "kind": q["kind"], "prompt": q["prompt"], "len": len(q["sql"])} for q in sheet["queries"]],
         "tags": tags,
+        "web_files": sheet["web"]["files"],
+        "has_checks": sheet["web"]["has_checks"],
     }
 
 

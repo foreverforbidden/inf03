@@ -1,0 +1,53 @@
+body {
+    background-color: #F6E5DC;
+    font-family: Verdana;
+}
+
+#baner {
+    background-color: #2F180C;
+    text-align: center;
+    color: khaki;
+    height: 60px;
+}
+
+#baner h1 {
+    margin: 0;
+    line-height: 60px;
+}
+
+#lewy {
+    float: left;
+    width: 60%;
+}
+
+#prawy {
+    float: left;
+    width: 40%;
+    box-sizing: border-box;
+    font-size: 150%;
+    padding: 70px;
+}
+
+#dolny {
+    clear: both;
+    background-color: #D0B6A8;
+    text-align: center;
+    padding: 30px;
+}
+
+footer {
+    background-color: #2F180C;
+    color: khaki;
+    height: 60px;
+}
+
+img {
+    height: 350px;
+}
+
+input[type="reset"], input[type="submit"] {
+    margin: 10px;
+    padding: 5px;
+    background-color: #2F180C;
+    color: khaki;
+}

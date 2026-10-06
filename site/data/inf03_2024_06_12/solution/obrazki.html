@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Efekty obrazu</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+        <h2>Efekty na obrazach</h2>
+    </header>
+    <section>
+        <img src="pszczola.jpg" alt="pszczoła na fioletowym kwiatku" id="obraz1"><br>
+        <input type="radio" name="efekt" id="blur"> Blur<br>
+        <input type="radio" name="efekt" id="sepia"> Sepia<br>
+        <input type="radio" name="efekt" id="negatyw"> Negatyw<br>
+        <button id="zastosuj1">Zastosuj</button>
+    </section>
+    <section>
+        <img src="pomarancza.jpg" alt="drzewo pomarańczy" id="obraz2"><br>
+        <button id="kolorowy">Kolorowy</button>
+        <button id="czarnoBialy">Czarno-biały</button>
+    </section>
+    <section>
+        <img src="owoce.jpg" alt="Kosz pełen owoców" id="obraz3"><br>
+        <input type="range" min="0" max="100" value="100" id="suwakPrzezroczystosc"><br>
+        <button id="zastosuj3">Zastosuj</button>
+    </section>
+    <section>
+        <img src="zolw.jpg" alt="Żółw w wodzie" id="obraz4"><br>
+        <input type="range" min="0" max="250" id="suwakJasnosc"><br>
+        <button id="zastosuj4">Zastosuj</button>
+    </section>
+    <footer>
+        <p><a href="http://www.css.com/" target="_blank">Zobacz inne efekty obrazu</a></p>
+        <p>Stronę wykonał: 00000000000</p>
+    </footer>
+    <script>
+        document.getElementById("zastosuj1").onclick = function () {
+            var obraz = document.getElementById("obraz1");
+            if (document.getElementById("blur").checked) {
+                obraz.style.filter = "blur(6px)";
+            } else if (document.getElementById("sepia").checked) {
+                obraz.style.filter = "sepia(100%)";
+            } else if (document.getElementById("negatyw").checked) {
+                obraz.style.filter = "invert(100%)";
+            }
+        };
+        document.getElementById("kolorowy").onclick = function () {
+            document.getElementById("obraz2").style.filter = "grayscale(0%)";
+        };
+        document.getElementById("czarnoBialy").onclick = function () {
+            document.getElementById("obraz2").style.filter = "grayscale(100%)";
+        };
+        document.getElementById("zastosuj3").onclick = function () {
+            var wartosc = document.getElementById("suwakPrzezroczystosc").value;
+            document.getElementById("obraz3").style.filter = "opacity(" + wartosc + "%)";
+        };
+        document.getElementById("zastosuj4").onclick = function () {
+            var wartosc = document.getElementById("suwakJasnosc").value;
+            document.getElementById("obraz4").style.filter = "brightness(" + wartosc + "%)";
+        };
+    </script>
+</body>
+</html>

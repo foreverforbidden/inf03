@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Konto pacjenta</title>
+<link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<header>
+<h2>Strefa pacjenta</h2>
+</header>
+<nav>
+<a href="index.html">Strona główna</a>
+<a href="recepty.html">Recepty</a>
+<a href="skierowania.html">Skierowania</a>
+</nav>
+<main>
+<section class="lewa1">
+<img src="pacjent.png" alt="dane pacjenta">
+<h3>Dane pacjenta</h3>
+<p>Agnieszka</p>
+<p>Nowak</p>
+</section>
+<section class="prawa1">
+<img src="recepta.png" alt="dane recept">
+<h3>Dane recept</h3>
+</section>
+<section class="prawa2" id="prawa2"></section>
+<section class="lewa2">
+<img src="lekarz.png" alt="dane lekarza">
+<h3>Dane lekarza</h3>
+<p>lek. Marian Kowal</p>
+<p>numer PWZ: 4387203</p>
+</section>
+</main>
+<footer>
+<p>Autor strony: <em>00000000000</em></p>
+</footer>
+<script>
+var pacjenci = {
+    "id": "1",
+    "imie": "Agnieszka",
+    "nazwisko": "Nowak",
+    "wystawca": "lek. Marian Kowal",
+    "numer": "4387203",
+    "recepty": [
+        {"id": "0",  "data": "8.03.2025", "kod": "1220", "lek1": "Witamina C", "lek2": "Potas", "lek3": "Syrop prawoślazowy"},
+        {"id": "1",  "data": "23.04.2025", "kod": "4634", "lek1": "APAP", "lek2": "Witamina B", "lek3": ""},
+        {"id": "2",  "data": "13.05.2025", "kod": "2913", "lek1": "Melatonina", "lek2": "", "lek3": ""},
+        {"id": "3",  "data": "30.10.2025", "kod": "1105", "lek1": "Witamina C", "lek2": "Calcium", "lek3": "Sinupret"}
+    ]
+};
+
+var blokPrawa2 = document.getElementById("prawa2");
+for (var i = 0; i < pacjenci.recepty.length; i++) {
+    var recepta = pacjenci.recepty[i];
+    var blok = document.createElement("div");
+    blok.classList.add("recepty");
+
+    var data = document.createElement("p");
+    data.innerText = "Data wystawienia: " + recepta.data;
+    blok.appendChild(data);
+
+    var lista = document.createElement("ol");
+    var leki = [recepta.lek1, recepta.lek2, recepta.lek3];
+    for (var j = 0; j < leki.length; j++) {
+        if (leki[j] && leki[j] !== "") {
+            var pozycja = document.createElement("li");
+            pozycja.innerText = leki[j];
+            lista.appendChild(pozycja);
+        }
+    }
+    blok.appendChild(lista);
+
+    var kod = document.createElement("h4");
+    kod.innerText = "Kod: " + recepta.kod;
+    blok.appendChild(kod);
+
+    blokPrawa2.appendChild(blok);
+}
+</script>
+</body>
+</html>

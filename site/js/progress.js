@@ -2,7 +2,7 @@
 const KEY = 'inf03-trener-v1';
 
 function empty() {
-  return { done: {}, tries: {}, drafts: {}, lessons: {}, started: Date.now() };
+  return { done: {}, tries: {}, drafts: {}, lessons: {}, results: {}, started: Date.now() };
 }
 
 let state = load();
@@ -21,6 +21,18 @@ function save() {
 }
 
 export const sqlKey = (code, n) => `sql:${code}:${n}`;
+export const cwKey = (lesson, i) => `cw:${lesson}:${i}`;
+export const webKey = (code) => `web:${code}`;
+
+// najlepszy wynik pelnego arkusza (pass/auto)
+export function getResult(key) { return state.results[key]; }
+
+export function setResult(key, r) {
+  const prev = state.results[key];
+  if (!prev || r.pass > prev.pass || (r.pass === prev.pass && r.auto !== prev.auto)) state.results[key] = { ...r, at: Date.now() };
+  if (r.auto && r.pass === r.auto) markDone(key);
+  save();
+}
 
 export function isDone(key) { return !!state.done[key]; }
 
@@ -70,6 +82,7 @@ export function importJson(text) {
     tries: { ...s.tries, ...state.tries },
     drafts: { ...s.drafts, ...state.drafts },
     lessons: { ...s.lessons, ...state.lessons },
+    results: { ...(s.results || {}), ...state.results },
   };
   save();
 }

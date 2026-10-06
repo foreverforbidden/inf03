@@ -3,6 +3,13 @@ import * as eng from './sqlengine.js';
 import * as prog from './progress.js';
 import { createEditor } from './editor.js';
 import { LESSONS, MODULES, SQL_LESSON_ORDER, lessonForQuery } from './content.js';
+import { WEB_LESSONS, WEB_LESSON_ORDER, WEB_MODULES } from './content_web.js';
+import { runChecks, summary } from './webcheck.js';
+import { createWorkspace } from './webeditor.js';
+
+const ALL_LESSONS = { ...LESSONS, ...WEB_LESSONS };
+const LESSON_SEQ = ['egzamin', ...SQL_LESSON_ORDER, ...WEB_LESSON_ORDER];
+window.inf03 = { runChecks, WEB_LESSONS };
 
 const app = document.getElementById('app');
 
@@ -54,6 +61,14 @@ async function sqlExercises() {
   return byLesson;
 }
 
+function cwCount(moduleId) {
+  let done = 0, total = 0;
+  for (const id of WEB_MODULES.find((m) => m.id === moduleId).lessons) {
+    WEB_LESSONS[id].exercises.forEach((_, i) => { total++; if (prog.isDone(prog.cwKey(id, i))) done++; });
+  }
+  return { done, total };
+}
+
 async function nextExercise() {
   const by = await sqlExercises();
   for (const id of SQL_LESSON_ORDER) {
@@ -83,18 +98,25 @@ async function viewHome() {
   const total = Object.values(by).reduce((a, l) => a + l.length, 0);
   const done = prog.doneCount('sql:');
   const next = await nextExercise();
+  const idx = await data.index();
+  const webSheets = idx.sheets.filter((s) => s.has_checks);
+  const webDone = webSheets.filter((s) => prog.isDone(prog.webKey(s.code))).length;
   const steps = MODULES.map((m, i) => {
-    let right = '';
-    if (m.id === 'sql') right = bar(done, total);
-    else if (m.id === 'start') right = prog.lessonSeen('egzamin') ? '<span class="pill ok">przeczytane</span>' : '<span class="pill accent">zacznij tutaj</span>';
+    let right = '', full = false;
+    if (m.id === 'sql') { right = bar(done, total); full = total && done === total; }
+    else if (m.id === 'start') { right = prog.lessonSeen('egzamin') ? '<span class="pill ok">przeczytane</span>' : '<span class="pill accent">zacznij tutaj</span>'; full = prog.lessonSeen('egzamin'); }
+    else if (WEB_MODULES.some((w) => w.id === m.id)) {
+      const c = cwCount(m.id);
+      right = bar(c.done, c.total); full = c.total && c.done === c.total;
+    } else if (m.id === 'sheets') { right = bar(webDone, webSheets.length); full = webSheets.length && webDone === webSheets.length; }
     else right = '<span class="pill soon">wkrótce</span>';
-    const cls = m.status === 'soon' ? 'locked' : (m.id === 'start' && prog.lessonSeen('egzamin')) || (m.id === 'sql' && total && done === total) ? 'done' : '';
+    const cls = m.status === 'soon' ? 'locked' : full ? 'done' : '';
     const inner = `<span class="num">${i + 1}</span><div><h3>${esc(m.title)}</h3><p>${esc(m.desc)}</p></div>${right}`;
     return m.href ? `<a class="card path-step ${cls}" href="${m.href}">${inner}</a>` : `<div class="card path-step ${cls}">${inner}</div>`;
   }).join('');
   render(`
     <h1>Naucz się pisać arkusze INF.03</h1>
-    <p class="lead">Ćwiczysz na prawdziwych zadaniach CKE z lat 2022 do 2026. Kod sprawdza się od razu w przeglądarce, bez instalowania XAMPP.</p>
+    <p class="lead">Ćwiczysz na prawdziwych zadaniach CKE z lat 2022 do 2026: kwerendy SQL, HTML, CSS i JavaScript. Kod sprawdza się od razu w przeglądarce, bez instalowania XAMPP.</p>
     ${next ? `<p class="btns"><a class="btn primary" href="#/sql/${next.ex.code}/${next.ex.n}?z=${next.lesson}">${done ? 'Kontynuuj' : 'Zacznij'}: ${esc(LESSONS[next.lesson].title)} →</a>
       <a class="btn" href="#/lekcja/egzamin">Mapa egzaminu</a></p>` : ''}
     <h2>Ścieżka</h2>
@@ -103,35 +125,55 @@ async function viewHome() {
     <div class="grid">
       <div class="card"><h3>Lekcja</h3><p class="muted">Krótko: wzór, przykład z arkusza, pułapki, za które CKE odejmuje punkty.</p></div>
       <div class="card"><h3>Ćwiczenie</h3><p class="muted">Prawdziwa kwerenda z arkusza, prawdziwa baza. Wynik i ocena od razu, z wyjaśnieniem, co jest nie tak.</p></div>
-      <div class="card"><h3>Arkusz</h3><p class="muted">Całe zadanie z egzaminu krok po kroku. Później: egzamin próbny na czas.</p></div>
+      <div class="card"><h3>Arkusz</h3><p class="muted">Całe zadanie z egzaminu: kwerendy i strona, z listą kryteriów jak na karcie oceny.</p></div>
     </div>`, null);
 }
 
 async function viewLessons() {
   setNav('lekcje');
   const by = await sqlExercises();
-  const items = [['egzamin', null], ...SQL_LESSON_ORDER.map((id) => [id, by[id]])].map(([id, ex], i) => {
-    const l = LESSONS[id];
-    const done = ex ? ex.filter((e) => prog.isDone(prog.sqlKey(e.code, e.n))).length : 0;
-    const right = ex ? `<div>${bar(done, ex.length)}<div class="small muted" style="text-align:right">${done}/${ex.length}</div></div>`
+  const item = (id, n) => {
+    const l = ALL_LESSONS[id];
+    let done = 0, total = 0;
+    if (SQL_LESSON_ORDER.includes(id)) { total = by[id].length; done = by[id].filter((e) => prog.isDone(prog.sqlKey(e.code, e.n))).length; }
+    else if (WEB_LESSONS[id]) { total = l.exercises.length; done = l.exercises.filter((_, i) => prog.isDone(prog.cwKey(id, i))).length; }
+    const right = total ? `<div>${bar(done, total)}<div class="small muted" style="text-align:right">${done}/${total}</div></div>`
       : (prog.lessonSeen(id) ? '<span class="pill ok">przeczytane</span>' : '');
-    const cls = ex && ex.length && done === ex.length ? 'done' : '';
-    return `<a class="card path-step ${cls}" href="#/lekcja/${id}"><span class="num">${i}</span><div><h3>${esc(l.title)}</h3><p>${esc(l.short)}</p></div>${right}</a>`;
-  }).join('');
+    const cls = total && done === total ? 'done' : '';
+    return `<a class="card path-step ${cls}" href="#/lekcja/${id}"><span class="num">${n}</span><div><h3>${esc(l.title)}</h3><p>${esc(l.short)}</p></div>${right}</a>`;
+  };
+  let n = 0;
+  const group = (title, ids) => `<h2>${esc(title)}</h2><div class="path">${ids.map((id) => item(id, n++)).join('')}</div>`;
   render(`
     <h1>Lekcje</h1>
-    <p class="lead">Moduł SQL. Ćwiczenia w każdej lekcji to kwerendy z prawdziwych arkuszy, od najkrótszych do najdłuższych.</p>
-    <div class="path">${items}</div>
+    <p class="lead">Każda lekcja kończy się ćwiczeniami sprawdzanymi od razu. Ćwiczenia SQL to kwerendy z prawdziwych arkuszy; ćwiczenia ze strony są wzorowane na punktach z arkuszy.</p>
+    ${group('Na start', ['egzamin'])}
+    ${group('SQL', SQL_LESSON_ORDER)}
+    ${WEB_MODULES.map((m) => group(m.title, m.lessons)).join('')}
     <h2>Wkrótce</h2>
     <div class="grid">${MODULES.filter((m) => m.status === 'soon').map((m) => `<div class="card"><h3>${esc(m.title)} <span class="pill soon">wkrótce</span></h3><p class="muted">${esc(m.desc)}</p></div>`).join('')}</div>`, 'Lekcje');
 }
 
 async function viewLesson(id) {
   setNav('lekcje');
-  const l = LESSONS[id];
+  const l = ALL_LESSONS[id];
   if (!l) return viewNotFound();
   prog.markLesson(id);
   let exHtml = '';
+  if (WEB_LESSONS[id]) {
+    const ex = l.exercises;
+    const done = ex.filter((_, i) => prog.isDone(prog.cwKey(id, i))).length;
+    const first = ex.findIndex((_, i) => !prog.isDone(prog.cwKey(id, i)));
+    exHtml = `
+      <h2>Ćwiczenia <span class="pill">${done}/${ex.length}</span></h2>
+      <p class="btns"><a class="btn primary" href="#/cw/${id}/${first < 0 ? 0 : first}">${done ? 'Następne nierozwiązane' : 'Pierwsze ćwiczenie'} →</a></p>
+      <ul class="ex-list">${ex.map((e, i) => `
+        <li class="${prog.isDone(prog.cwKey(id, i)) ? 'done' : ''}"><a href="#/cw/${id}/${i}">
+          <span class="mark"></span>
+          <span><span class="prompt">${esc(e.title)}</span><br><span class="src">${esc(e.source)}</span></span>
+          <span class="pill">${e.checks.length} kryt.</span>
+        </a></li>`).join('')}</ul>`;
+  }
   if (SQL_LESSON_ORDER.includes(id)) {
     const ex = (await sqlExercises())[id];
     const done = ex.filter((e) => prog.isDone(prog.sqlKey(e.code, e.n))).length;
@@ -147,9 +189,9 @@ async function viewLesson(id) {
           <span class="pill">${KIND_LABEL[e.kind] || e.kind}</span>
         </a></li>`).join('')}</ul>`;
   }
-  const order = ['egzamin', ...SQL_LESSON_ORDER];
+  const order = LESSON_SEQ;
   const i = order.indexOf(id);
-  const nav = `<p class="btns" style="margin-top:28px">${i > 0 ? `<a class="btn ghost" href="#/lekcja/${order[i - 1]}">← ${esc(LESSONS[order[i - 1]].title)}</a>` : ''}${i < order.length - 1 ? `<a class="btn" href="#/lekcja/${order[i + 1]}">${esc(LESSONS[order[i + 1]].title)} →</a>` : ''}</p>`;
+  const nav = `<p class="btns" style="margin-top:28px">${i > 0 ? `<a class="btn ghost" href="#/lekcja/${order[i - 1]}">← ${esc(ALL_LESSONS[order[i - 1]].title)}</a>` : ''}${i < order.length - 1 ? `<a class="btn" href="#/lekcja/${order[i + 1]}">${esc(ALL_LESSONS[order[i + 1]].title)} →</a>` : ''}</p>`;
   render(`<article class="lesson"><div class="crumbs"><a href="#/lekcje">Lekcje</a></div><h1>${esc(l.title)}</h1>${l.body}${exHtml}${nav}</article>`, l.title);
 }
 
@@ -317,6 +359,194 @@ async function viewSqlExercise(code, n, lessonId) {
   });
 }
 
+// ---------- strona: lista kryteriow ----------
+
+const SECTION_LABEL = { pliki: 'Pliki', grafika: 'Grafika', html: 'HTML', css: 'CSS', js: 'JavaScript', php: 'PHP (moduł wkrótce)' };
+
+function checksHtml(checks, results) {
+  const order = ['pliki', 'grafika', 'html', 'css', 'js', 'php'];
+  const sections = [...new Set([...order.filter((o) => checks.some((c) => (c.section || 'html') === o)), ...checks.map((c) => c.section || 'html')])];
+  return sections.map((sec) => {
+    const items = checks.map((c, i) => [c, i]).filter(([c]) => (c.section || 'html') === sec);
+    return `<div class="check-group"><h3>${esc(SECTION_LABEL[sec] || sec)}</h3><ul class="checks">${items.map(([c, i]) => {
+      const r = results?.[i];
+      const st = r ? r.status : (c.type === 'php' || c.type === 'manual' ? 'manual' : '');
+      const icon = st === 'pass' ? '✓' : st === 'fail' ? '✕' : '';
+      return `<li class="${st}"><span class="st">${icon}</span><span>${esc(c.desc)}${c.hint ? `<br><span class="sec">${esc(c.hint)}</span>` : ''}${st === 'fail' && r.msg ? `<br><span class="why">${esc(r.msg)}</span>` : ''}${st === 'manual' ? `<br><span class="sec">${c.type === 'php' ? 'sprawdzane w module PHP' : 'sprawdź samodzielnie'}</span>` : ''}</span></li>`;
+    }).join('')}</ul></div>`;
+  }).join('');
+}
+
+function scoreHtml(sum) {
+  return `<span class="score">${sum.pass}/${sum.auto}</span> <span class="muted small">kryteriów sprawdzanych automatycznie${sum.manual ? `, ${sum.manual} do sprawdzenia samodzielnie` : ''}</span>`;
+}
+
+// ---------- mikrocwiczenie HTML/CSS/JS ----------
+
+async function viewWebExercise(lessonId, i) {
+  setNav('lekcje');
+  const l = WEB_LESSONS[lessonId];
+  const ex = l?.exercises[i];
+  if (!ex) return viewNotFound();
+  const key = prog.cwKey(lessonId, i);
+  const nextHref = i + 1 < l.exercises.length ? `#/cw/${lessonId}/${i + 1}` : (() => {
+    const k = LESSON_SEQ.indexOf(lessonId);
+    return k >= 0 && k + 1 < LESSON_SEQ.length ? `#/lekcja/${LESSON_SEQ[k + 1]}` : null;
+  })();
+  let saved = null;
+  try { saved = JSON.parse(prog.getDraft(key) || 'null'); } catch (e) { saved = null; }
+  render(`
+    <div class="crumbs"><a href="#/lekcje">Lekcje</a> / <a href="#/lekcja/${lessonId}">${esc(l.title)}</a></div>
+    <h1>${esc(ex.title)} <span class="pill">${i + 1}/${l.exercises.length}</span></h1>
+    <div class="workspace wide">
+      <section class="stack">
+        <div class="card"><div class="task-prompt">${ex.task}</div><p class="small muted">Źródło: ${esc(ex.source)}</p></div>
+        <div class="btns">
+          <button class="btn primary" id="check" type="button">✓ Sprawdź</button>
+          <button class="btn ghost" id="hint" type="button">Podpowiedź</button>
+          <button class="btn ghost" id="reset" type="button">Od nowa</button>
+        </div>
+        <p class="kbd-help"><kbd>Shift</kbd>+<kbd>Enter</kbd> sprawdź${prog.isDone(key) ? ' · <span class="pill ok">rozwiązane</span>' : ''}</p>
+        <div id="verdict"></div>
+        <div id="checks">${checksHtml(ex.checks)}</div>
+        <div id="hints"></div>
+      </section>
+      <section><div id="ws"></div></section>
+    </div>`, ex.title);
+  let hintLevel = 0;
+  const ws = createWorkspace(document.getElementById('ws'), {
+    files: saved || ex.files,
+    entry: ex.entry,
+    assetsBase: ex.assetsBase,
+    assets: ex.assets,
+    onChange: (f) => prog.setDraft(key, JSON.stringify(f)),
+    onCheck: check,
+  });
+  async function check() {
+    const btn = document.getElementById('check');
+    btn.disabled = true;
+    try {
+      const results = await runChecks(ex.checks, ws.project(), ws.page || ex.entry);
+      const sum = summary(ex.checks, results);
+      document.getElementById('checks').innerHTML = checksHtml(ex.checks, results);
+      prog.addTry(key);
+      if (sum.pass === sum.auto) {
+        prog.markDone(key);
+        document.getElementById('verdict').innerHTML = `<div class="verdict ok"><h3>Wszystko się zgadza ✓</h3><p class="btns">${nextHref ? `<a class="btn primary" href="${nextHref}">Dalej →</a>` : ''}</p></div>`;
+      } else {
+        document.getElementById('verdict').innerHTML = `<div class="verdict bad"><h3>${sum.pass}/${sum.auto}</h3><p>Popraw kryteria oznaczone na czerwono.</p></div>`;
+      }
+    } finally {
+      btn.disabled = false;
+    }
+  }
+  document.getElementById('check').addEventListener('click', check);
+  document.getElementById('reset').addEventListener('click', () => {
+    if (confirm('Przywrócić pliki startowe? Twoje zmiany w tym ćwiczeniu znikną.')) ws.setFiles(ex.files);
+  });
+  document.getElementById('hint').addEventListener('click', () => {
+    hintLevel = Math.min(hintLevel + 1, 2);
+    const sol = Object.entries(ex.solution).filter(([, v]) => v.trim()).map(([n, v]) => `<p class="small"><strong>${esc(n)}</strong></p><pre>${esc(v)}</pre>`).join('');
+    document.getElementById('hints').innerHTML = `<div class="hint"><p><strong>Wskazówka:</strong> ${esc(ex.hint)}</p>${hintLevel >= 2 ? `<p><strong>Rozwiązanie wzorcowe:</strong></p>${sol}<p class="small muted">Przepisz je samodzielnie, nie kopiuj.</p>` : '<p class="small muted">Kliknij jeszcze raz, żeby zobaczyć rozwiązanie.</p>'}</div>`;
+  });
+}
+
+// ---------- pelny arkusz: strona ----------
+
+async function viewSheetWeb(code) {
+  setNav('arkusze');
+  const sheet = await data.sheet(code).catch(() => null);
+  if (!sheet || !sheet.web) return viewNotFound();
+  const w = sheet.web;
+  const checks = w.has_checks ? await fetch(`data/${code}/checks.json`).then((r) => r.json()).catch(() => []) : [];
+  const key = prog.webKey(code);
+  let saved = null;
+  try { saved = JSON.parse(prog.getDraft(key) || 'null'); } catch (e) { saved = null; }
+  // kolejnosc zakladek: strona glowna, pozostale strony, CSS, JS
+  const rank = (f) => (f === w.entry ? 0 : /\.(html?|php)$/i.test(f) ? 1 : /\.css$/i.test(f) ? 2 : 3);
+  const starter = Object.fromEntries([...w.files].sort((a, b) => rank(a) - rank(b)).map((f) => [f, '']));
+  const best = prog.getResult(key);
+  const isPhp = sheet.kind === 'php';
+  render(`
+    <div class="crumbs"><a href="#/arkusze">Arkusze</a> / <a href="#/arkusz/${code}">${esc(sheet.label)}</a></div>
+    <h1>${esc(sheet.title)}: strona <span class="pill">${esc(sheet.label)}</span></h1>
+    ${isPhp ? '<div class="verdict info small">W tym arkuszu strona jest w PHP. Tu sprawdzana jest część HTML i CSS; kod PHP możesz już pisać, a ocenimy go w module PHP. W podglądzie fragmenty PHP są pomijane.</div>' : ''}
+    <div class="workspace wide" style="margin-top:12px">
+      <section class="stack">
+        <div class="tabs2" role="tablist">
+          <button type="button" class="active" data-t="wym">Wymagania</button>
+          <button type="button" data-t="tresc">Treść</button>
+          <button type="button" data-t="ilu">Ilustracje (${w.illustrations.length})</button>
+          <button type="button" data-t="mat">Materiały</button>
+        </div>
+        <div data-p="wym">
+          <div class="btns"><button class="btn primary" id="check" type="button"${checks.length ? '' : ' disabled'}>✓ Sprawdź</button><button class="btn ghost" id="sol" type="button">Wzorzec</button></div>
+          <p id="score" class="small">${best ? `Najlepszy wynik: ${best.pass}/${best.auto}` : ''}</p>
+          <div id="checks">${checks.length ? checksHtml(checks) : '<p class="muted">Lista kryteriów dla tego arkusza jest w przygotowaniu. Możesz pisać stronę i porównać ją z wzorcem.</p>'}</div>
+          <div id="solbox"></div>
+        </div>
+        <div data-p="tresc" hidden><div class="task-text">${esc(w.text)}</div><p class="small muted">Pełna treść: <a href="${esc(sheet.pdf)}" target="_blank" rel="noopener">arkusz PDF</a></p></div>
+        <div data-p="ilu" hidden><div class="illus">${w.illustrations.map((f) => `<img src="data/${code}/illustrations/${esc(f)}" alt="Strona arkusza z ilustracjami" loading="lazy">`).join('') || '<p class="muted">Brak ilustracji.</p>'}</div></div>
+        <div data-p="mat" hidden>
+          <p>Pliki do napisania: ${w.files.map((f) => `<code>${esc(f)}</code>`).join(', ')}</p>
+          ${w.graphics.length ? `<p>Grafiki do obrobienia: ${w.graphics.map((f) => `<code>${esc(f)}</code>`).join(', ')} (wgraj gotowy plik w zakładce „Grafiki” edytora).</p>` : ''}
+          ${w.archive ? `<p><a class="btn" href="${esc(w.archive)}">Pobierz archiwum z materiałami</a></p><p class="small muted">Hasło do archiwum: <code>${esc(w.password || '')}</code></p>` : ''}
+          ${w.texts.map((t) => `<p><a href="data/${code}/assets/${esc(t)}" target="_blank" rel="noopener">${esc(t)}</a> (teksty do wklejenia na stronę)</p>`).join('')}
+        </div>
+      </section>
+      <section><div id="ws"></div></section>
+    </div>`, `${sheet.title}: strona`);
+
+  app.querySelectorAll('.tabs2 button').forEach((b) => b.addEventListener('click', () => {
+    app.querySelectorAll('.tabs2 button').forEach((x) => x.classList.toggle('active', x === b));
+    app.querySelectorAll('[data-p]').forEach((p) => { p.hidden = p.dataset.p !== b.dataset.t; });
+  }));
+
+  const ws = createWorkspace(document.getElementById('ws'), {
+    files: saved || starter,
+    entry: w.entry,
+    assetsBase: `data/${code}/assets/`,
+    assets: w.assets,
+    allowUpload: true,
+    onChange: (f) => prog.setDraft(key, JSON.stringify(f)),
+    onCheck: check,
+  });
+
+  async function check() {
+    if (!checks.length) return;
+    const btn = document.getElementById('check');
+    btn.disabled = true;
+    btn.textContent = 'Sprawdzam…';
+    try {
+      const results = await runChecks(checks, ws.project(), w.entry);
+      const sum = summary(checks, results);
+      prog.setResult(key, { pass: sum.pass, auto: sum.auto });
+      document.getElementById('checks').innerHTML = checksHtml(checks, results);
+      document.getElementById('score').innerHTML = scoreHtml(sum);
+    } finally {
+      btn.disabled = false;
+      btn.textContent = '✓ Sprawdź';
+    }
+  }
+  document.getElementById('check').addEventListener('click', check);
+
+  document.getElementById('sol').addEventListener('click', async () => {
+    const box = document.getElementById('solbox');
+    if (!confirm('Pokazać rozwiązanie wzorcowe? Najlepiej najpierw spróbuj sam.')) return;
+    const codeFiles = w.solution.filter((f) => /\.(html?|css|js|php)$/i.test(f));
+    const texts = await Promise.all(codeFiles.map((f) => fetch(`data/${code}/solution/${encodeURIComponent(f)}`).then((r) => r.text())));
+    box.innerHTML = `<div class="hint"><p><strong>Rozwiązanie wzorcowe</strong></p>${codeFiles.map((f, i) => `<details><summary><code>${esc(f)}</code></summary><pre>${esc(texts[i])}</pre></details>`).join('')}
+      <p class="btns"><button class="btn" id="loadsol" type="button">Wczytaj wzorzec do edytora</button></p></div>`;
+    document.getElementById('loadsol').addEventListener('click', () => {
+      if (!confirm('Zastąpić Twoje pliki wzorcem?')) return;
+      const next = { ...starter };
+      codeFiles.forEach((f, i) => { next[f] = texts[i]; });
+      ws.setFiles(next);
+      for (const g of w.solution.filter((f) => !codeFiles.includes(f))) ws.setUpload(g, `data/${code}/solution/${encodeURIComponent(g)}`);
+    });
+  });
+}
+
 async function viewSheets() {
   setNav('arkusze');
   const idx = await data.index();
@@ -372,8 +602,12 @@ async function viewSheet(code) {
       <li class="${prog.isDone(prog.sqlKey(code, q.n)) ? 'done' : ''}"><a href="#/sql/${code}/${q.n}">
         <span class="mark"></span><span class="prompt">Zapytanie ${q.n}: ${esc(q.prompt)}</span><span class="pill">${KIND_LABEL[q.kind] || q.kind}</span>
       </a></li>`).join('')}</ul>` : '<p class="muted">Ten arkusz nie ma bazy danych (sama strona i JavaScript).</p>'}
-    <h2>Strona i skrypty</h2>
-    <p class="muted">Edytor strony z podglądem i automatycznym sprawdzaniem HTML, CSS, PHP i JS jest w przygotowaniu. Na razie treść tej części jest w arkuszu PDF.</p>`, sheet.title);
+    <h2>Strona</h2>
+    ${(() => {
+      const r = prog.getResult(prog.webKey(code));
+      return `<p class="muted">${sheet.web.files.map((f) => `<code>${esc(f)}</code>`).join(', ')}${sheet.kind === 'php' ? ' · część PHP oceniana w module PHP (wkrótce)' : ''}</p>
+        <p class="btns"><a class="btn primary" href="#/arkusz/${code}/strona">${r ? `Wróć do strony (najlepiej ${r.pass}/${r.auto})` : 'Napisz stronę'} →</a></p>`;
+    })()}`, sheet.title);
 }
 
 async function viewProgress() {
@@ -384,12 +618,23 @@ async function viewProgress() {
     const done = ex.filter((e) => prog.isDone(prog.sqlKey(e.code, e.n))).length;
     return `<tr><td><a href="#/lekcja/${id}">${esc(LESSONS[id].title)}</a></td><td>${done}/${ex.length}</td><td style="width:40%">${bar(done, ex.length)}</td></tr>`;
   }).join('');
+  const webRows = WEB_LESSON_ORDER.map((id) => {
+    const ex = WEB_LESSONS[id].exercises;
+    const done = ex.filter((_, i) => prog.isDone(prog.cwKey(id, i))).length;
+    return `<tr><td><a href="#/lekcja/${id}">${esc(WEB_LESSONS[id].title)}</a></td><td>${done}/${ex.length}</td><td style="width:40%">${bar(done, ex.length)}</td></tr>`;
+  }).join('');
   const idx = await data.index();
   const fullSheets = idx.sheets.filter((s) => s.queries.length && s.queries.every((q) => prog.isDone(prog.sqlKey(s.code, q.n)))).length;
+  const webTried = idx.sheets.filter((s) => prog.getResult(prog.webKey(s.code)));
+  const webRows2 = webTried.map((s) => {
+    const r = prog.getResult(prog.webKey(s.code));
+    return `<tr><td><a href="#/arkusz/${s.code}/strona">${esc(s.title)}</a> <span class="muted small">${esc(s.label)}</span></td><td>${r.pass}/${r.auto}</td><td style="width:40%">${bar(r.pass, r.auto)}</td></tr>`;
+  }).join('');
   render(`
     <h1>Postęp</h1>
-    <p class="lead">Kwerendy z arkuszy rozwiązane w całości: <strong>${fullSheets}</strong> z ${idx.sheets.filter((s) => s.queries.length).length} arkuszy.</p>
-    <div class="table-wrap"><table class="data"><tr><th>Lekcja</th><th>Ćwiczenia</th><th>Postęp</th></tr>${rows}</table></div>
+    <p class="lead">Kwerendy z arkuszy rozwiązane w całości: <strong>${fullSheets}</strong> z ${idx.sheets.filter((s) => s.queries.length).length} arkuszy. Strony z arkuszy z kompletem punktów: <strong>${webTried.filter((s) => prog.isDone(prog.webKey(s.code))).length}</strong>.</p>
+    <div class="table-wrap"><table class="data"><tr><th>Lekcja</th><th>Ćwiczenia</th><th>Postęp</th></tr>${rows}${webRows}</table></div>
+    ${webRows2 ? `<h2>Strony z arkuszy</h2><div class="table-wrap"><table class="data"><tr><th>Arkusz</th><th>Najlepszy wynik</th><th></th></tr>${webRows2}</table></div>` : ''}
     <h2>Kopia postępu</h2>
     <p class="muted">Postęp jest zapisany tylko w tej przeglądarce. Zrób kopię, zanim wyczyścisz dane albo zmienisz urządzenie.</p>
     <div class="btns">
@@ -435,7 +680,9 @@ async function route() {
     else if (parts[0] === 'lekcja' && parts[1]) await viewLesson(parts[1]);
     else if (parts[0] === 'sql' && parts[1] && parts[2]) await viewSqlExercise(parts[1], Number(parts[2]), params.get('z'));
     else if (parts[0] === 'arkusze') await viewSheets();
+    else if (parts[0] === 'arkusz' && parts[1] && parts[2] === 'strona') await viewSheetWeb(parts[1]);
     else if (parts[0] === 'arkusz' && parts[1]) await viewSheet(parts[1]);
+    else if (parts[0] === 'cw' && parts[1] && parts[2] != null) await viewWebExercise(parts[1], Number(parts[2]));
     else if (parts[0] === 'postep') await viewProgress();
     else viewNotFound();
   } catch (e) {

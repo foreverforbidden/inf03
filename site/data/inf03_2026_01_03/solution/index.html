@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Pola figur</title>
+<link rel="stylesheet" href="styl.css">
+<script>
+function wybierz(numer) {
+  document.getElementById("duzy").src = numer + "d.bmp";
+}
+function oblicz() {
+  var a = parseFloat(document.getElementById("bok").value);
+  var b = parseFloat(document.getElementById("wys").value);
+  var obraz = document.getElementById("duzy").getAttribute("src");
+  var pole;
+  if (obraz == "2d.bmp") {
+    pole = a * b;
+  } else {
+    pole = 0.5 * a * b;
+  }
+  document.getElementById("wynik").innerHTML = pole;
+}
+</script>
+</head>
+<body>
+<header><h2>Pola figur płaskich</h2></header>
+<main>
+<nav>
+<h3>MENU</h3>
+<ul>
+<li><a href="index.html">Prostokąt i trójkąt</a></li>
+<li><a href="kolo.html">Okrąg i koło</a></li>
+</ul>
+</nav>
+<section>
+<img src="1d.bmp" alt="Figura" id="duzy"><br>
+<img src="1m.bmp" alt="Wybierz trójkąt" class="mini" onclick="wybierz(1)">
+<img src="2m.bmp" alt="Wybierz prostokąt" class="mini" onclick="wybierz(2)">
+</section>
+<aside>
+<h3>Pole prostokąta / pole trójkąta</h3>
+<label for="bok">Bok prostokąta / podstawa trójkąta:</label><br>
+<input type="number" id="bok"><br>
+<label for="wys">Drugi bok prostokąta / wysokość trójkąta:</label><br>
+<input type="number" id="wys"><br>
+<button onclick="oblicz()">Oblicz</button>
+<p id="wynik"></p>
+</aside>
+</main>
+<footer><p>Autor: 00000000000</p></footer>
+</body>
+</html>

@@ -1,0 +1,12 @@
+body { background-color: #FFCC99; font-family: Garamond; text-align: center; }
+header, footer { background-color: DarkGreen; color: white; padding: 30px; font-size: 140%; }
+nav { background-color: MediumSeaGreen; padding: 20px; word-spacing: 90px; }
+#lewa { width: 70%; height: 500px; float: left; }
+#prawa { background-color: MediumSeaGreen; width: 30%; height: 500px; float: left; text-align: left; }
+main { overflow: hidden; }
+footer { clear: both; }
+table { border: 1px dashed DarkGreen; margin: 30px auto; border-collapse: separate; }
+td, th { padding: 5px; }
+a { color: white; }
+ul { list-style-type: circle; }
+tr:hover { background-color: DarkGreen; color: white; }

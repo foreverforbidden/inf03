@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('DancingScript-Regular.woff2') format('woff2'),
+        url('DancingScript-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    font-family: 'Dancing Script', serif;
+    font-size: 120%;
+    text-align: center;
+}
+#baner1, aside {
+    background-color: RosyBrown;
+    width: 30%;
+}
+#baner1 { float: left; }
+aside {
+    float: left;
+    text-align: left;
+    height: 350px;
+}
+#baner2 {
+    background-color: RosyBrown;
+    width: 70%;
+    height: 100px;
+    float: left;
+}
+section {
+    width: 70%;
+    height: 550px;
+    overflow: scroll;
+    float: right;
+}
+footer { clear: both; }
+label { line-height: 50px; }
+.miniatura {
+    width: 150px;
+    transition: width 1s;
+}
+.miniatura:hover {
+    background-color: Bisque;
+    width: 200px;
+}

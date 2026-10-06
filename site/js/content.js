@@ -29,10 +29,12 @@ export function lessonForQuery(q) {
 
 export const MODULES = [
   { id: 'start', title: 'Mapa egzaminu', desc: 'Jak wygląda arkusz, plan na 150 minut, najczęstsze pułapki.', status: 'ready', href: '#/lekcja/egzamin' },
-  { id: 'sql', title: 'Kwerendy SQL', desc: 'Są w prawie każdym arkuszu. 8 lekcji i ponad 300 kwerend z prawdziwych arkuszy.', status: 'ready', href: '#/lekcje' },
+  { id: 'sql', title: 'Kwerendy SQL', desc: 'Są w prawie każdym arkuszu. 8 lekcji i ponad 300 kwerend z prawdziwych arkuszy.', status: 'ready', href: '#/lekcja/sql-select' },
+  { id: 'html', title: 'HTML', desc: 'Szkielet strony, bloki, listy, tabele, obrazy, formularze.', status: 'ready', href: '#/lekcja/html-szkielet' },
+  { id: 'css', title: 'CSS', desc: 'Selektory, kolory, model pudełkowy i układ bloków zgodny z ilustracją.', status: 'ready', href: '#/lekcja/css-selektory' },
+  { id: 'js', title: 'JavaScript', desc: 'Pola i przyciski, obliczenia, warunki, pętle, zmiana wyglądu.', status: 'ready', href: '#/lekcja/js-dom' },
+  { id: 'sheets', title: 'Całe arkusze', desc: 'Strona z arkusza z listą kryteriów sprawdzanych automatycznie.', status: 'ready', href: '#/arkusze' },
   { id: 'php', title: 'PHP i baza danych', desc: 'Szablon połączenia, pętla po wynikach, formularze.', status: 'soon' },
-  { id: 'web', title: 'HTML i CSS', desc: 'Szkielet strony, układ bloków, style z treści.', status: 'soon' },
-  { id: 'js', title: 'JavaScript', desc: 'Odczyt pól, obliczenia, zmiana stylów i treści.', status: 'soon' },
   { id: 'exam', title: 'Egzamin próbny', desc: 'Cały arkusz na czas, z raportem punktów.', status: 'soon' },
 ];
 
@@ -99,7 +101,8 @@ export const LESSONS = {
 <ol>
   <li>Przejdź lekcje SQL po kolei. Każda kończy się listą prawdziwych kwerend z arkuszy, które sprawdzają się od razu.</li>
   <li>Gdy lekcje idą gładko, rozwiązuj całe arkusze w zakładce <a href="#/arkusze">Arkusze</a>.</li>
-  <li>Moduły PHP, HTML/CSS i JS oraz egzamin próbny pojawią się w kolejnych wersjach.</li>
+  <li>Potem HTML, CSS i JavaScript: krótkie ćwiczenia sprawdzane w przeglądarce.</li>
+  <li>Na koniec całe strony z arkuszy, z listą kryteriów jak na karcie oceny. Moduł PHP i egzamin próbny pojawią się w kolejnych wersjach.</li>
 </ol>
 <p class="btns"><a class="btn primary" href="#/lekcja/sql-select">Zacznij od SELECT →</a></p>
 `,

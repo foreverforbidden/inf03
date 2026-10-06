@@ -1,0 +1,42 @@
+* {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+header, nav, footer {
+    color: white;
+    padding: 2px;
+}
+header, footer {
+    background-color: DarkGreen;
+}
+nav {
+    background-color: ForestGreen;
+}
+main {
+    display: flex;
+}
+section {
+    background-color: LightGreen;
+    width: 33.3%;
+    height: 550px;
+    padding: 10px 0 0 0;
+    overflow: auto;
+}
+h2 {
+    width: 33%;
+    display: inline-block;
+}
+table, td, th {
+    border: 1px solid DarkGreen;
+}
+table {
+    width: 90%;
+    border-collapse: collapse;
+}
+#lewa tr:hover {
+    background-color: ForestGreen;
+}
+#srodkowa img {
+    width: 95%;
+    border-radius: 8px;
+}

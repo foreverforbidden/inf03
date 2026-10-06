@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Biuro turystyczne</title>
+<link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<header><h1>Zwiedzamy Polskę</h1></header>
+<aside id="lewy"><button onclick="poprzednieZdjecie()">&lt;</button></aside>
+<main><img id="aktywneZdjecie" src="1.jpg" alt="Aktywne zdjęcie"></main>
+<aside id="prawy"><button onclick="nastepneZdjecie()">&gt;</button></aside>
+<section id="miniatury">
+<img src="1.jpg" alt="Gdańsk">
+<img src="2.jpg" alt="Kraków">
+<img src="3.jpg" alt="Niedzica">
+<img src="4.jpg" alt="Pieniny">
+<img src="5.jpg" alt="Szklarska Poręba">
+<img src="6.jpg" alt="Tatry">
+<img src="7.jpg" alt="Wrocław">
+</section>
+<footer>
+<h3>Autorem galerii jest:</h3>
+<p>00000000000</p>
+<a href="http://pixabay.com" target="_blank">Więcej zdjęć</a>
+</footer>
+<script>
+var numerZdjecia = 1;
+var liczbaZdjec = 7;
+function pokazZdjecie() {
+    document.getElementById("aktywneZdjecie").src = numerZdjecia + ".jpg";
+}
+function nastepneZdjecie() {
+    numerZdjecia++;
+    if (numerZdjecia > liczbaZdjec) {
+        numerZdjecia = 1;
+    }
+    pokazZdjecie();
+}
+function poprzednieZdjecie() {
+    numerZdjecia--;
+    if (numerZdjecia < 1) {
+        numerZdjecia = liczbaZdjec;
+    }
+    pokazZdjecie();
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+* { font-family: Roboto, Arial, sans-serif; text-align: center; }
+body { background-color: LightCyan; }
+header, footer { background-color: SteelBlue; color: white; padding: 10px; }
+article { padding-top: 40px; margin: 1%; width: 98%; }
+main { display: flex; flex-wrap: wrap; }
+@media (min-width: 800px) { article { width: 30%; } main { flex-wrap: nowrap; } }
+article:nth-child(1) { background-color: DodgerBlue; }
+article:nth-child(2) { background-color: LimeGreen; }
+article:nth-child(3) { background-color: DarkOrchid; }
+img { width: 70%; }
+p { padding: 20px; }
+table { margin: 0 auto; width: 70%; border: 1px solid SteelBlue; }
+tr:hover { background-color: SteelBlue; color: white; }

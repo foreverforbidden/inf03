@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Salon kosmetyczny</title>
+    <link rel="stylesheet" href="styl7.css">
+</head>
+<body>
+    <section id="lewy1">
+        <h2>Nasza oferta</h2>
+        <ol>
+            <li><a href="twarz.html">Oczyszczanie twarzy</a>
+                <ul>
+                    <li>Peeling</li>
+                    <li>Maska</li>
+                </ul>
+            </li>
+            <li>Masaż</li>
+            <li>Makijaż</li>
+        </ol>
+        <a id="glowna" href="index.html">Strona główna</a>
+    </section>
+    <section id="prawy1">
+        <h1>Usługi kosmetyczne</h1>
+    </section>
+    <section id="prawy2">
+        <h3>Kalkulator ceny wizyty</h3>
+        <input type="checkbox" id="peeling"> Peeling<br>
+        <input type="checkbox" id="maska"> Maska<br>
+        <input type="checkbox" id="masaz"> Masaż twarzy<br>
+        <input type="checkbox" id="makijaz"> Makijaż<br>
+        <button type="button" onclick="obliczCene()">Oblicz cenę</button>
+        <p id="wynik"></p>
+        <script>
+            function obliczCene() {
+                var suma = 0;
+                if (document.getElementById("peeling").checked) suma += 45;
+                if (document.getElementById("maska").checked) suma += 30;
+                if (document.getElementById("masaz").checked) suma += 20;
+                if (document.getElementById("makijaz").checked) suma += 50;
+                document.getElementById("wynik").innerHTML = "Cena zabiegów: " + suma;
+            }
+        </script>
+    </section>
+    <section id="lewy2">
+        <img src="obraz1.jpg" alt="Personel">
+    </section>
+    <footer>
+        <p>Autor: 00000000000</p>
+    </footer>
+</body>
+</html>
