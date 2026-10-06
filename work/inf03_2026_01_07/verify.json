@@ -1,0 +1,64 @@
+{
+  "code": "inf03_2026_01_07",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT ROUND(AVG(temperatura), 2) FROM pomiary WHERE id_miesiac = 7",
+      "ok": true,
+      "rows": 1,
+      "preview": "+----------------------------+\n| ROUND(AVG(temperatura), 2) |\n+----------------------------+\n|                      29.33 |\n+----------------------------+"
+    },
+    {
+      "n": 2,
+      "sql": "INSERT INTO miejscowosc (nazwa, kraj) VALUES ('Kijów', 'Ukraina')",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    },
+    {
+      "n": 3,
+      "sql": "SELECT miejscowosc.nazwa, miejscowosc.kraj, pomiary.temperatura FROM miejscowosc JOIN pomiary ON miejscowosc.id = pomiary.id_miejscowosc WHERE pomiary.id_miesiac = 7",
+      "ok": true,
+      "rows": 6,
+      "preview": "+----------+--------+-------------+\n| nazwa    | kraj   | temperatura |\n+----------+--------+-------------+\n| Warszawa | Polska |          25 |\n| Ostrawa  | Czechy |          30 |\n| Gdańsk   | Polska |          33 |\n| Brno     | Czechy |          21 |\n| Praga    | Czechy |          32 |\n| Hamburg  | Niemcy |          35 |"
+    },
+    {
+      "n": 4,
+      "sql": "SELECT miesiace.nazwa, AVG(pomiary.temperatura) FROM miesiace JOIN pomiary ON miesiace.id = pomiary.id_miesiac GROUP BY miesiace.id, miesiace.nazwa",
+      "ok": true,
+      "rows": 12,
+      "preview": "+--------------+--------------------------+\n| nazwa        | AVG(pomiary.temperatura) |\n+--------------+--------------------------+\n| styczeń      |                   0.5000 |\n| luty         |                   3.5000 |\n| marzec       |                  13.0000 |\n| kwiecień     |                  13.1250 |\n| maj          |                  20.6667 |\n| czerwiec     |                  21.0000 |"
+    }
+  ],
+  "pages": [
+    {
+      "page": "index.php",
+      "status": 200,
+      "bytes": 2022
+    },
+    {
+      "page": "index.php?miesiac=1",
+      "status": 200,
+      "bytes": 2042
+    },
+    {
+      "page": "index.php?miesiac=2",
+      "status": 200,
+      "bytes": 2042
+    },
+    {
+      "page": "index.php?miesiac=3",
+      "status": 200,
+      "bytes": 2043
+    },
+    {
+      "page": "index.php?miesiac=4",
+      "status": 200,
+      "bytes": 2043
+    }
+  ],
+  "checked_at": "2026-10-06 17:03:06"
+}

@@ -1,0 +1,44 @@
+{
+  "code": "inf03_2026_01_09",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT imie, kolor, cena FROM klienci WHERE topKlient = 1",
+      "ok": true,
+      "rows": 6,
+      "preview": "+-------------+-------+------+\n| imie        | kolor | cena |\n+-------------+-------+------+\n| Anna        |   124 |   90 |\n| Monika      |   224 |   90 |\n| Ewelina     |   189 |  100 |\n| Joanna      |   221 |  100 |\n| Małgorzata  |   145 |  100 |\n| Jagna       |   124 |  100 |"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT imie, cena FROM klienci WHERE DATE(termin) = '2024-05-23'",
+      "ok": true,
+      "rows": 6,
+      "preview": "+-------------+------+\n| imie        | cena |\n+-------------+------+\n| Marta       |   90 |\n| Agnieszka   |   90 |\n| Zuza        |   90 |\n| Roma        |   90 |\n| Małgorzata  |  100 |\n| Jagna       |  100 |"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT klienci.imie, klienci.kolor, ksztalty.ksztalt FROM klienci JOIN ksztalty ON klienci.ksztalty_id = ksztalty.id WHERE ksztalty.ksztalt = 'migdał'",
+      "ok": true,
+      "rows": 5,
+      "preview": "+---------+-------+---------+\n| imie    | kolor | ksztalt |\n+---------+-------+---------+\n| Urszula |   124 | migdał  |\n| Anna    |   124 | migdał  |\n| Ewa     |   135 | migdał  |\n| Monika  |   224 | migdał  |\n| Sylwia  |   123 | migdał  |\n+---------+-------+---------+"
+    },
+    {
+      "n": 4,
+      "sql": "ALTER TABLE wzory ADD COLUMN doplata INT",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "paznokcie.html",
+      "status": 200,
+      "bytes": 1681
+    }
+  ],
+  "checked_at": "2026-10-06 17:03:04"
+}

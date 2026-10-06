@@ -1,0 +1,76 @@
+{
+  "code": "inf03_2026_01_04",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT id, imie, nazwisko FROM maturzysta WHERE szkola = 'T3' ORDER BY nazwisko ASC",
+      "ok": true,
+      "rows": 13,
+      "preview": "+----+------------+-----------+\n| id | imie       | nazwisko  |\n+----+------------+-----------+\n| 29 | Grzegorz   | Anak      |\n| 30 | Jakub      | Biczak    |\n| 31 | Witold     | Biński    |\n| 33 | Mariusz    | Cicha     |\n| 38 | Oliwier    | Danek     |\n| 44 | Aleksander | Kosiński  |"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT DISTINCT przedmiot FROM arkusz",
+      "ok": true,
+      "rows": 4,
+      "preview": "+------------+\n| przedmiot  |\n+------------+\n| biologia   |\n| matematyka |\n| fizyka     |\n| geografia  |\n+------------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT MIN(rok), MAX(rok) FROM arkusz",
+      "ok": true,
+      "rows": 1,
+      "preview": "+----------+----------+\n| MIN(rok) | MAX(rok) |\n+----------+----------+\n|     2000 |     2006 |\n+----------+----------+"
+    },
+    {
+      "n": 4,
+      "sql": "SELECT maturzysta_id, AVG(punkty) AS Wynik FROM wynik GROUP BY maturzysta_id ORDER BY Wynik DESC LIMIT 1",
+      "ok": true,
+      "rows": 1,
+      "preview": "+---------------+---------+\n| maturzysta_id | Wynik   |\n+---------------+---------+\n|            19 | 99.0000 |\n+---------------+---------+"
+    },
+    {
+      "n": 5,
+      "sql": "SELECT arkusz.rok, arkusz.sesja, arkusz.przedmiot, wynik.punkty FROM arkusz JOIN wynik ON arkusz.symbol = wynik.symbol WHERE wynik.maturzysta_id = 31",
+      "ok": true,
+      "rows": 3,
+      "preview": "+------+-------+------------+--------+\n| rok  | sesja | przedmiot  | punkty |\n+------+-------+------------+--------+\n| 2000 | lato  | biologia   |     25 |\n| 2000 | lato  | matematyka |     25 |\n| 2001 | lato  | biologia   |     29 |\n+------+-------+------------+--------+"
+    }
+  ],
+  "pages": [
+    {
+      "page": "index.php",
+      "status": 200,
+      "bytes": 1893
+    },
+    {
+      "page": "wynik.php",
+      "status": 200,
+      "bytes": 792
+    },
+    {
+      "page": "wynik.php?id=29&imie=Grzegorz&nazwisko=Anak",
+      "status": 200,
+      "bytes": 1435
+    },
+    {
+      "page": "wynik.php?id=30&imie=Jakub&nazwisko=Biczak",
+      "status": 200,
+      "bytes": 1176
+    },
+    {
+      "page": "wynik.php?id=31&imie=Witold&nazwisko=Bi%C5%84ski",
+      "status": 200,
+      "bytes": 917
+    },
+    {
+      "page": "wynik.php?id=33&imie=Mariusz&nazwisko=Cicha",
+      "status": 200,
+      "bytes": 917
+    }
+  ],
+  "checked_at": "2026-10-06 17:03:39"
+}

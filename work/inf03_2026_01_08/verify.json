@@ -1,0 +1,69 @@
+{
+  "code": "inf03_2026_01_08",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT id, nazwa FROM szczyty ORDER BY wysokosc DESC",
+      "ok": true,
+      "rows": 28,
+      "preview": "+----+--------------------+\n| id | nazwa              |\n+----+--------------------+\n|  1 | Rysy               |\n|  9 | Babia Góra         |\n| 26 | Śnieżka            |\n| 17 | Śnieżnik           |\n|  2 | Tarnica            |\n|  7 | Turbacz            |"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT plik, nazwa FROM szczyty LIMIT 10",
+      "ok": true,
+      "rows": 10,
+      "preview": "+---------------+-------------+\n| plik          | nazwa       |\n+---------------+-------------+\n| rysy.jpg      | Rysy        |\n| tarnica.jpg   | Tarnica     |\n| lackowa.jpg   | Lackowa     |\n| gora.jpg      | Radziejowa  |\n| wysoka.jpg    | Wysoka      |\n| mogielica.jpg | Mogielica   |"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT szczyty.plik, szczyty.nazwa, szczyty.wysokosc, szczyty.pasmo, opis.opis FROM szczyty JOIN opis ON szczyty.id = opis.szczyty_id WHERE szczyty.id = 1",
+      "ok": true,
+      "rows": 1,
+      "preview": "+----------+-------+----------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n| plik     | nazwa | wysokosc | pasmo | opis                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |\n+----------+-------+----------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n| rysy.jpg | Rysy  |     2499 | Tatry | Rysy (niem. Meeraugspitze, słow. Rysy, węg. Tengerszem-csúcs) – góra położona na granicy polsko-słowackiej, w Tatrach Wysokich (jednej z części Tatr). Ma trzy wierzchołki, z których najwyższy jest środkowy (2501 metrów nad poziomem morza), znajdujący się w całości na terytorium Słowacji. Wierzchołek północno-zachodni, przez który biegnie granica, stanowi najwyżej położony punkt Polski (według większości najbardziej wiarygodnych źródeł 2499 m – więcej informacji w sekcji „Topografia”) i należy do Korony Europy.                                           |\n+----------+-------+----------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+"
+    },
+    {
+      "n": 4,
+      "sql": "SELECT nazwa, wysokosc, pasmo FROM szczyty WHERE pasmo LIKE 'Beskid%'",
+      "ok": true,
+      "rows": 7,
+      "preview": "+-------------+----------+------------------+\n| nazwa       | wysokosc | pasmo            |\n+-------------+----------+------------------+\n| Lackowa     |      997 | Beskid Niski     |\n| Radziejowa  |     1262 | Beskid Sądecki   |\n| Mogielica   |     1173 | Beskid Wyspowy   |\n| Lubomir     |      912 | Beskid Makowski  |\n| Babia Góra  |     1725 | Beskid Żywiecki  |\n| Czupel      |      933 | Beskid Mały      |"
+    }
+  ],
+  "pages": [
+    {
+      "page": "index.php",
+      "status": 200,
+      "bytes": 2668
+    },
+    {
+      "page": "szczyty.php",
+      "status": 200,
+      "bytes": 1186
+    },
+    {
+      "page": "szczyty.php?id=1",
+      "status": 200,
+      "bytes": 1820
+    },
+    {
+      "page": "szczyty.php?id=9",
+      "status": 200,
+      "bytes": 1837
+    },
+    {
+      "page": "szczyty.php?id=26",
+      "status": 200,
+      "bytes": 1754
+    },
+    {
+      "page": "szczyty.php?id=17",
+      "status": 200,
+      "bytes": 2145
+    }
+  ],
+  "checked_at": "2026-10-06 17:03:38"
+}

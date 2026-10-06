@@ -1,0 +1,52 @@
+{
+  "code": "inf03_2026_01_06",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT nazwa FROM choroby WHERE zakazna = 'T' ORDER BY nazwa ASC",
+      "ok": true,
+      "rows": 7,
+      "preview": "+------------+\n| nazwa      |\n+------------+\n| angina     |\n| COVID-19   |\n| grypa      |\n| odra       |\n| ospa       |\n| różyczka   |"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT id, nazwa FROM choroby",
+      "ok": true,
+      "rows": 16,
+      "preview": "+----+------------+\n| id | nazwa      |\n+----+------------+\n|  1 | angina     |\n|  2 | ospa       |\n|  3 | różyczka   |\n|  4 | grypa      |\n|  5 | jelitówka  |\n|  6 | odra       |"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT objawy.nazwa FROM objawy JOIN choroby_objawy ON objawy.id = choroby_objawy.id_objawy WHERE choroby_objawy.id_choroby = 5",
+      "ok": true,
+      "rows": 6,
+      "preview": "+--------------+\n| nazwa        |\n+--------------+\n| ból głowy    |\n| gorączka     |\n| mdłości      |\n| rozwolnienie |\n| wymioty      |\n| drgawki      |"
+    },
+    {
+      "n": 4,
+      "sql": "SELECT choroby.nazwa, COUNT(choroby_objawy.id_objawy) FROM choroby JOIN choroby_objawy ON choroby.id = choroby_objawy.id_choroby WHERE choroby.zakazna = 'T' GROUP BY choroby.id, choroby.nazwa",
+      "ok": true,
+      "rows": 7,
+      "preview": "+------------+---------------------------------+\n| nazwa      | COUNT(choroby_objawy.id_objawy) |\n+------------+---------------------------------+\n| angina     |                               9 |\n| ospa       |                               6 |\n| różyczka   |                               7 |\n| grypa      |                               8 |\n| odra       |                               4 |\n| świnka     |                               6 |"
+    }
+  ],
+  "pages": [
+    {
+      "page": "zdrowie.php",
+      "status": 200,
+      "bytes": 1774
+    },
+    {
+      "page": "formularz zdrowie.php->zdrowie.php [post]",
+      "status": 200,
+      "bytes": 1774,
+      "fields": {
+        "choroba": "Test"
+      }
+    }
+  ],
+  "checked_at": "2026-10-06 17:03:04"
+}

@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('lato-bold.woff2') format('woff2'),
+         url('lato-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('lato-regular.woff2') format('woff2'),
+         url('lato-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    font-family: Lato, sans-serif;
+    text-align: center;
+    color: #333;
+}
+
+header, footer {
+    height: 100px;
+    float: left;
+}
+
+header:nth-of-type(1), footer:nth-of-type(1) {
+    width: 30%;
+}
+
+header:nth-of-type(2), footer:nth-of-type(2) {
+    width: 70%;
+}
+
+main {
+    clear: both;
+    background-color: #E0F2F1;
+    padding: 100px;
+}
+
+section {
+    clear: both;
+    height: 90px;
+    overflow: hidden;
+}
+
+.miniatury {
+    height: 90px;
+}
+
+li {
+    text-align: left;
+}
+
+span {
+    padding-left: 30px;
+}
+
+span:nth-child(2), span:nth-child(11) { font-size: 200%; }
+span:nth-child(3), span:nth-child(15) { font-size: 150%; }
+span:nth-child(4), span:nth-child(17) { font-size: 120%; }
+span:nth-child(5), span:nth-child(21) { font-size: 170%; }
+span:nth-child(7), span:nth-child(27) { font-size: 130%; }
+span:nth-child(9), span:nth-child(25) { font-size: 160%; }
