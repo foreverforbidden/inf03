@@ -1,0 +1,73 @@
+{
+  "code": "inf03_2025_06_09",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT AVG(liczba_pracownikow) AS `średnia`, MIN(liczba_pracownikow) AS `najmniej`, MAX(liczba_pracownikow) AS `najwięcej` FROM wykonawcy",
+      "ok": true,
+      "rows": 1,
+      "preview": "+----------+----------+------------+\n| średnia  | najmniej | najwięcej  |\n+----------+----------+------------+\n|  27.3333 |       11 |         55 |\n+----------+----------+------------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT nazwa_firmy, liczba_pracownikow FROM wykonawcy WHERE liczba_pracownikow >= 40",
+      "ok": true,
+      "rows": 5,
+      "preview": "+-------------+--------------------+\n| nazwa_firmy | liczba_pracownikow |\n+-------------+--------------------+\n| BBud        |                 42 |\n| GBud        |                 55 |\n| KBud        |                 45 |\n| RBud        |                 45 |\n| SBud        |                 47 |\n+-------------+--------------------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT DISTINCT miasto FROM klienci ORDER BY miasto ASC",
+      "ok": true,
+      "rows": 16,
+      "preview": "+------------+\n| miasto     |\n+------------+\n| Darłowo    |\n| Gdańsk     |\n| Gdynia     |\n| Lesko      |\n| Łeba       |\n| Łomża      |"
+    },
+    {
+      "n": 4,
+      "sql": "SELECT klienci.imie, zlecenia.cena FROM klienci JOIN zlecenia ON klienci.id_klienta = zlecenia.id_klienta WHERE klienci.miasto = 'Poznań' AND zlecenia.rodzaj = 'malowanie'",
+      "ok": true,
+      "rows": 4,
+      "preview": "+---------+---------+\n| imie    | cena    |\n+---------+---------+\n| Paweł   | 2500.00 |\n| Paweł   | 6500.00 |\n| Adam    |  777.00 |\n| Paulina | 1200.00 |\n+---------+---------+"
+    },
+    {
+      "n": 5,
+      "sql": "SELECT klienci.imie, wykonawcy.nazwa_firmy FROM klienci JOIN zlecenia ON klienci.id_klienta = zlecenia.id_klienta JOIN wykonanie ON zlecenia.id_zlecenia = wykonanie.id_zlecenia JOIN wykonawcy ON wykonanie.id_wykonawcy = wykonawcy.id_wykonawcy",
+      "ok": true,
+      "rows": 52,
+      "preview": "+------------+-------------+\n| imie       | nazwa_firmy |\n+------------+-------------+\n| Paweł      | ABud        |\n| Michał     | BBud        |\n| Marta      | BBud        |\n| Łukasz     | BBud        |\n| Michał     | CBud        |\n| Filip      | CBud        |"
+    }
+  ],
+  "pages": [
+    {
+      "page": "kontakt.html",
+      "status": 200,
+      "bytes": 181
+    },
+    {
+      "page": "zlecenia.php",
+      "status": 200,
+      "bytes": 1779
+    },
+    {
+      "page": "formularz zlecenia.php->zlecenia.php [post]",
+      "status": 200,
+      "bytes": 2265,
+      "fields": {
+        "liczba": "2"
+      }
+    },
+    {
+      "page": "formularz zlecenia.php->zlecenia.php [post]",
+      "status": 200,
+      "bytes": 1779,
+      "fields": {
+        "miasto": "Test",
+        "rodzaj": "malowanie"
+      }
+    }
+  ],
+  "checked_at": "2026-10-06 17:01:41"
+}

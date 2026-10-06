@@ -16,7 +16,7 @@
       "sql": "SELECT buty.nazwa, buty.cena, kategorie.nazwa_kat FROM buty JOIN kategorie ON buty.id_kat = kategorie.id_kat",
       "ok": true,
       "rows": 4,
-      "preview": "+---------------------+--------+-----------------+\n| nazwa               | cena   | nazwa_kat       |\n+---------------------+--------+-----------------+\n| OBUWIE TRENINGOWE   | 179.00 | Obuwie sportowe |\n| PÓŁBUTY WIZYTOWE    | 188.00 | Półbuty         |\n| TRZEWIKI SZNUROWANE | 399.00 | Trzewiki        |\n| TRAMPKI SLIP ON     |  77.99 | Trampki         |\n+---------------------+--------+-----------------+"
+      "preview": "+---------------------+--------+-----------------+\n| nazwa               | cena   | nazwa_kat       |\n+---------------------+--------+-----------------+\n| PÓŁBUTY WIZYTOWE    | 188.00 | Półbuty         |\n| TRZEWIKI SZNUROWANE | 399.00 | Trzewiki        |\n| TRAMPKI SLIP ON     |  77.99 | Trampki         |\n| OBUWIE TRENINGOWE   | 179.00 | Obuwie sportowe |\n+---------------------+--------+-----------------+"
     },
     {
       "n": 3,
@@ -45,5 +45,5 @@
       "bytes": 1796
     }
   ],
-  "checked_at": "2026-10-06 18:45:06"
+  "checked_at": "2026-10-06 17:01:42"
 }

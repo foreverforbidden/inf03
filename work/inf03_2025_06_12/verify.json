@@ -1,0 +1,54 @@
+{
+  "code": "inf03_2025_06_12",
+  "pass": false,
+  "fails": [
+    "opis.html: brak <!DOCTYPE html>",
+    "opis.html: brak lang=\"pl\"",
+    "opis.html: brak <meta charset=\"UTF-8\">",
+    "opis.html: brak <title>"
+  ],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT nazwa, cena, opis FROM abonamenty",
+      "ok": true,
+      "rows": 3,
+      "preview": "+----------+------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n| nazwa    | cena | opis                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |\n+----------+------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n| Standard |  200 | Zdrowie jest dla Ciebie ważne i nie chcesz przepłacać? W abonamencie medycznym standardowym nie musisz płacić osobno za każdą wizytę, a najczęściej wybierane poradnie masz w cenie pakietu bez skierowań i zbędnych formalności. Korzystaj z wygodnych e-wizyt, zamawiaj recepty przez telefon, umawiaj i odwołuj wizyty w aplikacji mobilnej. Zyskaj dostęp do sieci przychodni w całym Wrocławiu.                                                                                                                        |\n| Premium  |  500 | Szukasz najwygodniejszego rozwiązania jakie mamy? Pakiet Premium to dostęp do wszystkich naszych poradni w cenie abonamentu. Także nie musisz płacić za wszelkie badania laboratoryjne oraz za dojazd lekarza do Twojego domu. Pakiet ten wybierany jest też przez duże firmy, gdyż wtedy proponujemy dla zamówień grupowych zniżkę 20%. Korzystaj z wygodnych e-wizyt, zamawiaj recepty przez telefon, umawiaj i odwołuj wizyty w aplikacji mobilnej. Zyskaj dostęp do sieci przychodni w całym Wrocławiu.                 |\n| Dziecko  |  100 | Dzieci są u nas otoczone szczególną opieką doświadczonych pediatrów, którzy koordynują nie tylko leczenie ale i profilaktykę z tak ważnych dziedzin jak laryngologia, wady postawy, zdrowe ząbki, zdrowe serce i nerki. Gdy tylko Twoje dziecko poczuje się chore, możesz śmiało nas odwiedzić. Przez 24 godziny / dobę prowadzimy dyżur pediatryczny w wybranych przychodniach we Wrocławiu.                                                                                                                               |\n+----------+------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT ROUND(AVG(cena), 2) AS Srednio_abonament FROM abonamenty",
+      "ok": true,
+      "rows": 1,
+      "preview": "+-------------------+\n| Srednio_abonament |\n+-------------------+\n|            266.67 |\n+-------------------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT abonamenty.nazwa, cechy.cecha FROM abonamenty JOIN szczegolyabonamentu ON abonamenty.id = szczegolyabonamentu.Abonamenty_id JOIN cechy ON cechy.id = szczegolyabonamentu.Cechy_id WHERE abonamenty.id = 1",
+      "ok": true,
+      "rows": 6,
+      "preview": "+----------+----------------------------------+\n| nazwa    | cecha                            |\n+----------+----------------------------------+\n| Standard | Lekarz POZ                       |\n| Standard | Endokrynolog                     |\n| Standard | Kardiolog                        |\n| Standard | Ginekolog                        |\n| Standard | Urolog                           |\n| Standard | Podstawowe badania laboratoryjne |"
+    },
+    {
+      "n": 4,
+      "sql": "SELECT nazwa, opis FROM abonamenty WHERE opis LIKE '%zdrowie%' OR opis LIKE '%opieką%'",
+      "ok": true,
+      "rows": 2,
+      "preview": "+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n| nazwa    | opis                                                                                                                                                                                                                                                                                                                                                                                                                  |\n+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n| Standard | Zdrowie jest dla Ciebie ważne i nie chcesz przepłacać? W abonamencie medycznym standardowym nie musisz płacić osobno za każdą wizytę, a najczęściej wybierane poradnie masz w cenie pakietu bez skierowań i zbędnych formalności. Korzystaj z wygodnych e-wizyt, zamawiaj recepty przez telefon, umawiaj i odwołuj wizyty w aplikacji mobilnej. Zyskaj dostęp do sieci przychodni w całym Wrocławiu.                  |\n| Dziecko  | Dzieci są u nas otoczone szczególną opieką doświadczonych pediatrów, którzy koordynują nie tylko leczenie ale i profilaktykę z tak ważnych dziedzin jak laryngologia, wady postawy, zdrowe ząbki, zdrowe serce i nerki. Gdy tylko Twoje dziecko poczuje się chore, możesz śmiało nas odwiedzić. Przez 24 godziny / dobę prowadzimy dyżur pediatryczny w wybranych przychodniach we Wrocławiu.                         |\n+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+"
+    }
+  ],
+  "pages": [
+    {
+      "page": "medica.php",
+      "status": 200,
+      "bytes": 2436
+    },
+    {
+      "page": "opis.html",
+      "status": 200,
+      "bytes": 24
+    }
+  ],
+  "checked_at": "2026-10-06 17:01:52"
+}

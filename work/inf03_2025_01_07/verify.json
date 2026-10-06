@@ -22,7 +22,7 @@
       "n": 3,
       "sql": "SELECT miasta.nazwa, wojewodztwa.nazwa FROM miasta JOIN wojewodztwa ON miasta.id_wojewodztwa = wojewodztwa.id WHERE miasta.nazwa LIKE 'Lu%' ORDER BY miasta.nazwa",
       "ok": true,
-      "rows": 16,
+      "rows": 15,
       "preview": "+--------------------+----------------------+\n| nazwa              | nazwa                |\n+--------------------+----------------------+\n| Lubaczów           | PODKARPACKIE         |\n| Lubań              | DOLNOŚLĄSKIE         |\n| Lubartów           | LUBELSKIE            |\n| Lubawa             | WARMIŃSKO-MAZURSKIE  |\n| Lubawka            | DOLNOŚLĄSKIE         |\n| Lubień Kujawski    | KUJAWSKO-POMORSKIE   |"
     },
     {
@@ -37,16 +37,16 @@
     {
       "page": "index.php",
       "status": 200,
-      "bytes": 885
+      "bytes": 928
     },
     {
       "page": "formularz index.php->index.php [post]",
       "status": 200,
-      "bytes": 966,
+      "bytes": 1009,
       "fields": {
         "filtr": "Test"
       }
     }
   ],
-  "checked_at": "2026-10-06 18:44:42"
+  "checked_at": "2026-10-06 17:01:41"
 }

@@ -16,7 +16,7 @@
       "sql": "SELECT zamowienia.liczba_odbitek * zdjecia.cena AS `Do zapłaty` FROM zamowienia JOIN zdjecia ON zamowienia.rodzaj = zdjecia.rodzaj WHERE zamowienia.nr_klienta = 3",
       "ok": true,
       "rows": 7,
-      "preview": "+-------------+\n| Do zapłaty  |\n+-------------+\n|      157.00 |\n|      157.00 |\n|       15.40 |\n|       16.50 |\n|      157.00 |\n|        7.00 |"
+      "preview": "+-------------+\n| Do zapłaty  |\n+-------------+\n|      157.00 |\n|      157.00 |\n|       16.50 |\n|      157.00 |\n|        7.00 |\n|       15.40 |"
     },
     {
       "n": 3,
@@ -50,5 +50,5 @@
       "bytes": 2507
     }
   ],
-  "checked_at": "2026-10-06 18:45:02"
+  "checked_at": "2026-10-06 17:00:25"
 }

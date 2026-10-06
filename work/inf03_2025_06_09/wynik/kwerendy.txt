@@ -1,0 +1,10 @@
+-- Zapytanie 1
+SELECT AVG(liczba_pracownikow) AS `średnia`, MIN(liczba_pracownikow) AS `najmniej`, MAX(liczba_pracownikow) AS `najwięcej` FROM wykonawcy;
+-- Zapytanie 2
+SELECT nazwa_firmy, liczba_pracownikow FROM wykonawcy WHERE liczba_pracownikow >= 40;
+-- Zapytanie 3
+SELECT DISTINCT miasto FROM klienci ORDER BY miasto ASC;
+-- Zapytanie 4
+SELECT klienci.imie, zlecenia.cena FROM klienci JOIN zlecenia ON klienci.id_klienta = zlecenia.id_klienta WHERE klienci.miasto = 'Poznań' AND zlecenia.rodzaj = 'malowanie';
+-- Zapytanie 5
+SELECT klienci.imie, wykonawcy.nazwa_firmy FROM klienci JOIN zlecenia ON klienci.id_klienta = zlecenia.id_klienta JOIN wykonanie ON zlecenia.id_zlecenia = wykonanie.id_zlecenia JOIN wykonawcy ON wykonanie.id_wykonawcy = wykonawcy.id_wykonawcy;

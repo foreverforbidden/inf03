@@ -52,7 +52,7 @@ if (isset($_POST['data'])) {
     $dataMD = date('m-d', strtotime($dataFormularza));
     $wynik2 = mysqli_query($polaczenie, "SELECT imiona FROM imieniny WHERE data = '$dataMD'");
     $wiersz2 = mysqli_fetch_row($wynik2);
-    echo "<p>Dnia " . htmlspecialchars($dataFormularza) . " są imieniny: " . $wiersz2[0] . "</p>";
+    echo "<span>Dnia " . htmlspecialchars($dataFormularza) . " są imieniny: " . $wiersz2[0] . "</span>";
 }
 mysqli_close($polaczenie);
 ?>

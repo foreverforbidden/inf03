@@ -1,0 +1,1 @@
+{"code":"inf03_2025_06_02","pass":true,"score":"all/all","fails":[],"na":["zrzuty ekranu","baza w phpMyAdmin","nagranie plyty"],"notes":"nav ma height:40px + padding-top:10px (lacznie 50px) - akceptowalne."}

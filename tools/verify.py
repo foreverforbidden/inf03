@@ -252,7 +252,7 @@ def check_static(out, pages, rep, tmpjs):
                 fh.write(js)
 
 
-def check_rendered(page, body, out, rep, seen_links):
+def check_rendered(page, body, out, rep, seen_links, submitted=()):
     for m in PHP_ERR.finditer(body):
         rep.fail(f"{page}: komunikat PHP w wyniku: {m.group(0)[:200]}")
     pp = PageParser()
@@ -272,7 +272,11 @@ def check_rendered(page, body, out, rep, seen_links):
             v = a.get(attr)
             if t in ("img", "script", "source", "video", "audio") and v and not re.match(r"(https?:|data:|//)", v):
                 if not os.path.exists(os.path.join(out, urllib.parse.unquote(v.split("?")[0]))):
-                    rep.fail(f"{page}: brak pliku {v} (<{t} {attr}>)")
+                    if v in submitted:
+                        # nazwa pliku pochodzi z danych testowych wyslanych formularzem
+                        rep.warn(f"{page}: brak pliku {v} (<{t} {attr}>) z danych formularza")
+                    else:
+                        rep.fail(f"{page}: brak pliku {v} (<{t} {attr}>)")
         if t == "a" and a.get("href"):
             h = a["href"]
             if re.match(r"(https?:|mailto:|tel:|#|javascript:)", h):
@@ -334,7 +338,7 @@ def check_server(meta, out, pages, rep, d):
             if status != 200:
                 rep.fail(f"{label}: HTTP {status}")
             else:
-                check_rendered(label, body, out, rep, [])
+                check_rendered(label, body, out, rep, [], set(fields.values()))
         rep.info["pages"] = page_info
     finally:
         srv.terminate()

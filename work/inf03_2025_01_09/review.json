@@ -1,14 +1,1 @@
-{
-  "code": "inf03_2025_01_09",
-  "pass": false,
-  "score": "oceniane pozycje zaliczone poza 1 (odnosniki nawigacji)",
-  "fails": [
-    {
-      "item": "Blok nawigacji: odnosniki do plikow zawierajacych zrzuty ekranu kwerend (kwerenda1..kwerenda4)",
-      "problem": "zdobywcy.php:13-16 - href wskazuja na kwerenda1.png..kwerenda4.png, a zrzuty wg tresci nazywaja sie kw1.png..kw4.png; odnosniki prowadza do nieistniejacych plikow (verify.json: 8 failow)",
-      "fix": "Zmienic href na kw1.png, kw2.png, kw3.png, kw4.png, zachowujac tekst odnosnikow kwerenda1..kwerenda4"
-    }
-  ],
-  "na": ["zrzuty ekranu import/kw1-kw4", "utworzenie bazy w phpMyAdmin i import", "nagranie plyty", "folder z numerem zdajacego"],
-  "notes": "Kwerendy 1-4 poprawne i wykonuja sie na bazie; logo.png 600x500 przezroczyste, napis zielony szeryfowy na srodku mapy; CSS i skrypty PHP zgodne z trescia."
-}
+{"code":"inf03_2025_01_09","pass":true,"score":"all/all","fails":[],"na":["zrzuty ekranu","import","phpMyAdmin","plyta"],"notes":"Skrypt 2 wykonuje INSERT po wypisaniu tabeli, wiec nowy rekord widac dopiero po odswiezeniu; tresc tego nie wymaga."}

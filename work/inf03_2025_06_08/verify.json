@@ -1,0 +1,52 @@
+{
+  "code": "inf03_2025_06_08",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT nazwa, dlugosc, szerokosc FROM smok WHERE pochodzenie = 'Polska'",
+      "ok": true,
+      "rows": 23,
+      "preview": "+---------------------+---------+-----------+\n| nazwa               | dlugosc | szerokosc |\n+---------------------+---------+-----------+\n| niebieski           |       5 |         2 |\n| czerwonooki         |      10 |         1 |\n| Śnieżny             |       4 |         2 |\n| Skrzydlaty diabeł   |       5 |         1 |\n| Bajeczny            |       4 |         3 |\n| Skrzydlaty anioł    |       6 |         1 |"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT DISTINCT pochodzenie FROM smok ORDER BY pochodzenie ASC",
+      "ok": true,
+      "rows": 5,
+      "preview": "+-------------+\n| pochodzenie |\n+-------------+\n| Bułgaria    |\n| Chiny       |\n| Francja     |\n| Japonia     |\n| Polska      |\n+-------------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT parada.rok, AVG(smok.dlugosc) AS `Średnia długość` FROM parada JOIN udzial ON parada.id = udzial.id_parada JOIN smok ON smok.id = udzial.id_smok WHERE parada.rok > 2005 GROUP BY parada.rok",
+      "ok": true,
+      "rows": 5,
+      "preview": "+------+---------------------+\n| rok  | Średnia długość     |\n+------+---------------------+\n| 2006 |              4.6000 |\n| 2013 |              7.6000 |\n| 2014 |              5.5000 |\n| 2021 |              7.6250 |\n| 2025 |              6.4091 |\n+------+---------------------+"
+    },
+    {
+      "n": 4,
+      "sql": "ALTER TABLE parada ADD lokalizacja VARCHAR(100)",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "smoki.php",
+      "status": 200,
+      "bytes": 2327
+    },
+    {
+      "page": "formularz smoki.php->smoki.php [post]",
+      "status": 200,
+      "bytes": 2327,
+      "fields": {
+        "kraj": "Test"
+      }
+    }
+  ],
+  "checked_at": "2026-10-06 17:01:40"
+}

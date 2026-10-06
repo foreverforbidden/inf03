@@ -1,1 +1,1 @@
-obraz1.png skopiowany bez edycji (przezroczyste tło i niebieskie wypełnienie woj. dolnośląskiego niewykonane).
+obraz1.png: tło przezroczyste (RGBA, flood fill od krawędzi), woj. dolnośląskie wypełnione niebieskim (Pillow).

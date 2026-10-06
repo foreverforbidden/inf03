@@ -5,15 +5,17 @@ body {
     background-color: LightSalmon;
     text-align: center;
 }
-#lewy-gorny {
+#lewa {
     float: left;
     width: 30%;
+}
+#lewy-gorny {
+    width: 100%;
     height: 400px;
 }
 #lewy-dolny {
-    float: left;
     background-color: DarkSalmon;
-    width: 30%;
+    width: 100%;
     height: 100px;
 }
 #prawy {

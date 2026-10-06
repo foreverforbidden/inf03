@@ -1,0 +1,77 @@
+{
+  "code": "inf03_2025_06_07",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT nazwa FROM miejsca ORDER BY nazwa ASC",
+      "ok": true,
+      "rows": 21,
+      "preview": "+------------+\n| nazwa      |\n+------------+\n| Brno       |\n| Bruksela   |\n| Gdańsk     |\n| Gdynia     |\n| Hamburg    |\n| Kijów      |"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT cena FROM miejsca WHERE nazwa = 'Malbork'",
+      "ok": true,
+      "rows": 1,
+      "preview": "+---------+\n| cena    |\n+---------+\n| 2000.00 |\n+---------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT nazwa, cena, link_obraz FROM miejsca WHERE link_obraz LIKE '0%'",
+      "ok": true,
+      "rows": 9,
+      "preview": "+---------+---------+------------+\n| nazwa   | cena    | link_obraz |\n+---------+---------+------------+\n| Malbork | 2000.00 | 01.jpg     |\n| Gdańsk  | 2100.00 | 02.jpg     |\n| Gdynia  | 3250.00 | 03.jpg     |\n| Rzym    | 5200.00 | 04.jpg     |\n| Wenecja | 4800.00 | 05.jpg     |\n| Oslo    | 6300.00 | 06.jpg     |"
+    },
+    {
+      "n": 4,
+      "sql": "SELECT miejsca.nazwa, ROUND(AVG(wycieczki.liczba_doroslych)) FROM miejsca JOIN wycieczki ON miejsca.id_miejsca = wycieczki.id_miejsca GROUP BY miejsca.nazwa",
+      "ok": true,
+      "rows": 16,
+      "preview": "+----------+----------------------------------------+\n| nazwa    | ROUND(AVG(wycieczki.liczba_doroslych)) |\n+----------+----------------------------------------+\n| Brno     |                                      5 |\n| Gdańsk   |                                      2 |\n| Gdynia   |                                      7 |\n| Hamburg  |                                      3 |\n| Londyn   |                                      2 |\n| Malbork  |                                      4 |"
+    },
+    {
+      "n": 5,
+      "sql": "CREATE TABLE klienci (id_klienta INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, imie VARCHAR(20), nazwisko VARCHAR(40), data_ur DATE)",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "allinclusive.html",
+      "status": 200,
+      "bytes": 198
+    },
+    {
+      "page": "index.php",
+      "status": 200,
+      "bytes": 3067
+    },
+    {
+      "page": "wczasy.html",
+      "status": 200,
+      "bytes": 198
+    },
+    {
+      "page": "wycieczki.html",
+      "status": 200,
+      "bytes": 198
+    },
+    {
+      "page": "formularz index.php->index.php [post]",
+      "status": 200,
+      "bytes": 3110,
+      "fields": {
+        "miejsce": "Test",
+        "doroslych": "2",
+        "dzieci": "2",
+        "termin": "2024-01-15"
+      }
+    }
+  ],
+  "checked_at": "2026-10-06 17:01:39"
+}
