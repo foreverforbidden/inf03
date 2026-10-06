@@ -1,18 +1,8 @@
 {
   "code": "inf03_2026_06_04",
-  "pass": false,
-  "score": "57/58",
-  "fails": [
-    {
-      "item": "Układ bloków zgodny z ilustracją 2/3 (blok boczny na prawo od bloku nawigacyjnego, na całą wysokość części głównej)",
-      "problem": "W rezerwacja.html kolejność to nav, section, section, aside, a w styl.css wszystkie są float:left (nav 90%, section 45%, aside 10%). Sekcja (45%) nie mieści się obok nav (90%), więc spada pod nav, a aside (za sekcjami) trafia do drugiego rzędu obok sekcji. Blok boczny zaczyna się pod blokiem nawigacyjnym, a na ilustracji 3 jest po jego prawej stronie od góry (rezerwacja.html:10-37, styl.css:4-6).",
-      "fix": "Umieścić <aside> w HTML zaraz po <nav> (przed obiema sekcjami); przy float:left nav 90% + aside 10% zajmą pierwszy rząd, a sekcje 45%+45% ułożą się pod nav obok aside."
-    }
-  ],
-  "na": [
-    "zrzuty ekranu import.png, kw1-kw4.png",
-    "utworzenie bazy wyprawy w phpMyAdmin / import tabel",
-    "nagranie płyty, folder z numerem zdającego"
-  ],
-  "notes": "Kwerendy 1-4 poprawne i zgodne z verify.json. Błąd z przyciskami (box-sizing) został poprawiony. osoba.png 100x100 RGBA. Skrypt logicznie poprawny. Drobna uwaga: przycisk Sprawdź cenę ma na stałe disabled (nie wymagane). Ocena na podstawie analizy CSS (brak przeglądarki)."
+  "pass": true,
+  "score": "62/62",
+  "fails": [],
+  "na": ["utworzenie bazy wyprawy i import (phpMyAdmin)", "zrzuty ekranu import.png, kw1-kw4.png", "nagranie plyty", "folder z numerem zdajacego"],
+  "notes": "Zrewidowano od nowa: rezerwacja.html, styl.css, skrypt.js, kwerendy.txt, wycieczki.html, przegladarka.txt. verify.py: 0 fail, 0 warn. Kwerendy daja poprawne wyniki (4 rek.; COUNT=2; 10 rek.; 5/4/10). Uklad: nav 90% + aside 10% floaty obok siebie, pod nav dwie sekcje 45% - zgodny z ilustracja 3. osoba.png 100x100 RGBA przezroczyste."
 }

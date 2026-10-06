@@ -30,15 +30,15 @@
       "sql": "SELECT autor, tytul, kod FROM ksiazki ORDER BY RAND() LIMIT 5",
       "ok": true,
       "rows": 5,
-      "preview": "+----------------------------+---------------------+------+\n| autor                      | tytul               | kod  |\n+----------------------------+---------------------+------+\n| Adam Asnyk                 | J. I. Kraszewskiemu | 2765 |\n| Edgar Allan Poe            | Berenice            | 376C |\n| Charles Baudelaire         | Dusza wina          | 288C |\n| Maria Konopnicka           | Dwór Zosi           | 3037 |\n| Kazimierz Przerwa-Tetma er | W esieni            | 3814 |\n+----------------------------+---------------------+------+"
+      "preview": "+--------------------------------+--------------------------------------------------------+------+\n| autor                          | tytul                                                  | kod  |\n+--------------------------------+--------------------------------------------------------+------+\n| Krzysztof Kamil Baczyński      | I część: krzyż człowieczy                              | 27CC |\n| Artur Oppman                   | Owczarek                                               | 35DD |\n| Maria Pawlikowska-Jasnorzewska | La Précieuse                                           | 36C7 |\n| Elżbieta Drużbacka             | Przypisanie pewnemu Kawalerowi, który za ednem strze-  | 2A93 |\n| Tadeusz Miciński               | Ananke                                                 | 3420 |\n+--------------------------------+--------------------------------------------------------+------+"
     }
   ],
   "pages": [
     {
       "page": "biblioteka.php",
       "status": 200,
-      "bytes": 1558
+      "bytes": 1483
     }
   ],
-  "checked_at": "2026-10-06 17:07:13"
+  "checked_at": "2026-10-06 17:09:01"
 }

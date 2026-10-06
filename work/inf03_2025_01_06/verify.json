@@ -25,7 +25,7 @@
       "sql": "SELECT pseudonim, klasa, ranking FROM zawodnicy ORDER BY ranking ASC LIMIT 10",
       "ok": true,
       "rows": 10,
-      "preview": "+-----------+-------+---------+\n| pseudonim | klasa | ranking |\n+-----------+-------+---------+\n| AGDomator | 1A    |    1813 |\n| MakMat    | 1B    |    2700 |\n| IgoŁys    | 4A    |    2700 |\n| PetHei    | 4B    |    2701 |\n| IljSmi    | 4C    |    2702 |\n| AleCha    | 3B    |    2702 |"
+      "preview": "+-----------+-------+---------+\n| pseudonim | klasa | ranking |\n+-----------+-------+---------+\n| AGDomator | 1A    |    1813 |\n| MakMat    | 1B    |    2700 |\n| IgoŁys    | 4A    |    2700 |\n| PetHei    | 4B    |    2701 |\n| RomÉdo    | 1A    |    2702 |\n| IljSmi    | 4C    |    2702 |"
     },
     {
       "n": 4,
@@ -42,5 +42,5 @@
       "bytes": 2020
     }
   ],
-  "checked_at": "2026-10-06 18:44:46"
+  "checked_at": "2026-10-06 17:08:57"
 }

@@ -23,7 +23,7 @@
       "sql": "SELECT zamowienie.id_zam, zamowienie.ilosc, opony.model, opony.cena FROM zamowienie JOIN opony ON zamowienie.nr_kat = opony.nr_kat ORDER BY RAND() LIMIT 1",
       "ok": true,
       "rows": 1,
-      "preview": "+--------+-------+-------+--------+\n| id_zam | ilosc | model | cena   |\n+--------+-------+-------+--------+\n|    126 |     2 | AL103 | 220.50 |\n+--------+-------+-------+--------+"
+      "preview": "+--------+-------+-------+--------+\n| id_zam | ilosc | model | cena   |\n+--------+-------+-------+--------+\n|    100 |     2 | AL205 | 212.50 |\n+--------+-------+-------+--------+"
     },
     {
       "n": 4,
@@ -37,8 +37,8 @@
     {
       "page": "opony.php",
       "status": 200,
-      "bytes": 1699
+      "bytes": 1701
     }
   ],
-  "checked_at": "2026-10-06 17:02:49"
+  "checked_at": "2026-10-06 17:09:05"
 }

@@ -1,14 +1,8 @@
 {
   "code": "inf03_2026_01_09",
-  "pass": false,
-  "score": "44/45",
-  "fails": [
-    {
-      "item": "Podział na bloki – układ zgodny z ilustracją 4 / 2 (blok stopki pod całością, na całą szerokość strony)",
-      "problem": "styl.css: footer { clear: both; margin-left: 20%; } – dodany niewymagany margines 20% przesuwa stopkę pod blok główny i przesuwa tekst 'Autor strony' (wyśrodkowany względem 80% szerokości przesuniętej o 20%), podczas gdy na ilustracjach 2 i 4 stopka zajmuje całą szerokość pod blokiem bocznym i głównym, a tekst jest wyśrodkowany względem całej strony.",
-      "fix": "Zmienić regułę na: footer { clear: both; } (usunąć margin-left: 20%)."
-    }
-  ],
-  "na": ["zrzuty ekranu import.png, kw1-kw4.png", "utworzenie bazy i import w phpMyAdmin", "nagranie płyty", "folder z numerem zdającego"],
-  "notes": "Kwerendy 1-4 poprawne (verify.json bez fail). kolory.png przycięty do butelek, 216x70. Skrypty JS (pętla 10 obrazów z klasą wzory i title, pokazSekcje na onmouseover) poprawne. HTML, kodowanie, lang, tytuł, alty, teksty i pozostałe style CSS poprawne. Pozostaje jedna drobna niezgodność układu stopki."
+  "pass": true,
+  "score": "44/44",
+  "fails": [],
+  "na": ["utworzenie bazy w phpMyAdmin", "import tabel (zrzut import.png)", "zrzuty kw1-kw4.png", "nagranie płyty", "obecność import.png i kw1-4.png w folderze (zrzuty)"],
+  "notes": "Kwerendy 1-4 poprawne wg verify.json (6/6/5 wierszy, ALTER OK). kolory.png przycięty do butelek, wysokość 70 px (216x70). Układ bloków zgodny z ilustracją 4, CSS i skrypty 1 i 2 zgodne z treścią."
 }

@@ -29,8 +29,8 @@
       "n": 4,
       "sql": "SELECT wagi.rejestracja, lokalizacje.ulica, wagi.waga, wagi.dzien, wagi.czas FROM wagi JOIN lokalizacje ON wagi.lokalizacje_id = lokalizacje.id WHERE wagi.waga > 5",
       "ok": true,
-      "rows": 10,
-      "preview": "+-------------+-------------+------+------------+----------+\n| rejestracja | ulica       | waga | dzien      | czas     |\n+-------------+-------------+------+------------+----------+\n| DW54U32     | Ślężna      |    6 | 2022-01-20 | 09:49:08 |\n| DW54U36     | Tyska       |   10 | 2026-10-06 | 18:43:18 |\n| DW5Z452     | Wilanowska  |    6 | 2026-10-06 | 18:43:18 |\n| DW23T32     | Żmigrodzka  |    8 | 2022-01-20 | 09:49:08 |\n| DW5W932     | Karkonowska |    8 | 2022-01-20 | 09:49:08 |\n| DW53R52     | Wilanowska  |    6 | 2026-10-06 | 18:43:18 |"
+      "rows": 9,
+      "preview": "+-------------+-------------+------+------------+----------+\n| rejestracja | ulica       | waga | dzien      | czas     |\n+-------------+-------------+------+------------+----------+\n| DW54U32     | Ślężna      |    6 | 2022-01-20 | 09:49:08 |\n| DW54U36     | Tyska       |   10 | 2026-10-06 | 17:08:52 |\n| DW5Z452     | Wilanowska  |    6 | 2026-10-06 | 17:08:52 |\n| DW23T32     | Żmigrodzka  |    8 | 2022-01-20 | 09:49:08 |\n| DW5W932     | Karkonowska |    8 | 2022-01-20 | 09:49:08 |\n| DW53R52     | Wilanowska  |    6 | 2026-10-06 | 17:08:52 |"
     }
   ],
   "pages": [
@@ -40,5 +40,5 @@
       "bytes": 1833
     }
   ],
-  "checked_at": "2026-10-06 18:43:18"
+  "checked_at": "2026-10-06 17:08:52"
 }

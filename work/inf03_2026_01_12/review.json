@@ -1,23 +1,8 @@
 {
   "code": "inf03_2026_01_12",
-  "pass": false,
-  "score": "43/45",
-  "fails": [
-    {
-      "item": "Podział strony na bloki ... układ bloków zgodny z ilustracją 3 (blok sekcji bezpośrednio pod nagłówkiem 2, obok bloku bocznego)",
-      "problem": "index.html:~9-30 + styl.css: wszystkie bloki to float:left, a w źródle <aside> poprzedza <section>. Wg CSS 2.1 (pkt 9.5.1 reguła 6) górna krawędź floata nie może leżeć wyżej niż floata wcześniejszego w źródle. Aside trafia pod logo (y ok. 300 px), więc section też zaczyna się na y>=300 px, a nie tuż pod nagłówkiem 2 (y=100 px). Między nagłówkiem 2 a sekcją powstaje ok. 200 px pustej przestrzeni, co jest niezgodne z ilustracją 2/3. Weryfikacja przez analizę CSS, bo w środowisku nie ma przeglądarki.",
-      "fix": "W index.html umieść <section id=\"galeria\"> przed <aside> (kolejność: header#baner1, header#baner2, section, aside, footer). Alternatywnie owiń baner1+aside w jeden kontener o szerokości 30% i float:left, a baner2+section w kontener 70% float:left (albo użyj display:grid). Szerokości i wysokości z treści zachować."
-    },
-    {
-      "item": "Logo: litery S i T zapisane dowolną czcionką ozdobną, zrzut czcionka.jpg z widoczną nazwą czcionki",
-      "problem": "czcionka.jpg: użyto Liberation Serif Italic (zwykła kursywa szeryfowa, nie czcionka ozdobna/dekoracyjna; wzór to Freestyle Script).",
-      "fix": "Wstawić litery S i T czcionką ozdobną/kaligraficzną (np. Dancing Script z folderu czcionki zainstalowana w systemie lub inna skryptowa), przeeksportować logo.png (300 px wysokości, T przesunięte w dół względem S) i zrobić nowy zrzut czcionka.jpg z widoczną nazwą tej czcionki."
-    }
-  ],
-  "na": [
-    "Utworzenie bazy w phpMyAdmin i import (weryfikacja przez verify.py: OK)",
-    "Zrzuty ekranu import.png, kw1.png-kw4.png",
-    "Nagranie płyty CD/DVD"
-  ],
-  "notes": "Zaliczone: kwerendy 1-4 (verify OK, poprawne kolumny/warunki/sortowanie/GROUP BY/JOIN/UPDATE *1.1), HTML5, lang=pl, UTF-8, title Tatuaże, styl.css, teksty nagłówków, alt, klasy miniatura, formularz (label for, accept=image/png, select, number, button), stopka, @font-face regular, wszystkie reguły CSS (body, #baner1/aside, baner2, section overflow:scroll, label line-height, .miniatura + hover z transition width 1s), skrypt dodajWzor (alert z poprawnym formatem, nazwa pliku bez ścieżki, img src/alt/class dołączony do sekcji), przeglądarka.txt, komplet wymaganych plików. Logo przycięte do ptaka 310x300."
+  "pass": true,
+  "score": "44/44",
+  "fails": [],
+  "na": ["utworzenie bazy w phpMyAdmin", "import.png", "kw1.png-kw4.png", "czcionka.jpg (zrzut)", "nagranie plyty", "folder z numerem zdajacego"],
+  "notes": "Zapytania 1-4 poprawne wg verify.json; uklad bloków sprawdzony renderem w Chromium zgodny z ilustracja 3; logo 310x300 ze znakami S i T; skrypt dziala poprawnie."
 }

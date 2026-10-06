@@ -25,7 +25,7 @@
       "sql": "SELECT pseudonim, klasa FROM zawodnicy ORDER BY RAND() LIMIT 2",
       "ok": true,
       "rows": 2,
-      "preview": "+-----------+-------+\n| pseudonim | klasa |\n+-----------+-------+\n| AleCha    | 3B    |\n| SzaMam    | 2A    |\n+-----------+-------+"
+      "preview": "+-----------+-------+\n| pseudonim | klasa |\n+-----------+-------+\n| LeiDom    | 3B    |\n| LauFre    | 3B    |\n+-----------+-------+"
     },
     {
       "n": 3,
@@ -57,5 +57,5 @@
       }
     }
   ],
-  "checked_at": "2026-10-06 18:49:39"
+  "checked_at": "2026-10-06 17:08:59"
 }
