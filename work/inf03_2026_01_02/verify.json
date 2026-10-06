@@ -1,0 +1,53 @@
+{
+  "code": "inf03_2026_01_02",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT nazwa, plik FROM towar LIMIT 10",
+      "ok": true,
+      "rows": 10,
+      "preview": "+-------------+----------------+\n| nazwa       | plik           |\n+-------------+----------------+\n| gruszka     | gruszka.png    |\n| jabłko      | jabłko.png     |\n| banan       | banan.png      |\n| ananas      | ananas.png     |\n| mango       | mango.png      |\n| winogrona   | winogrona.png  |"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT id, nazwa FROM towar",
+      "ok": true,
+      "rows": 39,
+      "preview": "+----+------------------+\n| id | nazwa            |\n+----+------------------+\n|  1 | gruszka          |\n|  2 | jabłko           |\n|  3 | banan            |\n|  4 | ananas           |\n|  5 | mango            |\n|  6 | winogrona        |"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT rodzaj, nazwa, cena FROM towar WHERE id = 1",
+      "ok": true,
+      "rows": 1,
+      "preview": "+--------+---------+------+\n| rodzaj | nazwa   | cena |\n+--------+---------+------+\n| owoc   | gruszka | 5.00 |\n+--------+---------+------+"
+    },
+    {
+      "n": 4,
+      "sql": "INSERT INTO zamowienie (id_towar, id_sklep, liczba_kg) VALUES (9, 2, 20)",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "index.php",
+      "status": 200,
+      "bytes": 2560
+    },
+    {
+      "page": "formularz index.php->index.php [post]",
+      "status": 200,
+      "bytes": 2560,
+      "fields": {
+        "towar": "Test",
+        "waga": "2"
+      }
+    }
+  ],
+  "checked_at": "2026-10-06 17:01:56"
+}

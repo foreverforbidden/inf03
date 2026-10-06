@@ -1,0 +1,23 @@
+{
+  "code": "inf03_2026_01_03",
+  "pass": false,
+  "fails": [
+    "kwerendy.txt: brak zapytan"
+  ],
+  "warns": [
+    "pominiety (prawdopodobnie zrzut ekranu): parametry.jpg"
+  ],
+  "pages": [
+    {
+      "page": "index.html",
+      "status": 200,
+      "bytes": 1409
+    },
+    {
+      "page": "kolo.html",
+      "status": 200,
+      "bytes": 515
+    }
+  ],
+  "checked_at": "2026-10-06 17:01:54"
+}

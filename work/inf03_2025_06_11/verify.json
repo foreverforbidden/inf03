@@ -1,0 +1,44 @@
+{
+  "code": "inf03_2025_06_11",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT * FROM opony ORDER BY cena ASC LIMIT 10",
+      "ok": true,
+      "rows": 10,
+      "preview": "+--------+-----------+-------+-------------+--------+\n| nr_kat | producent | model | sezon       | cena   |\n+--------+-----------+-------+-------------+--------+\n|      9 | uLFA      | AL135 | zimowa      | 101.50 |\n|      2 | uLFA      | AL105 | letnia      | 105.50 |\n|     21 | eLFA      | EL305 | zimowa      | 110.00 |\n|      8 | uLFA      | AL305 | zimowa      | 110.00 |\n|     17 | eLFA      | EL125 | uniwersalna | 110.50 |\n|      4 | uLFA      | AL125 | letnia      | 110.50 |"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT producent, model, sezon, cena FROM opony WHERE nr_kat = 9",
+      "ok": true,
+      "rows": 1,
+      "preview": "+-----------+-------+--------+--------+\n| producent | model | sezon  | cena   |\n+-----------+-------+--------+--------+\n| uLFA      | AL135 | zimowa | 101.50 |\n+-----------+-------+--------+--------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT zamowienie.id_zam, zamowienie.ilosc, opony.model, opony.cena FROM zamowienie JOIN opony ON zamowienie.nr_kat = opony.nr_kat ORDER BY RAND() LIMIT 1",
+      "ok": true,
+      "rows": 1,
+      "preview": "+--------+-------+-------+--------+\n| id_zam | ilosc | model | cena   |\n+--------+-------+-------+--------+\n|    126 |     2 | AL103 | 220.50 |\n+--------+-------+-------+--------+"
+    },
+    {
+      "n": 4,
+      "sql": "UPDATE opony SET cena = cena * 0.75 WHERE sezon = 'letnia'",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "opony.php",
+      "status": 200,
+      "bytes": 1699
+    }
+  ],
+  "checked_at": "2026-10-06 17:02:49"
+}

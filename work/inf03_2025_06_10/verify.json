@@ -1,0 +1,55 @@
+{
+  "code": "inf03_2025_06_10",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT kod, nazwa, cena FROM kursy ORDER BY cena ASC",
+      "ok": true,
+      "rows": 8,
+      "preview": "+-----+--------------------+------+\n| kod | nazwa              | cena |\n+-----+--------------------+------+\n|   5 | gastronomia        | 1000 |\n|   4 | florystyka         | 1200 |\n|   6 | język francuski    | 1350 |\n|   2 | język niemiecki    | 1890 |\n|   1 | język angielski    | 1999 |\n|   8 | rysunek techniczny | 2100 |"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT nazwa FROM kursy",
+      "ok": true,
+      "rows": 8,
+      "preview": "+--------------------+\n| nazwa              |\n+--------------------+\n| język angielski    |\n| język niemiecki    |\n| informatyka        |\n| florystyka         |\n| gastronomia        |\n| język francuski    |"
+    },
+    {
+      "n": 3,
+      "sql": "INSERT INTO uczestnicy (imie, nazwisko, wiek) VALUES ('Tadeusz', 'Wysocki', 36)",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    },
+    {
+      "n": 4,
+      "sql": "SELECT kursy.nazwa, COUNT(kursy_uczestnicy.id_uczestnika) AS Zapisanych FROM kursy LEFT JOIN kursy_uczestnicy ON kursy.kod = kursy_uczestnicy.kod_kursu GROUP BY kursy.kod, kursy.nazwa",
+      "ok": true,
+      "rows": 8,
+      "preview": "+--------------------+------------+\n| nazwa              | Zapisanych |\n+--------------------+------------+\n| język angielski    |          2 |\n| język niemiecki    |          6 |\n| informatyka        |          7 |\n| florystyka         |          6 |\n| gastronomia        |         12 |\n| język francuski    |          6 |"
+    }
+  ],
+  "pages": [
+    {
+      "page": "index.php",
+      "status": 200,
+      "bytes": 2122
+    },
+    {
+      "page": "formularz index.php->index.php [post]",
+      "status": 200,
+      "bytes": 2169,
+      "fields": {
+        "imie": "Test",
+        "nazwisko": "Test",
+        "wiek": "2",
+        "kurs": "Test"
+      }
+    }
+  ],
+  "checked_at": "2026-10-06 17:01:54"
+}

@@ -1,12 +1,7 @@
 {
   "code": "inf03_2025_06_12",
-  "pass": false,
-  "fails": [
-    "opis.html: brak <!DOCTYPE html>",
-    "opis.html: brak lang=\"pl\"",
-    "opis.html: brak <meta charset=\"UTF-8\">",
-    "opis.html: brak <title>"
-  ],
+  "pass": true,
+  "fails": [],
   "warns": [],
   "queries": [
     {
@@ -47,8 +42,8 @@
     {
       "page": "opis.html",
       "status": 200,
-      "bytes": 24
+      "bytes": 145
     }
   ],
-  "checked_at": "2026-10-06 17:01:52"
+  "checked_at": "2026-10-06 17:01:55"
 }

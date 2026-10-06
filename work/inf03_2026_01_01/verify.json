@@ -1,0 +1,44 @@
+{
+  "code": "inf03_2026_01_01",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT marka, model, cena FROM pojazdy WHERE marka = 'BM' ORDER BY cena DESC LIMIT 15",
+      "ok": true,
+      "rows": 15,
+      "preview": "+-------+-------+-------+\n| marka | model | cena  |\n+-------+-------+-------+\n| BM    | beta  | 94000 |\n| BM    | beta  | 92000 |\n| BM    | beta  | 90000 |\n| BM    | beta  | 88000 |\n| BM    | beta  | 88000 |\n| BM    | beta  | 88000 |"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT AVG(cena) AS `Średnia cena`, MAX(cena) AS `Maksymalna cena` FROM pojazdy WHERE model = 'meta'",
+      "ok": true,
+      "rows": 1,
+      "preview": "+---------------+-----------------+\n| Średnia cena  | Maksymalna cena |\n+---------------+-----------------+\n|    92071.4286 |           98000 |\n+---------------+-----------------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT pojazdy.marka, pojazdy.model, pojazdy.cena, kolory.nazwa, kolory.doplata FROM pojazdy INNER JOIN kolory ON pojazdy.kolor = kolory.id WHERE pojazdy.model = 'alfa'",
+      "ok": true,
+      "rows": 6,
+      "preview": "+-------+-------+-------+------------------+---------+\n| marka | model | cena  | nazwa            | doplata |\n+-------+-------+-------+------------------+---------+\n| BM    | alfa  | 70000 | zielony          |    0.00 |\n| BM    | alfa  | 73000 | czarny           |    0.00 |\n| BM    | alfa  | 70000 | czarny           |    0.00 |\n| BM    | alfa  | 72000 | zielony metalik  | 1000.00 |\n| BM    | alfa  | 71000 | czerwony metalik | 1000.00 |\n| BM    | alfa  | 70000 | czarny metalik   | 1000.00 |"
+    },
+    {
+      "n": 4,
+      "sql": "SELECT marka, model, cena FROM pojazdy ORDER BY RAND() LIMIT 2",
+      "ok": true,
+      "rows": 2,
+      "preview": "+-------+-------+-------+\n| marka | model | cena  |\n+-------+-------+-------+\n| AM    | beta  | 72000 |\n| BM    | beta  | 88000 |\n+-------+-------+-------+"
+    }
+  ],
+  "pages": [
+    {
+      "page": "index.php",
+      "status": 200,
+      "bytes": 1575
+    }
+  ],
+  "checked_at": "2026-10-06 17:01:55"
+}
