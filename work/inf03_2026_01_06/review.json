@@ -1,0 +1,1 @@
+{"code":"inf03_2026_01_06","pass":true,"score":"34/34","fails":[],"na":["zrzuty ekranu import/kw1-kw4","utworzenie bazy i import w phpMyAdmin","nagranie płyty"],"notes":"verify.json bez failów; kwerendy, PHP, CSS, grafika (666x100, RGBA, przezroczyste tło) zgodne z treścią."}

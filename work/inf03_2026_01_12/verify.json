@@ -1,0 +1,44 @@
+{
+  "code": "inf03_2026_01_12",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT wzor, cena FROM tatuaze WHERE kolor = 'czarny' AND cena > 100 ORDER BY cena DESC",
+      "ok": true,
+      "rows": 3,
+      "preview": "+---------+------+\n| wzor    | cena |\n+---------+------+\n| koliber |  200 |\n| anioł   |  200 |\n| kwiat   |  130 |\n+---------+------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT kolor, COUNT(*) FROM tatuaze GROUP BY kolor",
+      "ok": true,
+      "rows": 8,
+      "preview": "+---------------+----------+\n| kolor         | COUNT(*) |\n+---------------+----------+\n| czarny        |        8 |\n| czerwony      |        4 |\n| niebieski     |        3 |\n| szary         |        1 |\n| wielokolorowy |        1 |\n| zielony       |        3 |"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT tatuaze.wzor, style.nazwa FROM tatuaze JOIN style ON tatuaze.style_id = style.id WHERE tatuaze.kolor = 'zielony'",
+      "ok": true,
+      "rows": 3,
+      "preview": "+-------+------------+\n| wzor  | nazwa      |\n+-------+------------+\n| waz   | hanpoke    |\n| smok  | orientalne |\n| kwiat | orientalne |\n+-------+------------+"
+    },
+    {
+      "n": 4,
+      "sql": "UPDATE tatuaze SET cena = cena * 1.1 WHERE kolor = 'czerwony'",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "index.html",
+      "status": 200,
+      "bytes": 1486
+    }
+  ],
+  "checked_at": "2026-10-06 17:05:55"
+}

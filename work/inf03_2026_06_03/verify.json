@@ -1,0 +1,49 @@
+{
+  "code": "inf03_2026_06_03",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT nazwa, styl, cena FROM meble WHERE czyNowy = 1 AND cena <= 1000 ORDER BY cena ASC",
+      "ok": true,
+      "rows": 3,
+      "preview": "+---------------------+---------+------+\n| nazwa               | styl    | cena |\n+---------------------+---------+------+\n| Komoda z szufladami | retro   |  700 |\n| Fotel niebieski     | glamour |  800 |\n| Brązowa sofa        | glamour | 1000 |\n+---------------------+---------+------+"
+    },
+    {
+      "n": 2,
+      "sql": "CREATE VIEW komody AS SELECT idMeble, nazwa, kategoria, cena FROM meble WHERE kategoria = 3",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    },
+    {
+      "n": 3,
+      "sql": "SELECT ROUND(AVG(cena)) AS `Średnia cena komód`, MIN(cena) AS `Minimalna`, MAX(cena) AS `Maksymalna` FROM komody",
+      "ok": true,
+      "rows": 1,
+      "preview": "+----------------------+-----------+------------+\n| Średnia cena komód   | Minimalna | Maksymalna |\n+----------------------+-----------+------------+\n|                 2180 |       700 |       4000 |\n+----------------------+-----------+------------+"
+    },
+    {
+      "n": 4,
+      "sql": "DELETE FROM klienci WHERE imie = 'Tomasz' AND nazwisko = 'Nowak'",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "kartaProduktu.html",
+      "status": 200,
+      "bytes": 1633
+    },
+    {
+      "page": "sklep.html",
+      "status": 200,
+      "bytes": 186
+    }
+  ],
+  "checked_at": "2026-10-06 17:04:15"
+}

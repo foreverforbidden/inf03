@@ -1,0 +1,64 @@
+{
+  "code": "inf03_2026_01_10",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT nazwa, trudnosc, kalorie FROM potrawy WHERE idPotrawy = 7",
+      "ok": true,
+      "rows": 1,
+      "preview": "+-------------+----------+---------+\n| nazwa       | trudnosc | kalorie |\n+-------------+----------+---------+\n| Jagnięcina  |        3 |     225 |\n+-------------+----------+---------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT potrawy.nazwa, rodzaje.rodzaj FROM potrawy JOIN rodzaje ON potrawy.idRodzaje = rodzaje.idRodzaje WHERE potrawy.idPotrawy = 7",
+      "ok": true,
+      "rows": 1,
+      "preview": "+-------------+---------------+\n| nazwa       | rodzaj        |\n+-------------+---------------+\n| Jagnięcina  | dania mięsne  |\n+-------------+---------------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT potrawy.nazwa, alergeny.alergen FROM potrawy JOIN lista_alergenow ON potrawy.idPotrawy = lista_alergenow.idPotrawy JOIN alergeny ON lista_alergenow.idAlergeny = alergeny.idAlergeny WHERE potrawy.idPotrawy = 7",
+      "ok": true,
+      "rows": 1,
+      "preview": "+-------------+---------+\n| nazwa       | alergen |\n+-------------+---------+\n| Jagnięcina  | seler   |\n+-------------+---------+"
+    },
+    {
+      "n": 4,
+      "sql": "SELECT przepis, plik FROM potrawy WHERE idPotrawy = 7",
+      "ok": true,
+      "rows": 1,
+      "preview": "+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+\n| przepis                                                                                                                                                                                                                                                                                                                                                                                                                                                          | plik           |\n+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+\n| Mięso oczyść z błon i pokrój na mniejsze kotleciki tak, aby każdy był z kostką. Czosnek, liście mięty oraz igiełki rozmarynu drobno posiekaj. Ziarno jałowca rozgnieć nożem. Wrzuć wszystko do miski. Dodaj olej, musztardę oraz przyprawę. Starannie wymieszaj składniki marynaty. Zamarynuj mięso i odstaw na co najmniej 2 godziny. Kotleciki smaż na grillu po kilka minut z każdej strony. Powinny pozostać lekko różowe w środku.                          | jagniecina.jpg |\n+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+"
+    }
+  ],
+  "pages": [
+    {
+      "page": "przepisy.php",
+      "status": 200,
+      "bytes": 1696
+    },
+    {
+      "page": "przepisy.php?id=1",
+      "status": 200,
+      "bytes": 1949
+    },
+    {
+      "page": "przepisy.php?id=2",
+      "status": 200,
+      "bytes": 1752
+    },
+    {
+      "page": "przepisy.php?id=3",
+      "status": 200,
+      "bytes": 1768
+    },
+    {
+      "page": "przepisy.php?id=4",
+      "status": 200,
+      "bytes": 1697
+    }
+  ],
+  "checked_at": "2026-10-06 17:04:22"
+}

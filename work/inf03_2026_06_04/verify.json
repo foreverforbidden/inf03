@@ -1,0 +1,49 @@
+{
+  "code": "inf03_2026_06_04",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT imie, nazwisko FROM rezerwacje WHERE wyzywienie = 3",
+      "ok": true,
+      "rows": 4,
+      "preview": "+---------+------------+\n| imie    | nazwisko   |\n+---------+------------+\n| Anna    | Nowakowska |\n| Jan     | Konieczny  |\n| Judyta  | Kowalewska |\n| Jolanta | Kowal      |\n+---------+------------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT COUNT(*) FROM rezerwacje WHERE Wycieczki_id = 2 AND wylot = 'Warszawa'",
+      "ok": true,
+      "rows": 1,
+      "preview": "+----------+\n| COUNT(*) |\n+----------+\n|        2 |\n+----------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT wycieczki.miejsce, rezerwacje.imie, rezerwacje.nazwisko FROM wycieczki JOIN rezerwacje ON wycieczki.id = rezerwacje.Wycieczki_id",
+      "ok": true,
+      "rows": 10,
+      "preview": "+-----------+----------+------------+\n| miejsce   | imie     | nazwisko   |\n+-----------+----------+------------+\n| Barcelona | Anna     | Nowakowska |\n| Barcelona | Karolina | Kowalska   |\n| Barcelona | Jan      | Konieczny  |\n| Rzym      | Monika   | Zawada     |\n| Rzym      | Judyta   | Kowalewska |\n| Rzym      | Piotr    | Nowak      |"
+    },
+    {
+      "n": 4,
+      "sql": "SELECT wycieczki.miejsce, SUM(rezerwacje.osob) FROM wycieczki JOIN rezerwacje ON wycieczki.id = rezerwacje.Wycieczki_id GROUP BY wycieczki.miejsce",
+      "ok": true,
+      "rows": 3,
+      "preview": "+-----------+----------------------+\n| miejsce   | SUM(rezerwacje.osob) |\n+-----------+----------------------+\n| Barcelona |                    5 |\n| Londyn    |                    4 |\n| Rzym      |                   10 |\n+-----------+----------------------+"
+    }
+  ],
+  "pages": [
+    {
+      "page": "rezerwacja.html",
+      "status": 200,
+      "bytes": 1943
+    },
+    {
+      "page": "wycieczki.html",
+      "status": 200,
+      "bytes": 141
+    }
+  ],
+  "checked_at": "2026-10-06 17:05:57"
+}

@@ -1,0 +1,8 @@
+{
+  "code": "inf03_2026_01_04",
+  "pass": true,
+  "score": "42/42",
+  "fails": [],
+  "na": ["utworzenie bazy w phpMyAdmin", "import.jpg", "kw1-kw5.png", "nagranie plyty"],
+  "notes": "Zapytania 1-5 poprawne (verify.json bez fail). index.php i wynik.php: HTML5, lang pl, UTF-8, tytul, styl.css, header/aside/section/section/footer, skrypty 1-3 zgodne, mysqli_close. CSS zgodny z trescia, selektory znacznikow dla body/img/h4/a. Pliki graficzne identyczne z materialami."
+}

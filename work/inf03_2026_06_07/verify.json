@@ -1,0 +1,44 @@
+{
+  "code": "inf03_2026_06_07",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT nazwa, potrzebne FROM grytowarzyskie WHERE liczbaGraczy > 4",
+      "ok": true,
+      "rows": 2,
+      "preview": "+-------------------+-----------------------------------------------------+\n| nazwa             | potrzebne                                           |\n+-------------------+-----------------------------------------------------+\n| Państwa - miasta  | Kartka papieru dla każdego gracza, coś do pisania   |\n| Kalambury         | Tablica i pisak                                     |\n+-------------------+-----------------------------------------------------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT AVG(czasRozgrywki) AS `średnia w minutach` FROM grytowarzyskie WHERE liczbaGraczy = 2",
+      "ok": true,
+      "rows": 1,
+      "preview": "+---------------------+\n| średnia w minutach  |\n+---------------------+\n|             12.7500 |\n+---------------------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT nazwa FROM grytowarzyskie WHERE czasRozgrywki = (SELECT MAX(czasRozgrywki) FROM grytowarzyskie)",
+      "ok": true,
+      "rows": 2,
+      "preview": "+-------------------+\n| nazwa             |\n+-------------------+\n| Państwa - miasta  |\n| Kalambury         |\n+-------------------+"
+    },
+    {
+      "n": 4,
+      "sql": "SELECT nazwa FROM grytowarzyskie WHERE potrzebne LIKE '%karty%' AND liczbaGraczy < 4",
+      "ok": true,
+      "rows": 3,
+      "preview": "+--------------+\n| nazwa        |\n+--------------+\n| Piotruś Pan  |\n| Pasjans      |\n| Tysiąc       |\n+--------------+"
+    }
+  ],
+  "pages": [
+    {
+      "page": "gra.html",
+      "status": 200,
+      "bytes": 2268
+    }
+  ],
+  "checked_at": "2026-10-06 17:04:04"
+}

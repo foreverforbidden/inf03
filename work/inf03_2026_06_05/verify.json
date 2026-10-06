@@ -1,0 +1,68 @@
+{
+  "code": "inf03_2026_06_05",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT idMeble, nazwa, plik, styl, cena, opis FROM meble WHERE kategoria = 1",
+      "ok": true,
+      "rows": 3,
+      "preview": "+---------+----------------+--------+------------+------+------------------------------------------------------------------------------------------------------------------------------------+\n| idMeble | nazwa          | plik   | styl       | cena | opis                                                                                                                               |\n+---------+----------------+--------+------------+------+------------------------------------------------------------------------------------------------------------------------------------+\n|       1 | Brązowa sofa   | s1.png | glamour    | 1000 | Piękna kanapa obita brązową skórą. Stelaż dębowy. Pięknie się prezentuje w klasycznych wnętrzach.                                  |\n|       2 | Sofa 2-osobowa | s2.png | rustykalny | 1200 | Kanapa w stylu rustykalnym dla dwóch osób. Ręcznie wyszywana. Polecamy do wnętrz jasnych, rustykalnych. Jest bardzo przytulna.     |\n|       3 | Ozdobna sofa   | s3.png | vintage    | 2000 | Barokowa sofa będzie zdobić klasyczne wnętrze. Czarna z metalowym ozdobnym stelażem.                                               |\n+---------+----------------+--------+------------+------+------------------------------------------------------------------------------------------------------------------------------------+"
+    },
+    {
+      "n": 2,
+      "sql": "INSERT INTO zakupy (idKlienci, idMeble, sztuk) VALUES (1, 6, 1)",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    },
+    {
+      "n": 3,
+      "sql": "SELECT meble.nazwa, meble.cena FROM zakupy JOIN meble ON zakupy.idMeble = meble.idMeble WHERE zakupy.idKlienci = 1",
+      "ok": true,
+      "rows": 1,
+      "preview": "+-----------------+------+\n| nazwa           | cena |\n+-----------------+------+\n| Barokowa komoda | 4000 |\n+-----------------+------+"
+    },
+    {
+      "n": 4,
+      "sql": "SELECT meble.nazwa, klienci.imie, klienci.nazwisko FROM zakupy JOIN meble ON zakupy.idMeble = meble.idMeble JOIN klienci ON zakupy.idKlienci = klienci.idKlienci",
+      "ok": true,
+      "rows": 1,
+      "preview": "+-----------------+------+----------+\n| nazwa           | imie | nazwisko |\n+-----------------+------+----------+\n| Barokowa komoda | Anna | Kowalska |\n+-----------------+------+----------+"
+    }
+  ],
+  "pages": [
+    {
+      "page": "index.php",
+      "status": 200,
+      "bytes": 4281
+    },
+    {
+      "page": "formularz index.php->index.php [post]",
+      "status": 200,
+      "bytes": 4281,
+      "fields": {}
+    },
+    {
+      "page": "formularz index.php->index.php [post]",
+      "status": 200,
+      "bytes": 4281,
+      "fields": {}
+    },
+    {
+      "page": "formularz index.php->index.php [post]",
+      "status": 200,
+      "bytes": 4281,
+      "fields": {}
+    },
+    {
+      "page": "formularz index.php->index.php [post]",
+      "status": 200,
+      "bytes": 4281,
+      "fields": {}
+    }
+  ],
+  "checked_at": "2026-10-06 17:05:39"
+}

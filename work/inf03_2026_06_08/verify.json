@@ -1,0 +1,49 @@
+{
+  "code": "inf03_2026_06_08",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT tytul, gatunek FROM gry WHERE YEAR(data_wydania) BETWEEN 2018 AND 2023 AND gatunek LIKE '%Niezależne%'",
+      "ok": true,
+      "rows": 2,
+      "preview": "+----------------+--------------------------------+\n| tytul          | gatunek                        |\n+----------------+--------------------------------+\n| The Invincible | Akcja, Przygodowe, Niezależne  |\n| Moonlighter    | Akcja, Przygodowe, Niezależne  |\n+----------------+--------------------------------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT producenci.nazwa, COUNT(gry.id_gry) AS liczba_gier FROM producenci LEFT JOIN gry ON producenci.id_producenta = gry.id_producenta GROUP BY producenci.nazwa",
+      "ok": true,
+      "rows": 8,
+      "preview": "+---------------------+-------------+\n| nazwa               | liczba_gier |\n+---------------------+-------------+\n| 11 bit studios      |           2 |\n| CD PROJEKT RED      |           2 |\n| Deep Silver         |           0 |\n| Digital Sun         |           1 |\n| One More Level      |           1 |\n| Starward Industries |           1 |"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT gry.id_gry, gry.tytul, producenci.nazwa AS producent, wydawcy.nazwa AS wydawca FROM gry JOIN producenci ON gry.id_producenta = producenci.id_producenta JOIN wydawcy ON gry.id_wydawcy = wydawcy.id_wydawcy",
+      "ok": true,
+      "rows": 10,
+      "preview": "+--------+--------------------------------------------+---------------------+------------------+\n| id_gry | tytul                                      | producent           | wydawca          |\n+--------+--------------------------------------------+---------------------+------------------+\n|      1 | Wiedźmin 3: Dziki Gon                      | CD PROJEKT RED      | CD PROJEKT RED   |\n|      2 | Cyberpunk 2077                             | CD PROJEKT RED      | CD PROJEKT RED   |\n|      3 | Dying Light 2 Stay Human: Reloaded Edition | Techland            | Techland         |\n|      4 | Ghostrunner 2                              | One More Level      | 505 Games        |\n|      5 | The Invincible                             | Starward Industries | 11 bit studios   |\n|      6 | Frostpunk                                  | 11 bit studios      | 11 bit studios   |"
+    },
+    {
+      "n": 4,
+      "sql": "ALTER TABLE gry ADD ocena INT NOT NULL DEFAULT 5",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "index.html",
+      "status": 200,
+      "bytes": 1192
+    },
+    {
+      "page": "onas.html",
+      "status": 200,
+      "bytes": 2031
+    }
+  ],
+  "checked_at": "2026-10-06 17:05:40"
+}

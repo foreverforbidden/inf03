@@ -1,0 +1,80 @@
+{
+  "code": "inf03_2026_06_02",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT idKontynent, nazwa FROM kontynenty",
+      "ok": true,
+      "rows": 7,
+      "preview": "+-------------+---------------------+\n| idKontynent | nazwa               |\n+-------------+---------------------+\n|           1 | Azja                |\n|           2 | Afryka              |\n|           3 | Ameryka Północna    |\n|           4 | Ameryka Południowa  |\n|           5 | Antarktyda          |\n|           6 | Europa              |"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT nazwa, wartoscCechy, plik FROM obiekty WHERE idRodzaj = 10 AND panstwo = 'Polska'",
+      "ok": true,
+      "rows": 4,
+      "preview": "+----------------+--------------+----------------+\n| nazwa          | wartoscCechy | plik           |\n+----------------+--------------+----------------+\n| Kamieńczyk     |           24 | kamienczyk.jpg |\n| Mała Siklawa   |           23 | siklawica.jpg  |\n| Wielka Siklawa |           70 | siklawa.jpg    |\n| Wilczki        |           22 | wilczki.jpg    |\n+----------------+--------------+----------------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT idObiekt, panstwo, nazwa, wartoscCechy FROM obiekty WHERE idRodzaj = 10 AND idKontynent = 6",
+      "ok": true,
+      "rows": 8,
+      "preview": "+----------+----------+----------------+--------------+\n| idObiekt | panstwo  | nazwa          | wartoscCechy |\n+----------+----------+----------------+--------------+\n|       42 | Polska   | Kamieńczyk     |           24 |\n|       43 | Polska   | Mała Siklawa   |           23 |\n|       44 | Polska   | Wielka Siklawa |           70 |\n|       45 | Polska   | Wilczki        |           22 |\n|       47 | Islandia | Skogafoss      |           60 |\n|       48 | Islandia | Seljalandsfoss |           60 |"
+    },
+    {
+      "n": 4,
+      "sql": "INSERT INTO osiagniecia (idObiekt, idTurysta) VALUES (34, 2)",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    },
+    {
+      "n": 5,
+      "sql": "SELECT idTurysta, nick FROM turysci",
+      "ok": true,
+      "rows": 13,
+      "preview": "+-----------+----------+\n| idTurysta | nick     |\n+-----------+----------+\n|         1 | Ewa      |\n|         2 | Monika   |\n|         3 | Janek    |\n|         4 | Krzysiek |\n|         5 | Paula    |\n|         6 | Ania     |"
+    }
+  ],
+  "pages": [
+    {
+      "page": "index.php",
+      "status": 200,
+      "bytes": 2521
+    },
+    {
+      "page": "index.php?id=1",
+      "status": 200,
+      "bytes": 2055
+    },
+    {
+      "page": "index.php?id=2",
+      "status": 200,
+      "bytes": 2117
+    },
+    {
+      "page": "index.php?id=3",
+      "status": 200,
+      "bytes": 2050
+    },
+    {
+      "page": "index.php?id=4",
+      "status": 200,
+      "bytes": 1989
+    },
+    {
+      "page": "formularz index.php->index.php [post]",
+      "status": 200,
+      "bytes": 2521,
+      "fields": {
+        "idObiektu": "2",
+        "turysta": "Test"
+      }
+    }
+  ],
+  "checked_at": "2026-10-06 17:04:16"
+}

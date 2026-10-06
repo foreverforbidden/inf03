@@ -1,0 +1,44 @@
+{
+  "code": "inf03_2026_06_12",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT model, rozmiar_ramy, rozmiar_kol, kolor, cena FROM rowery WHERE typ = 'górski' AND cena <= 4500",
+      "ok": true,
+      "rows": 9,
+      "preview": "+--------------------+--------------+-------------+-----------+---------+\n| model              | rozmiar_ramy | rozmiar_kol | kolor     | cena    |\n+--------------------+--------------+-------------+-----------+---------+\n| Fuse Comp 22       | M            | 22          | żółty     | 2000.00 |\n| Rockhopper Comp 22 | L            | 22          | szary     | 4000.00 |\n| Big Seven 100      | M            | 27.5        | biały     | 4000.00 |\n| Talon 2            | L            | 29          | niebieski | 3500.00 |\n| Stance 29 1        | L            | 29          | zielony   | 3000.00 |\n| Talon 29 0         | L            | 29          | czerwony  | 4000.00 |"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT producenci.nazwa, MIN(rowery.cena) AS `najtańszy`, AVG(rowery.cena) AS `średnia cena`, MAX(rowery.cena) AS `najdroższy` FROM rowery JOIN producenci ON rowery.producent_id = producenci.id GROUP BY producenci.id, producenci.nazwa",
+      "ok": true,
+      "rows": 6,
+      "preview": "+----------+------------+---------------+-------------+\n| nazwa    | najtańszy  | średnia cena  | najdroższy  |\n+----------+------------+---------------+-------------+\n| Cup      |    1000.00 |  13600.000000 |    35000.00 |\n| Knife    |    2000.00 |  16893.939394 |    35000.00 |\n| Glass    |    2250.00 |  14112.903226 |    33000.00 |\n| Teaspoon |    4000.00 |  17152.631579 |    32000.00 |\n| Spoon    |   12000.00 |  26093.750000 |    38000.00 |\n| Fork     |    4000.00 |  13662.500000 |    29000.00 |"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT id, model, typ, rozmiar_kol FROM rowery WHERE model LIKE '%Carbon%' AND rozmiar_ramy = 'L'",
+      "ok": true,
+      "rows": 7,
+      "preview": "+----+-------------------------+-------------+-------------+\n| id | model                   | typ         | rozmiar_kol |\n+----+-------------------------+-------------+-------------+\n|  5 | F-Si Carbon 2           | górski      | 29          |\n|  7 | Jekyll Carbon 29 1      | górski      | 29          |\n| 13 | Topstone Carbon Lefty 3 | gravel      | 28          |\n| 16 | Habit Carbon 3          | górski      | 29          |\n| 18 | Topstone Neo Carbon 2   | elektryczny | 28          |\n| 29 | Sirrus X Comp Carbon    | miejski     | 28          |"
+    },
+    {
+      "n": 4,
+      "sql": "UPDATE rowery SET cena = cena * 0.75 WHERE typ = 'gravel'",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "index.html",
+      "status": 200,
+      "bytes": 2525
+    }
+  ],
+  "checked_at": "2026-10-06 17:05:39"
+}

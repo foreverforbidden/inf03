@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Salon rowerowy</title>
+<link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<header>
+<img src="1.jpg" alt="rower">
+<img src="2.jpg" alt="rower">
+<img src="3.jpg" alt="rower">
+<img src="4.jpg" alt="rower">
+<img src="5.jpg" alt="rower">
+</header>
+<main>
+<h1>Dobierz rozmiar ramy roweru do wzrostu</h1>
+<h2>Wybierz rodzaj roweru</h2>
+<input type="radio" name="typ" id="gorski" value="gorski" checked><label for="gorski" class="klasa_etykiety" title="górski z kołami 29">górski z kołami 29</label>
+<input type="radio" name="typ" id="szosa" value="szosa"><label for="szosa" class="klasa_etykiety" title="szosa">szosa</label>
+<input type="radio" name="typ" id="trekking" value="trekking"><label for="trekking" class="klasa_etykiety" title="trekking">trekking</label>
+<h2>Podaj swój wzrost</h2>
+<input type="range" id="suwak" min="100" max="220" value="150" oninput="przepiszWzrost()">
+<input type="number" id="wzrost" value="150"><br>
+<button class="klasa_etykiety" onclick="obliczRozmiarRamy()">Sprawdź</button>
+<p id="wynik"></p>
+</main>
+<aside>
+<h1>Polecane firmy</h1>
+<p class="logo1 prawa">cup</p>
+<p class="logo2">glass</p>
+<p class="logo1 srodek">spoon</p>
+<p class="logo2 prawa">teaspoon</p>
+<p class="logo1">fork</p>
+</aside>
+<footer id="stopka1">
+<h4>Oferowane typy rowerów</h4>
+<ul>
+<li>górskie
+<ul>
+<li>koła 29 cali</li>
+<li>koła 26 cali</li>
+</ul>
+</li>
+<li>szosowe</li>
+<li>miejskie</li>
+</ul>
+</footer>
+<footer id="stopka2">
+<h4>Informacje</h4>
+<table>
+<tr><td>Autor: </td><td>00000000000</td></tr>
+<tr><td>Aktualna data: </td><td id="data"></td></tr>
+</table>
+</footer>
+<script>
+function przepiszWzrost() {
+  document.getElementById("wzrost").value = document.getElementById("suwak").value;
+}
+function obliczRozmiarRamy() {
+  var wzrost = document.getElementById("wzrost").value;
+  var wspolczynnik = 0.26;
+  if (document.getElementById("szosa").checked) {
+    wspolczynnik = 0.3;
+  } else if (document.getElementById("trekking").checked) {
+    wspolczynnik = 0.28;
+  }
+  var rozmiar = Math.round(wzrost * wspolczynnik / 2.54);
+  document.getElementById("wynik").innerHTML = "Zalecany rozmiar ramy to: " + rozmiar + " cali";
+}
+function pokazDate() {
+  var dzis = new Date();
+  var dzien = String(dzis.getDate()).padStart(2, "0");
+  var miesiac = String(dzis.getMonth() + 1).padStart(2, "0");
+  document.getElementById("data").innerHTML = dzien + "." + miesiac + "." + dzis.getFullYear();
+}
+window.onload = pokazDate;
+</script>
+</body>
+</html>

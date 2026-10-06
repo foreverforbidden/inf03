@@ -1,0 +1,8 @@
+-- Zapytanie 1
+SELECT model, rozmiar_ramy, rozmiar_kol, kolor, cena FROM rowery WHERE typ = 'górski' AND cena <= 4500;
+-- Zapytanie 2
+SELECT producenci.nazwa, MIN(rowery.cena) AS `najtańszy`, AVG(rowery.cena) AS `średnia cena`, MAX(rowery.cena) AS `najdroższy` FROM rowery JOIN producenci ON rowery.producent_id = producenci.id GROUP BY producenci.id, producenci.nazwa;
+-- Zapytanie 3
+SELECT id, model, typ, rozmiar_kol FROM rowery WHERE model LIKE '%Carbon%' AND rozmiar_ramy = 'L';
+-- Zapytanie 4
+UPDATE rowery SET cena = cena * 0.75 WHERE typ = 'gravel';

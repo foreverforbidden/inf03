@@ -1,0 +1,23 @@
+{
+  "code": "inf03_2026_06_04",
+  "pass": false,
+  "score": "56/58",
+  "fails": [
+    {
+      "item": "Układ bloków zgodny z ilustracją 2/3 (blok boczny na prawo od bloku nawigacyjnego, na całą wysokość części głównej)",
+      "problem": "W rezerwacja.html kolejność to nav, section, section, aside, a w styl.css wszystkie są float:left (nav 90%, section 45%, aside 10%). Section nie mieści się obok nav (90%+45%>100%), więc spada pod nav, a aside (za sekcjami) trafia do drugiego rzędu pod nav. Przy nav pozostaje puste 10% i blok boczny zaczyna się niżej, niż na ilustracji (rezerwacja.html:10-37, styl.css:4-6).",
+      "fix": "Umieścić <aside> w HTML zaraz po <nav> (przed obiema sekcjami); przy float:left nav 90% + aside 10% zajmą pierwszy rząd, a sekcje 45%+45% ułożą się pod nav obok aside. Alternatywnie main {display:flex; flex-wrap:wrap} z aside ustawionym przez order/float:right."
+    },
+    {
+      "item": "Dla przycisku: szerokość 45%, marginesy wewnętrzne 15px 40px, zewnętrzne 3px 2% (przyciski Uczestnik i Rezerwacja obok siebie, jak na ilustracji)",
+      "problem": "Bez box-sizing:border-box szerokość jednego przycisku to 45% + 80px padding + 4% marginesu + ramka, czyli dwa przyciski to ok. 98% + 168px, więcej niż szerokość nav. Przyciski zawijają się jeden pod drugim (styl.css:10), a na ilustracji stoją obok siebie.",
+      "fix": "Dodać do reguły button: box-sizing: border-box; (wtedy 2×(45%+4%)=98% mieści się w nav)."
+    }
+  ],
+  "na": [
+    "zrzuty ekranu import.png, kw1-kw4.png",
+    "utworzenie bazy wyprawy w phpMyAdmin / import tabel",
+    "nagranie płyty, folder z numerem zdającego"
+  ],
+  "notes": "Kwerendy 1-4 poprawne i zgodne z verify.json (4 rekordy; COUNT=2; 10 rekordów JOIN; sumy Barcelona 5, Londyn 4, Rzym 10). osoba.png 100x100 z przezroczystością OK. Skrypt (kolory, kontrolki, przewijanie w obie strony) logicznie poprawny. Uwaga drobna: przycisk Sprawdź cenę ma atrybut disabled na stałe (nie wymagane w treści), a skrypt go nie aktywuje. Wynik oceniony na podstawie analizy CSS, bo w środowisku brak przeglądarki do renderu."
+}

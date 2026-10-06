@@ -1,0 +1,8 @@
+-- Zapytanie 1
+SELECT idMeble, nazwa, plik, styl, cena, opis FROM meble WHERE kategoria = 1;
+-- Zapytanie 2
+INSERT INTO zakupy (idKlienci, idMeble, sztuk) VALUES (1, 6, 1);
+-- Zapytanie 3
+SELECT meble.nazwa, meble.cena FROM zakupy JOIN meble ON zakupy.idMeble = meble.idMeble WHERE zakupy.idKlienci = 1;
+-- Zapytanie 4
+SELECT meble.nazwa, klienci.imie, klienci.nazwisko FROM zakupy JOIN meble ON zakupy.idMeble = meble.idMeble JOIN klienci ON zakupy.idKlienci = klienci.idKlienci;

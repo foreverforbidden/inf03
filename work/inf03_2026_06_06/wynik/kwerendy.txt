@@ -1,0 +1,8 @@
+-- Zapytanie 1
+SELECT nazwa, ilosc FROM leki WHERE jednostka = 'szt.';
+-- Zapytanie 2
+SELECT imie, nazwisko, rokUr FROM pacjenci WHERE rokUr > 2000 AND imie LIKE '%a';
+-- Zapytanie 3
+SELECT typy.typ, COUNT(leki.idLeki) FROM typy JOIN leki ON typy.idTypy = leki.idTypy GROUP BY typy.idTypy, typy.typ;
+-- Zapytanie 4
+CREATE USER 'Lekarz'@'localhost' IDENTIFIED BY 'Lek@rz';

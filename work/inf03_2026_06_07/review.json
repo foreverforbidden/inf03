@@ -1,0 +1,1 @@
+{"code":"inf03_2026_06_07","pass":true,"score":"44/44","fails":[],"na":["utworzenie bazy i import w phpMyAdmin","zrzuty ekranu import/kw1-kw4","nagranie płyty"],"notes":"Zapytania zgodne z danymi (2/12.75/2/3 wiersze), HTML/CSS/JS zgodne z treścią; visibility zachowuje układ; td:active dla kliknięcia."}

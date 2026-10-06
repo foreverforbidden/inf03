@@ -1,0 +1,8 @@
+{
+  "code": "inf03_2026_01_11",
+  "pass": true,
+  "score": "42/42",
+  "fails": [],
+  "na": ["utworzenie bazy kino w phpMyAdmin", "import kino.sql (zrzut import.png)", "zrzuty ekranu kw1-kw5.jpg", "nagranie płyty", "folder z numerem zdającego"],
+  "notes": "Wszystkie 5 zapytań poprawne (verify.json bez fail), strony zwracają HTTP 200, układ bloków (2 nagłówki obok siebie, main, stopka) zgodny z ilustracją 3, CSS zgodny z treścią. Drobna uwaga: p{font-size:125%} obejmuje też komunikat o liczbie filmów w aktor.php (poza blokiem aktora), a ilustracja pokazuje go mniejszym; treść nie wymaga tego wprost."
+}

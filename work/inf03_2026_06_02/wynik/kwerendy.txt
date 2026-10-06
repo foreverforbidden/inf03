@@ -1,0 +1,10 @@
+-- Zapytanie 1
+SELECT idKontynent, nazwa FROM kontynenty;
+-- Zapytanie 2
+SELECT nazwa, wartoscCechy, plik FROM obiekty WHERE idRodzaj = 10 AND panstwo = 'Polska';
+-- Zapytanie 3
+SELECT idObiekt, panstwo, nazwa, wartoscCechy FROM obiekty WHERE idRodzaj = 10 AND idKontynent = 6;
+-- Zapytanie 4
+INSERT INTO osiagniecia (idObiekt, idTurysta) VALUES (34, 2);
+-- Zapytanie 5
+SELECT idTurysta, nick FROM turysci;

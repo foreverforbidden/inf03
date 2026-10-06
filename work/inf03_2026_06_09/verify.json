@@ -1,0 +1,51 @@
+{
+  "code": "inf03_2026_06_09",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT imie, nazwisko FROM Kelnerzy ORDER BY nazwisko DESC",
+      "ok": true,
+      "rows": 3,
+      "preview": "+-------+-------------+\n| imie  | nazwisko    |\n+-------+-------------+\n| Piotr | Wiśniewski  |\n| Anna  | Nowak       |\n| Jan   | Kowalski    |\n+-------+-------------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT COUNT(Zamowienia.id) FROM Zamowienia JOIN Stoliki ON Zamowienia.idStolika = Stoliki.id WHERE Stoliki.numerStolika = 3 AND Stoliki.sala = 1",
+      "ok": true,
+      "rows": 1,
+      "preview": "+----------------------+\n| COUNT(Zamowienia.id) |\n+----------------------+\n|                    2 |\n+----------------------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT Potrawy.nazwa FROM Potrawy JOIN ZamowieniaPotrawy ON Potrawy.id = ZamowieniaPotrawy.idPotrawy JOIN Zamowienia ON ZamowieniaPotrawy.idZamowienia = Zamowienia.id WHERE DATE(Zamowienia.dataZlozenia) = '2024-06-09'",
+      "ok": true,
+      "rows": 1,
+      "preview": "+---------------------+\n| nazwa               |\n+---------------------+\n| Spaghetti bolognese |\n+---------------------+"
+    },
+    {
+      "n": 4,
+      "sql": "CREATE USER 'administrator'@'localhost' IDENTIFIED BY 'boss123!'",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    },
+    {
+      "n": 5,
+      "sql": "ALTER TABLE Potrawy MODIFY cena DECIMAL(6,2) NOT NULL",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "index.html",
+      "status": 200,
+      "bytes": 2197
+    }
+  ],
+  "checked_at": "2026-10-06 17:05:41"
+}

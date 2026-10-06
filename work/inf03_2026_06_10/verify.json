@@ -1,0 +1,85 @@
+{
+  "code": "inf03_2026_06_10",
+  "pass": false,
+  "fails": [
+    "wyloguj.php: brak <!DOCTYPE html>",
+    "wyloguj.php: brak lang=\"pl\"",
+    "wyloguj.php: brak <meta charset=\"UTF-8\">"
+  ],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT imie, nazwisko FROM Diagnosta ORDER BY nazwisko DESC",
+      "ok": true,
+      "rows": 10,
+      "preview": "+-----------+-----------+\n| imie      | nazwisko  |\n+-----------+-----------+\n| Anna      | Zalewska  |\n| Beata     | Wysocka   |\n| Andrzej   | Sikorski  |\n| Elżbieta  | Nowacka   |\n| Magdalena | Lis       |\n| Urszula   | Lipko     |"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT DATE(data), COUNT(*) FROM Zlecenie GROUP BY DATE(data)",
+      "ok": true,
+      "rows": 6,
+      "preview": "+------------+----------+\n| DATE(data) | COUNT(*) |\n+------------+----------+\n| 2024-06-05 |        3 |\n| 2024-06-06 |        1 |\n| 2024-06-07 |        2 |\n| 2024-06-08 |        4 |\n| 2024-06-19 |        1 |\n| 2024-06-20 |        1 |"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT Zlecenie.data FROM Zlecenie JOIN Pacjent ON Zlecenie.idPacjenta = Pacjent.id WHERE Pacjent.nazwisko = 'Nowicki'",
+      "ok": true,
+      "rows": 2,
+      "preview": "+---------------------+\n| data                |\n+---------------------+\n| 2024-06-08 10:00:00 |\n| 2024-06-08 11:00:00 |\n+---------------------+"
+    },
+    {
+      "n": 4,
+      "sql": "SELECT Pacjent.imie, Pacjent.nazwisko, Pacjent.pesel, Zlecenie.data, Wynik.data, Wynik.plik FROM Zlecenie JOIN Pacjent ON Zlecenie.idPacjenta = Pacjent.id LEFT JOIN Wynik ON Wynik.idZlecenia = Zlecenie.id",
+      "ok": true,
+      "rows": 12,
+      "preview": "+-----------+------------+-------------+---------------------+---------------------+----------------+\n| imie      | nazwisko   | pesel       | data                | data                | plik           |\n+-----------+------------+-------------+---------------------+---------------------+----------------+\n| Mateusz   | Nowicki    | 88082022552 | 2024-06-08 10:00:00 | 2024-06-09 15:22:10 | nowicki.pdf    |\n| Iwona     | Kubicka    | 55052951125 | 2024-06-08 09:30:00 | 2024-06-09 15:22:10 | kubicka.pdf    |\n| Patrycja  | Tulikowska | 04312574747 | 2024-06-08 12:00:00 | 2024-06-09 15:22:10 | tulikowska.pdf |\n| Mateusz   | Nowicki    | 88082022552 | 2024-06-08 11:00:00 | NULL                | NULL           |\n| Katarzyna | Wójcik     | 88062312345 | 2024-06-07 14:30:00 | NULL                | NULL           |\n| Michał    | Kowalczyk  | 90041167890 | 2024-06-07 10:15:00 | NULL                | NULL           |"
+    }
+  ],
+  "pages": [
+    {
+      "page": "login.php",
+      "status": 200,
+      "bytes": 711
+    },
+    {
+      "page": "wyloguj.php",
+      "status": 200,
+      "bytes": 711
+    },
+    {
+      "page": "wyniki.php",
+      "status": 200,
+      "bytes": 711
+    },
+    {
+      "page": "formularz login.php->login.php [post]",
+      "status": 200,
+      "bytes": 711,
+      "fields": {
+        "login": "Test",
+        "haslo": "Test"
+      }
+    },
+    {
+      "page": "formularz wyloguj.php->login.php [post]",
+      "status": 200,
+      "bytes": 711,
+      "fields": {
+        "login": "Test",
+        "haslo": "Test"
+      }
+    },
+    {
+      "page": "formularz wyniki.php->login.php [post]",
+      "status": 200,
+      "bytes": 711,
+      "fields": {
+        "login": "Test",
+        "haslo": "Test"
+      }
+    }
+  ],
+  "checked_at": "2026-10-06 17:05:40"
+}

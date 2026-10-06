@@ -1,0 +1,8 @@
+-- Zapytanie 1
+SELECT nazwa, nazwaNaukowa, sredniaDlugoscZycia FROM gatunki WHERE rodzaj = 2 ORDER BY sredniaDlugoscZycia DESC;
+-- Zapytanie 2
+SELECT drzewa.id, drzewa.stanZdrowia, gatunki.nazwa FROM drzewa JOIN gatunki ON drzewa.gatunek_id = gatunki.id WHERE drzewa.dataPosadzenia = '2008-06-06';
+-- Zapytanie 3
+SELECT rodzaj, COUNT(*) AS ilość FROM gatunki GROUP BY rodzaj;
+-- Zapytanie 4
+SELECT gatunki.nazwa, drzewa.dataPosadzenia, drzewa.stanZdrowia FROM drzewa JOIN gatunki ON drzewa.gatunek_id = gatunki.id JOIN lokalizacje ON drzewa.lokalizacja_id = lokalizacje.id WHERE lokalizacje.opis = 'Gdańsk, Polska' AND gatunki.nazwa LIKE '%a';

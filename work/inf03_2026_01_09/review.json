@@ -1,0 +1,14 @@
+{
+  "code": "inf03_2026_01_09",
+  "pass": false,
+  "score": "44/45",
+  "fails": [
+    {
+      "item": "Podział na bloki – układ zgodny z ilustracją 4 (stopka pod blokiem głównym, na prawo od bloku bocznego, ilustracja 2)",
+      "problem": "styl.css: footer { clear: both; } – stopka schodzi poniżej wysokiego obrazu bocznego (manicure.jpg 252x500 skalowany do 20% szerokości) i rozciąga się na całą szerokość strony, a tekst 'Autor strony' jest wyśrodkowany względem całej strony zamiast pod blokiem głównym. Na ilustracjach 2 i 4 stopka jest po prawej stronie bloku bocznego, pod blokiem głównym.",
+      "fix": "Usunąć regułę footer { clear: both; } (stopka bez clear zostanie ułożona obok bloku bocznego pod blokiem głównym) albo ustawić footer { margin-left: 20%; }"
+    }
+  ],
+  "na": ["zrzuty ekranu import.png, kw1-kw4.png", "utworzenie bazy i import w phpMyAdmin", "nagranie płyty", "folder z numerem zdającego"],
+  "notes": "Kwerendy 1-4 poprawne i wykonują się na bazie (verify.json bez fail). kolory.png przycięty do butelek i 216x70 (proporcje zachowane). Skrypty JS (pętla 10 obrazów z klasą wzory i title, pokazSekcje na onmouseover) poprawne. HTML, kodowanie, lang, tytuł, alty, teksty, pozostałe style CSS poprawne. W pliku nie ma żadnego komentarza o przeglądarce poza nazwą - OK."
+}

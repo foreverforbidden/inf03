@@ -1,0 +1,76 @@
+{
+  "code": "inf03_2026_01_11",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT id_filmu, tytul, rok_produkcji, czas_trwania FROM filmy WHERE czas_trwania >= 100",
+      "ok": true,
+      "rows": 11,
+      "preview": "+----------+--------------------------+---------------+--------------+\n| id_filmu | tytul                    | rok_produkcji | czas_trwania |\n+----------+--------------------------+---------------+--------------+\n|        1 | Podróż do Gwiazdorii     |          2020 |          120 |\n|        3 | Skradzione Sny           |          2018 |          110 |\n|        5 | Labirynt Mrocznych Dróg  |          2010 |          130 |\n|        6 | Złodziejka Czasu         |          2017 |          105 |\n|        7 | Gwiazda na Dnie Oceanu   |          2019 |          115 |\n|        8 | Nocne Opowieści          |          2014 |          100 |"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT imie, nazwisko, plik_awatara FROM aktorzy WHERE id_aktora = 3",
+      "ok": true,
+      "rows": 1,
+      "preview": "+-------+----------+--------------+\n| imie  | nazwisko | plik_awatara |\n+-------+----------+--------------+\n| Jerzy | Pasek    | awatar_3.jpg |\n+-------+----------+--------------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT * FROM aktorzy ORDER BY nazwisko ASC, imie ASC",
+      "ok": true,
+      "rows": 10,
+      "preview": "+-----------+------------+-----------+-------+---------------+\n| id_aktora | imie       | nazwisko  | ocena | plik_awatara  |\n+-----------+------------+-----------+-------+---------------+\n|         4 | Mathilde   | Anaïs     |     5 | awatar_8.jpg  |\n|         7 | Davide     | Costaluca |     2 | awatar_6.jpg  |\n|         8 | Lorenzo    | Di Romano |     5 | awatar_7.jpg  |\n|         5 | Pablo      | Gallo     |     4 | awatar_4.jpg  |\n|         6 | Matteo     | Jímenez   |     3 | awatar_5.jpg  |\n|         9 | Sobiesław  | Kubiszyn  |     4 | awatar_10.jpg |"
+    },
+    {
+      "n": 4,
+      "sql": "SELECT filmy.id_filmu, filmy.tytul, filmy.rok_produkcji FROM filmy JOIN filmy_aktorzy ON filmy.id_filmu = filmy_aktorzy.id_filmu WHERE filmy_aktorzy.id_aktora = 3",
+      "ok": true,
+      "rows": 11,
+      "preview": "+----------+------------------------------+---------------+\n| id_filmu | tytul                        | rok_produkcji |\n+----------+------------------------------+---------------+\n|        2 | Tajemnica Zaginionego Klucza |          2015 |\n|        4 | Echo Czasu                   |          2012 |\n|        5 | Labirynt Mrocznych Dróg      |          2010 |\n|        6 | Złodziejka Czasu             |          2017 |\n|        8 | Nocne Opowieści              |          2014 |\n|        9 | Skrywana Prawda              |          2016 |"
+    },
+    {
+      "n": 5,
+      "sql": "SELECT id_aktora, COUNT(id_filmu) AS liczba_filmow FROM filmy_aktorzy GROUP BY id_aktora",
+      "ok": true,
+      "rows": 9,
+      "preview": "+-----------+---------------+\n| id_aktora | liczba_filmow |\n+-----------+---------------+\n|         1 |             8 |\n|         2 |             9 |\n|         3 |            11 |\n|         4 |            10 |\n|         5 |             9 |\n|         6 |             8 |"
+    }
+  ],
+  "pages": [
+    {
+      "page": "aktor.php",
+      "status": 200,
+      "bytes": 606
+    },
+    {
+      "page": "index.php",
+      "status": 200,
+      "bytes": 2036
+    },
+    {
+      "page": "aktor.php?id=4",
+      "status": 200,
+      "bytes": 739
+    },
+    {
+      "page": "aktor.php?id=7",
+      "status": 200,
+      "bytes": 743
+    },
+    {
+      "page": "aktor.php?id=8",
+      "status": 200,
+      "bytes": 748
+    },
+    {
+      "page": "aktor.php?id=5",
+      "status": 200,
+      "bytes": 726
+    }
+  ],
+  "checked_at": "2026-10-06 17:04:15"
+}

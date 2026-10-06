@@ -1,0 +1,14 @@
+* { font-family: Georgia; }
+body { background-color: MistyRose; }
+header, footer { text-align: center; }
+section { width: 70%; height: 700px; overflow: scroll; float: left; }
+aside { width: 30%; float: left; }
+footer { clear: both; }
+img { width: 90%; text-align: center; }
+.mebel { margin: 5px; padding: 10px; background-color: LightCoral; border-radius: 20px; overflow: auto; }
+.mebel:hover { background-color: Coral; }
+.obraz { width: 30%; float: left; }
+.opis { clear: both; width: 100%; }
+button { margin-left: 30px; padding: 20px; background-color: LightCoral; border: 2px dotted Maroon; border-radius: 10px; }
+h2, h4 { font-style: italic; }
+h2 { text-align: center; }

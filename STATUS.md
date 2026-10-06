@@ -1,6 +1,6 @@
 # Status arkuszy INF.03
 
-**done**: 58 · **review_fail**: 0 · **verify_fail**: 0 · **todo**: 21 · **razem**: 79
+**done**: 69 · **review_fail**: 5 · **verify_fail**: 1 · **todo**: 4 · **razem**: 79
 
 | Arkusz | Stan | Próby | verify | review | Uwagi |
 |---|---|---|---|---|---|
@@ -62,24 +62,24 @@
 | inf03_2026_01_01 | done | 1 | PASS | PASS all |  |
 | inf03_2026_01_02 | done | 1 | PASS | PASS all/all |  |
 | inf03_2026_01_03 | done | 1 | PASS | PASS all/all |  |
-| inf03_2026_01_04 | todo | 1 | PASS | – |  |
-| inf03_2026_01_05 | todo | 1 | PASS | – |  |
-| inf03_2026_01_06 | todo | 1 | PASS | – |  |
-| inf03_2026_01_07 | todo | 1 | PASS | – |  |
-| inf03_2026_01_08 | todo | 1 | PASS | – |  |
-| inf03_2026_01_09 | todo | 1 | PASS | – |  |
-| inf03_2026_01_10 | todo | 1 | – | – |  |
-| inf03_2026_01_11 | todo | 1 | – | – |  |
-| inf03_2026_01_12 | todo | 1 | – | – |  |
+| inf03_2026_01_04 | done | 1 | PASS | PASS 42/42 |  |
+| inf03_2026_01_05 | done | 1 | PASS | PASS 52/52 |  |
+| inf03_2026_01_06 | done | 1 | PASS | PASS 34/34 |  |
+| inf03_2026_01_07 | done | 1 | PASS | PASS all/all |  |
+| inf03_2026_01_08 | done | 1 | PASS | PASS 45/45 |  |
+| inf03_2026_01_09 | review_fail | 1 | PASS | FAIL 44/45 | Podział na bloki – układ zgodny z ilustracją 4 (st |
+| inf03_2026_01_10 | done | 1 | PASS | PASS 42/42 |  |
+| inf03_2026_01_11 | done | 1 | PASS | PASS 42/42 |  |
+| inf03_2026_01_12 | review_fail | 2 | PASS | FAIL 43/45 | Podział strony na bloki ... układ bloków zgodny z ; Logo: litery S i T zapisane dowolną czcionką ozdob |
 | inf03_2026_06_01 | done | 0 | PASS | PASS 45/45 |  |
-| inf03_2026_06_02 | todo | 1 | – | – |  |
-| inf03_2026_06_03 | todo | 1 | – | – |  |
-| inf03_2026_06_04 | todo | 1 | – | – |  |
-| inf03_2026_06_05 | todo | 1 | – | – |  |
-| inf03_2026_06_06 | todo | 1 | – | – |  |
-| inf03_2026_06_07 | todo | 1 | – | – |  |
-| inf03_2026_06_08 | todo | 0 | – | – |  |
-| inf03_2026_06_09 | todo | 0 | – | – |  |
-| inf03_2026_06_10 | todo | 0 | – | – |  |
-| inf03_2026_06_11 | todo | 0 | – | – |  |
-| inf03_2026_06_12 | todo | 0 | – | – |  |
+| inf03_2026_06_02 | done | 1 | PASS | PASS all/all |  |
+| inf03_2026_06_03 | done | 1 | PASS | PASS 50/50 |  |
+| inf03_2026_06_04 | review_fail | 1 | PASS | FAIL 56/58 | Układ bloków zgodny z ilustracją 2/3 (blok boczny ; Dla przycisku: szerokość 45%, marginesy wewnętrzne |
+| inf03_2026_06_05 | review_fail | 1 | PASS | FAIL 49/50 | Dla klasy obraz (skrypt 1): szerokość 30%, opływan |
+| inf03_2026_06_06 | review_fail | 1 | PASS | FAIL 44/45 | Dla selektora obrazu: opływanie po jego prawej str |
+| inf03_2026_06_07 | done | 1 | PASS | PASS 44/44 |  |
+| inf03_2026_06_08 | done | 1 | PASS | PASS  |  |
+| inf03_2026_06_09 | todo | 1 | PASS | – |  |
+| inf03_2026_06_10 | verify_fail | 1 | FAIL (3) | – | wyloguj.php: brak <!DOCTYPE html>; wyloguj.php: brak lang="pl" |
+| inf03_2026_06_11 | todo | 1 | PASS | – |  |
+| inf03_2026_06_12 | todo | 1 | PASS | – |  |

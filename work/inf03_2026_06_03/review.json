@@ -1,0 +1,1 @@
+{"code":"inf03_2026_06_03","pass":true,"score":"50/50","fails":[],"na":["utworzenie bazy w phpMyAdmin","zrzuty import/kw1-kw4","nagranie płyty","folder z numerem zdającego"],"notes":"Kwerendy zgodne z verify.json (Q1: 3 rekordy, Q3: 2180/700/4000). Grafiki fotel1-3 pikselowo identyczne z wycinkami z fotele.png. HTML/CSS/JS zgodne z treścią."}

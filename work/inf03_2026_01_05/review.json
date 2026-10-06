@@ -1,0 +1,13 @@
+{
+  "code": "inf03_2026_01_05",
+  "pass": true,
+  "score": "52/52",
+  "fails": [],
+  "na": [
+    "utworzenie bazy zgloszenia w phpMyAdmin (utf8_polish_ci)",
+    "import tabel z zgloszenia.sql",
+    "zrzuty ekranu import.png, kw1-kw4.jpg",
+    "nagranie plyty CD/DVD"
+  ],
+  "notes": "Kwerendy 1-4 poprawne wg verify.json, strona index.php i formularze zwracaja HTTP 200, CSS zgodny z trescia i ilustracja, skrypty PHP poprawne z mysqli_close na koncu. Numer zdajacego w stopce to 00000000000 (jak na ilustracji)."
+}

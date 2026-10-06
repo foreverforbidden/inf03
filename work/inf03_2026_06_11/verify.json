@@ -1,0 +1,44 @@
+{
+  "code": "inf03_2026_06_11",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT nazwa, nazwaNaukowa, sredniaDlugoscZycia FROM gatunki WHERE rodzaj = 2 ORDER BY sredniaDlugoscZycia DESC",
+      "ok": true,
+      "rows": 8,
+      "preview": "+----------+--------------+---------------------+\n| nazwa    | nazwaNaukowa | sredniaDlugoscZycia |\n+----------+--------------+---------------------+\n| Cis      | Taxus        |                1000 |\n| Cedr     | Cedrus       |                1000 |\n| Cyprys   | Cupressus    |                 500 |\n| Daglezja | Pseudotsuga  |                 500 |\n| Jodła    | Abies        |                 300 |\n| Świerk   | Picea        |                 200 |"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT drzewa.id, drzewa.stanZdrowia, gatunki.nazwa FROM drzewa JOIN gatunki ON drzewa.gatunek_id = gatunki.id WHERE drzewa.dataPosadzenia = '2008-06-06'",
+      "ok": true,
+      "rows": 3,
+      "preview": "+-----+-------------+--------+\n| id  | stanZdrowia | nazwa  |\n+-----+-------------+--------+\n|  24 | Umiarkowany | Głóg   |\n|  95 | Umiarkowany | Morwa  |\n| 115 | Zły         | Cyprys |\n+-----+-------------+--------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT rodzaj, COUNT(*) AS ilość FROM gatunki GROUP BY rodzaj",
+      "ok": true,
+      "rows": 3,
+      "preview": "+--------+---------+\n| rodzaj | ilość   |\n+--------+---------+\n|      1 |      23 |\n|      2 |       8 |\n|      3 |      22 |\n+--------+---------+"
+    },
+    {
+      "n": 4,
+      "sql": "SELECT gatunki.nazwa, drzewa.dataPosadzenia, drzewa.stanZdrowia FROM drzewa JOIN gatunki ON drzewa.gatunek_id = gatunki.id JOIN lokalizacje ON drzewa.lokalizacja_id = lokalizacje.id WHERE lokalizacje.opis = 'Gdańsk, Polska' AND gatunki.nazwa LIKE '%a'",
+      "ok": true,
+      "rows": 9,
+      "preview": "+------------+----------------+-------------+\n| nazwa      | dataPosadzenia | stanZdrowia |\n+------------+----------------+-------------+\n| Czereśnia  | 2005-12-23     | Umiarkowany |\n| Morwa      | 2007-11-28     | Dobry       |\n| Topola     | 2007-08-21     | Umiarkowany |\n| Morwa      | 2020-12-14     | Dobry       |\n| Grusza     | 2017-03-19     | Umiarkowany |\n| Katalpa    | 2008-01-14     | Dobry       |"
+    }
+  ],
+  "pages": [
+    {
+      "page": "lisciaste.html",
+      "status": 200,
+      "bytes": 7266
+    }
+  ],
+  "checked_at": "2026-10-06 17:05:40"
+}

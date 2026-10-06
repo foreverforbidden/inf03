@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Gra</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+        <h1>Zagraj w kółko i krzyżyk</h1>
+    </header>
+    <main>
+        <section id="lewa">
+            <h2>Gra kółko</h2>
+        </section>
+        <section id="srodek">
+            <table>
+                <tr>
+                    <td><img src="nic.png" alt="pole" onclick="ruch(this)"></td>
+                    <td><img src="nic.png" alt="pole" onclick="ruch(this)"></td>
+                    <td><img src="nic.png" alt="pole" onclick="ruch(this)"></td>
+                </tr>
+                <tr>
+                    <td><img src="nic.png" alt="pole" onclick="ruch(this)"></td>
+                    <td><img src="nic.png" alt="pole" onclick="ruch(this)"></td>
+                    <td><img src="nic.png" alt="pole" onclick="ruch(this)"></td>
+                </tr>
+                <tr>
+                    <td><img src="nic.png" alt="pole" onclick="ruch(this)"></td>
+                    <td><img src="nic.png" alt="pole" onclick="ruch(this)"></td>
+                    <td><img src="nic.png" alt="pole" onclick="ruch(this)"></td>
+                </tr>
+            </table>
+        </section>
+        <section id="prawa">
+            <h2>Gra krzyżyk</h2>
+        </section>
+    </main>
+    <footer>
+        <a href="https://pl.battleship-game.org/" target="_blank">Zagraj w statki</a>
+        <p>Grę opracował: 00000000000</p>
+    </footer>
+    <script>
+        var aktualnyGracz = "kółko";
+        function ruch(obraz) {
+            if (!obraz.src.endsWith("nic.png")) {
+                return;
+            }
+            var lewa = document.getElementById("lewa");
+            var prawa = document.getElementById("prawa");
+            if (aktualnyGracz === "kółko") {
+                obraz.src = "o.png";
+                lewa.style.visibility = "hidden";
+                prawa.style.visibility = "visible";
+                aktualnyGracz = "krzyżyk";
+            } else {
+                obraz.src = "x.png";
+                lewa.style.visibility = "visible";
+                prawa.style.visibility = "hidden";
+                aktualnyGracz = "kółko";
+            }
+        }
+    </script>
+</body>
+</html>

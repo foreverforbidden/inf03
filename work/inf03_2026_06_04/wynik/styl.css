@@ -1,0 +1,11 @@
+* { font-family: "Bookman Old Style"; }
+body { background-color: AliceBlue; }
+header, footer { background-color: SkyBlue; text-align: center; padding: 1px; border-radius: 15px; }
+nav { width: 90%; text-align: center; float: left; }
+section { width: 45%; height: 640px; float: left; }
+aside { width: 10%; height: 700px; float: left; overflow: hidden; }
+aside img { width: 100%; }
+footer { clear: both; }
+span { font-size: 200%; cursor: pointer; }
+button { box-sizing: border-box; background-color: SkyBlue; width: 45%; border-radius: 15px; padding: 15px 40px; margin: 3px 2%; }
+input, select { margin: 3px; }
