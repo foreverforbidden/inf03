@@ -10,6 +10,7 @@ import html.parser
 import json
 import os
 import re
+import shutil
 import socket
 import subprocess
 import sys
@@ -193,6 +194,16 @@ def check_queries(meta, rep, d, out):
 
 def js_syntax(files, rep):
     if not files:
+        return
+    if shutil.which("node"):
+        for f in files:
+            r = subprocess.run(["node", "--check", f], capture_output=True, text=True)
+            if r.returncode:
+                err = next((l for l in r.stderr.splitlines() if "Error" in l), r.stderr.strip())
+                rep.fail(f"JS skladnia: {f}: {err[:200]}")
+        return
+    if not shutil.which("osascript"):
+        rep.warn("JS skladnia: brak node i osascript - pominieto")
         return
     r = subprocess.run(["osascript", "-l", "JavaScript", "-e", JS_CHECK] + files, capture_output=True, text=True)
     for line in (r.stdout + r.stderr).strip().splitlines():
