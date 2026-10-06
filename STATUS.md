@@ -1,6 +1,6 @@
 # Status arkuszy INF.03
 
-**done**: 75 · **review_fail**: 3 · **verify_fail**: 0 · **todo**: 1 · **razem**: 79
+**done**: 76 · **review_fail**: 3 · **verify_fail**: 0 · **todo**: 0 · **razem**: 79
 
 | Arkusz | Stan | Próby | verify | review | Uwagi |
 |---|---|---|---|---|---|
@@ -49,7 +49,7 @@
 | inf03_2025_01_12 | done | 2 | PASS | PASS all/all |  |
 | inf03_2025_06_01 | done | 1 | PASS | PASS all |  |
 | inf03_2025_06_02 | done | 1 | PASS | PASS all/all |  |
-| inf03_2025_06_03 | todo | 1 | PASS | – |  |
+| inf03_2025_06_03 | done | 1 | PASS | PASS 45/45 |  |
 | inf03_2025_06_04 | done | 1 | PASS | PASS 45/45 |  |
 | inf03_2025_06_05 | done | 1 | PASS | PASS  |  |
 | inf03_2025_06_06 | done | 1 | PASS | PASS all |  |
