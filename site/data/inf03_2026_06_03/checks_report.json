@@ -1,0 +1,11 @@
+{
+  "code": "inf03_2026_06_03",
+  "ok": false,
+  "total": 87,
+  "auto": 86,
+  "manual": 1,
+  "problems": [
+    "wzorzec nie spełnia #81 „Kliknięcie miniatury fotel3.png podmienia obraz główny”: po akcji: atrybut src elementu „section img.obraz”: „http://127.0.0.1:8765/data/inf03_2026_06_03/solution/fotel3.png”",
+    "wzorzec nie spełnia #82 „Kliknięcie miniatury fotel2.png podmienia obraz główny”: po akcji: atrybut src elementu „section img.obraz”: „http://127.0.0.1:8765/data/inf03_2026_06_03/solution/fotel2.png”"
+  ]
+}

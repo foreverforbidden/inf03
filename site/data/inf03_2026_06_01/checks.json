@@ -804,9 +804,9 @@
  {
   "section": "css",
   "desc": "Kursor na miniaturze: przezroczystość 1",
-  "type": "hover",
+  "type": "cssRule",
   "page": "islandia.php",
-  "selector": ".miniatury",
+  "selector": ".miniatury:hover",
   "prop": "opacity",
   "value": "1",
   "hint": "obrazy tworzone skryptem 3: klasa miniatury"

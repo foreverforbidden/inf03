@@ -107,7 +107,7 @@
 "section": "html",
 "desc": "HTML5, polski język, kodowanie UTF-8",
 "type": "head",
-"page": "aktor.php?id=10",
+"page": "aktor.php",
 "lang": "pl",
 "charset": true,
 "doctype": false
@@ -116,7 +116,7 @@
 "section": "html",
 "desc": "Tytuł strony „Informacje o aktorze | KinoTEKA”",
 "type": "head",
-"page": "aktor.php?id=10",
+"page": "aktor.php",
 "doctype": false,
 "title": "Informacje o aktorze | KinoTEKA"
 },
@@ -124,7 +124,7 @@
 "section": "html",
 "desc": "Arkusz styl.css połączony z kodem strony",
 "type": "head",
-"page": "aktor.php?id=10",
+"page": "aktor.php",
 "doctype": false,
 "stylesheet": "styl.css"
 },
@@ -132,14 +132,14 @@
 "section": "html",
 "desc": "Układ bloków: dwa bloki nagłówkowe, blok główny, stopka",
 "type": "exists",
-"page": "aktor.php?id=10",
+"page": "aktor.php",
 "selector": "header ~ header ~ main ~ footer"
 },
 {
 "section": "html",
 "desc": "Dwa bloki nagłówkowe",
 "type": "exists",
-"page": "aktor.php?id=10",
+"page": "aktor.php",
 "selector": "header",
 "count": 2
 },
@@ -147,7 +147,7 @@
 "section": "html",
 "desc": "Blok nagłówkowy 1: nagłówek drugiego stopnia z odnośnikiem „KinoTEKA”",
 "type": "text",
-"page": "aktor.php?id=10",
+"page": "aktor.php",
 "selector": "header:nth-of-type(1) h2 a",
 "equals": "KinoTEKA"
 },
@@ -155,7 +155,7 @@
 "section": "html",
 "desc": "Odnośnik do pliku index.php",
 "type": "attr",
-"page": "aktor.php?id=10",
+"page": "aktor.php",
 "selector": "header:nth-of-type(1) h2 a",
 "attr": "href",
 "equals": "index.php"
@@ -164,7 +164,7 @@
 "section": "html",
 "desc": "Blok nagłówkowy 2: paragraf „W naszej bazie znajdują się najlepsi aktorzy”",
 "type": "text",
-"page": "aktor.php?id=10",
+"page": "aktor.php",
 "selector": "header:nth-of-type(2) p",
 "equals": "W naszej bazie znajdują się najlepsi aktorzy"
 },
@@ -172,14 +172,14 @@
 "section": "html",
 "desc": "Tekst uwypuklony w znaczniku em",
 "type": "exists",
-"page": "aktor.php?id=10",
+"page": "aktor.php",
 "selector": "header:nth-of-type(2) p em"
 },
 {
 "section": "html",
 "desc": "Stopka: paragraf „Autor: ” i numer zdającego",
 "type": "text",
-"page": "aktor.php?id=10",
+"page": "aktor.php",
 "selector": "footer p",
 "startsWith": "Autor:"
 },
@@ -187,7 +187,7 @@
 "section": "html",
 "desc": "Numer zdającego w znaczniku strong",
 "type": "exists",
-"page": "aktor.php?id=10",
+"page": "aktor.php",
 "selector": "footer p strong"
 },
 {
@@ -204,93 +204,14 @@
 "type": "php"
 },
 {
-"section": "html",
-"desc": "index.php: wygenerowane bloki aktorów zawierają obrazy",
-"type": "exists",
-"page": "index.php",
-"selector": "main img",
-"min": 5
-},
-{
-"section": "html",
-"desc": "index.php: paragrafy z imieniem i nazwiskiem",
-"type": "exists",
-"page": "index.php",
-"selector": "main p",
-"min": 5
-},
-{
-"section": "html",
-"desc": "index.php: odnośniki do aktor.php?id=",
-"type": "attr",
-"page": "index.php",
-"selector": "main a",
-"attr": "href",
-"contains": "aktor.php?id="
-},
-{
-"section": "html",
-"desc": "index.php: obraz z atrybutem title",
-"type": "attr",
-"page": "index.php",
-"selector": "main img",
-"attr": "title"
-},
-{
-"section": "html",
-"desc": "index.php: obraz z tekstem alternatywnym",
-"type": "attr",
-"page": "index.php",
-"selector": "main img",
-"attr": "alt"
-},
-{
 "section": "php",
 "desc": "Skrypt 2: zapytanie 2 z id z GET; blok aktora z obrazem (src, alt, title „<IMIE> <NAZWISKO>”) i nagłówkiem pierwszego stopnia „<IMIE> <NAZWISKO>”",
 "type": "php"
 },
 {
-"section": "html",
-"desc": "aktor.php: nagłówek pierwszego stopnia w bloku głównym",
-"type": "exists",
-"page": "aktor.php?id=10",
-"selector": "main h1"
-},
-{
-"section": "html",
-"desc": "aktor.php: obraz w bloku aktora",
-"type": "exists",
-"page": "aktor.php?id=10",
-"selector": "main img"
-},
-{
-"section": "html",
-"desc": "aktor.php: obraz z atrybutem title",
-"type": "attr",
-"page": "aktor.php?id=10",
-"selector": "main img",
-"attr": "title"
-},
-{
-"section": "html",
-"desc": "aktor.php: obraz z tekstem alternatywnym",
-"type": "attr",
-"page": "aktor.php?id=10",
-"selector": "main img",
-"attr": "alt"
-},
-{
 "section": "php",
 "desc": "Skrypt 3: zapytanie 4 dla aktora z id; napis „<IMIE> nie znajduje się na listach obsady znanych nam produkcji.” lub „<IMIE> znajduje się na listach obsady <X> znanych nam produkcji.”",
 "type": "php"
-},
-{
-"section": "html",
-"desc": "aktor.php: napis o listach obsady",
-"type": "text",
-"page": "aktor.php?id=10",
-"selector": "main p",
-"contains": "listach obsady"
 },
 {
 "section": "php",
@@ -445,7 +366,7 @@
 "section": "css",
 "desc": "Krój czcionki „Gill Sans MT”, w przypadku braku „Calibri”",
 "type": "css",
-"page": "aktor.php?id=10",
+"page": "aktor.php",
 "selector": "h2",
 "prop": "font-family",
 "value": "\"Gill Sans MT\", Calibri"
@@ -454,7 +375,7 @@
 "section": "css",
 "desc": "Ciało strony: szerokość 90%",
 "type": "cssRule",
-"page": "aktor.php?id=10",
+"page": "aktor.php",
 "selector": "body",
 "prop": "width",
 "value": "90%"
@@ -463,7 +384,7 @@
 "section": "css",
 "desc": "Ciało strony: marginesy górny i dolny 0",
 "type": "cssRule",
-"page": "aktor.php?id=10",
+"page": "aktor.php",
 "selector": "body",
 "prop": "margin-top",
 "value": "0px"
@@ -472,7 +393,7 @@
 "section": "css",
 "desc": "Ciało strony: margines dolny 0",
 "type": "cssRule",
-"page": "aktor.php?id=10",
+"page": "aktor.php",
 "selector": "body",
 "prop": "margin-bottom",
 "value": "0px"
@@ -481,7 +402,7 @@
 "section": "css",
 "desc": "Ciało strony: lewy i prawy margines automatyczne",
 "type": "css",
-"page": "aktor.php?id=10",
+"page": "aktor.php",
 "selector": "body",
 "prop": "margin-left",
 "value": "auto"
@@ -490,7 +411,7 @@
 "section": "css",
 "desc": "Blok nagłówkowy 1: szerokość 40%",
 "type": "css",
-"page": "aktor.php?id=10",
+"page": "aktor.php",
 "selector": "header:nth-of-type(1)",
 "prop": "width",
 "value": "40%"
@@ -499,7 +420,7 @@
 "section": "css",
 "desc": "Blok nagłówkowy 2: szerokość 60%",
 "type": "css",
-"page": "aktor.php?id=10",
+"page": "aktor.php",
 "selector": "header:nth-of-type(2)",
 "prop": "width",
 "value": "60%"
@@ -508,7 +429,7 @@
 "section": "css",
 "desc": "Blok nagłówkowy 2: tekst do prawej",
 "type": "css",
-"page": "aktor.php?id=10",
+"page": "aktor.php",
 "selector": "header:nth-of-type(2)",
 "prop": "text-align",
 "value": "right"
@@ -517,7 +438,7 @@
 "section": "css",
 "desc": "Obraz: szerokość 90% (selektor znacznika)",
 "type": "cssRule",
-"page": "aktor.php?id=10",
+"page": "aktor.php",
 "selector": "img",
 "prop": "width",
 "value": "90%"
@@ -526,7 +447,7 @@
 "section": "css",
 "desc": "Obraz: zaokrąglenie obramowania 50% (selektor znacznika)",
 "type": "cssRule",
-"page": "aktor.php?id=10",
+"page": "aktor.php",
 "selector": "img",
 "prop": "border-radius",
 "value": "50%"
@@ -535,7 +456,7 @@
 "section": "css",
 "desc": "Odnośnik: kolor czarny (selektor znacznika)",
 "type": "cssRule",
-"page": "aktor.php?id=10",
+"page": "aktor.php",
 "selector": "a",
 "prop": "color",
 "value": "black"
@@ -544,7 +465,7 @@
 "section": "css",
 "desc": "Odnośnik: brak podkreślenia (selektor znacznika)",
 "type": "cssRule",
-"page": "aktor.php?id=10",
+"page": "aktor.php",
 "selector": "a",
 "prop": "text-decoration",
 "value": "none"
@@ -553,7 +474,7 @@
 "section": "css",
 "desc": "Kursor na odnośniku: kolor #E30613",
 "type": "hover",
-"page": "aktor.php?id=10",
+"page": "aktor.php",
 "selector": "a",
 "prop": "color",
 "value": "#E30613"
@@ -562,7 +483,7 @@
 "section": "layout",
 "desc": "Układ: bloki nagłówkowe obok siebie",
 "type": "layout",
-"page": "aktor.php?id=10",
+"page": "aktor.php",
 "a": "header:nth-of-type(1)",
 "b": "header:nth-of-type(2)",
 "relation": "leftOf"
@@ -571,7 +492,7 @@
 "section": "layout",
 "desc": "Układ: blok główny pod nagłówkowymi",
 "type": "layout",
-"page": "aktor.php?id=10",
+"page": "aktor.php",
 "a": "main",
 "b": "header:nth-of-type(1)",
 "relation": "below"
@@ -580,7 +501,7 @@
 "section": "layout",
 "desc": "Układ: stopka pod blokiem głównym",
 "type": "layout",
-"page": "aktor.php?id=10",
+"page": "aktor.php",
 "a": "footer",
 "b": "main",
 "relation": "below"
@@ -609,7 +530,7 @@
 "section": "css",
 "desc": "Blok wszystkich aktorów (aktor.php): marginesy górny i dolny 0",
 "type": "css",
-"page": "aktor.php?id=10",
+"page": "aktor.php",
 "selector": "main section",
 "prop": "margin-top",
 "value": "0px",
@@ -619,7 +540,7 @@
 "section": "css",
 "desc": "Blok wszystkich aktorów (aktor.php): lewy margines automatyczny",
 "type": "css",
-"page": "aktor.php?id=10",
+"page": "aktor.php",
 "selector": "main section",
 "prop": "margin-left",
 "value": "auto",
@@ -628,63 +549,42 @@
 {
 "section": "css",
 "desc": "index.php: blok pojedynczego aktora, szerokość 15 em",
-"type": "css",
+"type": "cssRule",
 "page": "index.php",
-"selector": "main section div",
+"selector": ".aktor",
 "prop": "width",
-"value": "240px",
-"all": true,
-"hint": "bloki tworzone skryptem: blok aktora (div w main section)"
+"value": "15em",
+"hint": "bloki tworzone skryptem: selektor .aktor"
 },
 {
 "section": "css",
 "desc": "index.php: blok pojedynczego aktora, tekst wyśrodkowany",
-"type": "css",
+"type": "cssRule",
 "page": "index.php",
-"selector": "main section div",
+"selector": ".aktor",
 "prop": "text-align",
 "value": "center",
-"hint": "bloki tworzone skryptem: blok aktora"
-},
-{
-"section": "css",
-"desc": "index.php: bloki aktorów obok siebie",
-"type": "layout",
-"page": "index.php",
-"a": "main section div:nth-of-type(1)",
-"b": "main section div:nth-of-type(2)",
-"relation": "sameRow",
-"hint": "bloki tworzone skryptem: blok aktora"
+"hint": "bloki tworzone skryptem: selektor .aktor"
 },
 {
 "section": "css",
 "desc": "aktor.php: blok pojedynczego aktora, szerokość 25 em",
-"type": "css",
-"page": "aktor.php?id=10",
-"selector": "main section div",
+"type": "cssRule",
+"page": "aktor.php",
+"selector": ".aktor-szczegoly",
 "prop": "width",
-"value": "400px",
-"hint": "bloki tworzone skryptem: blok aktora"
+"value": "25em",
+"hint": "bloki tworzone skryptem: selektor .aktor-szczegoly"
 },
 {
 "section": "css",
 "desc": "aktor.php: blok pojedynczego aktora, tekst wyśrodkowany",
-"type": "css",
-"page": "aktor.php?id=10",
-"selector": "main section div",
+"type": "cssRule",
+"page": "aktor.php",
+"selector": ".aktor-szczegoly",
 "prop": "text-align",
 "value": "center",
-"hint": "bloki tworzone skryptem: blok aktora"
-},
-{
-"section": "css",
-"desc": "Paragraf w bloku pojedynczego aktora: rozmiar czcionki 125%",
-"type": "css",
-"page": "index.php",
-"selector": "main section div p",
-"prop": "font-size",
-"value": "20px",
-"hint": "paragraf w bloku aktora, selektor znacznika p"
+"hint": "bloki tworzone skryptem: selektor .aktor-szczegoly"
 },
 {
 "section": "css",

@@ -1,12 +1,8 @@
 {
   "code": "inf03_2026_01_12",
-  "ok": false,
-  "total": 66,
-  "auto": 63,
-  "manual": 3,
-  "problems": [
-    "wzorzec nie spełnia #62 „Komunikat „Wzór: <nazwaPliku>, kolor <kolor> w cenie <cena> zł” bez ścieżki”: błąd skryptu: Failed to set the 'value' property on 'HTMLInputElement': This input element accepts a filename, which may only be programmatically set to the empty string.",
-    "wzorzec nie spełnia #63 „Dodaje obraz do bloku sekcji: źródło i tekst alternatywny to nazwa pliku”: błąd skryptu: Failed to set the 'value' property on 'HTMLInputElement': This input element accepts a filename, which may only be programmatically set to the empty string.",
-    "wzorzec nie spełnia #64 „Dodany obraz ma przypisaną klasę miniatury”: błąd skryptu: Failed to set the 'value' property on 'HTMLInputElement': This input element accepts a filename, which may only be programmatically set to the empty string."
-  ]
+  "ok": true,
+  "total": 68,
+  "auto": 64,
+  "manual": 4,
+  "problems": []
 }

@@ -1,0 +1,83 @@
+{
+ "code": "inf03_2024_06_04",
+ "pass": false,
+ "missing": [],
+ "wrong": [
+  {
+   "index": 37,
+   "problem": "Wg CHECKS_SPEC pkt 6 style elementow tworzonych przez PHP maja byc sprawdzane automatycznie (cssRule/hover z selektorem ze wzorca i hint), nie manual. Kryterium manual: cssRule main section float:left (opływanie)",
+   "fix": "{\"type\":\"cssRule\",\"selector\":\"main section\",\"prop\":\"float\",\"value\":\"left\",\"hint\":\"bloki tworzone skryptem: selektor main section\"}"
+  },
+  {
+   "index": 38,
+   "problem": "Wg CHECKS_SPEC pkt 6 style elementow tworzonych przez PHP maja byc sprawdzane automatycznie (cssRule/hover z selektorem ze wzorca i hint), nie manual. Kryterium manual: szerokość 46%",
+   "fix": "cssRule selector \"main section\", prop width, value 46%, hint"
+  },
+  {
+   "index": 39,
+   "problem": "Wg CHECKS_SPEC pkt 6 style elementow tworzonych przez PHP maja byc sprawdzane automatycznie (cssRule/hover z selektorem ze wzorca i hint), nie manual. Kryterium manual: marginesy zewnętrzne 2%",
+   "fix": "cssRule \"main section\", margin, 2%, hint"
+  },
+  {
+   "index": 40,
+   "problem": "Wg CHECKS_SPEC pkt 6 style elementow tworzonych przez PHP maja byc sprawdzane automatycznie (cssRule/hover z selektorem ze wzorca i hint), nie manual. Kryterium manual: pozycjonowanie względne",
+   "fix": "cssRule \"main section\", position, relative, hint"
+  },
+  {
+   "index": 41,
+   "problem": "Wg CHECKS_SPEC pkt 6 style elementow tworzonych przez PHP maja byc sprawdzane automatycznie (cssRule/hover z selektorem ze wzorca i hint), nie manual. Kryterium manual: opacity 0 dla h3, p, a",
+   "fix": "trzy kryteria cssRule: \"main section h3\", \"main section p\", \"main section a\", prop opacity, value 0, hint"
+  },
+  {
+   "index": 42,
+   "problem": "Wg CHECKS_SPEC pkt 6 style elementow tworzonych przez PHP maja byc sprawdzane automatycznie (cssRule/hover z selektorem ze wzorca i hint), nie manual. Kryterium manual: pozycjonowanie przesuwalne",
+   "fix": "cssRule position absolute dla \"main section h3\", \"main section p\", \"main section a\" (wzorzec: absolute), hint"
+  },
+  {
+   "index": 43,
+   "problem": "Wg CHECKS_SPEC pkt 6 style elementow tworzonych przez PHP maja byc sprawdzane automatycznie (cssRule/hover z selektorem ze wzorca i hint), nie manual. Kryterium manual: h3 top 5%",
+   "fix": "cssRule \"main section h3\", top, 5%, hint"
+  },
+  {
+   "index": 44,
+   "problem": "Wg CHECKS_SPEC pkt 6 style elementow tworzonych przez PHP maja byc sprawdzane automatycznie (cssRule/hover z selektorem ze wzorca i hint), nie manual. Kryterium manual: p top 30%",
+   "fix": "cssRule \"main section p\", top, 30%, hint"
+  },
+  {
+   "index": 45,
+   "problem": "Wg CHECKS_SPEC pkt 6 style elementow tworzonych przez PHP maja byc sprawdzane automatycznie (cssRule/hover z selektorem ze wzorca i hint), nie manual. Kryterium manual: a top 70%",
+   "fix": "cssRule \"main section a\", top, 70%, hint"
+  },
+  {
+   "index": 46,
+   "problem": "Wg CHECKS_SPEC pkt 6 style elementow tworzonych przez PHP maja byc sprawdzane automatycznie (cssRule/hover z selektorem ze wzorca i hint), nie manual. Kryterium manual: a left 70%",
+   "fix": "cssRule \"main section a\", left, 70%, hint"
+  },
+  {
+   "index": 47,
+   "problem": "Wg CHECKS_SPEC pkt 6 style elementow tworzonych przez PHP maja byc sprawdzane automatycznie (cssRule/hover z selektorem ze wzorca i hint), nie manual. Kryterium manual: a tło Sienna",
+   "fix": "cssRule \"main section a\", background-color, Sienna, hint"
+  },
+  {
+   "index": 48,
+   "problem": "Wg CHECKS_SPEC pkt 6 style elementow tworzonych przez PHP maja byc sprawdzane automatycznie (cssRule/hover z selektorem ze wzorca i hint), nie manual. Kryterium manual: a padding 15px",
+   "fix": "cssRule \"main section a\", padding, 15px, hint"
+  },
+  {
+   "index": 49,
+   "problem": "Wg CHECKS_SPEC pkt 6 style elementow tworzonych przez PHP maja byc sprawdzane automatycznie (cssRule/hover z selektorem ze wzorca i hint), nie manual. Kryterium manual: hover: zdjęcia opacity 0.3",
+   "fix": "{\"type\":\"hover\",\"selector\":\"main section img\",\"prop\":\"opacity\",\"value\":\"0.3\"} (selektor ze wzorca, z hint)"
+  },
+  {
+   "index": 50,
+   "problem": "Wg CHECKS_SPEC pkt 6 style elementow tworzonych przez PHP maja byc sprawdzane automatycznie (cssRule/hover z selektorem ze wzorca i hint), nie manual. Kryterium manual: transition 0.5s ease",
+   "fix": "hover/cssRule na \"main section img\" prop transition (wzorzec: opacity 0.5s ease w regule :hover), hint; sprawdzić normalizację wartości"
+  },
+  {
+   "index": 51,
+   "problem": "Wg CHECKS_SPEC pkt 6 style elementow tworzonych przez PHP maja byc sprawdzane automatycznie (cssRule/hover z selektorem ze wzorca i hint), nie manual. Kryterium manual: hover: h3, p, a opacity 1",
+   "fix": "trzy kryteria hover: \"main section h3\", \"main section p\", \"main section a\", opacity 1, hint"
+  }
+ ],
+ "notes": "Indeksy 0-based (linie 39-53 checks.json). Kompletność, teksty equals, selektory (bez img[src]/a[href]), układ (header nad main, aside lewo/prawo, stopka pod) i oznaczenia php są poprawne. Jedyny problem: 15 kryteriów CSS bloku skryptu 1 jako manual zamiast cssRule/hover; wzorzec używa .blok (section) w main, hint: bloki tworzone skryptem: selektor main section."
+}

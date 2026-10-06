@@ -1,0 +1,800 @@
+[
+{
+"section": "grafika",
+"desc": "fotel1.png wycięty bez skalowania, przezroczystość zachowana",
+"type": "image",
+"name": "fotel1.png",
+"width": 539,
+"height": 489,
+"alpha": true
+},
+{
+"section": "grafika",
+"desc": "fotel2.png wycięty bez skalowania, przezroczystość zachowana",
+"type": "image",
+"name": "fotel2.png",
+"width": 543,
+"height": 488,
+"alpha": true
+},
+{
+"section": "grafika",
+"desc": "fotel3.png wycięty bez skalowania, przezroczystość zachowana",
+"type": "image",
+"name": "fotel3.png",
+"width": 554,
+"height": 552,
+"alpha": true
+},
+{
+"section": "pliki",
+"desc": "Strona sklep.html",
+"type": "file",
+"name": "sklep.html"
+},
+{
+"section": "pliki",
+"desc": "Strona kartaProduktu.html",
+"type": "file",
+"name": "kartaProduktu.html"
+},
+{
+"section": "pliki",
+"desc": "Arkusz styl.css",
+"type": "file",
+"name": "styl.css"
+},
+{
+"section": "pliki",
+"desc": "Skrypt JavaScript",
+"type": "file",
+"name": "skrypt.js"
+},
+{
+"section": "html",
+"desc": "Na stronie sklep.html napis „strona w trakcie budowy”",
+"type": "text",
+"page": "sklep.html",
+"selector": "body",
+"contains": "strona w trakcie budowy"
+},
+{
+"section": "html",
+"desc": "HTML5, polski język, kodowanie UTF-8",
+"type": "head",
+"page": "kartaProduktu.html",
+"lang": "pl",
+"charset": true
+},
+{
+"section": "html",
+"desc": "Tytuł strony „Fotel”",
+"type": "head",
+"page": "kartaProduktu.html",
+"doctype": false,
+"title": "Fotel"
+},
+{
+"section": "html",
+"desc": "Arkusz styl.css połączony z kodem strony",
+"type": "head",
+"page": "kartaProduktu.html",
+"doctype": false,
+"stylesheet": "styl.css"
+},
+{
+"section": "html",
+"desc": "Podział na bloki: nagłówkowy, główny, stopka",
+"type": "exists",
+"page": "kartaProduktu.html",
+"selector": "body > header ~ main ~ footer"
+},
+{
+"section": "html",
+"desc": "Blok główny zawiera blok sekcji i blok artykułu",
+"type": "exists",
+"page": "kartaProduktu.html",
+"selector": "main > section ~ article"
+},
+{
+"section": "html",
+"desc": "Nagłówek pierwszego stopnia „Sklep meblowy”",
+"type": "text",
+"page": "kartaProduktu.html",
+"selector": "header h1",
+"equals": "Sklep meblowy"
+},
+{
+"section": "html",
+"desc": "Blok nagłówkowy: linia pozioma",
+"type": "exists",
+"page": "kartaProduktu.html",
+"selector": "header hr"
+},
+{
+"section": "html",
+"desc": "Obraz główny fotel1.png",
+"type": "attr",
+"page": "kartaProduktu.html",
+"selector": "section > img.obraz",
+"attr": "src",
+"equals": "fotel1.png"
+},
+{
+"section": "html",
+"desc": "Obraz główny z tekstem alternatywnym „fotel”",
+"type": "attr",
+"page": "kartaProduktu.html",
+"selector": "section > img.obraz",
+"attr": "alt",
+"equals": "fotel"
+},
+{
+"section": "html",
+"desc": "Obraz główny formatowany klasą obraz",
+"type": "exists",
+"page": "kartaProduktu.html",
+"selector": "section img.obraz",
+"count": 1
+},
+{
+"section": "html",
+"desc": "Obraz główny: kliknięcie wywołuje funkcję JavaScript",
+"type": "attr",
+"page": "kartaProduktu.html",
+"selector": "section img.obraz",
+"attr": "onclick"
+},
+{
+"section": "html",
+"desc": "Trzy obrazy miniatur formatowane klasą miniatury",
+"type": "exists",
+"page": "kartaProduktu.html",
+"selector": "section img.miniatury",
+"count": 3
+},
+{
+"section": "html",
+"desc": "Miniatury z tekstem alternatywnym „miniatura”",
+"type": "attr",
+"page": "kartaProduktu.html",
+"selector": "section img.miniatury",
+"attr": "alt",
+"equals": "miniatura",
+"all": true
+},
+{
+"section": "html",
+"desc": "Miniatura 1: fotel1.png",
+"type": "attr",
+"page": "kartaProduktu.html",
+"selector": "section img.miniatury",
+"index": 0,
+"attr": "src",
+"equals": "fotel1.png"
+},
+{
+"section": "html",
+"desc": "Miniatura 2: fotel2.png",
+"type": "attr",
+"page": "kartaProduktu.html",
+"selector": "section img.miniatury",
+"index": 1,
+"attr": "src",
+"equals": "fotel2.png"
+},
+{
+"section": "html",
+"desc": "Miniatura 3: fotel3.png",
+"type": "attr",
+"page": "kartaProduktu.html",
+"selector": "section img.miniatury",
+"index": 2,
+"attr": "src",
+"equals": "fotel3.png"
+},
+{
+"section": "html",
+"desc": "Kliknięcie miniatury wywołuje funkcję JavaScript",
+"type": "attr",
+"page": "kartaProduktu.html",
+"selector": "section img.miniatury",
+"attr": "onclick",
+"all": true
+},
+{
+"section": "html",
+"desc": "Blok okna formatowany klasą okno w bloku sekcji",
+"type": "exists",
+"page": "kartaProduktu.html",
+"selector": "section .okno",
+"count": 1
+},
+{
+"section": "html",
+"desc": "Blok okna: span z zawartością × i klasą zamknij",
+"type": "text",
+"page": "kartaProduktu.html",
+"selector": ".okno span.zamknij",
+"equals": "×"
+},
+{
+"section": "html",
+"desc": "Kliknięcie znacznika span wywołuje funkcję zamykającą okno",
+"type": "attr",
+"page": "kartaProduktu.html",
+"selector": ".okno span.zamknij",
+"attr": "onclick"
+},
+{
+"section": "html",
+"desc": "Blok okna: obraz formatowany klasą obrazOkno, bez źródła",
+"type": "exists",
+"page": "kartaProduktu.html",
+"selector": ".okno img.obrazOkno",
+"count": 1
+},
+{
+"section": "html",
+"desc": "Obraz w oknie bez źródła",
+"type": "attr",
+"page": "kartaProduktu.html",
+"selector": ".okno img.obrazOkno",
+"attr": "src",
+"absent": true
+},
+{
+"section": "html",
+"desc": "Artykuł: nagłówek drugiego stopnia „Żółty Fotel”",
+"type": "text",
+"page": "kartaProduktu.html",
+"selector": "article h2",
+"equals": "Żółty Fotel"
+},
+{
+"section": "html",
+"desc": "Artykuł: dwa paragrafy z opisem fotela",
+"type": "text",
+"page": "kartaProduktu.html",
+"selector": "article p",
+"index": 0,
+"startsWith": "Nasz żółty fotel może być przygotowany w trzech wariantach"
+},
+{
+"section": "html",
+"desc": "Drugi paragraf opisu",
+"type": "text",
+"page": "kartaProduktu.html",
+"selector": "article p",
+"index": 1,
+"contains": "Zorganizujemy dla Ciebie bezpłatną dostawę oraz wniesiemy towar."
+},
+{
+"section": "html",
+"desc": "„Wybierz wariant fotela” w znaczniku strong",
+"type": "text",
+"page": "kartaProduktu.html",
+"selector": "article strong",
+"equals": "Wybierz wariant fotela"
+},
+{
+"section": "html",
+"desc": "Lista rozwijana z trzema elementami",
+"type": "exists",
+"page": "kartaProduktu.html",
+"selector": "article select option",
+"count": 3
+},
+{
+"section": "html",
+"desc": "Element listy „wariant 1”",
+"type": "text",
+"page": "kartaProduktu.html",
+"selector": "article select option",
+"index": 0,
+"equals": "wariant 1"
+},
+{
+"section": "html",
+"desc": "Element listy „wariant 2”",
+"type": "text",
+"page": "kartaProduktu.html",
+"selector": "article select option",
+"index": 1,
+"equals": "wariant 2"
+},
+{
+"section": "html",
+"desc": "Element listy „wariant 3”",
+"type": "text",
+"page": "kartaProduktu.html",
+"selector": "article select option",
+"index": 2,
+"equals": "wariant 3"
+},
+{
+"section": "html",
+"desc": "Paragraf z przyciskiem „KUP TERAZ”",
+"type": "text",
+"page": "kartaProduktu.html",
+"selector": "article p button",
+"equals": "KUP TERAZ"
+},
+{
+"section": "html",
+"desc": "Paragraf z odnośnikiem „Do strony głównej”",
+"type": "text",
+"page": "kartaProduktu.html",
+"selector": "article p a",
+"equals": "Do strony głównej"
+},
+{
+"section": "html",
+"desc": "Odnośnik do pliku sklep.html",
+"type": "attr",
+"page": "kartaProduktu.html",
+"selector": "article p a",
+"attr": "href",
+"equals": "sklep.html"
+},
+{
+"section": "html",
+"desc": "Stopka: linia pozioma",
+"type": "exists",
+"page": "kartaProduktu.html",
+"selector": "footer hr"
+},
+{
+"section": "html",
+"desc": "Stopka: paragraf „Autor strony: ” i numer zdającego",
+"type": "text",
+"page": "kartaProduktu.html",
+"selector": "footer p",
+"startsWith": "Autor strony:"
+},
+{
+"section": "html",
+"desc": "Numer zdającego w znaczniku em",
+"type": "exists",
+"page": "kartaProduktu.html",
+"selector": "footer p em"
+},
+{
+"section": "css",
+"desc": "Domyślnie krój „Century Gothic”, w przypadku braku sans-serif",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": "h2",
+"prop": "font-family",
+"value": "\"Century Gothic\", sans-serif"
+},
+{
+"section": "css",
+"desc": "Ciało strony: tło Beige",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": "body",
+"prop": "background-color",
+"value": "Beige"
+},
+{
+"section": "css",
+"desc": "Ciało strony: czcionka 140%",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": "body",
+"prop": "font-size",
+"value": "22.4px"
+},
+{
+"section": "css",
+"desc": "Nagłówek: tekst do środka",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": "header",
+"prop": "text-align",
+"value": "center"
+},
+{
+"section": "css",
+"desc": "Stopka: tekst do środka",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": "footer",
+"prop": "text-align",
+"value": "center"
+},
+{
+"section": "css",
+"desc": "Nagłówek: marginesy wewnętrzne 20 px",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": "header",
+"prop": "padding",
+"value": "20px"
+},
+{
+"section": "css",
+"desc": "Stopka: marginesy wewnętrzne 20 px",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": "footer",
+"prop": "padding",
+"value": "20px"
+},
+{
+"section": "css",
+"desc": "Sekcja i artykuł: szerokość 50%",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": "main > section, main > article",
+"all": true,
+"prop": "width",
+"value": "50%"
+},
+{
+"section": "css",
+"desc": "Sekcja i artykuł: wysokość 600 px",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": "main > section, main > article",
+"all": true,
+"prop": "height",
+"value": "600px"
+},
+{
+"section": "css",
+"desc": "Przycisk: tło Tan",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": "button",
+"prop": "background-color",
+"value": "Tan"
+},
+{
+"section": "css",
+"desc": "Przycisk: zaokrąglenie rogów 20 px",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": "button",
+"prop": "border-top-left-radius",
+"value": "20px"
+},
+{
+"section": "css",
+"desc": "Przycisk: marginesy wewnętrzne 10 px",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": "button",
+"prop": "padding",
+"value": "10px"
+},
+{
+"section": "css",
+"desc": "Przycisk: rozmiar czcionki 150%",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": "button",
+"prop": "font-size",
+"value": "33.6px"
+},
+{
+"section": "css",
+"desc": "Klasa obraz: szerokość 40%",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": "section img.obraz",
+"prop": "width",
+"value": "40%"
+},
+{
+"section": "css",
+"desc": "Klasa obraz: marginesy wewnętrzne 20 px",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": "section img.obraz",
+"prop": "padding",
+"value": "20px"
+},
+{
+"section": "css",
+"desc": "Klasa obraz: obramowanie 1 px ciągłe Tan",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": "section img.obraz",
+"prop": "border-top",
+"value": "1px solid Tan"
+},
+{
+"section": "css",
+"desc": "Klasa miniatury: szerokość 15%",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": "section img.miniatury",
+"prop": "width",
+"value": "15%"
+},
+{
+"section": "css",
+"desc": "Klasa okno: tło czarne z przezroczystością 0.7",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": ".okno",
+"prop": "background-color",
+"value": "rgba(0, 0, 0, 0.7)"
+},
+{
+"section": "css",
+"desc": "Klasa okno: szerokość 80%",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": ".okno",
+"prop": "width",
+"value": "80%"
+},
+{
+"section": "css",
+"desc": "Klasa okno: pozycjonowana względem okna przeglądarki (fixed)",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": ".okno",
+"prop": "position",
+"value": "fixed"
+},
+{
+"section": "css",
+"desc": "Klasa okno: od lewej strony 0",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": ".okno",
+"prop": "left",
+"value": "0px"
+},
+{
+"section": "css",
+"desc": "Klasa okno: od góry 0",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": ".okno",
+"prop": "top",
+"value": "0px"
+},
+{
+"section": "css",
+"desc": "Klasa okno: zawsze na wierzchu (z-index)",
+"type": "cssRule",
+"page": "kartaProduktu.html",
+"selector": ".okno",
+"prop": "z-index",
+"value": "10",
+"hint": "dowolna dodatnia wartość z-index; sprawdzana jest reguła .okno"
+},
+{
+"section": "css",
+"desc": "Klasa okno: element usunięty (display none)",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": ".okno",
+"prop": "display",
+"value": "none"
+},
+{
+"section": "css",
+"desc": "Klasa obrazOkno: marginesy zewnętrzne automatyczne",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": ".obrazOkno",
+"prop": "margin-left",
+"value": "auto"
+},
+{
+"section": "css",
+"desc": "Klasa obrazOkno: wyświetlanie blokowe",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": ".obrazOkno",
+"prop": "display",
+"value": "block"
+},
+{
+"section": "css",
+"desc": "Klasa zamknij: pozycjonowanie względem pierwszego rodzica (absolute)",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": ".zamknij",
+"prop": "position",
+"value": "absolute"
+},
+{
+"section": "css",
+"desc": "Klasa zamknij: od góry 15 px",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": ".zamknij",
+"prop": "top",
+"value": "15px"
+},
+{
+"section": "css",
+"desc": "Klasa zamknij: od prawej 35 px",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": ".zamknij",
+"prop": "right",
+"value": "35px"
+},
+{
+"section": "css",
+"desc": "Klasa zamknij: czcionka koloru Beige",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": ".zamknij",
+"prop": "color",
+"value": "Beige"
+},
+{
+"section": "css",
+"desc": "Klasa zamknij: pogrubiona",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": ".zamknij",
+"prop": "font-weight",
+"value": "700"
+},
+{
+"section": "css",
+"desc": "Klasa zamknij: rozmiar czcionki 40 px",
+"type": "css",
+"page": "kartaProduktu.html",
+"selector": ".zamknij",
+"prop": "font-size",
+"value": "40px"
+},
+{
+"section": "css",
+"desc": "Klasa zamknij po najechaniu: kursor pointer",
+"type": "hover",
+"page": "kartaProduktu.html",
+"selector": ".zamknij",
+"prop": "cursor",
+"value": "pointer"
+},
+{
+"section": "css",
+"desc": "Układ: nagłówek nad blokiem sekcji",
+"type": "layout",
+"page": "kartaProduktu.html",
+"a": "header",
+"b": "main > section",
+"relation": "above"
+},
+{
+"section": "css",
+"desc": "Układ: blok sekcji obok bloku artykułu (po lewej)",
+"type": "layout",
+"page": "kartaProduktu.html",
+"a": "main > section",
+"b": "main > article",
+"relation": "leftOf"
+},
+{
+"section": "css",
+"desc": "Układ: stopka pod blokiem sekcji",
+"type": "layout",
+"page": "kartaProduktu.html",
+"a": "footer",
+"b": "main > section",
+"relation": "below"
+},
+{
+"section": "css",
+"desc": "Układ: stopka pod blokiem artykułu",
+"type": "layout",
+"page": "kartaProduktu.html",
+"a": "footer",
+"b": "main > article",
+"relation": "below"
+},
+{
+"section": "js",
+"desc": "Kliknięcie miniatury fotel3.png podmienia obraz główny",
+"type": "js",
+"page": "kartaProduktu.html",
+"steps": [
+{
+"click": "section img.miniatury:nth-of-type(4)"
+}
+],
+"expect": [
+{
+"selector": "section img.obraz",
+"attr": "src",
+"contains": "fotel3.png"
+}
+]
+},
+{
+"section": "js",
+"desc": "Kliknięcie miniatury fotel2.png podmienia obraz główny",
+"type": "js",
+"page": "kartaProduktu.html",
+"steps": [
+{
+"click": "section img.miniatury:nth-of-type(3)"
+}
+],
+"expect": [
+{
+"selector": "section img.obraz",
+"attr": "src",
+"contains": "fotel2.png"
+}
+]
+},
+{
+"section": "js",
+"desc": "Kliknięcie obrazu głównego otwiera okno (display block)",
+"type": "js",
+"page": "kartaProduktu.html",
+"steps": [
+{
+"click": "section img.obraz"
+}
+],
+"expect": [
+{
+"selector": ".okno",
+"css": "display",
+"value": "block"
+}
+]
+},
+{
+"section": "js",
+"desc": "Okno: obraz otrzymuje źródło obrazu głównego",
+"type": "js",
+"page": "kartaProduktu.html",
+"steps": [
+{
+"click": "section img.miniatury:nth-of-type(4)"
+},
+{
+"click": "section img.obraz"
+}
+],
+"expect": [
+{
+"selector": ".obrazOkno",
+"attr": "src",
+"contains": "fotel3.png"
+}
+]
+},
+{
+"section": "js",
+"desc": "Kliknięcie × usuwa okno (display none)",
+"type": "js",
+"page": "kartaProduktu.html",
+"steps": [
+{
+"click": "section img.obraz"
+},
+{
+"click": ".zamknij"
+}
+],
+"expect": [
+{
+"selector": ".okno",
+"css": "display",
+"value": "none"
+}
+]
+},
+{
+"section": "js",
+"desc": "Znaczące nazewnictwo zmiennych i funkcji",
+"type": "manual",
+"page": "kartaProduktu.html"
+}
+]

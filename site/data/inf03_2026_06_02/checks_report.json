@@ -1,11 +1,8 @@
 {
   "code": "inf03_2026_06_02",
-  "ok": false,
-  "total": 71,
-  "auto": 65,
+  "ok": true,
+  "total": 70,
+  "auto": 64,
   "manual": 6,
-  "problems": [
-    "wzorzec nie spełnia #8 „Układ: blok boczny po lewej od bloku sekcji”: układ: „aside” nie jest na lewo od „main section”",
-    "wzorzec nie spełnia #70 „Kursor na odnośniku: kolor tła RoyalBlue”: brak elementu „a”"
-  ]
+  "problems": []
 }

@@ -1,10 +1,8 @@
 {
   "code": "inf03_2026_06_05",
-  "ok": false,
+  "ok": true,
   "total": 54,
   "auto": 47,
   "manual": 7,
-  "problems": [
-    "wzorzec nie spełnia #49 „Kursor na elemencie klasy mebel: kolor tła Coral”: brak elementu „.mebel”"
-  ]
+  "problems": []
 }

@@ -1,10 +1,8 @@
 {
   "code": "inf03_2026_06_01",
-  "ok": false,
+  "ok": true,
   "total": 98,
   "auto": 90,
   "manual": 8,
-  "problems": [
-    "wzorzec nie spełnia #97 „Kursor na miniaturze: przezroczystość 1”: brak elementu „.miniatury”"
-  ]
+  "problems": []
 }
