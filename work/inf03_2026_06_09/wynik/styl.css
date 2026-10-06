@@ -48,7 +48,7 @@ main {
 .potrawa:hover {
   outline: solid 2px white;
 }
-.potrawa img {
+div img {
   margin: 15px;
   height: 150px;
 }

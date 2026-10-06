@@ -1,14 +1,8 @@
 {
   "code": "inf03_2026_06_05",
-  "pass": false,
-  "score": "49/50",
-  "fails": [
-    {
-      "item": "Dla klasy obraz (skrypt 1): szerokość 30%, opływanie z prawej strony",
-      "problem": "styl.css: `.obraz { width: 30%; float: right; }` - obraz jest przyklejony do prawej, a wg ilustracji 2 i 5 obraz jest po lewej, a blok informacji opływa go z prawej strony",
-      "fix": "Zmienić na `.obraz { width: 30%; float: left; }`"
-    }
-  ],
+  "pass": true,
+  "score": "50/50",
+  "fails": [],
   "na": ["zrzuty ekranu import/kw1-kw4", "utworzenie bazy i import w phpMyAdmin", "nagranie płyty"],
-  "notes": "Kwerendy, PHP (skrypty 1-3, mysqli_close), HTML, pozostałe style, grafika f3.png (524x640, wycentrowany czerwony fotel) i pliki poprawne."
+  "notes": "Poprzednia wersja review (float:right) była nieaktualna: styl.css ma .obraz { width:30%; float:left } zgodnie z ilustracjami 2 i 5. Kwerendy 1-4 poprawne (verify OK), PHP skrypty 1a-1c/2/3 z mysqli_close, HTML5/lang/charset/title/układ bloków, CSS zgodny, f3.png 524x640 z wyśrodkowanym czerwonym fotelem, wymagane pliki obecne."
 }

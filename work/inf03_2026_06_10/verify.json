@@ -1,11 +1,7 @@
 {
   "code": "inf03_2026_06_10",
-  "pass": false,
-  "fails": [
-    "wyloguj.php: brak <!DOCTYPE html>",
-    "wyloguj.php: brak lang=\"pl\"",
-    "wyloguj.php: brak <meta charset=\"UTF-8\">"
-  ],
+  "pass": true,
+  "fails": [],
   "warns": [],
   "queries": [
     {
@@ -81,5 +77,5 @@
       }
     }
   ],
-  "checked_at": "2026-10-06 17:05:40"
+  "checked_at": "2026-10-06 17:06:53"
 }

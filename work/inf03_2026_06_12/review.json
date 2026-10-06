@@ -1,0 +1,8 @@
+{
+  "code": "inf03_2026_06_12",
+  "pass": true,
+  "score": "52/52",
+  "fails": [],
+  "na": ["zrzuty ekranu (import, kw1-kw4)", "utworzenie bazy w phpMyAdmin / import", "nagranie płyty", "folder z numerem zdającego"],
+  "notes": "1.jpg odbity w poziomie (oś pionowa), 400x306. Wszystkie kwerendy działają, verify.json bez fail."
+}

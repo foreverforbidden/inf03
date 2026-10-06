@@ -1,10 +1,8 @@
 {
   "code": "inf03_2026_06_06",
-  "pass": false,
-  "score": "44/45",
-  "fails": [
-    {"item": "Dla selektora obrazu: opływanie po jego prawej stronie, marginesy zewnętrzne 20 px", "problem": "styl.css, reguła img: float: right - obraz jest przy prawej krawędzi, a tekst opływa go z lewej. Wymagane opływanie po prawej stronie obrazu (obraz po lewej, tekst z prawej), jak na ilustracji 2.", "fix": "W regule img zamienić 'float: right;' na 'float: left;' (margin: 20px zostaje)."}
-  ],
-  "na": ["utworzenie bazy w phpMyAdmin", "zrzuty ekranu import/kw1-kw4", "nagranie płyty", "folder o nazwie numeru zdającego"],
-  "notes": "Kwerendy, HTML, skrypt JS (poprawna obsługa pustych lek2/lek3), pozostałe style CSS i grafika recepta.png (100x100, przezroczyste tło) poprawne. verify.json bez failów."
+  "pass": true,
+  "score": "45/45",
+  "fails": [],
+  "na": ["utworzenie bazy w phpMyAdmin", "import tabel", "zrzuty ekranu import/kw1-kw4", "nagranie płyty", "folder o nazwie numeru zdającego"],
+  "notes": "Kwerendy 1-4 poprawne (verify.json bez failów, wyniki zgodne z danymi). HTML5, lang=pl, UTF-8, tytuł, styl.css, bloki semantyczne i układ zgodny z ilustracją 4 (float lewa/prawa, footer clear). Style CSS poprawne: img float:left + margin 20px (opływanie po prawej stronie obrazu), h4/a/img tylko selektorami znaczników, .recepty i :hover. Skrypt: dane z dane.json, pętla po tablicy recepty, puste lek2/lek3 pomijane, klasa recepty, ol, h4 'Kod: '. recepta.png 100x100 RGBA, przezroczyste tło, butelka czarna, krzyż czerwony."
 }

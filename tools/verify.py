@@ -231,11 +231,13 @@ def check_static(out, pages, rep, tmpjs):
         except UnicodeDecodeError:
             rep.fail(f"{page}: plik nie jest w UTF-8")
         low = src.lower()
-        if not re.search(r"<!doctype html>", low):
+        # czysty skrypt PHP bez HTML (np. wylogowanie z przekierowaniem) nie jest strona
+        script_only = page.endswith(".php") and "<html" not in low and re.search(r"header\s*\(\s*[\"']location", low)
+        if not script_only and not re.search(r"<!doctype html>", low):
             rep.fail(f"{page}: brak <!DOCTYPE html>")
-        if not re.search(r"<html[^>]*\blang\s*=\s*[\"']?pl", low):
+        if not script_only and not re.search(r"<html[^>]*\blang\s*=\s*[\"']?pl", low):
             rep.fail(f"{page}: brak lang=\"pl\"")
-        if not re.search(r"<meta[^>]*charset\s*=\s*[\"']?utf-8", low):
+        if not script_only and not re.search(r"<meta[^>]*charset\s*=\s*[\"']?utf-8", low):
             rep.fail(f"{page}: brak <meta charset=\"UTF-8\">")
         if page.endswith(".php") and "mysqli_connect" in src and "mysqli_close" not in src:
             rep.fail(f"{page}: brak mysqli_close")

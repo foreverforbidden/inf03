@@ -1,0 +1,13 @@
+{
+  "code": "inf03_2026_06_10",
+  "pass": true,
+  "score": "62/62",
+  "fails": [],
+  "na": [
+    "Utworzenie bazy laboratorium w phpMyAdmin i import tabel",
+    "Zrzuty ekranu import.png, kw1-kw4.png",
+    "Nagranie płyty / opis płyty",
+    "Obecność zrzutów PNG w folderze wynikowym"
+  ],
+  "notes": "Trzy FAIL z verify.json (wyloguj.php: brak DOCTYPE, lang=pl, meta charset) uznane za fałszywe alarmy: wyloguj.php to czysty skrypt przekierowujący (brak wyjścia HTML), a cechy wspólne HTML dotyczą wyłącznie login.php i wyniki.php (treść arkusza). Kwerendy 1-4 zgodne z treścią i danymi (kw4 zwraca 12 zleceń, 3 z wynikiem, kolejność jak na ilustracji 3). Pliki PDF obecne. Ilustracje 2-4 sprawdzone w PDF (pliki 12-stronicowe, str. 3-4) - układ zgodny. Uwaga: meta.json pokazuje poprawny PDF, ale strony 3-5 mają numerację 'z 8' - zgodnie z task.txt."
+}
