@@ -1,0 +1,298 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 03
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+
+Numer PESEL zdającego*                                                        Miejsce na naklejkę z numerem
+                                                                                PESEL i z kodem ośrodka
+
+         Numer stanowiska
+
+
+
+
+Czas trwania egzaminu: 150 minut                                                         INF.03-03-26.01-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2026                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL*,
+          numer stanowiska i naklej naklejkę** z numerem PESEL i z kodem ośrodka.
+    2.    Sprawdź, czy arkusz egzaminacyjny zawiera 7 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    3.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    4.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    5.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    6.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami wykonania zadania
+          na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu nadzorującego.
+    7.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania
+          egzaminu.
+
+                                                                                               Powodzenia!
+
+ * w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+** w przypadku otrzymania naklejki
+
+
+Układ graficzny
+© CKE 2025
+Zadanie egzaminacyjne
+
+UWAGA: numer, którym został podpisany arkusz egzaminacyjny (PESEL lub w przypadku jego braku numer
+paszportu) jest w zadaniu nazywany numerem zdającego.
+
+Wykonaj aplikację internetową witryny matematycznej, wykorzystując edytor grafiki rastrowej, pakiet XAMPP
+oraz edytor zaznaczający składnię.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się
+archiwum 7z o nazwie pliki2 zabezpieczone hasłem: *M@tem@tyk@6
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego.
+Wszystkie wyniki należy zapisać w tym folderze.
+
+Animacja
+
+
+
+
+                               Ilustracja 1. Pięć kolejnych klatek animacji
+
+Na podstawie wypakowanego obrazu klatki.jpg wykonaj animację według wytycznych:
+ − Każdą klatką animacji jest jeden kwadrat z grafiki klatki.jpg, razem to pięć klatek animacji
+  −   Wymiary każdej klatki: 200 px na 200 px
+  −   Animacja jest powtarzana w nieskończoność, opóźnienie między klatkami 1 sekunda. Udokumentuj
+      ustawienie parametrów animacji za pomocą zrzutu ekranu o nazwie parametry.jpg. Nie kadruj zrzutu.
+      Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań.
+  −   Animację zapisz jako kolo.gif
+
+Witryna internetowa
+
+
+
+
+                             Ilustracja 2. Wygląd strony głównej index.html
+                                               Strona 2 z 7
+                                   Ilustracja 3. Wygląd podstrony kolo.html
+
+Cechy witryny:
+   − składa się ze strony głównej index.html oraz podstrony kolo.html
+
+Cechy wspólne dla obu stron:
+− Zapisane w języku HTML5
+−       Zadeklarowany polski język zawartości witryny
+−       Jawnie zastosowany właściwy standard kodowania polskich
+        znaków
+−       Tytuł strony widoczny na karcie przeglądarki: „Pola figur”
+−       Arkusz stylów w pliku o nazwie styl.css prawidłowo połączony
+        z kodem strony
+−       Podział strony na bloki zrealizowany za pomocą semantycznych
+        znaczników bloków języka HTML5 tak, aby po uruchomieniu
+        w przeglądarce układ bloków na stronie był zgodny z ilustracją 4
+−       Zawartość bloku nagłówkowego: nagłówek drugiego stopnia
+        o treści „Pola figur płaskich”
+−       Zawartość bloku głównego: bloki nawigacyjny, sekcji i boczny          Ilustracja 4. Układ bloków
+−       Zawartość bloku nawigacyjnego:
+          −   Nagłówek trzeciego stopnia o treści „MENU”
+          −   Lista punktowana (nieuporządkowana) z dwoma odsyłaczami o treści:
+              −   „Prostokąt i trójkąt” prowadzący do strony index.html
+              −   „Okrąg i koło”, prowadzący do strony kolo.html
+    −    Zawartość stopki: paragraf o treści: „Autor: ”, dalej wpisany numer zdającego.
+
+Zawartość bloku sekcji strony index.html:
+− Obraz 1d.bmp z tekstem alternatywnym „Figura”
+− Poniżej obok siebie dwa obrazy: 1m.bmp z tekstem alternatywnym „Wybierz trójkąt” oraz 2m.bmp,
+   z tekstem alternatywnym „Wybierz prostokąt”. Kliknięcie dowolnego z tych obrazów uruchamia skrypt 1.
+   Do obu obrazów należy przypisać tę samą klasę
+
+                                                   Strona 3 z 7
+Zawartość bloku bocznego strony index.html, rozkład elementów zgodny z ilustracją 2:
+−     Nagłówek trzeciego stopnia o treści: „Pole prostokąta / pole trójkąta”
+−     Etykieta „Bok prostokąta / podstawa trójkąta:” oraz pole edycyjne powiązane z etykietą
+−     Etykieta „Drugi bok prostokąta / wysokość trójkąta:” oraz pole edycyjne powiązane z etykietą
+−     Przycisk „Oblicz”, którego wciśnięcie powoduje wywołanie skryptu 2
+−     Paragraf przeznaczony na wynik. W stanie początkowym jest on pusty
+
+Zawartość bloku sekcji strony kolo.html:
+− Animacja kolo.gif z tekstem alternatywnym „koło”
+
+Zawartość bloku bocznego strony kolo.html:
+    − Paragraf o treści „Pole koła: P = Π * r2”. Litera Pi (Π) powinna być zapisana za pomocą znaku
+       specjalnego; oznaczenie potęgi powinno znajdować się w indeksie górnym.
+
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie styl.css. Cechy formatowania CSS
+działające na stronie:
+ − Domyślnie, dla wszystkich selektorów: krój czcionki Garamond, w przypadku braku serif
+ − Wspólne dla bloku nagłówkowego i stopki: kolor tła Navy, biały kolor czcionki, wyrównanie tekstu do
+      środka, marginesy wewnętrzne 5 px, odstępy między literami 3 px
+ − Wspólne dla bloku nawigacyjnego, sekcji i bocznego: wysokość 500 px
+ − Dodatkowo dla bloku nawigacyjnego i bocznego: kolor tła DodgerBlue, szerokość 35%
+ − Dodatkowo dla bloku sekcji: kolor tła SkyBlue, szerokość 30%, wyrównanie tekstu do środka
+ − Dla pola edycyjnego i przycisku: marginesy zewnętrzne 10 px
+ − Dla selektora nagłówka trzeciego stopnia: wyrównanie tekstu do środka oraz pierwsza litera nagłówka
+      ma rozmiar czcionki 200%
+ − Dla selektora paragrafu: rozmiar czcionki 150%
+ − Dla klasy przypisanej do grafik 1m.bmp i 2m.bmp: cień przesunięty o 5 px w pionie i poziomie, rozmycie
+      10 px kolor DimGray, zaokrąglenie rogów 10 px, marginesy zewnętrzne 5 px, kursor pointer.
+
+Uwaga: styl CSS nagłówka trzeciego stopnia i paragrafu należy zdefiniować wyłącznie przy pomocy selektora
+tych znaczników. Jest to uwarunkowane projektem późniejszej rozbudowy witryny.
+
+
+
+
+                                                 Strona 4 z 7
+Skrypt
+W tabeli 2 zamieszczono wybrane pola i metody modelu DOM w języku JavaScript. Wymagania dotyczące
+skryptów:
+ − Wykonywane po stronie klienta, na stronie index.html
+ − Należy stosować znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim
+
+Skrypt 1:
+ − Gdy kliknięto w obraz 1m.bmp to duży obraz powyżej ustawiany jest na 1d.bmp
+ − Gdy kliknięto w obraz 2m.bmp to duży obraz powyżej ustawiany jest na 2d.bmp
+
+ Skrypt 2:
+ − Pobiera dane z pól edycyjnych
+ − Gdy w bloku głównym wybrano prostokąt (duży obraz to 2d.bmp), to na podstawie danych jest liczone
+    pole prostokąta (ilustracja 5)
+ − Gdy w bloku głównym wybrano trójkąt (duży obraz to 1d.bmp) to na podstawie danych jest liczone pole
+    trójkąta (ilustracja 4)
+ − Obliczenia powinny też działać dla stanu początkowego witryny (Skrypt 1 nie wykonał się ani razu),
+    wtedy liczone jest pole trójkąta
+ − Wynik wyświetlany jest w paragrafie pod przyciskiem
+
+
+
+
+   Ilustracja 4. Kliknięto w trójkąt, obliczone       Ilustracja 5. Kliknięto w prostokąt, obliczone
+           pole trójkąta ½ * 5 * 10 = 25                        pole prostokąta 5 * 10 = 50
+
+
+Tabela 1. Wartości wybranych znaków specjalnych w języku HTML
+ &#925;      &Nu;         Greek capital letter "nu"
+ &#926;      &Xi;         Greek capital letter "xi"
+ &#927;      &Omicron;    Greek capital letter "omicron"
+ &#928;      &Pi;         Greek capital letter "pi"
+ &#929;      &Rho;        Greek capital letter "rho"
+ &#931;      &Sigma;      Greek capital letter "sigma"
+
+
+
+
+                                              Strona 5 z 7
+Tabela 2. Wybrane pola i metody modelu DOM języka JavaScript
+           Wyszukiwanie elementów                              Zmiana elementów
+ document.getElementById(id)                   element.innerHTML = "wartość"
+ document.getElementsByTagName(TagName)        element.attribute_name = "wartość"
+ document.getElementsByClassName(ClassName) element.setAttribute(atrybut, wartosc)
+ document.getElementsByName(ElementName)       element.style.property_name = "wartość"
+ document.querySelector(CSSselector)
+ document.querySelectorAll(CSSselector)
+
+     Operacje na elementach dokumentu                             Wybrane właściwości obiektu style
+ document.createElement(element)                      backgroundColor
+ document.removeChild(element)                        color
+ document.appendChild(element)                        fontSize
+ document.replaceChild(element)                       fontStyle = "normal | italic | oblique | initial | inherit"
+ document.write(text)                                 fontWeight = "normal | lighter | bold | bolder | value |
+                                                      initial | inherit"
+                                                      listStyleType = "circle| decimal | disc | none | square |
+                                                      initial..."
+Wybrane zdarzenia HTML
+       Zdarzenia myszy                     Zdarzenia klawiatury                   Zdarzenia obiektów
+      onclick                             onkeydown                            onload
+      ondblclick                          onkeypress                           onresize
+      onmouseover                         onkeyup                              onfocusin
+      onmouseout                                                               onfocusout
+ Elementy formularzy                                    Metody i pola obiektu string (JS)
+ Ważniejsze typy pola input: button, checkbox,          Length
+ number, password, radio, text, range                   indexOf(text)
+ Inne elementy: select, textarea                        search(text)
+                                                        substr(startIndex, endIndex)
+                                                        replace(textToReplace, newText)
+                                                        toUpperCase()
+                                                        toLowerCase()
+
+Tabela 3. Semantic Elements in HTML
+       Tag                                              Description
+ <article>      Defines independent, self-contained content
+ <aside>        Defines content aside from the page content
+ <details>      Defines additional details that the user can view or hide
+ <figcaption>   Defines a caption for a <figure> element
+ <figure>       Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+ <footer>       Defines a footer for a document or section
+ <header>       Specifies a header for a document or section
+ <main>         Specifies the main content of a document
+ <mark>         Defines marked/highlighted text
+ <nav>          Defines navigation links
+ <section>      Defines a section in a document
+ <summary>      Defines a visible heading for a <details> element
+ <time>         Defines a date/time
+
+Tabela 4. Wybrane wzory na pola figur
+ Pole kwadratu                  𝑃 = 𝑎2
+ Pole prostokąta              𝑃 =𝑎×𝑏
+ Pole trójkąta                   𝑎×ℎ
+                              𝑃=
+                                  2
+
+
+
+                                                Strona 6 z 7
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego, powinny znajdować się pliki: 1d.bmp,
+1m.bmp, 2d.bmp, 2m.bmp, index.html, kolo.html, kolo.gif, parametry.jpg, przeglądarka.txt, styl.css,
+ewentualnie inne przygotowane pliki. Po nagraniu płyty sprawdź poprawność jej odczytu. Opisz płytę
+numerem zdającego i pozostaw zapakowaną w pudełku na stanowisku wraz z arkuszem egzaminacyjnym.
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie podlegać będzie 5 rezultatów:
+   − animacja,
+   −   zawartość witryny internetowej,
+   −   działanie witryny internetowej,
+   −   styl CSS witryny internetowej,
+   −   skrypt.
+
+
+
+
+                                              Strona 7 z 7
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD/DVD opisaną numerem
+
+PESEL                              , której jakość nagrania została przeze mnie sprawdzona.
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD/DVD, opisana numerem PESEL
+zdającego.
+
+                                                               ……………………………........…
+                                                               Czytelny podpis Przewodniczącego ZN
+

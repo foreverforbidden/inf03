@@ -1,0 +1,44 @@
+{
+  "code": "inf03_2024_06_07",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "UPDATE wagi SET dzien = CURDATE(), czas = CURTIME() WHERE lokalizacje_id IN (2, 3, 4)",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    },
+    {
+      "n": 2,
+      "sql": "SELECT ulica FROM lokalizacje",
+      "ok": true,
+      "rows": 6,
+      "preview": "+-------------+\n| ulica       |\n+-------------+\n| Ślężna      |\n| Tyska       |\n| Średzka     |\n| Wilanowska  |\n| Żmigrodzka  |\n| Karkonowska |"
+    },
+    {
+      "n": 3,
+      "sql": "INSERT INTO wagi (lokalizacje_id, waga, rejestracja, dzien, czas) VALUES (5, FLOOR(1 + RAND() * 10), 'DW12345', CURDATE(), CURTIME())",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    },
+    {
+      "n": 4,
+      "sql": "SELECT wagi.rejestracja, lokalizacje.ulica, wagi.waga, wagi.dzien, wagi.czas FROM wagi JOIN lokalizacje ON wagi.lokalizacje_id = lokalizacje.id WHERE wagi.waga > 5",
+      "ok": true,
+      "rows": 10,
+      "preview": "+-------------+-------------+------+------------+----------+\n| rejestracja | ulica       | waga | dzien      | czas     |\n+-------------+-------------+------+------------+----------+\n| DW54U32     | Ślężna      |    6 | 2022-01-20 | 09:49:08 |\n| DW54U36     | Tyska       |   10 | 2026-10-06 | 18:43:18 |\n| DW5Z452     | Wilanowska  |    6 | 2026-10-06 | 18:43:18 |\n| DW23T32     | Żmigrodzka  |    8 | 2022-01-20 | 09:49:08 |\n| DW5W932     | Karkonowska |    8 | 2022-01-20 | 09:49:08 |\n| DW53R52     | Wilanowska  |    6 | 2026-10-06 | 18:43:18 |"
+    }
+  ],
+  "pages": [
+    {
+      "page": "wazenie.php",
+      "status": 200,
+      "bytes": 1833
+    }
+  ],
+  "checked_at": "2026-10-06 18:43:18"
+}

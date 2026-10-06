@@ -1,0 +1,304 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 02
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+                                                                              Miejsce na naklejkę z numerem
+Numer PESEL zdającego*                                                          PESEL i z kodem ośrodka
+
+
+
+
+Czas trwania egzaminu: 150 minut.                                                         INF.03-02-25.01-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2025                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL
+          i naklej naklejkę z numerem PESEL i z kodem ośrodka.
+    2.    Na KARCIE OCENY w oznaczonym miejscu przyklej naklejkę z numerem PESEL oraz wpisz:
+          − swój numer PESEL*,
+          − oznaczenie kwalifikacji,
+          − numer zadania,
+          − numer stanowiska.
+    3.    Sprawdź, czy arkusz egzaminacyjny zawiera 7 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    4.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    5.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    6.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    7.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami oraz KARTĘ
+          OCENY na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu
+          nadzorującego.
+    8.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania egzaminu.
+
+                                                                                               Powodzenia!
+* w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+
+
+
+
+Układ graficzny
+© CKE 2023
+Zadanie egzaminacyjne
+UWAGA: numer, którym został podpisany arkusz egzaminacyjny (PESEL lub w przypadku jego braku numer
+paszportu) jest w zadaniu nazywany numerem zdającego.
+
+Wykonaj aplikację internetową firmy usługowej, wykorzystując edytor grafiki rastrowej, pakiet XAMPP oraz
+edytor zaznaczający składnię.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się
+archiwum 7z o nazwie pliki12 zabezpieczone hasłem: P@neLePodLoGowe!+
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego.
+Rozpakowane pliki należy umieścić w tym folderze. Po skończonej pracy wszystkie wyniki należy zapisać
+w tym folderze.
+
+Operacje na bazie danych
+Baza danych zawiera dwie tabele przedstawione na ilustracji 1.
+
+
+
+
+                                       Ilustracja 1. Baza danych
+
+Za pomocą narzędzia phpMyAdmin wykonaj następujące operacje na bazie danych:
+−   Utwórz bazę danych o nazwie przewozy, z zestawem polskich znaków (np. utf8_unicode_ci)
+−   Do utworzonej bazy zaimportuj tabele z pliku baza.sql z rozpakowanego archiwum
+−   Wykonaj zrzut ekranu po imporcie. Zapisz zrzut w formacie PNG pod nazwą import. Nie kadruj zrzutu.
+    Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+    widoczne elementy wskazujące na poprawnie wykonany import tabel
+−   Wykonaj zapytania SQL działające na bazie przewozy. Zapytania zapisz w pliku kwerendy.txt. Wykonaj
+    zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie PNG i nadaj im nazwy
+    kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora z widocznym paskiem zadań
+      −   Zapytanie 1: wybierające jedynie imiona i nazwiska osób, których imiona rozpoczynają się od
+          litery A
+      −   Zapytanie 2: wybierające jedynie nazwy zadań (pole zadanie) i daty, w których w nazwie zadania
+          zawiera się słowo „mebli”, posortowane rosnąco według daty
+      −   Zapytanie 3: wybierające jedynie pogrupowane nazwiska osób i odpowiadającą im liczbę zadań.
+          Kolumnie z liczbą zadań należy nadać nazwę (alias) „Liczba zadań”. Należy posłużyć się relacją
+      −   Zapytanie 4: usuwające kolumnę telefon z tabeli osoby
+
+
+
+
+                                              Strona 2 z 7
+Grafika
+Przygotowanie grafiki o nazwie montaz_paneli.png:
+− Szerokość obrazu 400 px, wysokość 50 px
+− Tło przezroczyste
+− Napis "Montaż paneli podłogowych", pogrubioną czcionką bezszeryfową (sans-serif), w rozmiarze 27
+−   Kolor wypełnienia liter obrazu otrzymany z grafiki laminowane.png . Czynność tą udokumentuj zrzutem
+    ekranu o nazwie kolor.png
+
+
+
+
+                                 Ilustracja 2. Obraz montaz_paneli.png
+
+Przygotowanie grafik laminowane.png, winylowe.png, deska.png:
+−   Obrazy należy przeskalować dokładnie do szerokości 500 px i wysokości 70 px
+
+Witryna Internetowa
+
+
+
+
+                      Ilustracja 3. Strona index.html, kursor na drugim odnośniku
+
+Cechy witryny:
+−   Składa się z podstron o nazwach index.html, oferta.html i koszty.html
+
+Cechy wspólne dla stron:
+− Zapisane w języku HTML5
+− Zadeklarowany polski język zawartości witryny
+−   Jawnie zastosowany właściwy standard kodowania polskich znaków
+
+                                               Strona 3 z 7
+−   Tytuł strony widoczny na karcie przeglądarki: „Montaż paneli podłogowych”
+−   Arkusz stylów w pliku o nazwie style.css prawidłowo połączony z kodem strony
+−   Podział strony na bloki: nagłówkowy, poniżej menu, poniżej główny, na dole stopka. Podział
+    zrealizowany za pomocą semantycznych znaczników sekcji języka HTML5 tak, aby po uruchomieniu
+    w przeglądarce wygląd układu bloków był zgodny z ilustracją 3
+−   Zawartość bloku nagłówkowego: obraz montaz_paneli.png z tekstem alternatywnym "firma usługowa"
+−   Zawartość Menu:
+    − Odnośnik "Strona Główna" prowadzący do strony index.html
+    −   Odnośnik "Oferta" prowadzący do strony oferta.html
+    −   Odnośnik "Kalkulator kosztów" prowadzący do strony koszty.html
+−   Zawartość stopki: nagłówek piątego stopnia o treści "Autor strony: ", dalej wstawiony numer zdającego
+
+Zawartość bloku głównego strony index.html:
+− Nagłówek pierwszego stopnia o treści "Panele podłogowe"
+−   Obraz laminowane.png, z tekstem alternatywnym „Laminowane”
+−   Akapit o treści "Panele laminowane"
+−   Obraz winylowe.png, z tekstem alternatywnym „Winylowe”
+−   Akapit o treści "Panele winylowe"
+−   Obraz deska.png, z tekstem alternatywnym „Deska”
+−   Akapit o treści "Deska podłogowa"
+
+Zawartość bloku głównego strony oferta.html:
+− Nagłówek pierwszego stopnia o treści "Koszt montażu paneli podłogowych"
+− Tabela o 4 kolumnach i 5 wierszach, z czego niektóre wiersze / kolumny są scalone. Treść i wygląd
+   tabeli przedstawiony jest na ilustracji 4
+
+
+
+
+                          Ilustracja 4. Fragment bloku głównego strony oferta.html
+
+Zawartość bloku głównego strony koszty.html:
+−   Nagłówek pierwszego stopnia o treści "Kalkulator kosztów montażu"
+−   Obok siebie dwa pola edycyjne typu numerycznego poprzedzone etykietami: „Szerokość pomieszczenia
+    [m]: ", "Długość pomieszczenia [m]: "
+−   Paragraf o treści "Typ panelu"
+−   Jedno pod drugim trzy pola opcji z etykietami o treści: "Panele laminowane", "Panele winylowe", "Deska
+    podłogowa". Pola są zgrupowane tak, że w jednym momencie można zaznaczyć tylko jedno pole
+−   Poniżej przycisk o treści "Oblicz", którego wybranie uruchamia skrypt
+−   Pusty paragraf, przeznaczony do wyświetlenia wyników działania skryptu
+
+                                               Strona 4 z 7
+            Ilustracja 5. Zawartość bloku głównego strony koszty.html, działanie skryptu
+
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie style.css. Cechy formatowania CSS
+działające na stronie:
+ − Domyślnie, dla wszystkich selektorów: krój czcionki Georgia
+ − Dla selektora ciała strony: wyrównanie tekstu do środka
+ − Dla bloku nagłówkowego: marginesy wewnętrzne 30 px, gradient pionowy od koloru #A0522D do koloru
+    #F5DEB3
+ − Dla bloku menu: kolor tła Wheat, marginesy wewnętrzne 14 px
+ − Dla bloku głównego: kolor tła Wheat, marginesy wewnętrzne 50 px
+ − Dla stopki: marginesy wewnętrzne 30 px, gradient pionowy od koloru #F5DEB3 do koloru #A0522D
+ − Dla selektora odnośnika: kolor tła Sienna, biały kolor czcionki, czcionka pogrubiona, bez podkreślenia,
+    marginesy wewnętrzne 10 px, zewnętrzne 20 px
+ − Gdy kursor myszy znajdzie się na odnośniku pojawia się podkreślenie tekstu
+ − Wspólne dla selektora tabeli i selektora komórki tabeli: obramowanie o szerokości 1px linią ciągłą koloru
+    Sienna, obramowanie połączone w jedną linię
+ − Dodatkowo dla selektora tabeli: szerokość 70%, marginesy zewnętrzne automatycznie wyliczane przez
+    przeglądarkę
+ − Dla selektora komórki tabeli: marginesy wewnętrzne 5 px
+
+Uwaga: styl CSS ciała strony, odnośnika, tabeli i komórki tabeli należy zdefiniować wyłącznie przy pomocy
+selektora tych znaczników. Jest to uwarunkowane projektem późniejszej rozbudowy witryny.
+
+Skrypt
+W tabeli 2 zamieszczono wybrane funkcje języka JavaScript. Wymagania dotyczące skryptu:
+ − Wykonywany po stronie klienta, na stronie koszty.html po kliknięciu przycisku „Oblicz”
+ − Należy stosować znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim
+ − Skrypt pobiera dane z pól edycyjnych i pól opcji
+ − Jeżeli oba pola edycyjne zostały wypełnione, skrypt
+    − Oblicza pole powierzchni pomieszczenia
+    − Oblicza koszt montażu uwzględniając pole powierzchni oraz typ panelu i koszt z tabeli 1
+    − W paragrafie pod przyciskiem wyświetla napis: „Pole powierzchni pomieszczenia: <pole>, koszt
+        montażu <koszt>”, gdzie pola <> oznaczają wartości obliczone skryptem
+ − W przeciwnym wypadku skrypt wyświetla komunikat "Wprowadź poprawne dane."
+                                               Strona 5 z 7
+Tabela1. Koszt montażu
+     Rodzaj panelu             Koszt montażu (zł/m2)
+ panel laminowany                                  12
+ panel winylowy                                    14
+ deska podłogowa                                   18
+
+
+
+ CSS Linear Gradients
+ To create a linear gradient you must define at least two color stops. Color stops are the colors you want to
+ render smooth transitions among. You can also set a starting point and a direction (or an angle) along with
+ the gradient effect. Direction top to bottom is default
+
+ Syntax
+ background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+
+
+Tabela 2. Wybrane pola i metody modelu DOM języka JavaScript
+           Wyszukiwanie elementów                              Zmiana elementów
+ document.getElementById(id)                   element.innerHTML = "wartość"
+ document.getElementsByTagName(TagName)        element.attribute_name = "wartość"
+ document.getElementsByClassName(ClassName) element.setAttribute(atrybut, wartosc)
+ document.getElementsByName(ElementName)       element.style.property_name = "wartość"
+ document.querySelector(CSSselector)
+ document.querySelectorAll(CSSselector)
+
+     Operacje na elementach dokumentu                            Wybrane właściwości obiektu style
+ document.createElement(element)                     backgroundColor
+ document.removeChild(element)                       color
+ document.appendChild(element)                       fontSize
+ document.replaceChild(element)                      fontStyle = "normal | italic | oblique | initial | inherit"
+ document.write(text)                                fontWeight = "normal | lighter | bold | bolder | value |
+                                                     initial | inherit"
+                                                     listStyleType = "circle| decimal | disc | none | square |
+                                                     initial..."
+Wybrane zdarzenia HTML
+       Zdarzenia myszy                     Zdarzenia klawiatury                   Zdarzenia obiektów
+ onclick                             onkeydown                             onload
+ ondblclick                          onkeypress                            onresize
+ onmouseover                         onkeyup                               onfocusin
+ onmouseout                                                                onfocusout
+ Elementy formularzy                                   Metody i pola obiektu string (JS)
+ Ważniejsze typy pola input: button, checkbox,         Length
+ number, password, radio, text, range                  indexOf(text)
+ Inne elementy: select, textarea                       search(text)
+                                                       substr(startIndex, endIndex)
+                                                       replace(textToReplace, newText)
+                                                       toUpperCase()
+                                                       toLowerCase()
+
+
+
+
+                                                Strona 6 z 7
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego, powinny znajdować się pliki: deska.png,
+import.png, index.html, koszty.html, kw1.png, kw2.png, kw3.png, kw4.png, kwerendy.txt, laminowane.png,
+montaz_paneli.png, oferta.html, przeglądarka.txt, style.css, winylowe.png ewentualnie inne przygotowane
+pliki. Po nagraniu płyty sprawdź poprawność jej odczytu. Opisz płytę numerem zdającego i pozostaw
+zapakowaną w pudełku na stanowisku wraz z arkuszem egzaminacyjnym.
+
+
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie podlegać będzie 5 rezultatów:
+   − operacje na bazie danych,
+   −   zawartość witryny internetowej,
+   −   działanie witryny internetowej,
+   −   styl CSS witryny internetowej,
+   −   skrypt.
+
+
+
+
+                                              Strona 7 z 7
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD opisaną numerem PESEL                                   ,
+której jakość nagrania została przeze mnie sprawdzona.
+
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD, opisana numerem PESEL zdającego.
+
+
+                                                               ……………………………........…
+                                                               Czytelny podpis Przewodniczącego ZN
+

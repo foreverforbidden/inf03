@@ -1,0 +1,53 @@
+{
+  "code": "inf03_2024_06_09",
+  "pass": true,
+  "fails": [],
+  "warns": [
+    "kwerendy.txt: 5 zapytan, w tresci 4"
+  ],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT miejsce, liczbaDni FROM wycieczki WHERE cena < 1000",
+      "ok": true,
+      "rows": 5,
+      "preview": "+-------------------+-----------+\n| miejsce           | liczbaDni |\n+-------------------+-----------+\n| Gdańsk            |         2 |\n| Kraków            |         3 |\n| Niedzica          |         1 |\n| Szklarska Poręba  |         4 |\n| Wrocław           |         2 |\n+-------------------+-----------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT liczbaDni, AVG(cena) AS sredniaCena FROM wycieczki GROUP BY liczbaDni",
+      "ok": true,
+      "rows": 5,
+      "preview": "+-----------+-------------+\n| liczbaDni | sredniaCena |\n+-----------+-------------+\n|         1 |    150.0000 |\n|         2 |    350.0000 |\n|         3 |    500.0000 |\n|         4 |    540.0000 |\n|         7 |   1350.0000 |\n+-----------+-------------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT wycieczki.miejsce, zdjecia.nazwa FROM wycieczki JOIN zdjecia ON wycieczki.id = zdjecia.Wycieczki_id WHERE wycieczki.cena > 500",
+      "ok": true,
+      "rows": 3,
+      "preview": "+-------------------+-------+\n| miejsce           | nazwa |\n+-------------------+-------+\n| Pieniny           | 4.jpg |\n| Szklarska Poręba  | 5.jpg |\n| Tatry             | 6.jpg |\n+-------------------+-------+"
+    },
+    {
+      "n": 4,
+      "sql": "CREATE USER 'Ewa'@'localhost' IDENTIFIED BY 'Ewa!Ewa'",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    },
+    {
+      "n": 5,
+      "sql": "GRANT ALL PRIVILEGES ON wycieczki.* TO 'Ewa'@'localhost'",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "galeria.html",
+      "status": 200,
+      "bytes": 1282
+    }
+  ],
+  "checked_at": "2026-10-06 18:44:48"
+}

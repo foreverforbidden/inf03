@@ -1,0 +1,325 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 01
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+
+Numer PESEL zdającego*                                                        Miejsce na naklejkę z numerem
+                                                                                PESEL i z kodem ośrodka
+
+         Numer stanowiska
+
+
+
+
+Czas trwania egzaminu: 150 minut                                                         INF.03-01-26.06-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2026                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL*,
+          numer stanowiska i naklej naklejkę** z numerem PESEL i z kodem ośrodka.
+    2.    Sprawdź, czy arkusz egzaminacyjny zawiera 7 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    3.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    4.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    5.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    6.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami wykonania zadania
+          na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu nadzorującego.
+    7.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania
+          egzaminu.
+
+                                                                                               Powodzenia!
+
+ * w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+** w przypadku otrzymania naklejki
+
+
+Układ graficzny
+© CKE 2025
+Zadanie egzaminacyjne
+
+UWAGA: numer, którym został podpisany arkusz egzaminacyjny (PESEL lub w przypadku jego braku numer
+paszportu) jest w zadaniu nazywany numerem zdającego.
+
+Wykonaj witrynę internetową portalu turystycznego, wykorzystując zainstalowane na komputerze aplikacje.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się
+archiwum 7z o nazwie pliki1 zabezpieczone hasłem: isLandi@
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego. Po
+skończonej pracy wszystkie wyniki należy zapisać w tym folderze.
+
+Operacje na bazie danych
+Do zadania należy wykorzystać jedynie tabele: kontynenty, rodzaje, obiekty. Tabele przedstawione na
+ilustracji 1 są połączone relacją.
+
+
+
+
+                                         Ilustracja 1. Baza danych
+
+Za pomocą narzędzia phpMyAdmin wykonaj następujące operacje na bazie danych:
+  −   Utwórz bazę danych o nazwie islandia, z zestawem znaków utf8_unicode_ci
+  −   Do utworzonej bazy zaimportuj tabele z pliku baza1.sql
+  −   Wykonaj zrzut ekranu po imporcie. Zapisz zrzut w formacie JPEG pod nazwą import. Nie kadruj zrzutu.
+      Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+      widoczne elementy wskazujące na poprawnie wykonany import tabel
+  −   Wykonaj zapytania SQL działające na bazie islandia. Zapytania zapisz w pliku kwerendy.txt. Wykonaj
+      zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie PNG i nadaj im
+      nazwy kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora z widocznym paskiem
+      zadań
+      −   Zapytanie 1: wybierające jedynie pola idObiekt, plik i nazwa z tabeli obiekty dla Islandii
+      −   Zapytanie 2: wybierające jedynie pola plik, nazwa, nazwaCechy, wartoscCechy, opis z tabeli
+          obiekty oraz odpowiadające im pole rodzaj z tabeli rodzaje dla obiektu o identyfikatorze 46. Należy
+          posłużyć się relacją
+      −   Zapytanie 3: wybierające jedynie nazwy obiektów z Islandii, których identyfikator rodzaju to 10
+      −   Zapytanie 4: wybierające jedynie rodzaj z tabeli rodzaje oraz zliczające liczbę obiektów
+          (wodospadów, szczytów itd.) danego rodzaju. Kolumna z liczbą obiektów powinna mieć nadaną
+          nazwę (alias) „Liczba obiektów”. Należy posłużyć się grupowaniem i relacją.
+
+
+
+
+                                                 Strona 2 z 7
+Witryna internetowa
+
+
+
+
+                               Ilustracja 2. Wygląd strony islandia.php,
+                  kursor na zdjęciu, pojawia się dymek i zmienia się przezroczystość
+
+
+
+
+                  Ilustracja 3. Blok główny ze strony obiekty.php, przewinięto suwak
+
+Witryna składa się z podstron: islandia.php i obiekty.php
+
+Cechy wspólne obu stron:
+− Zapisane w języku HTML5
+− Zadeklarowany polski język zawartości witryny
+−   Jawnie zastosowany właściwy standard kodowania polskich znaków
+−   Tytuł strony „Islandia”
+−   Arkusz stylów w pliku o nazwie styl.css prawidłowo połączony
+    z kodem strony
+                                                                            Ilustracja 4. Układ bloków
+−   Podział strony na bloki: nagłówkowy, boczny, główny, stopki. Blok
+    główny zawiera blok sekcji. Podział zrealizowany za pomocą semantycznych znaczników języka HTML5
+    tak, aby po uruchomieniu w przeglądarce układ bloków był zgodny z ilustracją 4
+−   Zawartość bloku nagłówkowego:
+     − Nagłówek pierwszego stopnia o treści „Zwiedzaj Islandię”. Treść jest odnośnikiem do strony
+         islandia.php
+
+
+                                                Strona 3 z 7
+−   Zawartość bloku bocznego:
+    −   Nagłówek trzeciego stopnia o treści „Do zwiedzania”
+    −   Lista punktowana (nieuporządkowana) z dwoma elementami: „Wodospady:” i „Siedliska zwierząt:”
+    − Element „Wodospady:” zawiera listę numerowaną (uporządkowaną) wypełnioną skryptem 1
+    − Element „Siedliska zwierząt:” zawiera listę numerowaną (uporządkowaną) wypełnioną skryptem 2
+−   Zawartość bloku stopki:
+    − Linia pozioma
+    − Paragraf o treści „Autor: ”, dalej wstawiony numer zdającego
+
+Zawartość bloku głównego dla strony islandia.php:
+−   Nagłówek drugiego stopnia o treści: „Galeria”
+−   Blok sekcji z efektem wykonania skryptu 3
+
+Zawartość bloku głównego dla strony obiekty.php:
+−   Nagłówek drugiego stopnia o treści: „Opis miejsca”
+−   Blok sekcji z efektem działania skryptu 4
+
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie styl.css. Cechy formatowania CSS
+działające na stronie:
+ − Domyślnie, dla wszystkich selektorów: krój czcionki Comic Sans MS, w przypadku braku sans-serif
+ − Dla bloku nagłówkowego i głównego: szerokość 70%, wyrównanie tekstu do środka
+ − Dla bloku nagłówkowego i bocznego: kolor tła PaleTurquoise, zaokrąglenie rogów 20 px
+ − Dodatkowo dla bloku nagłówkowego: wysokość 100 px, marginesy wewnętrzne 2%
+ − Dodatkowo dla bloku bocznego: szerokość 25%, wysokość 700 px, wysokość linii (interlinia) 2
+ − Dla bloku stopki: jedynie margines wewnętrzny górny 10 px
+−   Dla bloku sekcji: obramowanie linią kreskową o szerokości 1 px i kolorze DimGray, marginesy
+    zewnętrzne górny i dolny 10 px, pozostałe 50 px, wysokość 400 px, paski przewijania pojawiające się
+    tylko w przypadku przepełnienia bloku
+−   Dla klasy miniatury przypisanej do obrazów ze strony islandia.php, generowanych skryptem 3: wysokość
+    200 px, marginesy wewnętrzne 10 px, przezroczystość 0.8, dodana tranzycja trwająca 1 sekundę
+−   W przypadku gdy kursor znajdzie się na elemencie z przypisaną klasą miniatury, jego przezroczystość
+    zmienia się na wartość 1
+
+Skrypty działające po stronie serwera
+Wymagania dotyczące skryptów:
+−   Napisane w języku PHP
+−   Należy stosować znaczące nazewnictwo zmiennych w języku polskim lub angielskim
+−   Łączą się z serwerem bazodanowym na localhost, użytkownik root bez hasła, baza danych o nazwie
+    islandia
+−   Na końcu należy zamknąć połączenie z bazą
+
+Skrypt 1 na obu stronach
+− Wysyła do bazy danych zapytanie 3
+−   Każda zwrócona zapytaniem nazwa jest wyświetlana jako element listy
+
+
+
+                                               Strona 4 z 7
+Skrypt 2 na obu stronach
+−   Wysyła do bazy danych zapytanie 3, zmodyfikowane tak, że w warunku sprawdzane jest pole idRodzaj
+    równe 14
+−   Każda zwrócona zapytaniem nazwa jest wyświetlana jako element listy
+
+Skrypt 3 na stronie islandia.php
+− Wysyła do bazy danych zapytanie 1
+−   Dla każdego zwróconego zapytaniem wiersza wypisuje odnośnik prowadzący do strony obiekty.php oraz
+    przekazujący do tej strony metodą GET parametr o wartości równej polu idObiekt
+−   Odnośnik jest obrazem, dla którego źródło to zwrócone pole plik, tekst alternatywny to zwrócone pole
+    nazwa. Dodatkowo pole nazwa jest tekstem pojawiającym się w postaci dymka, gdy kursor znajdzie się
+    na obrazie (ilustracja 2, czwarty obraz). Obraz ma przypisaną klasę miniatury
+
+Skrypt 4 na stronie obiekty.php
+−   Wysyła do bazy danych zapytanie 2, zmodyfikowane w ten sposób, że w warunku jest sprawdzane id
+    obiektu przesłane jako parametr metody GET ze strony islandia.php
+−   Na podstawie zwróconych zapytaniem danych:
+    − Wyświetla obraz, którego źródłem jest pole plik, a tekstem alternatywnym pole nazwa
+    − W nagłówku drugiego stopnia wyświetla wartość pola nazwa
+    − W nagłówku trzeciego stopnia wyświetla wartość pola rodzaj
+    − W paragrafie wyświetla tekst „<nazwaCechy>: <wartoscCechy>”, gdzie w <> umieszczono wartości
+        zwrócone zapytaniem
+     −   W paragrafie wyświetla pole opis
+
+
+
+Tabela 1. Wybór funkcji języka PHP do obsługi bazy MySQL i MariaDB
+            Funkcje biblioteki mysqli                             Zwracana wartość
+ mysqli_connect(serwer, użytkownik,
+ hasło, nazwa_bazy)                              id połączenia lub FALSE, gdy niepowodzenie
+ mysqli_select_db(id_polaczenia,
+ nazwa_bazy)                                     TRUE/FALSE w zależności od stanu operacji
+ mysqli_error(id_polaczenia)                     Tekst komunikatu błędu
+ mysqli_close(id_polaczenia)                     TRUE/FALSE w zależności od stanu operacji
+ mysqli_query(id_polaczenia,
+ zapytanie)                                      Wynik zapytania
+
+ mysqli_fetch_row(wynik_zapytania)               Tablica numeryczna przechowująca kolejny wiersz
+                                                 z podanych w wyniku zapytania
+                                                 Tablica asocjacyjna zawierająca kolejny wiersz z
+ mysqli_fetch_array(wynik_zapytania)             podanych w wyniku zapytania lub FALSE, jeżeli nie
+                                                 ma więcej wierszy w wyniku zapytania
+ mysqli_num_rows(wynik_zapytania)                Liczba wierszy w podanym wyniku zapytania
+ mysqli_num_fields(wynik_zapytania)              Liczba kolumn w podanym zapytaniu
+                                                 TRUE/FALSE w zależności od, tego czy $zmienna
+ isset($zmienna)
+                                                 istnieje
+
+
+
+
+                                             Strona 5 z 7
+Tabela 2. Metoda GET i odnośniki
+Najpopularniejszy dla metody GET sposób przekazywania parametrów dla żądania to przesyłanie ich
+w adresie url:
+index.php?lang=pl&param1=2
+
+Przesyłane parametry znajdują się w tablicy globalnej $_GET
+
+
+Tabela 3. CSS transition Property
+transition: property duration timing-function delay|initial|inherit;
+
+         Value          Description
+transition-property     Specifies the name of the CSS property the transition effect is for
+transition-duration     Specifies how many seconds or milliseconds the transition effect takes to complete
+transition-timing-
+                        Specifies the speed curve of the transition effect
+function
+transition-delay        Defines when the transition effect will start
+initial                 Sets this property to its default value. Read about initial
+inherit                 Inherits this property from its parent element. Read about inherit
+
+
+Tabela 4. Semantic Elements in HTML
+       Tag                                              Description
+ <article>      Defines independent, self-contained content
+ <aside>        Defines content aside from the page content
+ <details>      Defines additional details that the user can view or hide
+ <figcaption>   Defines a caption for a <figure> element
+ <figure>       Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+ <footer>       Defines a footer for a document or section
+ <header>       Specifies a header for a document or section
+ <main>         Specifies the main content of a document
+ <mark>         Defines marked/highlighted text
+ <nav>          Defines navigation links
+ <section>      Defines a section in a document
+ <summary>      Defines a visible heading for a <details> element
+ <time>         Defines a date/time
+
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego, powinno znajdować się 9 plików z grafiką
+do strony oraz pliki: import.jpg, islandia.php, kw1.png, kw2.png, kw3.png, kw4.png, kwerendy.txt,
+obiekty.php, przeglądarka.txt, styl.css, ewentualnie inne przygotowane pliki. Po nagraniu płyty sprawdź
+poprawność jej odczytu. Opisz płytę numerem zdającego i pozostaw zapakowaną w pudełku na stanowisku
+wraz z arkuszem egzaminacyjnym.
+
+
+
+
+                                                    Strona 6 z 7
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie podlegać będzie 5 rezultatów:
+   − operacje na bazie danych,
+   − zawartość witryny internetowej,
+   −   działanie witryny internetowej,
+   −   styl CSS witryny internetowej,
+   −   skrypty.
+
+
+
+
+                                         Strona 7 z 7
+Wypełnia zdający w przypadku nagranej płyty
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD/DVD z rezultatami wykonania zadania egzaminacyjnego
+
+opisaną przeze mnie numerem PESEL                                         i oświadczam, że jakość nagrania
+
+została przeze mnie sprawdzona.
+
+
+Wypełnia zdający w przypadku nienagranej (pustej) płyty
+
+
+Poświadczam numerem PESEL                                            , że do arkusza nie dołączam płyty
+
+CD/DVD z rezultatami wykonania zadania egzaminacyjnego.
+
+
+Wypełnia Przewodniczący ZN
+
+
+   □ Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD/DVD, opisana numerem
+       PESEL zdającego.
+
+   □ Potwierdzam, że do arkusza egzaminacyjnego nie została dołączona płyta CD/DVD.
+
+                                                          ……………………………………………..
+                                                          Czytelny podpis Przewodniczącego ZN
+

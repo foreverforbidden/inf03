@@ -1,0 +1,31 @@
+{
+  "password": "BLog+#KuLinarnY@",
+  "db": "przepisy",
+  "required_files": [
+    "churros.jpg",
+    "eklerki.jpg",
+    "hamburger.jpg",
+    "jagniecina.jpg",
+    "kociołek.jpg",
+    "kwerendy.txt",
+    "losos.jpg",
+    "nugetsy.jpg",
+    "pankejki.jpg",
+    "przeglądarka.txt",
+    "przepisy.php",
+    "salatka.jpg",
+    "separator.png",
+    "sernik.jpg",
+    "styl.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "przepisy.php"
+  ],
+  "code": "inf03_2026_01_10",
+  "pdf": "inf03_arkusze/inf03_2026_01_10_arkusz.pdf",
+  "sql_files": [
+    "materialy/przepisy.sql"
+  ],
+  "problems": []
+}

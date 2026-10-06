@@ -1,0 +1,57 @@
+{
+  "code": "inf02_2023_01_03",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT nazwa, ulica FROM kwiaciarnie WHERE miasto = 'Malbork'",
+      "ok": true,
+      "rows": 1,
+      "preview": "+--------+--------------+\n| nazwa  | ulica        |\n+--------+--------------+\n| Melisa | Konopnickiej |\n+--------+--------------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT id_kwiaciarni, COUNT(*) FROM zamowienia GROUP BY id_kwiaciarni",
+      "ok": true,
+      "rows": 2,
+      "preview": "+---------------+----------+\n| id_kwiaciarni | COUNT(*) |\n+---------------+----------+\n|             1 |        4 |\n|             2 |        2 |\n+---------------+----------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT kwiaciarnie.nazwa, kwiaciarnie.miasto, zamowienia.kwiaty FROM kwiaciarnie JOIN zamowienia ON kwiaciarnie.id_kwiaciarni = zamowienia.id_kwiaciarni WHERE zamowienia.data = '2017-01-07'",
+      "ok": true,
+      "rows": 1,
+      "preview": "+-------+----------+--------+\n| nazwa | miasto   | kwiaty |\n+-------+----------+--------+\n| Astra | Warszawa | róża   |\n+-------+----------+--------+"
+    },
+    {
+      "n": 4,
+      "sql": "CREATE TABLE klienci (id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, imie VARCHAR(15), nazwisko VARCHAR(15), rabat INT)",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "index.html",
+      "status": 200,
+      "bytes": 958
+    },
+    {
+      "page": "znajdz.php",
+      "status": 200,
+      "bytes": 1074
+    },
+    {
+      "page": "formularz znajdz.php->znajdz.php [post]",
+      "status": 200,
+      "bytes": 1074,
+      "fields": {
+        "miasto": "Test"
+      }
+    }
+  ],
+  "checked_at": "2026-10-06 18:40:27"
+}

@@ -1,0 +1,44 @@
+{
+  "code": "inf03_2025_06_03",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT nazwisko, imie, klasa, data_wypozyczenia FROM uczniowie WHERE data_wypozyczenia > '2020-03-02'",
+      "ok": true,
+      "rows": 5,
+      "preview": "+----------+-----------+-------+-------------------+\n| nazwisko | imie      | klasa | data_wypozyczenia |\n+----------+-----------+-------+-------------------+\n| Woźniak  | Ilona     | VII   | 2020-03-04        |\n| Baran    | Dominik   | V     | 2020-03-03        |\n| Jurek    | Jacek     | VII   | 2020-03-09        |\n| Tomas    | Paweł     | VIII  | 2020-03-12        |\n| Kawtan   | Mirosław  | IV    | 2020-03-18        |\n+----------+-----------+-------+-------------------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT uczniowie.nazwisko, uczniowie.imie, uczniowie.data_wypozyczenia, ksiazki.autor, ksiazki.kod FROM uczniowie JOIN ksiazki ON uczniowie.id_ksiazki = ksiazki.id",
+      "ok": true,
+      "rows": 7,
+      "preview": "+-----------+------------+-------------------+--------------------------+------+\n| nazwisko  | imie       | data_wypozyczenia | autor                    | kod  |\n+-----------+------------+-------------------+--------------------------+------+\n| Woźniak   | Ilona      | 2020-03-04        | Adolf Abrahamowicz       | 2711 |\n| Baran     | Dominik    | 2020-03-03        | Hans Christian Andersen  | 271C |\n| Krakowiak | Tomasz     | 2020-03-02        | Edmondo de Amicis        | 2719 |\n| Ordak     | Sławomira  | 2020-03-02        | Adam Asnyk               | 277D |\n| Jurek     | Jacek      | 2020-03-09        | Karol Bołoz Antoniewicz  | 2735 |\n| Tomas     | Paweł      | 2020-03-12        | Karol Bołoz Antoniewicz  | 2739 |"
+    },
+    {
+      "n": 3,
+      "sql": "DELETE FROM ksiazki WHERE autor = '0'",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    },
+    {
+      "n": 4,
+      "sql": "SELECT autor, tytul, kod FROM ksiazki ORDER BY RAND() LIMIT 5",
+      "ok": true,
+      "rows": 5,
+      "preview": "+--------------------------------------+-------------------------------------------------------------+------+\n| autor                                | tytul                                                       | kod  |\n+--------------------------------------+-------------------------------------------------------------+------+\n| Jan Niecisław Baudouin de Courtenay  | Krzewiciele zDziczenia                                      | 298E |\n| Adam Asnyk                           | X (Więc znów snu ą się dale krwawych zdarzeń wzory…)        | 278A |\n| Jacek Podsiadło                      | Melzak. Piegowata piękność                                  | 373D |\n| Fryderyk Schiller                    | Nurek                                                       | 392D |\n| Wincenty Korotyński                  | Miłość                                                      | 30EC |\n+--------------------------------------+-------------------------------------------------------------+------+"
+    }
+  ],
+  "pages": [
+    {
+      "page": "biblioteka.php",
+      "status": 200,
+      "bytes": 1512
+    }
+  ],
+  "checked_at": "2026-10-06 18:45:09"
+}

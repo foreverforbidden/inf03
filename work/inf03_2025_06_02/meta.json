@@ -1,0 +1,21 @@
+{
+  "password": "#ToDoList@",
+  "db": "notatki",
+  "required_files": [
+    "kwerendy.txt",
+    "notatki.html",
+    "obraz.jpg",
+    "przeglądarka.txt",
+    "styl.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "notatki.html"
+  ],
+  "code": "inf03_2025_06_02",
+  "pdf": "inf03_arkusze/inf03_2025_06_02_arkusz.pdf",
+  "sql_files": [
+    "materialy/baza.sql"
+  ],
+  "problems": []
+}

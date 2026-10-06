@@ -1,0 +1,98 @@
+{
+  "code": "inf03_2025_06_04",
+  "pass": true,
+  "fails": [],
+  "warns": [
+    "przewozy.php: odnosnik do pominietego zrzutu kw1.png",
+    "przewozy.php: odnosnik do pominietego zrzutu kw2.png",
+    "przewozy.php: odnosnik do pominietego zrzutu kw3.png",
+    "przewozy.php: odnosnik do pominietego zrzutu kw4.png",
+    "przewozy.php?usun=1: odnosnik do pominietego zrzutu kw1.png",
+    "przewozy.php?usun=1: odnosnik do pominietego zrzutu kw2.png",
+    "przewozy.php?usun=1: odnosnik do pominietego zrzutu kw3.png",
+    "przewozy.php?usun=1: odnosnik do pominietego zrzutu kw4.png",
+    "przewozy.php?usun=2: odnosnik do pominietego zrzutu kw1.png",
+    "przewozy.php?usun=2: odnosnik do pominietego zrzutu kw2.png",
+    "przewozy.php?usun=2: odnosnik do pominietego zrzutu kw3.png",
+    "przewozy.php?usun=2: odnosnik do pominietego zrzutu kw4.png",
+    "przewozy.php?usun=3: odnosnik do pominietego zrzutu kw1.png",
+    "przewozy.php?usun=3: odnosnik do pominietego zrzutu kw2.png",
+    "przewozy.php?usun=3: odnosnik do pominietego zrzutu kw3.png",
+    "przewozy.php?usun=3: odnosnik do pominietego zrzutu kw4.png",
+    "przewozy.php?usun=4: odnosnik do pominietego zrzutu kw1.png",
+    "przewozy.php?usun=4: odnosnik do pominietego zrzutu kw2.png",
+    "przewozy.php?usun=4: odnosnik do pominietego zrzutu kw3.png",
+    "przewozy.php?usun=4: odnosnik do pominietego zrzutu kw4.png",
+    "formularz przewozy.php->przewozy.php [post]: odnosnik do pominietego zrzutu kw1.png",
+    "formularz przewozy.php->przewozy.php [post]: odnosnik do pominietego zrzutu kw2.png",
+    "formularz przewozy.php->przewozy.php [post]: odnosnik do pominietego zrzutu kw3.png",
+    "formularz przewozy.php->przewozy.php [post]: odnosnik do pominietego zrzutu kw4.png"
+  ],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT id_zadania, zadanie, data FROM zadania",
+      "ok": true,
+      "rows": 7,
+      "preview": "+------------+-------------------------------------------------------------------+------------+\n| id_zadania | zadanie                                                           | data       |\n+------------+-------------------------------------------------------------------+------------+\n|          1 | Przewóz mebli z ulicy Nawrot 13 na ulicę Długą 8                  | 2019-11-06 |\n|          2 | Przewóz telewizora z ulicy Marszałkowskiej na ulicę Poselską.     | 2019-11-17 |\n|          3 | Odbiór listów firmowych.                                          | 2019-11-18 |\n|          4 | Przegląd samochodu dostawczego w serwisie.                        | 2020-11-20 |\n|          5 | Przewóz pudeł z osiedla Nowe Sady do firmy.                       | 2020-11-22 |\n|          6 | Odbiór towarów niesortowanych.                                    | 2020-11-23 |"
+    },
+    {
+      "n": 2,
+      "sql": "INSERT INTO zadania (zadanie, data, osoba_id) VALUES ('spotkanie firmowe', '2024-05-10', 1)",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    },
+    {
+      "n": 3,
+      "sql": "DELETE FROM zadania WHERE id_zadania = 2",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    },
+    {
+      "n": 4,
+      "sql": "SELECT osoby.imie, osoby.nazwisko, osoby.telefon, zadania.zadanie, zadania.data FROM osoby JOIN zadania ON osoby.id_osoba = zadania.osoba_id",
+      "ok": true,
+      "rows": 7,
+      "preview": "+-----------+----------+-----------+---------------------------------------------------------+------------+\n| imie      | nazwisko | telefon   | zadanie                                                 | data       |\n+-----------+----------+-----------+---------------------------------------------------------+------------+\n| Anna      | A.       | 987654321 | Przewóz mebli z ulicy Nawrot 13 na ulicę Długą 8        | 2019-11-06 |\n| Zofia     | W.       | 777777777 | Odbiór listów firmowych.                                | 2019-11-18 |\n| Anna      | A.       | 987654321 | Przegląd samochodu dostawczego w serwisie.              | 2020-11-20 |\n| Arkadiusz | G.       | 888888888 | Przewóz pudeł z osiedla Nowe Sady do firmy.             | 2020-11-22 |\n| Arkadiusz | G.       | 888888888 | Odbiór towarów niesortowanych.                          | 2020-11-23 |\n| Tomasz    | K.       | 111111111 | Przewóz mebli z ulicy Długiej 7 na ulicę Krótką 13      | 2021-01-26 |"
+    }
+  ],
+  "pages": [
+    {
+      "page": "przewozy.php",
+      "status": 200,
+      "bytes": 1932
+    },
+    {
+      "page": "przewozy.php?usun=1",
+      "status": 200,
+      "bytes": 1800
+    },
+    {
+      "page": "przewozy.php?usun=2",
+      "status": 200,
+      "bytes": 1655
+    },
+    {
+      "page": "przewozy.php?usun=3",
+      "status": 200,
+      "bytes": 1547
+    },
+    {
+      "page": "przewozy.php?usun=4",
+      "status": 200,
+      "bytes": 1421
+    },
+    {
+      "page": "formularz przewozy.php->przewozy.php [post]",
+      "status": 200,
+      "bytes": 1509,
+      "fields": {
+        "zadanie": "Test",
+        "data": "2024-01-15"
+      }
+    }
+  ],
+  "checked_at": "2026-10-06 18:49:42"
+}

@@ -1,0 +1,29 @@
+{
+  "password": "Gry&KomputErowE",
+  "db": "gry",
+  "required_files": [
+    "Czarodziejka.jpg",
+    "gry.php",
+    "kalipso.jpg",
+    "katedra.jpg",
+    "krokodyl.jpg",
+    "kwerendy.txt",
+    "Mag.jpg",
+    "NieznanyLad.jpg",
+    "Persja.jpg",
+    "przeglądarka.txt",
+    "styl.css",
+    "WyprawaNaKsiezyc.jpg",
+    "zamczysko.jpg"
+  ],
+  "image_count": null,
+  "pages": [
+    "gry.php"
+  ],
+  "code": "inf03_2025_06_01",
+  "pdf": "inf03_arkusze/inf03_2025_06_01_arkusz.pdf",
+  "sql_files": [
+    "materialy/baza.sql"
+  ],
+  "problems": []
+}

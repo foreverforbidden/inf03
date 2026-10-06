@@ -1,0 +1,265 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 07
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+                                                                              Miejsce na naklejkę z numerem
+Numer PESEL zdającego*                                                          PESEL i z kodem ośrodka
+
+
+
+
+Czas trwania egzaminu: 150 minut.                                                         INF.03-07-25.01-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2025                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL
+          i naklej naklejkę z numerem PESEL i z kodem ośrodka.
+    2.    Na KARCIE OCENY w oznaczonym miejscu przyklej naklejkę z numerem PESEL oraz wpisz:
+          − swój numer PESEL*,
+          − oznaczenie kwalifikacji,
+          − numer zadania,
+          − numer stanowiska.
+    3.    Sprawdź, czy arkusz egzaminacyjny zawiera 6 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    4.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    5.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    6.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    7.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami oraz KARTĘ
+          OCENY na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu
+          nadzorującego.
+    8.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania egzaminu.
+
+                                                                                               Powodzenia!
+* w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+
+
+
+
+Układ graficzny
+© CKE 2023
+Zadanie egzaminacyjne
+
+UWAGA: numer, którym został podpisany arkusz egzaminacyjny (PESEL lub w przypadku jego braku numer
+paszportu) jest w zadaniu nazywany numerem zdającego.
+
+Wykonaj aplikację internetową wyszukiwarki polskich miast, wykorzystując edytor grafiki rastrowej, pakiet
+XAMPP oraz edytor zaznaczający składnię.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się
+archiwum 7z o nazwie pliki11 zabezpieczone hasłem: @PolSki3Miast@
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego.
+Rozpakowane pliki należy umieścić w tym folderze. Po skończonej pracy wszystkie wyniki należy zapisać
+w tym folderze.
+
+Operacje na bazie danych
+Baza danych zawiera dwie tabele przedstawione na ilustracji 1.
+
+
+
+
+                                       Ilustracja 1. Baza danych
+
+Za pomocą narzędzia phpMyAdmin wykonaj następujące operacje na bazie danych:
+− Utwórz bazę danych o nazwie wykaz, z zestawem polskich znaków (np. utf8_unicode_ci)
+−   Do utworzonej bazy zaimportuj tabele z pliku wykaz.sql z rozpakowanego archiwum
+−   Wykonaj zrzut ekranu po imporcie. Zapisz zrzut w formacie PNG pod nazwą import. Nie kadruj zrzutu.
+    Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+    widoczne elementy wskazujące na poprawnie wykonany import tabel
+−   Wykonaj zapytania SQL działające na bazie wykaz. Zapytania zapisz w pliku kwerendy.txt. Wykonaj
+    zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie PNG i nadaj im nazwy
+    kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora, z widocznym paskiem zadań
+    −   Zapytanie 1: wybierające jedynie nazwy województw, wszystkie litery w nazwach województw są
+        zamienione na małe
+    −   Zapytanie 2: obliczające liczbę miast dla których id_wojewodztwa jest równe jeden
+    −   Zapytanie 3: wybierające jedynie nazwy miast zaczynające się od cząstki „Lu” i odpowiadające im
+        nazwy województw, posortowane alfabetycznie po nazwie miasta. Należy posłużyć się relacją
+    −   Zapytanie 4: wybierające jedynie nazwy województw i odpowiadającą im liczbę miast, które
+        się w nich znajdują. Kolumna z liczbą miast powinna mieć nadany (alias) „Liczba miast”. Należy
+        posłużyć się relacją
+
+
+
+
+                                              Strona 2 z 6
+Grafika
+Przygotowanie pliku z banerem strony (ilustracja 2):
+− Plik mapa_polski.jpg należy wykadrować tak, że widoczna jest jedynie górna część mapy o wysokości
+    270 px
+− Nazwa pliku wynikowego baner.jpg
+
+Przygotowanie faviconu (ilustracja 3 – ramka nie jest częścią obrazu):
+−   Wysokość i szerokość 192 px
+−   Tło przezroczyste
+−   Obraz wypełnia litera M koloru czerwonego zapisana dowolną czcionką szeryfową
+−   Litera M wypełnia cały obraz, przynajmniej w jednej z osi (pionowej lub poziomej)
+−   Nazwa fav.png
+
+
+
+
+                           Ilustracja 2. Grafika baner.jpg
+                                                                                        Ilustracja 3.
+                                                                                          Favicon
+Witryna internetowa
+
+
+
+
+                                Ilustracja 4. Wygląd witryny internetowej
+
+Cechy witryny:
+− Składa się ze strony o nazwie index.php
+− Zapisana w języku HTML5
+− Zadeklarowany polski język zawartości witryny
+−   Jawnie zastosowany właściwy standard kodowania polskich znaków
+                                               Strona 3 z 6
+−   Tytuł strony widoczny na karcie przeglądarki: „Wyszukiwarka miast”
+−   Arkusz stylów w pliku o nazwie style.css prawidłowo połączony z kodem strony
+−   Favicon o nazwie fav.png widoczny na karcie przeglądarki
+−   Podział strony na bloki: kontener zawartości, a w nim blok nagłówkowy, poniżej dwa bloki lewe jeden
+    pod drugim i obok blok prawy. Podział zrealizowany za pomocą semantycznych znaczników sekcji
+    języka HTML5 tak, aby po uruchomieniu w przeglądarce wygląd układu bloków był zgodny z ilustracją 4
+−   Zawartość bloku nagłówkowego: obraz z pliku baner.jpg z tekstem alternatywnym „Polska”
+−   Zawartość bloku lewego-górnego:
+     −   Nagłówek czwartego stopnia o treści „Podaj początek nazwy miasta”
+     −   Formularz wysyłający dane do tego samego pliku metodą bezpieczną, o polach
+        − Pole edycyjne
+        − Przycisk „Szukaj” wysyłający dane formularza do skryptu
+−   Zawartość bloku prawego:
+     −   Nagłówek pierwszego stopnia o treści „Wyniki wyszukiwania miast z uwzględnieniem filtra:”
+    − Efekt działania skryptu
+−   Zawartość bloku lewego-dolnego:
+     −   Paragraf (akapit) zawierający napis „Egzamin INF.03”
+     −   Paragraf z napisem „Autor: ”, dalej wstawiony numer zdającego
+
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie style.css. Cechy formatowania CSS
+działające na stronie:
+ − Domyślne dla wszystkich selektorów: krój czcionki Helvetica
+ − Dla ciała strony: kolor tła LightSalmon, wyrównanie tekstu do środka
+ − Dla bloku lewego-górnego: szerokość 30%, wysokość 400 px
+ − Dla bloku lewego-dolnego: kolor tła DarkSalmon, szerokość 30%, wysokość 100 px
+ − Dla bloku prawego: kolor tła DarkSalmon, szerokość 70%, wysokość 500 px, paski przewijania
+     widoczne tylko w przypadku, gdy zawartość nie mieści się
+ − Dla selektora obrazu: szerokość 100%
+ − Jedynie dla paragrafu ze skryptu wyświetlającego tekst filtra (na ilustracji 5 przykładowym tekstem filtra
+     jest „Po”): czcionka pochylona o rozmiarze 200%, marginesy wewnętrzne 10 px
+−   Gdy kursor myszy znajdzie się na paragrafie filtra jego kolor czcionki zmienia się na GhostWhite
+−   Dla selektora tabeli i selektora komórek tabeli (bez nagłówkowych): obramowanie linią kropkowaną
+    o grubości 1 px i kolorze Maroon
+−   Dodatkowo dla selektora tabeli: szerokość 70%, marginesy zewnętrzne automatycznie wyliczane przez
+    przeglądarkę
+
+Uwaga: styl CSS obrazu, tabeli i komórki tabeli należy zdefiniować wyłącznie przy pomocy selektora tych
+znaczników. Jest to uwarunkowane projektem późniejszej rozbudowy witryny.
+
+Skrypt połączenia z bazą
+W tabeli 1 zamieszczono wybrane funkcje języka PHP. Wymagania dotyczące skryptu:
+−   Napisany w języku PHP
+−   Należy stosować znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim
+−   Łączy się z serwerem bazodanowym na localhost, użytkownik root bez hasła, baza danych o nazwie
+    wykaz
+
+                                                Strona 4 z 6
+−   Skrypt sprawdza czy z formularza zostały wysłane dane i jeżeli tak to wykonuje czynności:
+    −   Wyświetla w paragrafie wyszukiwany filtr, który został przesłany z formularza
+    −   Wysyła do bazy danych zmodyfikowane zapytanie 3, w ten sposób że wybierane są miasta
+        rozpoczynające się od cząstki przesłanej przez formularz
+    − Tworzy tabelę z wierszem składającym się z komórek nagłówkowych: „Miasto” , „Województwo”
+    − Wyświetla zwrócone miasta i województwa w osobnych wierszach tabeli – patrz ilustracja 5
+−   Na końcu zamykane jest połączenie z serwerem
+
+
+
+
+             Ilustracja 5. Działanie skryptu, w polu edycyjnym formularza zapisano „Po”
+
+
+Tabela 1. Wybór funkcji języka PHP do obsługi bazy MySQL i MariaDB
+            Funkcje biblioteki mysqli                            Zwracana wartość
+ mysqli_connect(serwer, użytkownik,              id połączenia lub FALSE, gdy niepowodzenie
+ hasło, nazwa_bazy)
+ mysqli_select_db(id_polaczenia,                 TRUE/FALSE w zależności od stanu operacji
+ nazwa_bazy)
+ mysqli_error(id_polaczenia)                     Tekst komunikatu błędu
+ mysqli_close(id_polaczenia)                     TRUE/FALSE w zależności od stanu operacji
+ mysqli_query(id_polaczenia,                     Wynik zapytania
+ zapytanie)
+ mysqli_fetch_row(wynik_zapytania)               Tablica numeryczna odpowiadająca wierszowi
+                                                 zapytania
+ mysqli_fetch_array(wynik_zapytania)             Tablica zawierająca kolejny wiersz z podanych
+                                                 w wyniku zapytania lub FALSE, jeżeli nie ma więcej
+                                                 wierszy w wyniku zapytania
+ mysqli_num_rows(wynik_zapytania)                Liczba wierszy w podanym zapytaniu
+ mysqli_num_fields(wynik_zapytania)              Liczba kolumn w podanym zapytaniu
+ isset($zmienna)                                 Sprawdzenie, czy $zmienna istnieje
+
+
+
+
+                                               Strona 5 z 6
+Tabela 2: Wybrane funkcje na napisach w MariaDB
+             Funkcja                                                Opis
+ LOWER                             function converts a string to lower-case.
+ UPPER                             function converts a string to upper-case.
+ LCASE                             function converts a string to lower-case.
+ UCASE                             function converts a string to upper-case.
+
+
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego, powinny znajdować się pliki: baner.jpg,
+fav.png, import.png, index.php, kw1.png, kw2.png, kw3.png, kw4.png, kwerendy.txt, przeglądarka.txt,
+style.css, ewentualnie inne przygotowane pliki. Po nagraniu płyty sprawdź poprawność jej odczytu. Opisz
+płytę numerem zdającego i pozostaw zapakowaną w pudełku na stanowisku wraz z arkuszem
+egzaminacyjnym.
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie podlegać będzie 5 rezultatów:
+   −   operacje na bazie danych,
+   −   zawartość witryny internetowej,
+   −   działanie witryny internetowej,
+   −   styl CSS witryny internetowej,
+   −   skrypt połączenia z bazą.
+
+
+
+
+                                              Strona 6 z 6
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD opisaną numerem PESEL                                   ,
+której jakość nagrania została przeze mnie sprawdzona.
+
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD, opisana numerem PESEL zdającego.
+
+
+                                                               ……………………………........…
+                                                               Czytelny podpis Przewodniczącego ZN
+

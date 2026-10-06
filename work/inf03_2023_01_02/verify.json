@@ -1,0 +1,61 @@
+{
+  "code": "inf03_2023_01_02",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT * FROM pokoje",
+      "ok": true,
+      "rows": 3,
+      "preview": "+----+--------------+------+\n| id | nazwa        | cena |\n+----+--------------+------+\n|  1 | jednoosobowy |  100 |\n|  2 | dwuosobowy   |  170 |\n|  3 | trzyosobowy  |  210 |\n+----+--------------+------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT id_pok, sezon FROM rezerwacje WHERE liczba_dn > 7",
+      "ok": true,
+      "rows": 3,
+      "preview": "+--------+-------+\n| id_pok | sezon |\n+--------+-------+\n|      1 | lato  |\n|      3 | zima  |\n|      1 | zima  |\n+--------+-------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT SUM(liczba_dn) FROM rezerwacje WHERE sezon = 'zima'",
+      "ok": true,
+      "rows": 1,
+      "preview": "+----------------+\n| SUM(liczba_dn) |\n+----------------+\n|             25 |\n+----------------+"
+    },
+    {
+      "n": 4,
+      "sql": "UPDATE rezerwacje SET liczba_dn = 4 WHERE liczba_dn < 4",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    },
+    {
+      "n": 5,
+      "sql": "CREATE USER 'najemca'@'localhost' IDENTIFIED BY 'n@JEM1@!'",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "cennik.php",
+      "status": 200,
+      "bytes": 801
+    },
+    {
+      "page": "index.html",
+      "status": 200,
+      "bytes": 654
+    },
+    {
+      "page": "kalkulator.html",
+      "status": 200,
+      "bytes": 166
+    }
+  ],
+  "checked_at": "2026-10-06 18:40:26"
+}

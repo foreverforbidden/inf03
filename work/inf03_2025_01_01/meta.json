@@ -1,0 +1,23 @@
+{
+  "password": "KuRsyKompuTerow3&",
+  "db": "obuwie",
+  "required_files": [
+    "baner.png",
+    "index.html",
+    "kwerendy.txt",
+    "raty.html",
+    "przeglądarka.txt",
+    "style.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "index.html",
+    "raty.html"
+  ],
+  "code": "inf03_2025_01_01",
+  "pdf": "inf03_arkusze/inf03_2025_01_01_arkusz.pdf",
+  "sql_files": [
+    "materialy/baza.sql"
+  ],
+  "problems": []
+}

@@ -1,0 +1,22 @@
+{
+  "password": "isLandi@",
+  "db": "islandia",
+  "required_files": [
+    "islandia.php",
+    "kwerendy.txt",
+    "obiekty.php",
+    "przeglądarka.txt",
+    "styl.css"
+  ],
+  "image_count": 9,
+  "pages": [
+    "islandia.php",
+    "obiekty.php"
+  ],
+  "code": "inf03_2026_06_01",
+  "pdf": "inf03_arkusze/inf03_2026_06_01_arkusz.pdf",
+  "sql_files": [
+    "materialy/baza1.sql"
+  ],
+  "problems": []
+}

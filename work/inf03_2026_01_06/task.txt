@@ -1,0 +1,310 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 06
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+
+Numer PESEL zdającego*                                                        Miejsce na naklejkę z numerem
+                                                                                PESEL i z kodem ośrodka
+
+         Numer stanowiska
+
+
+
+
+Czas trwania egzaminu: 150 minut                                                         INF.03-06-26.01-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2026                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL*,
+          numer stanowiska i naklej naklejkę** z numerem PESEL i z kodem ośrodka.
+    2.    Sprawdź, czy arkusz egzaminacyjny zawiera 7 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    3.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    4.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    5.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    6.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami wykonania zadania
+          na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu nadzorującego.
+    7.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania
+          egzaminu.
+
+                                                                                               Powodzenia!
+
+ * w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+** w przypadku otrzymania naklejki
+
+
+Układ graficzny
+© CKE 2025
+Zadanie egzaminacyjne
+
+UWAGA: numer, którym został podpisany arkusz egzaminacyjny (PESEL lub w przypadku jego braku numer
+paszportu) jest w zadaniu nazywany numerem zdającego.
+
+Wykonaj aplikację internetową portalu do diagnostyki online, wykorzystując edytor grafiki rastrowej, pakiet
+XAMPP oraz edytor zaznaczający składnię.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się
+archiwum 7z o nazwie pliki9-1 zabezpieczone hasłem: *ZdroWia!!!
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego. Po
+skończonej pracy wszystkie wyniki należy zapisać w tym folderze.
+
+Operacje na bazie danych
+Baza danych zawiera połączone relacją trzy tabele przedstawione na ilustracji 1. Pole zakazna przyjmuje
+wartość T, gdy choroba jest zakaźna oraz N – w przeciwnym wypadku.
+
+
+
+
+                                        Ilustracja 1. Baza danych
+
+Za pomocą narzędzia phpMyAdmin wykonaj następujące operacje na bazie danych:
+−   Utwórz bazę danych o nazwie choroby, z zestawem polskich znaków (np. utf8_polish_ci)
+−   Z rozpakowanego archiwum zaimportuj tabele z pliku choroby.sql do utworzonej bazy
+−   Wykonaj zrzut ekranu po imporcie. Zapisz zrzut w formacie PNG pod nazwą import. Nie kadruj zrzutu.
+    Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+    widoczne elementy wskazujące na poprawnie wykonany import tabel
+−   Wykonaj zapytania SQL działające na bazie choroby. Zapytania zapisz w pliku kwerendy.txt. Wykonaj
+    zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie PNG i nadaj im
+    nazwy kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora z widocznym paskiem
+    zadań
+      −   Zapytanie 1: wybierające jedynie nazwy chorób zakaźnych, posortowane rosnąco według nazwy
+      −   Zapytanie 2: wybierające jedynie identyfikatory i nazwy dla wszystkich chorób
+      −   Zapytanie 3: wybierające jedynie nazwy objawów dla choroby o id 5. Należy posłużyć się relacją
+      −   Zapytanie 4: wybierające jedynie nazwy chorób oraz wyliczoną dla nich liczbę objawów
+          zgrupowane dla każdej choroby zakaźnej. Należy posłużyć się relacją n..m.
+
+
+
+
+                                               Strona 2 z 7
+Grafika
+
+
+
+
+                             Ilustracja 2. Grafika z napisem ZDROWIA
+
+Wykonaj grafikę zdrowia.png o cechach:
+−   Wysokość 100 px
+−   Tło przeźroczyste
+−   Zawartością jest tekst ZDROWIA zapisany wielkimi literami, dowolną czcionką bezszeryfową
+−   Tekst ma wysokość 100 px i wypełnia w pionie całą grafikę. W poziomie należy przyciąć grafikę do
+    szerokości napisu. Szerokość ta będzie uzależniona od rodzaju dobranej czcionki.
+
+Witryna internetowa
+
+
+
+
+               Ilustracja 3. Wygląd witryny internetowej. Kursor na drugim odnośniku
+
+Cechy witryny:
+   − Składa się ze strony o nazwie zdrowie.php
+   − Zapisana w języku HTML5
+    −   Zadeklarowany polski język zawartości witryny
+    −   Jawnie zastosowany właściwy standard kodowania polskich
+        znaków
+    −   Tytuł strony „Wykaz chorób”
+    −   Arkusz stylów w pliku o nazwie styl.css prawidłowo połączony
+        z kodem strony
+    −   Podział strony na bloki zrealizowany za pomocą semantycznych
+        znaczników bloków języka HTML5 tak, aby po uruchomieniu
+        w przeglądarce układ bloków na stronie był zgodny z ilustracją  Ilustracja 4. Układ bloków
+        4
+    −   Zawartość bloku nagłówkowego: nagłówek pierwszego stopnia o treści „Informacja o chorobach
+        w Polsce”
+    −   Zawartość bloku nawigacyjnego:
+          − Odnośnik do strony https://szpitale.pl/ o treści „Szpitale”
+                                                Strona 3 z 7
+         −   Odnośnik do strony https://www.przychodnie.pl/ o treści „Przychodnie”
+         −   Odnośnik do strony https://www.nfz.gov.pl/ o treści „NFZ”
+         −   Wszystkie odnośniki otwierają się w nowym oknie przeglądarki
+   −   Zawartość bloku głównego: blok sekcji lewej i blok sekcji prawej
+   −   Zawartość bloku sekcji lewej:
+         −   Nagłówek drugiego stopnia o treści „Choroby zakaźne”
+         −   Lista numerowana (uporządkowana) wypełniona skryptem 1
+   −   Zawartość bloku sekcji prawej:
+         − Nagłówek drugiego stopnia o treści „Objawy chorób”
+         −   Formularz wysyłający dane metodą bezpieczną do tego samego pliku, z elementami:
+             − Lista rozwijana wypełniona skryptem 2
+            − Przycisk o treści „Sprawdź” wysyłający dane z formularza do skryptu 3
+         − Blok w którym umieszczony jest efekt działania skryptu 3
+   −   Zawartość stopki: paragraf o treści „Stronę opracował: ”, dalej wstawiony numer zdającego
+   −   Poza blokami znajduje się obraz zdrowia.png z tekstem alternatywnym „Życzymy zdrowia!”
+
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie styl.css. W tabeli 2 i 3 zawarto pomoc
+do niektórych właściwości CSS. Cechy formatowania CSS, działające na stronie:
+    − Domyślnie dla wszystkich selektorów: krój czcionki Trebuchet MS, w przypadku braku sans-serif
+    − Wspólne dla bloku nagłówkowego, nawigacyjnego i stopki: kolor tła #FF8F00, marginesy
+       wewnętrzne 10 px, wyrównanie tekstu do prawej strony
+    − Wspólne dla bloków sekcji lewej i prawej: szerokość 50%, wysokość 400 px
+    − Dodatkowo kolor tła dla bloku sekcji lewej to #FFF8E1, dla bloku sekcji prawej to #FFECB3
+    − Dla selektora odnośnika: kolor czcionki #FFECB3, jedynie margines zewnętrzny lewy 70 px, czcionka
+       o rozmiarze 180%, bez podkreślenia
+    − Gdy kursor znajdzie się na odnośniku jego kolor czcionki zmienia się na biały i dodawane jest
+       podkreślenie
+    − Dla selektora obrazu: zawsze na wierzchu, pozycjonowanie na stronie - przesunięcie względem
+       rodzica: 100 px od lewej krawędzi i 500 px od góry, element ten jest usuwany z normalnego
+       przepływu dokumentu
+    − Dla bloku, w którym umieszczony jest skrypt 3: obramowanie linią kropkowaną o szerokości 1 px i
+       kolorze czarnym, marginesy wewnętrzne 30 px, marginesy zewnętrzne: góra 50 px, prawy 180 px,
+       dół 0, lewy 50 px
+   −   Rozmiar czcionki dla selektorów span: drugiego 120%, czwartego 240%, piątego 150%, siódmego
+       160%, dziewiątego 130%, dziesiątego 190%. Należy wykonać za pomocą przeznaczonej do tego
+       pseudoklasy
+
+Uwaga: styl CSS odnośnika i obrazu należy zdefiniować wyłącznie przy pomocy selektora tego znacznika.
+Jest to uwarunkowane projektem późniejszej rozbudowy witryny.
+
+
+
+
+                                               Strona 4 z 7
+Skrypt połączenia z bazą
+W tabeli 1 zamieszczono wybrane funkcje PHP do obsługi bazy danych. Wymagania dotyczące skryptów:
+− Napisane w języku PHP
+− Należy stosować znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim
+− Łączą się z serwerem bazodanowym na localhost, użytkownik root bez hasła, baza danych o nazwie
+    choroby
+− Na końcu działania skrypt zamyka połączenie z serwerem
+
+Skrypt 1:
+−    Wysyła do bazy danych zapytanie 1
+−    W każdym elemencie listy umieszcza zwrócone zapytaniem pole rekordu
+
+Skrypt 2, ilustracja 5:
+−    Wysyła do bazy danych zapytanie 2
+−    Każdym zwróconym rekordem wypełnia opcje listy w ten sposób, że identyfikator jest przypisany do
+     atrybutu wartości opcji, a nazwa jest treścią opcji
+
+Skrypt 3, wykonywany tylko wtedy, gdy formularz wysłał dane, ilustracja 6:
+− Wysyła do bazy danych zmodyfikowane zapytanie 3 w ten sposób, że w warunku podany jest
+    identyfikator wysłany przez formularz
+− Każdy zwrócony zapytaniem objaw choroby zapisuje w znaczniku span w ten sposób, że przed i po
+    objawie jest spacja
+
+
+
+
+    Ilustracja 5.               Ilustracja 6. Blok sekcji prawej po zadziałaniu skryptu
+
+
+
+
+                                             Strona 5 z 7
+Tabela 1. Wybór funkcji języka PHP do obsługi bazy MySQL i MariaDB
+            Funkcje biblioteki mysqli                            Zwracana wartość
+ mysqli_connect(serwer, użytkownik,              id połączenia lub FALSE, gdy niepowodzenie
+ hasło, nazwa_bazy)
+ mysqli_select_db(id_polaczenia,                 TRUE/FALSE w zależności od stanu operacji
+ nazwa_bazy)
+ mysqli_error(id_polaczenia)                     Tekst komunikatu błędu
+ mysqli_close(id_polaczenia)                     TRUE/FALSE w zależności od stanu operacji
+ mysqli_query(id_polaczenia,                     Wynik zapytania
+ zapytanie)
+ mysqli_fetch_row(wynik_zapytania)               Tablica numeryczna odpowiadająca wierszowi
+                                                 zapytania
+ mysqli_fetch_array(wynik_zapytania)             Tablica zawierająca kolejny wiersz z podanych
+                                                 w wyniku zapytania lub FALSE, jeżeli nie ma więcej
+                                                 wierszy w wyniku zapytania
+ mysqli_num_rows(wynik_zapytania)                Liczba wierszy w podanym zapytaniu
+ mysqli_num_fields(wynik_zapytania)              Liczba kolumn w podanym zapytaniu
+ isset($zmienna)                                 TRUE/FALSE w zależności od tego, czy $zmienna
+                                                 istnieje
+
+Tabela 2. Pseudoklasa :nth-child języka CSS
+The :nth-child(n) selector matches every element that is the nth child of its parent. n can be a number,
+a keyword (odd or even), or a formula (like an + b). Example:
+h1:nth-child(2) { color: red; }
+
+Tabela 3. Pozycjonowanie elementów na stronie za pomocą właściwości position języka CSS
+ static       normalne (domyślne) pozycjonowanie elementu
+ relative     pozwala przesunąć element w inne miejsce w stosunku do położenia pierwotnego
+ absolute     pozwala przesunąć element w inne miejsce względem rodzica tego elementu (względem
+              bloku lub względem strony); element tak pozycjonowany jest usuwany z normalnego
+              przepływu dokumentu
+ fixed        pozwala przesunąć element w inne miejsce zawsze względem krawędzi okna przeglądarki;
+              element tak pozycjonowany jest usuwany z normalnego przepływu dokumentu
+ sticky       łączy cechy pozycjonowania relative i fixed; początkowo relative , kiedy element przekroczy
+              określony próg przewijania (np. górną krawędź okna przeglądarki), staje się fixed
+ parametrami przesunięcia są własności: left, top, right, bottom
+
+Tabela 4. Semantic Elements in HTML
+       Tag                                                 Description
+ <article>         Defines independent, self-contained content
+ <aside>           Defines content aside from the page content
+ <details>         Defines additional details that the user can view or hide
+ <figcaption>      Defines a caption for a <figure> element
+ <figure>          Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+ <footer>          Defines a footer for a document or section
+ <header>          Specifies a header for a document or section
+ <main>            Specifies the main content of a document
+ <mark>            Defines marked/highlighted text
+ <nav>             Defines navigation links
+ <section>         Defines a section in a document
+ <summary>         Defines a visible heading for a <details> element
+ <time>            Defines a date/time
+
+
+
+
+                                                 Strona 6 z 7
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego, powinny znajdować się pliki: import.png,
+kw1.png, kw2.png, kw3.png, kw4.png, kwerendy.txt, przeglądarka.txt, styl.css, zdrowia.png, zdrowie.php,
+ewentualnie inne przygotowane pliki. Po nagraniu płyty sprawdź poprawność jej odczytu. Opisz płytę
+numerem zdającego i pozostaw zapakowaną w pudełku na stanowisku wraz z arkuszem egzaminacyjnym.
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie podlegać będzie 5 rezultatów:
+   − operacje na bazie danych,
+   −   zawartość witryny internetowej,
+   −   działanie witryny internetowej,
+   −   styl CSS witryny internetowej,
+   −   skrypt połączenia z bazą.
+
+
+
+
+                                              Strona 7 z 7
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD/DVD opisaną numerem
+
+PESEL                              , której jakość nagrania została przeze mnie sprawdzona.
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD/DVD, opisana numerem PESEL
+zdającego.
+
+                                                               ……………………………........…
+                                                               Czytelny podpis Przewodniczącego ZN
+

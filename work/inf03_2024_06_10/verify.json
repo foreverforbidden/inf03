@@ -1,0 +1,44 @@
+{
+  "code": "inf03_2024_06_10",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT COUNT(*), pensja FROM pracownicy GROUP BY pensja ORDER BY pensja DESC",
+      "ok": true,
+      "rows": 7,
+      "preview": "+----------+--------+\n| COUNT(*) | pensja |\n+----------+--------+\n|        1 |   8000 |\n|        2 |   6000 |\n|        1 |   5050 |\n|        3 |   5000 |\n|        2 |   4700 |\n|        3 |   4000 |"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT pracownicy.imie, pracownicy.nazwisko, stanowiska.nazwa FROM pracownicy JOIN stanowiska ON pracownicy.stanowiska_id = stanowiska.id WHERE pracownicy.staz > 10",
+      "ok": true,
+      "rows": 4,
+      "preview": "+-----------+---------------+-----------+\n| imie      | nazwisko      | nazwa     |\n+-----------+---------------+-----------+\n| Krzysztof | Dobromilski   | Dyrektor  |\n| Ewa       | Nowak         | Kadrowa   |\n| Joanna    | Trojanowska   | Kierownik |\n| Konrad    | Grzegorzewski | Kierownik |\n+-----------+---------------+-----------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT nazwisko, pensja FROM pracownicy WHERE staz BETWEEN 10 AND 20",
+      "ok": true,
+      "rows": 5,
+      "preview": "+---------------+--------+\n| nazwisko      | pensja |\n+---------------+--------+\n| Nowak         |   5000 |\n| Trojanowska   |   6000 |\n| Nowacki       |   5050 |\n| Grzegorzewski |   6000 |\n| Trębosz       |   4000 |\n+---------------+--------+"
+    },
+    {
+      "n": 4,
+      "sql": "ALTER TABLE stanowiska ADD minPensja INT",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "pracownicy.html",
+      "status": 200,
+      "bytes": 2328
+    }
+  ],
+  "checked_at": "2026-10-06 18:42:51"
+}

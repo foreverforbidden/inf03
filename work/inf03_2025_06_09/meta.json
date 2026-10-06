@@ -1,0 +1,25 @@
+{
+  "password": "Remon&Tow@nie+",
+  "db": "remonty",
+  "required_files": [
+    "cegla.jpg",
+    "kontakt.html",
+    "kwerendy.txt",
+    "przeglądarka.txt",
+    "styl.css",
+    "tapeta_lewa.png",
+    "tapeta_prawa.png",
+    "zlecenia.php"
+  ],
+  "image_count": null,
+  "pages": [
+    "kontakt.html",
+    "zlecenia.php"
+  ],
+  "code": "inf03_2025_06_09",
+  "pdf": "inf03_arkusze/inf03_2025_06_09_arkusz.pdf",
+  "sql_files": [
+    "materialy/remonty.sql"
+  ],
+  "problems": []
+}

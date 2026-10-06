@@ -1,0 +1,304 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 11
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+
+Numer PESEL zdającego*                                                        Miejsce na naklejkę z numerem
+                                                                                PESEL i z kodem ośrodka
+
+         Numer stanowiska
+
+
+
+
+Czas trwania egzaminu: 150 minut                                                         INF.03-11-26.01-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2026                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL*,
+          numer stanowiska i naklej naklejkę** z numerem PESEL i z kodem ośrodka.
+    2.    Sprawdź, czy arkusz egzaminacyjny zawiera 7 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    3.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    4.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    5.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    6.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami wykonania zadania
+          na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu nadzorującego.
+    7.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania
+          egzaminu.
+
+                                                                                               Powodzenia!
+
+ * w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+** w przypadku otrzymania naklejki
+
+
+Układ graficzny
+© CKE 2025
+Zadanie egzaminacyjne
+
+UWAGA: numer, którym został podpisany arkusz egzaminacyjny (PESEL lub w przypadku jego braku, numer
+paszportu) jest w zadaniu nazywany numerem zdającego.
+
+Wykonaj aplikację internetową portalu kina, wykorzystując pakiet XAMPP oraz edytor zaznaczający składnię.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się
+archiwum 7z o nazwie pliki17 zabezpieczone hasłem: @ktorzy+f1Lmy
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego.
+Po skończonej pracy wszystkie wyniki należy zapisać w tym folderze.
+
+Operacje na bazie danych
+Baza danych zawiera połączone relacją tabele przedstawione na ilustracji 1. Tabela aktorzy zawiera rekordy
+opisujące aktorów oraz nazwę pliku awatara. Tabela filmy zawiera rekordy opisujące produkcje filmowe, pole
+czas_trwania zawiera długość filmu wyrażoną w minutach. Tabela filmy_aktorzy jest realizacją relacji n:m
+pomiędzy tabelami filmy i aktorzy.
+
+
+
+
+                                         Ilustracja 1. Baza danych
+
+Za pomocą narzędzia phpMyAdmin wykonaj następujące operacje na bazie danych:
+   −   Utwórz bazę danych o nazwie kino, z zestawem polskich znaków (np. utf8_unicode_ci)
+   −   Z rozpakowanego archiwum zaimportuj do utworzonej bazy dane z pliku kino.sql
+   −   Wykonaj zrzut ekranu po imporcie. Zapisz zrzut w formacie PNG pod nazwą import. Nie kadruj
+       zrzutu. Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie
+       powinny być widoczne elementy wskazujące na poprawnie wykonany import tabel
+   −   Wykonaj zapytania SQL działające na bazie kino. Zapytania zapisz w plikukwerendy.txt. Wykonaj
+       zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie JPEG i nadaj im
+       nazwy kw1, kw2, kw3, kw4, kw5. Zrzuty powinny obejmować cały ekran monitora z widocznym
+       paskiem zadań
+       −   Zapytanie 1: wybierające jedynie identyfikator, tytuł, rok produkcji oraz czas trwania, dla filmów
+           które trwają nie krócej niż 100 minut
+       −   Zapytanie 2: wybierające jedynie imię, nazwisko i nazwę pliku awatara aktora, którego
+           identyfikator to 3
+       −   Zapytanie 3: wybierające wszystkie dane o aktorach, sortując je według nazwiska i imienia
+           alfabetycznie (rosnąco)
+       −   Zapytanie 4: wybierające jedynie identyfikatory, tytuły oraz rok produkcji filmów, w których gra
+           aktor z identyfikatorem 3. Należy posłużyć się relacją
+       −   Zapytanie 5: wybierające id aktora oraz zliczające liczbę filmów, alias „liczba_filmow”, w których
+           grał każdy aktor, pogrupowane ze względu na identyfikator aktora
+
+                                                Strona 2 z 7
+Witryna internetowa
+
+
+
+
+       Ilustracja 2. Wygląd strony w pliku index.php, kursor znajduje się na drugim awatarze.
+
+
+Witryna internetowa składa się z plików index.php oraz aktor.php. Ich wygląd przedstawiono na ilustracjach
+2 i 4.
+
+Cechy wspólne dla obu plików:
+   − Zapisane w języku HTML5
+   −   Zadeklarowany polski język zawartości witryny
+   −   Jawnie zastosowany właściwy standard kodowania polskich
+       znaków
+   −   Arkusz stylów w pliku o nazwie styl.css właściwie połączony
+       z kodem strony
+   −   Podział strony na bloki zrealizowany za pomocą                   Ilustracja 3. Układ bloków
+       semantycznych znaczników bloków języka HTML5 tak, aby po
+       uruchomieniu w przeglądarce układ bloków na stronie był zgodny z ilustracją 3
+   −   Zawartość bloku nagłówkowego 1: nagłówek drugiego stopnia zawierający odnośnik do pliku
+       index.php o treści „KinoTEKA”
+   −   Zawartość bloku nagłówkowego 2: paragraf o treści „W naszej bazie znajdują się najlepsi aktorzy”.
+       Tekst ten jest zapisany w znaczniku semantycznym oznaczającym tekst uwypuklony, formatowany
+       domyślnie jako pochylony
+   −   Zawartość stopki: paragraf o treści „Autor: ”, dalej wstawiony numer zdającego. Numer zdającego jest
+       zapisany w znaczniku semantycznym oznaczającym tekst ważny, formatowany domyślnie jako
+       pogrubiony
+
+Cechy dotyczące pliku index.php:
+   − Tytuł strony widoczny na karcie przeglądarki: „Lista aktorów | KinoTEKA”
+   −   Zawartość bloku głównego:
+       − Nagłówek pierwszego stopnia o treści: „Najlepsi aktorzy tylko w naszym kinie”
+       − Blok wszystkich aktorów wypełniony skryptem 1
+
+
+                                               Strona 3 z 7
+Cechy dotyczące pliku aktor.php:
+   −   Tytuł strony widoczny na karcie przeglądarki: „Informacje o aktorze | KinoTEKA”
+   −   Zawartość bloku głównego:
+       − Blok wszystkich aktorów wypełniony skryptem 2
+       − Efekt działania skryptu 3
+
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym w pliku o nazwie styl.css. Cechy formatowania CSS,
+działające na stronie:
+   −   Domyślne formatowanie wszystkich selektorów: krój czcionki „Gill Sans MT”, a w przypadku jej braku
+       „Calibri”
+   −   Dla selektora ciała strony: szerokość 90%, marginesy zewnętrzne górny i dolny 0, lewy i prawy
+       automatycznie wyliczone przez przeglądarkę
+   −   Dla bloku nagłówkowego 1: szerokość 40%
+   −   Dla bloku nagłówkowego 2: szerokość 60% oraz wyrównanie tekstu do prawej strony
+   −   Dla bloku wszystkich aktorów: marginesy zewnętrzne górny i dolny 0, lewy i prawy automatyczne,
+   −   Dla bloku pojedynczego aktora na stronie index.php, generowanego skryptem 1: szerokość 15 em,
+       tekst wyśrodkowany, bloki są wyświetlane obok siebie
+   −   Dla bloku pojedynczego aktora na stronie aktor.php, generowanego skryptem 2: szerokość 25 em,
+       tekst wyśrodkowany
+   −   Dla selektora obrazu: szerokość 90%, zaokrąglenie obramowania 50%
+   −   Dla selektora paragrafu znajdującego się w bloku pojedynczego aktora: rozmiar czcionki 125%
+   −   Dla selektora odnośnika: kolor czcionki czarny, brak podkreślenia
+   −   Gdy kursor znajdzie się na odnośniku: kolor czcionki #E30613
+
+UWAGA: Styl CSS ciała strony, obrazu, paragrafu oraz odnośnika należy zdefiniować wyłącznie przy pomocy
+selektorów odpowiadających tym znacznikom. Jest to uwarunkowane projektem późniejszej rozbudowy
+witryny.
+
+Skrypt połączenia z bazą
+W tabeli 1 zamieszczono wybrane funkcje PHP do obsługi bazy danych. Wymagania dotyczące skryptów:
+   −   Napisane w języku PHP
+   −   Należy stosować znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim
+   −   Łączą się z serwerem bazodanowym na localhost, użytkownik root bez hasła, baza danych o nazwie
+       kino
+   −   Na końcu skrypt zamyka połączenie z bazą
+
+UWAGA: zapis za pomocą nawiasów <> oznacza dane pobrane z bazy danych, np. <IMIE> oznacza daną
+pobraną z kolumny imie tabeli aktorzy
+
+Skrypt 1, na stronie index.php:
+   −   Wysyła do bazy danych zapytanie 3
+   −   Dla każdego wiersza zwróconego z bazy tworzy blok pojedynczego aktora zawierający:
+       − Obraz, którego źródłem jest plik podany w kolumnie plik_awatara, z tekstem alternatywnym oraz
+          atrybutem title z wartością „<IMIE> <NAZWISKO>” (Ilustracja 2, awatar 2)
+       − Paragraf zawierający tekst „<IMIE> <NAZWISKO>”
+   −   Wygenerowany blok pojedynczego aktora jest odnośnikiem do pliku aktor.php?id=<ID_AKTORA>
+                                           Strona 4 z 7
+Skrypt 2, na stronie aktor.php:
+   −   Korzysta z pola id przesłanego do pliku metodą GET
+   −   Wysyła do bazy danych zapytanie 2 zmodyfikowane w ten sposób, aby uzyskiwać informacje
+       o aktorze z identyfikatorem równym polu id pobranym metodą GET
+   −   Dla zwróconego z bazy wiersza tworzy blok pojedynczego aktora zawierający:
+       − Obraz, którego źródłem jest plik podany w kolumnie plik_awatara, z tekstem alternatywnym oraz
+         atrybutem title z wartością „<IMIE> <NAZWISKO>”
+       − Nagłówek pierwszego stopnia zawierający tekst „<IMIE> <NAZWISKO>”
+
+Skrypt 3, na stronie aktor.php:
+   −   Korzysta z pola id przesłanego do pliku metodą GET
+   −   Wysyła do bazy danych zapytanie 4 zmodyfikowane w taki sposób, że pobiera wyniki dotyczące
+       aktora z identyfikatorem równym polu id pobranym metodą GET
+   −   Jeśli liczba rekordów uzyskanych zapytaniem wynosi 0, wyświetlany jest napis „<IMIE> nie znajduje
+       się na listach obsady znanych nam produkcji.”, gdzie <IMIE> jest imieniem aktora pobranym
+       w skrypcie 2
+   −   W przeciwnym wypadku wyświetlany jest napis „<IMIE> znajduje się na listach obsady <X> znanych
+       nam produkcji.”, gdzie <IMIE> jest imieniem aktora pobranym w skrypcie 2, a <X> oznacza liczbę
+       rekordów uzyskanych zapytaniem 4
+
+
+
+
+                 Ilustracja 4. Wygląd strony aktor.php dla aktora o identyfikatorze 10.
+
+
+
+
+                                              Strona 5 z 7
+Tabela 1. Wybór funkcji języka PHP do obsługi bazy MySQL i MariaDB
+            Funkcje biblioteki mysqli                            Zwracana wartość
+ mysqli_connect(serwer, użytkownik,              id połączenia lub FALSE, gdy niepowodzenie
+ hasło, nazwa_bazy)
+ mysqli_select_db(id_polaczenia,                 TRUE/FALSE w zależności od stanu operacji
+ nazwa_bazy)
+ mysqli_error(id_polaczenia)                     Tekst komunikatu błędu
+ mysqli_close(id_polaczenia)                     TRUE/FALSE w zależności od stanu operacji
+ mysqli_query(id_polaczenia,                     Wynik zapytania
+ zapytanie)
+ mysqli_fetch_row(wynik_zapytania)               Tablica numeryczna odpowiadająca wierszowi
+                                                 zapytania
+ mysqli_fetch_array(wynik_zapytania)             Tablica zawierająca kolejny wiersz z podanych
+                                                 w wyniku zapytania lub FALSE, jeżeli nie ma więcej
+                                                 wierszy w wyniku zapytania
+ mysqli_num_rows(wynik_zapytania)                Liczba wierszy w podanym zapytaniu
+ mysqli_num_fields(wynik_zapytania)              Liczba kolumn w podanym zapytaniu
+ isset($zmienna)                                 TRUE/FALSE w zależności od, tego czy $zmienna
+                                                 istnieje
+
+
+Tabela 2. Semantic Elements in HTML
+       Tag                                              Description
+ <article>      Defines independent, self-contained content
+ <aside>        Defines content aside from the page content
+ <details>      Defines additional details that the user can view or hide
+ <figcaption>   Defines a caption for a <figure> element
+ <figure>       Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+ <footer>       Defines a footer for a document or section
+ <header>       Specifies a header for a document or section
+ <main>         Specifies the main content of a document
+ <mark>         Defines marked/highlighted text
+ <nav>          Defines navigation links
+ <section>      Defines a section in a document
+ <summary>      Defines a visible heading for a <details> element
+ <time>         Defines a date/time
+
+Tabela 3. Metoda GET i odnośniki
+Najpopularniejszy dla metody GET sposób przekazywania parametrów w adresie URL do danego zasobu:
+index.php?lang=pl&param1=2
+
+Przesyłane parametry znajdują się w tablicy globalnej $_GET
+
+
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego powinny znajdować się pliki: aktor.php,
+import.png, index.php, kwerendy.txt, kw1.jpg, kw2.jpg, kw3.jpg, kw4.jpg, kw5.jpg, przeglądarka.txt, styl.css,
+pliki z awatarami, ewentualnie inne przygotowane pliki. Po nagraniu płyty sprawdź poprawność jej odczytu.
+Opisz płytę numerem zdającego i pozostaw zapakowaną w pudełku na stanowisku wraz z arkuszem
+egzaminacyjnym.
+
+
+
+
+                                                Strona 6 z 7
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie podlegać będzie 5 rezultatów:
+   − operacje na bazie danych,
+   − zawartość witryny internetowej,
+   −   działanie witryny internetowej,
+   −   styl CSS witryny internetowej,
+   −   skrypty połączenia z bazą.
+
+
+
+
+                                         Strona 7 z 7
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD/DVD opisaną numerem
+
+PESEL                              , której jakość nagrania została przeze mnie sprawdzona.
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD/DVD, opisana numerem PESEL
+zdającego.
+
+                                                               ……………………………........…
+                                                               Czytelny podpis Przewodniczącego ZN
+

@@ -1,0 +1,288 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 11
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+                                                                              Miejsce na naklejkę z numerem
+Numer PESEL zdającego*                                                          PESEL i z kodem ośrodka
+
+
+
+
+Czas trwania egzaminu: 150 minut.                                                         INF.03-11-25.06-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2025                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL
+          i naklej naklejkę z numerem PESEL i z kodem ośrodka.
+    2.    Na KARCIE OCENY w oznaczonym miejscu przyklej naklejkę z numerem PESEL oraz wpisz:
+          − swój numer PESEL*,
+          − oznaczenie kwalifikacji,
+          − numer zadania,
+          − numer stanowiska.
+    3.    Sprawdź, czy arkusz egzaminacyjny zawiera 6 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    4.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    5.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    6.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    7.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami oraz KARTĘ
+          OCENY na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu
+          nadzorującego.
+    8.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania egzaminu.
+
+                                                                                               Powodzenia!
+* w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+
+
+
+
+Układ graficzny
+© CKE 2023
+Zadanie egzaminacyjne
+
+UWAGA: numer, którym został podpisany arkusz egzaminacyjny (PESEL lub w przypadku jego braku numer
+paszportu) jest w zadaniu nazywany numerem zdającego.
+
+Wykonaj aplikację internetową portalu sprzedaży opon samochodowych, wykorzystując edytor grafiki
+rastrowej, pakiet XAMPP oraz edytor zaznaczający składnię.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się
+archiwum 7z o nazwie pliki8 zabezpieczone hasłem: #OpoNki&+
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego. Po
+skończonej pracy wszystkie wyniki należy zapisać w tym folderze.
+
+Operacje na bazie danych
+Baza danych zawiera połączone relacją tabele przedstawione na ilustracji 1. Tabela zamowienie zawiera
+informacje o kliencie (FK: id), jego zamówionych oponach (FK: nr_kat) i ich ilości
+
+
+
+
+                                       Ilustracja 1. Baza danych
+
+Za pomocą narzędzia phpMyAdmin wykonaj następujące operacje na bazie danych:
+− Utwórz bazę danych o nazwie opony, z zestawem polskich znaków (np. utf8_polish_ci)
+− Z rozpakowanego archiwum zaimportuj tabele z pliku opona.sql do utworzonej bazy
+− Wykonaj zrzut ekranu po imporcie. Zapisz zrzut w formacie PNG pod nazwą import. Nie kadruj zrzutu.
+    Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+    widoczne elementy wskazujące na poprawnie wykonany import tabel
+− Wykonaj zapytania SQL działające na bazie opony. Zapytania zapisz w pliku kwerendy.txt. Wykonaj
+    zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie PNG i nadaj im nazwy
+    kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora z widocznym paskiem zadań
+     − Zapytanie 1: wybierające pierwsze 10 rekordów z najtańszymi oponami (wszystkie pola)
+     − Zapytanie 2: wybierające jedynie producenta, model, sezon i cenę opony o numerze katalogowym 9
+     − Zapytanie 3: wybierające jedynie identyfikator zamówienia i ilość oraz odpowiadające im model
+        i cenę opony. Wybierany jest tylko jeden losowy rekord. Należy zastosować relację
+     − Zapytanie 4: aktualizujące cenę opon letnich obniżając ją o 25%
+
+
+
+
+                                              Strona 2 z 6
+                                         Witryna internetowa
+
+
+
+
+   Ilustracja 2. Wygląd witryny internetowej. Stan cen przed wykonaniem zapytania 4, strona jest
+                         odświeżana dane w sekcji 2 mogą ulegać zmianie
+
+Cechy grafiki opona.png:
+   − Wykonana na podstawie grafiki opona.jpg i zapisana w formacie PNG
+   − Tło przezroczyste
+   − Przeskalowana z zachowaniem proporcji do wysokości 250 px
+
+Cechy witryny:
+   − Składa się ze strony o nazwie opony.php
+   − Zapisana w języku HTML5
+   − Zadeklarowany polski język zawartości witryny
+   − Jawnie zastosowany właściwy standard kodowania polskich
+      znaków
+   − Tytuł strony „OPONY”
+   − Arkusz stylów w pliku o nazwie styl.css prawidłowo
+      połączony z kodem strony
+   − Podział strony na bloki zrealizowany za pomocą                        Ilustracja 3. Układ bloków
+      semantycznych znaczników bloków języka HTML5 tak, aby po
+      uruchomieniu w przeglądarce układ bloków na stronie był zgodny z ilustracją 3
+   − Zawartość bloku głównego: blok boczny, sekcja 1 i sekcja 2
+   − Zawartość bloku bocznego:
+       − Efekt działania skryptu 1
+       − Paragraf z odnośnikiem o treści „więcej ofert” prowadzący do strony https://opona.pl/
+   − Zawartość sekcji 1:
+       − Grafika opona.png z tekstem alternatywnym o treści: „Opona”
+       − Nagłówek drugiego stopnia o treści: „Opona dnia”
+       − Efekt działania skryptu 2
+   − Zawartość sekcji 2:
+       − Nagłówek drugiego stopnia o treści: „Najnowsze zamówienie”
+       − Efekt działania skryptu 3
+   − Zawartość stopki: paragraf o treści „Stronę wykonał: ”, dalej wstawiony numer zdającego
+
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie styl.css. Cechy formatowania CSS,
+działające na stronie:
+    − Domyślnie dla wszystkich selektorów: krój czcionki Trebuchet MS, w przypadku braku sans-serif
+    − Dla bloku bocznego: kolor tła #C5CAE9, szerokość 40%, wysokość 600 px, paski przewijania tylko w
+        przypadku przepełnienia bloku
+    − Dla obu sekcji: szerokość 60%, wysokość 300 px
+    − Dodatkowo kolor tła sekcji 1: #9FA8DA, sekcji 2: #7986CB
+                                             Strona 3 z 6
+   −   Dla bloku stopki: kolor tła #283593, biały kolor czcionki, marginesy wewnętrzne 20 px
+   −   Dla klasy CSS opona, przypisanej do bloków generowanych w skrypcie 1: kolor tła #9FA8DA,
+       marginesy zewnętrzne 40 px, obramowanie linią kropkowaną o szerokości 2 px i kolorze #283593,
+       zaokrąglenie rogów 30 px
+   −   Dla selektora obrazu: opływanie tekstem po prawej stronie (obraz jest po lewej stronie), marginesy
+       wewnętrzne 20 px
+   −   Dla selektora nagłówka drugiego stopnia: wyrównanie tekstu do środka, marginesy zewnętrzne 0 px,
+       marginesy wewnętrzne 15 px
+   −   Dla selektora nagłówka trzeciego stopnia: kolor tła #7986CB, biały kolor czcionki, rozmiar czcionki
+       140%
+
+Uwaga: styl CSS obrazu oraz nagłówka drugiego i trzeciego stopnia należy zdefiniować wyłącznie przy
+pomocy selektora tego znacznika. Jest to uwarunkowane projektem późniejszej rozbudowy witryny.
+
+Skrypt połączenia z bazą
+W tabeli 1 zamieszczono wybrane funkcje PHP do obsługi bazy danych. Wymagania dotyczące skryptów:
+− Napisane w języku PHP
+− Należy stosować znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim
+− Strona jest odświeżana co 10 sekund
+− Skrypty łączą się z serwerem bazodanowym na localhost, użytkownik root bez hasła, baza danych
+    o nazwie opony
+− Na końcu zamykane jest połączenie z bazą
+
+Skrypt 1 (znaki <> oznaczają pola z bazy)
+− Wysyła do bazy danych zapytanie 1
+− Dla każdego zwróconego zapytaniem rekordu wyświetla blok z przypisaną klasą CSS opona, w którym
+    znajdują się:
+     − W przypadku opony letniej obraz lato.png, w przypadku zimowej obraz zima.png, w przypadku
+         uniwersalnej obraz uniwer.png
+     − Nagłówek czwartego stopnia o treści „Opona: <producent> <model>”
+     − Nagłówek trzeciego stopnia o treści „Cena: <cena>”
+
+Skrypt 2 (znaki <> oznaczają pola z bazy)
+− Wysyła do bazy zapytanie 2
+− Wyświetla w nagłówku drugiego stopnia treść „<producent> model <model>”
+− W kolejnym nagłówku drugiego stopnia treść „Sezon: <sezon>”
+− W kolejnym nagłówku drugiego stopnia treść „Tylko <cena> zł!”
+
+Skrypt 3 (znaki <> oznaczają pola z bazy)
+− Wysyła do bazy zapytanie 3
+− Wyświetla w nagłówku drugiego stopnia treść „<id_zam> <ilosc> sztuki modelu <model>”
+− W kolejnym nagłówku drugiego stopnia treść „Wartość zamówienia <wartość> zł”, gdzie <wartość>
+    oznacza wyliczoną wartość na podstawie zwróconych z bazy ilości i ceny.
+
+
+
+
+                                              Strona 4 z 6
+Tabela 1. Wybór funkcji języka PHP do obsługi bazy MySQL i MariaDB
+            Funkcje biblioteki mysqli                              Zwracana wartość
+ mysqli_connect(serwer, użytkownik,              id połączenia lub FALSE, gdy niepowodzenie
+ hasło, nazwa_bazy)
+ mysqli_select_db(id_polaczenia,                 TRUE/FALSE w zależności od stanu operacji
+ nazwa_bazy)
+ mysqli_error(id_polaczenia)                     Tekst komunikatu błędu
+ mysqli_close(id_polaczenia)                     TRUE/FALSE w zależności od stanu operacji
+ mysqli_query(id_polaczenia,                     Wynik zapytania
+ zapytanie)
+ mysqli_fetch_row(wynik_zapytania)               Tablica    numeryczna     odpowiadająca   wierszowi
+                                                 zapytania
+ mysqli_fetch_array(wynik_zapytania)             Tablica zawierająca kolejny wiersz z podanych
+                                                 w wyniku zapytania lub FALSE, jeżeli nie ma więcej
+                                                 wierszy w wyniku zapytania
+ mysqli_num_rows(wynik_zapytania)                Liczba wierszy w podanym zapytaniu
+ mysqli_num_fields(wynik_zapytania)              Liczba kolumn w podanym zapytaniu
+ isset($zmienna)                                 TRUE/FALSE w zależności od tego, czy $zmienna
+                                                 istnieje
+
+RAND() SQL function
+Using SQL to Retrieve a Random Record
+To retrieve a random record from a database using SQL, you can use the following query:
+SELECT column_name FROM table_name ORDER BY RAND() LIMIT 1;
+
+Basic guide on using header('refresh') in PHP
+header('refresh: time; url=url_address');
+header('refresh: time;');
+time: Specifies the time in seconds after which the redirection will occur.
+url_address: The URL to which the user will be redirected
+Important!
+Don’t use url_address while refresh current URL
+Ensure that header('refresh') is called before any other output on the page, such as echo, print, etc.
+
+Tabela 2. Semantic Elements in HTML
+      Tag                                                 Description
+ <article>         Defines independent, self-contained content
+ <aside>           Defines content aside from the page content
+ <details>         Defines additional details that the user can view or hide
+ <figcaption>      Defines a caption for a <figure> element
+ <figure>          Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+ <footer>          Defines a footer for a document or section
+ <header>          Specifies a header for a document or section
+ <main>            Specifies the main content of a document
+ <mark>            Defines marked/highlighted text
+ <nav>             Defines navigation links
+ <section>         Defines a section in a document
+ <summary>         Defines a visible heading for a <details> element
+ <time>            Defines a date/time
+
+
+
+
+                                                 Strona 5 z 6
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego, powinny znajdować się pliki: import.png,
+kw1.png, kw2.png, kw3.png, kw4.png, kwerendy.txt, lato.png, opona.png, opony.php, przeglądarka.txt,
+styl.css, uniwer.png, zima.png, ewentualnie inne przygotowane pliki. Po nagraniu płyty sprawdź poprawność
+jej odczytu. Opisz płytę numerem zdającego i pozostaw zapakowaną w pudełku na stanowisku wraz
+z arkuszem egzaminacyjnym.
+
+
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie podlegać będzie 5 rezultatów:
+   − operacje na bazie danych,
+   − zawartość witryny internetowej,
+   − działanie witryny internetowej,
+   − styl CSS witryny internetowej,
+   − skrypt połączenia z bazą.
+
+
+
+
+                                              Strona 6 z 6
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD opisaną numerem PESEL                                   ,
+której jakość nagrania została przeze mnie sprawdzona.
+
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD, opisana numerem PESEL zdającego.
+
+
+                                                               ……………………………........…
+                                                               Czytelny podpis Przewodniczącego ZN
+

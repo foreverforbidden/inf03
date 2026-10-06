@@ -1,0 +1,273 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 04
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+                                                                              Miejsce na naklejkę z numerem
+Numer PESEL zdającego*                                                          PESEL i z kodem ośrodka
+
+
+
+
+Czas trwania egzaminu: 150 minut.                                                         INF.03-04-25.06-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2025                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL
+          i naklej naklejkę z numerem PESEL i z kodem ośrodka.
+    2.    Na KARCIE OCENY w oznaczonym miejscu przyklej naklejkę z numerem PESEL oraz wpisz:
+          − swój numer PESEL*,
+          − oznaczenie kwalifikacji,
+          − numer zadania,
+          − numer stanowiska.
+    3.    Sprawdź, czy arkusz egzaminacyjny zawiera 5 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    4.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    5.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    6.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    7.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami oraz KARTĘ
+          OCENY na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu
+          nadzorującego.
+    8.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania egzaminu.
+
+                                                                                               Powodzenia!
+* w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+
+
+
+
+Układ graficzny
+© CKE 2023
+Zadanie egzaminacyjne
+
+UWAGA: numer, którym został podpisany arkusz egzaminacyjny (PESEL lub w przypadku jego braku numer
+paszportu) jest w zadaniu nazywany numerem zdającego.
+
+Wykonaj aplikację internetową portalu dla firmy przewozowej, wykorzystując edytor grafiki rastrowej, pakiet
+XAMPP oraz edytor zaznaczający składnię.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się
+archiwum 7z o nazwie pliki11 zabezpieczone hasłem: *PrzEwozy!
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego.
+Rozpakowane pliki należy umieścić w tym folderze. Po skończonej pracy wszystkie wyniki należy zapisać
+w tym folderze.
+
+Operacje na bazie danych
+Baza danych zawiera dwie tabele przedstawione na ilustracji 1. Tabela osoby zawiera informacje o osobach
+pracujących w firmie przewozowej. Tabela zadania zawiera opis zadania zaplanowanego do wykonania
+przez osobę oraz ostateczny termin jego wykonania.
+
+
+
+
+                                        Ilustracja 1. Baza danych
+
+Za pomocą narzędzia phpMyAdmin wykonaj następujące operacje na bazie danych:
+− Utwórz bazę danych o nazwie przewozy, z zestawem polskich znaków (np. utf8_unicode_ci)
+− Z rozpakowanego archiwum zaimportuj tabelę z pliku baza.sql do utworzonej bazy
+− Wykonaj zrzut ekranu po imporcie. Zapisz zrzut w formacie PNG pod nazwą import. Nie kadruj zrzutu.
+    Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+    widoczne elementy wskazujące na poprawnie wykonany import tabel
+− Wykonaj zapytania SQL działające na bazie przewozy. Zapytania zapisz w pliku kwerendy.txt. Wykonaj
+    zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie PNG i nadaj im nazwy
+    kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora z widocznym paskiem zadań
+      − Zapytanie 1: wybierające jedynie id_zadania, zadanie i datę z tabeli zadania
+      − Zapytanie 2: wstawiające do tabeli zadania rekord z danymi: „spotkanie firmowe”, dnia
+          „2024-05-10” dla osoby o id równym 1
+      − Zapytanie 3: usuwające rekord o id_zadania równym 2 z tabeli zadania
+      − Zapytanie 4: wybierające jedynie imię, nazwisko i numer telefonu osoby oraz odpowiadające im
+          zadanie i datę z tabeli zadania. Należy posłużyć się relacją
+
+
+
+
+                                               Strona 2 z 5
+                                           Witryna internetowa
+
+
+
+
+          Ilustracja 2. Wygląd witryny internetowej. Kursor myszy na trzecim wierszu tabeli
+
+Cechy grafiki:
+   − Grafika o nazwie auto w formacie PNG, przygotowana na podstawie grafiki auto1.jpg
+   − Tło przezroczyste
+   − Przeskalowana z zachowaniem proporcji do szerokości 400 px
+   − Na boku samochodu wklejone napisy z pliku napisy.jpg dopasowane do wielkości i położenia
+      samochodu, zgodnie z ilustracją 2 (należy zastosować perspektywę)
+
+Cechy witryny:
+   − Składa się ze strony o nazwie przewozy.php
+   − Zapisana w języku HTML5
+   − Zadeklarowany polski język zawartości witryny
+   − Jawnie zastosowany właściwy standard kodowania polskich
+      znaków
+   − Tytuł strony „Firma Przewozowa” widoczny na karcie
+      przeglądarki
+   − Arkusz stylów w pliku o nazwie styles.css prawidłowo
+      połączony z kodem strony
+   − Podział strony na bloki zrealizowany za pomocą
+      semantycznych znaczników bloków języka HTML5 tak, aby po
+      uruchomieniu w przeglądarce układ bloków na stronie był
+      zgodny z ilustracją 3                                                 Ilustracja 3. Układ bloków
+   − Zawartość bloku nagłówkowego: nagłówek pierwszego
+      stopnia o treści: „Firma przewozowa Półdarmo”
+   − Zawartość bloku nawigacyjnego: odnośniki o treści kwerenda1, kwerenda2, kwerenda3, kwerenda4
+      do plików zawierających zrzuty ekranu kwerend
+   − Zawartość bloku głównego: sekcja lewa i prawa
+   − Zawartość sekcji lewej:
+       − Nagłówek drugiego stopnia o treści: „Zadania do wykonania”
+       − Tabela o trzech kolumnach i wierszu z komórkami nagłówkowymi o treści: „Zadanie do
+           wykonania”, „Data realizacji”, „Akcja”. Tabela jest wypełniona i modyfikowana przez skrypt 1. Jest
+           dodatkowo modyfikowana przez skrypt 2
+                                                Strona 3 z 5
+       −  Formularz wysyłający dane do tego samego pliku metodą bezpieczną, obsługiwany przez skrypt
+          2. Zawiera:
+            − Pole edycyjne, poprzedzone etykietą „Zadanie do wykonania: ”
+            − Pole edycyjne przeznaczone do wpisania daty, poprzedzone etykietą „Data realizacji: ”
+            − Przycisk „Dodaj” wysyłający dane z formularza
+   −   Zawartość sekcji prawej:
+       − Obraz auto.png z tekstem alternatywnym o treści: „auto firmowe”
+       − Nagłówek trzeciego stopnia o treści: „Nasza specjalność”
+       − Lista punktowana (nieuporządkowana) zawierająca elementy: „Przeprowadzki”, „Przewóz mebli”,
+          „Przesyłki gabarytowe”, „Wynajem pojazdów”, „Zakupy towarów”
+   −   Zawartość stopki: paragraf o treści „Stronę wykonał: ”, dalej wstawiony numer zdającego
+
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie styles.css. Cechy formatowania CSS
+działające na stronie:
+    − Dla selektora ciała strony: kolor tła #FFCC99, krój czcionki Garamond, wyrównanie tekstu do środka
+    − Dla bloku nagłówkowego i stopki: kolor tła DarkGreen, biały kolor czcionki, marginesy wewnętrzne:
+        30 px, rozmiar czcionki 140%
+    − Dla bloku nawigacyjnego:       kolor tła MediumSeaGreen, odstępy między wyrazami: 90 px,
+        marginesy wewnętrzne 20 px
+    − Dla sekcji lewej: szerokość 70%, wysokość 500 px
+    − Dla sekcji prawej: kolor tła MediumSeaGreen, szerokość 30%, wysokość 500 px, wyrównanie tekstu
+        do lewej
+    − Dla selektora tabeli: obramowanie linią kreskowaną o grubości 1 px i kolorze DarkGreen, tabela
+        wyśrodkowana, marginesy zewnętrzne górny i dolny 30 px
+    − Dla komórek tabeli i komórek nagłówkowych: marginesy wewnętrzne 5 px
+    − Dla selektora odnośnika: biały kolor czcionki
+    − Dla selektora listy punktowanej: typ elementu okrąg
+    − W momencie, gdy kursor myszy znajdzie się na wierszu tabeli jego kolor tła zmienia się na DarkGreen,
+        a kolor czcionki na biały
+
+Uwaga: styl CSS ciała strony, tabeli, odnośnika i listy należy zdefiniować wyłącznie przy pomocy selektora
+tego znacznika. Jest to uwarunkowane projektem późniejszej rozbudowy witryny.
+
+
+Skrypt połączenia z bazą
+W tabeli 1 zamieszczono wybrane funkcje PHP do obsługi bazy danych. Wymagania dotyczące skryptów:
+   − Napisane w języku PHP
+   − Należy stosować znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim
+   − Łączą się z serwerem bazodanowym na localhost, użytkownik root bez hasła, baza danych o nazwie
+      przewozy
+   − Skrypt 1
+        − Wysyła do bazy danych zapytanie 1
+        − Kolejne zwrócone zapytaniem pola zadanie i data są wyświetlane w kolejnych wierszach tabeli
+            w dwóch pierwszych kolumnach
+        − Trzecia kolumna tabeli zawiera odnośnik o treści Usuń. Jego wybranie powoduje usunięcie
+            rekordu z bazy za pomocą zmodyfikowanego zapytania 3, w ten sposób że odnośnik dotyczy
+            id_zadania dla wiersza tabeli w którym jest umieszczony
+   − Skrypt 2
+        − dane pobrane z formularza wstawia do bazy za pomocą zmodyfikowanego zapytania 2. Zadanie
+            jest przypisane do osoby o id równym 1
+   − Na końcu działania skrypt zamyka połączenie z serwerem
+
+
+
+
+                                               Strona 4 z 5
+Tabela 1. Wybór funkcji języka PHP do obsługi bazy MySQL i MariaDB
+            Funkcje biblioteki mysqli                            Zwracana wartość
+ mysqli_connect(serwer, użytkownik,              id połączenia lub FALSE, gdy niepowodzenie
+ hasło, nazwa_bazy)
+ mysqli_select_db(id_polaczenia,                 TRUE/FALSE w zależności od stanu operacji
+ nazwa_bazy)
+ mysqli_error(id_polaczenia)                     Tekst komunikatu błędu
+ mysqli_close(id_polaczenia)                     TRUE/FALSE w zależności od stanu operacji
+ mysqli_query(id_polaczenia,                     Wynik zapytania
+ zapytanie)
+ mysqli_fetch_row(wynik_zapytania)               Tablica numeryczna odpowiadająca wierszowi
+                                                 zapytania
+ mysqli_fetch_array(wynik_zapytania)             Tablica zawierająca kolejny wiersz z podanych
+                                                 w wyniku zapytania lub FALSE, jeżeli nie ma więcej
+                                                 wierszy w wyniku zapytania
+ mysqli_num_rows(wynik_zapytania)                Liczba wierszy w podanym zapytaniu
+ mysqli_num_fields(wynik_zapytania)              Liczba kolumn w podanym zapytaniu
+ isset($zmienna)                                 Sprawdzenie, czy $zmienna istnieje
+
+Tabela 2. Semantic Elements in HTML
+
+      Tag                                                Description
+ <article>        Defines independent, self-contained content
+ <aside>          Defines content aside from the page content
+ <details>        Defines additional details that the user can view or hide
+ <figcaption>     Defines a caption for a <figure> element
+ <figure>         Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+ <footer>         Defines a footer for a document or section
+ <header>         Specifies a header for a document or section
+ <main>           Specifies the main content of a document
+ <mark>           Defines marked/highlighted text
+ <nav>            Defines navigation links
+ <section>        Defines a section in a document
+ <summary>        Defines a visible heading for a <details> element
+ <time>           Defines a date/time
+
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego, powinny znajdować się pliki: auto.png,
+import.png, kw1.png, kw2.png, kw3.png, kw4.png, kwerendy.txt, przeglądarka.txt, przewozy.php, styles.css,
+ewentualnie inne przygotowane pliki. Po nagraniu płyty sprawdź poprawność jej odczytu. Opisz płytę
+numerem zdającego i pozostaw zapakowaną w pudełku na stanowisku wraz z arkuszem egzaminacyjnym.
+
+
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie podlegać będzie 5 rezultatów:
+   − operacje na bazie danych,
+   − zawartość witryny internetowej,
+   − działanie witryny internetowej,
+   − styl CSS witryny internetowej,
+   − skrypt połączenia z bazą.
+
+
+
+
+                                                Strona 5 z 5
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD opisaną numerem PESEL                                   ,
+której jakość nagrania została przeze mnie sprawdzona.
+
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD, opisana numerem PESEL zdającego.
+
+
+                                                               ……………………………........…
+                                                               Czytelny podpis Przewodniczącego ZN
+

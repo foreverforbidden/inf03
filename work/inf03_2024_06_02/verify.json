@@ -1,0 +1,51 @@
+{
+  "code": "inf03_2024_06_02",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "INSERT INTO logowanie (id, nick, haslo) SELECT id, 'Jeremi', 'Jer123' FROM uczestnicy WHERE imie = 'Jeremi' AND nazwisko = 'Kowalski'",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    },
+    {
+      "n": 2,
+      "sql": "SELECT FLOOR(AVG(rokUr)) AS `Średni rok urodzenia` FROM uczestnicy",
+      "ok": true,
+      "rows": 1,
+      "preview": "+-----------------------+\n| Średni rok urodzenia  |\n+-----------------------+\n|                  2001 |\n+-----------------------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT uczestnicy.imie, uczestnicy.nazwisko, logowanie.nick, logowanie.haslo FROM uczestnicy JOIN logowanie ON uczestnicy.logowanie_id = logowanie.id WHERE uczestnicy.imie LIKE 'J%'",
+      "ok": true,
+      "rows": 2,
+      "preview": "+---------+----------+--------+--------+\n| imie    | nazwisko | nick   | haslo  |\n+---------+----------+--------+--------+\n| Jolanta | Nowak    | Jolka  | Jol123 |\n| Jeremi  | Kowalski | Jeremi | Jer123 |\n+---------+----------+--------+--------+"
+    },
+    {
+      "n": 4,
+      "sql": "CREATE USER 'uczestnik'@'localhost' IDENTIFIED BY 'Ucz123&'",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    },
+    {
+      "n": 5,
+      "sql": "GRANT SELECT, UPDATE ON chat.uczestnicy TO 'uczestnik'@'localhost'",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "chat.html",
+      "status": 200,
+      "bytes": 2344
+    }
+  ],
+  "checked_at": "2026-10-06 18:41:50"
+}

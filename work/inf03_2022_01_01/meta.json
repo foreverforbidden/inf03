@@ -1,0 +1,24 @@
+{
+  "password": "Wykon@jTo",
+  "db": "baza",
+  "required_files": [
+    "kwerendy.txt",
+    "menu.jpg",
+    "przeglądarka.txt",
+    "restauracja.html",
+    "rezerwacja.php",
+    "styl_1.css",
+    "zad1.jpg"
+  ],
+  "image_count": null,
+  "pages": [
+    "restauracja.html",
+    "rezerwacja.php"
+  ],
+  "code": "inf03_2022_01_01",
+  "pdf": "inf03_arkusze/inf03_2022_01_01_arkusz.pdf",
+  "sql_files": [
+    "materialy/baza.sql"
+  ],
+  "problems": []
+}

@@ -1,0 +1,23 @@
+{
+  "password": "SmoKi-Swi@ta#",
+  "db": "smoki",
+  "required_files": [
+    "kwerendy.txt",
+    "przeglądarka.txt",
+    "smok1.jpg",
+    "smok2.jpg",
+    "smok3.jpg",
+    "smoki.php",
+    "styl.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "smoki.php"
+  ],
+  "code": "inf03_2025_06_08",
+  "pdf": "inf03_arkusze/inf03_2025_06_08_arkusz.pdf",
+  "sql_files": [
+    "materialy/bazasmoki.sql"
+  ],
+  "problems": []
+}

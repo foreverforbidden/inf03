@@ -1,0 +1,21 @@
+{
+  "password": "$ZdobyWcy&",
+  "db": "zdobywcy",
+  "required_files": [
+    "kwerendy.txt",
+    "logo.png",
+    "styles.css",
+    "zdobywcy.php",
+    "przeglądarka.txt"
+  ],
+  "image_count": null,
+  "pages": [
+    "zdobywcy.php"
+  ],
+  "code": "inf03_2025_01_09",
+  "pdf": "inf03_arkusze/inf03_2025_01_09_arkusz.pdf",
+  "sql_files": [
+    "materialy/baza.sql"
+  ],
+  "problems": []
+}

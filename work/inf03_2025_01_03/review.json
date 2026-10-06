@@ -1,0 +1,14 @@
+{
+  "code": "inf03_2025_01_03",
+  "pass": false,
+  "score": "35/36",
+  "fails": [
+    {
+      "item": "Zawartość bloku środkowego: Efekt działania Skryptu 2 (wygląd zgodny z ilustracją 2)",
+      "problem": "kalendarz.php (ok. linia 62): wynik Skryptu 2 jest wypisany w <p>. Selektor p z styl.css (biały kolor, 150%, kursywa) działa na ten paragraf, więc biały tekst na tle GhostWhite jest praktycznie niewidoczny. Na ilustracji 2 tekst „Dnia 2024-01-24 są imieniny...” jest czarny, mały i nieprzechylony.",
+      "fix": "Wypisać wynik Skryptu 2 bez znacznika <p>, np. echo \"Dnia \" . $dataFormularza . \" są imieniny: \" . $wiersz2[0]; Można go też ująć w <div> lub <span>. Nie dodawać reguły dla p w styl.css, bo selektor p ma zostać ogólny."
+    }
+  ],
+  "na": ["zrzuty ekranu (import, kw1-kw4, parametry_animacji)", "utworzenie bazy i import w phpMyAdmin", "eksport imieniny.csv", "nagranie płyty"],
+  "notes": "Kwerendy, GIF (12 klatek po 350 ms, 500x500), kod HTML, CSS i skrypty PHP są poprawne. verify.json nie zgłasza błędów."
+}

@@ -1,0 +1,26 @@
+{
+  "password": "*HurTowni@Buty$",
+  "db": "obuwie",
+  "required_files": [
+    "but1.png",
+    "but2.png",
+    "but3.png",
+    "but4.png",
+    "index.php",
+    "kwerendy.txt",
+    "przeglądarka.txt",
+    "style.css",
+    "zamow.php"
+  ],
+  "image_count": null,
+  "pages": [
+    "index.php",
+    "zamow.php"
+  ],
+  "code": "inf03_2025_01_04",
+  "pdf": "inf03_arkusze/inf03_2025_01_04_arkusz.pdf",
+  "sql_files": [
+    "materialy/obuwie.sql"
+  ],
+  "problems": []
+}

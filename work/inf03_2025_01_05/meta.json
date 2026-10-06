@@ -1,0 +1,23 @@
+{
+  "password": "SzkoL3Nia%",
+  "db": "firma",
+  "required_files": [
+    "baner.jpg",
+    "index.html",
+    "kwerendy.txt",
+    "przeglądarka.txt",
+    "style.css",
+    "szkolenia.php"
+  ],
+  "image_count": null,
+  "pages": [
+    "index.html",
+    "szkolenia.php"
+  ],
+  "code": "inf03_2025_01_05",
+  "pdf": "inf03_arkusze/inf03_2025_01_05_arkusz.pdf",
+  "sql_files": [
+    "materialy/firma.sql"
+  ],
+  "problems": []
+}

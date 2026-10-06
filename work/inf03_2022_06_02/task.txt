@@ -1,0 +1,269 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Oznaczenie kwalifikacji: INF.03
+Numer zadania: 02
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+                                                                              Miejsce na naklejkę z numerem
+Numer PESEL zdającego*                                                          PESEL i z kodem ośrodka
+
+
+
+
+Czas trwania egzaminu: 150 minut.                                                        INF.03-02-22.06-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2022                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL
+          i naklej naklejkę z numerem PESEL i z kodem ośrodka.
+    2.    Na KARCIE OCENY w oznaczonym miejscu przyklej naklejkę z numerem PESEL oraz wpisz:
+          − swój numer PESEL*,
+          − oznaczenie kwalifikacji,
+          − numer zadania,
+          − numer stanowiska.
+    3.    Sprawdź, czy arkusz egzaminacyjny zawiera 5 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    4.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    5.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    6.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    7.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami oraz KARTĘ
+          OCENY na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu
+          nadzorującego.
+    8.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania egzaminu.
+
+                                                                                               Powodzenia!
+* w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+
+
+
+
+Układ graficzny
+© CKE 2020
+Zadanie egzaminacyjne
+
+UWAGA: katalog z rezultatami pracy oraz płytę należy opisać numerem, którym został podpisany arkusz,
+czyli numerem PESEL lub w przypadku jego braku numerem paszportu.
+
+Wykonaj aplikację internetową portalu stacji paliw, wykorzystując pakiet XAMPP oraz edytor zaznaczający
+składnię.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się archiwum
+ZIP o nazwie pliki2.zip zabezpieczone hasłem: PaLiWo5&
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego,
+którym został podpisany arkusz. Rozpakowane pliki należy umieścić w tym folderze. Po skończonej pracy
+wszystkie wyniki należy zapisać w tym folderze.
+
+Operacje na bazie danych
+Do wykonania operacji na bazie należy wykorzystać tabelę samochody z polami: id (klucz główny), marka,
+model, rocznik, kolor, stan.
+
+
+
+
+                                         Obraz 1. Baza danych
+
+Za pomocą narzędzia phpMyAdmin wykonaj operacje na bazie danych:
+  ‒ Utwórz bazę danych o nazwie samochody
+  ‒ Do bazy samochody zaimportuj tabele z pliku baza.sql z rozpakowanego archiwum
+  ‒ Wykonaj zrzut ekranu po imporcie. Zrzut zapisz w formacie PNG i nazwij import. Nie kadruj zrzutu.
+     Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+     widoczne elementy wskazujące na poprawnie wykonany import tabel
+  ‒ Wykonaj zapytania SQL działające na bazie samochody. Zapytania zapisz w pliku kwerendy.txt.
+     Wykonaj zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie JPEG
+     i nadaj im nazwy kw1, kw2, kw3, kw4, kw5. Zrzuty powinny obejmować cały ekran monitora
+     z widocznym paskiem zadań.
+      ‒ Zapytanie 1: wybierające jedynie pola marka i rocznik z tabeli samochody dla samochodów koloru
+          niebieskiego
+      ‒ Zapytanie 2: zliczające ile jest samochodów marki Toyota lub Opel, których stan jest bardzo dobry
+      ‒ Zapytanie 3: aktualizujące wartość pola stan na „dobry” w tabeli samochody dla samochodów
+          starszych niż 2004 rok
+      ‒ Zapytanie 4: tworzące użytkownika jan na localhost z hasłem janKowalski1@
+      ‒ Zapytanie 5: nadające użytkownikowi jan prawo jedynie do wybierania, wstawiania i aktualizacji
+          danych w tabeli samochody
+
+
+
+
+                                              Strona 2 z 5
+Witryna internetowa
+
+
+
+
+                      Obraz 2. Witryna internetowa, podstrona obliczenia.html
+
+Przygotowanie grafiki:
+   ‒ Pliki home.png i znak.png należy przeskalować z zachowaniem proporcji do szerokości 80 px
+   ‒ Plik samochod.jpg należy zapisać pod tą samą nazwą w formacie PNG z przezroczystym tłem
+
+Cechy witryny:
+   ‒ Składa się ze stron o nazwach stacja.html oraz obliczenia.html zapisanych w języku HTML 5. Obie
+      strony różnią się jedynie blokiem lewym
+
+Cechy wspólne dla obu stron:
+   ‒ Jawnie zastosowany właściwy standard kodowania polskich znaków
+   ‒ Zadeklarowany język dla witryny: polski
+   ‒ Tytuł strony widoczny na karcie przeglądarki: „Stacja paliw”
+   ‒ Arkusz stylów w pliku o nazwie styl2.css prawidłowo połączony z kodem strony
+   ‒ Podział strony na bloki: blok banera, poniżej blok menu, poniżej blok lewy i prawy, na dole stopka.
+      Podział zrealizowany za pomocą znaczników sekcji tak, aby po uruchomieniu w przeglądarce wygląd
+      układu bloków był zgodny z obrazem 2
+   ‒ Zawartość bloku banera: nagłówek pierwszego stopnia o treści „Całodobowa stacja paliw”
+   ‒ Zawartość bloku menu:
+          ‒ Obraz home.png, który jest odnośnikiem do strony stacja.html
+          ‒ Obraz znak.png, który jest odnośnikiem do strony obliczenia.html
+          ‒ Odnośnik do pliku kwerendy.txt o treści: „Pobierz dokumenty”
+   ‒ Zawartość bloku prawego: obraz samochod.png z tekstem alternatywnym „samochód”
+   ‒ Zawartość stopki: akapit (paragraf) o treści: „Stronę opracował: ”, oraz zawierający numer, którym
+      został podpisany arkusz
+
+   Zawartość bloku lewego strony stacja.html:
+   ‒ Nagłówek drugiego stopnia o treści „Godziny otwarcia stacji”
+   ‒ Tabela 3x3, której komórki są wypełnione zgodnie z obrazem 3
+
+
+
+
+                                   Obraz 3. Tabela z pliku stacja.html
+
+
+
+
+                                              Strona 3 z 5
+   Zawartość bloku lewego strony obliczenia.html:
+   ‒ Nagłówek drugiego stopnia o treści „Orientacyjny koszt paliwa”
+   ‒ Pole edycyjne typu numerycznego, z napisem nad polem: „Rodzaj paliwa (1-benzyna, 2-olej
+      napędowy): ”
+   ‒ Pole edycyjne typu numerycznego z napisem nad polem: „Ile litrów?”
+   ‒ Przycisk o treści „OBLICZ”
+
+Styl CSS witryny internetowej
+Cechy formatowania CSS, działające na obu stronach:
+   ‒ Styl CSS zdefiniowany w całości w zewnętrznym pliku o nazwie styl2.css
+   ‒ Domyślne formatowanie wszystkich selektorów: krój czcionki Cambria, wyrównanie tekstu do środka
+   ‒ Wspólne dla bloku banera i stopki: kolor tła rgb 120, 0, 46; biały kolor czcionki, marginesy wewnętrzne
+       5 px, rozmiar czcionki 150%
+   ‒ Dla bloku menu: kolor tła rgb 173, 20, 87; wyrównanie tekstu do lewej strony
+   ‒ Dla bloku lewego: kolor tła Snow; kolor czcionki OliveDrab, szerokość 60%, wysokość 322 px,
+       wyrównanie tekstu do lewej strony
+   ‒ Dla bloku prawego: kolor tła rgb 173, 20, 87; szerokość 40%, wysokość 322 px
+   ‒ Dla obrazu z samochodem: marginesy zewnętrzne 40 px, wewnętrzne 10 px
+   ‒ Gdy kursor myszy znajdzie się na samochodzie pojawia się obramowanie kropkowane o szerokości
+       1 px i kolorze YellowGreen
+   ‒ Dla selektora odnośnika: marginesy wewnętrzne górny i dolny 0 px, lewy i prawy 50 px, kolor czcionki
+       YellowGreen
+   ‒ Dla selektora tabeli i komórki tabeli: obramowanie linią ciągłą o grubości 1 px i kolorze OliveDrab
+   ‒ Dodatkowo dla selektora tabeli: szerokość 90%
+
+Uwaga: style CSS dla odnośnika, tabeli i komórek tabeli należy zdefiniować wyłącznie przy pomocy selektora
+dla danego znacznika. Jest to uwarunkowane projektem późniejszej rozbudowy witryny.
+
+Skrypt
+Wymagania dotyczące skryptu:
+   ‒ Napisany w języku wykonywanym po stronie przeglądarki
+   ‒ Skrypt uruchamia się po wciśnięciu przycisku OBLICZ na stronie obliczenia.html
+   ‒ Skrypt pobiera wartości z obu pól edycyjnych
+   ‒ Następnie oblicza koszt paliwa ze względu na rodzaj i liczbę litrów uwzględniając:
+          ‒ Gdy rodzaj paliwa jest równy 1 – koszt jednego litra paliwa wynosi 4 zł
+          ‒ Gdy rodzaj paliwa jest równy 2 – koszt jednego litra paliwa wynosi 3,5 zł
+          ‒ W każdym innym przypadku koszt paliwa wynosi 0 zł
+   ‒ Następnie skrypt wyświetla wynik działania pod przyciskiem OBLICZ według wzoru: „koszt paliwa:
+       <wartość> zł”, gdzie <wartość> oznacza obliczony wcześniej koszt paliwa.
+
+
+
+
+                                               Strona 4 z 5
+Wybrane pola i metody modelu DOM języka JavaScript
+Wyszukiwanie elementów                           Zmiana elementów
+document.getElementById(id)                      element.innerHTML = "nowa zawartość"
+document.getElementsByTagName(TagName)           element.attribute_name = "nowa
+document.getElementsByClassName(ClassName) wartość"
+document.getElementsByName(ElementName)          element.setAttribute(atrybut,
+                                                 wartosc)
+                                                 element.style.property_name = "nowa
+                                                 wartość"
+
+Operacje na elementach dokumentu
+document.createElement(element)
+document.removeChild(element)
+document.appendChild(element)
+document.replaceChild(element)
+document.write(text)
+
+
+Wybrane zdarzenia HTML
+Zdarzenia myszy                     Zdarzenia klawiatury                 Zdarzenia obiektów
+onclick                             onkeydown                            onload
+ondblclick                          onkeypress                           onscroll onresize
+onmouseover                         onkeyup
+onmouseout
+
+
+
+
+Elementy formularzy                                     Metody i pola obiektu string (JS)
+Ważniejsze typy pola input: button,                     Length indexOf(text) search(text)
+checkbox, number, password, radio, text                 substr(startIndex, endIndex)
+Inne elementy: select, textarea                         replace(textToReplace, newText)
+                                                        toUpperCase()
+                                                        toLowerCase()
+
+
+
+
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowałeś poprawność działania witryny. Umieść go w folderze
+z numerem, którym został podpisany arkusz.
+Nagraj płytę z rezultatami pracy. W folderze z numerem, którym został podpisany arkusz powinny znajdować
+się pliki: home.png, import.png, kw1.jpg, kw2.jpg, kw3.jpg, kw4.jpg, kw5.jpg, kwerendy.txt, obliczenia.html,
+przeglądarka.txt, samochod.png, stacja.html, styl2.css, znak.png, ewentualnie inne przygotowane pliki. Po
+nagraniu płyty sprawdź poprawność jej odczytu. Opisz płytę swoim numerem i pozostaw zapakowaną
+w pudełku na stanowisku wraz z arkuszem egzaminacyjnym.
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie będzie podlegać 5 rezultatów:
+   ‒ operacje na bazie danych,
+   ‒ zawartość witryny internetowej,
+   ‒ działanie witryny internetowej,
+   ‒ styl CSS witryny internetowej,
+   ‒ skrypt.
+
+
+
+
+                                               Strona 5 z 5
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD opisaną numerem PESEL                                      ,
+której jakość nagrania została przeze mnie sprawdzona.
+
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD, opisana numerem PESEL zdającego.
+
+
+                                                                 ………………………………
+                                                                  Czytelny podpis Przewodniczącego ZN
+

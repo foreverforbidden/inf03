@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Sklep - rejestracja</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <aside id="boczny">
+        <img src="obraz.png" alt="promocje">
+        <h2>Sprawdź promocje</h2>
+        <table>
+            <tr><th>co?</th><th>ile taniej?</th></tr>
+            <tr><td>ubrania</td><td>15%</td></tr>
+            <tr><td>buty</td><td>25%</td></tr>
+        </table>
+    </aside>
+    <header id="baner">
+        <h1>Zarejestruj się w sklepie</h1>
+    </header>
+    <main id="glowny">
+        <button onclick="aktywujZakladke(0)">Klient</button>
+        <button onclick="aktywujZakladke(1)">Adres</button>
+        <button onclick="aktywujZakladke(2)">Kontakt</button>
+        <section class="zakladka" id="blok1">
+            <p>Imię</p>
+            <input type="text" placeholder="Wpisz dane..." onblur="zwiekszPasek()">
+            <p>Nazwisko</p>
+            <input type="text" onblur="zwiekszPasek()">
+            <p>Data urodzenia</p>
+            <input type="date" onblur="zwiekszPasek()">
+        </section>
+        <section class="zakladka" id="blok2">
+            <p>Ulica</p>
+            <input type="text" onblur="zwiekszPasek()">
+            <p>Numer</p>
+            <input type="number" onblur="zwiekszPasek()">
+            <p>Miasto</p>
+            <input type="text" onblur="zwiekszPasek()">
+        </section>
+        <section class="zakladka" id="blok3">
+            <p>Numer komórkowy</p>
+            <input type="tel" onblur="zwiekszPasek()">
+            <br>
+            <input type="checkbox" id="rodo"><label for="rodo">Akceptuję RODO</label>
+            <br>
+            <button onclick="zatwierdzDane()">Zatwierdź dane</button>
+        </section>
+    </main>
+    <section id="postep">
+        <section id="pasek"></section>
+    </section>
+    <footer>
+        <h4>Rejestrację do sklepu wykonał: 00000000000</h4>
+    </footer>
+    <script src="skrypt.js"></script>
+</body>
+</html>

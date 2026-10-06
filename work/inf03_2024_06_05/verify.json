@@ -1,0 +1,52 @@
+{
+  "code": "inf03_2024_06_05",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT nazwa FROM marki",
+      "ok": true,
+      "rows": 9,
+      "preview": "+------------+\n| nazwa      |\n+------------+\n| Audi       |\n| BMW        |\n| Volkswagen |\n| Opel       |\n| Ford       |\n| Mercedes   |"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT model, rocznik, przebieg, paliwo, cena, zdjecie FROM samochody WHERE id = 10",
+      "ok": true,
+      "rows": 1,
+      "preview": "+-------+---------+----------+---------+-------+-----------------+\n| model | rocznik | przebieg | paliwo  | cena  | zdjecie         |\n+-------+---------+----------+---------+-------+-----------------+\n| Yaris |    2022 |        0 | Benzyna | 94000 | ToyotaYaris.jpg |\n+-------+---------+----------+---------+-------+-----------------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT marki.nazwa, samochody.model, samochody.rocznik, samochody.cena, samochody.zdjecie FROM samochody JOIN marki ON samochody.marki_id = marki.id WHERE samochody.wyrozniony = 1 LIMIT 4",
+      "ok": true,
+      "rows": 4,
+      "preview": "+-------+----------------+---------+-------+---------------+\n| nazwa | model          | rocznik | cena  | zdjecie       |\n+-------+----------------+---------+-------+---------------+\n| Audi  | A8 TDI QUattro |    2004 | 18900 | AudiA8.jpg    |\n| Audi  | A8             |    2016 | 18900 | AudiA8.jpg    |\n| Opel  | Astra          |    2010 | 11500 | OpelAstra.jpg |\n| Opel  | Corsa          |    2015 | 20000 | OpelCorsa.jpg |\n+-------+----------------+---------+-------+---------------+"
+    },
+    {
+      "n": 4,
+      "sql": "SELECT samochody.model, samochody.cena, samochody.zdjecie FROM samochody JOIN marki ON samochody.marki_id = marki.id WHERE marki.nazwa = 'Audi'",
+      "ok": true,
+      "rows": 4,
+      "preview": "+----------------+-------+------------+\n| model          | cena  | zdjecie    |\n+----------------+-------+------------+\n| A3             | 85500 | AudiA3.jpg |\n| A8 TDI QUattro | 18900 | AudiA8.jpg |\n| A3             | 40500 | AudiA3.jpg |\n| A8             | 18900 | AudiA8.jpg |\n+----------------+-------+------------+"
+    }
+  ],
+  "pages": [
+    {
+      "page": "KupAuto.php",
+      "status": 200,
+      "bytes": 1607
+    },
+    {
+      "page": "formularz KupAuto.php->KupAuto.php [post]",
+      "status": 200,
+      "bytes": 1607,
+      "fields": {
+        "marka": "Test"
+      }
+    }
+  ],
+  "checked_at": "2026-10-06 18:42:49"
+}

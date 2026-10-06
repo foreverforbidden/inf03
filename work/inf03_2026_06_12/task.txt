@@ -1,0 +1,394 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 12
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+
+Numer PESEL zdającego*                                                        Miejsce na naklejkę z numerem
+                                                                                PESEL i z kodem ośrodka
+
+         Numer stanowiska
+
+
+
+
+Czas trwania egzaminu: 150 minut                                                         INF.03-12-26.06-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2026                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL*,
+          numer stanowiska i naklej naklejkę** z numerem PESEL i z kodem ośrodka.
+    2.    Sprawdź, czy arkusz egzaminacyjny zawiera 9 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    3.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    4.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    5.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    6.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami wykonania zadania
+          na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu nadzorującego.
+    7.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania
+          egzaminu.
+
+                                                                                               Powodzenia!
+
+ * w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+** w przypadku otrzymania naklejki
+
+
+Układ graficzny
+© CKE 2025
+Zadanie egzaminacyjne
+
+UWAGA: numer, którym został podpisany arkusz egzaminacyjny (PESEL lub w przypadku jego braku numer
+paszportu) jest w zadaniu nazywany numerem zdającego.
+
+Wykonaj aplikację internetową salonu rowerowego, wykorzystując zainstalowane na komputerze aplikacje.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się
+archiwum 7z o nazwie pliki22 zabezpieczone hasłem {Row3RY}
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego.
+Rozpakowane pliki należy umieścić w tym folderze. Po skończonej pracy wszystkie wyniki należy zapisać
+w tym folderze.
+
+Operacje na bazie danych
+Do wykonania operacji na bazie należy wykorzystać tabele przedstawione na ilustracji 1. Na potrzeby
+zadania model bazy danych został uproszczony. Pole typ w tabeli rowery zawiera wartości: szosowy, górski,
+gravel, elektryczny, miejski, cross, fatbike.
+
+
+
+
+                                       Ilustracja 1. Baza danych
+
+Za pomocą narzędzia phpMyAdmin wykonaj następujące operacje na bazie danych:
+− Utwórz bazę danych o nazwie rowery, z zestawem polskich znaków (np. utf8_unicode_ci)
+−   Do utworzonej bazy zaimportuj tabele z pliku rowery.sql
+−   Wykonaj zrzut ekranu po imporcie. Zapisz zrzut w formacie PNG pod nazwą import. Nie kadruj zrzutu.
+    Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+    widoczne elementy wskazujące na poprawnie wykonany import tabel
+−   Wykonaj zapytania SQL działające na bazie rowery. Zapytania zapisz w pliku kwerendy.txt. Wykonaj
+    zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie PNG i nadaj im nazwy
+    kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora z widocznym paskiem zadań
+       − Zapytanie 1: wybierające jedynie model, rozmiar ramy, rozmiar kół, kolor i cenę z tabeli rowery
+            dla rowerów w typie górski, których cena jest mniejsza lub równa 4500
+       − Zapytanie 2: wybierające jedynie nazwy producentów oraz minimalną, średnią i maksymalną
+            cenę rowerów zgrupowane dla każdego producenta. Kolumnom z cenami należy nadać nazwy
+            (aliasy): „najtańszy”, „średnia cena”, „najdroższy”. Należy posłużyć się relacją
+
+
+                                              Strona 2 z 9
+       −   Zapytanie 3: wybierające jedynie id, model, typ i rozmiar kół rowerów karbonowych (w nazwie
+           modelu zawierają słowo „Carbon”) w rozmiarze ramy L
+       −   Zapytanie 4: aktualizujące cenę rowerów gravelowych (typ: gravel) obniżając ją o 25%
+
+
+Witryna internetowa
+
+
+
+
+           Ilustracja 2. Wygląd strony internetowej, widać dymek dla etykiety „trekking”
+
+Cechy grafiki 1.jpg:
+− Plik 1.jpg należy obrócić wzdłuż osi pionowej oraz przeskalować z zachowaniem proporcji tak, aby jego
+   szerokość wynosiła dokładnie 400 px. Zmodyfikowany obraz jest widoczny na ilustracji 2
+
+Cechy witryny:
+− Składa się ze strony o nazwie index.html
+− Zapisana w języku HTML5
+−   Zadeklarowany polski język zawartości witryny
+−   Jawnie zastosowany właściwy standard kodowania polskich znaków
+−   Tytuł strony widoczny na karcie przeglądarki: „Salon rowerowy”
+−   Arkusz stylów w pliku o nazwie styl.css prawidłowo połączony z kodem
+    strony
+−   Podział strony na bloki: nagłówkowy, główny, boczny, dwa bloki stopki.
+    Podział zrealizowany za pomocą semantycznych znaczników języka HTML
+    5 tak, aby po uruchomieniu w przeglądarce układ bloków był zgodny
+                                                                           Ilustracja 3. Układ bloków
+    z ilustracją 3
+−   Zawartość bloku nagłówkowego:
+          − Pięć obrazów od 1.jpg do 5.jpg. Wszystkie obrazy mają tekst alternatywny „rower”
+                                             Strona 3 z 9
+−   Zawartość bloku głównego:
+          −   Nagłówek pierwszego stopnia o treści „Dobierz rozmiar ramy roweru do wzrostu”
+          −   Nagłówek drugiego stopnia o treści „Wybierz rodzaj roweru”
+          −   Pole opcji, domyślnie zaznaczone, z etykietą „górski z kołami 29”. Znacznik etykiety ma
+              przypisaną klasę klasa_etykiety i podpowiedź „górski z kołami 29” w postaci "dymku"
+          −   Pole opcji z etykietą „szosa”. Znacznik etykiety ma przypisaną klasę klasa_etykiety
+              i podpowiedź „szosa” w postaci "dymku"
+          −   Pole opcji z etykietą „trekking”. Znacznik etykiety ma przypisaną klasę klasa_etykiety
+              i podpowiedź „trekking” w postaci "dymku"
+          −   W jednym momencie można zaznaczyć tylko jedno pole opcji
+          −   Nagłówek drugiego stopnia o treści „Podaj swój wzrost”
+          −   Pole zakresu liczbowego z ustawionymi wartościami: domyślną 150, minimalną 100,
+              maksymalną 220, zmiana wartości na suwaku powoduje wywołanie skryptu 1
+          −   Pole edycyjne typu numerycznego z wartością domyślną 150
+          −   Poniżej przycisk „Sprawdź” z przypisaną klasą klasa_etykiety, którego kliknięcie wywołuje
+              skrypt 2
+          −   Paragraf z wynikiem działania skryptu 2
+−   Zawartość bloku bocznego:
+          − Nagłówek pierwszego stopnia o treści „Polecane firmy”
+          − Paragraf z przypisanymi klasami logo1 i prawa z zawartością „cup”
+          − Paragraf z przypisaną klasą logo2 z zawartością „glass”
+          − Paragraf z przypisanymi klasami logo1 i srodek z zawartością „spoon”
+          − Paragraf z przypisanymi klasami logo2 i prawa z zawartością „teaspoon”
+          − Paragraf z przypisanymi klasami logo1 z zawartością „fork”
+−   Zawartość pierwszego bloku stopki:
+          −  Nagłówek czwartego stopnia o treści „Oferowane typy rowerów”
+          −  Lista punktowana (nieuporządkowana) z elementami: „górskie”, „szosowe”, „miejskie”.
+             Pierwszy element zagnieżdża drugą listę punktowaną z elementami „koła 29 cali”, „koła 26
+             cali”
+−   Zawartość drugiego bloku stopki:
+          −   Nagłówek czwartego stopnia o treści „Informacje”
+          −   Tabela o dwóch wierszach i dwóch kolumnach. W komórkach pierwszego wiersza wstawione:
+              tekst „Autor: ”, numer zdającego; w komórkach drugiego wiersza: tekst „Aktualna data: ” , efekt
+              działania skryptu 3
+
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie styl.css. Cechy formatowania CSS
+działające na stronie:
+−   Dla ciała strony: szerokość 80%, marginesy zewnętrzne automatycznie wyliczane przez przeglądarkę
+−   Dla bloku nagłówkowego: wysokość 200 px, biały kolor tła, wyrównanie tekstu do środka, blok położony
+    zawsze w odległości 0 px od góry względem okna przeglądarki, pozycja ta nie zmienia się nawet po
+    przewinięciu całej strony
+−   Dla bloku głównego: szerokość 60%, wysokość 650 px, jedynie marginesy wewnętrzne prawy i lewy 2%,
+    jedynie margines zewnętrzny górny 200 px
+−   Dla bloku bocznego: szerokość 20%, wysokość 650 px, cień bloku bez przesunięcia (przesunięcie 0 px),
+    z rozmyciem 100 px w kolorze #02220a, jedynie margines zewnętrzny górny 200 px
+                                               Strona 4 z 9
+−   Dla obu bloków stopki: szerokość 50%, wysokość 170 px, kolor tła #02220a, biały kolor czcionki
+−   Dla selektora obrazu: szerokość 16%, marginesy zewnętrzne 8 px, marginesy wewnętrzne 3 px,
+    zaokrąglenie rogów 50%
+−   Dla klasy klasa_etykiety: szerokość 18%, wysokość 60 px, wysokość wiersza (interlinia) 60 px, sposób
+    wyświetlania liniowo-blokowy, kolor tła #02220a, biały kolor czcionki, wyrównanie tekstu do środka,
+    obsłużone przepełnienie elementu – ukryte
+−   W momencie gdy kursor znajdzie się na elemencie z przypisaną klasą klasa_etykiety jego kolor tła
+    zmienia się na ForestGreen
+−   Dla klasy logo1: wielkość czcionki 50 px, tekst przekształcony na wielkie litery, czcionka pochylona
+−   Dla klasy logo2: wielkość czcionki 30 px, podkreślenie, krój czcionki Impact
+−   Dla klasy prawa: wyrównanie tekstu do prawej
+−   Dla klasy srodek: wyrównanie tekstu do środka
+−   Dla selektora listy punktowanej: brak punktora
+
+Uwaga: styl CSS listy punktowanej i obrazu należy zdefiniować wyłącznie przy pomocy selektora tych
+znaczników. Jest to uwarunkowane projektem późniejszej rozbudowy witryny.
+
+Skrypty działające po stronie klienta
+Wymagania dotyczące skryptów:
+−   Należy stosować znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim.
+    Nazewnictwo odzwierciedla cel zastosowania
+
+Skrypt 1:
+−   Wykonywany po zmianie wartości pola zakresu liczbowego (po przesunięciu suwaka)
+−   Pobiera wartość z pola zakresu liczbowego i wpisuje ją do pola edycyjnego
+
+Skrypt 2: wylicza rozmiar ramy i wypisuje informacje na ten temat
+−   Wykonywany po kliknięciu na przycisk „Sprawdź”
+−   Pobiera wartość z pola edycyjnego lub pola zakresu liczbowego (wzrost)
+−   Oblicza rozmiar ramy roweru, w ten sposób, że mnoży wzrost przez współczynnik zależny od typu
+    roweru. Typ roweru pobiera z pól opcji:
+       − Gdy zaznaczono pole „górski z kołami 29” wartość współczynnika wynosi 0,26
+       − Gdy zaznaczono pole „szosa” wartość współczynnika wynosi 0,3
+       − Gdy zaznaczono pole „trekking” wartość współczynnika wynosi 0,28
+−   Następnie dzieli wynik przez 2,54 i zaokrągla do liczby całkowitej
+−   Wyliczony rozmiar ramy wypisuje pod przyciskiem „Sprawdź” w formacie: „Zalecany rozmiar ramy to:
+    <rozmiar> cali", gdzie <rozmiar> oznacza obliczoną wartość
+Skrypt 3:
+−   Wykonywany po załadowaniu strony
+−   Wyświetla aktualną (dzisiejszą) datę w formacie DD.MM.RRRR
+
+
+
+
+                                                Strona 5 z 9
+                               Ilustracja 4. Efekt działania skryptów 1 i 2
+
+
+Tabela 1. Semantic Elements in HTML
+       Tag                                              Description
+ <article>      Defines independent, self-contained content
+ <aside>        Defines content aside from the page content
+ <details>      Defines additional details that the user can view or hide
+ <figcaption>   Defines a caption for a <figure> element
+ <figure>       Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+ <footer>       Defines a footer for a document or section
+ <header>       Specifies a header for a document or section
+ <main>         Specifies the main content of a document
+ <mark>         Defines marked/highlighted text
+ <nav>          Defines navigation links
+ <section>      Defines a section in a document
+ <summary>      Defines a visible heading for a <details> element
+ <time>         Defines a date/time
+
+
+
+
+                                                Strona 6 z 9
+Tabela 2. Wybrane pola i metody modelu DOM języka JavaScript
+           Wyszukiwanie elementów                              Zmiana elementów
+ document.getElementById(id)                   element.innerHTML = "wartość"
+ document.getElementsByTagName(TagName)        element.attribute_name = "wartość"
+ document.getElementsByClassName(ClassName) element.setAttribute(atrybut, wartosc)
+ document.getElementsByName(ElementName)       element.style.property_name = "wartość"
+ document.querySelector(CSSselector)
+ document.querySelectorAll(CSSselector)
+
+     Operacje na elementach dokumentu                           Wybrane właściwości obiektu style
+ document.createElement(element)                    backgroundColor
+ document.removeChild(element)                      color
+ document.appendChild(element)                      fontSize
+ document.replaceChild(element)                     fontStyle = "normal | italic | oblique | initial | inherit"
+ document.write(text)                               fontWeight = "normal | lighter | bold | bolder | value |
+                                                    initial | inherit"
+                                                    listStyleType = "circle| decimal | disc | none | square |
+                                                    initial..."
+Wybrane zdarzenia HTML
+       Zdarzenia myszy                    Zdarzenia klawiatury                   Zdarzenia obiektów
+ onclick                            onkeydown                             onload
+ ondblclick                         onkeypress                            onresize
+ onmouseover                        onkeyup                               onfocusin
+ onmouseout                                                               onfocusout
+                                                                          onchange
+                                                                          oninput
+ Elementy formularzy                                  Metody i pola obiektu string (JS)
+ Ważniejsze typy pola input: button, checkbox,        Length
+ number, password, radio, text, range, file           indexOf(text)
+ Inne elementy: select, textarea                      search(text)
+                                                      lastIndexOf()
+                                                      substr(startIndex, endIndex)
+                                                      replace(textToReplace, newText)
+                                                      toUpperCase()
+                                                      toLowerCase()
+
+Tabela 3. Podstawowe metody JavaScript związane z obiektem Date():
+ getDate()            zwraca dzień miesiąca (wartość z przedziału 1 - 31)
+ getDay()             zwraca dzień tygodnia (0 dla niedzieli, 1 dla poniedziałku, 2 dla wtorku, itd.)
+ getFullYear()        zwraca pełną liczbę reprezentującą rok
+ getHours()           zwraca aktualną godzinę (wartość z przedziału 0 - 23)
+ getMilliseconds()    zwraca milisekundy (wartość z przedziału 0 - 999)
+ getMinutes()         zwraca minuty (wartość z przedziału 0 - 59)
+ getMonth()           zwraca aktualny miesiąc (0 - styczeń, 1 – luty, itp.)
+ getSeconds()         zwraca aktualną liczbę sekund (wartość z przedziału 0 - 59)
+ getTime()            zwraca aktualny czas jako liczbę reprezentującą liczbę milisekund która
+                      upłynęła od godziny 00:00 1 stycznia 1970 roku
+ toDateString()       zwraca datę w postaci tekstowej
+ toLocaleDateString() zwraca datę w postaci tekstu zapisanego w języku ustawionym domyślnie
+                      w systemie operacyjnym użytkownika
+
+
+
+
+                                               Strona 7 z 9
+Tabela 4. Pozycjonowanie elementów na stronie za pomocą właściwości position języka CSS
+ static       Domyślna wartość. Elementy renderowane są w kolejności, w jakiej pojawiają się w obiegu
+              dokumentów
+ relative     Element jest pozycjonowany względem swojej normalnej pozycji
+ absolute     Element jest pozycjonowany względem pierwszego pozycjonowanego (niestatycznego)
+              elementu przodka
+ fixed        Element jest pozycjonowany względem okna przeglądarki
+ sticky       Element jest pozycjonowany na podstawie pozycji przewijania. Element sticky przełącza się
+              między względnym (relative) a stałym (fixed), w zależności od pozycji przewijania. Jest
+              pozycjonowany względnie, aż do osiągnięcia danej pozycji przesunięcia w rzutni - wtedy
+              „blokuje się” na swoim miejscu (jak position: fixed)
+ parametrami przesunięcia są własności: left, top, right, bottom
+
+Wybrane fragmenty pomocy ze strony kodilla.com na temat właściwości CSS display
+Opis: CSS display definiuje sposób wyświetlania elementu.
+Składnia: display: value;
+Spis wartości:
+     Wartość (value)                                 Opis
+ inline                   Wyświetla element w linii (np. <span>)
+ block                    Wyświetla element w bloku (np. <p>)
+ inline-block             Wyświetla element jako kontener liniowo-blokowy
+ none                     Element jest usunięty
+
+Pomoc na temat właściwości box-shadow
+CSS Syntax:
+box-shadow: h-offset v-offset blur spread color inset;
+Property values:
+          Value                                              Description
+ h-offset               Defines the horizontal offset of the shadow. Positive values place the shadow to
+ (required)             the right, negative values to the left.
+ v-offset               Defines the vertical offset of the shadow. Positive values place the shadow
+ (required)             below, negative values above.
+ blur-radius            Defines the blur radius of the shadow. A larger value means a more blurred
+ (optional)             shadow. A value of 0 means a sharp shadow.
+ spread-radius          Defines how much the shadow should expand or contract. Positive values make
+ (optional)             the shadow larger, negative values make it smaller.
+ color                  Defines the color of the shadow. It can be a color name, RGB, RGBA, HSL,
+ (optional)             HSLA, hex, etc.
+ inset                  If specified, the shadow will be an inner shadow (drawn inside the element). By
+ (optional)             default, shadows are outside.
+
+
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przegladarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego, powinny znajdować się pliki: 1.jpg, 2.jpg,
+3.jpg, 4.jpg, 5.jpg, index.html, import.png, kw1.png, kw2.png, kw3.png, kw4.png, kwerendy.txt,
+przegladarka.txt, styl.css ewentualnie inne przygotowane pliki. Po nagraniu płyty sprawdź poprawność jej
+odczytu. Opisz płytę numerem zdającego i pozostaw zapakowaną w pudełku na stanowisku wraz z arkuszem
+egzaminacyjnym.
+
+
+
+
+                                               Strona 8 z 9
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie podlegać będzie 5 rezultatów:
+   − operacje na bazie danych,
+   − zawartość witryny internetowej,
+   −   działanie witryny internetowej,
+   −   styl CSS witryny internetowej,
+   −   skrypty.
+
+
+
+
+                                         Strona 9 z 9
+Wypełnia zdający w przypadku nagranej płyty
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD/DVD z rezultatami wykonania zadania egzaminacyjnego
+
+opisaną przeze mnie numerem PESEL                                         i oświadczam, że jakość nagrania
+
+została przeze mnie sprawdzona.
+
+
+Wypełnia zdający w przypadku nienagranej (pustej) płyty
+
+
+Poświadczam numerem PESEL                                            , że do arkusza nie dołączam płyty
+
+CD/DVD z rezultatami wykonania zadania egzaminacyjnego.
+
+
+Wypełnia Przewodniczący ZN
+
+
+   □ Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD/DVD, opisana numerem
+       PESEL zdającego.
+
+   □ Potwierdzam, że do arkusza egzaminacyjnego nie została dołączona płyta CD/DVD.
+
+                                                          ……………………………………………..
+                                                          Czytelny podpis Przewodniczącego ZN
+

@@ -1,0 +1,25 @@
+{
+  "password": "P@znoKcie?",
+  "db": "paznokcie",
+  "required_files": [
+    "1.jpg",
+    "10.jpg",
+    "kolory.png",
+    "ksztalt.png",
+    "kwerendy.txt",
+    "manicure.jpg",
+    "paznokcie.html",
+    "przeglądarka.txt",
+    "styl.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "paznokcie.html"
+  ],
+  "code": "inf03_2026_01_09",
+  "pdf": "inf03_arkusze/inf03_2026_01_09_arkusz.pdf",
+  "sql_files": [
+    "materialy/paznokcie.sql"
+  ],
+  "problems": []
+}

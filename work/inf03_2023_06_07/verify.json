@@ -1,0 +1,60 @@
+{
+  "code": "inf03_2023_06_07",
+  "pass": true,
+  "fails": [],
+  "warns": [
+    "pominiety (prawdopodobnie zrzut ekranu): dane.jpg",
+    "pominiety (prawdopodobnie zrzut ekranu): kwerenda1.jpg",
+    "pominiety (prawdopodobnie zrzut ekranu): kwerenda2.jpg",
+    "pominiety (prawdopodobnie zrzut ekranu): kwerenda3.jpg",
+    "pominiety (prawdopodobnie zrzut ekranu): kwerenda4.jpg"
+  ],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "INSERT INTO czytelnicy (imie, nazwisko, kod) VALUES ('Ewelina', 'Romanowska', '56677')",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    },
+    {
+      "n": 2,
+      "sql": "SELECT imie, nazwisko FROM czytelnicy ORDER BY nazwisko ASC",
+      "ok": true,
+      "rows": 11,
+      "preview": "+------------+------------+\n| imie       | nazwisko   |\n+------------+------------+\n| Olga       | Domys      |\n| Jadwiga    | Kowal      |\n| Krzysztof  | Kowalski   |\n| Aleksandra | Kucharczyk |\n| zbigniew   | Lasecki    |\n| Janina     | Michalak   |"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT ksiazki.tytul FROM ksiazki JOIN autorzy ON ksiazki.id_autor = autorzy.id WHERE autorzy.nazwisko = 'Sienkiewicz'",
+      "ok": true,
+      "rows": 3,
+      "preview": "+------------------+\n| tytul            |\n+------------------+\n| Quo vadis        |\n| Potop            |\n| Ogniem i mieczem |\n+------------------+"
+    },
+    {
+      "n": 4,
+      "sql": "SELECT autorzy.nazwisko, COUNT(ksiazki.id) AS ile_tytulow FROM autorzy LEFT JOIN ksiazki ON ksiazki.id_autor = autorzy.id GROUP BY autorzy.id, autorzy.nazwisko",
+      "ok": true,
+      "rows": 10,
+      "preview": "+-------------+-------------+\n| nazwisko    | ile_tytulow |\n+-------------+-------------+\n| Kasprowicz  |           2 |\n| Brzechwa    |           2 |\n| Tuwim       |           3 |\n| Korczak     |           0 |\n| Chmielewska |           2 |\n| Gombrowicz  |           3 |"
+    }
+  ],
+  "pages": [
+    {
+      "page": "biblioteka.php",
+      "status": 200,
+      "bytes": 1343
+    },
+    {
+      "page": "formularz biblioteka.php->biblioteka.php [post]",
+      "status": 200,
+      "bytes": 1388,
+      "fields": {
+        "imie": "Test",
+        "nazwisko": "Test",
+        "symbol": "2"
+      }
+    }
+  ],
+  "checked_at": "2026-10-06 18:44:06"
+}

@@ -1,0 +1,22 @@
+{
+  "password": "ChaT_Ch@t",
+  "db": "chat",
+  "required_files": [
+    "chat.html",
+    "Jolka.jpg",
+    "Krzysiek.jpg",
+    "kwerendy.txt",
+    "przeglądarka.txt",
+    "styl.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "chat.html"
+  ],
+  "code": "inf03_2024_06_02",
+  "pdf": "inf03_arkusze/inf03_2024_06_02_arkusz.pdf",
+  "sql_files": [
+    "materialy/baza.sql"
+  ],
+  "problems": []
+}

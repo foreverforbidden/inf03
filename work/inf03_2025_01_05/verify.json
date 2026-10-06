@@ -1,0 +1,49 @@
+{
+  "code": "inf03_2025_01_05",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT Data, Temat FROM szkolenia ORDER BY Data ASC",
+      "ok": true,
+      "rows": 18,
+      "preview": "+------------+-----------------------------------+\n| Data       | Temat                             |\n+------------+-----------------------------------+\n| 2021-09-20 | Podstawy języka C++               |\n| 2021-09-30 | Photoshop dla zaawansowanych      |\n| 2021-10-01 | Podstawy języka Python            |\n| 2021-10-02 | Systemy operacyjne                |\n| 2021-10-07 | Aplikacje Webowe                  |\n| 2021-10-15 | Python dla zaawansowanych         |"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT szkolenia.Data, szkolenia.Temat, trenerzy.Nazwisko, trenerzy.Imie FROM szkolenia JOIN trenerzy ON szkolenia.Id_trenera = trenerzy.Id",
+      "ok": true,
+      "rows": 18,
+      "preview": "+------------+-----------------------------------+-----------------+-----------+\n| Data       | Temat                             | Nazwisko        | Imie      |\n+------------+-----------------------------------+-----------------+-----------+\n| 2021-09-20 | Podstawy języka C++               | Kossakowski     | Mateusz   |\n| 2021-10-01 | Podstawy języka Python            | Duda            | Tomasz    |\n| 2021-09-30 | Photoshop dla zaawansowanych      | Ptak            | Nikodem   |\n| 2021-10-07 | Aplikacje Webowe                  | Przepiórkowska  | Maria     |\n| 2021-10-15 | Python dla zaawansowanych         | Duda            | Tomasz    |\n| 2021-10-02 | Systemy operacyjne                | Królik          | Sebastian |"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT trenerzy.Imie, trenerzy.Nazwisko, COUNT(szkolenia.Id) FROM trenerzy JOIN szkolenia ON trenerzy.Id = szkolenia.Id_trenera GROUP BY trenerzy.Id, trenerzy.Imie, trenerzy.Nazwisko",
+      "ok": true,
+      "rows": 6,
+      "preview": "+-----------+-----------------+---------------------+\n| Imie      | Nazwisko        | COUNT(szkolenia.Id) |\n+-----------+-----------------+---------------------+\n| Tomasz    | Duda            |                   2 |\n| Mateusz   | Kossakowski     |                   3 |\n| Nikodem   | Ptak            |                   3 |\n| Maria     | Przepiórkowska  |                   5 |\n| Sebastian | Królik          |                   3 |\n| Kinga     | Stopyra         |                   2 |"
+    },
+    {
+      "n": 4,
+      "sql": "ALTER TABLE zapisy CHANGE Id_klienta Id_sluchacza INT(11) DEFAULT NULL",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "index.html",
+      "status": 200,
+      "bytes": 542
+    },
+    {
+      "page": "szkolenia.php",
+      "status": 200,
+      "bytes": 1239
+    }
+  ],
+  "checked_at": "2026-10-06 18:44:41"
+}

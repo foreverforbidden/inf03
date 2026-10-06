@@ -1,0 +1,26 @@
+{
+  "password": "#Foto+Foto&",
+  "db": "fotografia",
+  "required_files": [
+    "1.jpg",
+    "10.jpg",
+    "kwerendy.txt",
+    "przeglądarka.txt",
+    "regulamin.html",
+    "style.css",
+    "uslugi.html",
+    "zamowienie.html"
+  ],
+  "image_count": null,
+  "pages": [
+    "regulamin.html",
+    "uslugi.html",
+    "zamowienie.html"
+  ],
+  "code": "inf03_2025_06_05",
+  "pdf": "inf03_arkusze/inf03_2025_06_05_arkusz.pdf",
+  "sql_files": [
+    "materialy/fotografia.sql"
+  ],
+  "problems": []
+}

@@ -1,0 +1,44 @@
+{
+  "code": "inf02_2023_01_04",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT id, dataWyjazdu, cel, cena FROM wycieczki WHERE dostepna = TRUE",
+      "ok": true,
+      "rows": 6,
+      "preview": "+----+-------------+----------------------+------+\n| id | dataWyjazdu | cel                  | cena |\n+----+-------------+----------------------+------+\n|  1 | 2019-09-08  | Wlochy, Wenecja      | 1200 |\n|  2 | 2019-09-14  | Wlochy, Wenecja      | 1200 |\n|  3 | 2019-08-14  | Polska, Warszawa     |  640 |\n|  4 | 2019-08-14  | Francja, Paryz       | 1300 |\n|  6 | 2019-09-14  | Francja, Paryz       | 1200 |\n|  9 | 2019-09-14  | Hiszpania, Barcelona | 1400 |"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT nazwaPliku, podpis FROM zdjecia ORDER BY podpis DESC",
+      "ok": true,
+      "rows": 9,
+      "preview": "+------------+-----------+\n| nazwaPliku | podpis    |\n+------------+-----------+\n| 2.jpg      | Wenecja   |\n| 4.jpg      | Warszawa  |\n| 6.jpg      | Paryz     |\n| 7.jpg      | Nowy Jork |\n| 9.jpg      | Moskwa    |\n| 1.jpg      | Londyn    |"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT wycieczki.cel, wycieczki.cena, zdjecia.podpis FROM wycieczki JOIN zdjecia ON wycieczki.zdjecia_id = zdjecia.id WHERE wycieczki.cena > 1200",
+      "ok": true,
+      "rows": 5,
+      "preview": "+----------------------+------+-----------+\n| cel                  | cena | podpis    |\n+----------------------+------+-----------+\n| Francja, Paryz       | 1300 | Paryz     |\n| Francja, Paryz       | 1350 | Paryz     |\n| Hiszpania, Barcelona | 1500 | Barcelona |\n| Hiszpania, Barcelona | 1500 | Barcelona |\n| Hiszpania, Barcelona | 1400 | Barcelona |\n+----------------------+------+-----------+"
+    },
+    {
+      "n": 4,
+      "sql": "ALTER TABLE wycieczki ADD liczbaDni INT UNSIGNED AFTER dataWyjazdu",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "wycieczki.php",
+      "status": 200,
+      "bytes": 1666
+    }
+  ],
+  "checked_at": "2026-10-06 18:40:34"
+}

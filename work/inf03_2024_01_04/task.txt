@@ -1,0 +1,239 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 04
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+                                                                              Miejsce na naklejkę z numerem
+Numer PESEL zdającego*                                                          PESEL i z kodem ośrodka
+
+
+
+
+Czas trwania egzaminu: 150 minut.                                                         INF.03-04-24.01-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2024                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL
+          i naklej naklejkę z numerem PESEL i z kodem ośrodka.
+    2.    Na KARCIE OCENY w oznaczonym miejscu przyklej naklejkę z numerem PESEL oraz wpisz:
+          − swój numer PESEL*,
+          − oznaczenie kwalifikacji,
+          − numer zadania,
+          − numer stanowiska.
+    3.    Sprawdź, czy arkusz egzaminacyjny zawiera 5 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    4.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    5.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    6.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    7.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami oraz KARTĘ
+          OCENY na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu
+          nadzorującego.
+    8.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania egzaminu.
+
+                                                                                               Powodzenia!
+* w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+
+
+
+
+Układ graficzny
+© CKE 2023
+Zadanie egzaminacyjne
+
+UWAGA: folder z rezultatami pracy oraz płytę należy opisać numerem zdającego, którym został podpisany
+arkusz, czyli numerem PESEL lub w przypadku jego braku numerem paszportu. Dalej w zadaniu numer ten
+jest nazwany numerem zdającego.
+
+Wykonaj aplikację internetową kalendarza, wykorzystując pakiet XAMPP oraz edytor zaznaczający składnię.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się archiwum
+7-Zip o nazwie materialy4.7z zabezpieczone hasłem: kaL(end)arz%
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego.
+Rozpakowane pliki należy umieścić w tym folderze. Po skończonej pracy wszystkie wyniki należy zapisać
+w tym folderze.
+
+Operacje na bazie danych
+Do wykonania zadania należy użyć tabeli zadania przedstawionej na Obrazie 1.
+
+
+
+
+                                        Obraz 1. Tabela zadania
+
+Wykonaj operacje na bazie danych:
+  –   Utwórz bazę danych o nazwie terminarz
+  –   Do bazy terminarz zaimportuj tabele z pliku baza.sql z rozpakowanego archiwum
+  –   Wykonaj zrzut ekranu po imporcie. Zrzut zapisz w formacie PNG pod nazwą import. Nie kadruj zrzutu.
+      Zrzut powinien obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+      widoczne elementy wskazujące na poprawnie wykonany import tabel
+  –   Wykonaj zapytania SQL działające na bazie terminarz. Zapytania zapisz w pliku kwerendy.txt. Wykonaj
+      zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie JPEG i nadaj im
+      nazwy kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora z widocznym paskiem
+      zadań oraz zawierać wykonane zapytania
+      –   Zapytanie 1: wybierające jedynie niepowtarzające się wartości z pola wpis dla zadań z pierwszych
+          7 dni lipca roku 2020 (od 1 do 7 lipca) oraz takich, gdzie pole wpis nie jest puste
+      –   Zapytanie 2: wybierające jedynie pola dataZadania i wpis dla zadań z miesiąca lipca
+      –   Zapytanie 3: wybierające jedynie pole miesiac i wpis dla wpisów zaczynających się na literę „S”
+      –   Zapytanie 4: aktualizujące pole wpis dla zadania w dniu 2020-07-18, nowy wpis to „Wycieczka nad
+          morze”
+
+
+
+
+                                               Strona 2 z 5
+Witryna internetowa
+
+
+
+
+                Obraz 2. Witryna internetowa. Kursor znajduje się nad blokiem 7 lipca
+
+Przygotowanie grafiki:
+  – Plik logo1.png, wypakowany z archiwum, należy przeskalować z zachowaniem proporcji tak, aby jego
+    wysokość wynosiła dokładnie 140 px
+Cechy witryny:
+  –   Składa się ze strony o nazwie kalendarz.php zapisanej w języku HTML 5
+  –   Ustawiony język zawartości strony na polski
+  –   Jawnie zastosowany właściwy standard kodowania polskich znaków
+  –   Tytuł strony widoczny na karcie przeglądarki: „Zadania na lipiec”
+  –   Arkusz stylów w pliku o nazwie styl6.css prawidłowo połączony z kodem strony
+  –   Podział strony na bloki: dwa bloki banera, poniżej blok główny, w którym znajdują się generowane
+      skryptem bloki kalendarza, na dole blok stopki. Podział zrealizowany za pomocą znaczników sekcji tak,
+      aby po uruchomieniu w przeglądarce wygląd układu bloków był zgodny z Obrazem 2
+  –   Zawartość pierwszego bloku banera: logo1.png z tekstem alternatywnym o treści: „lipiec”
+  –   Zawartość drugiego bloku banera:
+      –   Nagłówek pierwszego stopnia o treści: „TERMINARZ”
+      –   Paragraf (akapit) z wpisem: „najbliższe zadania:”, a dalej efekt działania skryptu 1
+  –   Zawartość bloku głównego: efekt działania skryptu 2
+  –   Zawartość stopki:
+      –   Odnośnik o treści „Terminarz na sierpień” prowadzący do pliku sierpien.html. Plik sierpien.html
+          należy utworzyć i zapisać w nim „strona w trakcie budowy”
+      –   Paragraf (akapit) o treści: „Stronę wykonał: ”, dalej wstawiony numer zdającego
+
+
+
+
+                                                Strona 3 z 5
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany w całości w zewnętrznym pliku o nazwie styl6.css. Arkusz CSS zawiera formatowanie:
+  –   Ustawione domyślne wartości dla wszystkich selektorów stylu CSS: krój czcionki Verdana
+  –   Dla obu bloków banera: kolor tła #6F79A8, biały kolor czcionki, wysokość 140 px,
+  –   Dodatkowo szerokość pierwszego bloku banera wynosi 30%, drugiego 70%
+  –   Dla bloku kalendarza: kolor tła #9FA8DA, szerokość 160 px, wysokość 85 px, marginesy zewnętrzne
+      5 px, obramowanie linią ciągłą o szerokości 1 px i kolorze #6F79A8; tekst, który nie mieści się w bloku
+      jest ukryty i wyświetlany bez paska przewijania (np. obraz 2, pierwszy blok kalendarza)
+  –   Gdy kursor znajdzie się na bloku kalendarza jego kolor tła zmienia się na #6F79A8, a kolor czcionki na
+      biały
+  –   Dla stopki: kolor tła #6F79A8, biały kolor czcionki, marginesy wewnętrzne 5 px, wyrównanie tekstu do
+      prawej strony
+  –   Dla selektora nagłówka szóstego stopnia: wyrównanie tekstu do środka
+
+Uwaga: styl CSS dla nagłówka szóstego stopnia należy zdefiniować wyłącznie przy pomocy selektora dla
+znacznika nagłówka szóstego stopnia. Jest to uwarunkowane projektem późniejszej rozbudowy witryny.
+
+Skrypt połączenia z bazą
+W tabeli 1 podano wybór funkcji PHP, do obsługi bazy danych. Wymagania dotyczące skryptu:
+  –   Napisany w języku PHP, w pliku kalendarz.php
+  –   Należy stosować znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim
+  –   Łączy się z serwerem bazodanowym na localhost, użytkownik root bez hasła, baza danych o nazwie
+      terminarz
+  –   Działanie skryptu 1:
+      –   Wysyła do bazy danych zapytanie 1
+      –   Wyświetla rozdzielone średnikiem i spacją wszystkie wartości zwrócone zapytaniem
+  –   Działanie skryptu 2:
+      –   Wysyła do bazy danych zapytanie 2
+      –   Za pomocą znacznika sekcji definiuje blok, a w nim wyświetla dane
+          dotyczące jednego zwróconego wiersza. Blok jest zgodny z Obrazem
+          3 oraz jest w nim wyświetlone:
+            –   Data zadania w nagłówku szóstego stopnia
+                                                                                   Obraz 3. Blok kalendarza
+            –   Pole wpis w paragrafie (akapicie)
+      –   Liczba wygenerowanych bloków odpowiada liczbie wierszy zwróconych zapytaniem
+  –   Na końcu działania skrypt zamyka połączenie z serwerem.
+
+
+
+
+                                                Strona 4 z 5
+Tabela 1. Wybór funkcji języka PHP do obsługi bazy MySQL i MariaDB
+            Funkcje biblioteki MySQLi                           Zwracana wartość
+mysqli_connect(serwer, użytkownik, hasło,               id połączenia lub FALSE, gdy niepowodzenie
+nazwa_bazy)
+mysqli_select_db(id_połączenia, nazwa_bazy)             TRUE/FALSE w zależności od stanu operacji
+mysqli_error(id_połączenia)                             Tekst komunikatu błędu
+mysqli_close(id_połączenia)                             TRUE/FALSE w zależności od stanu operacji
+mysqli_query(id_połączenia, zapytanie)                  Wynik zapytania
+mysqli_fetch_row(wynik_zapytania)                       Tablica numeryczna odpowiadająca wierszowi
+                                                        zapytania
+mysqli_fetch_array(wynik_zapytania)                     Tablica zawierająca kolejny wiersz z podanych w
+                                                        wyniku zapytania lub FALSE, jeżeli nie ma więcej
+                                                        wierszy w wyniku zapytania
+mysqli_num_rows(wynik_zapytania)                        Liczba wierszy w podanym zapytaniu
+mysqli_num_fields(wynik_zapytania)                      Liczba kolumn w podanym zapytaniu
+
+
+
+
+CSS Overflow property
+The overflow property specifies whether to clip the content or to add scrollbars when the content of an element
+is too big to fit in the specified area. The overflow property has the following values:
+visible - Default. The overflow is not clipped. The content renders outside the element's box
+hidden - The overflow is clipped, and the rest of the content will be invisible
+scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content
+auto - Similar to scroll, but it adds scrollbars only when necessary
+
+UWAGA: po zakończeniu pracy utwórz w folderze z numerem zdającego plik tekstowy o nazwie
+przeglądarka.txt. Zapisz w nim nazwę przeglądarki internetowej, w której weryfikowana była poprawność
+działania witryny. Nagraj płytę z rezultatami pracy. W folderze powinny się znajdować następujące pliki:
+import.png, kalendarz.php, kw1.jpg, kw2.jpg, kw3.jpg, kw4.jpg, kwerendy.txt, logo1.png, przeglądarka.txt,
+sierpien.html, styl6.css, ewentualnie inne przygotowane pliki. Po nagraniu płyty sprawdź poprawność
+nagrania. Opisz płytę swoim numerem zdającego i zapakowaną w pudełku pozostaw na stanowisku wraz
+z arkuszem egzaminacyjnym.
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie będzie podlegać 5 rezultatów:
+ – operacje na bazie danych,
+ – zawartość witryny internetowej,
+ – działanie witryny internetowej,
+ – styl CSS witryny internetowej,
+ – skrypt połączenia z bazą.
+
+
+
+
+                                                 Strona 5 z 5
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD opisaną numerem PESEL                                   ,
+której jakość nagrania została przeze mnie sprawdzona.
+
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD, opisana numerem PESEL zdającego.
+
+
+                                                               ……………………………........…
+                                                               Czytelny podpis Przewodniczącego ZN
+

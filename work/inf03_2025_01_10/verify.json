@@ -1,0 +1,61 @@
+{
+  "code": "inf03_2025_01_10",
+  "pass": true,
+  "fails": [],
+  "warns": [
+    "szachy.php: odnosnik do pominietego zrzutu kw1.png",
+    "szachy.php: odnosnik do pominietego zrzutu kw2.png",
+    "szachy.php: odnosnik do pominietego zrzutu kw3.png",
+    "szachy.php: odnosnik do pominietego zrzutu kw4.png",
+    "formularz szachy.php->szachy.php [post]: odnosnik do pominietego zrzutu kw1.png",
+    "formularz szachy.php->szachy.php [post]: odnosnik do pominietego zrzutu kw2.png",
+    "formularz szachy.php->szachy.php [post]: odnosnik do pominietego zrzutu kw3.png",
+    "formularz szachy.php->szachy.php [post]: odnosnik do pominietego zrzutu kw4.png"
+  ],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT pseudonim, tytul, ranking, klasa FROM zawodnicy WHERE ranking > 2787 ORDER BY ranking DESC",
+      "ok": true,
+      "rows": 10,
+      "preview": "+--------------+-------+---------+-------+\n| pseudonim    | tytul | ranking | klasa |\n+--------------+-------+---------+-------+\n| LiLa         | AM    |    2901 | 2A    |\n| HarmoniaB    | SM    |    2888 | 1A    |\n| Magmus       | SM    |    2882 | 1C    |\n| Bludolf      | KM    |    2830 | 4C    |\n| Botas Bross  | KM    |    2817 | 3A    |\n| BananD       | PM    |    2817 | 3A    |"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT pseudonim, klasa FROM zawodnicy ORDER BY RAND() LIMIT 2",
+      "ok": true,
+      "rows": 2,
+      "preview": "+-----------+-------+\n| pseudonim | klasa |\n+-----------+-------+\n| AleCha    | 3B    |\n| SzaMam    | 2A    |\n+-----------+-------+"
+    },
+    {
+      "n": 3,
+      "sql": "UPDATE zawodnicy SET klasa = '5A' WHERE klasa = '4A'",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    },
+    {
+      "n": 4,
+      "sql": "SELECT pseudonim, data_zdobycia, DATEDIFF(CURDATE(), data_zdobycia) AS dni FROM zawodnicy WHERE tytul <> ''",
+      "ok": true,
+      "rows": 30,
+      "preview": "+--------------+---------------+------+\n| pseudonim    | data_zdobycia | dni  |\n+--------------+---------------+------+\n| Hiikar       | 2020-07-12    | 2277 |\n| Magmus       | 2020-06-15    | 2304 |\n| Bludolf      | 2020-06-30    | 2289 |\n| Botas Bross  | 2020-06-04    | 2315 |\n| Hans         | 2020-03-27    | 2384 |\n| Eryka Róża   | 2019-11-30    | 2502 |"
+    }
+  ],
+  "pages": [
+    {
+      "page": "szachy.php",
+      "status": 200,
+      "bytes": 1833
+    },
+    {
+      "page": "formularz szachy.php->szachy.php [post]",
+      "status": 200,
+      "bytes": 1862,
+      "fields": {
+        "losuj": "Losuj nową parę graczy"
+      }
+    }
+  ],
+  "checked_at": "2026-10-06 18:49:39"
+}

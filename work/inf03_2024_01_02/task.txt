@@ -1,0 +1,267 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 02
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+                                                                              Miejsce na naklejkę z numerem
+Numer PESEL zdającego*                                                          PESEL i z kodem ośrodka
+
+
+
+
+Czas trwania egzaminu: 150 minut.                                                         INF.03-02-24.01-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2024                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL
+          i naklej naklejkę z numerem PESEL i z kodem ośrodka.
+    2.    Na KARCIE OCENY w oznaczonym miejscu przyklej naklejkę z numerem PESEL oraz wpisz:
+          − swój numer PESEL*,
+          − oznaczenie kwalifikacji,
+          − numer zadania,
+          − numer stanowiska.
+    3.    Sprawdź, czy arkusz egzaminacyjny zawiera 6 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    4.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    5.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    6.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    7.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami oraz KARTĘ
+          OCENY na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu
+          nadzorującego.
+    8.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania egzaminu.
+
+                                                                                               Powodzenia!
+* w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+
+
+
+
+Układ graficzny
+© CKE 2023
+Zadanie egzaminacyjne
+UWAGA: folder z rezultatami pracy oraz płytę należy opisać numerem zdającego, którym został podpisany
+arkusz, czyli numerem PESEL lub w przypadku jego braku numerem paszportu. Dalej w zadaniu numer ten
+jest nazwany numerem zdającego.
+
+Wykonaj aplikację internetową firmy zajmującej się usługami informatycznymi. Wykorzystaj do tego celu
+edytor zaznaczający składnię oraz program do obróbki grafiki rastrowej.
+Aby wykonać zadanie, zaloguj się na konto Egzamin bez hasła. Na pulpicie znajdziesz archiwum 7-Zip
+o nazwie materialy2.7z zabezpieczone hasłem: m4teRi@lyQ
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego.
+Rozpakowane pliki należy umieścić w tym folderze. Po skończonej pracy wszystkie wyniki należy zapisać
+w tym folderze.
+
+Grafika
+Wytyczne dla logo witryny internetowej:
+   − Cechy obrazu: tło przezroczyste, wysokość i szerokość: 50 px
+  − Napis o treści „IT”, wypełnia całą przestrzeń grafiki, zgodnie z obrazem 1
+  − Cechy tekstu: czcionka koloru ciemnoczerwonego
+  − Nazwa pliku: favicon, format umożliwiający zapis przezroczystości                Obraz 1. Logo
+Wspólne wytyczne dla dwóch banerów:
+   −   Cechy obrazu: tło przezroczyste, wysokość 200 px, szerokość 1000 px
+   −   Plik mysz.jpg przeskalowany z zachowaniem proporcji do wysokości 200 px, umieszczony dwukrotnie
+       na banerze: po lewej stronie – z odpowiednim obrotem oraz niezmieniony po prawej, zgodnie
+       z obrazem 2
+   −   Pomiędzy obrazami znajduje się napis o treści „POGOTOWIE KOMPUTEROWE”
+   −   Cechy tekstu:
+       − Dla banera1: czcionka Arial, pogrubiona, koloru czerwonego
+       − Dla banera2: czcionka Arial, pogrubiona, koloru żółtego, zgodnie z obrazem 2
+   −   Nazwy plików baner1 i baner2, format plików umożliwiający zapis przezroczystości
+
+
+
+
+                            Obraz 2. Baner z przezroczystością – plik baner2
+Animacja
+Wytyczne dotyczące animacji:
+   − Animację należy przygotować w programie do obróbki grafiki rastrowej
+   − Animację stanowią obrazy baner1 i baner2 wyświetlane na zmianę
+   −   Cechy animacji: opóźnienie między klatkami 4000 ms (4 s). Czynność ustawienia opóźnienia należy
+       udokumentować zrzutem ekranu o nazwie klatki.jpg. Na zrzucie powinno być widoczne okno
+       z wprowadzoną wartością opóźnienia. Zrzutu nie należy kadrować, powinien zawierać cały obszar
+       ekranu monitora z widocznym paskiem zadań.
+   −   Nazwa pliku: animacja.gif
+
+                                              Strona 2 z 6
+                                          Witryna internetowa
+
+
+
+
+                                    Obraz 3. Witryna, strona główna
+
+Cechy witryny:
+   − Strona główna o nazwie index.html oraz podstrona kontakt.html
+Cechy wspólne dla obu stron:
+   − Zapisane w języku HTML 5
+   − Ustawiony język zawartości strony na polski
+   − Jawnie zastosowany właściwy standard kodowania polskich znaków
+   −   Tytuł strony widoczny na karcie przeglądarki: „Komputery”
+   −   Arkusz stylów w pliku o nazwie styl.css prawidłowo połączony z kodem strony
+   −   Na karcie przeglądarki widoczna ikona witryny internetowej z pliku favicon
+   −   Podział strony na bloki: kontener całej strony, w którym znajdują się: baner, poniżej menu, poniżej
+       obok siebie trzy bloki główne oraz na dole stopka. Podział zrealizowany za pomocą znaczników sekcji
+       tak, aby wygląd układu bloków strony po uruchomieniu w przeglądarce, był zgodny z Obrazem 3
+   −   Zawartość banera: animacja.gif z tekstem alternatywnym „Pogotowie komputerowe”
+   −   Zawartość bloku menu:
+          ‒ Odnośnik o treści „Strona Główna”, który prowadzi do strony index.html
+          ‒ Odnośnik o treści „Kontakt”, który prowadzi do strony kontakt.html
+   −  Zawartość stopki: tekst „Autor: ”, dalej wstawiony numer zdającego. Numer zdającego jest pochylony
+      za pomocą znacznika semantycznego
+Zawartość trzech bloków głównych dla pliku index.html:
+   −   Pierwszy blok:
+       − Nagłówek trzeciego stopnia o treści: „Kim jesteśmy?”
+       − Paragraf (akapit) o treści „Jesteśmy firmą z wieloletnim doświadczeniem w zakresie IT.”
+   ‒   Drugi blok:
+       − Nagłówek trzeciego stopnia o treści: „Co robimy?”
+       −  Lista punktowana (nieuporządkowana) z elementami: naprawa komputerów, odzyskiwanie
+          danych, wirusy, konfiguracja LAN
+   ‒   Trzeci blok:
+       −   Nagłówek trzeciego stopnia o treści: „Jaki jest nasz znak?”
+       −   Obraz favicon.png z tekstem alternatywnym „Doświadczenie i niezawodność”
+                                                Strona 3 z 6
+Zawartość trzech bloków głównych dla pliku kontakt.html:
+   −   Pierwszy i trzeci blok: puste
+   −   Drugi blok:
+       ‒ Nagłówek drugiego stopnia o treści: ”Kontakt”
+       ‒ Tabela o wymiarze 2 kolumny na 6 wierszy, wypełniona kontrolkami. Specyfikacja kontrolek
+           zawarta jest w Tabeli 1. Wygląd formularza kontaktowego został przedstawiony na obrazie 4.
+       ‒ Pozioma linia
+
+Tabela 1. Zawartość tabeli znajdującej się na stronie kontakt.html
+    Napis „Imię: ”          Pole edycyjne
+    Napis „Nazwisko: ”      Pole edycyjne
+    Napis „E-mail: ”        Pole edycyjne typu odpowiedniego do wpisywania adresu e-mail
+    Napis „Zgłoszenie: ”    Lista rozwijalna usług: naprawa komputerów, odzyskiwanie danych, wirusy,
+                            konfiguracja LAN
+    Pusta komórka           Pole wyboru i napis „Wyślij kopię wiadomości”, domyślnie zaznaczone
+    Pusta komórka           Przycisk „Czyść” czyszczący kontrolki i przycisk „Wyślij”, którego wciśnięcie
+                            powoduje uruchomienie skryptu
+
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany w zewnętrznym pliku o nazwie styl.css. Arkusz CSS zawiera formatowanie:
+    − Całej strony: kolor tła #E0F7FA, krój czcionki Arial, wyrównanie tekstu do środka
+    − Kontenera całej strony: szerokość 95%, marginesy zewnętrzne wyliczone przez przeglądarkę
+    − Banera: kolor tła #00838F, wysokość 200 px
+    − Bloku menu: kolor tła #006064, marginesy wewnętrzne 15 px
+    − Odsyłacze w bloku menu: czcionka kolor biały, bez podkreślenia, rozmiar 150%
+    − Trzech bloków głównych: wysokość 350 px, szerokość 33%
+    − Stopki: kolor tła #006064, biały kolor czcionki, wyrównanie tekstu do prawej strony, marginesy
+       wewnętrzne 10 px
+    − Selektora listy punktowanej: wyrównanie tekstu do lewej strony
+    − Selektora przycisków: kolor tła #00838F i biały kolor czcionki
+    − Po wskazaniu kursorem myszy na przycisk zmienia się jego kolor czcionki na #80DEEA
+UWAGA: style CSS dla listy punktowanej oraz przycisków należy zdefiniować wyłącznie przy pomocy
+selektora dla listy punktowanej oraz selektora przycisków. Jest to uwarunkowane projektem późniejszej
+rozbudowy witryny.
+
+
+
+Skrypt
+Wymagania dotyczące skryptu:
+   −   Wykonywany po stronie przeglądarki na stronie kontakt.html, wywoływany przyciskiem „Wyślij”
+   −   Należy stosować znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim
+   −   Skrypt pobiera wartości wprowadzone do kontrolek
+   −   Wyświetla komunikat pod linią poziomą, w paragrafie, w trzech wierszach, kolejno:
+       ‒ imię i nazwisko,
+       ‒ adres email – zapisany zawsze małymi literami
+       ‒ napis „Usługa: ”, następnie wartość wybranego pola listy rozwijalnej, zgodnie z obrazem 4.
+
+
+
+
+                                               Strona 4 z 6
+           Obraz 4. Kontrolki i działanie skryptu – pole e-mail skrypt wypisał małymi literami
+
+
+                   Wybrane pola i metody modelu DOM języka JavaScript
+         Wyszukiwanie elementów                            Zmiana elementów
+document.getElementById(id)                 element.innerHTML = "nowa zawartość"
+document.getElementsByTagName(TagName)      element.attribute = "nowa wartość"
+document.getElementsByClassName(ClassName)  element.setAttribute(atrybut, wartosc)
+                                            element.style.property = "nowa wartość"
+
+    Operacje na elementach dokumentu                         Wybrane właściwości obiektu style
+document.createElement(element)                  backgroundColor
+document.removeChild(element)                    color
+document.appendChild(element)                    fontSize
+document.replaceChild(element)                   fontStyle = "normal | italic | oblique | initial | inherit"
+document.write(text)                             fontWeight = "normal | lighter | bold | bolder | value |
+                                                 initial | inherit"
+
+
+
+                                     Wybrane zdarzenia HTML
+        Zdarzenia myszy                 Zdarzenia klawiatury                  Zdarzenia obiektów
+onclick                            onkeydown                            onload
+ondblclick                         onkeypress                           onscroll
+onmouseover                        onkeyup                              onresize
+onmouseout
+Elementy formularzy                                  Metody i pola obiektu string (JS)
+Ważniejsze typy pola input: button, checkbox,        Length
+number, password, radio, text, email                 indexOf(text)
+Inne elementy: select, textarea                      search(text)
+                                                     substr(startIndex, endIndex)
+                                                     replace(textToReplace, newText)
+                                                     toUpperCase()
+                                                     toLowerCase()
+
+
+
+
+                                              Strona 5 z 6
+UWAGA: po zakończeniu pracy utwórz w folderze z numerem zdającego plik tekstowy o nazwie
+przeglądarka.txt. Zapisz w nim nazwę przeglądarki internetowej, w której weryfikowana była poprawność
+działania witryny. Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego powinny się znajdować
+następujące pliki: animacja, baner1, baner2, favicon, index, klatki, kontakt, przeglądarka, styl oraz
+ewentualnie inne przygotowane pliki. Po nagraniu płyty sprawdź poprawność nagrania. Opisz płytę swoim
+numerem zdającego i zapakowaną w pudełku pozostaw na stanowisku wraz z arkuszem egzaminacyjnym.
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie będzie podlegać 6 rezultatów:
+– grafika i animacja,
+– wygląd witryny internetowej,
+– działanie witryny internetowej,
+– styl CSS witryny internetowej,
+– skrypt.
+
+
+
+
+                                              Strona 6 z 6
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD opisaną numerem PESEL                                   ,
+której jakość nagrania została przeze mnie sprawdzona.
+
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD, opisana numerem PESEL zdającego.
+
+
+                                                               ……………………………........…
+                                                               Czytelny podpis Przewodniczącego ZN
+

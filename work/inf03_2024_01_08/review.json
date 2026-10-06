@@ -1,0 +1,8 @@
+{
+  "code": "inf03_2024_01_08",
+  "pass": true,
+  "score": "all/all",
+  "fails": [],
+  "na": ["zrzuty ekranu import.png, kw1-kw4.jpg", "utworzenie bazy i import w phpMyAdmin", "nagranie płyty", "folder z numerem zdającego"],
+  "notes": "Kwerendy 1-4 poprawne i wykonują się na bazie. Obie strony zgodne z treścią (HTML5, lang pl, UTF-8, tytuł, styl8.css, 5 bloków i stopka, teksty, linki, tabela, alt). Grafiki mają szerokość 250 i 650 px z zachowaniem proporcji. CSS zgodny z treścią (selektory znaczników dla table, h4, img, a). Skrypt odejmuje 10 od wybranej ceny i wypisuje w akapicie 'cena promocyjna: X'."
+}

@@ -1,0 +1,243 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Oznaczenie kwalifikacji: INF.03
+Numer zadania: 03
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+                                                                              Miejsce na naklejkę z numerem
+Numer PESEL zdającego*                                                          PESEL i z kodem ośrodka
+
+
+
+
+Czas trwania egzaminu: 150 minut.                                                        INF.03-03-22.06-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2022                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL
+          i naklej naklejkę z numerem PESEL i z kodem ośrodka.
+    2.    Na KARCIE OCENY w oznaczonym miejscu przyklej naklejkę z numerem PESEL oraz wpisz:
+          − swój numer PESEL*,
+          − oznaczenie kwalifikacji,
+          − numer zadania,
+          − numer stanowiska.
+    3.    Sprawdź, czy arkusz egzaminacyjny zawiera 5 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    4.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    5.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    6.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    7.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami oraz KARTĘ
+          OCENY na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu
+          nadzorującego.
+    8.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania egzaminu.
+
+                                                                                               Powodzenia!
+* w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+
+
+
+
+Układ graficzny
+© CKE 2020
+Zadanie egzaminacyjne
+
+UWAGA: katalog z rezultatami pracy oraz płytę należy opisać numerem, którym został podpisany arkusz,
+czyli numerem PESEL lub w przypadku jego braku numerem paszportu.
+
+Wykonaj aplikację internetową portalu zawodów wędkarskich, wykorzystując pakiet XAMPP oraz edytor
+zaznaczający składnię.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się archiwum
+ZIP o nazwie pliki3.zip zabezpieczone hasłem: ZaWodY7%
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego,
+którym został podpisany arkusz. Rozpakowane pliki należy umieścić w tym folderze. Po skończonej pracy
+wszystkie wyniki należy zapisać w tym folderze.
+
+Operacje na bazie danych
+Fragment bazy danych jest zgodny ze strukturą przedstawioną na obrazie 1. Tabela Zawody_wedkarskie
+jest połączona relacją z tabelą Lowisko (opisuje łowisko, gdzie będą się odbywać zawody) oraz tabelą
+Karty_wedkarskie (opisuje wędkarza, który wygrał zawody). Tabela Lowisko zawiera pole rodzaj, którego
+wartości oznaczają: 1 – morze, 2 – jezioro, 3 – rzeka, 4 – zalew, 5 – staw
+
+
+
+
+                                         Obraz 1. Baza danych
+
+Za pomocą narzędzia phpMyAdmin wykonaj operacje na bazie danych:
+‒ Utwórz bazę danych o nazwie wedkarstwo
+‒ Do bazy wedkarstwo zaimportuj tabele z pliku baza.sql z rozpakowanego archiwum
+‒ Wykonaj zrzut ekranu po imporcie. Zrzut zapisz w formacie PNG i nazwij import. Nie kadruj zrzutu.
+    Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+    widoczne elementy wskazujące na poprawnie wykonany import tabel
+‒ Wykonaj zapytania SQL działające na bazie wedkarstwo. Zapytania zapisz w pliku kwerendy.txt.
+    Wykonaj zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie JPEG i nadaj
+    im nazwy kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora z widocznym paskiem
+    zadań
+     ‒ Zapytanie 1: wstawiające rekord do tabeli zawody_wedkarskie o wartościach: klucz główny
+        nadawany automatycznie, Karty_wedkarskie_id - 2; Lowisko_id - 4; data_zawodow - „2021-09-28”;
+        sedzia – Andrzej Nowak
+     ‒ Zapytanie 2: wybierające jedynie pola id oraz data_zawodow z tabeli zawody_wedkarskie dla
+        sędziego Krzysztofa Dobrowolskiego
+     ‒ Zapytanie 3: wybierające jedynie pola imie, nazwisko i punkty z tabeli karty_wedkarskie dla
+        zwycięzcy zawodów wędkarskich o identyfikatorze 4 (identyfikator dotyczy zawodów, a nie
+        wędkarza), należy użyć relacji
+     ‒ Zapytanie 4: aktualizujące dane w tabeli karty_wedkarskie, wartość pola punkty dla rekordu
+        o identyfikatorze 1 należy zwiększyć o 2
+
+
+
+
+                                              Strona 2 z 5
+Witryna internetowa
+
+
+
+
+                                     Obraz 2. Witryna internetowa
+
+Przygotowanie grafiki:
+‒ Plik zawody.jpg, wypakowany z archiwum, należy odbić w taki sposób, aby osoba na grafice znajdowała
+    się po prawej stronie, jak na obrazie 2 oraz przeskalować z zachowaniem proporcji tak, aby jego
+    wysokość wynosiła dokładnie 250 px i zapisać pod tą samą nazwą
+
+Cechy witryny:
+‒ Składa się ze strony o nazwie zawody.html zapisanej w języku HTML 5 oraz skryptu zgloszenie.php.
+   Poniższe wymagania dotyczą tylko pliku zawody.html
+‒ Zadeklarowany język dla witryny: polski
+‒ Jawnie zastosowany właściwy standard kodowania polskich znaków
+‒ Tytuł strony widoczny na karcie przeglądarki: „Zawody wędkarskie”
+‒ Arkusz stylów w pliku o nazwie styl3.css prawidłowo połączony z kodem strony
+‒ Podział strony na bloki: na górze dwa bloki: lewy i prawy, poniżej blok główny, na dole dwa bloki stopki.
+   Podział zrealizowany za pomocą znaczników sekcji tak, aby po uruchomieniu w przeglądarce wygląd
+   układu bloków był zgodny z obrazem 2
+‒ Zawartość bloku lewego: nagłówek pierwszego stopnia o treści „Zawody polskich wędkarzy”
+‒ Zawartość bloku prawego: obraz zawody.jpg z tekstem alternatywnym o treści: „wędkowanie”
+‒ Zawartość bloku głównego:
+  ‒ Nagłówek trzeciego stopnia o treści: „Łowiska”
+  ‒ Lista punktowana (nieuporządkowana) zawierająca elementy: Zalew Węgrowski, Zbiornik Bukówka,
+      Jeziorko Bartbetowskie, Warta-Obrzycko
+  ‒ Nagłówek trzeciego stopnia o treści: „Dodaj zawody wędkarskie”
+  ‒ Formularz wysyłający dane metodą bezpieczną do pliku zgloszenie.php zawierający pola:
+        ‒ Pole edycyjne typu numerycznego poprzedzone tekstem: „Łowisko: ”
+        ‒ Pole edycyjne umożliwiające wybranie daty z kalendarza, poprzedzone tekstem: „Data: ”
+        ‒ Pole edycyjne poprzedzone tekstem: „Sędzia: ”
+        ‒ Przycisk czyszczący zawartość formularza z etykietą „CZYŚĆ”
+        ‒ Przycisk wysyłający zawartość formularza z etykietą „DODAJ”
+‒ Zawartość pierwszego bloku stopki: odnośnik do pliku kwerendy.txt o treści: „Pobierz”
+‒ Zawartość drugiego bloku stopki: akapit (paragraf) o treści: „Stronę przygotował: ”, dalej wstawiony
+   numer zdającego, którym został podpisany arkusz.
+
+
+
+
+                                               Strona 3 z 5
+Styl CSS witryny internetowej
+Cechy formatowania CSS, działające na stronie zawody.html:
+‒ Styl CSS zdefiniowany w całości w zewnętrznym pliku o nazwie styl3.css
+‒ Domyślne formatowanie wszystkich selektorów: krój czcionki Verdana
+‒ Wspólne dla bloku lewego i prawego: kolor tła SeaGreen, biały kolor czcionki, interlinia 150 px, wysokość
+    260 px, rozmiar czcionki 160%
+‒ Dodatkowo dla bloku lewego: szerokość 75%
+‒ Dodatkowo dla bloku prawego: szerokość 25%, wyrównanie tekstu do prawej strony
+‒ Dla bloku głównego: kolor tła MintCream, marginesy wewnętrzne 80 px
+‒ Wspólne dla obu stopek: kolor tła SeaGreen, biały kolor czcionki, szerokość 50%, wysokość 70 px,
+    wyrównanie tekstu do środka
+‒ Dla selektora kontrolki (przyciski i pola edycyjne): margines zewnętrzny dolny 20 px
+‒ Dla selektora obrazu: cień o przesunięciu 15 px w obu osiach, rozmyciu 10 px i kolorze DimGray
+‒ Dla selektora odnośnika: brak podkreślenia, kolor tła MintCream, kolor czcionki SeaGreen, marginesy
+    wewnętrzne 15 px, interlinia 70 px
+
+Uwaga: style CSS dla kontrolki, obrazu i odnośnika należy zdefiniować wyłącznie przy pomocy selektora dla
+danego znacznika. Jest to uwarunkowane projektem późniejszej rozbudowy witryny.
+
+Skrypt połączenia z bazą
+W tabeli 1 podano wybór funkcji PHP do obsługi bazy danych. Wymagania dotyczące skryptu:
+‒ Napisany w języku PHP, w pliku zgloszenie.php
+‒ Skrypt działa na danych przesłanych z formularza
+‒ Skrypt łączy się z serwerem bazodanowym na localhost, użytkownik root bez hasła, baza danych
+    o nazwie wedkarstwo
+‒ Wysyła do bazy danych zapytanie 1, które w polu Karty_wedkarskie_id zawiera wartość 0, pozostałe
+    wartości wypełnione są danymi z formularza
+‒ Na końcu działania skrypt zamyka połączenie z serwerem.
+
+Tabela 1. Wybór funkcji języka PHP do obsługi bazy MySQLi i MariaDB
+            Funkcje bilioteki mysqli                              Zwracana wartość
+mysqli_connect(serwer, użytkownik,              id połączenia lub FALSE, gdy niepowodzenie
+hasło, nazwa_bazy)
+mysqli_select_db(id_polaczenia,                 TRUE/FALSE w zależności od stanu operacji
+nazwa_bazy)
+mysqli_error(id_polaczenia)                     Tekst komunikatu błędu
+mysqli_close(id_polaczenia)                         TRUE/FALSE w zależności od stanu operacji
+mysqli_query(id_polaczenia, zapytanie) Wynik zapytania
+mysqli_fetch_row(wynik_zapytania)                   Tablica    numeryczna      odpowiadająca     wierszowi
+                                                    zapytania
+mysqli_fetch_array(wynik_zapytania)                 Tablica zawierająca kolejny wiersz z podanych w wyniku
+                                                    zapytania lub FALSE, jeżeli nie ma więcej wierszy w
+                                                    wyniku zapytania
+mysqli_num_rows(wynik_zapytania)                    Liczba wierszy w podanym zapytaniu
+mysqli_num_fields(wynik_zapytania)                  Liczba kolumn w podanym zapytaniu
+
+
+Składnia właściwości CSS box-shadow:
+box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
+
+
+
+
+                                               Strona 4 z 5
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowałeś poprawność działania witryny. Umieść go w folderze
+z numerem, którym został podpisany arkusz.
+Nagraj płytę z rezultatami pracy. W folderze z numerem, którym został podpisany arkusz powinny znajdować
+się pliki: import.png, kw1.jpg, kw2.jpg, kw3.jpg, kw4.jpg, kwerendy.txt, przeglądarka.txt, styl3.css,
+zawody.html, zawody.jpg, zgloszenie.php, ewentualnie inne przygotowane pliki. Po nagraniu płyty sprawdź
+poprawność jej odczytu. Opisz płytę swoim numerem i pozostaw zapakowaną w pudełku na stanowisku wraz
+z arkuszem egzaminacyjnym.
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie będzie podlegać 5 rezultatów:
+ ‒ operacje na bazie danych,
+ ‒ zawartość witryny internetowej,
+ ‒ działanie witryny internetowej,
+ ‒ styl CSS witryny internetowej,
+ ‒ skrypt połączenia z bazą.
+
+
+
+
+                                              Strona 5 z 5
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD opisaną numerem PESEL                                      ,
+której jakość nagrania została przeze mnie sprawdzona.
+
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD, opisana numerem PESEL zdającego.
+
+
+                                                                 ………………………………
+                                                                  Czytelny podpis Przewodniczącego ZN
+

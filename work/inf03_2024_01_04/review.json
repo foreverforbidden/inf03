@@ -1,0 +1,8 @@
+{
+  "code": "inf03_2024_01_04",
+  "pass": true,
+  "score": "42/42",
+  "fails": [],
+  "na": ["utworzenie bazy terminarz i import w phpMyAdmin", "zrzut import.png", "zrzuty kw1-kw4.jpg", "nagranie płyty", "folder/opis numerem zdającego"],
+  "notes": "verify.json: 0 fail, 0 warn. Kwerendy 1-4 poprawne i zgodne z danymi. logo1.png 175x140 (proporcje 350x280 zachowane). Układ zgodny z Obrazem 2."
+}

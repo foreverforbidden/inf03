@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Firma IT</title>
+<link rel="stylesheet" href="styl.css">
+<link rel="icon" href="logo.png" type="image/png">
+<script src="skrypt.js"></script>
+</head>
+<body>
+<div id="kontener">
+<header id="logo"><img src="logo.png" alt="firma it"></header>
+<nav id="menu">
+<a href="index.html">Strona Główna</a>
+<a href="uslugi.html">Usługi</a>
+<a href="kontakt.html">Kontakt</a>
+</nav>
+<section id="baner"><img src="animacja.gif" alt="Usługi informatyczne"></section>
+<main id="glowny">
+<h2>Kontakt</h2>
+<form onsubmit="return false;">
+<table>
+<tr><td>Imię: </td><td><input type="text" id="imie"></td></tr>
+<tr><td>Nazwisko: </td><td><input type="text" id="nazwisko"></td></tr>
+<tr><td>E-mail: </td><td><input type="email" id="email"></td></tr>
+<tr><td>Zgłoszenie </td><td><textarea id="zgloszenie" rows="10" cols="40"></textarea></td></tr>
+<tr><td></td><td><input type="checkbox" id="regulamin"> Zapoznałam/em się z regulaminem</td></tr>
+<tr><td></td><td><button type="reset">Resetuj</button> <button type="button" onclick="wyslij()">Prześlij</button></td></tr>
+</table>
+</form>
+<hr>
+<p id="komunikat"></p>
+</main>
+<footer id="stopka">Autor strony: <strong>00000000000</strong></footer>
+</div>
+</body>
+</html>

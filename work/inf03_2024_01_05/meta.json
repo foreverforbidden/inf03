@@ -1,0 +1,24 @@
+{
+  "password": "Do!!@rozp@#",
+  "db": "salon",
+  "required_files": [
+    "index.html",
+    "kwerendy.txt",
+    "obraz1.jpg",
+    "obraz2.jpg",
+    "przeglądarka.txt",
+    "styl7.css",
+    "twarz.html"
+  ],
+  "image_count": null,
+  "pages": [
+    "index.html",
+    "twarz.html"
+  ],
+  "code": "inf03_2024_01_05",
+  "pdf": "inf03_arkusze/inf03_2024_01_05_arkusz.pdf",
+  "sql_files": [
+    "materialy/egzamin.sql"
+  ],
+  "problems": []
+}

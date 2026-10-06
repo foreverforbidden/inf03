@@ -1,0 +1,24 @@
+{
+  "password": "K@dra_FirMy#",
+  "db": "kadra",
+  "required_files": [
+    "kwerendy.txt",
+    "logo.png",
+    "osoba1.jpg",
+    "osoba2.jpg",
+    "osoba3.jpg",
+    "pracownicy.html",
+    "przeglądarka.txt",
+    "styl.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "pracownicy.html"
+  ],
+  "code": "inf03_2024_06_10",
+  "pdf": "inf03_arkusze/inf03_2024_06_10_arkusz.pdf",
+  "sql_files": [
+    "materialy/baza.sql"
+  ],
+  "problems": []
+}

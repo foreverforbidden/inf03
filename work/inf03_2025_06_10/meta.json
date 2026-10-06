@@ -1,0 +1,22 @@
+{
+  "password": "*SzkoLenia^",
+  "db": "szkolenia",
+  "required_files": [
+    "1.jpg",
+    "8.jpg",
+    "index.php",
+    "kwerendy.txt",
+    "przeglądarka.txt",
+    "styl.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "index.php"
+  ],
+  "code": "inf03_2025_06_10",
+  "pdf": "inf03_arkusze/inf03_2025_06_10_arkusz.pdf",
+  "sql_files": [
+    "materialy/szkolimy.sql"
+  ],
+  "problems": []
+}

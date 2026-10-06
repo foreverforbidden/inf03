@@ -1,0 +1,25 @@
+{
+  "password": "{Row3RY}",
+  "db": "rowery",
+  "required_files": [
+    "1.jpg",
+    "2.jpg",
+    "3.jpg",
+    "4.jpg",
+    "5.jpg",
+    "index.html",
+    "kwerendy.txt",
+    "przegladarka.txt",
+    "styl.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "index.html"
+  ],
+  "code": "inf03_2026_06_12",
+  "pdf": "inf03_arkusze/inf03_2026_06_12_arkusz.pdf",
+  "sql_files": [
+    "materialy/rowery.sql"
+  ],
+  "problems": []
+}

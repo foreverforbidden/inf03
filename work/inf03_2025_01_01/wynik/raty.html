@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kursy komputerowe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="baner.png" alt="kursy komputerowe">
+    </header>
+    <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="raty.html">Koszt rat</a>
+        <a href="https://moje-szkolenia.pl/">Nasz partner</a>
+    </nav>
+    <main>
+        <h3>Oblicz miesięczną ratę</h3>
+        <input type="checkbox" id="react" class="kontrolka"><label for="react">Kurs React.js</label><br>
+        <input type="checkbox" id="javascript" class="kontrolka"><label for="javascript">Kurs JavaScript</label><br>
+        <label for="liczbaRat">Liczba rat: </label><input type="number" id="liczbaRat" class="kontrolka"><br>
+        <select id="miasto" class="kontrolka">
+            <option>Warszawa</option>
+            <option>Katowice</option>
+            <option>Gdańsk</option>
+        </select><br>
+        <button id="oblicz" class="kontrolka" onclick="obliczRate()">Oblicz</button>
+        <p id="wynik"></p>
+    </main>
+    <footer>
+        <p>Autor strony: 00000000000</p>
+    </footer>
+    <script>
+        function obliczRate() {
+            var kwota = 0;
+            if (document.getElementById("react").checked) kwota += 5000;
+            if (document.getElementById("javascript").checked) kwota += 3000;
+            var liczbaRat = document.getElementById("liczbaRat").value;
+            var miasto = document.getElementById("miasto").value;
+            var rata = kwota / liczbaRat;
+            document.getElementById("wynik").innerHTML = "Kurs odbędzie się w " + miasto + ". Koszt całkowity: " + kwota + " zł. Płacisz " + liczbaRat + " rat po " + rata + " zł";
+        }
+    </script>
+</body>
+</html>

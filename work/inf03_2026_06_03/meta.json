@@ -1,0 +1,25 @@
+{
+  "password": "#Kart@ProduKtu",
+  "db": "sklep",
+  "required_files": [
+    "fotel1.png",
+    "fotel2.png",
+    "fotel3.png",
+    "kartaProduktu.html",
+    "kwerendy.txt",
+    "przeglądarka.txt",
+    "sklep.html",
+    "styl.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "kartaProduktu.html",
+    "sklep.html"
+  ],
+  "code": "inf03_2026_06_03",
+  "pdf": "inf03_arkusze/inf03_2026_06_03_arkusz.pdf",
+  "sql_files": [
+    "materialy/sklep.sql"
+  ],
+  "problems": []
+}

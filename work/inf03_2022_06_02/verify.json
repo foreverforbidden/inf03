@@ -1,0 +1,56 @@
+{
+  "code": "inf03_2022_06_02",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT marka, rocznik FROM samochody WHERE kolor = 'niebieski'",
+      "ok": true,
+      "rows": 2,
+      "preview": "+-------+---------+\n| marka | rocznik |\n+-------+---------+\n| Fiat  |    2007 |\n| Opel  |    2003 |\n+-------+---------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT COUNT(*) FROM samochody WHERE (marka = 'Toyota' OR marka = 'Opel') AND stan = 'bardzo dobry'",
+      "ok": true,
+      "rows": 1,
+      "preview": "+----------+\n| COUNT(*) |\n+----------+\n|        2 |\n+----------+"
+    },
+    {
+      "n": 3,
+      "sql": "UPDATE samochody SET stan = 'dobry' WHERE rocznik < 2004",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    },
+    {
+      "n": 4,
+      "sql": "CREATE USER 'jan'@'localhost' IDENTIFIED BY 'janKowalski1@'",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    },
+    {
+      "n": 5,
+      "sql": "GRANT SELECT, INSERT, UPDATE ON samochody.samochody TO 'jan'@'localhost'",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "obliczenia.html",
+      "status": 200,
+      "bytes": 1207
+    },
+    {
+      "page": "stacja.html",
+      "status": 200,
+      "bytes": 756
+    }
+  ],
+  "checked_at": "2026-10-06 18:42:19"
+}

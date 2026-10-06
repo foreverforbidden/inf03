@@ -1,0 +1,310 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 02
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+
+Numer PESEL zdającego*                                                        Miejsce na naklejkę z numerem
+                                                                                PESEL i z kodem ośrodka
+
+         Numer stanowiska
+
+
+
+
+Czas trwania egzaminu: 150 minut                                                         INF.03-02-26.06-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2026                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL*,
+          numer stanowiska i naklej naklejkę** z numerem PESEL i z kodem ośrodka.
+    2.    Sprawdź, czy arkusz egzaminacyjny zawiera 6 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    3.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    4.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    5.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    6.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami wykonania zadania
+          na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu nadzorującego.
+    7.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania
+          egzaminu.
+
+                                                                                               Powodzenia!
+
+ * w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+** w przypadku otrzymania naklejki
+
+
+Układ graficzny
+© CKE 2025
+Zadanie egzaminacyjne
+
+UWAGA: numer, którym został podpisany arkusz egzaminacyjny (PESEL lub w przypadku jego braku numer
+paszportu) jest w zadaniu nazywany numerem zdającego.
+
+Wykonaj hobbystyczną witrynę internetową, wykorzystując zainstalowane na komputerze aplikacje.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się
+archiwum 7z o nazwie pliki2 zabezpieczone hasłem: WodosP@dy
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego. Po
+skończonej pracy wszystkie wyniki należy zapisać w tym folderze.
+
+Operacje na bazie danych
+Baza danych zawiera połączone relacją tabele przedstawione na ilustracji 1. Tabele obiekty i turyści są
+w relacji m:n, z pośredniczącą tabelą osiagniecia
+
+
+
+
+                                        Ilustracja 1. Baza danych
+
+Za pomocą narzędzia phpMyAdmin wykonaj następujące operacje na bazie danych:
+  −   Utwórz bazę danych o nazwie wodospady, z zestawem znaków utf8_unicode_ci
+  −   Do utworzonej bazy zaimportuj tabele z pliku baza2.sql
+  −   Wykonaj zrzut ekranu po imporcie. Zapisz zrzut w formacie JPEG pod nazwą import. Nie kadruj zrzutu.
+      Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+      widoczne elementy wskazujące na poprawnie wykonany import tabel
+  −   Wykonaj zapytania SQL działające na bazie wodospady. Zapytania zapisz w pliku kwerendy.txt.
+      Wykonaj zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie PNG
+      i nadaj im nazwy kw1, kw2, kw3, kw4, kw5. Zrzuty powinny obejmować cały ekran monitora
+      z widocznym paskiem zadań
+       − Zapytanie 1: wybierające identyfikatory i nazwy wszystkich kontynentów
+      −   Zapytanie 2: wybierające jedynie pola nazwa, wartoscCechy i plik z tabeli obiekty dla wodospadów
+          z Polski (w warunku można zastosować pole idRodzaj = 10)
+      −   Zapytanie 3: wybierające jedynie pola idObiekt, panstwo, nazwa i wartoscCechy z tabeli obiekty
+          dla pól idRodzaj = 10 i idKontynent = 6
+      −   Zapytanie 4: wstawiające do tabeli osiagniecia rekord o wartościach: idObiekt = 34, idTurysta = 2.
+          Klucz podstawowy nadawany automatycznie
+      −   Zapytanie 5: wybierające pola idTurysta i nick z tabeli turysci
+
+
+
+
+                                               Strona 2 z 6
+Witryna internetowa
+
+
+
+
+            Ilustracja 2. Wygląd strony głównej index.php, kursor na odnośniku Europa
+
+Cechy grafiki siklawica.jpg:
+− Grafikę należy przeskalować z zachowaniem proporcji do szerokości 133 px
+
+Cechy witryny:
+− Składa się ze strony o nazwie index.php
+− Zapisana w języku HTML5
+−   Zadeklarowany polski język zawartości witryny
+−   Jawnie zastosowany właściwy standard kodowania polskich znaków
+−   Tytuł strony „Wodospady”
+−   Arkusz stylów w pliku o nazwie styl.css prawidłowo połączony
+    z kodem strony
+−   Podział strony na bloki: nagłówkowy, główny, artykułu, stopki. Blok
+    główny zawiera blok boczny i blok sekcji. Podział zrealizowany za     Ilustracja 3. Układ bloków
+    pomocą semantycznych znaczników języka HTML5 tak, aby po
+    uruchomieniu w przeglądarce układ bloków był zgodny z ilustracją 3
+−   Zawartość bloku nagłówkowego: nagłówek drugiego stopnia o treści „Łowcy wodospadów”
+−   Zawartość bloku głównego: blok boczny i blok sekcji
+−   Zawartość bloku bocznego: efekt działania skryptu 1
+−   Zawartość bloku sekcji:
+       − Tabela o czterech kolumnach. Pierwszy wiersz jest wierszem nagłówkowym z komórkami:
+          „Identyfikator”, „Państwo”, „Nazwa wodospadu”. „Wysokość”. Tabela jest wypełniona skryptem 2
+       − Nagłówek czwartego stopnia o treści „Wpisz osiągnięcie do bazy”
+       −   Formularz wysyłający dane metodą bezpieczną do tego samego pliku. Formularz zawiera pola
+           rozmieszczone zgodnie z ilustracją 2:
+                                              Strona 3 z 6
+           −   Etykieta o treści: „identyfikator wodospadu”
+           −   Pole edycyjne typu numerycznego połączone z etykietą
+           −   Etykieta o treści: „turysta”
+           −   Lista rozwijana połączona z etykietą, której elementy są wypełnione skryptem 3
+           −   Przycisk o treści „Wpisz” wysyłający dane do skryptu 4
+−   Zawartość bloku artykułu:
+       − Nagłówek trzeciego stopnia o treści „Wodospady w Polsce”
+       −   Obrazy o nazwach kamienczyk.jpg,           siklawica.jpg,   siklawa.jpg,   wilczki.jpg   z tekstem
+           alternatywnym „wodospad”
+−   Zawartość bloku stopki: paragraf o treści „Autor: ”, dalej wstawiony numer zdającego
+
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie styl.css. Cechy formatowania CSS
+działające na stronie:
+ − Domyślnie, dla wszystkich selektorów: krój czcionki Garamond, w przypadku braku serif, wyrównanie
+     tekstu do środka
+−   Dla bloku nagłówkowego i stopki: kolor tła SkyBlue, marginesy wewnętrzne 8 px, zewnętrzne 10 px,
+    zaokrąglenie rogów 20 px
+−   Dla bloku bocznego: szerokość 30%
+−   Dla bloku sekcji: szerokość 70%, wysokość 300 px, paski przewijania jedynie w przypadku przepełnienia
+    bloku
+−   Dla bloku artykułu: kolor tła AliceBlue, wysokość 280 px, marginesy wewnętrzne 8 px, zewnętrzne 10 px,
+    zaokrąglenie rogów 20 px
+−   Dla selektora obrazu: marginesy zewnętrzne 4 px, umieszczone obok siebie od lewej strony
+−   Dla selektora tabeli: szerokość 90%, obramowanie kropkowane o szerokości 1 px i kolorze czarnym
+−   Dla selektora odnośnika: blokowy sposób wyświetlania, kolor tła DodgerBlue, biały kolor czcionki,
+    szerokość 65%, rozmiar czcionki 130%, marginesy zewnętrzne 10 px, bez podkreślenia
+−   Gdy kursor znajdzie się na odnośniku, jego kolor tła zmienia się na RoyalBlue
+
+Uwaga: styl CSS obrazu, tabeli i odnośnika należy zdefiniować wyłącznie przy pomocy selektora tego
+znacznika. Jest to uwarunkowane projektem późniejszej rozbudowy witryny.
+
+Skrypty działające po stronie serwera
+Wymagania dotyczące skryptów:
+− Napisane w języku PHP
+− Należy stosować znaczące nazewnictwo zmiennych w języku polskim lub angielskim
+−   Łączą się z serwerem bazodanowym na localhost, użytkownik root bez hasła, baza danych o nazwie
+    wodospady
+−   Na końcu należy zamknąć połączenie z bazą
+
+Skrypt 1
+− Wysyła do bazy danych zapytanie 1
+−   Dla każdego zwróconego zapytaniem rekordu wyświetla odnośnik, którego treścią jest nazwa
+    kontynentu. Odnośnik prowadzi do tej samej strony i przesyła identyfikator kontynentu jako parametr
+    metody GET. Na ilustracji 4 jest przedstawiony adres URL po wybraniu odnośnika Europa
+
+
+
+                                               Strona 4 z 6
+Skrypt 2
+−   Pobiera wartość przesłaną metodą GET, a w przypadku braku – wartością 6. Wartość ta jest
+    identyfikatorem kontynentu
+−   Wysyła do bazy danych zapytanie 3, zmodyfikowane tak, że sprawdzany jest identyfikator kontynentu,
+    patrz poprzedni punkt
+−   Dla każdego zwróconego zapytaniem rekordu wstawia wiersz tabeli, wypełniając kolejne komórki
+    zwróconymi polami (np. jeśli wybrano odnośnik Europa – tabela zawiera dane wodospadów z Europy)
+
+
+
+
+                     Ilustracja 4. Adres URL, gdy został wybrany odnośnik Europa
+Skrypt 3
+−   Wysyła do bazy danych zapytanie 5
+−   Kolejne rekordy są opcjami listy rozwijanej tak, że atrybut wartości to pole idTurysta, a treść to nick
+
+Skrypt 4
+ − Działa tylko w przypadku, gdy z formularza zostały przesłane dane, wysyła do bazy danych zapytanie
+    4, zmodyfikowane w ten sposób, że do bazy wstawione są wartości pobrane z formularza (zakłada się
+    że użytkownik wpisuje tylko identyfikatory wyświetlone w tabeli i nie trzeba sprawdzać poprawności
+    identyfikatora)
+
+
+
+Tabela 1. Wybór funkcji języka PHP do obsługi bazy MySQL i MariaDB
+           Funkcje biblioteki mysqli                             Zwracana wartość
+ mysqli_connect(serwer, użytkownik,            id połączenia lub FALSE, gdy niepowodzenie
+ hasło, nazwa_bazy)
+ mysqli_select_db(id_polaczenia,               TRUE/FALSE w zależności od stanu operacji
+ nazwa_bazy)
+ mysqli_error(id_polaczenia)                   Tekst komunikatu błędu
+ mysqli_close(id_polaczenia)                   TRUE/FALSE w zależności od stanu operacji
+ mysqli_query(id_polaczenia,                   Wynik zapytania
+ zapytanie)
+ mysqli_fetch_row(wynik_zapytania)             Tablica numeryczna przechowująca kolejny wiersz z
+                                               podanych w wyniku zapytania
+ mysqli_fetch_array(wynik_zapytania) Tablica asocjacyjna zawierająca kolejny wiersz z
+                                               podanych w wyniku zapytania lub FALSE, jeżeli nie ma
+                                               więcej wierszy w wyniku zapytania
+ mysqli_num_rows(wynik_zapytania)              Liczba wierszy w podanym wyniku zapytania
+ mysqli_num_fields(wynik_zapytania)            Liczba kolumn w podanym wyniku zapytania
+ isset($zmienna)                               TRUE/FALSE w zależności od, tego czy $zmienna
+                                               istnieje
+
+Tabela 2. The display CSS Property Values
+ inline         Displays an element as an inline element (like <span>). Any height and width properties
+                will have no effect. This is default.
+ block          Displays an element as a block element (like <p>). It starts on a new line, and takes up the
+                whole width
+ inline-block   Displays an element as an inline-level block container. The element itself is formatted as
+                an inline element, but you can apply height and width values
+
+
+
+
+                                                 Strona 5 z 6
+Tabela 3. Semantic Elements in HTML
+       Tag                                              Description
+ <article>      Defines independent, self-contained content
+ <aside>        Defines content aside from the page content
+ <details>      Defines additional details that the user can view or hide
+ <figcaption>   Defines a caption for a <figure> element
+ <figure>       Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+ <footer>       Defines a footer for a document or section
+ <header>       Specifies a header for a document or section
+ <main>         Specifies the main content of a document
+ <mark>         Defines marked/highlighted text
+ <nav>          Defines navigation links
+ <section>      Defines a section in a document
+ <summary>      Defines a visible heading for a <details> element
+ <time>         Defines a date/time
+
+Tabela 4. Metoda GET i odnośniki
+Najpopularniejszy dla metody GET sposób przekazywania parametrów w adresie URL do danego zasobu:
+index.php?lang=pl&param1=2
+
+Przesyłane parametry znajdują się w tablicy globalnej $_GET
+
+
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego, powinny znajdować się pliki: import.jpg,
+index.php, kamienczyk.jpg, kw1.png, kw2.png, kw3.png, kw4.png, kw5.png, kwerendy.txt, przeglądarka.txt,
+siklawa.jpg, siklawica.jpg, styl.css, wilczki.jpg, ewentualnie inne przygotowane pliki. Po nagraniu płyty
+sprawdź poprawność jej odczytu. Opisz płytę numerem zdającego i pozostaw zapakowaną w pudełku na
+stanowisku wraz z arkuszem egzaminacyjnym.
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie podlegać będzie 5 rezultatów:
+   − operacje na bazie danych,
+   −   zawartość witryny internetowej,
+   −   działanie witryny internetowej,
+   −   styl CSS witryny internetowej,
+   −   skrypty.
+
+
+
+
+                                                Strona 6 z 6
+Wypełnia zdający w przypadku nagranej płyty
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD/DVD z rezultatami wykonania zadania egzaminacyjnego
+
+opisaną przeze mnie numerem PESEL                                         i oświadczam, że jakość nagrania
+
+została przeze mnie sprawdzona.
+
+
+Wypełnia zdający w przypadku nienagranej (pustej) płyty
+
+
+Poświadczam numerem PESEL                                            , że do arkusza nie dołączam płyty
+
+CD/DVD z rezultatami wykonania zadania egzaminacyjnego.
+
+
+Wypełnia Przewodniczący ZN
+
+
+   □ Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD/DVD, opisana numerem
+       PESEL zdającego.
+
+   □ Potwierdzam, że do arkusza egzaminacyjnego nie została dołączona płyta CD/DVD.
+
+                                                          ……………………………………………..
+                                                          Czytelny podpis Przewodniczącego ZN
+

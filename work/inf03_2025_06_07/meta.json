@@ -1,0 +1,28 @@
+{
+  "password": "#TurysTyk@7!",
+  "db": "wyprawy",
+  "required_files": [
+    "01.jpg",
+    "21.jpg",
+    "allinclusive.html",
+    "index.php",
+    "kwerendy.txt",
+    "przeglądarka.txt",
+    "styl.css",
+    "wczasy.html",
+    "wycieczki.html"
+  ],
+  "image_count": null,
+  "pages": [
+    "allinclusive.html",
+    "index.php",
+    "wczasy.html",
+    "wycieczki.html"
+  ],
+  "code": "inf03_2025_06_07",
+  "pdf": "inf03_arkusze/inf03_2025_06_07_arkusz.pdf",
+  "sql_files": [
+    "materialy/wyprawy.sql"
+  ],
+  "problems": []
+}

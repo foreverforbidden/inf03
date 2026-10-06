@@ -1,0 +1,44 @@
+{
+  "code": "inf03_2025_06_02",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT MIN(priorytet) FROM notatki WHERE Osoby_id = 3",
+      "ok": true,
+      "rows": 1,
+      "preview": "+----------------+\n| MIN(priorytet) |\n+----------------+\n|              2 |\n+----------------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT nazwa, priorytet FROM notatki WHERE nazwa LIKE '%na%'",
+      "ok": true,
+      "rows": 4,
+      "preview": "+-----------------------+-----------+\n| nazwa                 | priorytet |\n+-----------------------+-----------+\n| Gimnastyka            |         1 |\n| Projekt na geografię  |         2 |\n| Wyjazd na wakacje     |         5 |\n| Weterynarz Brutus     |         5 |\n+-----------------------+-----------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT osoby.imie, notatki.nazwa FROM osoby JOIN notatki ON osoby.id = notatki.Osoby_id WHERE notatki.priorytet = 5",
+      "ok": true,
+      "rows": 5,
+      "preview": "+----------+-------------------+\n| imie     | nazwa             |\n+----------+-------------------+\n| Krzysiek | Wyprowadzić psa   |\n| Krzysiek | Spacer z kumplem  |\n| Ewelina  | Wyjazd na wakacje |\n| Ewelina  | Weterynarz Brutus |\n| Ewelina  | Lekarz            |\n+----------+-------------------+"
+    },
+    {
+      "n": 4,
+      "sql": "SELECT osoby.imie, COUNT(notatki.id) FROM osoby JOIN notatki ON osoby.id = notatki.Osoby_id GROUP BY osoby.imie",
+      "ok": true,
+      "rows": 4,
+      "preview": "+----------+-------------------+\n| imie     | COUNT(notatki.id) |\n+----------+-------------------+\n| Ewelina  |                 5 |\n| Grześ    |                 1 |\n| Krzysiek |                 4 |\n| Paula    |                 3 |\n+----------+-------------------+"
+    }
+  ],
+  "pages": [
+    {
+      "page": "notatki.html",
+      "status": 200,
+      "bytes": 1494
+    }
+  ],
+  "checked_at": "2026-10-06 18:44:56"
+}

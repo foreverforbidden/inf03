@@ -1,0 +1,23 @@
+{
+  "password": "2ws3ed!#",
+  "db": "malarz",
+  "required_files": [
+    "cena.html",
+    "kwerendy.txt",
+    "mieszamy.html",
+    "obraz.png",
+    "przeglądarka.txt",
+    "styl_1.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "cena.html",
+    "mieszamy.html"
+  ],
+  "code": "inf03_2023_01_01",
+  "pdf": "inf03_arkusze/inf03_2023_01_01_arkusz.pdf",
+  "sql_files": [
+    "materialy/malarz.sql"
+  ],
+  "problems": []
+}

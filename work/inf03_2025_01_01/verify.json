@@ -1,0 +1,49 @@
+{
+  "code": "inf03_2025_01_01",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT kolor, material FROM produkt WHERE wysokosc_buta > 10",
+      "ok": true,
+      "rows": 2,
+      "preview": "+----------+--------------------------+\n| kolor    | material                 |\n+----------+--------------------------+\n| brązowy  | skóra naturalna - zamsz  |\n| szary    | skóra ekologiczna        |\n+----------+--------------------------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT buty.nazwa, buty.cena, kategorie.nazwa_kat FROM buty JOIN kategorie ON buty.id_kat = kategorie.id_kat",
+      "ok": true,
+      "rows": 4,
+      "preview": "+---------------------+--------+-----------------+\n| nazwa               | cena   | nazwa_kat       |\n+---------------------+--------+-----------------+\n| OBUWIE TRENINGOWE   | 179.00 | Obuwie sportowe |\n| PÓŁBUTY WIZYTOWE    | 188.00 | Półbuty         |\n| TRZEWIKI SZNUROWANE | 399.00 | Trzewiki        |\n| TRAMPKI SLIP ON     |  77.99 | Trampki         |\n+---------------------+--------+-----------------+"
+    },
+    {
+      "n": 3,
+      "sql": "CREATE USER 'Marek'@'localhost' IDENTIFIED BY 'M@reK'",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    },
+    {
+      "n": 4,
+      "sql": "GRANT SELECT, UPDATE ON obuwie.produkt TO 'Marek'@'localhost'",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "index.html",
+      "status": 200,
+      "bytes": 1061
+    },
+    {
+      "page": "raty.html",
+      "status": 200,
+      "bytes": 1796
+    }
+  ],
+  "checked_at": "2026-10-06 18:45:06"
+}

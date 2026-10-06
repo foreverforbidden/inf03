@@ -1,0 +1,332 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 09
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+
+Numer PESEL zdającego*                                                        Miejsce na naklejkę z numerem
+                                                                                PESEL i z kodem ośrodka
+
+         Numer stanowiska
+
+
+
+
+Czas trwania egzaminu: 150 minut                                                         INF.03-09-26.01-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2026                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL*,
+          numer stanowiska i naklej naklejkę** z numerem PESEL i z kodem ośrodka.
+    2.    Sprawdź, czy arkusz egzaminacyjny zawiera 7 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    3.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    4.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    5.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    6.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami wykonania zadania
+          na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu nadzorującego.
+    7.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania
+          egzaminu.
+
+                                                                                               Powodzenia!
+
+ * w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+** w przypadku otrzymania naklejki
+
+
+Układ graficzny
+© CKE 2025
+Zadanie egzaminacyjne
+
+UWAGA: numer, którym został podpisany arkusz egzaminacyjny (PESEL lub w przypadku jego braku numer
+paszportu) jest w zadaniu nazywany numerem zdającego.
+
+Wykonaj aplikację internetową salonu stylizacji paznokci, wykorzystując edytor grafiki rastrowej, pakiet
+XAMPP oraz edytor zaznaczający składnię.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się
+archiwum 7z o nazwie pliki15 zabezpieczone hasłem P@znoKcie?
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego.
+Wszystkie wyniki należy zapisać w tym folderze.
+
+Operacje na bazie danych
+Do wykonania operacji na bazie należy wykorzystać tabele przedstawione na ilustracji 1. Pole topKlient
+przyjmuje wartość 1, gdy klient jest ważny.
+
+
+
+
+                                       Ilustracja 1. Baza danych
+
+Za pomocą narzędzia phpMyAdmin wykonaj następujące operacje na bazie danych:
+− Utwórz bazę danych o nazwie paznokcie, z zestawem polskich znaków (np. utf8_polish_ci)
+−   Z rozpakowanego archiwum zaimportuj tabele z pliku paznokcie.sql do utworzonej bazy
+−   Wykonaj zrzut ekranu po imporcie. Zapisz zrzut w formacie PNG pod nazwą import. Nie kadruj zrzutu.
+    Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+    widoczne elementy wskazujące na poprawnie wykonany import tabel
+−   Wykonaj zapytania SQL działające na bazie paznokcie. Zapytania zapisz w pliku kwerendy.txt. Wykonaj
+    zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie PNG i nadaj im nazwy
+    kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora z widocznym paskiem zadań
+        −   Zapytanie 1: wybierające jedynie imię, kolor i cenę tylko dla ważnych klientów
+        −   Zapytanie 2: wybierające jedynie imię i cenę dla klientów umówionych na dzień 2024-05-23
+        −   Zapytanie 3: wybierające jedynie imię i kolor z tabeli klienci oraz odpowiadającą im nazwę
+            kształtu z tabeli ksztalty dla kształtu „migdał”. Należy posłużyć się relacją
+        −   Zapytanie 4: modyfikujące strukturę tabeli wzory, poprzez dodanie kolumny o nazwie doplata,
+            dowolnego typu całkowitego
+
+
+
+
+                                              Strona 2 z 7
+Witryna internetowa
+
+
+
+
+                               Ilustracja 2. Wygląd strony internetowej
+
+Cechy grafiki kolory.png (ilustracja 3):
+− Grafikę należy skadrować tak, aby były widoczne jedynie butelki lakierów do paznokci. Grafikę należy
+   przyciąć dokładnie do kształtów butelek.
+− Grafikę należy przeskalować z zachowaniem proporcji do wysokości 70 px
+
+
+
+
+                                      Ilustracja 3. Grafika kolory.png
+
+Cechy witryny:
+− Nazwa pliku paznokcie w formacie HTML lub PHP w zależności od implementacji skryptów
+− Zapisana w języku HTML5
+−   Zadeklarowany polski język zawartości witryny
+−   Jawnie zastosowany właściwy standard kodowania polskich znaków
+−   Tytuł strony widoczny na karcie przeglądarki: „Stylizacja paznokci"
+−   Arkusz stylów w pliku o nazwie styl.css prawidłowo połączony
+    z kodem strony
+−   Podział strony na bloki zrealizowany za pomocą semantycznych
+    znaczników bloków języka HTML5 tak, aby po uruchomieniu
+    w przeglądarce układ bloków na stronie był zgodny z ilustracją 4
+−   Zawartość bloku bocznego:
+                                                                         Ilustracja 4. Układ bloków
+     − Obraz manicure.jpg z tekstem alternatywnym „Stylizacja
+         paznokci”
+−   Zawartość bloku głównego: blok nagłówkowy, blok nawigacyjny, bloki: sekcja 1, sekcja 2, sekcja 3
+    (w jednym momencie tylko jedna sekcja jest widoczna)
+−   Zawartość bloku nagłówkowego:
+     − Nagłówek pierwszego stopnia o treści „Twoje wymarzone paznokcie”
+
+
+
+                                              Strona 3 z 7
+−       Zawartość bloku nawigacyjnego:
+        −   Przycisk o treści „Kolor”
+        −   Przycisk o treści „Kształt”
+        −   Przycisk o treści „Wzór”
+        −   Zdarzenie najechania kursorem myszy na dowolny przycisk uruchamia skrypt 2
+−       Zawartość bloku sekcja 1:
+        − Nagłówek drugiego stopnia o treści „Kolor”
+        −   Obraz kolory.png z tekstem alternatywnym „Kolory paznokci”
+        −   Poniżej pole edycyjne pozwalające wybrać kolor, wartość początkowa pola: #FF0000 (ilustracja 5)
+    −    Zawartość bloku sekcja 2:
+        − Nagłówek drugiego stopnia o treści „Kształt”
+        −   Obraz ksztalt.png z tekstem alternatywnym „Kształty paznokci”
+        −   Poniżej pole listy rozwijanej z opcjami: „migdał”, „zaokrąglony”,
+            „kwadratowy”, „balerina”, „zaokrąglony kwadrat”
+    −    Zawartość bloku sekcja 3:
+        − Nagłówek drugiego stopnia o treści „Wzór”
+        −   Efekt działania skryptu 1
+        −
+        Poniżej pole edycyjne przeznaczone do wpisywania wartości
+        całkowitych jedynie od 1 do 10
+    − Zawartość bloku stopki:
+      − Paragraf o treści „Autor strony: ”, dalej wstawiony numer
+        zdającego. Numer zdającego jest zapisany za pomocą znacznika
+        semantycznego oznaczającego tekst uwypuklony, formatowany
+                                                                       Ilustracja 5. Pole edycyjne
+        domyślnie jako pochylony                                     kolorów, przeglądarka Chrome
+
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie styl.css. Cechy formatowania CSS
+działające na stronie:
+  − Domyślnie, dla wszystkich selektorów: krój czcionki Trebuchet MS, w przypadku braku sans-serif
+  − Dla ciała strony: kolor tła BlanchedAlmond, wyrównanie tekstu do środka
+  − Dla bloku bocznego: szerokość 20%
+  − Jedynie dla obrazu w bloku bocznym: szerokość 100%
+  − Dla bloku głównego: szerokość 80%
+    −    Dla bloku nawigacyjnego: wyrównanie tekstu do lewej strony, jedynie margines zewnętrzny lewy 10%
+    −    Dla trzech bloków sekcji: kolor tła Salmon, jedynie margines zewnętrzny lewy 10%, marginesy
+         wewnętrzne 10 px, wysokość 250 px
+    −    Dodatkowo blok sekcji 1 jest wyświetlany w sposób blokowy, natomiast bloki sekcji 2 i 3 są usunięte
+         z układu
+    −    Dla przycisków: szerokość 26%, biały kolor czcionki, brak obramowania, rozmiar czcionki 200%
+    −    Dodatkowo dla pierwszego przycisku kolor tła Salmon, dla pozostałych – Crimson
+    −    Dla klasy wzory: szerokość 70 px, marginesy zewnętrzne 5 px, zaokrąglenie rogów 100%
+
+
+
+
+                                                  Strona 4 z 7
+Skrypt
+W tabeli 1 zamieszczono wybrane pola i metody modelu DOM w języku JavaScript. W skryptach należy
+stosować znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim. Wymagania dotyczące
+skryptów:
+
+Skrypt 1
+−   Zapisany w języku JavaScript lub PHP (w przypadku PHP plik musi nazywać się paznokcie.php)
+−   Wyświetla za pomocą pętli 10 obrazów o nazwach, kolejno: 1.jpg, 2.jpg, 3.jpg ... 10.jpg
+−   Każdy obraz ma przypisaną klasę wzory
+    − Po najechaniu kursorem na obraz jest wyświetlany dymek z nazwą (numerem) obrazu (na ilustracji 6
+      wskazano obraz3.jpg, więc dymek zawiera liczbę 3)
+
+
+
+
+                     Ilustracja 6. Trzeci blok sekcji z wygenerowanymi obrazami
+
+Skrypt 2
+−   Wykonywany po stronie klienta, po najechaniu kursorem na przycisk
+−   Działanie w przypadku zdarzenia, gdy kursor najedzie na przycisk „Kolor” (ilustracja 2)
+      − Pierwszy blok sekcji jest wyświetlany w postaci blokowej
+      − Pozostałe bloki są usunięte
+      − Pierwszy przycisk ma kolor tła Salmon
+      − Pozostałe przyciski mają kolor tła Crimson
+−   Działanie w przypadku zdarzenia, gdy kursor najedzie na przycisk „Kształt” (ilustracja 7)
+      − Drugi blok sekcji jest wyświetlany w postaci blokowej
+      − Pozostałe bloki są usunięte
+      − Drugi przycisk ma kolor tła Salmon
+      − Pozostałe przyciski mają kolor tła Crimson
+−   Działanie w przypadku zdarzenia, gdy kursor najedzie na przycisk „Wzór” (ilustracja 6)
+      − Trzeci blok sekcji jest wyświetlany w postaci blokowej
+      − Pozostałe bloki są usunięte
+      − Trzeci przycisk ma kolor tła Salmon
+      − Pozostałe przyciski mają kolor tła Crimson
+
+
+
+
+                                               Strona 5 z 7
+                                   Ilustracja 7. Drugi blok sekcji
+
+
+
+Tabela 1. Wybrane pola i metody modelu DOM języka JavaScript
+           Wyszukiwanie elementów                              Zmiana elementów
+ document.getElementById(id)                   element.innerHTML = "wartość"
+ document.getElementsByTagName(TagName)        element.attribute_name = "wartość"
+ document.getElementsByClassName(ClassName) element.setAttribute(atrybut, wartosc)
+ document.getElementsByName(ElementName)       element.style.property_name = "wartość"
+ document.querySelector(CSSselector)
+ document.querySelectorAll(CSSselector)
+
+     Operacje na elementach dokumentu                         Wybrane właściwości obiektu style
+ document.createElement(element)                  backgroundColor
+ document.removeChild(element)                    color
+ document.appendChild(element)                    fontSize
+ document.replaceChild(element)                   fontStyle = "normal | italic | oblique | initial | inherit"
+ document.write(text)                             fontWeight = "normal | lighter | bold | bolder | value |
+                                                  initial | inherit"
+                                                  listStyleType = "circle| decimal | disc | none | square |
+                                                  initial..."
+Wybrane zdarzenia HTML
+       Zdarzenia myszy                 Zdarzenia klawiatury                    Zdarzenia obiektów
+ onclick                          onkeydown                             onload
+ ondblclick                       onkeypress                            onresize
+ onmouseover                      onkeyup                               onfocusin
+ onmouseout                                                             onfocusout
+ Elementy formularzy                                Metody i pola obiektu string (JS)
+ Ważniejsze typy pola input: button, checkbox,      Length
+ number, password, radio, text, range, file         indexOf(text)
+ Inne elementy: select, textarea                    search(text)
+                                                    lastIndexOf()
+                                                    substr(startIndex, endIndex)
+                                                    replace(textToReplace, newText)
+                                                    toUpperCase()
+                                                    toLowerCase()
+
+
+
+
+                                             Strona 6 z 7
+Tabela 2. Semantic Elements in HTML
+       Tag                                              Description
+ <article>      Defines independent, self-contained content
+ <aside>        Defines content aside from the page content
+ <details>      Defines additional details that the user can view or hide
+ <figcaption>   Defines a caption for a <figure> element
+ <figure>       Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+ <footer>       Defines a footer for a document or section
+ <header>       Specifies a header for a document or section
+ <main>         Specifies the main content of a document
+ <mark>         Defines marked/highlighted text
+ <nav>          Defines navigation links
+ <section>      Defines a section in a document
+ <summary>      Defines a visible heading for a <details> element
+ <time>         Defines a date/time
+
+Tabela 3. Wartości właściwości CSS display
+   Wartość (value)                                Opis
+ inline                Wyświetla element w linii (np. <span>)
+ block                 Wyświetla element w bloku (np. <p>)
+ inline-block          Wyświetla element jako kontener liniowo-blokowy
+ none                  Element jest usunięty
+
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego, powinny znajdować się pliki: 10 obrazów
+o nazwach 1.jpg ÷ 10.jpg, import.png, kolory.png, ksztalt.png, kw1.png, kw2.png, kw3.png, kw4.png,
+kwerendy.txt, manicure.jpg, paznokcie.html (lub .php), przeglądarka.txt, styl.css, ewentualnie inne
+przygotowane pliki. Po nagraniu płyty sprawdź poprawność jej odczytu. Opisz płytę numerem zdającego
+i pozostaw zapakowaną w pudełku na stanowisku wraz z arkuszem egzaminacyjnym.
+
+
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie podlegać będzie 5 rezultatów:
+   −   operacje na bazie danych,
+   −   zawartość witryny internetowej,
+   −   działanie witryny internetowej,
+   −   styl CSS witryny internetowej,
+   −   skrypt.
+
+
+
+
+                                                Strona 7 z 7
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD/DVD opisaną numerem
+
+PESEL                              , której jakość nagrania została przeze mnie sprawdzona.
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD/DVD, opisana numerem PESEL
+zdającego.
+
+                                                               ……………………………........…
+                                                               Czytelny podpis Przewodniczącego ZN
+

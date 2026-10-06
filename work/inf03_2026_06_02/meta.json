@@ -1,0 +1,24 @@
+{
+  "password": "WodosP@dy",
+  "db": "wodospady",
+  "required_files": [
+    "index.php",
+    "kamienczyk.jpg",
+    "kwerendy.txt",
+    "przeglądarka.txt",
+    "siklawa.jpg",
+    "siklawica.jpg",
+    "styl.css",
+    "wilczki.jpg"
+  ],
+  "image_count": null,
+  "pages": [
+    "index.php"
+  ],
+  "code": "inf03_2026_06_02",
+  "pdf": "inf03_arkusze/inf03_2026_06_02_arkusz.pdf",
+  "sql_files": [
+    "materialy/baza2.sql"
+  ],
+  "problems": []
+}

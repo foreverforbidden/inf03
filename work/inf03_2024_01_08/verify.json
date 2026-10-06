@@ -1,0 +1,49 @@
+{
+  "code": "inf03_2024_01_08",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT imie, nazwisko, stanowisko FROM kadra WHERE stanowisko = 'fryzjer' OR stanowisko = 'stylista'",
+      "ok": true,
+      "rows": 2,
+      "preview": "+------------+----------+------------+\n| imie       | nazwisko | stanowisko |\n+------------+----------+------------+\n| Aleksandra | Wilk     | stylista   |\n| Katarzyna  | Nowak    | fryzjer    |\n+------------+----------+------------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT COUNT(*), MAX(cena) FROM uslugi WHERE rodzaj = 2",
+      "ok": true,
+      "rows": 1,
+      "preview": "+----------+-----------+\n| COUNT(*) | MAX(cena) |\n+----------+-----------+\n|        3 |        50 |\n+----------+-----------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT uslugi.nazwa, kadra.imie FROM uslugi JOIN kadra ON uslugi.kadra_id = kadra.id WHERE uslugi.rodzaj = 2 OR uslugi.rodzaj = 3",
+      "ok": true,
+      "rows": 5,
+      "preview": "+-----------------+-----------+\n| nazwa           | imie      |\n+-----------------+-----------+\n| Masaz twarzy    | Piotr     |\n| Farbowanie      | Katarzyna |\n| Strzyzenie      | Katarzyna |\n| Ustalenie diety | Anna      |\n| Czesanie        | Katarzyna |\n+-----------------+-----------+"
+    },
+    {
+      "n": 4,
+      "sql": "ALTER TABLE uslugi ADD opinia TEXT",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "fryzura.html",
+      "status": 200,
+      "bytes": 1785
+    },
+    {
+      "page": "index.html",
+      "status": 200,
+      "bytes": 1013
+    }
+  ],
+  "checked_at": "2026-10-06 18:41:43"
+}

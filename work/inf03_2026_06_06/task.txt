@@ -1,0 +1,326 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 06
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+
+Numer PESEL zdającego*                                                        Miejsce na naklejkę z numerem
+                                                                                PESEL i z kodem ośrodka
+
+         Numer stanowiska
+
+
+
+
+Czas trwania egzaminu: 150 minut                                                         INF.03-06-26.06-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2026                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL*,
+          numer stanowiska i naklej naklejkę** z numerem PESEL i z kodem ośrodka.
+    2.    Sprawdź, czy arkusz egzaminacyjny zawiera 7 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    3.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    4.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    5.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    6.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami wykonania zadania
+          na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu nadzorującego.
+    7.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania
+          egzaminu.
+
+                                                                                               Powodzenia!
+
+ * w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+** w przypadku otrzymania naklejki
+
+
+Układ graficzny
+© CKE 2025
+Zadanie egzaminacyjne
+
+UWAGA: numer, którym został podpisany arkusz egzaminacyjny (PESEL lub w przypadku jego braku numer
+paszportu) jest w zadaniu nazywany numerem zdającego.
+
+Wykonaj uproszczoną wersję witryny internetowej konta pacjenta, wykorzystując zainstalowane na
+komputerze aplikacje.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się
+archiwum 7z o nazwie pliki7 zabezpieczone hasłem: Rec3ptyPacj3nt@
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego. Po
+skończonej pracy wszystkie wyniki należy zapisać w tym folderze.
+
+Operacje na bazie danych
+Baza danych zawiera połączone relacją m:n tabele pacjentów i leków. W tabeli typy są zapisane typy podania
+leku: tabletka, syrop itp. Rok urodzenia pacjenta jest zapisany w polu pacjenci.rokUr. Model bazy danych jest
+uproszczony jedna recepta to jeden lek dla jednego pacjenta
+
+
+
+
+                                        Ilustracja 1. Baza danych
+
+Za pomocą narzędzia phpMyAdmin wykonaj następujące operacje na bazie danych:
+  − Utwórz bazę danych o nazwie recepty, z zestawem polskich znaków (np. utf8_polish_ci)
+  −   Do utworzonej bazy zaimportuj tabele z pliku recepty.sql
+  −   Wykonaj zrzut ekranu po imporcie. Zapisz zrzut w formacie PNG pod nazwą import. Nie kadruj zrzutu.
+      Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+      widoczne elementy wskazujące na poprawnie wykonany import tabel
+  −   Wykonaj zapytania SQL działające na bazie recepty. Zapytania zapisz w pliku kwerendy.txt. Wykonaj
+      zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie PNG i nadaj im
+      nazwy kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora z widocznym paskiem
+      zadań
+       − Zapytanie 1: wybierające jedynie nazwy i ilości leków, dla których jednostka miary to sztuki (szt.)
+      −   Zapytanie 2: wybierające jedynie imię, nazwisko i rok urodzenia dla pacjentów urodzonych po 2000
+          roku, których imię jest zakończone literą ‘a’
+      −   Zapytanie 3: wybierające jedynie nazwy typów leków oraz zliczające liczbę leków danego typu.
+          Należy posłużyć się relacją i grupowaniem
+      −   Zapytanie 4: tworzące użytkownika Lekarz na localhost z hasłem Lek@rz
+
+                                                Strona 2 z 7
+Witryna internetowa
+
+
+
+
+                                   Ilustracja 2. Strona recepty.html
+
+Modyfikacje grafiki recepta.png:
+ − Butelka z zakrętką wypełniona kolorem czarnym
+ − Krzyż na butelce wypełniony kolorem czerwonym
+ − Białe tło zamienione na tło przezroczyste
+ − Docelowe wymiary grafiki 100 px na 100 px
+
+Witryna składa się ze stron index.html, recepty.html, skierowania.html. W plikach
+index.html i skierowania.html należy napisać „Strona w trakcie budowy”                 Ilustracja 3.
+                                                                                          Grafika
+
+Cechy strony recepty.html:
+− Zapisana w języku HTML5
+− Zadeklarowany polski język zawartości witryny
+− Jawnie zastosowany właściwy standard kodowania polskich znaków
+−   Tytuł strony „Konto pacjenta”
+−   Arkusz stylów w pliku o nazwie styl.css prawidłowo połączony z kodem
+    strony
+−   Podział strony na bloki: nagłówkowy, nawigacyjny, główny i stopka. Blok
+    główny zawiera cztery bloki sekcji. Podział zrealizowany za pomocą
+    semantycznych znaczników języka HTML5 tak, aby po uruchomieniu
+    w przeglądarce układ bloków był zgodny z ilustracją 4
+−   Zawartość bloku nagłówkowego:
+    − Nagłówek drugiego stopnia o treści: „Strefa pacjenta”
+−   Zawartość bloku nawigacyjnego:                                            Ilustracja 4. Układ bloków
+    − Odnośnik do strony index.html o treści „Strona główna”
+    −   Odnośnik do strony recepty.html o treści „Recepty”
+    − Odnośnik do strony skierowania.html o treści „Skierowania”
+−   Zawartość bloku sekcji lewa1:
+    −   Obraz pacjent.png z tekstem alternatywnym „dane pacjenta”
+    −   Nagłówek trzeciego stopnia o treści „Dane pacjenta”
+
+                                              Strona 3 z 7
+    −   Paragraf o treści „Agnieszka”
+    − Paragraf o treści „Nowak”
+−   Zawartość bloku sekcji prawa1:
+    −   Obraz recepta.png z tekstem alternatywnym „dane recept”
+    −   Nagłówek trzeciego stopnia o treści „Dane recept”
+−   Zawartość bloku sekcji prawa2:
+    − Efekt działania skryptu
+−   Zawartość bloku sekcji lewa2:
+    − Obraz lekarz.png z tekstem alternatywnym „dane lekarza”
+    −   Nagłówek trzeciego stopnia o treści „Dane lekarza”
+    −   Paragraf o treści „lek. Marian Kowal”
+    − Paragraf o treści „numer PWZ: 4387203”
+−   Zawartość bloku stopki:
+    − Paragraf o treści „Autor strony: ”, dalej wstawiony numer zdającego. Numer zdającego zapisany za
+       pomocą znacznika semantycznego oznaczającego tekst uwypuklony, formatowany domyślnie jako
+       pochylony
+
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie styl.css. Cechy formatowania CSS
+działające na stronie:
+ − Domyślnie, dla wszystkich selektorów: krój czcionki Trebuchet MS, w przypadku braku sans-serif
+ − Dla bloków nagłówkowego i stopki: kolor tła #B17948, biały kolor tekstu, marginesy wewnętrzne 5 px,
+     wyrównanie tekstu do środka
+ − Dla bloku nawigacyjnego: kolor tła #D9A97E, kolor czcionki biały, wyrównanie tekstu do środka
+−   Dla bloków sekcji lewa1 i lewa2: szerokość 40%, wysokość 200 px
+−   Dla bloku sekcji prawa1: szerokość 60%, wysokość 120 px
+−   Dla bloku sekcji prawa2: szerokość 60%, wysokość 400 px, paski przewijania zawsze widoczne
+−   Dla selektora obrazu: opływanie po jego prawej stronie, marginesy zewnętrzne 20 px
+−   Dla selektora nagłówka czwartego stopnia: wyrównanie tekstu do prawej strony, kolor czcionki czerwony,
+    rozmiar czcionki 120%
+−   Dla selektora odnośnika: biały kolor czcionki, rozmiar czcionki 150%, marginesy zewnętrzne 30 px
+−   Dla klasy recepty: kolor tła PeachPuff, marginesy wewnętrzne 20 px, zewnętrzne 40 px, zaokrąglenie
+    rogów 20 px
+−   Gdy kursor znajdzie się na elemencie z przypisaną klasą recepty, kolor tła zmienia się na #D9A97E
+
+Uwaga: styl CSS obrazu, nagłówka czwartego stopnia i odnośnika należy zdefiniować wyłącznie przy
+pomocy selektora tego znacznika. Jest to uwarunkowane projektem późniejszej rozbudowy witryny.
+
+Skrypt działający po stronie klienta
+Wymagania dotyczące skryptu:
+−   Należy stosować znaczące nazewnictwo zmiennych w języku polskim lub angielskim
+−   Skrypt ma za zadanie wygenerować elementy w bloku sekcji prawa2 wraz z danymi
+−   Strukturę danych należy skopiować z pliku dane.json
+−   Struktura jest uproszczona, dane innych pacjentów nie będą dodawane, ale może ulec zmianie tablica
+    recepty. W tym mogą zostać dopisane nowe elementy do tablicy, co należy uwzględnić w skrypcie.
+
+
+                                              Strona 4 z 7
+−   Generowanych jest tyle bloków ile jest elementów tablicy recepty. Każdy blok ma przypisaną klasę
+    recepty
+−   Wewnątrz jednego bloku generowane są:
+    −   Paragraf o treści „Data wystawienia: ”, dalej wstawiona wartość z tablicy
+    −   Lista numerowana (uporządkowana) z nazwami leków pobranymi z tablicy. Pod jednym indeksem
+        tablicy recepty mogą być maksymalnie trzy leki, zapisane w polach lek1, lek2, lek3. Pierwszy lek
+        zawsze jest wpisany. Kolejne wpisy mogą być puste. Gdy wpis jest pusty – nie jest uwzględniany
+        w liście. Na ilustracji 5 pokazano wygenerowany drugi i trzeci blok dla indeksów [1] i [2] tablicy recepty.
+        Pod indeksem [1] zdefiniowano tylko dwa leki, pod indeksem [2] zdefiniowano tylko jeden lek – dlatego
+        listy mają kolejno dwa i jeden element
+    −   Nagłówek czwartego stopnia o treści „Kod: ”, dalej wstawiona wartość kodu z tablicy
+
+
+
+
+                                      Ilustracja 5. Wygenerowane bloki
+
+
+
+
+                                                   Strona 5 z 7
+Tabela 1. Wybrane pola i metody modelu DOM języka JavaScript
+           Wyszukiwanie elementów                              Zmiana elementów
+ document.getElementById(id)                   element.innerHTML = "wartość"
+ document.getElementsByTagName(TagName)        element.attribute_name = "wartość"
+ document.getElementsByClassName(ClassName) element.setAttribute(atrybut, wartosc)
+ document.getElementsByName(ElementName)       element.style.property_name = "wartość"
+ document.querySelector(CSSselector)
+ document.querySelectorAll(CSSselector)
+
+     Operacje na elementach dokumentu                         Wybrane właściwości obiektu style
+ document.createElement(element)                  backgroundColor
+ document.removeChild(element)                    color
+ document.appendChild(element)                    fontSize
+ document.replaceChild(element)                   fontStyle = "normal | italic | oblique | initial | inherit"
+ document.write(text)                             fontWeight = "normal | lighter | bold | bolder | value |
+                                                  initial | inherit"
+                                                  listStyleType = "circle| decimal | disc | none | square |
+                                                  initial..."
+       Wybrane zdarzenia HTML
+        Zdarzenia myszy                 Zdarzenia klawiatury                   Zdarzenia obiektów
+ onclick                           onkeydown                            onload
+ ondblclick                        onkeypress                           onresize
+ onmouseover                       onkeyup                              onfocusin
+ onmouseout                                                             onfocusout
+       Elementy formularzy                          Metody i pola obiektu string (JS)
+ Ważniejsze typy pola input: button, checkbox,      Length
+ number, password, radio, text, range, file         indexOf(text)
+ Inne elementy: select, textarea                    search(text)
+                                                    lastIndexOf()
+                                                    substr(startIndex, endIndex)
+                                                    replace(textToReplace, newText)
+                                                    toUpperCase()
+                                                    toLowerCase()
+
+Tabela 2. Tworzenie nowych elementów DOM i wstawianie ich do bloków
+Uwaga: w miejscu element należy wstawić obiekt konkretnego elementu, zwróconego takimi funkcjami jak
+getElementById, createElement...
+                    Kod                                               Opis
+ document.createElement("h2")              Tworzy element DOM <h2> i zwraca go. Jako parametr
+                                           należy podać nazwę elementu, np. ul, p, table ...
+ element. classList.add("klasa1"); Przypisuje do danego elementu klasę stylu CSS
+ element.nazwa-atrybutu = ...              Ustawia wartości atrybutów dla danego elementu
+ element.innerText = ....                  Ustawia tekst dla elementów takich jak paragraf, nagłówek,
+                                           przycisk itp.
+ element1.appendChild(element2);           Zagnieżdża element2 w elemencie1. Elementem1 może
+                                           być cały dokument, blok, lista lub inny element agregujący.
+                                           Wewnątrz niego zostaje umieszczony element2
+ element.scrollIntoView();                 Przewija zawartość bloku / strony do wskazanego elementu
+
+
+
+
+                                             Strona 6 z 7
+Tabela 3. Semantic Elements in HTML
+       Tag                                              Description
+ <article>      Defines independent, self-contained content
+ <aside>        Defines content aside from the page content
+ <details>      Defines additional details that the user can view or hide
+ <figcaption>   Defines a caption for a <figure> element
+ <figure>       Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+ <footer>       Defines a footer for a document or section
+ <header>       Specifies a header for a document or section
+ <main>         Specifies the main content of a document
+ <mark>         Defines marked/highlighted text
+ <nav>          Defines navigation links
+ <section>      Defines a section in a document
+ <summary>      Defines a visible heading for a <details> element
+ <time>         Defines a date/time
+
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego, powinny znajdować się pliki: import.png,
+index.html, kw1.png, kw2.png, kw3.png, kw4.png, kwerendy.txt, lekarz.png, pacjent.png, przeglądarka.txt,
+recepta.png, recepty.html, skierowania.html, styl.css, ewentualnie inne przygotowane pliki. Po nagraniu płyty
+sprawdź poprawność jej odczytu. Opisz płytę numerem zdającego i pozostaw zapakowaną w pudełku na
+stanowisku wraz z arkuszem egzaminacyjnym.
+
+
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie podlegać będzie 5 rezultatów:
+   −   operacje na bazie danych,
+   −   zawartość witryny internetowej,
+   −   działanie witryny internetowej,
+   −   styl CSS witryny internetowej,
+   −   skrypt.
+
+
+
+
+                                                Strona 7 z 7
+Wypełnia zdający w przypadku nagranej płyty
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD/DVD z rezultatami wykonania zadania egzaminacyjnego
+
+opisaną przeze mnie numerem PESEL                                         i oświadczam, że jakość nagrania
+
+została przeze mnie sprawdzona.
+
+
+Wypełnia zdający w przypadku nienagranej (pustej) płyty
+
+
+Poświadczam numerem PESEL                                            , że do arkusza nie dołączam płyty
+
+CD/DVD z rezultatami wykonania zadania egzaminacyjnego.
+
+
+Wypełnia Przewodniczący ZN
+
+
+   □ Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD/DVD, opisana numerem
+       PESEL zdającego.
+
+   □ Potwierdzam, że do arkusza egzaminacyjnego nie została dołączona płyta CD/DVD.
+
+                                                          ……………………………………………..
+                                                          Czytelny podpis Przewodniczącego ZN
+

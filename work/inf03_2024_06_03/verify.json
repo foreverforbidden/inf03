@@ -1,0 +1,52 @@
+{
+  "code": "inf03_2024_06_03",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT nazwa, rzeka, stanAlarmowy FROM wodowskazy",
+      "ok": true,
+      "rows": 17,
+      "preview": "+------------------------+----------------+--------------+\n| nazwa                  | rzeka          | stanAlarmowy |\n+------------------------+----------------+--------------+\n| Lubachów               | Bystrzyca      |          210 |\n| Jarnołtów              | Bystrzyca      |          270 |\n| Łazany                 | Strzegomka     |          240 |\n| Krzyżanowice           | Widawa         |          200 |\n| Świerzawa              | Kaczawa        |          200 |\n| Piątnica               | Kaczawa        |          370 |"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT nazwa, rzeka, stanOstrzegawczy, stanAlarmowy, stanWody FROM wodowskazy JOIN pomiary ON wodowskazy.id = pomiary.wodowskazy_id WHERE dataPomiaru = '2022-05-05'",
+      "ok": true,
+      "rows": 17,
+      "preview": "+------------------------+----------------+------------------+--------------+----------+\n| nazwa                  | rzeka          | stanOstrzegawczy | stanAlarmowy | stanWody |\n+------------------------+----------------+------------------+--------------+----------+\n| Lubachów               | Bystrzyca      |              190 |          210 |      100 |\n| Jarnołtów              | Bystrzyca      |              230 |          270 |      240 |\n| Łazany                 | Strzegomka     |              200 |          240 |      300 |\n| Krzyżanowice           | Widawa         |              150 |          200 |      120 |\n| Świerzawa              | Kaczawa        |              150 |          200 |      100 |\n| Piątnica               | Kaczawa        |              300 |          370 |      200 |"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT nazwa, rzeka, stanOstrzegawczy, stanAlarmowy, stanWody FROM wodowskazy JOIN pomiary ON wodowskazy.id = pomiary.wodowskazy_id WHERE dataPomiaru = '2022-05-05' AND stanWody > stanOstrzegawczy",
+      "ok": true,
+      "rows": 5,
+      "preview": "+---------------+---------------+------------------+--------------+----------+\n| nazwa         | rzeka         | stanOstrzegawczy | stanAlarmowy | stanWody |\n+---------------+---------------+------------------+--------------+----------+\n| Jarnołtów     | Bystrzyca     |              230 |          270 |      240 |\n| Łazany        | Strzegomka    |              200 |          240 |      300 |\n| Jelenia Góra  | Bóbr          |              160 |          220 |      170 |\n| Nowogrodziec  | Kwisa         |              330 |          380 |      340 |\n| Bardo         | Nysa Kłodzka  |              180 |          250 |      190 |\n+---------------+---------------+------------------+--------------+----------+"
+    },
+    {
+      "n": 4,
+      "sql": "SELECT dataPomiaru, AVG(stanWody) FROM pomiary GROUP BY dataPomiaru",
+      "ok": true,
+      "rows": 2,
+      "preview": "+-------------+---------------+\n| dataPomiaru | AVG(stanWody) |\n+-------------+---------------+\n| 2022-05-05  |      167.6471 |\n| 2022-05-06  |      179.5882 |\n+-------------+---------------+"
+    }
+  ],
+  "pages": [
+    {
+      "page": "poziomRzek.php",
+      "status": 200,
+      "bytes": 1557
+    },
+    {
+      "page": "formularz poziomRzek.php->poziomRzek.php [post]",
+      "status": 200,
+      "bytes": 2892,
+      "fields": {
+        "poziom": "wszystkie"
+      }
+    }
+  ],
+  "checked_at": "2026-10-06 18:41:41"
+}

@@ -1,0 +1,8 @@
+-- Zapytanie 1
+SELECT Data, Temat FROM szkolenia ORDER BY Data ASC;
+-- Zapytanie 2
+SELECT szkolenia.Data, szkolenia.Temat, trenerzy.Nazwisko, trenerzy.Imie FROM szkolenia JOIN trenerzy ON szkolenia.Id_trenera = trenerzy.Id;
+-- Zapytanie 3
+SELECT trenerzy.Imie, trenerzy.Nazwisko, COUNT(szkolenia.Id) FROM trenerzy JOIN szkolenia ON trenerzy.Id = szkolenia.Id_trenera GROUP BY trenerzy.Id, trenerzy.Imie, trenerzy.Nazwisko;
+-- Zapytanie 4
+ALTER TABLE zapisy CHANGE Id_klienta Id_sluchacza INT(11) DEFAULT NULL;

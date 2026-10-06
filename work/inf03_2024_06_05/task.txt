@@ -1,0 +1,279 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 05
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+                                                                              Miejsce na naklejkę z numerem
+Numer PESEL zdającego*                                                          PESEL i z kodem ośrodka
+
+
+
+
+Czas trwania egzaminu: 150 minut.                                                         INF.03-05-24.06-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2024                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL
+          i naklej naklejkę z numerem PESEL i z kodem ośrodka.
+    2.    Na KARCIE OCENY w oznaczonym miejscu przyklej naklejkę z numerem PESEL oraz wpisz:
+          − swój numer PESEL*,
+          − oznaczenie kwalifikacji,
+          − numer zadania,
+          − numer stanowiska.
+    3.    Sprawdź, czy arkusz egzaminacyjny zawiera 7 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    4.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    5.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    6.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    7.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami oraz KARTĘ
+          OCENY na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu
+          nadzorującego.
+    8.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania egzaminu.
+
+                                                                                               Powodzenia!
+* w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+
+
+
+
+Układ graficzny
+© CKE 2023
+Zadanie egzaminacyjne
+
+UWAGA: folder z rezultatami pracy oraz płytę należy opisać numerem zdającego, którym został podpisany
+arkusz, czyli numerem PESEL lub w przypadku jego braku numerem paszportu. Dalej w zadaniu numer ten
+jest nazwany numerem zdającego.
+
+Wykonaj aplikację internetową komisu samochodowego, wykorzystując edytor grafiki rastrowej, pakiet XAMPP oraz
+edytor zaznaczający składnię.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się archiwum
+ZIP o nazwie pliki5 zabezpieczone hasłem: S@moCHody^
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego.
+Rozpakowane pliki należy umieścić w tym folderze. Po skończonej pracy wszystkie wyniki należy zapisać
+w tym folderze. Zaleca się, aby rozpakowane pliki graficzne znajdowały się w tym samym folderze co pliki
+źródłowe strony.
+
+Operacje na bazie danych
+Baza danych jest zgodna ze strukturą przedstawioną na obrazie 1. Tabele są połączone relacją 1..n. Pole
+wyrozniony w bazie MySQL jest reprezentowane typem TINYINT(1) i przyjmuje wartość 1, gdy samochód
+jest wyróżniony oraz 0 w przeciwnym przypadku.
+
+
+
+
+                                          Obraz 1. Baza danych
+
+Za pomocą narzędzia phpMyAdmin wykonaj operacje na bazie danych:
+   ‒ Utwórz bazę danych o nazwie kupauto, z zestawem polskich znaków (np. utf8_unicode_ci)
+   ‒ Do bazy zaimportuj tabele z pliku baza.sql z rozpakowanego archiwum
+   ‒ Wykonaj zrzut ekranu po imporcie. Zrzut zapisz w formacie PNG i nazwij import. Nie kadruj zrzutu.
+      Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+      widoczne elementy wskazujące na poprawnie wykonany import tabel.
+   ‒ Wykonaj zapytania SQL działające na bazie kupauto. Zapytania zapisz w pliku kwerendy.txt. Wykonaj
+      zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie JPEG i nadaj im
+      nazwy kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora z widocznym paskiem
+      zadań.
+          ‒ Zapytanie 1: wybierające jedynie nazwy marek samochodów
+          ‒ Zapytanie 2: wybierające jedynie pola: model, rocznik, przebieg, paliwo, cena, zdjecie dla
+              samochodu o id równym 10
+
+                                                Strona 2 z 7
+           ‒   Zapytanie 3: wybierające jedynie pole nazwa z tabeli marki i odpowiadające jej pola: model,
+               rocznik, cena, zdjecie z tabeli samochody jedynie dla samochodów wyróżnionych. Zapytanie
+               wybiera dokładnie 4 wiersze. Należy posłużyć się relacją
+           ‒   Zapytanie 4: wybierające jedynie pola: model, cena, zdjecie z tabeli samochody dla
+               samochodów o nazwie marki Audi. Należy posłużyć się relacją
+
+Witryna internetowa
+
+
+
+
+                                      Obraz 2. Witryna internetowa
+
+Przygotowanie grafiki:
+   ‒ Grafikę ToyotaYaris.jpg, wypakowaną z archiwum, należy przeskalować z zachowaniem proporcji do
+       szerokości, dokładnie 500 px
+
+Cechy witryny:
+   ‒ Składa się ze strony o nazwie KupAuto.php zapisanej w języku HTML5
+   ‒ Zastosowany język witryny polski
+   ‒ Jawnie zastosowany właściwy standard kodowania polskich znaków
+   ‒ Tytuł strony widoczny na karcie przeglądarki: „Komis aut”
+   ‒ Arkusz stylów w pliku o nazwie styl.css prawidłowo połączony z kodem strony
+   ‒ Podział strony na bloki: baner, trzy bloki główne umiejscowione jeden pod drugim, na dole blok stopki.
+      Podział zrealizowany wyłącznie za pomocą semantycznych znaczników sekcji języka HTML5 tak, aby
+                                               Strona 3 z 7
+       po uruchomieniu w przeglądarce wygląd układu bloków był zgodny z obrazem 2
+   ‒   Zawartość banera: nagłówek pierwszego stopnia o treści „KupAuto! Internetowy Komis
+       Samochodowy”. Fraza „KupAuto!” jest zapisana za pomocą znacznika semantycznego
+       oznaczającego uwydatnienie i zapisywanego czcionką pochyłą
+   ‒   Zawartość pierwszego bloku głównego: efekt działania skryptu 1
+   ‒   Zawartość drugiego bloku głównego:
+       − Nagłówek drugiego stopnia o treści „Oferty Wyróżnione”
+       − Efekt działania skryptu 2
+   ‒   Zawartość trzeciego bloku głównego:
+       − Nagłówek drugiego stopnia o treści „Wybierz markę”
+       −   Formularz wysyłający dane metodą bezpieczną, zawierający elementy:
+           − Listę rozwijalną wypełnioną skryptem 3
+            −   Przycisk o treści: „Wyszukaj”
+       − Efekt działania skryptu 4
+   ‒   Zawartość stopki:
+       −   Paragraf (akapit) o treści: „Stronę wykonał: ”, dalej wstawiony numer zdającego
+       −   Paragraf z odnośnikiem o treści „Znajdź nas także”, prowadzącym do strony http://firmy.pl/komis
+
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie styl.css. Cechy formatowania CSS,
+działające na stronie:
+   ‒   Domyślne formatowanie wszystkich selektorów: krój czcionki Roboto, w przypadku jej braku - Serif
+   ‒   Dla banera: kolor tła Crimson, biały kolor czcionki, wyrównanie tekstu do środka, odległości pomiędzy
+       literami 5 px, odległości pomiędzy słowami 30 px, marginesy wewnętrzne 10 px
+   ‒   Dla pierwszego bloku głównego: kolor tła MistyRose, wysokość 300 px, marginesy wewnętrzne 10 px,
+       zewnętrzne górny i dolny 10 px, lewy i prawy 50 px, obramowanie linią ciągłą o szerokości 1 px
+       i kolorze Crimson
+   ‒   Dla obrazu jedynie z pierwszego bloku głównego: oblewanie tekstem po prawej stronie (obraz jest po
+       lewej stronie) wysokość 100%
+   ‒   Dla bloków z ofertami generowanych skryptem w drugim i trzecim bloku głównym: kolor tła Snow,
+       wysokość 450 px, szerokość 21%, marginesy zewnętrzne 1%, wyrównanie tekstu do środka,
+       obramowanie linią ciągłą o szerokości 1 px i kolorze Crimson
+   ‒   Dla stopki: kolor tła Crimson, biały kolor czcionki
+   ‒   Dla selektora obrazu: maksymalna szerokość 100%
+   ‒   Dla selektora nagłówka czwartego stopnia: rozmiar czcionki 180%, wyrównanie tekstu do środka,
+       kolor czcionki Crimson
+   ‒   Dla odnośnika: biały kolor czcionki
+
+Uwaga: styl CSS obrazu i nagłówka czwartego stopnia należy zdefiniować wyłącznie przy pomocy selektora
+tego znacznika. Jest to uwarunkowane projektem późniejszej rozbudowy witryny.
+
+
+
+
+                                                Strona 4 z 7
+Skrypt połączenia z bazą
+W tabeli 1 podano wybór funkcji PHP do obsługi bazy danych. Wymagania dotyczące skryptów:
+   ‒   Napisane w języku PHP
+   ‒   Należy stosować znaczące nazewnictwo wszystkich zmiennych lub funkcji
+   ‒   Skrypty łączą się z serwerem bazodanowym na localhost, użytkownik root bez hasła, baza danych
+       o nazwie kupauto
+   − Skrypt 1
+     ‒ Wysyła do bazy danych zapytanie 2
+     ‒ W pierwszym bloku głównym wyświetla dane pobrane z bazy danych, w następujący sposób:
+         ‒ Obraz, którego źródłem jest pole zdjecie, a tekstem alternatywnym „oferta dnia”
+         ‒ Nagłówek czwartego stopnia o treści „Oferta Dnia: Toyota ”, następnie pole model
+         ‒ Paragraf o treści „Rocznik: <rocznik>, przebieg: <przebieg>, rodzaj paliwa: <paliwo>”, gdzie
+                  pola w nawiasach <> są pobrane z bazy danych
+           ‒ Nagłówek czwartego stopnia o treści „Cena: ” następnie pole cena
+   ‒   Skrypt 2
+       ‒ Wysyła do bazy danych zapytanie 3
+       ‒   W drugim bloku głównym wyświetla dane pobrane z bazy danych, w następujący sposób:
+           ‒ Każdy zwrócony wiersz jest wyświetlony w osobnym bloku, co razem daje cztery bloki. Bloki
+                  są wyświetlone obok siebie w jednej linii. W każdym bloku znajduje się:
+                  ‒ Obraz, którego nazwą pliku źródłowego jest pole zdjecie, a tekstem alternatywnym pole
+                      model
+                  ‒   Nagłówek czwartego stopnia z nazwą marki i modelem, pobranymi z bazy
+                  ‒ Paragraf o treści „Rocznik: ”, następnie pole rocznik
+                  ‒ Nagłówek czwartego stopnia o treści „Cena: ” następnie pole cena
+   ‒   Skrypt 3
+       ‒   Wysyła do bazy danych zapytanie 1
+       ‒   Zwrócone zapytaniem nazwy marek samochodów są wyświetlone jako elementy listy rozwijalnej
+   ‒   Skrypt 4
+       ‒   Po zatwierdzeniu formularza tylko, gdy użytkownik wybrał element listy rozwijalnej wysyła do
+           bazy danych zmodyfikowane zapytanie 4, w ten sposób, że jest w nim sprawdzana nazwa marki
+           wybrana w liście
+       ‒   Każdy zwrócony wiersz jest wyświetlony w osobnym bloku. Bloki są wyświetlone obok siebie.
+           W każdym bloku znajduje się:
+           ‒ Obraz, którego nazwą pliku źródłowego jest pole zdjecie, a tekstem alternatywnym pole
+                  model
+           ‒ Nagłówek czwartego stopnia z nazwą marki i modelem, pobranymi z bazy danych
+           ‒ Nagłówek czwartego stopnia o treści „Cena: ” następnie pole cena
+   ‒   Na końcu jest zamykane połączenie z serwerem.
+
+
+
+
+                                                 Strona 5 z 7
+         Obraz 3. Działanie skryptu 4 dla elementu „Opel” wybranego w liście rozwijalnej
+
+
+Tabela 1. Wybór funkcji języka PHP do obsługi bazy MySQLi i MariaDB
+            Funkcje biblioteki mysqli                            Zwracana wartość
+mysqli_connect(serwer, użytkownik,              id połączenia lub FALSE, gdy niepowodzenie
+hasło, nazwa_bazy)
+mysqli_select_db(id_polaczenia,                 TRUE/FALSE w zależności od stanu operacji
+nazwa_bazy)
+mysqli_error(id_polaczenia)                     Tekst komunikatu błędu
+mysqli_close(id_polaczenia)                     TRUE/FALSE w zależności od stanu operacji
+mysqli_query(id_polaczenia, zapytanie) Wynik zapytania
+mysqli_fetch_row(wynik_zapytania)               Tablica    numeryczna      odpowiadająca     wierszowi
+                                                zapytania
+mysqli_fetch_array(wynik_zapytania)             Tablica zawierająca kolejny wiersz z podanych w wyniku
+                                                zapytania lub FALSE, jeżeli nie ma więcej wierszy
+                                                w wyniku zapytania
+mysqli_num_rows(wynik_zapytania)                Liczba wierszy w podanym zapytaniu
+mysqli_num_fields(wynik_zapytania)              Liczba kolumn w podanym zapytaniu
+
+
+
+
+                                          Strona 6 z 7
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego, powinny znajdować się pliki: AudiA3.jpg,
+AudiA8.jpg, import.png, KupAuto.php, kw1.jpg, kw2.jpg, kw3.jpg, kw4.jpg, kwerendy.txt, OpelAstra.jpg,
+OpelCorsa.jpg,     OpelVectra.jpg,     przeglądarka.txt, styl.css,  ToyotaCorolla.jpg,   ToyotaRav.jpg,
+ToyotaYaris.jpg, ewentualnie inne przygotowane pliki. Po nagraniu płyty sprawdź poprawność jej odczytu.
+Opisz płytę numerem zdającego i pozostaw zapakowaną w pudełku na stanowisku wraz z arkuszem
+egzaminacyjnym.
+
+
+
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie będzie podlegać 5 rezultatów:
+  ‒ operacje na bazie danych,
+   ‒   zawartość witryny internetowej,
+   ‒   działanie witryny internetowej,
+   ‒   styl CSS witryny internetowej,
+   ‒   skrypt połączenia z bazą.
+
+
+
+
+                                              Strona 7 z 7
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD opisaną numerem PESEL                                   ,
+której jakość nagrania została przeze mnie sprawdzona.
+
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD, opisana numerem PESEL zdającego.
+
+
+                                                               ……………………………........…
+                                                               Czytelny podpis Przewodniczącego ZN
+

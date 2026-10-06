@@ -1,0 +1,65 @@
+{
+  "code": "inf03_2025_06_01",
+  "pass": false,
+  "fails": [
+    "formularz gry.php->gry.php [post]: brak pliku Test (<img src>)"
+  ],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT id, nazwa, zdjecie FROM gry",
+      "ok": true,
+      "rows": 8,
+      "preview": "+----+----------------------+----------------------+\n| id | nazwa                | zdjecie              |\n+----+----------------------+----------------------+\n|  1 | Czarodziejka         | Czarodziejka.jpg     |\n|  2 | Kalipso              | kalipso.jpg          |\n|  3 | Katedra              | katedra.jpg          |\n|  4 | Krokodyl             | krokodyl.jpg         |\n|  5 | Księżniczka Persji   | Persja.jpg           |\n|  6 | Mag                  | Mag.jpg              |"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT nazwa, LEFT(opis, 100), punkty, cena FROM gry WHERE id = 1",
+      "ok": true,
+      "rows": 1,
+      "preview": "+--------------+-------------------------------------------------------------------------------------------------------------+--------+------+\n| nazwa        | LEFT(opis, 100)                                                                                             | punkty | cena |\n+--------------+-------------------------------------------------------------------------------------------------------------+--------+------+\n| Czarodziejka | Rozgrywająca się w otwartym świecie przygoda. Jesteś czarodziejką Vestą i musisz zdobyć jedyny w swo        |     45 |  100 |\n+--------------+-------------------------------------------------------------------------------------------------------------+--------+------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT nazwa, punkty FROM gry ORDER BY punkty DESC LIMIT 5",
+      "ok": true,
+      "rows": 5,
+      "preview": "+----------------------+--------+\n| nazwa                | punkty |\n+----------------------+--------+\n| Mag                  |    357 |\n| Księżniczka Persji   |    293 |\n| Kalipso              |    125 |\n| Wyprawa Na Księżyc   |    103 |\n| Nieznany Ląd         |     96 |\n+----------------------+--------+"
+    },
+    {
+      "n": 4,
+      "sql": "INSERT INTO gry (nazwa, opis, punkty, cena, zdjecie) VALUES ('Zamczysko', 'Na odludziu stoi opuszczone zamczysko, w którym znajduje się skarb strzeżony przez złowrogie demony i duchy', 200, 50, 'zamczysko.jpg')",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "gry.php",
+      "status": 200,
+      "bytes": 2215
+    },
+    {
+      "page": "formularz gry.php->gry.php [post]",
+      "status": 200,
+      "bytes": 2215,
+      "fields": {
+        "nazwa": "Test",
+        "opis": "Test",
+        "cena": "2",
+        "zdjecie": "Test"
+      }
+    },
+    {
+      "page": "formularz gry.php->gry.php [post]",
+      "status": 200,
+      "bytes": 2286,
+      "fields": {
+        "id": "Test"
+      }
+    }
+  ],
+  "checked_at": "2026-10-06 18:49:41"
+}

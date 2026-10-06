@@ -1,0 +1,52 @@
+{
+  "code": "inf03_2023_01_05",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT dataZadania, wpis FROM zadania WHERE dataZadania BETWEEN '2020-08-01' AND '2020-08-31'",
+      "ok": true,
+      "rows": 31,
+      "preview": "+-------------+--------------------+\n| dataZadania | wpis               |\n+-------------+--------------------+\n| 2020-08-01  | Remont             |\n| 2020-08-02  | Remont             |\n| 2020-08-03  | Remont             |\n| 2020-08-04  | Remont             |\n| 2020-08-05  |                    |\n| 2020-08-06  |                    |"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT miesiac, rok FROM zadania WHERE dataZadania = '2020-08-07'",
+      "ok": true,
+      "rows": 1,
+      "preview": "+----------+------+\n| miesiac  | rok  |\n+----------+------+\n| sierpien | 2020 |\n+----------+------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT miesiac, COUNT(*) FROM zadania WHERE wpis LIKE 'Weterynarz%' GROUP BY miesiac",
+      "ok": true,
+      "rows": 2,
+      "preview": "+----------+----------+\n| miesiac  | COUNT(*) |\n+----------+----------+\n| lipiec   |        2 |\n| sierpien |        2 |\n+----------+----------+"
+    },
+    {
+      "n": 4,
+      "sql": "UPDATE zadania SET wpis = 'Wycieczka: Zalew Mietkowski' WHERE dataZadania = '2020-08-09'",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "organizer.php",
+      "status": 200,
+      "bytes": 2882
+    },
+    {
+      "page": "formularz organizer.php->organizer.php [post]",
+      "status": 200,
+      "bytes": 2886,
+      "fields": {
+        "wpis": "Test"
+      }
+    }
+  ],
+  "checked_at": "2026-10-06 18:40:37"
+}

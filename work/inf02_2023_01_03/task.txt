@@ -1,0 +1,248 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Oznaczenie kwalifikacji: INF.03
+Numer zadania: 03
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+                                                                              Miejsce na naklejkę z numerem
+Numer PESEL zdającego*                                                          PESEL i z kodem ośrodka
+
+
+
+
+Czas trwania egzaminu: 150 minut.                                                        INF.03-03-23.01-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2023                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL
+          i naklej naklejkę z numerem PESEL i z kodem ośrodka.
+    2.    Na KARCIE OCENY w oznaczonym miejscu przyklej naklejkę z numerem PESEL oraz wpisz:
+          − swój numer PESEL*,
+          − oznaczenie kwalifikacji,
+          − numer zadania,
+          − numer stanowiska.
+    3.    Sprawdź, czy arkusz egzaminacyjny zawiera 5 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    4.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    5.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    6.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    7.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami oraz KARTĘ
+          OCENY na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu
+          nadzorującego.
+    8.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania egzaminu.
+
+                                                                                               Powodzenia!
+* w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+
+
+
+
+Układ graficzny
+© CKE 2020
+Zadanie egzaminacyjne
+
+UWAGA: katalog z rezultatami pracy oraz płytę należy opisać numerem zdającego, którym został podpisany
+arkusz, czyli numerem PESEL lub w przypadku jego braku numerem paszportu. Dalej w zadaniu numer ten
+jest nazwany numerem zdającego.
+
+Wykonaj aplikację internetową dla miłośników kwiatów, wykorzystując pakiet XAMPP oraz edytor
+zaznaczający składnię.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się archiwum
+ZIP o nazwie zad3.zip zabezpieczone hasłem: 5T2k@W$2n
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego.
+Rozpakowane pliki należy umieścić w tym folderze. Po skończonej pracy wszystkie wyniki należy zapisać
+w tym folderze.
+
+Operacje na bazie danych
+Baza danych zawiera tabele przedstawione na obrazie 1.
+
+
+
+
+                              Obraz 1. Tabele bazy danych kwiaciarnia
+
+Za pomocą narzędzia phpMyAdmin wykonaj operacje na bazie danych:
+‒ Utwórz bazę danych o nazwie kwiaciarnia
+‒ Do bazy kwiaciarnia zaimportuj tabele z pliku kwiaciarnia.sql z rozpakowanego archiwum
+‒ Wykonaj zrzut ekranu po imporcie. Zrzut zapisz w formacie PNG i nazwij import. Nie kadruj zrzutu.
+    Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+    widoczne elementy wskazujące na poprawnie wykonany import tabel.
+‒ Wykonaj zapytania SQL działające na bazie kwiaciarnia. Zapytania zapisz w pliku kwerendy.txt. Wykonaj
+    zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie JPEG i nadaj im
+    nazwy kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora z widocznym paskiem
+    zadań.
+     ‒ Zapytanie 1: wybierające jedynie pola nazwa i ulica dla kwiaciarni z miasta Malbork
+     ‒ Zapytanie 2: wybierające jedynie pole id_kwiaciarni oraz liczące liczbę zamówień dla
+        poszczególnych kwiaciarni
+     ‒ Zapytanie 3: wybierające jedynie pola nazwa i miasto z tabeli kwiaciarnie i odpowiadające im pole
+        kwiaty z tabeli zamowienia dla zamówień z dnia 7 stycznia 2017. Należy posłużyć się relacją
+     ‒ Zapytanie 4: tworzące nową tabelę klienci o polach:
+         ‒ id, klucz główny, automatycznie inkrementowany, nie może przyjmować wartości NULL
+         ‒ imie, typu tekstowego o długości 15 znaków
+         ‒ nazwisko, typu tekstowego o długości 15 znaków
+         ‒ rabat, przyjmujący jedynie liczby naturalne
+
+Grafika
+Obrazy roza.png, gerbera.png, gozdzik.png należy przyciąć (wykadrować) do proporcji 1:1 do rozmiaru
+250 px na 250 px i zapisać w formacie JPEG
+
+
+
+
+                                              Strona 2 z 5
+Witryna internetowa
+
+
+
+
+                                      Obraz 2. Strona index.html
+
+Cechy witryny:
+   – składa się ze stron index.html i znajdz.php. Strony różnią się jedynie blokiem prawym
+
+Cechy wspólne obu stron:
+   ‒ Zapisane w języku HTML 5
+   ‒ Jawnie zastosowany właściwy standard kodowania polskich znaków
+   ‒ Zadeklarowany język witryny: polski
+   ‒ Tytuł strony widoczny na karcie przeglądarki: „Kwiaty”
+   ‒ Arkusz stylów w pliku o nazwie styl3.css prawidłowo połączony z kodem strony
+   ‒ Podział strony na bloki: na górze blok banera, poniżej obok siebie bloki lewy i prawy, na dole blok
+      stopki. Podział zrealizowany za pomocą znaczników sekcji tak, aby po uruchomieniu w przeglądarce
+      wygląd układu bloków był zgodny z obrazem 2
+   ‒ Zawartość banera: nagłówek pierwszego stopnia o treści „Grupa Polskich Kwiaciarni”
+   ‒ Zawartość bloku lewego:
+       ‒ Nagłówek drugiego stopnia o treści: „Menu”
+       ‒ Lista numerowana (uporządkowana) z trzema elementami oraz z zagnieżdżoną listą punktowaną
+          (nieuporządkowaną) z trzema elementami. Zawartość list jest zgodna z obrazem 2.
+       ‒ Elementy listy numerowanej są odnośnikami:
+           ‒ „Strona główna” prowadzi do strony index.html
+           ‒ „Rozpoznaj kwiaty” prowadzi do strony „https://www.kwiaty.pl/”, odnośnik otwiera się
+               w osobnej karcie przeglądarki
+           ‒ „Znajdź kwiaciarnię” prowadzi do strony znajdz.php i zagnieżdża listę punktowaną
+               z elementami: w Warszawie, w Malborku, w Poznaniu
+   ‒ Zawartość stopki: paragraf (akapit) o treści: „Stronę opracował:”, dalej wstawiony numer zdającego
+
+Zawartość bloku prawego dla strony index.html:
+   – Nagłówek drugiego stopnia o treści: „Strona dla miłośników kwiatów”
+   – Obok siebie trzy obrazy z gerberą, goździkiem i różą, z tekstem alternatywnym, który jest nazwą
+      danego kwiatu
+
+Zawartość bloku prawego dla strony znajdz.php:
+   – Nagłówek drugiego stopnia o treści: „Znajdź kwiaciarnię”
+   – Formularz wysyłający dane metodą bezpieczną do tego samego pliku i zawierający:
+       ‒ pole edycyjne poprzedzone napisem „Podaj nazwę miasta:”
+       ‒ przycisk „SPRAWDŹ” wysyłający dane
+
+                                              Strona 3 z 5
+         Obraz 3. Blok prawy znajdz.php, uzyskano odpowiedź na zatwierdzenie formularza
+
+Styl CSS
+Styl CSS zdefiniowany w całości w zewnętrznym pliku o nazwie styl3.css. Arkusz CSS zawiera formatowanie:
+‒ Ustawione domyślne wartości dla wszystkich selektorów stylu CSS: krój czcionki Georgia
+‒ Wspólne dla banera i stopki: kolor tła #C75B39, biały kolor czcionki, marginesy wewnętrzne 10 px,
+     wyrównanie tekstu do środka
+‒ Dla bloku lewego: kolor tła #FF8A65, szerokość 25%, wysokość 500 px, margines wewnętrzny górny 50
+     px
+‒ Dla bloku prawego: kolor tła Snow, szerokość 75%, wysokość 500 px, wyrównanie tekstu do środka,
+     margines wewnętrzny górny 50 px
+‒ Dla selektora obrazu: szerokość 25%, marginesy zewnętrzne 10 px, cień o przesunięciu 15 px w obu
+     osiach, rozmyciu 10 px i kolorze DimGray
+‒ Dla selektora elementu listy: marginesy zewnętrzne 5 px
+‒ Dla znaku markera (punktora / cyfry) w elemencie listy: kolor czcionki Snow
+‒ Dla selektora nagłówka trzeciego stopnia: marginesy zewnętrzne górny i dolny 50 px, pozostałe 0
+
+Uwaga: style CSS dla obrazu, elementu listy i nagłówka trzeciego stopnia należy zdefiniować wyłącznie przy
+pomocy selektora dla znaczników obrazu, elementu listy i nagłówka trzeciego stopnia. Jest to uwarunkowane
+projektem późniejszej rozbudowy witryny.
+
+Skrypt
+W Tabeli 1 podano wybór funkcji PHP do obsługi bazy danych. Wymagania dotyczące skryptu:
+  – Napisany w języku PHP
+  – Skrypt łączy się z serwerem bazy danych na localhost, użytkownik root bez hasła, baza danych
+     o nazwie kwiaciarnia
+  – Skrypt pobiera dane z pola edycyjnego
+  – Wysyła do bazy danych zmodyfikowane zapytanie 1 w ten sposób, że w miejscu miasta jest wpisana
+     wartość z pola edycyjnego
+  – Wyświetla pod przyciskiem zwrócone zapytaniem dane w nagłówku trzeciego stopnia: nazwę i ulicę
+     oddzielone przecinkiem
+  – Po wykonaniu operacji na bazie danych skrypt zamyka połączenie z serwerem.
+
+         Tabela 1. Wybór funkcji języka PHP do obsługi bazy MySQL i MariaDB
+         Funkcje biblioteki MySQLi                              Zwracana wartość
+mysqli_connect(serwer, użytkownik, hasło,
+                                             id połączenia lub FALSE, gdy niepowodzenie
+nazwa_bazy)
+mysqli_select_db(id_polaczenia, nazwa_bazy) TRUE/FALSE w zależności od stanu operacji
+mysqli_error(id_polaczenia)                      Tekst komunikatu błędu
+mysqli_close(id_polaczenia)                      TRUE/FALSE w zależności od stanu operacji
+mysqli_query(id_polaczenia, zapytanie)           Wynik zapytania
+mysqli_fetch_row(wynik_zapytania)                Tablica numeryczna odpowiadająca wierszowi zapytania
+                                                 Tablica zawierająca kolejny wiersz z podanych w wyniku
+mysqli_fetch_array(wynik_zapytania)              zapytania lub FALSE, jeżeli nie ma więcej wierszy w
+                                                 wyniku zapytania
+mysqli_num_rows(wynik_zapytania)                 Liczba wierszy w podanym zapytaniu
+
+                                              Strona 4 z 5
+Składnia właściwości CSS box-shadow:
+box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
+
+Wybrane pseudoelementy CSS:
+::first-letter, ::first-line, ::marker, ::after, ::before
+
+
+UWAGA: Po zakończeniu pracy utwórz w folderze z numerem zdającego, plik tekstowy o nazwie
+przeglądarka.txt. Zapisz w nim nazwę przeglądarki internetowej, w której weryfikowana była poprawność
+działania witryny.
+Nagraj płytę z rezultatami pracy. W folderze powinny się znajdować pliki: gerbera.jpg, gozdzik.jpg,
+import.png, index.html, kw1.jpg, kw2.jpg, kw3.jpg, kw4.jpg, kwerendy.txt, przeglądarka.txt, roza.jpg,
+styl3.css, znajdz.php, ewentualnie inne przygotowane pliki. Po nagraniu płyty sprawdź poprawność nagrania.
+Opisz płytę numerem zdającego i zapakowaną w pudełku pozostaw na stanowisku wraz z arkuszem
+egzaminacyjnym.
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie będzie podlegać 5 rezultatów:
+ – operacje na bazie danych,
+ – zawartość witryny internetowej,
+ – działanie witryny internetowej,
+ – styl CSS witryny internetowej,
+ – skrypt połączenia z bazą.
+
+
+
+
+                                                            Strona 5 z 5
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD opisaną numerem PESEL                                      ,
+której jakość nagrania została przeze mnie sprawdzona.
+
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD, opisana numerem PESEL zdającego.
+
+
+                                                                 ………………………………
+                                                                  Czytelny podpis Przewodniczącego ZN
+

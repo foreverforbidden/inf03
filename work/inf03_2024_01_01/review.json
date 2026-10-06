@@ -1,0 +1,8 @@
+{
+  "code": "inf03_2024_01_01",
+  "pass": true,
+  "score": "45/45",
+  "fails": [],
+  "na": ["zrzut klatki.jpg", "nagranie płyty", "folder o nazwie numeru zdającego"],
+  "notes": "Przegląd ponowny: styl.css #glowny ma teraz color Navy, margin 50px, height 400px (poprzedni błąd z tłem usunięty). Grafiki (logo 100x100 PNG, bannery 1000x200 PNG przezroczyste), animacja.gif (2 klatki, 3000 ms, 1000x200), HTML, CSS i skrypt poprawne. verify.json bez fail."
+}

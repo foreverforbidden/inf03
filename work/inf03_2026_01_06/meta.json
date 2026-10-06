@@ -1,0 +1,21 @@
+{
+  "password": "*ZdroWia!!!",
+  "db": "choroby",
+  "required_files": [
+    "kwerendy.txt",
+    "przeglądarka.txt",
+    "styl.css",
+    "zdrowia.png",
+    "zdrowie.php"
+  ],
+  "image_count": null,
+  "pages": [
+    "zdrowie.php"
+  ],
+  "code": "inf03_2026_01_06",
+  "pdf": "inf03_arkusze/inf03_2026_01_06_arkusz.pdf",
+  "sql_files": [
+    "materialy/choroby.sql"
+  ],
+  "problems": []
+}

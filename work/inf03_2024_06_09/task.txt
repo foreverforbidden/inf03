@@ -1,0 +1,295 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 09
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+                                                                              Miejsce na naklejkę z numerem
+Numer PESEL zdającego*                                                          PESEL i z kodem ośrodka
+
+
+
+
+Czas trwania egzaminu: 150 minut.                                                         INF.03-09-24.06-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2024                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL
+          i naklej naklejkę z numerem PESEL i z kodem ośrodka.
+    2.    Na KARCIE OCENY w oznaczonym miejscu przyklej naklejkę z numerem PESEL oraz wpisz:
+          − swój numer PESEL*,
+          − oznaczenie kwalifikacji,
+          − numer zadania,
+          − numer stanowiska.
+    3.    Sprawdź, czy arkusz egzaminacyjny zawiera 6 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    4.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    5.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    6.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    7.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami oraz KARTĘ
+          OCENY na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu
+          nadzorującego.
+    8.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania egzaminu.
+
+                                                                                               Powodzenia!
+* w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+
+
+
+
+Układ graficzny
+© CKE 2023
+Zadanie egzaminacyjne
+
+UWAGA: folder z rezultatami pracy oraz płytę należy opisać numerem zdającego, którym został podpisany
+arkusz, czyli numerem PESEL lub w przypadku jego braku numerem paszportu. Dalej w zadaniu numer ten
+jest nazwany numerem zdającego.
+
+Wykonaj aplikację internetową zawierającą animowaną galerię zdjęć, wykorzystując pakiet XAMPP, edytor grafiki
+rastrowej oraz edytor zaznaczający składnię.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się archiwum
+ZIP o nazwie pliki9 zabezpieczone hasłem: G@leri@Animowan@
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego.
+Rozpakowane pliki należy umieścić w tym folderze. Po skończonej pracy wszystkie wyniki należy zapisać
+w tym folderze.
+
+Operacje na bazie danych
+Baza danych jest zgodna ze strukturą przedstawioną na obrazie 1.
+
+
+
+
+                                           Obraz 1. Baza danych
+
+Za pomocą narzędzia phpMyAdmin wykonaj operacje na bazie danych:
+   ‒ Utwórz bazę danych o nazwie wycieczki, z zestawem polskich znaków (np. utf8_unicode_ci)
+   ‒ Do bazy zaimportuj tabele z pliku wycieczki.sql z rozpakowanego archiwum
+   ‒ Wykonaj zrzut ekranu po imporcie. Zrzut zapisz w formacie PNG i nazwij import. Nie kadruj zrzutu.
+      Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+      widoczne elementy wskazujące na poprawnie wykonany import tabel.
+   ‒ Wykonaj zapytania SQL działające na bazie wycieczki. Zapytania zapisz w pliku kwerendy.txt.
+      Wykonaj zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie JPEG
+      i nadaj im nazwy kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora z widocznym
+      paskiem zadań.
+          ‒ Zapytanie 1: wybierające jedynie miejsce i liczbę dni dla wycieczek, których cena jest mniejsza od
+              1000 zł
+          ‒ Zapytanie 2: liczące średnią cenę dla wycieczek pogrupowanych ze względu na liczbę dni
+              (czyli średnia cena wycieczek jednodniowych, dwudniowych itd.). Kwerenda wybiera jedynie
+              liczbę dni oraz średnią cenę, której kolumnę należy nazwać (alias) sredniaCena
+          ‒ Zapytanie 3: wybierające jedynie miejsce wycieczki i odpowiadającą mu nazwę zdjęcia dla
+              wycieczek, których cena jest wyższa od 500 zł. Należy posłużyć się relacją
+          ‒ Zapytanie 4: Tworzące użytkownika Ewa o haśle Ewa!Ewa dla bazy wycieczki na serwerze
+              localhost
+
+
+
+
+                                                Strona 2 z 6
+Witryna internetowa
+
+
+
+
+                                     Obraz 2. Witryna internetowa.
+
+Przygotowanie grafiki:
+   ‒ Plik 6.jpg, wypakowany z archiwum, należy skadrować, tak aby była widoczna tylko część zdjęcia
+       pomiędzy czarnymi kreskami (bez widocznych kresek). Odpowiednio wycięte zdjęcie powinno mieć
+       rozmiary 640 px na 427 px. W przypadku drobnych rozbieżności rozmiaru spowodowanych
+       niedokładnym przycięciem należy przeskalować obraz do dokładnego wymiaru 640 px na 427 px
+
+Cechy witryny:
+   ‒ Składa się ze strony o nazwie galeria.html zapisanej w języku HTML5
+   ‒ Ustawiony język zawartości strony na polski
+   ‒ Jawnie zastosowany właściwy standard kodowania polskich znaków
+   ‒ Tytuł strony widoczny na karcie przeglądarki: „Biuro turystyczne”
+   ‒ Arkusz stylów w pliku o nazwie styl.css prawidłowo połączony z kodem strony
+   ‒ Podział strony na bloki: baner, poniżej trzy bloki: lewy, środkowy i prawy, poniżej blok miniatur, na
+      dole blok stopki. Podział zrealizowany wyłącznie za pomocą semantycznych znaczników sekcji języka
+      HTML5 tak, aby po uruchomieniu w przeglądarce wygląd układu bloków był zgodny z obrazem 2
+   ‒ Zawartość banera: nagłówek pierwszego stopnia o treści „Zwiedzamy Polskę”
+   ‒ Zawartość bloku lewego: przycisk o treści „<” (znak mniejszości – patrz tabela 2), którego wybranie
+      powoduje wywołanie funkcji wyświetlającej poprzednie zdjęcie
+   ‒ Zawartość bloku środkowego: obraz o nazwie 1.jpg i tekście alternatywnym „Aktywne zdjęcie”
+   ‒ Zawartość bloku prawego: przycisk o treści „>” (znak większości – patrz tabela 2), którego wybranie
+      powoduje wywołanie funkcji wyświetlającej następne zdjęcie
+   ‒ Zawartość bloku miniatur:
+          ‒ Siedem obrazów od 1.jpg do 7.jpg. Teksty alternatywne kolejno: Gdańsk, Kraków, Niedzica,
+               Pieniny, Szklarska Poręba, Tatry, Wrocław
+
+                                              Strona 3 z 6
+   ‒   Zawartość stopki:
+          ‒ Nagłówek trzeciego stopnia o treści: „Autorem galerii jest:”
+          ‒ Paragraf z wstawionym numerem zdającego
+          ‒ Odnośnik o treści „Więcej zdjęć” do strony http://pixabay.com otwierający się w nowej
+             karcie przeglądarki
+
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie styl.css.
+Cechy formatowania CSS, działające na stronie:
+   ‒   Domyślne formatowanie wszystkich selektorów: krój czcionki Georgia, biały kolor czcionki
+   ‒   Wspólne dla bloku banera i stopki: kolor tła Maroon, wyrównanie tekstu do środka, marginesy
+       wewnętrzne 2 px
+   ‒   Wspólne dla bloków lewego, środkowego i prawego: kolor tła LightSalmon, wysokość 527 px
+   ‒   Dodatkowo dla bloku lewego i prawego: szerokość 15%
+   ‒   Dodatkowo dla bloku środkowego: szerokość 70%
+   ‒   Dla bloku miniatur: kolor tła Maroon, wysokość 70 px
+   ‒   Dla obu przycisków: kolor tła LightSalmon, kolor czcionki Maroon, bez obramowania, rozmiar czcionki
+       400%, blokowy sposób wyświetlania elementu, marginesy zewnętrzne automatycznie obliczane
+       przez przeglądarkę, margines wewnętrzny górny 210 px,
+   ‒   Dla obrazów miniatur:
+         − Styl miniatury: wysokość 70 px, animacja trwa 4 sekundy
+         − Stan początkowy animacji: lewy margines wewnętrzny: 50 px
+         − Stan końcowy animacji: lewy margines wewnętrzny: 0 px
+   ‒   Dla obrazu z bloku środkowego: blokowy sposób wyświetlania elementu, marginesy zewnętrzne
+       automatycznie obliczane przez przeglądarkę, górny margines wewnętrzny 45 px
+   ‒   Gdy kursor znajduje się na obrazie z bloku środkowego wykonana jest animacja:
+         − Stan początkowy animacji: skala 100%
+         − Stan końcowy animacji: skala 120%
+         − Styl obrazu: Skala 120%, czas trwania animacji 5 sekund
+
+Skrypt
+Wymagania dotyczące skryptu:
+   ‒   Napisany w języku JavaScript
+   ‒   Należy stosować znaczące nazewnictwo wszystkich zmiennych i funkcji
+   ‒   Działanie funkcji wyświetlającej następne zdjęcie:
+         − Zmienia aktywne zdjęcie w bloku środkowym na następne (np. 1.jpg na 2.jpg)
+         − W przypadku, gdy jest wyświetlane ostatnie zdjęcie: 7.jpg zmienia zdjęcie na: 1.jpg
+   ‒   Działanie funkcji wyświetlającej poprzednie zdjęcie:
+         − Zmienia aktywne zdjęcie w bloku środkowym na poprzednie (np. 3.jpg na 2.jpg)
+         − W przypadku, gdy jest wyświetlane pierwsze zdjęcie: 1.jpg zmienia zdjęcie na ostatnie: 7.jpg
+
+
+
+
+                                               Strona 4 z 6
+Tabela 1. Wybrane pola i metody modelu DOM języka JavaScript
+           Wyszukiwanie elementów                             Zmiana elementów
+ document.getElementById(id)                   element.innerHTML = "nowa wartość"
+ document.getElementsByTagName(TagName)        element.attribute_name = "nowa wartość"
+ document.getElementsByClassName(ClassName) element.setAttribute(atrybut, wartosc)
+ document.getElementsByName(ElementName)       element.style.property_name = "nowa wartość"
+ document.querySelector(CSSselector)
+ document.querySelectorAll(CSSselector)
+
+     Operacje na elementach dokumentu                        Wybrane właściwości obiektu style
+ document.createElement(element)                 backgroundColor
+ document.removeChild(element)                   color
+ document.appendChild(element)                   fontSize
+ document.replaceChild(element)                  fontStyle = "normal | italic | oblique | initial | inherit"
+ document.write(text)                            fontWeight = "normal | lighter | bold | bolder | value |
+                                                 initial | inherit"
+                                                 listStyleType = "circle| decimal | disc | none | square |
+                                                 initial..."
+Wybrane zdarzenia HTML
+       Zdarzenia myszy                 Zdarzenia klawiatury                   Zdarzenia obiektów
+ onclick                          onkeydown                            onload
+ ondblclick                       onkeypress                           onresize
+ onmouseover                      onkeyup                              onfocusin
+ onmouseout                                                            onfocusout
+ Elementy formularzy                               Metody i pola obiektu string (JS)
+ Ważniejsze typy pola input: button, checkbox,     Length
+ number, password, radio, text                     indexOf(text)
+ Inne elementy: select, textarea                   search(text)
+                                                   substr(startIndex, endIndex)
+                                                   replace(textToReplace, newText)
+                                                   toUpperCase()
+                                                   toLowerCase()
+
+Tabela 2. Wybrane znaki specjalne w języku HTML
+ Result Description               Entity Name Entity Number
+          non-breaking space      &nbsp;       &#160;
+ <        less than               &lt;         &#60;
+ >        greater than            &gt;         &#62;
+ &        ampersand               &amp;        &#38;
+ "        double quotation mark   &quot;       &#34;
+
+
+
+
+                                            Strona 5 z 6
+Tabela 3. Animacje i przejścia w CSS
+The @keyframes rule specifies the animation code.
+During the animation, you can change the set of CSS styles many times.
+Specify when the style change will happen in percent, or with the keywords "from" and "to", which is the same
+as 0% and 100%. 0% is the beginning of the animation, 100% is when the animation is complete.
+Example
+Make an element move gradually 200px down:
+@keyframes mymove {
+   from { top: 0px;}
+   to    { top: 200px;}
+}
+
+Specify a name, duration and timing function and for the @keyframes animation:
+div {
+  animation-name: mymove;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+
+The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate,
+scale, move, skew, etc., elements.
+Example
+div.a { transform: rotate(20deg); }
+div.b { transform: skewY(20deg); }
+div.c { transform: scaleY(150%); }
+
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego powinny znajdować się pliki: 1.jpg, 2.jpg,
+3.jpg, 4.jpg, 5.jpg, 6.jpg, 7.jpg, galeria.html, import.png, kw1.jpg, kw2.jpg, kw3.jpg, kw4.jpg, kwerendy.txt,
+przeglądarka.txt, styl.css, ewentualnie inne przygotowane pliki. Po nagraniu płyty sprawdź poprawność jej
+odczytu. Opisz płytę numerem zdającego, którym został podpisany arkusz i pozostaw zapakowaną
+w pudełku na stanowisku wraz z arkuszem egzaminacyjnym.
+
+
+
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie będzie podlegać 5 rezultatów:
+   ‒   operacje na bazie danych,
+   ‒   zawartość witryny internetowej,
+   ‒   działanie witryny internetowej,
+   ‒   styl CSS witryny internetowej,
+   ‒   skrypt.
+
+
+
+
+                                                Strona 6 z 6
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD opisaną numerem PESEL                                   ,
+której jakość nagrania została przeze mnie sprawdzona.
+
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD, opisana numerem PESEL zdającego.
+
+
+                                                               ……………………………........…
+                                                               Czytelny podpis Przewodniczącego ZN
+

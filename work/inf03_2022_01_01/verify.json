@@ -1,0 +1,62 @@
+{
+  "code": "inf03_2022_01_01",
+  "pass": true,
+  "fails": [],
+  "warns": [
+    "pominiety (prawdopodobnie zrzut ekranu): zad1.jpg"
+  ],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "INSERT INTO rezerwacje (id, nr_stolika, data_rez, liczba_osob, telefon) VALUES (NULL, 1, '2017-07-04', 4, '111222333')",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    },
+    {
+      "n": 2,
+      "sql": "SELECT nazwa, cena FROM dania WHERE typ = 2",
+      "ok": true,
+      "rows": 5,
+      "preview": "+--------------------+------+\n| nazwa              | cena |\n+--------------------+------+\n| Kaczka i owoc      |   30 |\n| Kurczak pieczony   |   40 |\n| wieprzowy przysmak |   35 |\n| Mintaj w panierce  |   30 |\n| Alle kotlet        |   30 |\n+--------------------+------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT nazwa FROM dania WHERE typ = 3 AND cena < 15",
+      "ok": true,
+      "rows": 2,
+      "preview": "+------------------+\n| nazwa            |\n+------------------+\n| Orzechy i chipsy |\n| Bukiet warzyw    |\n+------------------+"
+    },
+    {
+      "n": 4,
+      "sql": "UPDATE pracownicy SET stanowisko = 4 WHERE stanowisko = 3",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "restauracja.html",
+      "status": 200,
+      "bytes": 1457
+    },
+    {
+      "page": "rezerwacja.php",
+      "status": 200,
+      "bytes": 153
+    },
+    {
+      "page": "formularz restauracja.html->rezerwacja.php [post]",
+      "status": 200,
+      "bytes": 153,
+      "fields": {
+        "data": "Test",
+        "osoby": "2",
+        "telefon": "Test",
+        "zgoda": "Test"
+      }
+    }
+  ],
+  "checked_at": "2026-10-06 18:36:45"
+}

@@ -1,0 +1,26 @@
+{
+  "password": "Z@dani3x",
+  "db": "sklep",
+  "required_files": [
+    "baza.jpg",
+    "index.php",
+    "kwerenda1.jpg",
+    "kwerenda2.jpg",
+    "kwerenda3.jpg",
+    "kwerenda4.jpg",
+    "kwerendy.txt",
+    "promocja.png",
+    "przeglądarka.txt",
+    "styl.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "index.php"
+  ],
+  "code": "inf03_2023_06_01",
+  "pdf": "inf03_arkusze/inf03_2023_06_01_arkusz.pdf",
+  "sql_files": [
+    "materialy/sklep.sql"
+  ],
+  "problems": []
+}

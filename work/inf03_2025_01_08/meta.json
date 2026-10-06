@@ -1,0 +1,22 @@
+{
+  "password": "Miesz@nie&F@rB",
+  "db": "mieszalnia",
+  "required_files": [
+    "baner.png",
+    "fav.png",
+    "index.php",
+    "kwerendy.txt",
+    "przeglądarka.txt",
+    "style.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "index.php"
+  ],
+  "code": "inf03_2025_01_08",
+  "pdf": "inf03_arkusze/inf03_2025_01_08_arkusz.pdf",
+  "sql_files": [
+    "materialy/mieszalnia.sql"
+  ],
+  "problems": []
+}

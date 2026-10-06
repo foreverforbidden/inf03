@@ -1,0 +1,44 @@
+{
+  "code": "inf03_2024_06_01",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT nazwa FROM wycieczki WHERE poczatek IN ('Muszyna', 'Wieliczka')",
+      "ok": true,
+      "rows": 2,
+      "preview": "+------------------+\n| nazwa            |\n+------------------+\n| Dolina Popradu   |\n| Alter-Zakopianka |\n+------------------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT wycieczki.nazwa, wycieczki.opis, wycieczki.poczatek, zdjecia.zrodlo FROM wycieczki JOIN zdjecia ON wycieczki.zdjecia_id = zdjecia.id",
+      "ok": true,
+      "rows": 10,
+      "preview": "+----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+--------+\n| nazwa                      | opis                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | poczatek    | zrodlo |\n+----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+--------+\n| Pętla Bieszczadzka         | Bieszczadzkie pętle – mała i duża, od lat są chętnie odwiedzane przez motocyklistów z całej Polski. Piękna, dzika przyroda, ślady burzliwej historii regionu i atmosfera spokoju, wciąż nieskażona turystycznym zgiełkiem. Jeśli brakuje ci emocji, połącz bieszczadzkie serpentyny z najbardziej krętą drogą w Polsce – przełęczą Przysłup leżącą w Górach Słonnych na drodze z Sanoka do Przemyśla.                                                                                                                                     | Lesko       | droga1 |\n| Szlak Orlich Gniazd        | Szlak Orlich Gniazd leżący na Jurze Krakowsko-Częstochowskiej, to kolejne miejsce chętnie odwiedzane przez motocyklistów. Wszystko za sprawą urokliwych dróg, tajemniczych i pięknych średniowiecznych ruin zamków i niezrównanych pstrągów, hodowanych tutaj od XIX wieku. Najpiękniejsze odcinki dróg to 793 z janowa do Żarek, 791 z Ogrodzieńca do Olkusza i 773 z Sieniczna do Ojcowa.                                                                                                                                               | Olkusz      | droga5 |\n| Wokół Kotliny Kłodzkiej    | Kotlina Kłodzka, ze swoją historią, kuchnią, zabytkami i pięknymi trasami, to wymarzone miejsce na długi motocyklowy weekend. Znajdziesz tutaj niezliczone atrakcje, mnóstwo miejsc do zdjęć i trasy tak piękne, że chciałoby się jeździć nimi bez końca. Dobrym pomysłem jest zrobienie pętli ze Złotego Stoku, przez Lądek Zdrój do Bystrzycy Kłodzkiej, następnie Autostradą Sudecką z Międzylesia do Dusznik-Zdroju i potem Drogą Stu Zakrętów z Kudowy-Zdroju do Radkowa.                                                            | Kłodzko     | droga4 |\n| Kubalonka i Salmopolska    | Biegnąca u podnóża Baraniej Góry droga ze Szczyrku do Istebnej składa się z dwóch krętych odcinków – 942 ze Szczyrku do Wisły i 941 z Wisły do Istebnej. Każdy z nich daje mnóstwo emocji na ekscytujących zakrętach, choć często trzeba uważać na zalegający na poboczach żwir. Oprócz pięknych widoków, na uwagę zasługuje tutejsza kuchnia – warto zatrzymać się w jednej z lokalnych karczm i spróbować lokalnych przysmaków.                                                                                                         | Szczyrk     | droga4 |\n| Podnóże Tatr               | Ta trasa motocyklowa oferuje chyba jedne z najpiękniejszych widoków, jakie można zobaczyć w Polsce. Niezrównane piękno Tatr podziwiać można w wielu miejscach, jednak najbardziej okazała panorama czeka na Polanie Głodówce. Warto rozpocząć podróż z Chochołowa – pięknej wsi z unikalnym układem zabudowy, i kontynuować przez Kiry do Zakopanego, następnie Drogą Oswalda Balzera w stronę Morskiego Oka. Jeśli wrażeń będzie mało, można objechać Tatry po słowackiej stronie.                                                       | Chochołów   | droga3 |\n| Przez Warmię i Mazury      | Choć wybrać najpiękniejszą trasę Warmii i Mazur bardzo trudno, niezmiennie od lat urzeka nas droga 58 z Olsztynka do Pisza. Położona wśród jezior i lasów, wije się łagodnymi łukami, które pozwalają na płynną, niespieszną jazdę. To prawdziwy relaks, który warto sobie okrasić zwiedzaniem licznych atrakcji regionu – szczególnie leżących na północy mostów w Stańczykach, piramidy w Rapie, bunkrów w Mamerkach, twierdzy Boyen w Giżycku i śluzy w Leśniewie.                                                                     | Olsztynek   | droga3 |"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT COUNT(*) FROM wycieczki",
+      "ok": true,
+      "rows": 1,
+      "preview": "+----------+\n| COUNT(*) |\n+----------+\n|       10 |\n+----------+"
+    },
+    {
+      "n": 4,
+      "sql": "ALTER TABLE wycieczki ADD ocena INT",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "motor.php",
+      "status": 200,
+      "bytes": 5857
+    }
+  ],
+  "checked_at": "2026-10-06 18:43:16"
+}

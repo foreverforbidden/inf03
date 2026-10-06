@@ -1,0 +1,27 @@
+{
+  "password": "MN52dc%%",
+  "db": "wynajem",
+  "required_files": [
+    "1.jpg",
+    "2.jpg",
+    "3.jpg",
+    "cennik.php",
+    "index.html",
+    "kalkulator.html",
+    "kwerendy.txt",
+    "przeglądarka.txt",
+    "styl2.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "cennik.php",
+    "index.html",
+    "kalkulator.html"
+  ],
+  "code": "inf03_2023_01_02",
+  "pdf": "inf03_arkusze/inf03_2023_01_02_arkusz.pdf",
+  "sql_files": [
+    "materialy/wynajem.sql"
+  ],
+  "problems": []
+}

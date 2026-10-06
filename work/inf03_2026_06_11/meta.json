@@ -1,0 +1,31 @@
+{
+  "password": "@tSa5Drzew",
+  "db": "atlas_drzew",
+  "required_files": [
+    "brzoza.jpg",
+    "buk.jpg",
+    "dab.jpg",
+    "iglaste.png",
+    "jarzebina.jpg",
+    "kasztanowiec.jpg",
+    "klon.jpg",
+    "kwerendy.txt",
+    "lipa.jpg",
+    "lisciaste.html",
+    "magnolia.jpg",
+    "owocowe.png",
+    "przegladarka.txt",
+    "styl.css",
+    "wierzba.jpg"
+  ],
+  "image_count": null,
+  "pages": [
+    "lisciaste.html"
+  ],
+  "code": "inf03_2026_06_11",
+  "pdf": "inf03_arkusze/inf03_2026_06_11_arkusz.pdf",
+  "sql_files": [
+    "materialy/atlasdrzew.sql"
+  ],
+  "problems": []
+}

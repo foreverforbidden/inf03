@@ -1,0 +1,44 @@
+{
+  "code": "inf03_2022_06_01",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT id, nazwa, wystepowanie FROM ryby WHERE styl_zycia = 1",
+      "ok": true,
+      "rows": 5,
+      "preview": "+----+----------+-----------------------+\n| id | nazwa    | wystepowanie          |\n+----+----------+-----------------------+\n|  1 | Szczupak | stawy, rzeki          |\n|  3 | Sandacz  | stawy, jeziora, rzeki |\n|  4 | Okon     | rzeki                 |\n|  5 | Sum      | jeziora, rzeki        |\n|  6 | Dorsz    | morza, oceany         |\n+----+----------+-----------------------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT Ryby_id, wymiar_ochronny FROM okres_ochronny WHERE wymiar_ochronny < 30",
+      "ok": true,
+      "rows": 4,
+      "preview": "+---------+-----------------+\n| Ryby_id | wymiar_ochronny |\n+---------+-----------------+\n|       4 |              15 |\n|       6 |               0 |\n|       7 |               0 |\n|       8 |              25 |\n+---------+-----------------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT ryby.nazwa, lowisko.akwen, lowisko.wojewodztwo FROM ryby JOIN lowisko ON ryby.id = lowisko.Ryby_id WHERE lowisko.rodzaj = 3",
+      "ok": true,
+      "rows": 2,
+      "preview": "+----------+-------------------------+---------------+\n| nazwa    | akwen                   | wojewodztwo   |\n+----------+-------------------------+---------------+\n| Szczupak | Warta-Obrzycko          | Wielkopolskie |\n| Leszcz   | Przemsza k. Okradzinowa | Slaskie       |\n+----------+-------------------------+---------------+"
+    },
+    {
+      "n": 4,
+      "sql": "ALTER TABLE ryby ADD dobowy_limit TINYINT UNSIGNED",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "wedkuj.php",
+      "status": 200,
+      "bytes": 1166
+    }
+  ],
+  "checked_at": "2026-10-06 18:40:32"
+}

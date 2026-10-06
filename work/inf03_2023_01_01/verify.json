@@ -1,0 +1,49 @@
+{
+  "code": "inf03_2023_01_01",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT cena, pojemnosc FROM farby WHERE kolor = 'czerwony'",
+      "ok": true,
+      "rows": 1,
+      "preview": "+------+-----------+\n| cena | pojemnosc |\n+------+-----------+\n|   30 |         3 |\n+------+-----------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT kolor, cena / pojemnosc AS `cena jednostkowa` FROM farby",
+      "ok": true,
+      "rows": 7,
+      "preview": "+-----------+------------------+\n| kolor     | cena jednostkowa |\n+-----------+------------------+\n| bialy     |           4.0000 |\n| czerwony  |          10.0000 |\n| niebieski |          11.6667 |\n| żółty     |           5.5000 |\n| zielony   |           7.5000 |\n| czarny    |          25.0000 |"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT farby.kolor, malowanie.liczba_puszek FROM malowanie JOIN farby ON malowanie.id_farby = farby.id_farby WHERE malowanie.id_pomieszczenia = 3",
+      "ok": true,
+      "rows": 2,
+      "preview": "+----------+---------------+\n| kolor    | liczba_puszek |\n+----------+---------------+\n| zielony  |             2 |\n| czerwony |             2 |\n+----------+---------------+"
+    },
+    {
+      "n": 4,
+      "sql": "CREATE VIEW pomieszczenie1 AS SELECT id_sciany, id_farby, liczba_puszek FROM malowanie WHERE id_pomieszczenia = 1",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "cena.html",
+      "status": 200,
+      "bytes": 1160
+    },
+    {
+      "page": "mieszamy.html",
+      "status": 200,
+      "bytes": 902
+    }
+  ],
+  "checked_at": "2026-10-06 18:42:20"
+}

@@ -1,0 +1,369 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 11
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+
+Numer PESEL zdającego*                                                        Miejsce na naklejkę z numerem
+                                                                                PESEL i z kodem ośrodka
+
+         Numer stanowiska
+
+
+
+
+Czas trwania egzaminu: 150 minut                                                         INF.03-11-26.06-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2026                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL*,
+          numer stanowiska i naklej naklejkę** z numerem PESEL i z kodem ośrodka.
+    2.    Sprawdź, czy arkusz egzaminacyjny zawiera 8 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    3.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    4.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    5.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    6.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami wykonania zadania
+          na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu nadzorującego.
+    7.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania
+          egzaminu.
+
+                                                                                               Powodzenia!
+
+ * w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+** w przypadku otrzymania naklejki
+
+
+Układ graficzny
+© CKE 2025
+Zadanie egzaminacyjne
+
+UWAGA: numer, którym został podpisany arkusz egzaminacyjny (PESEL lub w przypadku jego braku numer
+paszportu) jest w zadaniu nazywany numerem zdającego.
+
+Wykonaj aplikację internetową atlasu drzew, wykorzystując zainstalowane na komputerze aplikacje.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się
+archiwum 7z o nazwie pliki21 zabezpieczone hasłem @tSa5Drzew
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego.
+Rozpakowane pliki należy umieścić w tym folderze. Po skończonej pracy wszystkie wyniki należy zapisać
+w tym folderze.
+
+Operacje na bazie danych
+Do wykonania operacji na bazie należy wykorzystać tabele przedstawione na ilustracji 1. Na potrzeby
+zadania model bazy danych został uproszczony. Pole rodzaj w tabeli gatunki przyjmuje wartości: 1 dla drzew
+liściastych, 2 dla iglastych lub 3 dla drzew owocowych. Pole opis w tabeli lokalizacje zawiera nazwę lokalizacji
+w postaci miasto, kraj, np. „Warszawa, Polska”
+
+
+
+
+                                         Ilustracja 1. Baza danych
+
+Za pomocą narzędzia phpMyAdmin wykonaj następujące operacje na bazie danych:
+−   Utwórz bazę danych o nazwie atlas_drzew, z zestawem polskich znaków (np. utf8_unicode_ci)
+−   Do utworzonej bazy zaimportuj dane z pliku atlasdrzew.sql
+−   Wykonaj zrzut ekranu po imporcie. Zapisz zrzut w formacie PNG pod nazwą import. Nie kadruj zrzutu.
+    Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+    widoczne elementy wskazujące na poprawnie wykonany import tabel
+−   Wykonaj zapytania SQL działające na bazie atlas_drzew. Zapytania zapisz w pliku kwerendy.txt.
+    Wykonaj zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie PNG i nadaj
+    im nazwy kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora z widocznym paskiem
+    zadań
+       − Zapytanie 1: wybierające jedynie nazwy, nazwy naukowe oraz średnią długość życia gatunków
+          drzew z rodzaju iglastych posortowane malejąco według średniej długości życia
+       − Zapytanie 2: wybierające jedynie pola id i stanZdrowia z tabeli drzewa oraz odpowiadające im
+          pole nazwa z tabeli gatunki dla tych drzew, które zostały posadzone 6 czerwca 2008 roku. Należy
+          posłużyć się relacją
+
+                                                 Strona 2 z 8
+       −   Zapytanie 3: wybierające jedynie pole rodzaj oraz liczące ile gatunków z każdego rodzaju jest
+           opisanych w tej bazie danych. Kolumnie z liczbą gatunków należy nadać nazwę (alias) „ilość”
+       −   Zapytanie 4: wybierające jedynie nazwy z tabeli gatunki oraz odpowiadające im datę posadzenia
+           i stan zdrowia z tabeli drzewa, drzew obserwowanych w Gdańsku, Polsce, których nazwy kończą
+           się na literę 'a'. Należy posłużyć się relacją
+
+Witryna internetowa
+
+
+
+
+           Ilustracja 2. Wygląd strony lisciaste.html, kursor na obrazie w bloku bocznym
+
+
+Przygotowanie grafiki:
+− Plik dab.jpg, wypakowany z archiwum, należy przeskalować z zachowaniem proporcji, do szerokości
+    300 px
+
+Cechy witryny:
+− Składa się ze strony o nazwie lisciaste.html
+−   Zapisana w języku HTML5
+−   Zadeklarowany polski język zawartości witryny
+−   Jawnie zastosowany właściwy standard kodowania polskich znaków
+−   Tytuł strony „Atlas drzew”
+−   Arkusz stylów w pliku o nazwie styl.css prawidłowo połączony z kodem
+    strony
+−   Podział strony na bloki: nagłówkowy, boczny, nawigacyjny, główny,
+    stopki. Podział zrealizowany za pomocą semantycznych znaczników
+    języka HTML 5 tak, aby po uruchomieniu w przeglądarce układ bloków
+    był zgodny z ilustracją 3                                                Ilustracja 3. Układ bloków
+−   Zawartość bloku nagłówkowego:
+      − Nagłówek pierwszego stopnia o treści „Atlas drzew”
+−   Zawartość bloku bocznego:
+      − Nagłówek trzeciego stopnia o treści „Wybierz drzewo, aby przeczytać o nim informacje”
+
+                                             Strona 3 z 8
+      −   Blok obrazów, w którym znajdują się kolejno obrazy: buk.jpg, lipa.jpg, wierzba.jpg, brzoza.jpg,
+          dab.jpg, kasztanowiec.jpg, jarzebina.jpg, klon.jpg, magnolia.jpg. Wszystkie obrazy mają tekst
+          alternatywny, którym jest nazwa drzewa zawarta w nazwie właściwego pliku. Wybranie poprzez
+          kliknięcie obrazu, powoduje wywołanie funkcji tworzącej elementy z opisem danego drzewa
+          w bloku głównym strony (skrypt 1)
+      − Pole edycyjne z podpowiedzią „Wyszukaj drzewo…”
+      − Przycisk „Szukaj”, którego kliknięcie powoduje wywołanie funkcji szukającej informacji o podanym
+        drzewie (skrypt 2)
+−   Zawartość bloku nawigacyjnego:
+      −   Lista punktowana (nieuporządkowana) z trzema elementami, które są odsyłaczami prowadzącymi
+          do plików:
+               − lisciaste.html – drzewa liściaste
+               − iglaste.png – drzewa iglaste
+              −   owocowe.png – drzewa owocowe
+−   Zawartość bloku głównego:
+      − Paragraf z przypisaną klasą opis. Jego zawartością jest tekst: „Witamy w naszym…”. Cały tekst
+        znajduje się w pliku do_strony.txt (do skopiowania)
+      − Fragment tekstu „Atlasie drzew” zapisany w semantycznym znaczniku oznaczającym tekst ważny
+        i domyślnie sformatowany jako pogrubiony – patrz ilustracja 2
+−   Zawartość bloku stopki: paragraf o treści „Autor: ”, dalej wstawiony numer zdającego
+
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie styl.css. Cechy formatowania CSS
+działające na stronie:
+−   Dla bloku nagłówkowego: tło w postaci obrazu naglowek.png, wysokość 170 px
+−   Dla bloku bocznego: szerokość 25%, wysokość 720 px, wyrównanie tekstu do środka
+−   Dla bloków nawigacyjnego i głównego: szerokość 55%
+−   Dla bloku nawigacyjnego: wysokość 90 px
+−   Dla bloku głównego: marginesy wewnętrzne 22 px, jedynie margines zewnętrzny lewy 3%, cień bloku
+    bez przesunięcia o rozmyciu 25 px i kolorze Grey
+−   Dla bloku obrazów w bloku bocznym i bloku głównego: wysokość 530 px, paski przewijania widoczne
+    tylko wtedy, gdy zawartość nie mieści się w bloku
+−   Dla bloku stopki: kolor tła Crimson
+−   Dla klasy opis: rozmiar czcionki 150%, wysokość wiersza (interlinia) 150%, tekst wyrównany z lewej
+    i prawej strony (wyjustowany)
+−   Dla elementów listy: sposób wyświetlania liniowo-blokowy, szerokość 30%
+−   Dla odsyłaczy: sposób wyświetlania blokowy, kolor czcionki #382828, rozmiar czcionki 180%, brak
+    podkreślenia, tekst przekształcony na wielkie litery
+−   Dla obrazów w bloku bocznym: obramowanie tylko prawe i dolne linią ciągłą o szerokości 4 px w kolorze
+    Crimson, zaokrąglenie rogów 25 px
+−   Gdy kursor znajdzie się na obrazie w bloku bocznym kolor obramowania obrazu zmienia się na Teal
+−   Dla selektora nagłówka pierwszego stopnia: krój czcionki Chiller, w przypadku braku fantasy, kolor
+    czcionki Crimson, rozmiar czcionki 152 px, odstępy między literami 30 px, brak marginesu zewnętrznego
+
+Uwaga: styl CSS nagłówka pierwszego stopnia należy zdefiniować wyłącznie przy pomocy selektora
+znacznika. Jest to uwarunkowane projektem późniejszej rozbudowy witryny.
+                                            Strona 4 z 8
+Skrypty działające po stronie klienta
+Wymagania dotyczące skryptów:
+−   Należy stosować znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim.
+    Nazewnictwo odzwierciedla cel zastosowania
+−   W pliku do_strony.txt znajdują się zawartości tablic do wykorzystania w kodzie JavaScript. Pierwsza
+    tablica zawiera nazwy drzew, druga tablica zawiera ich opisy. Dana nazwa drzewa oraz jego opis są
+    umieszczone w tablicach pod tym samym indeksem, np. informacje dotyczące drzewa buk pod indeksem
+    0 w każdej z tablic
+
+Skrypt 1:
+−   Wykonywany po kliknięciu na obraz w bloku bocznym
+−   Usuwa zawartość bloku głównego
+−   Tworzy elementy i dodaje je do bloku głównego (ilustracja 4):
+     − Element DOM dla nagłówka drugiego stopnia z nazwą drzewa, którego obraz został kliknięty
+     − Element DOM dla paragrafu z tekstem opisującym drzewo, którego obraz został kliknięty. Do tego
+        elementu dodaje klasę opis
+
+Skrypt 2: wyświetla informacje dotyczące drzewa, którego nazwę użytkownik wpisał w pole edycyjne
+−   Wykonywany po kliknięciu na przycisk „Szukaj”
+−   Pobiera dane z pola edycyjnego
+−   Sprawdza czy wpisana przez użytkownika nazwa drzewa znajduje się w tablicy nazw drzew. Jeżeli
+    istnieje, to wypisuje w bloku głównym informacje o tym drzewie (tak samo jak w skrypcie 1),
+    w przeciwnym wypadku wypisuje w bloku głównym tekst "Drzewa, o którym chcesz znaleźć informacje,
+    nie ma w naszym Atlasie drzew." (można wykorzystać tutaj funkcję skryptu 1.)
+
+
+
+
+      Ilustracja 4. Efekt działania skryptu 1, kliknięto pierwszy obraz w bloku bocznym – buk
+
+
+
+
+                                               Strona 5 z 8
+  Ilustracja 5. Efekt działania skryptu 2, wpisano nazwę drzewa, którego nie ma w Atlasie – akacja
+
+
+
+
+Tabela 1. Semantic Elements in HTML
+       Tag                                              Description
+ <article>      Defines independent, self-contained content
+ <aside>        Defines content aside from the page content
+ <details>      Defines additional details that the user can view or hide
+ <figcaption>   Defines a caption for a <figure> element
+ <figure>       Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+ <footer>       Defines a footer for a document or section
+ <header>       Specifies a header for a document or section
+ <main>         Specifies the main content of a document
+ <mark>         Defines marked/highlighted text
+ <nav>          Defines navigation links
+ <section>      Defines a section in a document
+ <summary>      Defines a visible heading for a <details> element
+ <time>         Defines a date/time
+
+Wybrane zdarzenia HTML
+       Zdarzenia myszy                     Zdarzenia klawiatury                  Zdarzenia obiektów
+ onclick                             onkeydown                            onload
+ ondblclick                          onkeypress                           onresize
+ onmouseover                         onkeyup                              onfocusin
+ onmouseout                                                               onfocusout
+
+Elementy formularzy                                     Metody i pola obiektu string (JS)
+ Ważniejsze typy pola input: button, checkbox,          Length
+ number, password, radio, text, range, file             indexOf(text)
+ Inne elementy: select, textarea                        search(text)
+                                                        lastIndexOf()
+                                                        substr(startIndex, endIndex)
+                                                        replace(textToReplace, newText)
+                                                        toUpperCase()
+                                                        toLowerCase()
+
+
+
+
+                                                Strona 6 z 8
+Tabela 2. Wybrane pola i metody modelu DOM języka JavaScript
+           Wyszukiwanie elementów                              Zmiana elementów
+ document.getElementById(id)                   element.innerHTML = "wartość"
+ document.getElementsByTagName(TagName)        element.attribute_name = "wartość"
+ document.getElementsByClassName(ClassName) element.setAttribute(atrybut, wartosc)
+ document.getElementsByName(ElementName)       element.style.property_name = "wartość"
+ document.querySelector(CSSselector)
+ document.querySelectorAll(CSSselector)
+
+
+Tabela 3. Tworzenie nowych elementów DOM i wstawianie ich do bloków
+Uwaga: w miejscu element należy wstawić obiekt konkretnego elementu, zwróconego takimi funkcjami jak
+getElementById, createElement...
+                      Kod                                              Opis
+ document.createElement("h2")               Tworzy element DOM <h2> i zwraca go. Jako parametr
+                                            należy podać nazwę elementu, np. ul, p, table ...
+ element. classList.add("klasa1");          Przypisuje do danego elementu klasę stylu CSS
+ element. classList.remove("klasa1");       Usuwa określoną klasę stylu CSS z elementu.
+ element. classList.toggle("klasa1");       Przełącza obecność klasy w elemencie. Jeśli klasa jest
+                                            przypisana, zostanie usunięta; jeśli jej nie ma, zostanie
+                                            dodana.
+ element.nazwa_atrybutu = ...               Ustawia wartości atrybutów dla danego elementu
+ element.innerText = ....                   Ustawia tekst dla elementów takich jak paragraf, nagłówek,
+                                            przycisk, itp.
+ element1.appendChild(element2);            Zagnieżdża element2 w elemencie1. Elementem1 może
+                                            być cały dokument, blok, lista lub inny element agregujący.
+                                            Wewnątrz niego zostaje umieszczony element2
+ element.scrollIntoView();                  Przewija zawartość bloku / strony do wskazanego elementu
+
+
+Wybrane fragmenty pomocy ze strony kodilla.com na temat właściwości CSS display
+Opis: CSS display definiuje sposób wyświetlania elementu
+Składnia: display: value;
+Spis wartości:
+     Wartość (value)                                 Opis
+ inline                   Wyświetla element w linii (np. <span>)
+ block                    Wyświetla element w bloku (np. <p>)
+ inline-block             Wyświetla element jako kontener liniowo-blokowy
+ none                     Element jest usunięty
+
+Pomoc na temat właściwości box-shadow
+CSS Syntax:
+box-shadow: h-offset v-offset blur spread color inset;
+Property values:
+          Value                                              Description
+ h-offset               Defines the horizontal offset of the shadow. Positive values place the shadow to
+ (required)             the right, negative values to the left.
+ v-offset               Defines the vertical offset of the shadow. Positive values place the shadow
+ (required)             below, negative values above.
+ blur-radius            Defines the blur radius of the shadow. A larger value means a more blurred
+ (optional)             shadow. A value of 0 means a sharp shadow.
+ spread-radius          Defines how much the shadow should expand or contract. Positive values make
+ (optional)             the shadow larger, negative values make it smaller.
+ color                  Defines the color of the shadow. It can be a color name, RGB, RGBA, HSL,
+ (optional)             HSLA, hex, etc.
+ Inset                  If specified, the shadow will be an inner shadow (drawn inside the element). By
+ (optional)             default, shadows are outside.
+
+
+                                               Strona 7 z 8
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przegladarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego, powinny znajdować się pliki: brzoza.jpg,
+buk.jpg, dab.jpg, iglaste.png, import.png, jarzebina.jpg, kasztanowiec.jpg, klon.jpg, kw1.png, kw2.png,
+kw3.png, kw4.png, kwerendy.txt, lipa.jpg, lisciaste.html, magnolia.jpg, owocowe.png, przegladarka.txt,
+styl.css, wierzba.jpg, ewentualnie inne przygotowane pliki. Po nagraniu płyty sprawdź poprawność jej
+odczytu. Opisz płytę numerem zdającego i pozostaw zapakowaną w pudełku na stanowisku wraz z arkuszem
+egzaminacyjnym.
+
+
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie podlegać będzie 5 rezultatów:
+   −   operacje na bazie danych,
+   −   zawartość witryny internetowej,
+   −   działanie witryny internetowej,
+   −   styl CSS witryny internetowej,
+   −   skrypty.
+
+
+
+
+                                              Strona 8 z 8
+Wypełnia zdający w przypadku nagranej płyty
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD/DVD z rezultatami wykonania zadania egzaminacyjnego
+
+opisaną przeze mnie numerem PESEL                                         i oświadczam, że jakość nagrania
+
+została przeze mnie sprawdzona.
+
+
+Wypełnia zdający w przypadku nienagranej (pustej) płyty
+
+
+Poświadczam numerem PESEL                                            , że do arkusza nie dołączam płyty
+
+CD/DVD z rezultatami wykonania zadania egzaminacyjnego.
+
+
+Wypełnia Przewodniczący ZN
+
+
+   □ Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD/DVD, opisana numerem
+       PESEL zdającego.
+
+   □ Potwierdzam, że do arkusza egzaminacyjnego nie została dołączona płyta CD/DVD.
+
+                                                          ……………………………………………..
+                                                          Czytelny podpis Przewodniczącego ZN
+

@@ -1,0 +1,8 @@
+-- Zapytanie 1
+SELECT MIN(priorytet) FROM notatki WHERE Osoby_id = 3;
+-- Zapytanie 2
+SELECT nazwa, priorytet FROM notatki WHERE nazwa LIKE '%na%';
+-- Zapytanie 3
+SELECT osoby.imie, notatki.nazwa FROM osoby JOIN notatki ON osoby.id = notatki.Osoby_id WHERE notatki.priorytet = 5;
+-- Zapytanie 4
+SELECT osoby.imie, COUNT(notatki.id) FROM osoby JOIN notatki ON osoby.id = notatki.Osoby_id GROUP BY osoby.imie;

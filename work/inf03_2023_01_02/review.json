@@ -1,0 +1,8 @@
+{
+  "code": "inf03_2023_01_02",
+  "pass": true,
+  "score": "42/42",
+  "fails": [],
+  "na": ["zrzut import.png", "zrzuty kw1-kw5.jpg", "utworzenie bazy i import w phpMyAdmin", "nagranie płyty"],
+  "notes": "Wszystkie kwerendy poprawne i wykonują się na bazie, strony zwracają HTTP 200, obrazy 300x300 w skali szarości JPEG, CSS zgodny z treścią (selektory a, img, table bez klas)."
+}

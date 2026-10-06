@@ -1,0 +1,32 @@
+{
+  "password": "<Studio&T@tu>",
+  "db": "studiotatuazu",
+  "required_files": [
+    "angel.png",
+    "celtic.png",
+    "czcionka.jpg",
+    "delfin.png",
+    "index.html",
+    "koliber.png",
+    "kwerendy.txt",
+    "kwiat.png",
+    "kwiaty.png",
+    "logo.png",
+    "przeglądarka.txt",
+    "rozeta.png",
+    "smok.png",
+    "styl.css",
+    "tygrys.png",
+    "waz.png"
+  ],
+  "image_count": null,
+  "pages": [
+    "index.html"
+  ],
+  "code": "inf03_2026_01_12",
+  "pdf": "inf03_arkusze/inf03_2026_01_12_arkusz.pdf",
+  "sql_files": [
+    "materialy/studiotatuazu.sql"
+  ],
+  "problems": []
+}

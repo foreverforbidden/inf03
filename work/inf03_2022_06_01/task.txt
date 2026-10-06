@@ -1,0 +1,246 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Oznaczenie kwalifikacji: INF.03
+Numer zadania: 01
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+                                                                              Miejsce na naklejkę z numerem
+Numer PESEL zdającego*                                                          PESEL i z kodem ośrodka
+
+
+
+
+Czas trwania egzaminu: 150 minut.                                                        INF.03-01-22.06-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2022                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL
+          i naklej naklejkę z numerem PESEL i z kodem ośrodka.
+    2.    Na KARCIE OCENY w oznaczonym miejscu przyklej naklejkę z numerem PESEL oraz wpisz:
+          − swój numer PESEL*,
+          − oznaczenie kwalifikacji,
+          − numer zadania,
+          − numer stanowiska.
+    3.    Sprawdź, czy arkusz egzaminacyjny zawiera 5 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    4.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    5.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    6.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    7.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami oraz KARTĘ
+          OCENY na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu
+          nadzorującego.
+    8.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania egzaminu.
+
+                                                                                               Powodzenia!
+* w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+
+
+
+
+Układ graficzny
+© CKE 2020
+Zadanie egzaminacyjne
+
+UWAGA: katalog z rezultatami pracy oraz płytę należy opisać numerem, którym został podpisany arkusz,
+czyli numerem PESEL lub w przypadku jego braku numerem paszportu.
+
+Wykonaj aplikację internetową portalu dla wędkarzy, wykorzystując pakiet XAMPP oraz edytor zaznaczający
+składnię.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się archiwum
+ZIP o nazwie pliki1.zip zabezpieczone hasłem: WedkoWaniE&
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego,
+którym został podpisany arkusz. Rozpakowane pliki należy umieścić w tym folderze. Po skończonej pracy
+wszystkie wyniki należy zapisać w tym folderze.
+
+Operacje na bazie danych
+Fragment bazy danych jest zgodny ze strukturą przedstawioną na obrazie 1. Tabela Okres_ochronny
+zawiera informację w postaci liczbowej o miesiącach, w których ryba jest chroniona. Wartość 0 oznacza,
+że ryba nie jest chroniona. Tabela Ryby zawiera pole styl_zycia przyjmujące wartość 1 dla drapieżników
+i wartość 2 dla ryb spokojnego żeru. Tabela Lowisko zawiera pole rodzaj, którego wartości oznaczają:
+1 – morze, 2 – jezioro, 3 – rzeka, 4 – zalew, 5 – staw. Tabela Ryby jest powiązana relacjami z tabelami
+Okres_ochronny oraz Lowisko.
+                                           Obraz 1. Baza danych
+
+
+
+
+Za pomocą narzędzia phpMyAdmin wykonaj operacje na bazie danych:
+   ‒ Utwórz bazę danych o nazwie wedkowanie
+   ‒ Do bazy wedkowanie zaimportuj tabele z pliku baza.sql z rozpakowanego archiwum
+   ‒ Wykonaj zrzut ekranu po imporcie. Zrzut zapisz w formacie PNG i nazwij import. Nie kadruj zrzutu.
+      Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+      widoczne elementy wskazujące na poprawnie wykonany import tabel.
+   ‒ Wykonaj zapytania SQL działające na bazie wedkowanie. Zapytania zapisz w pliku kwerendy.txt.
+      Wykonaj zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie JPEG
+      i nadaj im nazwy kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora z widocznym
+      paskiem zadań.
+          ‒ Zapytanie 1: wybierające jedynie pola id, nazwa i wystepowanie z tabeli Ryby dla ryb
+              drapieżnych
+          ‒ Zapytanie 2: wybierające jedynie pola Ryby_id oraz wymiar_ochronny z tabeli
+              Okres_ochronny dla ryb, których wymiar ochronny jest mniejszy niż 30 cm
+          ‒ Zapytanie 3: wybierające jedynie pole nazwa z tabeli Ryby oraz odpowiadające tej nazwie
+              pola akwen i wojewodztwo z tabeli Lowisko dla łowisk, które są rzekami. Zapytanie
+              wykorzystuje relację
+          ‒ Zapytanie 4: dodające do tabeli Ryby kolumnę dobowy_limit typu numerycznego, o rozmiarze
+              pozwalającym na wpisanie jedynie liczb z przedziału <0, 255>
+
+
+
+
+                                             Strona 2 z 5
+Witryna internetowa
+
+
+
+
+                                      Obraz 2. Witryna internetowa
+
+Przygotowanie grafiki:
+   ‒ Plik ryba1.jpg, wypakowany z archiwum, należy przeskalować z zachowaniem proporcji tak, aby jego
+       szerokość wynosiła dokładnie 400 px
+
+Cechy witryny:
+   ‒ Składa się ze strony o nazwie wedkuj.php zapisanej w języku HTML5
+   ‒ Zadeklarowany język dla witryny: polski
+   ‒ Jawnie zastosowany właściwy standard kodowania polskich znaków
+   ‒ Tytuł strony widoczny na karcie przeglądarki: „Wędkowanie”
+   ‒ Arkusz stylów w pliku o nazwie styl_1.css prawidłowo połączony z kodem strony
+   ‒ Podział strony na bloki: na górze blok banera, poniżej po lewej stronie dwa bloki lewe, obok jeden
+      blok prawy, na dole blok stopki. Podział zrealizowany za pomocą znaczników sekcji tak, aby
+      po uruchomieniu w przeglądarce wygląd układu bloków był zgodny z obrazem 2
+   ‒ Zawartość banera: nagłówek pierwszego stopnia o treści „Portal dla wędkarzy”
+   ‒ Zawartość pierwszego bloku lewego:
+          ‒ Nagłówek trzeciego stopnia o treści: „Ryby zamieszkujące rzeki”
+          ‒ Lista numerowana (uporządkowana) wypełniona przez skrypt 1
+   ‒ Zawartość drugiego bloku lewego:
+          ‒ Nagłówek trzeciego stopnia o treści: „Ryby drapieżne naszych wód”
+          ‒ Tabela o trzech kolumnach wypełniona danymi
+                ‒ pierwszy wiersz zawiera komórki nagłówkowe o treści, kolejno: „L.p.”, „Gatunek”,
+                    „Występowanie”
+                ‒ kolejne wiersze wypełnione są przez skrypt 2 zgodnie z Obrazem 2
+   ‒ Zawartość bloku prawego:
+          ‒ Obraz ryba1.jpg z tekstem alternatywnym o treści: „Sum”
+          ‒ W kolejnej linii odnośnik do pliku kwerendy.txt z treścią: „Pobierz kwerendy”
+   ‒ Zawartość stopki: akapit (paragraf) o treści: „Stronę wykonał: ”, oraz zawierający numer, którym został
+      podpisany arkusz
+
+
+
+
+                                               Strona 3 z 5
+Styl CSS witryny internetowej
+Cechy formatowania CSS, działające na stronie:
+   ‒ Styl CSS zdefiniowany w całości w zewnętrznym pliku o nazwie styl_1.css
+   ‒ Domyślne formatowanie wszystkich selektorów: krój czcionki Helvetica
+   ‒ Wspólne dla bloku banera i stopki: kolor tła #00838F, biały kolor czcionki, marginesy wewnętrzne
+       5 px, rozmiar czcionki 130%, wyrównanie tekstu do środka
+   ‒ Dla obu bloków lewych: kolor tła #EFEFEF, szerokość 55%
+   ‒ Dodatkowo dla pierwszego bloku lewego wysokość 150 px oraz dla drugiego – 300 px
+   ‒ Dla bloku prawego: kolor tła #4FB3BF, szerokość 45%, wysokość 450 px, wyrównanie tekstu do
+       środka
+   ‒ Dla selektora obrazu: cień o przesunięciu 10 px w obu osiach, rozmyciu 7 px i kolorze DimGray,
+       marginesy zewnętrzne 20 px
+   ‒ Dla selektora tabeli, komórek tabeli, komórek nagłówkowych: obramowanie linią ciągłą o szerokości
+       1 px i kolorze #4FB3BF, obramowanie tabeli i komórek połączone
+   ‒ Dodatkowo dla selektora tabeli: marginesy zewnętrzne wyliczane automatycznie przez przeglądarkę,
+       szerokość 80%
+   ‒ Dodatkowo dla selektora komórek tabeli i nagłówkowych: marginesy wewnętrzne 4 px
+   ‒ Gdy kursor myszy znajdzie się na wierszu tabeli, kolor tła wiersza zmienia się na #4FB3BF
+
+Uwaga: style CSS dla obrazu, tabeli, komórek tabeli i komórek nagłówkowych należy zdefiniować wyłącznie
+przy pomocy selektora dla danego znacznika. Jest to uwarunkowane projektem późniejszej rozbudowy
+witryny.
+
+Skrypt połączenia z bazą
+W tabeli 1 podano wybór funkcji PHP do obsługi bazy danych. Wymagania dotyczące skryptów:
+   ‒ Napisane w języku PHP
+   ‒ Skrypty łączą się z serwerem bazodanowym na localhost, użytkownik root bez hasła, baza danych o
+      nazwie wedkowanie
+   ‒ Skrypt 1
+        − wysyła do bazy danych zapytanie 3
+        − każdy zwrócony zapytaniem wiersz jest wyświetlany w osobnym elemencie listy, według wzoru:
+            ”<nazwa_gatunku> pływa w rzece <nazwa_akwenu>, <wojewodztwo>”, gdzie nawiasy <>
+            oznaczają wartości pobrane z bazy danych
+   ‒ Skrypt 2
+        − wysyła do bazy danych zapytanie 1
+        − każdy zwrócony zapytaniem wiersz jest wyświetlany w osobnym wierszu tabeli
+   ‒ Na końcu jest zamykane połączenie z serwerem.
+
+Tabela 1. Wybór funkcji języka PHP do obsługi bazy MySQLi i MariaDB
+Funkcje bilioteki mysqli                        Zwracana wartość
+mysqli_connect(serwer, użytkownik,                 id połączenia lub FALSE, gdy niepowodzenie
+hasło, nazwa_bazy)
+mysqli_select_db(id_polaczenia,                    TRUE/FALSE w zależności od stanu operacji
+nazwa_bazy)
+mysqli_error(id_polaczenia)                        Tekst komunikatu błędu
+mysqli_close(id_polaczenia)                        TRUE/FALSE w zależności od stanu operacji
+mysqli_query(id_polaczenia, zapytanie) Wynik zapytania
+mysqli_fetch_row(wynik_zapytania)                  Tablica numeryczna odpowiadająca wierszowi zapytania
+mysqli_fetch_array(wynik_zapytania)                Tablica zawierająca kolejny wiersz z podanych w wyniku
+                                                   zapytania lub FALSE, jeżeli nie ma więcej wierszy w
+                                                   wyniku zapytania
+mysqli_num_rows(wynik_zapytania)                   Liczba wierszy w podanym zapytaniu
+mysqli_num_fields(wynik_zapytania)                 Liczba kolumn w podanym zapytaniu
+
+
+                                             Strona 4 z 5
+Składnia właściwości CSS box-shadow:
+box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
+
+
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowałeś poprawność działania witryny. Umieść go w folderze
+z numerem, którym został podpisany arkusz.
+Nagraj płytę z rezultatami pracy. W folderze z numerem, którym został podpisany arkusz, powinny znajdować
+się pliki: import.png, kw1.jpg, kw2.jpg, kw3.jpg, kw4.jpg, kwerendy.txt, przeglądarka.txt, ryba1.jpg, styl_1.css,
+wedkuj.php, ewentualnie inne przygotowane pliki. Po nagraniu płyty sprawdź poprawność jej odczytu. Opisz
+płytę numerem, którym został podpisany arkusz i pozostaw zapakowaną w pudełku na stanowisku wraz
+z arkuszem egzaminacyjnym.
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie będzie podlegać 5 rezultatów:
+  ‒ operacje na bazie danych,
+  ‒ wygląd witryny internetowej,
+  ‒ działanie witryny internetowej,
+  ‒ styl CSS witryny internetowej,
+  ‒ skrypt połączenia z bazą.
+
+
+
+
+                                                  Strona 5 z 5
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD opisaną numerem PESEL                                      ,
+której jakość nagrania została przeze mnie sprawdzona.
+
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD, opisana numerem PESEL zdającego.
+
+
+                                                                 ………………………………
+                                                                  Czytelny podpis Przewodniczącego ZN
+

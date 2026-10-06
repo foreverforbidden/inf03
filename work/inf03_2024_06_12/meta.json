@@ -1,0 +1,24 @@
+{
+  "password": "#TransfoRm@cje",
+  "db": "baza",
+  "required_files": [
+    "kwerendy.txt",
+    "obrazki.html",
+    "owoce.jpg",
+    "pomarancza.jpg",
+    "pszczola.jpg",
+    "przeglądarka.txt",
+    "styl.css",
+    "zolw.jpg"
+  ],
+  "image_count": null,
+  "pages": [
+    "obrazki.html"
+  ],
+  "code": "inf03_2024_06_12",
+  "pdf": "inf03_arkusze/inf03_2024_06_12_arkusz.pdf",
+  "sql_files": [
+    "materialy/baza.sql"
+  ],
+  "problems": []
+}

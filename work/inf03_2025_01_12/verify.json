@@ -1,0 +1,61 @@
+{
+  "code": "inf03_2025_01_12",
+  "pass": true,
+  "fails": [],
+  "warns": [
+    "piekarnia.php: odnosnik do pominietego zrzutu kw1.png",
+    "piekarnia.php: odnosnik do pominietego zrzutu kw2.png",
+    "piekarnia.php: odnosnik do pominietego zrzutu kw3.png",
+    "piekarnia.php: odnosnik do pominietego zrzutu kw4.png",
+    "formularz piekarnia.php->piekarnia.php [post]: odnosnik do pominietego zrzutu kw1.png",
+    "formularz piekarnia.php->piekarnia.php [post]: odnosnik do pominietego zrzutu kw2.png",
+    "formularz piekarnia.php->piekarnia.php [post]: odnosnik do pominietego zrzutu kw3.png",
+    "formularz piekarnia.php->piekarnia.php [post]: odnosnik do pominietego zrzutu kw4.png"
+  ],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT Rodzaj, Nazwa, Gramatura, Cena FROM wyroby WHERE Rodzaj = 'INNE'",
+      "ok": true,
+      "rows": 3,
+      "preview": "+--------+------------------------------------------------+-----------+------+\n| Rodzaj | Nazwa                                          | Gramatura | Cena |\n+--------+------------------------------------------------+-----------+------+\n| INNE   | Bułka tarta                                    |       0.5 |    2 |\n| INNE   | Pieczywo okolicznościowe np. \"Wiejski Stół\"    |         1 |   35 |\n| INNE   | Paszteciki z kapustą i grzybami                |       0.2 | 4.65 |\n+--------+------------------------------------------------+-----------+------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT DISTINCT Rodzaj FROM wyroby ORDER BY Rodzaj DESC",
+      "ok": true,
+      "rows": 11,
+      "preview": "+--------------------------------------+\n| Rodzaj                               |\n+--------------------------------------+\n| WYROBY CUKIERNICZE I CIASTKARSKIE    |\n| PIECZYWO ŻYTNIE                      |\n| PIECZYWO WYBOROWE I PÓŁCUKIERNICZE   |\n| PIECZYWO PSZENNE WYBOROWE I MAŚLANE  |\n| PIECZYWO PSZENNE (CHLEBOWE)          |\n| PIECZYWO PSZENNE (BUŁKOWE)           |"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT ID, Nazwa FROM wyroby WHERE Nazwa LIKE '%Chałka%'",
+      "ok": true,
+      "rows": 4,
+      "preview": "+----+-------------------+\n| ID | Nazwa             |\n+----+-------------------+\n| 57 | Chałka duża       |\n| 58 | Chałka mała       |\n| 61 | Chałka pleciona   |\n| 62 | Chałka foremkowa  |\n+----+-------------------+"
+    },
+    {
+      "n": 4,
+      "sql": "SELECT Rodzaj, ROUND(AVG(Cena), 2) AS `Średnia cena` FROM wyroby GROUP BY Rodzaj",
+      "ok": true,
+      "rows": 11,
+      "preview": "+--------------------------------------+---------------+\n| Rodzaj                               | Średnia cena  |\n+--------------------------------------+---------------+\n| INNE                                 |         13.88 |\n| PIECZYWO DLA GASTRONOMII             |          3.80 |\n| PIECZYWO MIESZANE                    |          3.45 |\n| PIECZYWO MIESZANE (PSZENNO-ŻYTNIE)   |          3.12 |\n| PIECZYWO PÓŁCUKIERNICZE I FIRMOWE    |          1.58 |\n| PIECZYWO PSZENNE (BUŁKOWE)           |          1.70 |"
+    }
+  ],
+  "pages": [
+    {
+      "page": "piekarnia.php",
+      "status": 200,
+      "bytes": 2294
+    },
+    {
+      "page": "formularz piekarnia.php->piekarnia.php [post]",
+      "status": 200,
+      "bytes": 2294,
+      "fields": {
+        "rodzaj": "Test"
+      }
+    }
+  ],
+  "checked_at": "2026-10-06 18:49:40"
+}

@@ -1,0 +1,14 @@
+{
+  "code": "inf03_2026_06_01",
+  "pass": true,
+  "score": "45/45",
+  "fails": [],
+  "na": [
+    "utworzenie bazy islandia w phpMyAdmin (utf8_unicode_ci)",
+    "import tabel z baza1.sql (poza oceną - weryfikowane przez verify.py)",
+    "zrzut import.jpg",
+    "zrzuty kw1-kw4.png",
+    "nagranie płyty, folder z numerem zdającego"
+  ],
+  "notes": "Kwerendy 1-4 zgodne z treścią i wynikami na bazie (9, 1, 4 i 8 wierszy). Strony HTML5, lang=pl, UTF-8, title Islandia, styl.css, układ header/main+section/aside/footer zgodny z ilustracją 4 (float + clear). CSS zgodny z każdym punktem. Skrypty 1-4 poprawne, mysqli_close obecne. Stopka ma dodatkowo clear:both (potrzebne do układu, nie kolidujące z treścią). W stopce numer zdającego jest placeholderem 00000000000."
+}

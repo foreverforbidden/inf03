@@ -1,0 +1,306 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 12
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+
+Numer PESEL zdającego*                                                        Miejsce na naklejkę z numerem
+                                                                                PESEL i z kodem ośrodka
+
+         Numer stanowiska
+
+
+
+
+Czas trwania egzaminu: 150 minut                                                         INF.03-12-26.01-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2026                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL*,
+          numer stanowiska i naklej naklejkę** z numerem PESEL i z kodem ośrodka.
+    2.    Sprawdź, czy arkusz egzaminacyjny zawiera 7 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    3.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    4.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    5.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    6.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami wykonania zadania
+          na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu nadzorującego.
+    7.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania
+          egzaminu.
+
+                                                                                               Powodzenia!
+
+ * w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+** w przypadku otrzymania naklejki
+
+
+Układ graficzny
+© CKE 2025
+Zadanie egzaminacyjne
+
+UWAGA: numer, którym został podpisany arkusz egzaminacyjny (PESEL lub w przypadku jego braku numer
+paszportu) jest w zadaniu nazywany numerem zdającego.
+
+Wykonaj aplikację internetową studia tatuażu, wykorzystując edytor grafiki rastrowej, pakiet XAMPP oraz
+edytor zaznaczający składnię.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się
+archiwum 7z o nazwie pliki16 zabezpieczone hasłem <Studio&T@tu>
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego.
+Wszystkie wyniki należy zapisać w tym folderze.
+
+Operacje na bazie danych
+Do wykonania operacji na bazie należy wykorzystać przedstawione na ilustracji 1 tabele.
+
+
+
+
+                                        Ilustracja 1. Baza danych
+
+Za pomocą narzędzia phpMyAdmin wykonaj następujące operacje na bazie danych:
+−   Utwórz bazę danych o nazwie studiotatuazu, z zestawem polskich znaków (np. utf8_polish_ci)
+−   Z rozpakowanego archiwum zaimportuj tabele z pliku studiotatuazu.sql do utworzonej bazy
+−   Wykonaj zrzut ekranu po imporcie. Zapisz zrzut w formacie PNG pod nazwą import. Nie kadruj zrzutu.
+    Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+    widoczne elementy wskazujące na poprawnie wykonany import tabel
+−   Wykonaj zapytania SQL działające na bazie studiotatuazu. Zapytania zapisz w pliku kwerendy.txt.
+    Wykonaj zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie PNG i nadaj
+    im nazwy kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora z widocznym paskiem
+    zadań
+       − Zapytanie 1: wybierające jedynie wzór i cenę tatuaży, dla tatuaży w kolorze czarnym, których
+          cena jest większa niż 100 zł, posortowane według ceny malejąco
+       −   Zapytanie 2: wybierające nazwę koloru tatuażu i zliczające ile jest tatuaży danego koloru. Należy
+           zastosować grupowanie
+       −   Zapytanie 3: wybierające jedynie wzór tatuażu i odpowiadającą mu nazwę stylu dla tatuaży
+           w kolorze zielonym. Należy posłużyć się relacją
+       −   Zapytanie 4: aktualizujące cenę tatuażu. Cena wzrasta o 10% dla tatuaży w kolorze czerwonym
+
+
+
+
+                                               Strona 2 z 7
+Witryna internetowa
+
+
+
+
+    Ilustracja 2. Wygląd witryny internetowej w przeglądarce Chrome, z logo w lewym górnym rogu
+
+Cechy grafiki logo.png (ilustracja 2, lewy górny róg):
+− Skadrowana do krawędzi kształtu ptaka i przeskalowana z zachowaniem proporcji do wysokości 300 px
+− W prawym dolnym rogu należy dodać litery „S” oraz „T”, litera „T” jest przesunięta w dół względem litery
+   „S”. Litery są zapisane dowolną dostępną czcionką ozdobną. Należy wykonać zrzut ekranu z edytora
+   grafiki z ustawioną widoczną nazwą czcionki i zapisać pod nazwą czcionka.jpg. Spis dostępnych
+   w systemie czcionek można uzyskać np. w Panelu Sterowania -> Czcionki. Na ilustracji 2 zastosowano
+   czcionkę Freestyle Script w rozmiarze 100.
+
+Cechy witryny:
+− Składa się ze strony index.html
+− Zapisana w języku HTML5
+− Zadeklarowany polski język zawartości witryny
+−    Jawnie zastosowany właściwy standard kodowania polskich
+     znaków
+−    Tytuł strony widoczny na karcie przeglądarki: „Tatuaże”
+−    Arkusz stylów w pliku o nazwie styl.css prawidłowo połączony
+     z kodem strony
+−    Podział strony na bloki zrealizowany za pomocą                      Ilustracja 3. Układ bloków
+     semantycznych znaczników bloków języka HTML5 tak, aby po
+     uruchomieniu w przeglądarce układ bloków na stronie był zgodny z ilustracją 3
+−    Zawartość bloku nagłówkowego 1: obraz logo.png z tekstem alternatywnym „salon”
+−    Zawartość bloku nagłówkowego 2: nagłówek pierwszego stopnia o treści „Studio Tatuażu”
+−    Zawartość bloku sekcji:
+     − Nagłówek drugiego stopnia o treści „Galeria”
+     − Obraz smok.png z tekstem alternatywnym „smok.png”, z przypisaną klasą miniatury
+     − Obraz koliber.png z tekstem alternatywnym „koliber.png”, z przypisaną klasą miniatury
+−    Zawartość bloku bocznego:
+      −   Nagłówek trzeciego stopnia o treści „Dodaj wzór”
+
+                                                Strona 3 z 7
+      −   Etykieta o treści „Wzór:”, powiązana z polem edycyjnym do podania nazwy pliku
+      −   Poniżej pole edycyjne do wyboru pliku w oknie dialogowym, przyjmujące jedynie obrazy w formacie
+          PNG
+      −   Poniżej etykieta o treści „Kolor:”, powiązana z listą rozwijaną
+      −   Poniżej lista rozwijana z opcjami: „Czarny”, „Czerwony”, „Zielony”, „Niebieski”
+      −   Poniżej etykieta o treści „Cena:”, powiązana z polem edycyjnym do wpisania ceny
+      −   Poniżej pole edycyjne typu liczbowego przeznaczone do wpisywania ceny
+      −   Poniżej przycisk o treści „Dodaj Wzór”. Wciśnięcie przycisku powoduje wywołanie skryptu
+−    Zawartość stopki: paragraf o treści „Autor strony: ”, dalej wstawiony numer zdającego.
+
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie styl.css.
+
+Wytyczne dotyczące czcionki:
+− Styl CSS korzysta z kroju czcionki Dancing Script znajdującej się w folderze czcionki. Czcionkę należy
+   dodać do projektu i zdefiniować jej stosowanie dla wariantu regular (normal). W pliku styl.css należy
+   zapisać reguły dla czcionki. Przykład znajduje się w pliku stylesheet.css
+
+Cechy formatowania CSS, działające na stronie:
+−    Dla selektora ciała strony: krój czcionki Dancing Script, w przypadku braku serif, rozmiar czcionki 120%,
+     wyrównanie tekstu do środka
+−    Dla bloków nagłówkowego 1 i bocznego: kolor tła RosyBrown, szerokość 30%
+−    Dodatkowo dla bloku bocznego: wyrównanie tekstu do lewej strony, wysokość 350 px
+−    Dla bloku nagłówkowego 2: kolor tła RosyBrown, szerokość 70%, wysokość 100 px
+−    Dla bloku sekcji: szerokość 70%, wysokość 550 px, paski przewijania zawsze widoczne
+−    Dla selektora etykiety: wysokość linii 50 px
+−    Dla klasy miniatury przypisanej do obrazów generowanych skryptem: szerokość 150 px
+−    W momencie, gdy kursor znajdzie się na elemencie z przypisaną klasą miniatury, kolor jego tła zmienia
+     się na Bisque, a szerokość na 200 px. Zmiana szerokości ma zdefiniowane przejście z czasem trwania
+     1 s (ilustracja 4)
+
+Uwaga: styl CSS ciała strony i etykiety należy zdefiniować wyłącznie przy pomocy selektora tych znaczników.
+Jest to uwarunkowane projektem późniejszej rozbudowy witryny.
+
+
+
+
+    Ilustracja 4. Działanie pseudoklasy                            Ilustracja 5. Komunikat
+
+                                                    Strona 4 z 7
+Skrypt
+W tabeli 1 zamieszczono wybrane pola i metody modelu DOM w języku JavaScript. Wymagania dotyczące
+skryptu:
+−   Wykonywany po stronie klienta, po kliknięciu przycisku
+−   Należy stosować znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim
+−   Pobiera dane z kontrolek
+−   Ustala nazwę pliku (bez ścieżki dostępu) na podstawie wartości przekazanej z pola do wyboru pliku
+−   Wyświetla komunikat: "Wzór: <nazwaPliku>, kolor <kolor> w cenie <cena> zł" gdzie pola <> pobrano
+    z kontrolek oraz nazwa pliku nie zawiera ścieżki dostępu (Ilustracja 5)
+−   Tworzy element obrazu i dodaje go do bloku sekcji (ilustracja 6):
+     − Źródłem i tekstem alternatywnym jest nazwa pliku
+     − Obraz ma przypisaną klasę miniatury
+
+
+
+
+                     Ilustracja 6. Wygląd bloku sekcji po dodanych kilku plikach
+
+
+File Input Type
+<input> elements with type="file" let the user choose one or more files from their device storage. Once
+chosen, the files can be uploaded to a server using form submission, or manipulated using JavaScript code
+and the File API. Example:
+<input type=… accept="file_extension |audio/* |video/* |image/png| image/jpeg
+|media_type">
+
+JS Value property of input file: C:\fakepath\fileName.png
+
+
+
+
+                                                Strona 5 z 7
+Tabela 1. Wybrane pola i metody modelu DOM języka JavaScript
+           Wyszukiwanie elementów                              Zmiana elementów
+ document.getElementById(id)                   element.innerHTML = "wartość"
+ document.getElementsByTagName(TagName)        element.attribute_name = "wartość"
+ document.getElementsByClassName(ClassName) element.setAttribute(atrybut, wartosc)
+ document.getElementsByName(ElementName)       element.style.property_name = "wartość"
+ document.querySelector(CSSselector)
+ document.querySelectorAll(CSSselector)
+
+     Operacje na elementach dokumentu                             Wybrane właściwości obiektu style
+ document.createElement(element)                      backgroundColor
+ document.removeChild(element)                        color
+ document.appendChild(element)                        fontSize
+ document.replaceChild(element)                       fontStyle = "normal | italic | oblique | initial | inherit"
+ document.write(text)                                 fontWeight = "normal | lighter | bold | bolder | value |
+                                                      initial | inherit"
+                                                      listStyleType = "circle| decimal | disc | none | square |
+                                                      initial..."
+Wybrane zdarzenia HTML
+       Zdarzenia myszy                     Zdarzenia klawiatury                    Zdarzenia obiektów
+ onclick                             onkeydown                              onload
+ ondblclick                          onkeypress                             onresize
+ onmouseover                         onkeyup                                onfocusin
+ onmouseout                                                                 onfocusout
+
+ Elementy formularzy                                    Metody i pola obiektu string (JS)
+ Ważniejsze typy pola input: button, checkbox,          Length
+ number, password, radio, text, range, file             indexOf(text)
+ Inne elementy: select, textarea                        search(text)
+                                                        lastIndexOf()
+                                                        substr(startIndex, endIndex)
+                                                        replace(textToReplace, newText)
+                                                        toUpperCase()
+                                                        toLowerCase()
+
+Tabela 2. Semantic Elements in HTML
+       Tag                                              Description
+ <article>      Defines independent, self-contained content
+ <aside>        Defines content aside from the page content
+ <details>      Defines additional details that the user can view or hide
+ <figcaption>   Defines a caption for a <figure> element
+ <figure>       Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+ <footer>       Defines a footer for a document or section
+ <header>       Specifies a header for a document or section
+ <main>         Specifies the main content of a document
+ <mark>         Defines marked/highlighted text
+ <nav>          Defines navigation links
+ <section>      Defines a section in a document
+ <summary>      Defines a visible heading for a <details> element
+ <time>         Defines a date/time
+
+
+
+
+                                                Strona 6 z 7
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego, powinny znajdować się pliki: angel.png,
+celtic.png, czcionka.jpg, DancingScript-Regular.woff, DancingScript-Regular.woff2, delfin.png, import.png,
+index.html, koliber.png, kw1.png, kw2.png, kw3.png, kw4.png, kwerendy.txt, kwiat.png, kwiaty.png, logo.png,
+przeglądarka.txt, rozeta.png, smok.png, styl.css, tygrys.png, waz.png, ewentualnie inne przygotowane pliki.
+Po nagraniu płyty sprawdź poprawność jej odczytu. Opisz płytę numerem zdającego i pozostaw zapakowaną
+w pudełku na stanowisku wraz z arkuszem egzaminacyjnym.
+
+
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie podlegać będzie 5 rezultatów:
+   −   operacje na bazie danych,
+   −   zawartość witryny internetowej,
+   −   działanie witryny internetowej,
+   −   styl CSS witryny internetowej,
+   −   skrypt.
+
+
+
+
+                                               Strona 7 z 7
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD/DVD opisaną numerem
+
+PESEL                              , której jakość nagrania została przeze mnie sprawdzona.
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD/DVD, opisana numerem PESEL
+zdającego.
+
+                                                               ……………………………........…
+                                                               Czytelny podpis Przewodniczącego ZN
+

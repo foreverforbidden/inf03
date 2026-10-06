@@ -1,0 +1,8 @@
+{
+  "code": "inf03_2024_01_06",
+  "pass": true,
+  "score": "40/40",
+  "fails": [],
+  "na": ["utworzenie bazy podroze i import (zrzut import.png)", "zrzuty ekranu kw1-kw4", "nagranie płyty / folder z numerem zdającego"],
+  "notes": "Wszystkie kwerendy zgodne z verify.json (9, 3, 4 wiersze, DROP ok). Strona biuro.php zwraca 200, CSS zgodny z treścią (selektory tylko ol, li, table, img). Numer zdającego w stopce to placeholder 00000000000 - akceptowalne."
+}

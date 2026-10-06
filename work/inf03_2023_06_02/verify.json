@@ -1,0 +1,58 @@
+{
+  "code": "inf03_2023_06_02",
+  "pass": true,
+  "fails": [],
+  "warns": [
+    "pominiety (prawdopodobnie zrzut ekranu): kwerenda1.jpg",
+    "pominiety (prawdopodobnie zrzut ekranu): kwerenda2.jpg",
+    "pominiety (prawdopodobnie zrzut ekranu): kwerenda3.jpg",
+    "pominiety (prawdopodobnie zrzut ekranu): kwerenda4.jpg"
+  ],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT nazwa, cena FROM towary LIMIT 4",
+      "ok": true,
+      "rows": 4,
+      "preview": "+------------------+------+\n| nazwa            | cena |\n+------------------+------+\n| Zeszyt 60 kartek |  4.5 |\n| Zeszyt 32 kartki |  1.2 |\n| Cyrkiel          | 12.4 |\n| Linijka 30 cm    |  7.2 |\n+------------------+------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT cena FROM towary WHERE nazwa = 'Ekierka'",
+      "ok": true,
+      "rows": 1,
+      "preview": "+------+\n| cena |\n+------+\n|  5.5 |\n+------+"
+    },
+    {
+      "n": 3,
+      "sql": "UPDATE dostawcy SET nazwa = 'Artykuly szkolne' WHERE id = 2",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    },
+    {
+      "n": 4,
+      "sql": "SELECT promocja, COUNT(*) AS podsumowanie FROM towary GROUP BY promocja",
+      "ok": true,
+      "rows": 2,
+      "preview": "+----------+--------------+\n| promocja | podsumowanie |\n+----------+--------------+\n|        0 |            6 |\n|        1 |            4 |\n+----------+--------------+"
+    }
+  ],
+  "pages": [
+    {
+      "page": "index.php",
+      "status": 200,
+      "bytes": 1420
+    },
+    {
+      "page": "formularz index.php->index.php [post]",
+      "status": 200,
+      "bytes": 1420,
+      "fields": {
+        "artykul": "Test",
+        "liczba": "2"
+      }
+    }
+  ],
+  "checked_at": "2026-10-06 18:40:38"
+}

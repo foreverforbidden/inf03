@@ -1,0 +1,251 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Oznaczenie kwalifikacji: INF.03
+Numer zadania: 04
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+                                                                              Miejsce na naklejkę z numerem
+Numer PESEL zdającego*                                                          PESEL i z kodem ośrodka
+
+
+
+
+Czas trwania egzaminu: 150 minut.                                                        INF.03-04-23.06-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2023                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL
+          i naklej naklejkę z numerem PESEL i z kodem ośrodka.
+    2.    Na KARCIE OCENY w oznaczonym miejscu przyklej naklejkę z numerem PESEL oraz wpisz:
+          − swój numer PESEL*,
+          − oznaczenie kwalifikacji,
+          − numer zadania,
+          − numer stanowiska.
+    3.    Sprawdź, czy arkusz egzaminacyjny zawiera 5 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    4.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    5.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    6.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    7.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami oraz KARTĘ
+          OCENY na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu
+          nadzorującego.
+    8.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania egzaminu.
+
+                                                                                               Powodzenia!
+* w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+
+
+
+
+Układ graficzny
+© CKE 2020
+Zadanie egzaminacyjne
+UWAGA: katalog z rezultatami pracy oraz płytę należy opisać numerem zdającego, którym został podpisany
+arkusz, czyli numerem PESEL lub w przypadku jego braku numerem paszportu. Dalej w zadaniu numer ten
+jest nazwany numerem zdającego.
+
+Wykonaj aplikację internetową portalu biblioteki, wykorzystując pakiet XAMPP oraz edytor zaznaczający
+składnię.
+Aby wykonać zadanie, zaloguj się na konto Egzamin bez hasła. Na pulpicie znajdziesz archiwum 7-Zip
+o nazwie materialy4.7z zabezpieczone hasłem: 4rch!wum4x
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego.
+Rozpakowane pliki należy umieścić w tym folderze. Po skończonej pracy wszystkie wyniki należy zapisać
+w tym folderze.
+
+Operacje na bazie danych
+Tabele w bazie biblioteka wykorzystane w zadaniu przedstawione są na obrazie 1.
+
+
+
+
+                                        Obraz 1. Baza danych
+
+Wykonaj operacje na bazie danych:
+  − Utwórz nową bazę danych o nazwie biblioteka
+  − Do bazy zaimportuj tabele z pliku biblioteka.sql, z wcześniej rozpakowanego archiwum
+  − Wykonaj zrzut ekranu po imporcie. Zrzut zapisz w formacie JPEG i nazwij import. Nie kadruj zrzutu.
+     Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+     widoczne elementy wskazujące na poprawnie wykonany import tabel
+  − Wykonaj zapytania SQL działające na bazie biblioteka. Zapytania zapisz w pliku kwerendy.txt.
+     Wykonaj zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie JPEG
+     i nadaj im nazwy kwerenda1, kwerenda2, kwerenda3, kwerenda4. Zrzuty powinny obejmować cały
+     ekran monitora z widocznym paskiem zadań oraz zawierać wykonane zapytanie
+      − Zapytanie 1: wybierające jedynie pola imie i nazwisko dla wszystkich rekordów w tabeli autorzy,
+          posortowane rosnąco nazwiskami autorów
+      − Zapytanie 2: wstawiające do tabeli czytelnicy nowy rekord z danymi: Ewa Kowalska z kodem
+          145321. Wartość klucza głównego nadawana automatycznie
+      − Zapytanie 3: wybierające jedynie pole tytul dla wszystkich utworów w tabeli ksiazki, należących
+          do kategorii dramat
+      − Zapytanie 4: wybierające jedynie pole tytul wszystkich utworów w tabeli książki, wypożyczonych
+          przez czytelnika o identyfikatorze 2. W zapytaniu 4 należy posłużyć się relacją
+
+
+                                             Strona 2 z 5
+Witryna internetowa
+
+
+
+
+                   Obraz 2. Witryna internetowa. Po zatwierdzeniu danych z formularza
+
+Przygotowanie grafiki:
+
+
+
+
+                                           =>
+
+
+
+      Obraz 3a. biblioteka.png przed                   Obraz 3b. biblioteka.png po transformacji; rozmiar
+ transformacją; rozmiar 150 px na 235 px                                300 px na 235 px
+
+   ‒   grafikę biblioteka.png należy rozszerzyć z rozmiaru poziomego 150 px do rozmiaru 300 px,
+       a następnie w pustym obszarze zdublować stos książek zgodnie z obrazem 3b
+
+Cechy witryny:
+   − Składa się ze strony o nazwie biblioteka.php
+   − Zapisana w języku HTML5
+   − Ustawiony język zawartości strony na polski
+   − Jawnie zastosowany właściwy standard kodowania polskich znaków
+   − Tytuł strony widoczny na karcie przeglądarki: „Biblioteka publiczna”
+   − Arkusz stylów w pliku o nazwie style.css prawidłowo połączony z kodem strony
+   − Podział strony na bloki: na górze baner, poniżej bloki: lewy, środkowy i dwa prawe ułożone jeden
+      pod drugim oraz na dole blok stopki. Podział zrealizowany za pomocą znaczników sekcji tak, aby
+      wygląd układu bloków strony po uruchomieniu w przeglądarce, był zgodny z obrazem 2
+   − Zawartość banera: nagłówek pierwszego stopnia o treści „Biblioteka w Książkowicach Wielkich”
+   − Zawartość bloku lewego:
+       − Nagłówek trzeciego stopnia o treści „Polecamy dzieła autorów:”
+       − Lista numerowana (uporządkowana), której elementy są generowane skryptem 1
+   − Zawartość bloku środkowego:
+       − Nagłówek trzeciego stopnia o treści: „ul. Czytelnicza 25, Książkowice Wielkie”. Dwa człony nazwy
+           miasta połączone są spacją nierozdzielającą
+                                              Strona 3 z 5
+       −  Paragraf (akapit) o treści „Napisz do nas”, który jest odsyłaczem pocztowym do adresu
+          sekretariat@biblioteka.pl
+       − Obraz biblioteka.png z tekstem alternatywnym „książki”
+   −   Zawartość bloku prawego – górnego:
+       − Nagłówek trzeciego stopnia o treści „Dodaj czytelnika”
+       − Formularz wysyłający dane do tego samego pliku metodą bezpieczną, zawierający:
+          − Pole edycyjne poprzedzone napisem „imię: ”
+          − Pole edycyjne poprzedzone napisem „nazwisko: ”
+          − Pole edycyjne typu numerycznego poprzedzone napisem „symbol: ”
+          − Przycisk DODAJ wysyłający dane z formularza
+   −   Zawartość bloku prawego – dolnego: efekt działania skryptu 2
+   −   Zawartość stopki: paragraf (akapit) o treści „Projekt strony: ”, dalej wstawiony numer zdającego
+
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany w całości w zewnętrznym pliku o nazwie style.css. Arkusz CSS zawiera formatowanie:
+    − Domyślne formatowanie wszystkich selektorów: krój czcionki Verdana
+    − Dla banera i stopki: kolor tła #004D40, biały kolor czcionki, marginesy wewnętrzne 10 px, wyrównanie
+       tekstu do środka
+    − Dla panelu lewego: kolor tła #80CBC4, biały kolor czcionki, wysokość 500 px, szerokość 30%
+    − Dla panelu środkowego: kolor tła #E0F2F1, wysokość 500 px, szerokość 30%, wyrównanie tekstu do
+       środka
+    − Dla obu paneli prawych: wysokość 250 px, szerokość 40%
+    − Kolory tła dla paneli prawych: prawego-górnego: #E0F2F1, prawego-dolnego: #B2DFDB
+    − Dla selektora nagłówka trzeciego stopnia: wyrównanie tekstu do środka
+    − Dla selektora obrazu: marginesy wewnętrzne 5 px, wysokość 150 px, obramowanie linią kropkowaną
+       o grubości 1 px i kolorze #004D40 zaokrągloną na rogach o 5 px
+    − Dla selektora pola edycyjnego: marginesy zewnętrzne 10 px
+
+Uwaga: style CSS dla nagłówka trzeciego stopnia, obrazu i pola edycyjnego należy zdefiniować wyłącznie
+przy pomocy selektora dla znaczników nagłówka trzeciego stopnia, obrazu oraz pola edycyjnego. Jest to
+uwarunkowane projektem późniejszej rozbudowy witryny.
+
+Skrypt połączenia z bazą
+W tabeli 1 podano wybór funkcji PHP do obsługi bazy danych.
+Wymagania dotyczące skryptu:
+   − Napisany w języku PHP, umieszczony w pliku biblioteka.php
+   − Skrypt łączy się z serwerem bazodanowym na localhost, użytkownik root bez hasła, baza danych
+       o nazwie biblioteka
+   − Na końcu działania skrypt zamyka połączenie z serwerem
+   Skrypt 1
+   − Wysyła do bazy danych zapytanie 1
+   − Pobrane zapytaniem imiona i nazwiska autorów wypisywane są jako elementy listy numerowanej
+       (uporządkowanej)
+   Skrypt 2
+   − Pobiera dane z formularza
+   − Wyświetla napis „Czytelnik <imie> <nazwisko> został(a) dodany do bazy danych” (gdzie pola <>
+       są pobrane z formularza)
+   − Wysyła do bazy danych zmodyfikowane zapytanie 2 tak, że wstawia do bazy danych dane
+       z formularza
+                                             Strona 4 z 5
+               Tabela 1. Wybór funkcji języka PHP do obsługi bazy MySQL i MariaDB
+          Funkcje biblioteki mysqli                            Zwracana wartość
+mysqli_connect(serwer, użytkownik, id połączenia lub FALSE, gdy niepowodzenie
+hasło, nazwa_bazy)
+mysqli_select_db(id_polaczenia,                TRUE/FALSE w zależności od stanu operacji
+nazwa_bazy)
+mysqli_error(id_polaczenia)                    Tekst komunikatu błędu
+mysqli_close(id_polaczenia)                    TRUE/FALSE w zależności od stanu operacji
+mysqli_query(id_polaczenia,                    Wynik zapytania
+zapytanie)
+mysqli_fetch_row(wynik_zapytania)              Tablica numeryczna odpowiadająca wierszowi
+                                               zapytania
+mysqli_fetch_array(wynik_zapytania) Tablica asocjacyjna odpowiadająca wierszowi
+                                    zapytania lub FALSE, jeżeli nie ma więcej wierszy
+                                    w wyniku zapytania
+mysqli_num_rows(wynik_zapytania)               Liczba wierszy w podanym wyniku zapytaniu
+mysqli_num_fields(wynik_zapytania) Liczba kolumn w podanym wyniku zapytaniu
+
+
+UWAGA: po zakończeniu pracy utwórz w folderze z numerem zdającego plik tekstowy o nazwie
+przeglądarka.txt. Zapisz w nim nazwę przeglądarki internetowej, w której weryfikowana była poprawność
+działania witryny.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego powinny się znajdować następujące pliki:
+biblioteka.php, biblioteka.png, import.jpg, kwerenda1.jpg, kwerenda2.jpg, kwerenda3.jpg, kwerenda4.jpg,
+kwerendy.txt, przeglądarka.txt, style.css oraz ewentualnie inne przygotowane pliki. Po nagraniu płyty
+sprawdź poprawność nagrania. Opisz płytę swoim numerem zdającego i zapakowaną w pudełku pozostaw
+na stanowisku wraz z arkuszem egzaminacyjnym.
+
+
+
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie będzie podlegać 5 rezultatów:
+− operacje na bazie danych,
+− wygląd witryny internetowej,
+− działanie witryny internetowej,
+− styl CSS witryny internetowej,
+− skrypt połączenia z bazą.
+
+
+
+
+                                              Strona 5 z 5
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD opisaną numerem PESEL                                      ,
+której jakość nagrania została przeze mnie sprawdzona.
+
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD, opisana numerem PESEL zdającego.
+
+
+                                                                 ………………………………
+                                                                  Czytelny podpis Przewodniczącego ZN
+

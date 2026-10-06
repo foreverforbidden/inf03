@@ -1,0 +1,22 @@
+{
+  "password": "^konfErEncja&",
+  "db": "konferencja",
+  "required_files": [
+    "kwerendy.txt",
+    "przeglądarka.txt",
+    "rejestracja.html",
+    "rozmycie.png",
+    "styl.css",
+    "tulipany.jpg"
+  ],
+  "image_count": null,
+  "pages": [
+    "rejestracja.html"
+  ],
+  "code": "inf03_2024_06_06",
+  "pdf": "inf03_arkusze/inf03_2024_06_06_arkusz.pdf",
+  "sql_files": [
+    "materialy/baza.sql"
+  ],
+  "problems": []
+}

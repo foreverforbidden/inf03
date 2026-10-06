@@ -1,0 +1,27 @@
+{
+  "password": "@Swinki-MorSkie!",
+  "db": "hodowla",
+  "required_files": [
+    "american.jpg",
+    "american.php",
+    "crested.jpg",
+    "crested.php",
+    "kwerendy.txt",
+    "peruwianka.jpg",
+    "peruwianka.php",
+    "przeglądarka.txt",
+    "styl.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "american.php",
+    "crested.php",
+    "peruwianka.php"
+  ],
+  "code": "inf03_2024_06_11",
+  "pdf": "inf03_arkusze/inf03_2024_06_11_arkusz.pdf",
+  "sql_files": [
+    "materialy/baza.sql"
+  ],
+  "problems": []
+}

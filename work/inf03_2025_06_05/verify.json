@@ -1,0 +1,54 @@
+{
+  "code": "inf03_2025_06_05",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT plik, nr_klienta, liczba_odbitek FROM zamowienia WHERE rodzaj = 'matowy' AND liczba_odbitek > 100",
+      "ok": true,
+      "rows": 6,
+      "preview": "+-------+------------+----------------+\n| plik  | nr_klienta | liczba_odbitek |\n+-------+------------+----------------+\n| s.jpg |          2 |            223 |\n| d.jpg |          6 |            167 |\n| s.jpg |          5 |            223 |\n| c.jpg |          8 |            263 |\n| s.jpg |          2 |            223 |\n| b.jpg |          3 |            314 |"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT zamowienia.liczba_odbitek * zdjecia.cena AS `Do zapłaty` FROM zamowienia JOIN zdjecia ON zamowienia.rodzaj = zdjecia.rodzaj WHERE zamowienia.nr_klienta = 3",
+      "ok": true,
+      "rows": 7,
+      "preview": "+-------------+\n| Do zapłaty  |\n+-------------+\n|      157.00 |\n|      157.00 |\n|       15.40 |\n|       16.50 |\n|      157.00 |\n|        7.00 |"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT SUM(liczba_odbitek) FROM zamowienia WHERE rodzaj = 'błyszczący'",
+      "ok": true,
+      "rows": 1,
+      "preview": "+---------------------+\n| SUM(liczba_odbitek) |\n+---------------------+\n|                4291 |\n+---------------------+"
+    },
+    {
+      "n": 4,
+      "sql": "CREATE USER 'Anna'@'localhost' IDENTIFIED BY '@NNa'",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "regulamin.html",
+      "status": 200,
+      "bytes": 121
+    },
+    {
+      "page": "uslugi.html",
+      "status": 200,
+      "bytes": 115
+    },
+    {
+      "page": "zamowienie.html",
+      "status": 200,
+      "bytes": 2507
+    }
+  ],
+  "checked_at": "2026-10-06 18:45:02"
+}

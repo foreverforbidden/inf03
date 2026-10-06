@@ -1,0 +1,25 @@
+{
+  "password": "4rch!wum4x",
+  "db": "biblioteka",
+  "required_files": [
+    "biblioteka.php",
+    "biblioteka.png",
+    "kwerenda1.jpg",
+    "kwerenda2.jpg",
+    "kwerenda3.jpg",
+    "kwerenda4.jpg",
+    "kwerendy.txt",
+    "przeglądarka.txt",
+    "style.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "biblioteka.php"
+  ],
+  "code": "inf03_2023_06_04",
+  "pdf": "inf03_arkusze/inf03_2023_06_04_arkusz.pdf",
+  "sql_files": [
+    "materialy/biblioteka.sql"
+  ],
+  "problems": []
+}

@@ -1,0 +1,21 @@
+{
+  "password": "^WolonTari@t",
+  "db": "konkurs",
+  "required_files": [
+    "konkurs.php",
+    "kwerendy.txt",
+    "przeglądarka.txt",
+    "puchar.png",
+    "styles.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "konkurs.php"
+  ],
+  "code": "inf03_2025_01_11",
+  "pdf": "inf03_arkusze/inf03_2025_01_11_arkusz.pdf",
+  "sql_files": [
+    "materialy/baza.sql"
+  ],
+  "problems": []
+}

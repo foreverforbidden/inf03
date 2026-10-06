@@ -1,0 +1,320 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 08
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+
+Numer PESEL zdającego*                                                        Miejsce na naklejkę z numerem
+                                                                                PESEL i z kodem ośrodka
+
+         Numer stanowiska
+
+
+
+
+Czas trwania egzaminu: 150 minut                                                         INF.03-08-26.01-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2026                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL*,
+          numer stanowiska i naklej naklejkę** z numerem PESEL i z kodem ośrodka.
+    2.    Sprawdź, czy arkusz egzaminacyjny zawiera 7 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    3.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    4.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    5.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    6.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami wykonania zadania
+          na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu nadzorującego.
+    7.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania
+          egzaminu.
+
+                                                                                               Powodzenia!
+
+ * w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+** w przypadku otrzymania naklejki
+
+
+Układ graficzny
+© CKE 2025
+Zadanie egzaminacyjne
+
+UWAGA: numer, którym został podpisany arkusz egzaminacyjny (PESEL lub w przypadku jego braku numer
+paszportu) jest w zadaniu nazywany numerem zdającego.
+
+Wykonaj aplikację internetową portalu korony gór polskich, wykorzystując edytor grafiki rastrowej, pakiet
+XAMPP oraz edytor zaznaczający składnię.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się
+archiwum 7z o nazwie pliki13 zabezpieczone hasłem: Gory^PoLskie!
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego. Po
+skończonej pracy wszystkie wyniki należy zapisać w tym folderze.
+
+Operacje na bazie danych
+Baza danych zawiera połączone relacją tabele przedstawione na ilustracji 1. W tabeli opis znajdują się opisy
+szczytów, w tabeli szczyty znajdują się informacje o szczytach: nazwa, wysokość, pasmo gór, w którym się
+znajduje, miejsce na mapie (lokator) i nazwę pliku skojarzonego ze szczytem.
+
+
+
+
+                                        Ilustracja 1. Baza danych
+
+Za pomocą narzędzia phpMyAdmin wykonaj następujące operacje na bazie danych:
+  −   Utwórz bazę danych o nazwie korona, z zestawem polskich znaków (np. utf8_polish_ci)
+  −   Z rozpakowanego archiwum zaimportuj tabele z pliku korona.sql do utworzonej bazy
+  −   Wykonaj zrzut ekranu po imporcie. Zapisz zrzut w formacie PNG pod nazwą import. Nie kadruj zrzutu.
+      Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+      widoczne elementy wskazujące na poprawnie wykonany import tabel
+  −   Wykonaj zapytania SQL działające na bazie korona. Zapytania zapisz w pliku kwerendy.txt. Wykonaj
+      zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie JPEG i nadaj im
+      nazwy kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora z widocznym paskiem
+      zadań
+      −   Zapytanie 1: wybierające jedynie id oraz nazwy wszystkich szczytów posortowane malejąco
+          według ich wysokości
+      −   Zapytanie 2: wybierające jedynie nazwy plików i nazwy szczytów dla pierwszych 10 rekordów
+      −   Zapytanie 3: wybierające jedynie nazwę pliku, nazwę szczytu, wysokość i pasmo oraz
+          odpowiadający im opis dla szczytu o id równym 1. Należy posłużyć się relacją
+      −   Zapytanie 4: wybierające jedynie nazwy szczytów, wysokości oraz pasma gór w Beskidach
+          (nazwa pasma rozpoczyna się od „Beskid”)
+
+
+
+
+                                               Strona 2 z 7
+Witryna internetowa
+
+
+
+
+                            Ilustracja 2. Wygląd strony głównej index.php
+
+Przygotowanie grafiki logo.png:
+   − Białe tło grafiki należy zastąpić przezroczystością (drobne
+       niedokładności pojedynczych pikseli są akceptowalne)
+   − Skadrować grafikę tak, aby był widoczny jedynie szczyt po
+       prawej stronie. Kadr powinien obejmować cały szczyt oraz
+       krawędzie grafiki powinny przylegać do kształtu (ilustracja 3)
+   − Skadrowaną grafikę należy przeskalować z zachowaniem
+       proporcji do wysokości 100 px
+                                                                             Ilustracja 3. Kadr
+Cechy witryny:
+   −   Składa się ze stron index.php oraz szczyty.php
+
+Cechy wspólne dla obu stron:
+   − Zapisane w języku HTML5
+   −   Zadeklarowany polski język zawartości witryny
+   −   Jawnie zastosowany właściwy standard kodowania polskich
+       znaków
+   −   Tytuł strony „Korona gór polskich”
+   −   Arkusz stylów w pliku o nazwie styl.css prawidłowo
+       połączony z kodem strony
+   −   Podział strony na bloki zrealizowany za pomocą
+       semantycznych znaczników bloków języka HTML5 tak, aby            Ilustracja 4: Układ bloków
+       po uruchomieniu w przeglądarce układ bloków na stronie był
+       zgodny z ilustracją 4
+   −   Zawartość bloku nagłówkowego 1:
+       −   Obraz logo.png z tekstem alternatywnym „Logo”
+
+                                              Strona 3 z 7
+    −       Zawartość bloku nagłówkowego 2:
+            − Nagłówek pierwszego stopnia o treści: „Korona Gór Polskich”
+    −       Zawartość bloku sekcji:
+            −   Efekt działania skryptu 2
+    −       Zawartość bloku stopki 1:
+            −   Nagłówek trzeciego stopnia o treści: „Kontakt”
+            −   Lista punktowana (nieuporządkowana) zawierająca dwa elementy:
+                 −   „Zadzwoń do nas: 111 222 333”
+                 −   „Napisz do nas”, element jest odsyłaczem pocztowym do adresu „korona@gory.pl”
+    −       Zawartość bloku stopki 2:
+            − Nagłówek trzeciego stopnia o treści „© Wykonane przez: ”, dalej wstawiony numer zdającego
+
+Cechy bloku głównego dla strony index.php:
+    −       Efekt działania skryptu 1
+
+Cechy bloku głównego dla strony szczyty.php:
+   − Efekt działania skryptu 3
+
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie styl.css.
+
+Wytyczne dotyczące czcionki:
+   − Styl CSS korzysta z kroju czcionki Lato znajdującej się w folderze czcionka z rozpakowanego
+      archiwum. Czcionkę należy dodać do projektu i zdefiniować jej stosowanie dla wariantu regular i bold.
+      W pliku styl.css należy dodać reguły dla czcionki. Przykład umieszczono w pliku przyklad.css
+
+Cechy formatowania CSS, działające na stronie:
+− Domyślnie dla wszystkich selektorów: krój czcionki Lato, w przypadku braku sans-serif, wyrównanie
+   tekstu do środka, kolor czcionki #333
+− Dla bloków nagłówkowych i stopek: wysokość 100 px
+−   Dodatkowo dla bloku nagłówkowego 1 i bloku stopki 1: szerokość 30%
+−   Dodatkowo dla bloku nagłówkowego 2 i bloku stopki 2: szerokość 70%
+−   Dla bloku głównego: kolor tła #E0F2F1, marginesy wewnętrzne 100 px
+−   Dla bloku sekcji: wysokość 90 px, w przypadku przepełnienia bloku zawartość, która się w nim nie mieści
+    jest ukryta
+−   Dla klasy miniatury przypisanej do obrazów generowanych skryptem 2: wysokość 90 px
+−   Dla selektora elementu listy: wyrównanie tekstu do lewej strony
+−   Dla selektora span: margines wewnętrzny lewy 30 px
+−   Styl dla kolejnych potomków selektora span:
+    − dla 2 i 11: rozmiar czcionki 200%
+        −    dla 3 i 15: rozmiar czcionki 150%
+        −    dla 4 i 17: rozmiar czcionki 120%
+        −    dla 5 i 21: rozmiar czcionki 170%
+        −    dla 7 i 27: rozmiar czcionki 130%
+        −    dla 9 i 25: rozmiar czcionki 160%
+
+
+                                                  Strona 4 z 7
+Uwaga: styl CSS selektora elementu listy i selektora span należy zdefiniować wyłącznie przy pomocy
+selektorów tych znaczników. Jest to uwarunkowane projektem późniejszej rozbudowy witryny.
+
+Skrypt połączenia z bazą
+W tabeli 1 zamieszczono wybrane funkcje PHP do obsługi bazy danych. Wymagania dotyczące skryptów:
+− Napisane w języku PHP
+−   Należy stosować znaczące nazewnictwo zmiennych w języku polskim lub angielskim
+−   Łączą się z serwerem bazodanowym na localhost, użytkownik root bez hasła, baza danych o nazwie
+    korona
+−   Na końcu skrypt zamyka połączenie z bazą
+
+Skrypt 1, na stronie index.php
+−   Wysyła do bazy danych zapytanie 1
+−   Każdą zwróconą zapytaniem nazwę szczytu wyświetla w znaczniku <span>, tak że jest ona odnośnikiem
+    do pliku szczyty.php oraz przekazuje do tego pliku metodą GET id szczytu
+
+Skrypt 2
+− Wysyła do bazy danych zapytanie 2
+−   Dla każdego zwróconego zapytaniem rekordu wyświetla obraz, w którym nazwa pliku jest źródłem
+    a nazwa szczytu – tekstem alternatywnym. Każdy obraz ma przypisaną klasę miniatury
+
+Skrypt 3, na stronie szczyty.php (ilustracja 5)
+− Wysyła do bazy danych zapytanie 3, zmodyfikowane w ten sposób, że sprawdzane jest id wysłane z pliku
+    index.php metodą GET
+− Wyświetla dane zwrócone zapytaniem
+     − Obraz z pliku, którego nazwa została zwrócona, z tekstem alternatywnym „szczyt”
+     −   Nagłówek drugiego stopnia z nazwą szczytu
+     −   Nagłówek trzeciego stopnia o treści: „wysokość: <wysokosc> metrów n.p.m.”
+     −   Nagłówek trzeciego stopnia o treści: „pasmo górskie: <pasmo>”, pola <> zostały pobrane z bazy
+         danych
+     −   Paragraf z opisem
+
+
+
+
+                                             Strona 5 z 7
+       Ilustracja 5. Fragment strony szczyty.php wywołanej przez kliknięcie odnośnika Rysy
+
+
+Tabela 1. Wybór funkcji języka PHP do obsługi bazy MySQL i MariaDB
+            Funkcje biblioteki mysqli                              Zwracana wartość
+ mysqli_connect(serwer, użytkownik,              id połączenia lub FALSE, gdy niepowodzenie
+ hasło, nazwa_bazy)
+ mysqli_select_db(id_polaczenia,                 TRUE/FALSE w zależności od stanu operacji
+ nazwa_bazy)
+ mysqli_error(id_polaczenia)                     Tekst komunikatu błędu
+ mysqli_close(id_polaczenia)                     TRUE/FALSE w zależności od stanu operacji
+ mysqli_query(id_polaczenia,                     Wynik zapytania
+ zapytanie)
+ mysqli_fetch_row(wynik_zapytania)               Tablica    numeryczna     odpowiadająca   wierszowi
+                                                 zapytania
+ mysqli_fetch_array(wynik_zapytania)             Tablica zawierająca kolejny wiersz z podanych
+                                                 w wyniku zapytania lub FALSE, jeżeli nie ma więcej
+                                                 wierszy w wyniku zapytania
+ mysqli_num_rows(wynik_zapytania)                Liczba wierszy w podanym zapytaniu
+ mysqli_num_fields(wynik_zapytania)              Liczba kolumn w podanym zapytaniu
+ isset($zmienna)                                 TRUE/FALSE w zależności od, tego czy $zmienna
+                                                 istnieje
+
+
+
+
+                                           Strona 6 z 7
+Tabela 2. Metoda GET i odnośniki
+Najpopularniejszy dla metody GET sposób przekazywania parametrów dla żądania to przesyłanie ich
+w adresie url do danego zasobu:
+index.php?lang=pl&param1=2
+
+Tabela 3. Wybrane znaki specjalne w HTML
+  Numer      Nazwa                                             Opis
+ &#167;    &sect;     Section sign (znak sekcji lub paragrafu)
+ &#169;    &copy;     Copyright (znak praw autorskich)
+ &#171;    &laquo;    Left angle quote, guillemot left (lewy cudzysłów ostrokątny)
+ &#172;    &not;      Not sign (znak negacji)
+ &#174;    &reg;      Registered trademark (zastrzeżony znak towarowy)
+
+Tabela 4. Styl CSS kolejnych potomków
+The :nth-child(n) selector matches every element that is the nth child of its parent.
+n can be a number, a keyword (odd or even), or a formula (like an + b).
+eg:
+/* Selects the second li element in a list */
+li:nth-child(2) {               background: lightgreen;              }
+
+Tabela 5. Semantic Elements in HTML
+       Tag                                              Description
+ <article>      Defines independent, self-contained content
+ <aside>        Defines content aside from the page content
+ <details>      Defines additional details that the user can view or hide
+ <figcaption>   Defines a caption for a <figure> element
+ <figure>       Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+ <footer>       Defines a footer for a document or section
+ <header>       Specifies a header for a document or section
+ <main>         Specifies the main content of a document
+ <mark>         Defines marked/highlighted text
+ <nav>          Defines navigation links
+ <section>      Defines a section in a document
+ <summary>      Defines a visible heading for a <details> element
+ <time>         Defines a date/time
+
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego, powinny znajdować się pliki czcionek,
+pliki ze zdjęciami gór (12 sztuk) oraz pliki: import.png, index.php, kw1.jpg, kw2.jpg, kw3.jpg, kw4.jpg,
+kwerendy.txt, logo.png, przeglądarka.txt, styl.css, szczyty.php, ewentualnie inne przygotowane pliki. Po
+nagraniu płyty sprawdź poprawność jej odczytu. Opisz płytę numerem zdającego i pozostaw zapakowaną w
+pudełku na stanowisku wraz z arkuszem egzaminacyjnym.
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie podlegać będzie 5 rezultatów:
+   − operacje na bazie danych,
+   −   zawartość witryny internetowej,
+   −   działanie witryny internetowej,
+   −   styl CSS witryny internetowej,
+   −   skrypt połączenia z bazą.
+
+                                                 Strona 7 z 7
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD/DVD opisaną numerem
+
+PESEL                              , której jakość nagrania została przeze mnie sprawdzona.
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD/DVD, opisana numerem PESEL
+zdającego.
+
+                                                               ……………………………........…
+                                                               Czytelny podpis Przewodniczącego ZN
+

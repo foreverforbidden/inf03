@@ -1,0 +1,46 @@
+{
+  "code": "inf03_2025_01_06",
+  "pass": true,
+  "fails": [],
+  "warns": [
+    "pominiety (prawdopodobnie zrzut ekranu): parametry_animacji.png"
+  ],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT pseudonim FROM zawodnicy WHERE data_zdobycia BETWEEN '2020-07-01' AND '2020-07-31'",
+      "ok": true,
+      "rows": 3,
+      "preview": "+-----------+\n| pseudonim |\n+-----------+\n| Hiikar    |\n| BananD    |\n| WanHao    |\n+-----------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT pseudonim, tytul FROM zawodnicy WHERE klasa = '3A' AND tytul <> ''",
+      "ok": true,
+      "rows": 4,
+      "preview": "+-------------+-------+\n| pseudonim   | tytul |\n+-------------+-------+\n| Botas Bross | KM    |\n| BananD      | PM    |\n| DavNav      | OM    |\n| JanNie      | OM    |\n+-------------+-------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT pseudonim, klasa, ranking FROM zawodnicy ORDER BY ranking ASC LIMIT 10",
+      "ok": true,
+      "rows": 10,
+      "preview": "+-----------+-------+---------+\n| pseudonim | klasa | ranking |\n+-----------+-------+---------+\n| AGDomator | 1A    |    1813 |\n| MakMat    | 1B    |    2700 |\n| IgoŁys    | 4A    |    2700 |\n| PetHei    | 4B    |    2701 |\n| IljSmi    | 4C    |    2702 |\n| AleCha    | 3B    |    2702 |"
+    },
+    {
+      "n": 4,
+      "sql": "SELECT pseudonim, data_zdobycia, DATEDIFF(CURDATE(), data_zdobycia) AS dni FROM zawodnicy WHERE tytul <> ''",
+      "ok": true,
+      "rows": 30,
+      "preview": "+--------------+---------------+------+\n| pseudonim    | data_zdobycia | dni  |\n+--------------+---------------+------+\n| Hiikar       | 2020-07-12    | 2277 |\n| Magmus       | 2020-06-15    | 2304 |\n| Bludolf      | 2020-06-30    | 2289 |\n| Botas Bross  | 2020-06-04    | 2315 |\n| Hans         | 2020-03-27    | 2384 |\n| Eryka Róża   | 2019-11-30    | 2502 |"
+    }
+  ],
+  "pages": [
+    {
+      "page": "systemy.html",
+      "status": 200,
+      "bytes": 2020
+    }
+  ],
+  "checked_at": "2026-10-06 18:44:46"
+}

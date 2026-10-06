@@ -1,0 +1,25 @@
+{
+  "password": "5T2k@W$2n",
+  "db": "kwiaciarnia",
+  "required_files": [
+    "gerbera.jpg",
+    "gozdzik.jpg",
+    "index.html",
+    "kwerendy.txt",
+    "przeglądarka.txt",
+    "roza.jpg",
+    "styl3.css",
+    "znajdz.php"
+  ],
+  "image_count": null,
+  "pages": [
+    "index.html",
+    "znajdz.php"
+  ],
+  "code": "inf02_2023_01_03",
+  "pdf": "inf03_arkusze/inf02_2023_01_03_arkusz.pdf",
+  "sql_files": [
+    "materialy/kwiaciarnia.sql"
+  ],
+  "problems": []
+}

@@ -1,0 +1,1 @@
+{"code":"inf03_2024_06_07","pass":true,"score":"43/43","fails":[],"na":["import.png, kw1-kw4.jpg (zrzuty ekranu)","utworzenie bazy i import w phpMyAdmin","nagranie płyty","numer zdającego w stopce (placeholder 00000000000 akceptowany)"],"notes":"Kwerendy OK na prawdziwej bazie, obrazy zmodyfikowane poprawnie (obraz2 odbity, 350 px), CSS i PHP zgodne z treścią."}

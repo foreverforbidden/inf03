@@ -1,0 +1,14 @@
+{
+  "code": "inf03_2025_01_07",
+  "pass": false,
+  "score": "40/41",
+  "fails": [
+    {
+      "item": "Podział strony na bloki: dwa bloki lewe jeden pod drugim i obok blok prawy; wygląd układu zgodny z ilustracją 4",
+      "problem": "style.css:8-25 – #lewy-gorny (30%), #lewy-dolny (30%) i #prawy (70%) mają float:left bez clear. Dwa lewe bloki (razem 60%) układają się obok siebie, a prawy (70%) nie mieści się w pozostałych 40% i spada pod nie. Układ niezgodny z ilustracją 4 (lewe bloki pod sobą, prawy po prawej).",
+      "fix": "W index.php opakuj #lewy-gorny i #lewy-dolny w jeden blok (np. <aside id=\"lewa\"> z float:left; width:30%), a #prawy zostaw z float:left; width:70%. Albo daj #lewy-dolny clear:left i umieść <section id=\"prawy\"> w HTML przed #lewy-dolny, z float:right."
+    }
+  ],
+  "na": ["import.png", "kw1-kw4.png", "utworzenie bazy w phpMyAdmin", "nagranie płyty", "folder z numerem zdającego"],
+  "notes": "Kwerendy, PHP, grafiki (baner 1406x270, fav 192x192 RGBA, czerwone M z szeryfami) i pozostałe style są poprawne. Brak przeglądarki do renderowania, więc układ oceniony na podstawie analizy CSS."
+}

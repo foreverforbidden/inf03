@@ -1,0 +1,11 @@
+{
+  "code": "inf03_2024_06_03",
+  "pass": false,
+  "score": "48/50",
+  "fails": [
+    {"item": "Grafika obraz1.png: przezroczyste tło", "problem": "wynik/obraz1.png jest bajt w bajt identyczny z oryginałem z materialy/ (RGB, bez kanału alfa, białe tło). Tło nie zostało zrobione przezroczyste (NOTES.md potwierdza, że nie wykonano).", "fix": "Edytować obraz1.png (np. GIMP/Pillow): usunąć białe tło (kanał alfa) i zapisać jako PNG RGBA."},
+    {"item": "Grafika obraz1.png: obszar województwa dolnośląskiego wypełniony niebieskim", "problem": "Obraz nie został zmodyfikowany, brak niebieskiego wypełnienia województwa w lewym dolnym rogu mapy.", "fix": "Wypełnić obszar województwa dolnośląskiego (lewy dolny róg mapy) dowolnym odcieniem niebieskiego (narzędzie wypełnienia), zapisać do wynik/obraz1.png."}
+  ],
+  "na": ["zrzuty ekranu import.png, kw1-kw4.jpg", "utworzenie bazy w phpMyAdmin i import", "nagranie płyty"],
+  "notes": "Kwerendy 1-4, PHP (zapytania, mysqli_close, obsługa POST), struktura HTML i CSS poprawne; wszystkie sprawdzenia verify.json bez błędów. Brak plików graficznych kw/import oraz numeru zdającego (placeholder) pominięto."
+}

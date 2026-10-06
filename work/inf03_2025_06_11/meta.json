@@ -1,0 +1,24 @@
+{
+  "password": "#OpoNki&+",
+  "db": "opony",
+  "required_files": [
+    "kwerendy.txt",
+    "lato.png",
+    "opona.png",
+    "opony.php",
+    "przeglądarka.txt",
+    "styl.css",
+    "uniwer.png",
+    "zima.png"
+  ],
+  "image_count": null,
+  "pages": [
+    "opony.php"
+  ],
+  "code": "inf03_2025_06_11",
+  "pdf": "inf03_arkusze/inf03_2025_06_11_arkusz.pdf",
+  "sql_files": [
+    "materialy/opona.sql"
+  ],
+  "problems": []
+}

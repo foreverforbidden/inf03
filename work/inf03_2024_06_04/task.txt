@@ -1,0 +1,269 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 04
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+                                                                              Miejsce na naklejkę z numerem
+Numer PESEL zdającego*                                                          PESEL i z kodem ośrodka
+
+
+
+
+Czas trwania egzaminu: 150 minut.                                                         INF.03-04-24.06-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2024                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL
+          i naklej naklejkę z numerem PESEL i z kodem ośrodka.
+    2.    Na KARCIE OCENY w oznaczonym miejscu przyklej naklejkę z numerem PESEL oraz wpisz:
+          − swój numer PESEL*,
+          − oznaczenie kwalifikacji,
+          − numer zadania,
+          − numer stanowiska.
+    3.    Sprawdź, czy arkusz egzaminacyjny zawiera 6 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    4.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    5.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    6.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    7.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami oraz KARTĘ
+          OCENY na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu
+          nadzorującego.
+    8.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania egzaminu.
+
+                                                                                               Powodzenia!
+* w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+
+
+
+
+Układ graficzny
+© CKE 2023
+Zadanie egzaminacyjne
+UWAGA: folder z rezultatami pracy oraz płytę należy opisać numerem zdającego, którym został podpisany
+arkusz, czyli numerem PESEL lub w przypadku jego braku numerem paszportu. Dalej w zadaniu numer ten
+jest nazwany numerem zdającego.
+
+Wykonaj aplikację internetową galerii zdjęć, wykorzystując edytor grafiki rastrowej, pakiet XAMPP oraz edytor
+zaznaczający składnię.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się archiwum
+ZIP o nazwie pliki4 zabezpieczone hasłem: (G@LeriA)
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego.
+Rozpakowane pliki należy umieścić w tym folderze. Po skończonej pracy wszystkie wyniki należy zapisać
+w tym folderze. Zaleca się aby pliki ze zdjęciami znajdowały się w tym samym folderze co źródło strony.
+
+Operacje na bazie danych
+Baza danych jest zgodna ze strukturą przedstawioną na obrazie 1. Tabele są połączone relacją 1..n.
+
+
+
+
+                                              Obraz 1. Baza danych
+
+Za pomocą narzędzia phpMyAdmin wykonaj operacje na bazie danych:
+   ‒ Utwórz bazę danych o nazwie galeria, z zestawem polskich znaków (np. utf8_unicode_ci)
+   ‒ Do bazy zaimportuj tabele z pliku baza.sql z rozpakowanego archiwum
+   ‒ Wykonaj zrzut ekranu po imporcie. Zrzut zapisz w formacie PNG i nazwij import. Nie kadruj zrzutu.
+      Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+      widoczne elementy wskazujące na poprawnie wykonany import tabel.
+   ‒ Wykonaj zapytania SQL działające na bazie galeria. Zapytania zapisz w pliku kwerendy.txt. Wykonaj
+      zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie JPEG i nadaj im
+      nazwy kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora z widocznym paskiem
+      zadań.
+          ‒ Zapytanie 1: wybierające jedynie pola tytul i plik z tabeli zdjecia dla zdjęć z polubieniami większymi lub
+              równymi 100
+          ‒ Zapytanie 2: wybierające jedynie pola plik, tytul, polubienia z tabeli zdjecia oraz odpowiadające im pola
+              imie i nazwisko z tabeli autorzy posortowane rosnąco według nazwiska. Należy posłużyć się relacją
+          ‒ Zapytanie 3: wybierające jedynie pole imie oraz liczące ile jest zdjęć dla tego imienia. Należy
+              posłużyć się relacją
+          ‒ Zapytanie 4: modyfikujące strukturę tabeli zdjecia. Dodana jest kolumna rozmiarPliku typu
+              całkowitego
+
+
+
+
+                                                    Strona 2 z 6
+Witryna internetowa
+
+
+
+
+                                      Obraz 2. Witryna internetowa
+
+Przygotowanie grafiki:
+   ‒ Plik woodpecker.jpg, wypakowany z archiwum, należy przeskalować do dokładnych wymiarów
+       szerokość 520 px i wysokość 346 px.
+
+Cechy witryny:
+   ‒ Składa się ze strony o nazwie galeria.php zapisanej w języku HTML5
+   ‒ Ustawiony język zawartości strony na polski
+   ‒ Jawnie zastosowany właściwy standard kodowania polskich znaków
+   ‒ Tytuł strony widoczny na karcie przeglądarki: „Galeria”
+   ‒ Arkusz stylów w pliku o nazwie styl.css prawidłowo połączony z kodem strony
+   ‒ Podział strony na bloki: baner, poniżej trzy bloki: lewy, środkowy i prawy, na dole blok stopki. Podział
+      zrealizowany wyłącznie za pomocą semantycznych znaczników sekcji języka HTML5 tak, aby po
+      uruchomieniu w przeglądarce wygląd układu bloków był zgodny z obrazem 2
+   ‒ Zawartość banera: nagłówek pierwszego stopnia o treści „Zdjęcia”
+   ‒ Zawartość bloku lewego:
+      ‒ Nagłówek drugiego stopnia o treści: „Tematy zdjęć”
+      ‒ Lista numerowana (uporządkowana) z elementami: Zwierzęta, Krajobrazy, Miasta, Przyroda,
+          Samochody
+   ‒ Zawartość bloku środkowego: efekt działania skryptu 1
+   ‒ Zawartość bloku prawego:
+       ‒ Nagłówek drugiego stopnia o treści: „Najbardziej lubiane”
+       ‒ Efekt działania skryptu 2
+       ‒ Napis o treści „Zobacz wszystkie nasze zdjęcia” zapisany w znaczniku semantycznym pisanym
+           czcionką pogrubioną i oznaczającym tekst o dużym znaczeniu
+   ‒ Zawartość stopki: nagłówek piątego stopnia o treści „Stronę wykonał: ”, dalej wstawiony numer
+      zdającego
+
+
+                                                Strona 3 z 6
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie styl.css. Cechy formatowania CSS,
+działające na stronie:
+   ‒   Domyślne formatowanie wszystkich selektorów: krój czcionki Helvetica
+   ‒   Wspólne dla banera i stopki: kolor tła Sienna, biały kolor czcionki, marginesy wewnętrzne 10 px,
+       wyrównanie tekstu do środka
+   ‒   Wspólne dla bloku lewego i prawego: kolor tła NavajoWhite, szerokość 15%, wysokość 700 px
+   ‒   Dla bloku środkowego: szerokość 70%, wysokość 700 px, zawsze widoczne paski przewijania
+   ‒   Dla selektora obrazu: szerokość 100%
+   ‒   Dla bloku generowanego skryptem 1 i zawierającego zdjęcie i opis: bloki ustawione obok siebie
+       (opływanie), szerokość 46%, marginesy zewnętrzne 2%, pozycjonowanie względne
+   ‒   Wspólne dla nagłówka trzeciego stopnia, paragrafu, odnośnika: pełna przezroczystość (0),
+       pozycjonowanie pozwalające przesuwać element względem rodzica
+   ‒   Dodatkowo dla nagłówka trzeciego stopnia: odległość od górnej krawędzi rodzica 5%
+   ‒   Dodatkowo dla paragrafu: odległość od górnej krawędzi rodzica 30%
+   ‒   Dodatkowo dla odnośnika: odległość od górnej krawędzi rodzica 70%, od lewej krawędzi 70%, kolor
+       tła Sienna, marginesy wewnętrzne 15 px
+   ‒   W momencie, gdy kursor myszy znajdzie się na bloku generowanym skryptem 1:
+       − Zdjęcia z bloku środkowego przyjmują wartość przezroczystości 0.3 i jest ona zmieniana płynnie
+           przez 0.5 sekundy efektem ease
+       − Nagłówka trzeciego stopnia: brak przezroczystości (1)
+       − Paragrafu: brak przezroczystości
+       − Odnośnika: brak przezroczystości
+
+Uwaga: styl CSS obrazu należy zdefiniować wyłącznie przy pomocy selektora znacznika obrazu. Jest to
+uwarunkowane projektem późniejszej rozbudowy witryny.
+
+Skrypt połączenia z bazą
+W tabeli 1 podano wybór funkcji PHP do obsługi bazy danych. Wymagania dotyczące skryptów:
+   ‒   Napisane w języku PHP
+   ‒   Należy stosować znaczące nazewnictwo wszystkich zmiennych lub funkcji
+   ‒   Skrypty łączą się z serwerem bazodanowym na localhost, użytkownik root bez hasła, baza danych
+       o nazwie galeria
+   ‒   Skrypt 1
+       − Wysyła do bazy danych zapytanie 2
+       − Każdy zwrócony zapytaniem wiersz jest wyświetlany w osobnym bloku (obraz 3)
+       − Każdy blok zawiera:
+         ‒ Obraz, którego źródło zostało zwrócone zapytaniem, z tekstem alternatywnym „zdjęcie”
+         ‒ Nagłówek trzeciego stopnia z tytułem zwróconym zapytaniem
+         ‒ W przypadku, gdy zwrócona wartość polubień jest większa niż 40: paragraf o treści: „Autor:
+                  <imię> <nazwisko>. Wiele osób polubiło ten obraz”, łamanie linii po kropce.
+           ‒ W przeciwnym wypadku paragraf o treści: „Autor: <imię> <nazwisko>”, gdzie pola
+                  w nawiasach <> zostały pobrane z bazy danych
+           ‒      Odnośnik o treści „Pobierz” wskazujący na nazwę pliku zwróconą zapytaniem. Po kliknięciu
+                  na odnośnik, zdjęcie jest pobierane
+
+
+                                                 Strona 4 z 6
+Obraz 3. Skrypt 1, kursor znajduje się na bloku, co powoduje zmiany w przezroczystości elementów
+
+   ‒   Skrypt 2
+       − Wysyła do bazy danych zapytanie 1
+       − Wyświetla obraz, którego źródło zostało zwrócone zapytaniem, wraz z tekstem alternatywnym
+           pobranym z pola tytul
+   ‒   Na końcu jest zamykane połączenie z serwerem.
+
+
+Tabela 1. Wybór funkcji języka PHP do obsługi bazy MySQLi i MariaDB
+            Funkcje biblioteki mysqli                            Zwracana wartość
+mysqli_connect(serwer, użytkownik,                 id połączenia lub FALSE, gdy niepowodzenie
+hasło, nazwa_bazy)
+mysqli_select_db(id_polaczenia,                    TRUE/FALSE w zależności od stanu operacji
+nazwa_bazy)
+mysqli_error(id_polaczenia)                        Tekst komunikatu błędu
+mysqli_close(id_polaczenia)                        TRUE/FALSE w zależności od stanu operacji
+mysqli_query(id_polaczenia, zapytanie) Wynik zapytania
+mysqli_fetch_row(wynik_zapytania)                  Tablica    numeryczna      odpowiadająca     wierszowi
+                                                   zapytania
+mysqli_fetch_array(wynik_zapytania)                Tablica zawierająca kolejny wiersz z podanych w wyniku
+                                                   zapytania lub FALSE, jeżeli nie ma więcej wierszy
+                                                   w wyniku zapytania
+mysqli_num_rows(wynik_zapytania)                   Liczba wierszy w podanym zapytaniu
+mysqli_num_fields(wynik_zapytania)                 Liczba kolumn w podanym zapytaniu
+
+Tabela 2. Pozycjonowanie elementów na stronie za pomocą właściwości position języka CSS
+ static      normalne (domyślne) pozycjonowanie elementu
+ relative    względne, pozwala przesunąć element w inne miejsce w stosunku do położenia pierwotnego
+ absolute    pozwala przesunąć element w inne miejsce względem rodzica tego elementu (względem
+             bloku lub względem strony)
+ fixed       pozwala przesunąć element w inne miejsce zawsze względem krawędzi okna przeglądarki
+ parametrami przesunięcia są własności: left, top, right, bottom
+
+Tabela 3. Wybrane właściwości CSS
+ opacity     property specifies the opacity/transparency of an element. Property can take a value from
+             0.0 - 1.0. The lower the value, the more transparent
+             opacity: number|initial|inherit;
+ transition  A shorthand property for setting the four transition properties into a single property
+             transition: property duration timing-function delay|initial|inherit;
+
+
+                                             Strona 5 z 6
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego, powinny znajdować się pliki: car.jpg,
+cat.jpg, galeria.php, jesien.jpg, jeziorko.jpg, kiev.jpg, import.png, kw1.jpg, kw2.jpg, kw3.jpg, kw4.jpg,
+kwerendy.txt, motyl.jpg, owce.jpg, prague.jpg, przeglądarka.txt, styl.css, taxi.jpg, tulipany.jpg,
+woodpecker.jpg, wroclaw.jpg, ewentualnie inne przygotowane pliki. Po nagraniu płyty sprawdź poprawność
+jej odczytu. Opisz płytę numerem zdającego i pozostaw zapakowaną w pudełku na stanowisku wraz
+z arkuszem egzaminacyjnym.
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie będzie podlegać 5 rezultatów:
+   ‒   operacje na bazie danych,
+   ‒   zawartość witryny internetowej,
+   ‒   działanie witryny internetowej,
+   ‒   styl CSS witryny internetowej,
+   ‒   skrypt połączenia z bazą.
+
+
+
+
+                                              Strona 6 z 6
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD opisaną numerem PESEL                                   ,
+której jakość nagrania została przeze mnie sprawdzona.
+
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD, opisana numerem PESEL zdającego.
+
+
+                                                               ……………………………........…
+                                                               Czytelny podpis Przewodniczącego ZN
+

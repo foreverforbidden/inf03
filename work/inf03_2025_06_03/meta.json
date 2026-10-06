@@ -1,0 +1,23 @@
+{
+  "password": "&&BiBlioTek@",
+  "db": "biblioteka",
+  "required_files": [
+    "biblioteka.php",
+    "ksiazka1.jpg",
+    "ksiazka2.jpg",
+    "ksiazka3.jpg",
+    "kwerendy.txt",
+    "przeglądarka.txt",
+    "styles.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "biblioteka.php"
+  ],
+  "code": "inf03_2025_06_03",
+  "pdf": "inf03_arkusze/inf03_2025_06_03_arkusz.pdf",
+  "sql_files": [
+    "materialy/baza.sql"
+  ],
+  "problems": []
+}

@@ -1,0 +1,27 @@
+{
+  "password": "Rec3ptyPacj3nt@",
+  "db": "recepty",
+  "required_files": [
+    "index.html",
+    "kwerendy.txt",
+    "lekarz.png",
+    "pacjent.png",
+    "przeglądarka.txt",
+    "recepta.png",
+    "recepty.html",
+    "skierowania.html",
+    "styl.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "index.html",
+    "recepty.html",
+    "skierowania.html"
+  ],
+  "code": "inf03_2026_06_06",
+  "pdf": "inf03_arkusze/inf03_2026_06_06_arkusz.pdf",
+  "sql_files": [
+    "materialy/recepty.sql"
+  ],
+  "problems": []
+}

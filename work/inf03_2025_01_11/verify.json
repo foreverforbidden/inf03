@@ -1,0 +1,59 @@
+{
+  "code": "inf03_2025_01_11",
+  "pass": true,
+  "fails": [],
+  "warns": [
+    "konkurs.php: odnosnik do pominietego zrzutu kw1.png",
+    "konkurs.php: odnosnik do pominietego zrzutu kw2.png",
+    "konkurs.php: odnosnik do pominietego zrzutu kw3.png",
+    "konkurs.php: odnosnik do pominietego zrzutu kw4.png",
+    "formularz konkurs.php->konkurs.php [get]: odnosnik do pominietego zrzutu kw1.png",
+    "formularz konkurs.php->konkurs.php [get]: odnosnik do pominietego zrzutu kw2.png",
+    "formularz konkurs.php->konkurs.php [get]: odnosnik do pominietego zrzutu kw3.png",
+    "formularz konkurs.php->konkurs.php [get]: odnosnik do pominietego zrzutu kw4.png"
+  ],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT nazwa, opis, cena FROM nagrody ORDER BY RAND() LIMIT 5",
+      "ok": true,
+      "rows": 5,
+      "preview": "+----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+\n| nazwa                | opis                                                                                                                                                                                                                                     | cena   |\n+----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+\n| Skarpety ALPAKA      | Alpaki to ładne puszyste zwierzęta z rodziny wielbłądowatych żyjące głównie w Ameryce Południowej. Włókno alpaki jest niezwykle cienkie, ma wspaniałe właściwości termoizolacyjne, grzeje dużo lepiej niż wełna owcza.                   |   NULL |\n| Mysz Wireless PPRO   | Wireless PPRO to wyjątkowa mysz go grania dla profesjonalnych e-sportowców. Przez ponad 3 lata dział firmy współpracował z ponad 150 profesjonalnymi graczami, aby móc zagwarantować idealny kształt, masę i odczucia.                   | 728.00 |\n| Komplet zeszytów     | Zeszyty PAPIER PP cechują się wysoką jakością papieru, estetyką wykończenia, modną grafiką okładek i hybrydowym wykończeniem. Wysokiej jakości uszlachetniona okładka PP. W zeszytach znajdziesz \"pigułkę wiedzy\".                       |  35.28 |\n| Pendrive ULTRA       | ULTRA USB 3.0 256GB pozwoli Ci mieć zawsze przy sobie ulubione zdjęcia i potrzebne dokumenty cyfrowe. Poręczny pendrive zmieści się w kieszeni i możesz doczepić go do kluczy.                                                           | 222.22 |\n| Głośnik BIASS 3000   | Bezprzewodowy głośnik multiroom (jasnoszary) inteligentny głośnik z dźwiękiem 360.                                                                                                                                                       | 460.00 |\n+----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT * FROM nagrody WHERE cena BETWEEN 100 AND 1000 AND ilosc_sztuk = 2",
+      "ok": true,
+      "rows": 2,
+      "preview": "+------------+----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------------+--------------+\n| id_nagrody | nazwa                | opis                                                                                                                                                                                                                                                       | cena   | ilosc_sztuk | data_dodania |\n+------------+----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------------+--------------+\n|          7 | Głośnik BIASS 3000   | Bezprzewodowy głośnik multiroom (jasnoszary) inteligentny głośnik z dźwiękiem 360.                                                                                                                                                                         | 460.00 |           2 | 2021-06-14   |\n|         14 | Słuchawki EEAR       | Słuchawki do gier oferują doskonałą jakość dźwięku i mocny bas. Miękkie nauszniki i regulowany pałąk sprawiają, że słuchawki wygodnie leżą nawet podczas długich godzin gry. Głośność jest łatwa do kontrolowania dzięki regulacji.                        | 127.18 |           2 | 2021-07-31   |\n+------------+----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------------+--------------+"
+    },
+    {
+      "n": 3,
+      "sql": "DELETE FROM nagrody WHERE cena IS NULL OR cena = 0",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    },
+    {
+      "n": 4,
+      "sql": "SELECT nazwa, cena, data_dodania FROM nagrody WHERE data_dodania >= '2021-08-01' AND data_dodania <= '2021-08-31' ORDER BY data_dodania ASC",
+      "ok": true,
+      "rows": 10,
+      "preview": "+------------------------+---------+--------------+\n| nazwa                  | cena    | data_dodania |\n+------------------------+---------+--------------+\n| Komplet zeszytów       |   35.28 | 2021-08-01   |\n| Laptop EXTRIME EDU     | 4599.00 | 2021-08-03   |\n| Smar do klarnetu       |   46.00 | 2021-08-05   |\n| Szklana rybka Nemo     |   48.00 | 2021-08-06   |\n| Pendrive ULTRA         |  222.22 | 2021-08-08   |\n| Dętka MTB 26/1.75-2.5  |   32.00 | 2021-08-17   |"
+    }
+  ],
+  "pages": [
+    {
+      "page": "konkurs.php",
+      "status": 200,
+      "bytes": 2445
+    },
+    {
+      "page": "formularz konkurs.php->konkurs.php [get]",
+      "status": 200,
+      "bytes": 2429,
+      "fields": {}
+    }
+  ],
+  "checked_at": "2026-10-06 18:49:39"
+}

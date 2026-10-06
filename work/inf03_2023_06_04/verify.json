@@ -1,0 +1,59 @@
+{
+  "code": "inf03_2023_06_04",
+  "pass": true,
+  "fails": [],
+  "warns": [
+    "pominiety (prawdopodobnie zrzut ekranu): kwerenda1.jpg",
+    "pominiety (prawdopodobnie zrzut ekranu): kwerenda2.jpg",
+    "pominiety (prawdopodobnie zrzut ekranu): kwerenda3.jpg",
+    "pominiety (prawdopodobnie zrzut ekranu): kwerenda4.jpg"
+  ],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT imie, nazwisko FROM autorzy ORDER BY nazwisko ASC",
+      "ok": true,
+      "rows": 10,
+      "preview": "+------------+-------------+\n| imie       | nazwisko    |\n+------------+-------------+\n| Jan        | Brzechwa    |\n| Joanna     | Chmielewska |\n| Aleksander | Fredro      |\n| Witold     | Gombrowicz  |\n| Jan        | Kasprowicz  |\n| Janusz     | Korczak     |"
+    },
+    {
+      "n": 2,
+      "sql": "INSERT INTO czytelnicy (imie, nazwisko, kod) VALUES ('Ewa', 'Kowalska', '145321')",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    },
+    {
+      "n": 3,
+      "sql": "SELECT ksiazki.tytul FROM ksiazki JOIN kategorie ON ksiazki.id_kategoria = kategorie.id WHERE kategorie.nazwa = 'dramat'",
+      "ok": true,
+      "rows": 4,
+      "preview": "+---------------+\n| tytul         |\n+---------------+\n| Zemsta        |\n| Pan Jowialski |\n| Niemcy        |\n| Odwiedziny    |\n+---------------+"
+    },
+    {
+      "n": 4,
+      "sql": "SELECT ksiazki.tytul FROM ksiazki JOIN wypozyczenia ON ksiazki.id = wypozyczenia.id_ksiazka WHERE wypozyczenia.id_czytelnik = 2",
+      "ok": true,
+      "rows": 2,
+      "preview": "+-------------------+\n| tytul             |\n+-------------------+\n| Zemsta            |\n| Brzechwa dzieciom |\n+-------------------+"
+    }
+  ],
+  "pages": [
+    {
+      "page": "biblioteka.php",
+      "status": 200,
+      "bytes": 1383
+    },
+    {
+      "page": "formularz biblioteka.php->biblioteka.php [post]",
+      "status": 200,
+      "bytes": 1441,
+      "fields": {
+        "imie": "Test",
+        "nazwisko": "Test",
+        "symbol": "2"
+      }
+    }
+  ],
+  "checked_at": "2026-10-06 18:43:17"
+}

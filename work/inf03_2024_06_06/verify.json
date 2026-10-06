@@ -1,0 +1,44 @@
+{
+  "code": "inf03_2024_06_06",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT imie, nazwisko, koszt FROM uczestnicy WHERE zaplacono = 0",
+      "ok": true,
+      "rows": 5,
+      "preview": "+--------+-----------+-------+\n| imie   | nazwisko  | koszt |\n+--------+-----------+-------+\n| Piotr  | Górski    |   100 |\n| Marcin | Szpak     |   150 |\n| Adam   | Binder    |   120 |\n| Robert | Halicki   |    90 |\n| Alicja | Warkowska |   120 |\n+--------+-----------+-------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT AVG(koszt) AS `Średni koszt`, SUM(koszt) AS `Całkowity koszt`, COUNT(id) AS `Liczba uczestników` FROM uczestnicy",
+      "ok": true,
+      "rows": 1,
+      "preview": "+---------------+------------------+---------------------+\n| Średni koszt  | Całkowity koszt  | Liczba uczestników  |\n+---------------+------------------+---------------------+\n|      117.1429 |              820 |                   7 |\n+---------------+------------------+---------------------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT wyklady.nazwa, uczestnicy.nazwisko, uczestnicy.email FROM wyklady JOIN uczestnicy ON wyklady.id = uczestnicy.wyklady_id WHERE uczestnicy.zaplacono = 1",
+      "ok": true,
+      "rows": 2,
+      "preview": "+---------------------------------------------+-----------+-------------------+\n| nazwa                                       | nazwisko  | email             |\n+---------------------------------------------+-----------+-------------------+\n| Jak dbać o kwiaty doniczkowe?               | Nowak     | anowak@interia.pl |\n| Przegląd kwiatów występujących w Polsce     | Rutkowski | mrutkowski@gov.pl |\n+---------------------------------------------+-----------+-------------------+"
+    },
+    {
+      "n": 4,
+      "sql": "ALTER TABLE uczestnicy DROP COLUMN haslo",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "rejestracja.html",
+      "status": 200,
+      "bytes": 2208
+    }
+  ],
+  "checked_at": "2026-10-06 18:42:55"
+}

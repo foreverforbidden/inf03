@@ -1,0 +1,28 @@
+{
+  "password": "S@moCHody^",
+  "db": "kupauto",
+  "required_files": [
+    "AudiA3.jpg",
+    "AudiA8.jpg",
+    "KupAuto.php",
+    "kwerendy.txt",
+    "OpelAstra.jpg",
+    "OpelCorsa.jpg",
+    "OpelVectra.jpg",
+    "przeglądarka.txt",
+    "styl.css",
+    "ToyotaCorolla.jpg",
+    "ToyotaRav.jpg",
+    "ToyotaYaris.jpg"
+  ],
+  "image_count": null,
+  "pages": [
+    "KupAuto.php"
+  ],
+  "code": "inf03_2024_06_05",
+  "pdf": "inf03_arkusze/inf03_2024_06_05_arkusz.pdf",
+  "sql_files": [
+    "materialy/baza.sql"
+  ],
+  "problems": []
+}

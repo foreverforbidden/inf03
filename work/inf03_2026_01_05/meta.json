@@ -1,0 +1,20 @@
+{
+  "password": "@LarMowe^",
+  "db": "zgloszenia",
+  "required_files": [
+    "index.php",
+    "kwerendy.txt",
+    "przeglądarka.txt",
+    "styl.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "index.php"
+  ],
+  "code": "inf03_2026_01_05",
+  "pdf": "inf03_arkusze/inf03_2026_01_05_arkusz.pdf",
+  "sql_files": [
+    "materialy/zgloszenia.sql"
+  ],
+  "problems": []
+}

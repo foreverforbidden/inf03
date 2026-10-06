@@ -1,0 +1,26 @@
+{
+  "password": "@Z@d@nie$s7",
+  "db": "biblioteka",
+  "required_files": [
+    "biblioteka.php",
+    "biblioteka.png",
+    "dane.jpg",
+    "kwerenda1.jpg",
+    "kwerenda2.jpg",
+    "kwerenda3.jpg",
+    "kwerenda4.jpg",
+    "kwerendy.txt",
+    "przeglądarka.txt",
+    "style.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "biblioteka.php"
+  ],
+  "code": "inf03_2023_06_07",
+  "pdf": "inf03_arkusze/inf03_2023_06_07_arkusz.pdf",
+  "sql_files": [
+    "materialy/biblioteka.sql"
+  ],
+  "problems": []
+}

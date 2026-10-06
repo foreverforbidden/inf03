@@ -1,0 +1,23 @@
+{
+  "password": "ZaWodY7%",
+  "db": "wedkarstwo",
+  "required_files": [
+    "kwerendy.txt",
+    "przeglądarka.txt",
+    "styl3.css",
+    "zawody.html",
+    "zawody.jpg",
+    "zgloszenie.php"
+  ],
+  "image_count": null,
+  "pages": [
+    "zawody.html",
+    "zgloszenie.php"
+  ],
+  "code": "inf03_2022_06_03",
+  "pdf": "inf03_arkusze/inf03_2022_06_03_arkusz.pdf",
+  "sql_files": [
+    "materialy/baza.sql"
+  ],
+  "problems": []
+}

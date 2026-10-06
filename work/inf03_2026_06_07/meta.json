@@ -1,0 +1,23 @@
+{
+  "password": "KoLko+KrzyZyk",
+  "db": "gryTowarzyskie",
+  "required_files": [
+    "gra.html",
+    "kwerendy.txt",
+    "nic.png",
+    "o.png",
+    "przeglądarka.txt",
+    "styl.css",
+    "x.png"
+  ],
+  "image_count": null,
+  "pages": [
+    "gra.html"
+  ],
+  "code": "inf03_2026_06_07",
+  "pdf": "inf03_arkusze/inf03_2026_06_07_arkusz.pdf",
+  "sql_files": [
+    "materialy/grytowarzyskie.sql"
+  ],
+  "problems": []
+}

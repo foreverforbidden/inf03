@@ -1,0 +1,28 @@
+{
+  "password": "P@neLePodLoGowe!+",
+  "db": "przewozy",
+  "required_files": [
+    "deska.png",
+    "index.html",
+    "koszty.html",
+    "kwerendy.txt",
+    "laminowane.png",
+    "montaz_paneli.png",
+    "oferta.html",
+    "przeglądarka.txt",
+    "style.css",
+    "winylowe.png"
+  ],
+  "image_count": null,
+  "pages": [
+    "index.html",
+    "koszty.html",
+    "oferta.html"
+  ],
+  "code": "inf03_2025_01_02",
+  "pdf": "inf03_arkusze/inf03_2025_01_02_arkusz.pdf",
+  "sql_files": [
+    "materialy/baza.sql"
+  ],
+  "problems": []
+}

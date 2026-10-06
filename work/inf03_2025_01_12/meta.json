@@ -1,0 +1,21 @@
+{
+  "password": "ULeptnny!",
+  "db": "piekarnia",
+  "required_files": [
+    "kwerendy.txt",
+    "przeglądarka.txt",
+    "piekarnia.php",
+    "styles.css",
+    "wypieki.png"
+  ],
+  "image_count": null,
+  "pages": [
+    "piekarnia.php"
+  ],
+  "code": "inf03_2025_01_12",
+  "pdf": "inf03_arkusze/inf03_2025_01_12_arkusz.pdf",
+  "sql_files": [
+    "materialy/baza.sql"
+  ],
+  "problems": []
+}

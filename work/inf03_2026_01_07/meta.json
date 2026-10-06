@@ -1,0 +1,23 @@
+{
+  "password": "&M3t3oPogoDa%",
+  "db": "pogoda",
+  "required_files": [
+    "chmury.png",
+    "deszcz.png",
+    "index.php",
+    "kwerendy.txt",
+    "slonce.png",
+    "przeglądarka.txt",
+    "styl.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "index.php"
+  ],
+  "code": "inf03_2026_01_07",
+  "pdf": "inf03_arkusze/inf03_2026_01_07_arkusz.pdf",
+  "sql_files": [
+    "materialy/pogoda.sql"
+  ],
+  "problems": []
+}

@@ -1,0 +1,44 @@
+{
+  "code": "inf03_2024_06_12",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT imie, pensja FROM pracownicy WHERE staz < 5",
+      "ok": true,
+      "rows": 2,
+      "preview": "+------------+--------+\n| imie       | pensja |\n+------------+--------+\n| Janusz     |   4700 |\n| Andżelika  |   4700 |\n+------------+--------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT AVG(pracownicy.pensja), stanowiska.nazwa FROM pracownicy JOIN stanowiska ON pracownicy.stanowiska_id = stanowiska.id GROUP BY stanowiska.nazwa",
+      "ok": true,
+      "rows": 5,
+      "preview": "+------------------------+-----------+\n| AVG(pracownicy.pensja) | nazwa     |\n+------------------------+-----------+\n|              8000.0000 | Dyrektor  |\n|              5000.0000 | Kadrowa   |\n|              6000.0000 | Kierownik |\n|              4890.0000 | Logistyk  |\n|              3920.0000 | Operator  |\n+------------------------+-----------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT imie, nazwisko, pensja FROM pracownicy WHERE pensja = (SELECT MAX(pensja) FROM pracownicy)",
+      "ok": true,
+      "rows": 1,
+      "preview": "+-----------+-------------+--------+\n| imie      | nazwisko    | pensja |\n+-----------+-------------+--------+\n| Krzysztof | Dobromilski |   8000 |\n+-----------+-------------+--------+"
+    },
+    {
+      "n": 4,
+      "sql": "UPDATE pracownicy SET staz = staz + 1",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "obrazki.html",
+      "status": 200,
+      "bytes": 2756
+    }
+  ],
+  "checked_at": "2026-10-06 18:42:57"
+}

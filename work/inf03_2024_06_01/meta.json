@@ -1,0 +1,26 @@
+{
+  "password": "^moTocyKle^",
+  "db": "motory",
+  "required_files": [
+    "droga1.jpg",
+    "droga2.jpg",
+    "droga3.jpg",
+    "droga4.jpg",
+    "droga5.jpg",
+    "kwerendy.txt",
+    "motor.php",
+    "motor.png",
+    "przeglądarka.txt",
+    "styl.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "motor.php"
+  ],
+  "code": "inf03_2024_06_01",
+  "pdf": "inf03_arkusze/inf03_2024_06_01_arkusz.pdf",
+  "sql_files": [
+    "materialy/baza.sql"
+  ],
+  "problems": []
+}

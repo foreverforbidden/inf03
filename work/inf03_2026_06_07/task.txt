@@ -1,0 +1,301 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 07
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+
+Numer PESEL zdającego*                                                        Miejsce na naklejkę z numerem
+                                                                                PESEL i z kodem ośrodka
+
+         Numer stanowiska
+
+
+
+
+Czas trwania egzaminu: 150 minut                                                         INF.03-07-26.06-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2026                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL*,
+          numer stanowiska i naklej naklejkę** z numerem PESEL i z kodem ośrodka.
+    2.    Sprawdź, czy arkusz egzaminacyjny zawiera 6 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    3.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    4.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    5.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    6.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami wykonania zadania
+          na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu nadzorującego.
+    7.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania
+          egzaminu.
+
+                                                                                               Powodzenia!
+
+ * w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+** w przypadku otrzymania naklejki
+
+
+Układ graficzny
+© CKE 2025
+Zadanie egzaminacyjne
+
+UWAGA: numer, którym został podpisany arkusz egzaminacyjny (PESEL lub w przypadku jego braku numer
+paszportu) jest w zadaniu nazywany numerem zdającego.
+
+Wykonaj planszę do gry w kółko i krzyżyk, wykorzystując zainstalowane na komputerze aplikacje.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się
+archiwum 7z o nazwie pliki8 zabezpieczone hasłem: KoLko+KrzyZyk
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego. Po
+skończonej pracy wszystkie wyniki należy zapisać w tym folderze.
+
+Operacje na bazie danych
+Baza danych składa się z jednej tabeli zawierającej informacje o grach towarzyskich. Pole potrzebne zawiera
+potrzebne materiały do przeprowadzenia gry. Pole czasRozgrywki zawiera średni czas gry w minutach.
+
+
+
+
+                                        Ilustracja 1. Baza danych
+
+Za pomocą narzędzia phpMyAdmin wykonaj następujące operacje na bazie danych:
+  −   Utwórz bazę danych o nazwie gryTowarzyskie, z zestawem polskich znaków (np. utf8_polish_ci)
+  −   Do utworzonej bazy zaimportuj tabelę z pliku gryTowarzyskie.sql
+  −   Wykonaj zrzut ekranu po imporcie. Zapisz zrzut w formacie PNG pod nazwą import. Nie kadruj zrzutu.
+      Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+      widoczne elementy wskazujące na poprawnie wykonany import tabel
+  −   Wykonaj zapytania SQL działające na bazie gryTowarzyskie. Zapytania zapisz w pliku kwerendy.txt.
+      Wykonaj zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie PNG
+      i nadaj im nazwy kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora z widocznym
+      paskiem zadań
+       − Zapytanie 1: wybierające jedynie nazwy i potrzebne materiały do gier przeznaczonych dla więcej
+           niż 4 graczy
+       − Zapytanie 2: liczące średnią arytmetyczną czasu trwania gier, które są przeznaczone jedynie dla
+           dwóch graczy, nazwa kolumny (alias) „średnia w minutach”
+      −   Zapytanie 3: wybierające jedynie nazwy gier o najdłuższym czasie rozgrywki. Jeśli kilka gier ma
+          ten sam, najdłuższy czas rozgrywki to wszystkie ich nazwy powinny być wybrane. Należy posłużyć
+          się kwerendą zagnieżdżoną
+      −   Zapytanie 4: wybierające jedynie nazwy gier karcianych (pole potrzebne zawiera cząstkę „karty”)
+          przeznaczonych dla mniej niż 4 graczy
+
+
+
+
+                                               Strona 2 z 6
+Witryna internetowa
+
+
+
+
+                                   Ilustracja 2. Strona gra.html
+Cechy strony:
+− Nazwa pliku gra.html
+− Zapisana w języku HTML5
+− Zadeklarowany polski język zawartości witryny
+− Jawnie zastosowany właściwy standard kodowania polskich znaków
+− Tytuł strony „Gra”
+−   Arkusz stylów w pliku o nazwie styl.css prawidłowo połączony z kodem
+    strony
+−   Podział strony na bloki: nagłówkowy, główny, stopka. Blok główny
+    zawiera trzy bloki sekcji. Podział zrealizowany za pomocą                      Ilustracja 3. Układ bloków
+    semantycznych znaczników języka HTML5 tak, aby po uruchomieniu
+    w przeglądarce układ bloków był zgodny z ilustracją 3
+−   Zawartość bloku nagłówkowego:
+  − Nagłówek pierwszego stopnia o treści: „Zagraj w kółko i krzyżyk”
+− Zawartość bloku głównego: trzy sekcje
+− Zawartość bloku sekcji lewej:
+    −       Nagłówek drugiego stopnia o treści: „Gra kółko”
+−   Zawartość bloku sekcji środkowej:
+        −    Tabela o trzech wierszach i trzech kolumnach
+        −    Każda komórka tabeli jest wypełniona obrazem nic.png
+        −    Dla każdego obrazu, gdy zostanie kliknięty, uruchamia się skrypt
+−  Zawartość bloku sekcji prawej:
+  − Nagłówek drugiego stopnia o treści: „Gra krzyżyk”
+− Zawartość bloku stopki:
+  − Odnośnik do strony https://pl.battleship-game.org/ o treści „Zagraj w statki”. Odnośnik otwiera się
+     w nowym oknie
+    −       Paragraf o treści „Grę opracował: ”, dalej wstawiony numer zdającego
+                                                     Strona 3 z 6
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie styl.css. Cechy formatowania CSS
+działające na stronie:
+ − Domyślnie, dla wszystkich selektorów: krój czcionki Lucida Console, w przypadku braku monospace
+ − Dla ciała strony: kolor tła HoneyDew, tekst wyrównany do środka
+−   Dla bloków nagłówkowego i stopki: marginesy wewnętrzne 20 px
+−   Dla bloków sekcji lewej i prawej: kolor tła PaleGreen, szerokość 20%, marginesy wewnętrzne górny
+    i dolny 80 px, boczne 0, zaokrąglenie rogów 40 px
+−   Dodatkowo dla bloku sekcji prawej: blok jest niewidoczny (ukryty)
+−   Dla bloku sekcji środkowej: szerokość 60%, cień bloku bez przesunięcia o rozmyciu 10 px i kolorze
+    DarkGreen
+−   Dla selektora obrazu: szerokość 80%, marginesy zewnętrzne 10 px, typ kursora pointer
+−   Dla selektora tabeli: szerokość 90%, marginesy zewnętrzne 10 px, obramowanie tabeli i komórek
+    połączone
+−   Dla selektora komórki tabeli: obramowanie linią ciągłą o szerokości 3 px i kolorze SeaGreen
+−   Gdy komórka tabeli zostanie kliknięta, kolor tła zmienia się na SeaGreen
+
+Uwaga: styl CSS obrazu, tabeli i komórki tabeli należy zdefiniować wyłącznie przy pomocy selektora tego
+znacznika. Jest to uwarunkowane projektem późniejszej rozbudowy witryny.
+
+Skrypt działający po stronie klienta
+Wymagania dotyczące skryptu:
+− Należy stosować znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim
+− Realizuje jedynie działanie planszy do gry w kółko i krzyżyk dla dwóch graczy
+− Rozstrzyganie wygranej zostanie zaimplementowane w przyszłości – nie trzeba sprawdzać czy dany
+    układ kółek i krzyżyków daje wygraną
+−   Stan początkowy
+    − aktualny gracz to kółko
+−   Gdy gracz kółko kliknie w komórkę tabeli z obrazem nic.png:
+    − w komórce jest podmieniany obraz na o.png
+    − blok sekcji lewej staje się ukryty
+    − blok sekcji prawej staje się widoczny
+    − aktualny gracz jest zmieniany na krzyżyk
+−   Gdy gracz krzyżyk kliknie w komórkę tabeli z obrazem nic.png:
+    −   w komórce jest podmieniany obraz na x.png
+    −   blok sekcji lewej staje się widoczny
+    −   blok sekcji prawej staje się ukryty
+    − aktualny gracz jest zmieniany na kółko
+−   Gdy dowolny gracz kliknie komórkę tabeli z obrazem kółka lub krzyżyka – brak akcji
+
+
+
+
+                                               Strona 4 z 6
+Przykład działania planszy (ilustracja 4):
+   1. Grę rozpoczyna kółko, widoczny jest blok sekcji lewej z napisem „Gra kółko”, gracz klika w dowolną
+       komórkę tabeli – pojawia się w tym miejscu grafika o.png
+   2. Następnie ruch należy do krzyżyka, widoczny jest blok sekcji prawej z napisem „Gra krzyżyk”, gracz
+       klika w dowolną pustą komórkę tabeli – pojawia się w tym miejscu grafika x.png
+   3. Gra kółko, widoczny jest blok sekcji lewej, gracz klika w dowolną pustą komórkę, pojawia się tam
+       o.png
+   4. Gra krzyżyk, widoczny jest blok sekcji prawej, gracz klika w dowolną pustą komórkę, pojawia się tam
+       x.png
+       itd.
+
+
+
+
+             1                          2                         3                            4
+                                 Ilustracja 4. Działanie planszy do gry
+
+
+
+
+Tabela 1. Wybrane pola i metody modelu DOM języka JavaScript
+           Wyszukiwanie elementów                              Zmiana elementów
+ document.getElementById(id)                   element.innerHTML = "wartość"
+ document.getElementsByTagName(TagName)        element.attribute_name = "wartość"
+ document.getElementsByClassName(ClassName) element.setAttribute(atrybut, wartosc)
+ document.getElementsByName(ElementName)       element.style.property_name = "wartość"
+ document.querySelector(CSSselector)
+ document.querySelectorAll(CSSselector)
+
+     Operacje na elementach dokumentu                          Wybrane właściwości obiektu style
+ document.createElement(element)                   backgroundColor
+ document.removeChild(element)                     color
+ document.appendChild(element)                     fontSize
+ document.replaceChild(element)                    fontStyle = "normal | italic | oblique | initial | inherit"
+ document.write(text)                              fontWeight = "normal | lighter | bold | bolder | value |
+                                                   initial | inherit"
+                                                   listStyleType = "circle| decimal | disc | none | square |
+                                                   initial..."
+ Wybrane zdarzenia HTML
+       Zdarzenia myszy                   Zdarzenia klawiatury                   Zdarzenia obiektów
+ onclick                            onkeydown                            onload
+ ondblclick                         onkeypress                           onresize
+ onmouseover                        onkeyup                              onfocusin
+ onmouseout                                                              onfocusout
+ Elementy formularzy                                 Metody i pola obiektu string (JS)
+ Ważniejsze typy pola input: button, checkbox,       Length
+ number, password, radio, text, range, file          indexOf(text)
+ Inne elementy: select, textarea                     search(text)
+                                                     lastIndexOf()
+                                                     substr(startIndex, endIndex)
+                                                     replace(textToReplace, newText)
+                                                     toUpperCase()
+                                                     toLowerCase()
+                                              Strona 5 z 6
+Tabela 2. Semantic Elements in HTML
+       Tag                                              Description
+ <article>      Defines independent, self-contained content
+ <aside>        Defines content aside from the page content
+ <details>      Defines additional details that the user can view or hide
+ <figcaption>   Defines a caption for a <figure> element
+ <figure>       Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+ <footer>       Defines a footer for a document or section
+ <header>       Specifies a header for a document or section
+ <main>         Specifies the main content of a document
+ <mark>         Defines marked/highlighted text
+ <nav>          Defines navigation links
+ <section>      Defines a section in a document
+ <summary>      Defines a visible heading for a <details> element
+ <time>         Defines a date/time
+
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego, powinny znajdować się pliki: gra.html,
+import.png, kw1.png, kw2.png, kw3.png, kw4.png, kwerendy.txt, nic.png, o.png, przeglądarka.txt, styl.css,
+x.png, ewentualnie inne przygotowane pliki. Po nagraniu płyty sprawdź poprawność jej odczytu. Opisz płytę
+numerem zdającego i pozostaw zapakowaną w pudełku na stanowisku wraz z arkuszem egzaminacyjnym.
+
+
+
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie podlegać będzie 5 rezultatów:
+   −   operacje na bazie danych,
+   −   zawartość witryny internetowej,
+   −   działanie witryny internetowej,
+   −   styl CSS witryny internetowej,
+   −   skrypt.
+
+
+
+
+                                                Strona 6 z 6
+Wypełnia zdający w przypadku nagranej płyty
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD/DVD z rezultatami wykonania zadania egzaminacyjnego
+
+opisaną przeze mnie numerem PESEL                                         i oświadczam, że jakość nagrania
+
+została przeze mnie sprawdzona.
+
+
+Wypełnia zdający w przypadku nienagranej (pustej) płyty
+
+
+Poświadczam numerem PESEL                                            , że do arkusza nie dołączam płyty
+
+CD/DVD z rezultatami wykonania zadania egzaminacyjnego.
+
+
+Wypełnia Przewodniczący ZN
+
+
+   □ Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD/DVD, opisana numerem
+       PESEL zdającego.
+
+   □ Potwierdzam, że do arkusza egzaminacyjnego nie została dołączona płyta CD/DVD.
+
+                                                          ……………………………………………..
+                                                          Czytelny podpis Przewodniczącego ZN
+

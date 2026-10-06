@@ -1,0 +1,19 @@
+{
+  "code": "inf03_2024_01_02",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "pages": [
+    {
+      "page": "index.html",
+      "status": 200,
+      "bytes": 871
+    },
+    {
+      "page": "kontakt.html",
+      "status": 200,
+      "bytes": 1315
+    }
+  ],
+  "checked_at": "2026-10-06 18:44:39"
+}

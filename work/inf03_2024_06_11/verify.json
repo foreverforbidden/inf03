@@ -1,0 +1,54 @@
+{
+  "code": "inf03_2024_06_11",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT imie, miot FROM swinki WHERE MONTH(data_ur) = 7",
+      "ok": true,
+      "rows": 3,
+      "preview": "+--------+------+\n| imie   | miot |\n+--------+------+\n| Ed     | C4   |\n| Tikka  | C4   |\n| Frania | C4   |\n+--------+------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT DISTINCT swinki.data_ur, swinki.miot, rasy.rasa FROM swinki JOIN rasy ON swinki.rasy_id = rasy.id WHERE rasy.id = 1",
+      "ok": true,
+      "rows": 1,
+      "preview": "+------------+------+------------+\n| data_ur    | miot | rasa       |\n+------------+------+------------+\n| 2022-06-02 | I5   | peruwianka |\n+------------+------+------------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT imie, cena, opis FROM swinki WHERE rasy_id = 1",
+      "ok": true,
+      "rows": 4,
+      "preview": "+-------+------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n| imie  | cena | opis                                                                                                                                                                                                                                                                                                                                      |\n+-------+------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n| Cindy |  200 | Piękna peruwianka. Biała z lekko płowymi włoskami na końcach. Jeszcze jej włoski są krótkie ale z czasem urosną na piękne długie włosy. Dostojna i spokojna, długo jej zabiera przyzwyczajenie się do właściciela. Je ładnie i umie już pić z poidełka, lubi najbardziej sałatę rzymską                                                   |\n| Wendy |  200 | Piękna peruwianka. Brązowa po jednej stronie i lekko czarna po drugiej. Wyjątkowe umaszczenie. Bardzo ufna i wesoła, cały czas podskakuje i wesoło piszczy. Cały czas głodna. Je ładnie i umie już pić z poidełka, lubi najbardziej jabłuszka                                                                                             |\n| Mała  |  250 | Piękna peruwianka. Czarno - biała. Zdecydowanie najładniejsza z miotu. Jeszcze jej włoski są krótkie ale z czasem urosną na piękne długie włosy. spokojna ale ufna. Je ładnie i umie już pić z poidełka, lubi najbardziej sianko                                                                                                          |\n| Lola  |  200 | Piękna peruwianka. Biała z lekko płowymi włoskami na końcach. Podobna do swojej siostry. Jeszcze jej włoski są krótkie ale z czasem urosną na piękne długie włosy. Dostojna i spokojna, długo jej zabiera przyzwyczajenie się do właściciela. Je ładnie i umie już pić z poidełka, lubi najbardziej sałatę rzymską                        |\n+-------+------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+"
+    },
+    {
+      "n": 4,
+      "sql": "SELECT rasa FROM rasy",
+      "ok": true,
+      "rows": 13,
+      "preview": "+------------------+\n| rasa             |\n+------------------+\n| peruwianka       |\n| szetlandzka      |\n| texel            |\n| lunkarya         |\n| merino           |\n| american         |"
+    }
+  ],
+  "pages": [
+    {
+      "page": "american.php",
+      "status": 200,
+      "bytes": 1642
+    },
+    {
+      "page": "crested.php",
+      "status": 200,
+      "bytes": 1426
+    },
+    {
+      "page": "peruwianka.php",
+      "status": 200,
+      "bytes": 2102
+    }
+  ],
+  "checked_at": "2026-10-06 18:42:56"
+}

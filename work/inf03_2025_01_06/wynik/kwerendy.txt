@@ -1,0 +1,8 @@
+-- Zapytanie 1
+SELECT pseudonim FROM zawodnicy WHERE data_zdobycia BETWEEN '2020-07-01' AND '2020-07-31';
+-- Zapytanie 2
+SELECT pseudonim, tytul FROM zawodnicy WHERE klasa = '3A' AND tytul <> '';
+-- Zapytanie 3
+SELECT pseudonim, klasa, ranking FROM zawodnicy ORDER BY ranking ASC LIMIT 10;
+-- Zapytanie 4
+SELECT pseudonim, data_zdobycia, DATEDIFF(CURDATE(), data_zdobycia) AS dni FROM zawodnicy WHERE tytul <> '';

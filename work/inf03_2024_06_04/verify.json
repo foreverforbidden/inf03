@@ -1,0 +1,44 @@
+{
+  "code": "inf03_2024_06_04",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT tytul, plik FROM zdjecia WHERE polubienia >= 100",
+      "ok": true,
+      "rows": 1,
+      "preview": "+----------------+----------+\n| tytul          | plik     |\n+----------------+----------+\n| Slava Ukraini! | kiev.jpg |\n+----------------+----------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT zdjecia.plik, zdjecia.tytul, zdjecia.polubienia, autorzy.imie, autorzy.nazwisko FROM zdjecia JOIN autorzy ON zdjecia.autorzy_id = autorzy.id ORDER BY autorzy.nazwisko ASC",
+      "ok": true,
+      "rows": 12,
+      "preview": "+----------------+-----------------------------------------------------+------------+---------+-------------+\n| plik           | tytul                                               | polubienia | imie    | nazwisko    |\n+----------------+-----------------------------------------------------+------------+---------+-------------+\n| kiev.jpg       | Slava Ukraini!                                      |        100 | Jolanta | Biała       |\n| prague.jpg     | Czeska Praga                                        |         80 | Jolanta | Biała       |\n| wroclaw.jpg    | Miasto 100 mostów, czyli Wrocław                    |         75 | Jolanta | Biała       |\n| jeziorko.jpg   | Urocze jeziorko w dolinie gór                       |         40 | Ewa     | Dobrowolska |\n| car.jpg        | Rajd Monte Carlo                                    |          5 | Jadwiga | Kowalska    |\n| motyl.jpg      | Motyl                                               |         55 | Jadwiga | Kowalska    |"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT autorzy.imie, COUNT(zdjecia.id) FROM autorzy JOIN zdjecia ON zdjecia.autorzy_id = autorzy.id GROUP BY autorzy.imie",
+      "ok": true,
+      "rows": 5,
+      "preview": "+---------+-------------------+\n| imie    | COUNT(zdjecia.id) |\n+---------+-------------------+\n| Ewa     |                 1 |\n| Ewelina |                 2 |\n| Jadwiga |                 4 |\n| Jan     |                 2 |\n| Jolanta |                 3 |\n+---------+-------------------+"
+    },
+    {
+      "n": 4,
+      "sql": "ALTER TABLE zdjecia ADD rozmiarPliku INT",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "galeria.php",
+      "status": 200,
+      "bytes": 2963
+    }
+  ],
+  "checked_at": "2026-10-06 18:42:55"
+}

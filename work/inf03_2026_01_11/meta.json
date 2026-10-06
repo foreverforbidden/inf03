@@ -1,0 +1,22 @@
+{
+  "password": "@ktorzy+f1Lmy",
+  "db": "kino",
+  "required_files": [
+    "aktor.php",
+    "index.php",
+    "kwerendy.txt",
+    "przeglądarka.txt",
+    "styl.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "aktor.php",
+    "index.php"
+  ],
+  "code": "inf03_2026_01_11",
+  "pdf": "inf03_arkusze/inf03_2026_01_11_arkusz.pdf",
+  "sql_files": [
+    "materialy/kino.sql"
+  ],
+  "problems": []
+}

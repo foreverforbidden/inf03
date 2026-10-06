@@ -1,0 +1,8 @@
+{
+  "code": "inf02_2023_01_04",
+  "pass": true,
+  "score": "42/42",
+  "fails": [],
+  "na": ["zrzuty ekranu (import.png, kw1-kw4)", "nagranie płyty", "utworzenie bazy i import w phpMyAdmin"],
+  "notes": "Kwerendy 1-4 poprawne i zgodne z verify.json, strona zwraca HTTP 200, CSS i HTML zgodne z treścią i ilustracją, mysqli_close obecne."
+}

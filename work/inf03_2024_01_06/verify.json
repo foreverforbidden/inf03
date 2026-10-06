@@ -1,0 +1,44 @@
+{
+  "code": "inf03_2024_01_06",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT nazwaPliku, podpis FROM zdjecia ORDER BY podpis ASC",
+      "ok": true,
+      "rows": 9,
+      "preview": "+------------+-----------+\n| nazwaPliku | podpis    |\n+------------+-----------+\n| 8.jpg      | Barcelona |\n| 3.jpg      | Berlin    |\n| 5.jpg      | Budapeszt |\n| 1.jpg      | Londyn    |\n| 9.jpg      | Moskwa    |\n| 7.jpg      | Nowy Jork |"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT cel, dataWyjazdu FROM wycieczki WHERE dostepna = 0",
+      "ok": true,
+      "rows": 3,
+      "preview": "+----------------------+-------------+\n| cel                  | dataWyjazdu |\n+----------------------+-------------+\n| Francja, Paryz       | 2019-07-14  |\n| Hiszpania, Barcelona | 2019-07-14  |\n| Hiszpania, Barcelona | 2019-08-14  |\n+----------------------+-------------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT wycieczki.cel, wycieczki.cena, zdjecia.podpis FROM wycieczki JOIN zdjecia ON wycieczki.zdjecia_id = zdjecia.id WHERE wycieczki.cena > 1300",
+      "ok": true,
+      "rows": 4,
+      "preview": "+----------------------+------+-----------+\n| cel                  | cena | podpis    |\n+----------------------+------+-----------+\n| Francja, Paryz       | 1350 | Paryz     |\n| Hiszpania, Barcelona | 1500 | Barcelona |\n| Hiszpania, Barcelona | 1500 | Barcelona |\n| Hiszpania, Barcelona | 1400 | Barcelona |\n+----------------------+------+-----------+"
+    },
+    {
+      "n": 4,
+      "sql": "DROP TABLE uzytkownik",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "biuro.php",
+      "status": 200,
+      "bytes": 1442
+    }
+  ],
+  "checked_at": "2026-10-06 18:41:45"
+}

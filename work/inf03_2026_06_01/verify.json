@@ -1,0 +1,69 @@
+{
+  "code": "inf03_2026_06_01",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT idObiekt, plik, nazwa FROM obiekty WHERE panstwo = 'Islandia'",
+      "ok": true,
+      "rows": 9,
+      "preview": "+----------+--------------------+-----------------------+\n| idObiekt | plik               | nazwa                 |\n+----------+--------------------+-----------------------+\n|       46 | Strokkur.jpg       | Strokkur              |\n|       47 | Skogafoss.jpg      | Skogafoss             |\n|       48 | Seljalandsfoss.jpg | Seljalandsfoss        |\n|       49 | maskonur.jpg       | Fuglaskoðunarhús      |\n|       50 | kirkjuffel.jpg     | kirkjuffell           |\n|       51 | husavik.jpg        | Siedlisko wielorybów  |"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT obiekty.plik, obiekty.nazwa, obiekty.nazwaCechy, obiekty.wartoscCechy, obiekty.opis, rodzaje.rodzaj FROM obiekty JOIN rodzaje ON obiekty.idRodzaj = rodzaje.idRodzaj WHERE obiekty.idObiekt = 46",
+      "ok": true,
+      "rows": 1,
+      "preview": "+--------------+----------+------------+--------------+-------------------------------------------------------------------------------------------------------------------+-------------------+\n| plik         | nazwa    | nazwaCechy | wartoscCechy | opis                                                                                                              | rodzaj            |\n+--------------+----------+------------+--------------+-------------------------------------------------------------------------------------------------------------------+-------------------+\n| Strokkur.jpg | Strokkur | wysokość   |           30 | największy czynny gejzer Islandii. Wybucha co 5-10 minut. Wyrzuca słup wody o średnicy 3 m na wysokość 30 m.      | gorące źródło     |\n+--------------+----------+------------+--------------+-------------------------------------------------------------------------------------------------------------------+-------------------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT nazwa FROM obiekty WHERE panstwo = 'Islandia' AND idRodzaj = 10",
+      "ok": true,
+      "rows": 4,
+      "preview": "+----------------+\n| nazwa          |\n+----------------+\n| Skogafoss      |\n| Seljalandsfoss |\n| Godafoss       |\n| Dettifoss      |\n+----------------+"
+    },
+    {
+      "n": 4,
+      "sql": "SELECT rodzaje.rodzaj, COUNT(obiekty.idObiekt) AS 'Liczba obiektów' FROM rodzaje JOIN obiekty ON rodzaje.idRodzaj = obiekty.idRodzaj GROUP BY rodzaje.idRodzaj, rodzaje.rodzaj",
+      "ok": true,
+      "rows": 8,
+      "preview": "+---------------------+------------------+\n| rodzaj              | Liczba obiektów  |\n+---------------------+------------------+\n| wodospad            |               12 |\n| szczyt              |                4 |\n| jezioro             |                1 |\n| wulkan              |                2 |\n| siedlisko zwierząt  |                2 |\n| gorące źródło       |                1 |"
+    }
+  ],
+  "pages": [
+    {
+      "page": "islandia.php",
+      "status": 200,
+      "bytes": 1832
+    },
+    {
+      "page": "obiekty.php",
+      "status": 200,
+      "bytes": 821
+    },
+    {
+      "page": "obiekty.php?id=46",
+      "status": 200,
+      "bytes": 1033
+    },
+    {
+      "page": "obiekty.php?id=47",
+      "status": 200,
+      "bytes": 1113
+    },
+    {
+      "page": "obiekty.php?id=48",
+      "status": 200,
+      "bytes": 1253
+    },
+    {
+      "page": "obiekty.php?id=49",
+      "status": 200,
+      "bytes": 1260
+    }
+  ],
+  "checked_at": "2026-10-06 18:36:42"
+}

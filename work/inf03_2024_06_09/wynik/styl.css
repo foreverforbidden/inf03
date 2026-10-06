@@ -1,0 +1,57 @@
+* {
+    font-family: Georgia;
+    color: white;
+}
+header, footer {
+    background-color: Maroon;
+    text-align: center;
+    padding: 2px;
+}
+aside, main {
+    background-color: LightSalmon;
+    height: 527px;
+    float: left;
+}
+aside {
+    width: 15%;
+}
+main {
+    width: 70%;
+}
+#miniatury {
+    background-color: Maroon;
+    height: 70px;
+    clear: both;
+}
+button {
+    background-color: LightSalmon;
+    color: Maroon;
+    border: none;
+    font-size: 400%;
+    display: block;
+    margin: auto;
+    padding-top: 210px;
+}
+#miniatury img {
+    height: 70px;
+    animation-name: przesuniecie;
+    animation-duration: 4s;
+}
+@keyframes przesuniecie {
+    from { padding-left: 50px; }
+    to { padding-left: 0px; }
+}
+main img {
+    display: block;
+    margin: auto;
+    padding-top: 45px;
+}
+main img:hover {
+    animation-name: powiekszenie;
+    animation-duration: 5s;
+    transform: scale(1.2);
+}
+@keyframes powiekszenie {
+    from { transform: scale(1); }
+    to { transform: scale(1.2); }
+}

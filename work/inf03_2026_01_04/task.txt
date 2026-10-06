@@ -1,0 +1,310 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 04
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+
+Numer PESEL zdającego*                                                        Miejsce na naklejkę z numerem
+                                                                                PESEL i z kodem ośrodka
+
+         Numer stanowiska
+
+
+
+
+Czas trwania egzaminu: 150 minut                                                         INF.03-04-26.01-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2026                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL*,
+          numer stanowiska i naklej naklejkę** z numerem PESEL i z kodem ośrodka.
+    2.    Sprawdź, czy arkusz egzaminacyjny zawiera 7 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    3.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    4.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    5.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    6.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami wykonania zadania
+          na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu nadzorującego.
+    7.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania
+          egzaminu.
+
+                                                                                               Powodzenia!
+
+ * w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+** w przypadku otrzymania naklejki
+
+
+Układ graficzny
+© CKE 2025
+Zadanie egzaminacyjne
+
+UWAGA: numer, którym został podpisany arkusz egzaminacyjny (PESEL lub w przypadku jego braku numer
+paszportu) jest w zadaniu nazywany numerem zdającego.
+
+Wykonaj aplikację internetową portalu dla maturzystów, wykorzystując pakiet XAMPP oraz edytor
+zaznaczający składnię.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się
+archiwum 7z o nazwie pliki3-2 zabezpieczone hasłem: Z@Rok!Matur@
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego. Po
+skończonej pracy wszystkie wyniki należy zapisać w tym folderze.
+
+Baza danych
+Baza danych zawiera połączone relacją tabele przedstawione na ilustracji 1. W tabeli maturzysta ujęto dane
+uczniów zdających maturę, w tabeli arkusz ujęto dane opisujące egzamin (rok zdawania, przedmiot, sesja
+lato / zima). Tabela wyniki opisuje ile punktów otrzymał maturzysta z danego egzaminu.
+
+
+
+
+                                        Ilustracja 1. Baza danych
+
+Za pomocą narzędzia phpMyAdmin wykonaj następujące operacje na bazie danych:
+−   Utwórz bazę danych o nazwie matura, z zestawem polskich znaków (np. utf8_polish_ci)
+−   Z rozpakowanego archiwum zaimportuj tabele z pliku egzamin.sql do utworzonej bazy
+−   Wykonaj zrzut ekranu po imporcie. Zapisz zrzut w formacie JPEG pod nazwą import. Nie kadruj zrzutu.
+    Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+    widoczne elementy wskazujące na poprawnie wykonany import tabel
+−   Wykonaj zapytania SQL działające na bazie matura. Zapytania zapisz w pliku kwerendy.txt. Wykonaj
+    zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie PNG i nadaj im nazwy
+    kw1, kw2, kw3, kw4, kw5. Zrzuty powinny obejmować cały ekran monitora z widocznym paskiem zadań
+      − Zapytanie 1: wybierające jedynie id, imię i nazwisko maturzystów ze szkoły „T3”, posortowane
+          rosnąco według nazwiska
+      −   Zapytanie 2: wybierające jedynie nazwy przedmiotów maturalnych z tabeli arkusz. Nazwy
+          przedmiotów nie mogą się powtarzać
+      −   Zapytanie 3: wybierające jedynie rok dla najstarszego i najmłodszego arkusza maturalnego
+      −   Zapytanie 4: wybierające jedynie id maturzysty oraz średnią ze wszystkich punktów otrzymanych
+          przez tego maturzystę. Średnia punktów ma nazwę kolumny (alias) „Wynik”. Dane należy
+          posortować malejąco według obliczonej średniej i wyświetlić tylko 1 rekord. (Zapytanie grupujące,
+          które wybiera maturzystę z najlepszym średnim wynikiem punktów)
+      −   Zapytanie 5: wybierające jedynie rok, sesję i przedmiot z tabeli arkusz oraz odpowiadające temu
+          punkty z tabeli wynik dla id maturzysty 31. Należy posłużyć się relacją
+                                               Strona 2 z 7
+Witryna internetowa
+
+
+
+
+            Ilustracja 2. Wygląd witryny internetowej, strona index.php, kursor na uczniu
+
+Cechy witryny:
+− Składa się ze stron index.php i wynik.php
+
+Cechy wspólne dla obu stron:
+− Zapisane w języku HTML5
+− Zadeklarowany polski język zawartości witryny
+− Jawnie zastosowany właściwy standard kodowania polskich znaków
+−   Tytuł strony „Matura”
+−   Arkusz stylów w pliku o nazwie styl.css prawidłowo połączony
+    z kodem strony
+−   Podział strony na bloki zrealizowany za pomocą semantycznych
+    znaczników bloków języka HTML5 tak, aby po uruchomieniu
+                                                                             Ilustracja 3. Układ bloków
+    w przeglądarce układ bloków na stronie był zgodny z ilustracją 3
+−   Zawartość bloku nagłówkowego: nagłówek pierwszego stopnia o treści „System informacji dla
+    maturzystów”
+−   Zawartość bloku bocznego trzy grafiki: ma.jpg, poniżej tu.jpg,poniżej ra.jpg, każda z tekstem
+    alternatywnym „Matura”.
+−   Zawartość drugiego bloku sekcji (ilustracja 2):
+    −   Cztery bloki, w każdym nagłówek czwartego stopnia o treści, kolejno „Przedmioty”, „Lata”,
+        "Najlepszy wynik”, „Najgorszy wynik”
+    −   W każdym bloku efekt działania skryptu 1
+    − Wszystkie bloki mają przypisaną tę samą klasę
+−   Zawartość stopki: paragraf o treści „Stronę wykonał: ”, dalej wstawiony numer zdającego
+
+
+
+
+                                              Strona 3 z 7
+Zawartość pierwszego bloku sekcji dla strony index.php:
+        −   Nagłówek trzeciego stopnia o treści: „Wybierz ucznia z listy:”
+        −   Efekt działania skryptu 2
+
+Zawartość pierwszego bloku sekcji dla strony wynik.php:
+        −   Efekt działania skryptu 3
+
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie styl.css W tabeli 2 zawarto pomoc do
+niektórych właściwości CSS. Cechy formatowania CSS, działające na stronie:
+−       Dla selektora ciała strony: krój czcionki cursive, w przypadku braku sans-serif, kolor tła #4682B4
+−       Wspólne dla bloków nagłówkowego i stopki: kolor tła #0F0F64, biały kolor czcionki, wyrównanie tekstu do
+        środka, marginesy wewnętrzne 3 px
+−       Dla bloku bocznego: szerokość 20%, wysokość 500 px
+−       Wspólne dla bloków sekcji: szerokość 80%, wysokość 250 px, paski przewijania tylko w przypadku
+        przepełnienia
+−       Dla selektora obrazu: szerokość 150 px, marginesy wewnętrzne 2 px
+−       Dla selektora nagłówka czwartego stopnia: wyrównanie tekstu do środka
+−       Dla selektora odnośnika: biały kolor czcionki, tekst bez podkreślenia
+−       Gdy kursor znajdzie się na odnośniku jego kolor tła zmienia się na #12538A (jak na ilustracji 2)
+−       Dla klasy przypisanej do bloków z drugiego bloku sekcji: kolor tła #2B6BA0, biały kolor czcionki, szerokość
+        i wysokość 150 px, marginesy zewnętrzne 10 px, wewnętrzne 5 px, zaokrąglenie rogów 10 px, cień bloku
+        o przesunięciu 3 px w obu osiach, rozmyciu 5 px i kolorze czarnym, bloki powinny być ustawione obok
+        siebie
+
+Uwaga: styl CSS ciała strony, obrazu, nagłówka czwartego stopnia i odnośnika należy zdefiniować wyłącznie
+przy pomocy selektora tego znacznika. Jest to uwarunkowane projektem późniejszej rozbudowy witryny.
+
+Skrypt połączenia z bazą
+W tabeli 1 zamieszczono wybrane funkcje PHP do obsługi bazy danych. Wymagania dotyczące skryptów:
+    −    Napisane w języku PHP
+    −    Należy stosować znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim
+    −    Łączą się z serwerem bazodanowym na localhost, użytkownik root bez hasła, baza danych o nazwie
+         matura
+    −    Na końcu zamykane jest połączenie z serwerem
+
+Skrypt 1
+    −    W bloku „Przedmioty”
+         − Wysyła do bazy danych zapytanie 2
+         − Wyświetla dane zwrócone zapytaniem oddzielone spacją
+    −    W bloku "Lata”
+         − Wysyła do bazy danych zapytanie 3
+         − Wyświetla dane zwrócone zapytaniem oddzielone spacjami i myślnikiem
+    −    W bloku „Najlepszy wynik”
+         − Wysyła do bazy danych zapytanie 4
+         − Wyświetla daną zwróconą zapytaniem
+
+                                                     Strona 4 z 7
+     −   Za wynikiem wstawiony znak %
+−   W bloku „Najgorszy wynik”
+    − Wysyła do bazy danych zmodyfikowane zapytanie 4 (należy zmienić sposób sortowania na rosnący)
+     −   Wyświetla daną zwróconą zapytaniem
+     −   Za wynikiem wstawiony znak %
+
+Skrypt 2, w pliku index.php
+− Wysyła do bazy zapytanie 1
+−   Dla każdego zwróconego wiersza definiuje odnośnik o cechach
+    − treść: „<id>. <imie> <nazwisko>”, gdzie pola <> są zwrócone z bazy (jak na ilustracji 2)
+     − adres: strona wynik.php i przesłane metodą GET parametry id, imię i nazwisko zwrócone z bazy
+
+Skrypt 3, w pliku wynik.php (ilustracja 4)
+−   W nagłówku drugiego stopnia wyświetla imię i nazwisko, które zostało przesłane do strony metodą GET
+−   Wysyła do bazy danych zmodyfikowane zapytanie 5, tak że wybierane są dane dla ucznia o id
+    przesłanym do strony metodą GET
+−   Dla każdego wiersza zwróconego z bazy wyświetla:
+     − W nagłówku trzeciego stopnia rok i sesję oddzielone spacją
+     −   W paragrafie nazwę przedmiotu i punkty oddzielone dwukropkiem i spacją
+
+
+
+
+ Ilustracja 4. Strona wynik.php dla wybranego na stronie index.php ucznia Aleksandra Kosińskiego
+
+
+
+
+                                              Strona 5 z 7
+Tabela 1. Wybór funkcji języka PHP do obsługi bazy MySQL i MariaDB
+            Funkcje biblioteki mysqli                            Zwracana wartość
+ mysqli_connect(serwer, użytkownik,              id połączenia lub FALSE, gdy niepowodzenie
+ hasło, nazwa_bazy)
+ mysqli_select_db(id_polaczenia,                 TRUE/FALSE w zależności od stanu operacji
+ nazwa_bazy)
+ mysqli_error(id_polaczenia)                     Tekst komunikatu błędu
+ mysqli_close(id_polaczenia)                     TRUE/FALSE w zależności od stanu operacji
+ mysqli_query(id_polaczenia,                     Wynik zapytania
+ zapytanie)
+ mysqli_fetch_row(wynik_zapytania)               Tablica numeryczna odpowiadająca wierszowi
+                                                 zapytania
+ mysqli_fetch_array(wynik_zapytania)             Tablica zawierająca kolejny wiersz z podanych
+                                                 w wyniku zapytania lub FALSE, jeżeli nie ma więcej
+                                                 wierszy w wyniku zapytania
+ mysqli_num_rows(wynik_zapytania)                Liczba wierszy w podanym zapytaniu
+ mysqli_num_fields(wynik_zapytania)              Liczba kolumn w podanym zapytaniu
+ isset($zmienna)                                 TRUE/FALSE w zależności od tego, czy
+                                                 $zmienna istnieje
+
+
+Przykład Przesyłania danych między stronami za pomocą odnośników
+Istnieje możliwość przekazywania niedużej liczby parametrów za pomocą zwykłych odnośników dostępnych
+w języku HTML. W takim przypadku wykorzystuje się metodę GET – konstruuje się odnośnik, na końcu
+którego należy umieścić znak zapytania a po nim oddzielone ampersandami pary parametr=wartość.
+Przykład:
+
+strona.html: <a href= "strona.php?imie=Franek&nazwisko=Kowalski">Kliknij tu</a>
+
+strona.php: <?php        echo "<p>$_GET[imie]</p>";               ?>
+
+Tabela 2. Wybrane właściwości CSS
+                                      Właściwość                                             Opis
+ box-shadow: h-offset v-offset blur spread color inset;                                   cień bloku
+ The inset parameter changes the shadow from an outer shadow (outset) to an inner shadow.
+ text-shadow: h-shadow v-shadow blur-radius color;                                        cień tekstu
+
+Tabela 3. Semantic Elements in HTML
+       Tag                                               Description
+ <article>       Defines independent, self-contained content
+ <aside>         Defines content aside from the page content
+ <details>       Defines additional details that the user can view or hide
+ <figcaption>    Defines a caption for a <figure> element
+ <figure>        Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+ <footer>        Defines a footer for a document or section
+ <header>        Specifies a header for a document or section
+ <main>          Specifies the main content of a document
+ <mark>          Defines marked/highlighted text
+ <nav>           Defines navigation links
+ <section>       Defines a section in a document
+ <summary>       Defines a visible heading for a <details> element
+ <time>          Defines a date/time
+
+
+
+
+                                               Strona 6 z 7
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego, powinny znajdować się pliki: import.jpg,
+index.php, kw1.png, kw2.png, kw3.png, kw4.png, kw5.png, kwerendy.txt, ma.jpg, przeglądarka.txt, ra.jpg,
+styl.css, tu.jpg, wynik.php, ewentualnie inne przygotowane pliki. Po nagraniu płyty sprawdź poprawność jej
+odczytu. Opisz płytę numerem zdającego i pozostaw zapakowaną w pudełku na stanowisku wraz z arkuszem
+egzaminacyjnym.
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie podlegać będzie 5 rezultatów:
+   −   operacje na bazie danych,
+   −   zawartość witryny internetowej,
+   −   działanie witryny internetowej,
+   −   styl CSS witryny internetowej,
+   −   skrypt połączenia z bazą.
+
+
+
+
+                                              Strona 7 z 7
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD/DVD opisaną numerem
+
+PESEL                              , której jakość nagrania została przeze mnie sprawdzona.
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD/DVD, opisana numerem PESEL
+zdającego.
+
+                                                               ……………………………........…
+                                                               Czytelny podpis Przewodniczącego ZN
+

@@ -1,0 +1,248 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 10
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+                                                                              Miejsce na naklejkę z numerem
+Numer PESEL zdającego*                                                          PESEL i z kodem ośrodka
+
+
+
+
+Czas trwania egzaminu: 150 minut.                                                         INF.03-10-25.01-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2025                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL
+          i naklej naklejkę z numerem PESEL i z kodem ośrodka.
+    2.    Na KARCIE OCENY w oznaczonym miejscu przyklej naklejkę z numerem PESEL oraz wpisz:
+          − swój numer PESEL*,
+          − oznaczenie kwalifikacji,
+          − numer zadania,
+          − numer stanowiska.
+    3.    Sprawdź, czy arkusz egzaminacyjny zawiera 5 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    4.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    5.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    6.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    7.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami oraz KARTĘ
+          OCENY na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu
+          nadzorującego.
+    8.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania egzaminu.
+
+                                                                                               Powodzenia!
+* w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+
+
+
+
+Układ graficzny
+© CKE 2023
+Zadanie egzaminacyjne
+
+UWAGA: numer, którym został podpisany arkusz egzaminacyjny (PESEL lub w przypadku jego braku numer
+paszportu) jest w zadaniu nazywany numerem zdającego.
+
+Wykonaj aplikację internetową portalu dla szkolnego koła szachowego, wykorzystując edytor grafiki
+rastrowej, pakiet XAMPP oraz edytor zaznaczający składnię.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się
+archiwum 7z o nazwie pliki3 zabezpieczone hasłem: Sz4chm4t!
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego.
+Rozpakowane pliki należy umieścić w tym folderze. Po skończonej pracy wszystkie wyniki należy zapisać
+w tym folderze.
+
+Operacje na bazie danych
+Baza danych zawiera jedną tabelę przedstawioną na ilustracji 1. Tabela zawodnicy zawiera informacje
+o klasach, do których uczęszczają członkowie koła, ich pseudonimach, zdobytych tytułach i rankingach.
+W tabeli znajduje się również pole data_zdobycia, które umożliwia zapisanie informacji, kiedy dany zawodnik
+zdobył swój tytuł.
+
+
+
+
+                                        Ilustracja 1. Baza danych
+
+Za pomocą narzędzia phpMyAdmin wykonaj następujące operacje na bazie danych:
+   −   Utwórz bazę danych o nazwie szachy, z zestawem polskich znaków (np. utf8_unicode_ci)
+   −   Z rozpakowanego archiwum zaimportuj tabelę z pliku szachy.sql do utworzonej bazy
+   −   Wykonaj zrzut ekranu po imporcie. Zapisz zrzut w formacie PNG pod nazwą import. Nie kadruj zrzutu.
+       Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+       widoczne elementy wskazujące na poprawnie wykonany import tabel
+   −   Wykonaj zapytania SQL działające na bazie szachy. Zapytania zapisz w pliku kwerendy.txt. Wykonaj
+       zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie PNG i nadaj im
+       nazwy kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora z widocznym paskiem
+       zadań
+           − Zapytanie 1: wybierające jedynie pseudonim, tytuł, ranking i klasę dla rankingów większych
+              od 2787, posortowane malejąco według rankingu
+           − Zapytanie 2: wybierające losowo dokładnie dwa rekordy złożone z pól pseudonim i klasa
+              z tabeli zawodnicy
+           −   Zapytanie 3: aktualizujące dane w kolumnie klasa. Klasa „4A” jest aktualizowana do „5A”
+           −   Zapytanie 4: wybierające dla zawodników z niepustym tytułem jedynie pseudonim i datę
+               zdobycia oraz obliczające ile minęło dni od daty zdobycia tytułu do dnia dzisiejszego.
+               Obliczona liczba dni powinna być zapisana pod nazwą kolumny (aliasem) „dni”
+                                               Strona 2 z 5
+Witryna internetowa
+
+
+
+
+                               Ilustracja 2. Wygląd witryny internetowej
+
+Cechy grafiki:
+   − Nazwa pliku logo.png
+   − Tło przezroczyste
+   − Grafika powstała z połączenia plików board.jpg i chess.jpg w ten sposób, że figury zostały wklejone
+      na szachownicę w miejscu zgodnym z ilustracją 2
+   −   Grafika przeskalowana z zachowaniem proporcji do szerokości 320 px
+
+Cechy witryny:
+   − Składa się ze strony o nazwie szachy.php
+   − Zapisana w języku HTML5
+   − Zadeklarowany polski język zawartości witryny
+   −   Jawnie zastosowany właściwy standard kodowania polskich znaków
+   −   Tytuł strony „KOŁO SZACHOWE” widoczny na karcie przeglądarki
+   −   Arkusz stylów w pliku o nazwie styles.css prawidłowo połączony z kodem strony
+   −   Podział strony na bloki: nagłówkowy, poniżej lewy i prawy, na dole blok stopki. Podział zrealizowany
+       za pomocą semantycznych znaczników sekcji języka HTML5 tak, aby po uruchomieniu w
+       przeglądarce wygląd układu bloków był zgodny z ilustracją 2
+   −   Zawartość bloku nagłówkowego:
+       − Nagłówek drugiego stopnia o treści: „Koło szachowe gambit piona”. Pochylenie jest realizowane
+           za pomocą znacznika semantycznego oznaczającego tekst uwypuklony
+   −   Zawartość bloku lewego:
+       −  Nagłówek czwartego stopnia o treści: „Polecane linki”
+       −  Lista punktowana (nieuporządkowana) o elementach: kwerenda1, kwerenda2, kwerenda3,
+          kwerenda4, które są odnośnikami do plików zawierających odpowiadające im zrzuty ekranu
+       − Grafika logo.png z tekstem alternatywnym o treści: „Logo koła”
+   −   Zawartość bloku prawego:
+       −   Nagłówek trzeciego stopnia o treści: „Najlepsi gracze naszego koła”
+                                               Strona 3 z 5
+       −  Tabela o pięciu kolumnach z wierszem o komórkach nagłówkowych: Pozycja, Pseudonim, Tytuł,
+          Ranking, Klasa. Wypełniona przez skrypt 1
+       − Formularz zawierający przycisk z tekstem „Losuj nową parę graczy”, którego wciśnięcie
+          powoduje wykonanie skryptu 2
+       − Paragraf zawierający tekst, który należy przekopiować z pliku legenda.txt z wypakowanego
+          archiwum
+   −   Zawartość stopki: paragraf o treści „Stronę wykonał: ”, dalej wstawiony numer zdającego
+
+
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie styles.css. W tabeli 2 zawarto pomoc do
+niektórych właściwości CSS. Cechy formatowania CSS, działające na stronie:
+    − Domyślnie dla wszystkich selektorów: krój czcionki Helvetica
+    − Wspólne dla bloku nagłówkowego i stopki: kolor tła #FFD966, biały kolor czcionki, marginesy
+        wewnętrzne 20 px, wyrównanie tekstu do środka, cień tekstu z przesunięciem w poziomie i pionie o
+        5 px, promieniem rozmycia 10 px i czarnym kolorem
+    − Dodatkowo dla bloku stopki: rozmiar czcionki 120%
+    − Dla bloku lewego: kolor tła #FFD966, szerokość 25%, wysokość 450 px
+    − Dla bloku prawego: kolor tła #C5E0B4, szerokość 75%, wysokość 450 px, wyrównanie tekstu do
+        środka, cień wewnętrzny bez przesunięcia w obu osiach (wartość 0), z promieniem rozmycia 15 px i
+        czarnym kolorem
+    − Wspólne dla tabeli, komórek nagłówkowych i zwykłych komórek: obramowanie o szerokości 1 px
+        linią ciągłą czarną, połączone linie tabeli
+    − Dodatkowo dla tabeli: marginesy zewnętrzne automatycznie wyliczane przez przeglądarkę,
+        szerokość 70%
+   −   Dla selektora listy punktowanej: typ punktora kwadrat, wysokość wiersza (interlinia) 1.5
+   −   Dla selektora odnośnika i selektora nagłówka czwartego stopnia: kolor czcionki SeaGreen
+
+Uwaga: styl CSS listy punktowanej, odnośnika i nagłówka czwartego stopnia należy zdefiniować wyłącznie
+przy pomocy selektora tego znacznika. Jest to uwarunkowane projektem późniejszej rozbudowy witryny.
+
+Skrypt połączenia z bazą
+W tabeli 1 zamieszczono wybrane funkcje PHP do obsługi bazy danych. Wymagania dotyczące skryptów:
+   − Napisane w języku PHP
+   −   Należy stosować znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim
+   −   Łączą się z serwerem bazodanowym na localhost, użytkownik root bez hasła, baza danych o nazwie
+       szachy
+   −   Skrypt 1
+       − Wysyła do bazy danych zapytanie 1
+       −   W każdym wierszu tabeli wpisywany jest obliczony przez skrypt kolejny numer wiersza
+           począwszy od 1 oraz zwrócone zapytaniem pola kolejnego rekordu
+   −   Skrypt 2
+       − Wysyła do bazy danych zapytanie 2
+       − W nagłówku czwartego stopnia wyświetla oba pobrane rekordy oddzielając je spacją
+   −   Na końcu zamykane jest połączenie z serwerem
+
+
+
+                                              Strona 4 z 5
+Tabela 1. Wybór funkcji języka PHP do obsługi bazy MySQL i MariaDB
+            Funkcje biblioteki mysqli                            Zwracana wartość
+ mysqli_connect(serwer, użytkownik,              id połączenia lub FALSE, gdy niepowodzenie
+ hasło, nazwa_bazy)
+ mysqli_select_db(id_polaczenia,                 TRUE/FALSE w zależności od stanu operacji
+ nazwa_bazy)
+ mysqli_error(id_polaczenia)                     Tekst komunikatu błędu
+ mysqli_close(id_polaczenia)                     TRUE/FALSE w zależności od stanu operacji
+ mysqli_query(id_polaczenia,                     Wynik zapytania
+ zapytanie)
+ mysqli_fetch_row(wynik_zapytania)               Tablica numeryczna odpowiadająca wierszowi
+                                                 zapytania
+ mysqli_fetch_array(wynik_zapytania)             Tablica zawierająca kolejny wiersz z podanych
+                                                 w wyniku zapytania lub FALSE, jeżeli nie ma więcej
+                                                 wierszy w wyniku zapytania
+ mysqli_num_rows(wynik_zapytania)                Liczba wierszy w podanym zapytaniu
+ mysqli_num_fields(wynik_zapytania)              Liczba kolumn w podanym zapytaniu
+ isset($zmienna)                                 Sprawdzenie, czy $zmienna istnieje
+
+Tabela 2. Wybrane właściwości CSS
+                                      Właściwość                                             Opis
+ box-shadow: h-offset v-offset blur spread color inset;                                   cień bloku
+ The inset parameter changes the shadow from an outer shadow (outset) to an inner shadow.
+ text-shadow: h-shadow v-shadow blur-radius color;                                        cień tekstu
+
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego, powinny znajdować się pliki: import.png,
+kw1.png, kw2.png, kw3.png, kw4.png, kwerendy.txt, logo.png, przeglądarka.txt, styles.css, szachy.php,
+ewentualnie inne przygotowane pliki. Po nagraniu płyty sprawdź poprawność jej odczytu. Opisz płytę
+numerem zdającego i pozostaw zapakowaną w pudełku na stanowisku wraz z arkuszem egzaminacyjnym.
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie podlegać będzie 5 rezultatów:
+   − operacje na bazie danych,
+   − zawartość witryny internetowej,
+   −   działanie witryny internetowej,
+   −   styl CSS witryny internetowej,
+   −   skrypt połączenia z bazą.
+
+
+
+
+                                              Strona 5 z 5
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD opisaną numerem PESEL                                   ,
+której jakość nagrania została przeze mnie sprawdzona.
+
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD, opisana numerem PESEL zdającego.
+
+
+                                                               ……………………………........…
+                                                               Czytelny podpis Przewodniczącego ZN
+

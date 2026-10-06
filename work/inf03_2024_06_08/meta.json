@@ -1,0 +1,21 @@
+{
+  "password": "_Rejestr@cja_",
+  "db": "klienci",
+  "required_files": [
+    "kwerendy.txt",
+    "obraz.png",
+    "przeglądarka.txt",
+    "rejestracja.html",
+    "styl.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "rejestracja.html"
+  ],
+  "code": "inf03_2024_06_08",
+  "pdf": "inf03_arkusze/inf03_2024_06_08_arkusz.pdf",
+  "sql_files": [
+    "materialy/baza.sql"
+  ],
+  "problems": []
+}

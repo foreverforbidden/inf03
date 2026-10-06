@@ -1,0 +1,44 @@
+{
+  "code": "inf03_2024_06_08",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT imie, nazwisko FROM osoby WHERE YEAR(dataUr) > 2000",
+      "ok": true,
+      "rows": 3,
+      "preview": "+---------+------------+\n| imie    | nazwisko   |\n+---------+------------+\n| Anna    | Kowalewska |\n| Ewa     | Kowalska   |\n| Andrzej | Nowak      |\n+---------+------------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT DISTINCT miasto FROM adresy ORDER BY miasto ASC",
+      "ok": true,
+      "rows": 4,
+      "preview": "+----------+\n| miasto   |\n+----------+\n| Kraków   |\n| Poznań   |\n| Warszawa |\n| Wrocław  |\n+----------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT osoby.imie, osoby.nazwisko, telefony.numer FROM osoby JOIN telefony ON osoby.id = telefony.Osoby_id",
+      "ok": true,
+      "rows": 9,
+      "preview": "+----------+---------------+-----------+\n| imie     | nazwisko      | numer     |\n+----------+---------------+-----------+\n| Anna     | Kowalewska    | 111222333 |\n| Anna     | Kowalewska    | 223344556 |\n| Andrzej  | Nowak         | 222333444 |\n| Ewa      | Kowalska      | 333444555 |\n| Grzegorz | Wojciechowski | 444555666 |\n| Joanna   | Nowakowska    | 666665555 |"
+    },
+    {
+      "n": 4,
+      "sql": "ALTER TABLE adresy ADD numerMieszkania INT AFTER numer",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "rejestracja.html",
+      "status": 200,
+      "bytes": 1988
+    }
+  ],
+  "checked_at": "2026-10-06 18:42:51"
+}

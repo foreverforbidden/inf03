@@ -1,0 +1,49 @@
+{
+  "code": "inf03_2024_01_04",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT DISTINCT wpis FROM zadania WHERE dataZadania BETWEEN '2020-07-01' AND '2020-07-07' AND wpis <> ''",
+      "ok": true,
+      "rows": 2,
+      "preview": "+-------------------------+\n| wpis                    |\n+-------------------------+\n| Projekt z programowania |\n| Weterynarz - Brutus     |\n+-------------------------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT dataZadania, wpis FROM zadania WHERE miesiac = 'lipiec'",
+      "ok": true,
+      "rows": 31,
+      "preview": "+-------------+-------------------------+\n| dataZadania | wpis                    |\n+-------------+-------------------------+\n| 2020-07-01  | Projekt z programowania |\n| 2020-07-02  | Projekt z programowania |\n| 2020-07-03  |                         |\n| 2020-07-04  |                         |\n| 2020-07-05  |                         |\n| 2020-07-06  |                         |"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT miesiac, wpis FROM zadania WHERE wpis LIKE 'S%'",
+      "ok": true,
+      "rows": 3,
+      "preview": "+----------+-------------+\n| miesiac  | wpis        |\n+----------+-------------+\n| lipiec   | Szczepienie |\n| sierpien | Sopot       |\n| sierpien | Sopot       |\n+----------+-------------+"
+    },
+    {
+      "n": 4,
+      "sql": "UPDATE zadania SET wpis = 'Wycieczka nad morze' WHERE dataZadania = '2020-07-18'",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "kalendarz.php",
+      "status": 200,
+      "bytes": 2692
+    },
+    {
+      "page": "sierpien.html",
+      "status": 200,
+      "bytes": 174
+    }
+  ],
+  "checked_at": "2026-10-06 18:36:45"
+}

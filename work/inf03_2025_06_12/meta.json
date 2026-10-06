@@ -1,0 +1,25 @@
+{
+  "password": "_PrzychoDnia%",
+  "db": "medica",
+  "required_files": [
+    "kwerendy.txt",
+    "medica.php",
+    "obraz1.jpg",
+    "obraz2.png",
+    "obraz3.png",
+    "opis.html",
+    "przeglądarka.txt",
+    "styl.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "medica.php",
+    "opis.html"
+  ],
+  "code": "inf03_2025_06_12",
+  "pdf": "inf03_arkusze/inf03_2025_06_12_arkusz.pdf",
+  "sql_files": [
+    "materialy/baza.sql"
+  ],
+  "problems": []
+}

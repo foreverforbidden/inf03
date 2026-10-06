@@ -1,0 +1,25 @@
+{
+  "password": "PaLiWo5&",
+  "db": "samochody",
+  "required_files": [
+    "home.png",
+    "kwerendy.txt",
+    "obliczenia.html",
+    "przeglądarka.txt",
+    "samochod.png",
+    "stacja.html",
+    "styl2.css",
+    "znak.png"
+  ],
+  "image_count": null,
+  "pages": [
+    "obliczenia.html",
+    "stacja.html"
+  ],
+  "code": "inf03_2022_06_02",
+  "pdf": "inf03_arkusze/inf03_2022_06_02_arkusz.pdf",
+  "sql_files": [
+    "materialy/baza.sql"
+  ],
+  "problems": []
+}

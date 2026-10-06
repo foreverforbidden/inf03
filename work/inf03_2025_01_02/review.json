@@ -1,0 +1,1 @@
+{"code":"inf03_2025_01_02","pass":true,"score":"45/45","fails":[],"na":["zrzuty ekranu (import, kw1-kw4, kolor.png)","utworzenie bazy w phpMyAdmin / import","nagranie płyty","weryfikacja rozmiaru czcionki 27 i pogrubienia w grafice (tylko wizualnie)"],"notes":"verify.json bez failów; kwerendy poprawne; CSS, HTML i JS zgodne z treścią; grafiki 400x50 przezroczyste i 500x70."}

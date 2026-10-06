@@ -1,0 +1,24 @@
+{
+  "password": "RezErw@cjE",
+  "db": "wyprawy",
+  "required_files": [
+    "1.jpg",
+    "2.jpg",
+    "3.jpg",
+    "kwerendy.txt",
+    "osoba.png",
+    "przeglądarka.txt",
+    "styl.css",
+    "wycieczki.html"
+  ],
+  "image_count": null,
+  "pages": [
+    "wycieczki.html"
+  ],
+  "code": "inf03_2026_06_04",
+  "pdf": "inf03_arkusze/inf03_2026_06_04_arkusz.pdf",
+  "sql_files": [
+    "materialy/wyprawy.sql"
+  ],
+  "problems": []
+}

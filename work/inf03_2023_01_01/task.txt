@@ -1,0 +1,251 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Oznaczenie kwalifikacji: INF.03
+Numer zadania: 01
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+                                                                              Miejsce na naklejkę z numerem
+Numer PESEL zdającego*                                                          PESEL i z kodem ośrodka
+
+
+
+
+Czas trwania egzaminu: 150 minut.                                                        INF.03-01-23.01-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2023                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL
+          i naklej naklejkę z numerem PESEL i z kodem ośrodka.
+    2.    Na KARCIE OCENY w oznaczonym miejscu przyklej naklejkę z numerem PESEL oraz wpisz:
+          − swój numer PESEL*,
+          − oznaczenie kwalifikacji,
+          − numer zadania,
+          − numer stanowiska.
+    3.    Sprawdź, czy arkusz egzaminacyjny zawiera 5 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    4.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    5.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    6.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    7.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami oraz KARTĘ
+          OCENY na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu
+          nadzorującego.
+    8.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania egzaminu.
+
+                                                                                               Powodzenia!
+* w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+
+
+
+
+Układ graficzny
+© CKE 2020
+Zadanie egzaminacyjne
+
+UWAGA: katalog z rezultatami pracy oraz płytę należy opisać numerem zdającego, którym został podpisany
+arkusz, czyli numerem PESEL lub w przypadku jego braku numerem paszportu. Dalej w zadaniu numer ten
+jest nazwany numerem zdającego.
+
+Wykonaj aplikację internetową portalu o farbach, wykorzystując pakiet XAMPP oraz edytor zaznaczający
+składnię.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się archiwum
+ZIP o nazwie zad1.zip zabezpieczone hasłem: 2ws3ed!#
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego.
+Rozpakowane pliki należy umieścić w tym folderze. Po skończonej pracy wszystkie wyniki należy zapisać
+w tym folderze.
+
+Operacje na bazie danych
+Na obrazie 1 przedstawiono dwie tabele z bazy danych malarz. Tabele połączone są relacją 1..n poprzez
+pola id_farby
+
+
+
+
+                                 Obraz 1. Tabele bazy danych malarz
+
+Za pomocą narzędzia phpMyAdmin wykonaj operacje na bazie danych:
+   ‒ Utwórz bazę danych o nazwie malarz
+   ‒ Do bazy malarz zaimportuj tabele z pliku malarz.sql z rozpakowanego archiwum
+   ‒ Wykonaj zrzut ekranu po imporcie. Zrzut zapisz w formacie PNG i nazwij import. Nie kadruj zrzutu.
+      Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+      widoczne elementy wskazujące na poprawnie wykonany import tabel.
+   ‒ Wykonaj zapytania SQL działające na bazie malarz. Zapytania zapisz w pliku kwerendy.txt. Wykonaj
+      zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie JPEG i nadaj im
+      nazwy kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora z widocznym paskiem
+      zadań.
+      ‒ Zapytanie 1: wybierające jedynie cenę i pojemność czerwonej puszki farby
+      ‒ Zapytanie 2: wybierające jedynie kolor oraz cenę jednego litra farby, wyliczoną z pól cena
+          i pojemnosc dla wszystkich farb. Cena jednego litra farby powinna być podpisana jako „cena
+          jednostkowa”
+      ‒ Zapytanie 3: wybierające jedynie nazwy kolorów farb i liczbę puszek dla pomieszczenia
+          o identyfikatorze 3
+      ‒ Zapytanie 4: tworzące widok (perspektywę) o nazwie pomieszczenie1, w którym znajdują się
+          jedynie pola id_sciany, id_farby, liczba_puszek dla pomieszczenia o id równym 1. Aby
+          udokumentować poprawność wykonania zapytania na zrzucie ekranu o nazwie kw4 powinien
+          znajdować się otwarty widok pomieszczenie1 z drzewa Widoki
+
+Grafika
+   – Plik obraz.png należy przeskalować do rozmiarów 300 px na 300 px oraz zastosować filtr powodujący
+       efekt pikselizacji, widoczny na obrazie 2
+
+
+
+
+                                             Strona 2 z 5
+Witryna internetowa
+
+
+
+
+                                   Obraz 2. Podstrona mieszamy.html
+
+Cechy witryny:
+   – Składa się z podstron mieszamy.html i cena.html. Podstrony różnią się jedynie blokiem środkowym.
+
+Cechy wspólne obu podstron:
+   ‒ Zapisane w języku HTML 5
+   ‒ Jawnie zastosowany właściwy standard kodowania polskich znaków
+   ‒ Zadeklarowany język witryny: polski
+   ‒ Tytuł strony widoczny na karcie przeglądarki: „malarz”
+   ‒ Arkusz stylów w pliku o nazwie styl_1.css prawidłowo połączony z kodem strony
+   ‒ Podział strony na bloki: na górze blok banera, poniżej trzy bloki: lewy, środkowy i prawy, na dole blok
+      stopki. Podział zrealizowany za pomocą znaczników sekcji tak, aby po uruchomieniu w przeglądarce
+      wygląd układu bloków był zgodny z obrazem 2
+   ‒ Zawartość banera: nagłówek pierwszego stopnia o treści: „Malowanie pokoi i biur”
+   ‒ Zawartość bloku lewego:
+       ‒ Nagłówek drugiego stopnia o treści: „Menu”
+       ‒ Lista punktowana (nieuporządkowana) z elementami:
+           ‒ Odnośnik o treści: „Mieszamy”, prowadzący do strony mieszamy.html
+           ‒ Odnośnik o treści: „Wyceniamy” prowadzący do strony cena.html
+   ‒ Zawartość bloku prawego:
+       ‒ Obraz o nazwie obraz.png i tekście alternatywnym: „Próbki farb”
+   ‒ Zawartość stopki:
+          ‒ nagłówek trzeciego stopnia o treści: „MALARZ”
+          ‒ paragraf (akapit) „Stronę opracował:”, dalej wstawiony numer zdającego
+
+Zawartość bloku środkowego podstrony mieszamy.html
+   ‒ nagłówek drugiego stopnia o treści: „Barwy i ich pochodne”
+   ‒ tabela o trzech kolumnach i trzech wierszach, której treść jest zgodna z obrazem 2. Pierwszy wiersz
+      zawiera komórki nagłówkowe, z czego komórka pierwsza i druga są połączone.
+
+Zawartość bloku środkowego podstrony cena.html – obraz 3:
+   ‒ Nagłówek drugiego stopnia o treści: „Zapotrzebowanie na farbę”
+   ‒ Pole edycyjne typu numerycznego poprzedzone napisem „Powierzchnia malowania (m2):”.
+      Oznaczenie metra kwadratowego zapisane z indeksem górnym
+   ‒ Przycisk „Policz”, po jego wybraniu uruchamia się skrypt
+
+                                               Strona 3 z 5
+      Obraz 3. Fragment bloku środkowego podstrony cena.html, stan po wciśnięciu przycisku
+
+Styl CSS
+Styl CSS zdefiniowany w całości w zewnętrznym pliku o nazwie styl_1.css. Arkusz CSS zawiera
+formatowanie:
+    – Ustawione domyślne wartości dla wszystkich selektorów stylu CSS: krój czcionki Cambria
+    – Wspólne dla banera i stopki: kolor tła: #829EB9, biały kolor czcionki, tekst wyśrodkowany, marginesy
+       wewnętrzne: 10 px
+    – Wspólne dla bloków lewego i prawego: kolor tła: #B3C6D9, wysokość 400 px, szerokość: 25%,
+       margines wewnętrzny górny: 100 px
+    – Dla bloku środkowego: kolor tła: #E0E9F1, wysokość 400 px, szerokość: 50%, tekst wyśrodkowany,
+       margines wewnętrzny górny: 100 px
+    – Dla selektora tabeli: obramowanie linią ciągłą o szerokości 1 px i kolorze DimGray, szerokość 80%,
+       marginesy zewnętrzne automatycznie wyliczane przez przeglądarkę, obramowanie połączone
+       w jedną linię
+    – Dla selektora komórki tabeli i komórki nagłówkowej: obramowanie linią ciągłą o szerokości 1 px
+       i kolorze DimGray, obramowanie połączone w jedną linię
+    – Gdy kursor myszy znajdzie się na komórce tabeli jej kolor tła zamienia się na SteelBlue a kolor czcionki
+       na biały
+    – Dla selektora obrazu: szerokość 100%, zaokrąglenie rogów 20 px
+
+Uwaga: style CSS dla tabeli, komórki tabeli, komórki nagłówkowej i obrazu należy zdefiniować wyłącznie przy
+pomocy selektora dla znaczników obrazu, tabeli, komórki tabeli i komórki nagłówkowej. Jest to
+uwarunkowane projektem późniejszej rozbudowy witryny.
+
+Skrypt
+Skrypt wykonywany po stronie przeglądarki, na podstronie cena.html ma za zadanie:
+   – Pobrać z pola edycyjnego wielkość powierzchni do pomalowania
+   – Na podstawie pobranej wartości wyliczyć minimalną liczbę puszek wystarczającą do pomalowania tej
+       powierzchni, przy założeniu, że:
+        – Jedna puszka zawiera 1 litr farby
+        – 1 litr farby wystarcza do pomalowania powierzchni 4 m2
+        – Obliczona liczba puszek jest liczbą naturalną, zaokrągloną w górę, np. do pomalowania
+           powierzchni 6 m2, potrzeba 2 puszek, a nie 1,5
+   – Obliczony wynik jest wyświetlony pod przyciskiem i poprzedzony napisem o treści: „Liczba
+       potrzebnych puszek: ” – obraz 3.
+
+
+UWAGA: Po zakończeniu pracy utwórz w folderze z numerem zdającego plik tekstowy o nazwie
+przeglądarka.txt. Zapisz w nim nazwę przeglądarki internetowej, w której weryfikowana była poprawność
+działania witryny.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego powinny się znajdować pliki: cena.html,
+import.png, kw1.jpg, kw2.jpg, kw3.jpg, kw4.jpg, kwerendy.txt, mieszamy.html, obraz.png, przeglądarka.txt,
+styl_1.css, ewentualnie inne przygotowane pliki. Po nagraniu płyty sprawdź poprawność nagrania. Opisz
+płytę numerem zdającego i zapakowaną w pudełku pozostaw na stanowisku wraz z arkuszem
+egzaminacyjnym.
+
+
+
+
+                                                Strona 4 z 5
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie będzie podlegać 5 rezultatów:
+  – operacje na bazie danych,
+  – zawartość witryny internetowej,
+  – działanie witryny internetowej,
+  – styl CSS witryny internetowej,
+  – skrypt.
+
+
+
+Tabela 1. Wybrane pola i metody modelu DOM języka JavaScript
+   Wyszukiwanie elementów                       Zmiana elementów
+   document.getElementById(id)                  element.innerHTML = "nowa zawartość"
+   document.getElementsByTagName(TagName)       element.attribute_name = "nowa wartość"
+   document.getElementsByClassName(ClassName) element.setAttribute(atrybut, wartosc)
+   document.getElementsByName(ElementName)      element.style.property_name = "nowa wartość"
+
+
+  Operacje na elementach dokumentu                Wybrane właściwości obiektu style
+  document.createElement(element)                 backgroundColor color
+  document.removeChild(element)                   fontSize
+  document.appendChild(element)                   fontStyle = "normal | italic | oblique | initial | inherit"
+  document.replaceChild(element)                  fontWeight = "normal | lighter | bold | bolder | value |
+  document.write(text)                            initial | inherit"
+                                                  listStyleType = "circle | decimal | disc | none | square |
+                                                  initial... "
+
+Wybrane zdarzenia HTML
+  Zdarzenia myszy              Zdarzenia klawiatury                 Zdarzenia obiektów
+  onclick                      onkeydown                            onload
+  ondblclick                   onkeypress                           onresize
+  onmouseover                  onkeyup                              onfocusin
+  onmouseout                                                        onfocusout
+
+  Elementy formularzy                             Metody i pola obiektu string (JS)
+  Ważniejsze typy pola input: button, checkbox,   Length
+  number, password, radio, text                   indexOf(text)
+  Inne elementy: select, textarea                 search(text)
+                                                  substr(startIndex, endIndex)
+                                                  replace(textToReplace, newText)
+                                                  toUpperCase()
+                                                  toLowerCase()
+
+
+
+
+                                           Strona 5 z 5
+

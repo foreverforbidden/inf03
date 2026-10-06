@@ -1,0 +1,256 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 08
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+                                                                              Miejsce na naklejkę z numerem
+Numer PESEL zdającego*                                                          PESEL i z kodem ośrodka
+
+
+
+
+Czas trwania egzaminu: 150 minut.                                                         INF.03-08-25.01-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2025                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL
+          i naklej naklejkę z numerem PESEL i z kodem ośrodka.
+    2.    Na KARCIE OCENY w oznaczonym miejscu przyklej naklejkę z numerem PESEL oraz wpisz:
+          − swój numer PESEL*,
+          − oznaczenie kwalifikacji,
+          − numer zadania,
+          − numer stanowiska.
+    3.    Sprawdź, czy arkusz egzaminacyjny zawiera 6 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    4.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    5.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    6.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    7.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami oraz KARTĘ
+          OCENY na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu
+          nadzorującego.
+    8.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania egzaminu.
+
+                                                                                               Powodzenia!
+* w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+
+
+
+
+Układ graficzny
+© CKE 2023
+Zadanie egzaminacyjne
+
+UWAGA: numer, którym został podpisany arkusz egzaminacyjny (PESEL lub w przypadku jego braku numer
+paszportu) jest w zadaniu nazywany numerem zdającego.
+
+Wykonaj aplikację internetową obsługującą mieszalnię farb, wykorzystując edytor grafiki rastrowej, pakiet
+XAMPP oraz edytor zaznaczający składnię.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się
+archiwum 7z o nazwie pliki7 zabezpieczone hasłem: Miesz@nie&F@rB
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego.
+Rozpakowane pliki należy umieścić w tym folderze. Po skończonej pracy wszystkie wyniki należy zapisać
+w tym folderze.
+
+Operacje na bazie danych
+Do wykonania operacji na bazie należy wykorzystać przedstawione na ilustracji 1 tabele. Tabele klienci
+i zamowienia tworzą relację jeden do wielu.
+
+
+
+
+                                         Ilustracja 1. Baza danych
+
+ Za pomocą narzędzia phpMyAdmin wykonaj następujące operacje na bazie danych:
+− Utwórz bazę danych o nazwie mieszalnia, z zestawem polskich znaków (np. utf8_unicode_ci)
+−   Do utworzonej bazy zaimportuj tabele z pliku mieszalnia.sql z rozpakowanego archiwum
+−   Wykonaj zrzut ekranu po imporcie. Zapisz zrzut w formacie JPEG pod nazwą import. Nie kadruj zrzutu.
+    Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+    widoczne elementy wskazujące na poprawnie wykonany import tabel
+−   Wykonaj zapytania SQL działające na bazie mieszalnia. Zapytania zapisz w pliku kwerendy.txt. Wykonaj
+    zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie PNG i nadaj im nazwy
+    kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora, z widocznym paskiem zadań
+    −   Zapytanie 1: zliczające liczbę klientów mieszalni farb
+    −   Zapytanie 2: wybierające jedynie nazwiska, imiona klientów oraz odpowiadające im numery
+        zamówień (pole id), kody kolorów, pojemności i daty odbioru zamówień posortowane rosnąco po
+        dacie odbioru. Należy posłużyć się relacją
+    −   Zapytanie 3: wybierające jedynie nazwiska, imiona klientów oraz odpowiadające im numery
+        zamówień (pole id), kody kolorów, pojemności i daty odbioru zamówień posortowane rosnąco po
+        dacie odbioru, jedynie dla zamówień, w których data odbioru jest od 5 listopada do 7 listopada 2021
+        roku. Należy posłużyć się relacją
+    −   Zapytanie 4: wybierające jedynie imiona i nazwiska kobiet, które są klientami mieszalni farb
+
+                                                Strona 2 z 6
+Grafika
+Na potrzeby strony należy przygotować grafikę z banerem o nazwie baner.png i cechach:
+ − Grafika z pliku tlo.jpg, wypakowanego z archiwum, w całości stanowi tło banera
+ − Szerokość banera 1000 px, wysokość 270 px
+ − Zawartość pliku nazwa.png, wypakowanego z archiwum, stanowi pierwszy plan banera. Napis musi
+     być widoczny w całości
+Na potrzeby strony należy przygotować favicon o nazwie fav.png i cechach:
+ −   Rozmiary 64 px na 64 px
+ −   Tło przezroczyste
+ −   Z grafiki fav.jpg należy wyciąć koło, i przygotować tak aby wypełniało cały obraz favicona
+
+
+
+
+                                                                                Ilustracja 3. Favicon
+                        Ilustracja 2. Baner strony
+
+
+Witryna internetowa
+
+
+
+
+                        Ilustracja 4. Wygląd witryny, kursor na wierszu tabeli
+
+
+
+
+                                               Strona 3 z 6
+Cechy witryny:
+   −   Składa się ze strony o nazwie index.php
+   −   Zapisana w języku HTML5
+   −   Jawnie zastosowany właściwy standard kodowania polskich znaków
+   −   Zadeklarowany polski język zawartości witryny
+   −   Tytuł strony „Mieszalnia farb” oraz grafika fav.png umieszczona jako favicon witryny, widoczne na
+       karcie przeglądarki
+   −   Arkusz stylów w pliku o nazwie style.css prawidłowo połączony z kodem strony
+   −   Podział strony na znajdujące się jeden pod drugim bloki: nagłówkowy, formularz, główny, stopka.
+       Podział zrealizowany za pomocą semantycznych znaczników sekcji języka HTML5 tak, aby po
+       uruchomieniu w przeglądarce wygląd układu bloków był zgodny z ilustracją 4
+   −   Zawartość bloku nagłówkowego: obraz z pliku baner.png z tekstem alternatywnym „Mieszalnia farb”
+   −   Zawartość bloku formularza:
+       − Formularz wysyłający dane metodą bezpieczną do tego samego pliku, o elementach:
+             −   Pole edycyjne przeznaczone do wybrania daty, poprzedzone etykietą: „Data odbioru od: ”
+             −   Pole edycyjne przeznaczone do wybrania daty, poprzedzone etykietą: „do: ”
+             −   Przycisk „Wyszukaj” wysyłający dane z formularza do skryptu
+   −   Zawartość bloku głównego:
+       − Tabela o sześciu kolumnach. Pierwszy wiersz zawiera komórki nagłówkowe: „Nr zamówienia”,
+          „Nazwisko”, „Imię”, „Kolor”, „Pojemność [ml]”, „Data odbioru”. Zawartość tabeli jest generowana
+          skryptem
+   −   Zawartość bloku stopki:
+       − Nagłówek trzeciego stopnia o treści: „Egzamin INF.03”
+       − Akapit z napisem „Autor: ”, dalej wstawiony numer zdającego
+
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie style.css. Cechy formatowania CSS
+działające na stronie:
+    − Dla ciała strony: krój czcionki Georgia, tekst wyśrodkowany, kolor tła LightSteelBlue
+    − Dla bloku formularza: margines wewnętrzny górny 20 px
+    − Dla bloku głównego: pasek przewijania pojawiający się tylko w przypadku, gdy treść nie mieści się
+        w bloku, marginesy wewnętrzne 30 px, wysokość 400 px
+   −   Dla bloku stopki: kolor tła Orange, marginesy wewnętrzne 10 px
+   −   Dla selektora obrazu: szerokość 80%
+   −   Dla selektora tabeli: szerokość 70%, marginesy zewnętrzne automatycznie wyliczane przez
+       przeglądarkę, obramowana linią kropkowaną o szerokości 1 px i kolorze Maroon
+   −   Gdy kursor znajdzie się na wierszu tabeli kolor tła zmienia się na SteelBlue, a kolor czcionki na biały
+
+Uwaga: styl CSS obrazu i tabeli należy zdefiniować wyłącznie przy pomocy selektora tego znacznika. Jest
+to uwarunkowane projektem późniejszej rozbudowy witryny.
+
+
+
+
+                                                 Strona 4 z 6
+Skrypt połączenia z bazą
+W tabeli 1 zamieszczono wybrane funkcje PHP do obsługi bazy danych. Wymagania dotyczące skryptu:
+   − Napisany w języku PHP
+   − Należy stosować znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim
+   − Łączy się z serwerem bazodanowym na localhost, użytkownik root bez hasła, baza danych o nazwie
+       mieszalnia
+   − Gdy nie wypełniono formularza, wysyła zapytanie 2, w przeciwnym wypadku wysyła zmodyfikowane
+       zapytanie 3, w ten sposób, że do zapytania pobierane są daty z formularza
+   − Poszczególne wiersze zwrócone zapytaniem są wyświetlane w odpowiednich kolumnach tabeli,
+       w bloku głównym
+   − Tło komórek w kolumnie z kolorem farby ustawiane jest zgodnie z kodem szesnastkowym koloru
+       zapisanym dla tego wiersza w bazie
+   − Na końcu skrypt zamyka połączenie z serwerem
+
+
+
+
+              Ilustracja 5. Wygląd witryny, wybrano daty od 2021-11-06 do 2021-11-10
+
+
+
+Tabela 1. Wybór funkcji języka PHP do obsługi bazy MySQL i MariaDB
+          Funkcje biblioteki MySQLi                              Zwracana wartość
+ mysqli_connect(serwer, użytkownik,
+ hasło, nazwa_bazy)                                id połączenia lub FALSE, gdy niepowodzenie
+ mysqli_select_db(id_polaczenia,
+ nazwa_bazy)                                       TRUE/FALSE w zależności od stanu operacji
+ mysqli_error(id_polaczenia)                       Tekst komunikatu błędu
+ mysqli_close(id_polaczenia)                       TRUE/FALSE w zależności od stanu operacji
+ mysqli_query(id_polaczenia, zapytanie)            Wynik zapytania
+ mysqli_fetch_row(wynik_zapytania)                 Tablica numeryczna odpowiadająca wierszowi
+                                                   zapytania
+                                                   Tablica zawierająca kolejny wiersz z podanych
+ mysqli_fetch_array(wynik_zapytania)               w wyniku zapytania lub FALSE, jeżeli nie ma
+                                                   więcej wierszy w wyniku zapytania
+ mysqli_num_rows(wynik_zapytania)                  Liczba wierszy w podanym zapytaniu
+ mysqli_num_fields(wynik_zapytania)                Liczba kolumn w podanym zapytaniu
+ isset($zmienna)                                   Sprawdzenie, czy $zmienna istnieje
+
+
+
+
+                                           Strona 5 z 6
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego, powinny znajdować się pliki: baner.png,
+fav.png, import.jpg, index.php, kw1.png, kw2.png, kw3.png, kw4.png, kwerendy.txt, przeglądarka.txt,
+style.css, ewentualnie inne przygotowane pliki. Po nagraniu płyty sprawdź poprawność jej odczytu. Opisz
+płytę numerem zdającego i pozostaw zapakowaną w pudełku na stanowisku wraz z arkuszem
+egzaminacyjnym.
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie podlegać będzie 5 rezultatów:
+   −   operacje na bazie danych,
+   −   zawartość witryny internetowej,
+   −   działanie witryny internetowej,
+   −   styl CSS witryny internetowej,
+   −   skrypt połączenia z bazą.
+
+
+
+
+                                              Strona 6 z 6
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD opisaną numerem PESEL                                   ,
+której jakość nagrania została przeze mnie sprawdzona.
+
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD, opisana numerem PESEL zdającego.
+
+
+                                                               ……………………………........…
+                                                               Czytelny podpis Przewodniczącego ZN
+

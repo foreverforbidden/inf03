@@ -1,0 +1,8 @@
+{
+  "code": "inf03_2024_06_09",
+  "pass": true,
+  "score": "42/42",
+  "fails": [],
+  "na": ["import.png", "kw1-kw4.jpg (zrzuty ekranu)", "utworzenie bazy w phpMyAdmin", "nagranie płyty"],
+  "notes": "Wszystkie kwerendy dają poprawne wyniki. Kwerenda 4 ma dodatkowy GRANT, co jest dopuszczalne. 6.jpg skadrowane do 640x427 bez czarnych kresek. Układ, CSS i skrypt zgodne z treścią."
+}

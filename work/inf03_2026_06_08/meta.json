@@ -1,0 +1,26 @@
+{
+  "password": "WypożyczalniaGierWideo",
+  "db": "bazagier",
+  "required_files": [
+    "index.html",
+    "onas.html",
+    "gra1.jpg",
+    "gra10.jpg",
+    "gra10.png",
+    "kwerendy.txt",
+    "skrypty.js",
+    "styl_gier.css",
+    "przeglądarka.txt"
+  ],
+  "image_count": null,
+  "pages": [
+    "index.html",
+    "onas.html"
+  ],
+  "code": "inf03_2026_06_08",
+  "pdf": "inf03_arkusze/inf03_2026_06_08_arkusz.pdf",
+  "sql_files": [
+    "materialy/bazagier.sql"
+  ],
+  "problems": []
+}

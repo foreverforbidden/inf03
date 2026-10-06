@@ -1,0 +1,21 @@
+{
+  "password": "Sz4chm4t!",
+  "db": "szachy",
+  "required_files": [
+    "kwerendy.txt",
+    "logo.png",
+    "przeglądarka.txt",
+    "styles.css",
+    "szachy.php"
+  ],
+  "image_count": null,
+  "pages": [
+    "szachy.php"
+  ],
+  "code": "inf03_2025_01_10",
+  "pdf": "inf03_arkusze/inf03_2025_01_10_arkusz.pdf",
+  "sql_files": [
+    "materialy/szachy.sql"
+  ],
+  "problems": []
+}

@@ -1,0 +1,229 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Oznaczenie kwalifikacji: INF.03
+Numer zadania: 05
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+                                                                              Miejsce na naklejkę z numerem
+Numer PESEL zdającego*                                                          PESEL i z kodem ośrodka
+
+
+
+
+Czas trwania egzaminu: 150 minut.                                                        INF.03-05-23.01-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2023                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL
+          i naklej naklejkę z numerem PESEL i z kodem ośrodka.
+    2.    Na KARCIE OCENY w oznaczonym miejscu przyklej naklejkę z numerem PESEL oraz wpisz:
+          − swój numer PESEL*,
+          − oznaczenie kwalifikacji,
+          − numer zadania,
+          − numer stanowiska.
+    3.    Sprawdź, czy arkusz egzaminacyjny zawiera 5 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    4.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    5.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    6.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    7.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami oraz KARTĘ
+          OCENY na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu
+          nadzorującego.
+    8.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania egzaminu.
+
+                                                                                               Powodzenia!
+* w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+
+
+
+
+Układ graficzny
+© CKE 2020
+Zadanie egzaminacyjne
+
+UWAGA: katalog z rezultatami pracy oraz płytę należy opisać numerem zdającego, którym został podpisany
+arkusz, czyli numerem PESEL lub w przypadku jego braku numerem paszportu. Dalej w zadaniu numer ten
+jest nazwany numerem zdającego.
+
+Wykonaj aplikację internetową kalendarza, wykorzystując pakiet XAMPP oraz edytor zaznaczający składnię.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się archiwum
+ZIP o nazwie zad5.zip zabezpieczone hasłem: kaL(end)arz%
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego.
+Rozpakowane pliki należy umieścić w tym folderze. Po skończonej pracy wszystkie wyniki należy zapisać
+w tym folderze.
+
+Operacje na bazie danych
+Do wykonania zadania należy użyć tabeli zadania przedstawionej na obrazie 1.
+
+
+
+
+                                       Obraz 1. Tabela zadania
+
+Za pomocą narzędzia phpMyAdmin wykonaj podane operacje na bazie danych:
+  – Utwórz bazę danych o nazwie kalendarz
+  – Do bazy kalendarz zaimportuj tabele z pliku baza5.sql z rozpakowanego archiwum
+  – Wykonaj zrzut ekranu po imporcie. Zrzut zapisz w formacie PNG pod nazwą import. Nie kadruj zrzutu.
+     Zrzut powinien obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+     widoczne elementy wskazujące na poprawnie wykonany import tabel
+  – Wykonaj zapytania SQL działające na bazie kalendarz. Zapytania zapisz w pliku kwerendy.txt. Wykonaj
+     zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie JPEG i nadaj im
+     nazwy kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora, z widocznym paskiem
+     zadań
+      − Zapytanie 1: wybierające jedynie pola dataZadania i wpis dla zadań, z miesiąca sierpnia
+      − Zapytanie 2: wybierające jedynie pola miesiac i rok dla zadania z dnia 7 sierpnia 2020 r.
+      − Zapytanie 3: wybierające jedynie nazwę miesiąca oraz liczące dla każdego miesiąca ile jest
+         wpisów rozpoczynających się od słowa „Weterynarz” w kolumnie wpis
+      − Zapytanie 4: aktualizujące pole wpis dla zadania z datą 9 sierpnia 2020, nowy wpis to „Wycieczka:
+         Zalew Mietkowski”
+
+
+
+
+                                              Strona 2 z 5
+Witryna internetowa
+
+
+
+
+               Obraz 2. Witryna internetowa, wysłano formularz z wartością „zakupy”,
+                           kursor znajduje się na zmodyfikowanym bloku
+
+Grafika:
+ – Plik logo2.png, wypakowany z archiwum, należy przeskalować dokładnie do wymiarów 120 px na
+      120 px
+
+Cechy witryny:
+ – Składa się ze strony o nazwie organizer.php
+ – Zapisana w języku HTML 5
+ – Jawnie zastosowany właściwy standard kodowania polskich znaków
+ – Zadeklarowany język witryny: polski
+ – Tytuł strony widoczny na karcie przeglądarki: „Sierpniowy kalendarz”
+ – Arkusz stylów w pliku o nazwie styl5.css prawidłowo połączony z kodem strony
+ – Podział strony na bloki: trzy bloki banera, poniżej blok główny, w którym znajdują się generowane
+    skryptem bloki kalendarza, na dole blok stopki. Podział zrealizowany za pomocą znaczników sekcji tak,
+    aby po uruchomieniu w przeglądarce wygląd układu bloków był zgodny z Obrazem 2
+ – Zawartość pierwszego bloku banera: nagłówek pierwszego stopnia o treści „Organizer: SIERPIEŃ”
+ – Zawartość drugiego bloku banera: formularz wysyłający dane metodą bezpieczną do tej samej strony,
+    zawierający:
+     – Pole edycyjne podpisane: „Zapisz wydarzenie: ”
+     – Przycisk o treści „OK” wysyłający zawartość formularza
+ – Zawartość trzeciego bloku banera: logo2.png z tekstem alternatywnym o treści: „sierpień”
+ – Zawartość bloku głównego: efekt działania skryptu 1
+ – Zawartość stopki: Paragraf (akapit) o treści: „Stronę wykonał: ”, dalej wstawiony numer zdająceo
+
+
+
+
+                                              Strona 3 z 5
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany w całości w zewnętrznym pliku o nazwie styl5.css. Arkusz CSS zawiera formatowanie:
+  – Ustawione domyślne wartości dla wszystkich selektorów stylu CSS: krój czcionki Tahoma
+  – Dla wszystkich bloków banera: kolor tła #7DA453, biały kolor czcionki, wysokość 120 px
+  – Dodatkowo pierwszy i drugi blok banera ma szerokość 40%, trzeci 20%
+  – Dla bloku kalendarza: kolor tła #AED581, szerokość 200 px, wysokość 100 px, marginesy zewnętrzne
+      7 px, obramowanie o szerokości 1 px, linią ciągłą o kolorze #7DA453
+  – Gdy kursor znajdzie się na bloku kalendarza, kolor tła bloku zmienia się na #7DA453, czcionki na biały
+  – Dla stopki: kolor tła #7DA453, biały kolor czcionki, marginesy wewnętrzne 5 px
+  – Dla selektora nagłówka piątego stopnia: wyrównanie tekstu do środka
+  – Dla selektora formularza: margines wewnętrzny górny: 50 px
+
+Uwaga: style CSS dla nagłówka piątego stopnia i formularza należy zdefiniować wyłącznie przy pomocy
+selektora dla znaczników nagłówka piątego stopnia i formularza. Jest to uwarunkowane projektem
+późniejszej rozbudowy witryny.
+
+Skrypt połączenia z bazą
+W tabeli 1 podano wybór funkcji PHP do obsługi bazy danych. Wymagania dotyczące skryptu:
+ – Napisany w języku PHP, w pliku organizer.php
+ – Skrypt łączy się z serwerem bazodanowym na localhost, użytkownik root bez hasła, baza danych
+     o nazwie kalendarz
+ – Działanie skryptu obsługującego formularz:
+      – Skrypt pobiera dane z pola edycyjnego
+      – Następnie za pomocą zmodyfikowanego zapytania 4 uaktualnia dane w bazie danych tak, że dane
+          w polu wpis zostały pobrane z formularza. Aby uprościć zadanie skrypt wprowadza wpis zawsze
+          do rekordu o dacie 2020-08-09.
+ – Działanie skryptu 1:
+      – Wysyła do bazy danych zapytanie 1
+      – Za pomocą znacznika sekcji definiuje blok, a w nim wyświetla
+          dane przesłane skryptem dotyczące jednego wiersza. Blok
+          jest zgodny z Obrazem 3 oraz jest w nim wyświetlone:
+           – Data zadania w nagłówku piątego stopnia
+                                                                           Obraz 3. Blok kalendarza
+           – Pole wpis w paragrafie (akapicie)
+      – Liczba wygenerowanych bloków odpowiada liczbie wierszy zwróconych zapytaniem
+ – Na końcu działania skrypt zamyka połączenie z serwerem.
+
+
+               Tabela 1. Wybór funkcji języka PHP do obsługi bazy MySQL i MariaDB
+Funkcje biblioteki MySQLi                         Zwracana wartość
+mysqli_connect(serwer, użytkownik, hasło,            id połączenia lub FALSE, gdy niepowodzenie
+nazwa_bazy)
+mysqli_select_db(id_połączenia, nazwa_bazy)          TRUE/FALSE w zależności od stanu operacji
+mysqli_error(id_połączenia)                          Tekst komunikatu błędu
+mysqli_close(id_połączenia)                          TRUE/FALSE w zależności od stanu operacji
+mysqli_query(id_połączenia, zapytanie)               Wynik zapytania
+mysqli_fetch_row(wynik_zapytania)                    Tablica numeryczna odpowiadająca wierszowi
+                                                     zapytania
+mysqli_fetch_array(wynik_zapytania)                  Tablica zawierająca kolejny wiersz z podanych w
+                                                     wyniku zapytania lub FALSE, jeżeli nie ma więcej
+                                                     wierszy w wyniku zapytania
+mysqli_num_rows(wynik_zapytania)                     Liczba wierszy w podanym zapytaniu
+mysqli_num_fields(wynik_zapytania)                   Liczba kolumn w podanym zapytaniu
+
+
+
+                                              Strona 4 z 5
+UWAGA: Po zakończeniu pracy utwórz plik tekstowy. Zapisz w nim nazwę przeglądarki internetowej,
+w której weryfikowana była poprawność działania witryny. Nazwij plik przeglądarka.txt i zapisz go w folderze
+z numerem zdającego. Nagraj płytę z rezultatami pracy. W folderze powinny się znajdować następujące
+pliki: import.png, kw1.jpg, kw2.jpg, kw3.jpg, kw4.jpg, kwerendy.txt, logo2.png, organizer.php,
+przeglądarka.txt, styl5.css, ewentualnie inne przygotowane pliki. Po nagraniu płyty sprawdź poprawność
+nagrania. Opisz płytę numerem zdającego i zapakowaną w pudełku pozostaw na stanowisku wraz
+z arkuszem egzaminacyjnym.
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie będzie podlegać 5 rezultatów:
+  – operacje na bazie danych,
+  – zawartość witryny internetowej,
+  – działanie witryny internetowej,
+  – styl CSS witryny internetowej,
+  – skrypt połączenia z bazą.
+
+
+
+
+                                               Strona 5 z 5
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD opisaną numerem PESEL                                      ,
+której jakość nagrania została przeze mnie sprawdzona.
+
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD, opisana numerem PESEL zdającego.
+
+
+                                                                 ………………………………
+                                                                  Czytelny podpis Przewodniczącego ZN
+

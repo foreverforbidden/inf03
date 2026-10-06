@@ -1,0 +1,339 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 03
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+                                                                              Miejsce na naklejkę z numerem
+Numer PESEL zdającego*                                                          PESEL i z kodem ośrodka
+
+
+
+
+Czas trwania egzaminu: 150 minut.                                                         INF.03-03-25.01-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2025                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL
+          i naklej naklejkę z numerem PESEL i z kodem ośrodka.
+    2.    Na KARCIE OCENY w oznaczonym miejscu przyklej naklejkę z numerem PESEL oraz wpisz:
+          − swój numer PESEL*,
+          − oznaczenie kwalifikacji,
+          − numer zadania,
+          − numer stanowiska.
+    3.    Sprawdź, czy arkusz egzaminacyjny zawiera 7 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    4.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    5.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    6.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    7.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami oraz KARTĘ
+          OCENY na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu
+          nadzorującego.
+    8.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania egzaminu.
+
+                                                                                               Powodzenia!
+* w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+
+
+
+
+Układ graficzny
+© CKE 2023
+Zadanie egzaminacyjne
+
+UWAGA: numer, którym został podpisany arkusz egzaminacyjny (PESEL lub w przypadku jego braku numer
+paszportu) jest w zadaniu nazywany numerem zdającego.
+
+Wykonaj hobbystyczną aplikację internetową o kalendarzu, wykorzystując edytor grafiki rastrowej, pakiet
+XAMPP oraz edytor zaznaczający składnię.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się
+archiwum 7z o nazwie pliki13 zabezpieczone hasłem: k@L3ndarz
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego.
+Rozpakowane pliki należy umieścić w tym folderze. Po skończonej pracy wszystkie wyniki należy zapisać
+w tym folderze.
+
+Operacje na bazie danych
+Baza danych zawiera tabelę imieniny przedstawioną na ilustracji 1. Data zapisana jest w formacie mm-dd,
+np. data 7 listopada zapisana jest jako 11-07.
+
+
+
+
+                                        Ilustracja 1. Baza danych
+
+Za pomocą narzędzia phpMyAdmin wykonaj następujące operacje na bazie danych:
+−   Utwórz bazę danych o nazwie kalendarz, z zestawem polskich znaków (np. utf8_unicode_ci)
+−   Do utworzonej bazy zaimportuj tabele z pliku baza.sql z rozpakowanego archiwum
+−   Wykonaj zrzut ekranu po imporcie. Zapisz zrzut w formacie PNG pod nazwą import. Nie kadruj zrzutu.
+    Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+    widoczne elementy wskazujące na poprawnie wykonany import tabel
+−   Wykonaj zapytania SQL działające na bazie kalendarz. Zapytania zapisz w pliku kwerendy.txt. Wykonaj
+    zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie PNG i nadaj im nazwy
+    kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora, z widocznym paskiem zadań
+    −   Zapytanie 1: wybierające z tabeli imieniny jedynie daty, w których są imieniny Karola
+    −   Zapytanie 2: wybierające jedynie imiona osób, które obchodzą imieniny 4 maja
+    −  Zapytanie 3: obliczające, ile jest dat, w których imieniny obchodzi osoba, której imię zawiera cząstkę
+       mir (np. Miron, Dobromir, Sędzimira)
+    − Zapytanie 4: dodające do tabeli imieniny pole zyczenia typu napisowego, które pomieści 500 znaków
+−   Wyeksportuj dane z tabeli imieniny do pliku w formacie CSV i nadaj mu nazwę imieniny
+
+
+
+
+                                                Strona 2 z 7
+Grafika
+Przygotowanie animacji o nazwie kalendarz.gif:
+− Na animację składają się pliki, kolejno: kalendarz01.png, kalendarz02.png, kalendarz03.png,
+    kalendarz04.png,     kalendarz05.png,     kalendarz06.png,   kalendarz07.png, kalendarz08.png,
+    kalendarz09.png, kalendarz10.png, kalendarz11.png i kalendarz12.png
+−   Nie należy zmieniać właściwości grafik: przezroczystości i wymiarów 500 x 500 px
+−   Każdy obraz jest pokazywany w animacji przez 350 ms, jedna klatka na warstwę. Udokumentuj
+    ustawienie parametru za pomocą zrzutu ekranu o nazwie parametry_animacji.png. Zrzut musi
+    obejmować cały obszar ekranu z widocznym paskiem zadań
+
+
+Witryna internetowa
+
+
+
+
+Ilustracja 2. Wygląd witryny internetowej w dniu 2023.05.25, wybrano w formularzu datę 2024.01.24
+
+Cechy witryny:
+−   Składa się ze strony o nazwie kalendarz.php
+−   Zapisana w języku HTML5
+−   Zadeklarowany polski język zawartości witryny
+−   Jawnie zastosowany właściwy standard kodowania polskich znaków
+−   Tytuł strony widoczny na karcie przeglądarki: „Kalendarz”
+−   Arkusz stylów w pliku o nazwie styl.css prawidłowo połączony z kodem strony
+−   Podział strony na bloki: nagłówkowy, napisu, poniżej trzy bloki umieszczone obok siebie, na dole stopka.
+    Podział zrealizowany za pomocą semantycznych znaczników sekcji języka HTML5 tak, aby po
+    uruchomieniu w przeglądarce wygląd układu bloków był zgodny z ilustracją 2
+−   Zawartość bloku nagłówkowego:
+    − Nagłówek pierwszego stopnia o treści „Dni, miesiące, lata...”
+−   Zawartość bloku napisu:
+
+                                               Strona 3 z 7
+     −   Paragraf z efektem działania Skryptu 1
+−    Zawartość bloku lewego:
+     − Tabela o 2 kolumnach i 13 wierszach, z czego niektóre wiersze są scalone. Pierwszy wiersz zawiera
+        komórki nagłówkowe. Treść i wygląd tabeli przedstawiony jest na ilustracji 3
+−    Zawartość bloku środkowego:
+     − Nagłówek drugiego stopnia o treści: „Sprawdź kto ma urodziny”
+     − Formularz przesyłający dane metodą bezpieczną, do tego samego pliku. Zawierający pola:
+        − Pole edycyjne o typie przeznaczonym do wprowadzania daty. Kalendarz wyświetla tylko daty
+            z 2024 roku (od 1 stycznia 2024 do 31 grudnia 2024). Pole edycyjne jest wymagane. Pole
+            edycyjne w stanie początkowym po naciśnięciu przycisku kalendarza zostało przedstawione na
+            ilustracji 4
+        − Przycisk o treści „wyślij” wysyłający dane do skryptu z formularza
+     − Efekt działania Skryptu 2
+−    Zawartość bloku prawego:
+     −  Animacja kalendarz.gif z tekstem alternatywnym „Kalendarz Majów”, której kliknięcie powoduje
+        otwarcie strony internetowej https://pl.wikipedia.org/wiki/Kalendarz_Majów w nowym oknie
+        przeglądarki
+     − Nagłówek drugiego stopnia o treści „Rodzaje kalendarzy”
+     − Lista numerowana (uporządkowana) z zagnieżdżonymi dwoma listami punktowanymi
+        (nieuporządkowanymi), zgodna z ilustracją 5
+−    Zawartość stopki: paragraf o treści „Stronę opracował(a): ”, dalej numer zdającego
+
+
+
+
+                                                  Ilustracja 4. Pole edycyjne w przeglądarce Chrome
+
+
+
+
+    Ilustracja 3. Tabela z bloku lewego
+
+
+                                                          Ilustracja 5. Lista z bloku prawego
+
+
+
+
+                                                  Strona 4 z 7
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie styl.css. Cechy formatowania CSS
+działające na stronie:
+− Dla ciała strony: krój czcionki Bookman, a w przypadku braku: czcionka Serif
+−   Wspólne dla bloku nagłówkowego i stopki: kolor tła Indigo, biały kolor czcionki, marginesy wewnętrzne
+    10 px, wyrównanie tekstu do środka
+−   Dla bloku napisu: kolor tła BlueViolet, marginesy wewnętrzne 10 px, wyrównanie tekstu do prawej strony
+−   Wspólny dla bloków lewego i prawego: kolor tła Lavender, wysokość 500 px
+−   Dodatkowo szerokość bloku lewego 25%, bloku prawego 35%
+−   Dla bloku środkowego: kolor tła GhostWhite, wyrównanie tekstu do środka, wysokość 500 px,
+    szerokość 40%
+−   Dla selektora obrazu: oblewanie tekstem po lewej stronie (obraz po prawej stronie), szerokość 50%,
+    marginesy wewnętrzne 10 px
+−   Dla selektora paragrafu: biały kolor czcionki, rozmiar czcionki 150%, pochylenie czcionki
+−   Wspólne dla tabeli i formularza: marginesy zewnętrzne 30 px
+−   Dla tabeli i komórki tabeli: obramowanie połączone, linią ciągłą o szerokości 1 px i kolorze Indigo
+−   Wspólne dla zwykłej komórki i komórki nagłówkowej tabeli: marginesy wewnętrzne 3 px
+
+Uwaga: styl CSS obrazu i paragrafu należy zdefiniować wyłącznie przy pomocy selektora tych znaczników.
+Jest to uwarunkowane projektem późniejszej rozbudowy witryny.
+
+Skrypt połączenia z bazą
+W tabeli 1 zamieszczono wybrane funkcje języka PHP. Zamieszczono także pomoc dla funkcji daty i czasu.
+Wymagania dotyczące skryptów:
+− Napisane w języku PHP
+−   Należy stosować znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim
+−   Łączą się z serwerem bazodanowym na localhost, użytkownik root bez hasła, baza danych o nazwie
+    kalendarz
+−   Skrypt 1
+    − Wysyła do bazy danych zmodyfikowane zapytanie 2, tak że jest sprawdzana data bieżąca w formacie
+        mm-dd
+    − Wyświetla tekst o treści „Dzisiaj jest <dzień tygodnia>, <data>, imieniny: <imiona>”, gdzie <dzień
+        tygodnia> oznacza słowny zapis bieżącego dnia w języku polskim, np. „poniedziałek”, <data>
+        oznacza bieżącą datę w formacie dd-mm-yyyy, a <imiona> - pole zwrócone zapytaniem
+−   Skrypt 2
+    −   Pobiera datę z formularza, a następnie przekształca ją do formatu mm-dd
+    −   Wysyła do bazy danych zmodyfikowane zapytanie 2, tak, że jest sprawdzana data podana
+        w formularzu w formacie mm-dd
+    −   Wyświetla tekst o treści „Dnia <data> są imieniny: <imiona>”, gdzie <data> oznacza datę pobraną
+        z formularza w formacie yyyy-mm-dd, <imiona> - pole zwrócone zapytaniem
+−   Na końcu zamykane jest połączenie z serwerem
+
+Polskie dni tygodnia: Poniedziałek, Wtorek, Środa, Czwartek, Piątek, Sobota, Niedziela
+
+
+
+
+                                                Strona 5 z 7
+Tabela 1. Wybór funkcji języka PHP do obsługi bazy MySQL i MariaDB
+            Funkcje biblioteki mysqli                            Zwracana wartość
+ mysqli_connect(serwer, użytkownik,              id połączenia lub FALSE, gdy niepowodzenie
+ hasło, nazwa_bazy)
+ mysqli_select_db(id_polaczenia,                 TRUE/FALSE w zależności od stanu operacji
+ nazwa_bazy)
+ mysqli_error(id_polaczenia)                     Tekst komunikatu błędu
+ mysqli_close(id_polaczenia)                     TRUE/FALSE w zależności od stanu operacji
+ mysqli_query(id_polaczenia,                     Wynik zapytania
+ zapytanie)
+ mysqli_fetch_row(wynik_zapytania)               Tablica numeryczna odpowiadająca wierszowi
+                                                 zapytania
+ mysqli_fetch_array(wynik_zapytania)             Tablica zawierająca kolejny wiersz z podanych
+                                                 w wyniku zapytania lub FALSE, jeżeli nie ma więcej
+                                                 wierszy w wyniku zapytania
+ mysqli_num_rows(wynik_zapytania)                Liczba wierszy w podanym zapytaniu
+ mysqli_num_fields(wynik_zapytania)              Liczba kolumn w podanym zapytaniu
+ isset($zmienna)                                 Sprawdzenie, czy $zmienna istnieje
+
+
+Pole edycyjne typu data
+<input> elements of type date create input fields that let the user enter a date, either with a textbox that
+validates the input or a special date picker interface. The resulting value includes the year, month, and day
+
+value
+A string representing the date entered in the input. The date is formatted according to Date strings format.
+You can set a default value for the input with a date inside the value attribute, like so:
+<input ... value="2017-06-01" /> or <input ... value="06-01" />
+
+max
+The latest date to accept in the format yyyy-mm-dd
+If both the max and min attributes are set, this value must be a date string later than or equal to the one in
+the min attribute.
+
+min
+The earliest date to accept in the format yyyy-mm-dd
+<input ... min="2017-04-01" max="2017-04-20">
+
+You can use the required attribute to make filling in the date mandatory, an error will be displayed if you try
+to submit an empty date field. This should work in most browsers, even if they fall back to a text input.
+
+
+
+
+                                                 Strona 6 z 7
+Wybrane funkcje daty i czasu w PHP
+date
+date(string $format, ?int $timestamp = null): string
+Returns a string formatted according to the given format string using the given integer timestamp (Unix
+timestamp) or the current time if no timestamp is given. In other words, timestamp is optional and defaults to
+the value of time().
+
+l (lowercase 'L') - A full textual representation of the day of the week Sunday through Saturday
+N - ISO 8601 numeric representation of the day of the week 1 (for Monday) through 7 (for Sunday)
+w - A numeric representation of the day (0 for Sunday, 6 for Saturday)
+
+examples:
+/* Assuming today is March 10th, 2001, 5:16:18 pm, and that we are in the Mountain
+Standard Time (MST) Time Zone*/
+
+$today = date("F j, Y, g:i a");                                // March 10, 2001, 5:16 pm
+$today = date("m.d.y");                                        // 03.10.01
+$today = date("j, n, Y");                                      // 10, 3, 2001
+$today = date("Ymd");                                          // 20010310
+$today = date("Ymd");                                          // 20010310
+$today = date("D M j G:i:s T Y");                              // Sat Mar 10 17:16:18 MST 2001
+
+strtotime
+strtotime(string $datetime, ?int $baseTimestamp = null): int|false
+The function expects to be given a string containing an English date format and will try to parse that format
+into a Unix timestamp (the number of seconds since January 1 1970 00:00:00 UTC), relative to the timestamp
+given in baseTimestamp, or the current time if baseTimestamp is not supplied. The date string parsing is
+defined in Date and Time Formats, and has several subtle considerations. Reviewing the full details there is
+strongly recommended.
+
+examples:
+$myDate= "23.05.2014";
+$format = date("Y-m", strtotime($myDate));                   // $format = 2014-05
+
+
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego, powinny znajdować się pliki: imieniny.csv,
+import.png, kalendarz.gif, kalendarz.php, kw1.png, kw2.png, kw3.png, kw4.png, kwerendy.txt,
+parametry_animacji.png, przeglądarka.txt, styl.css, ewentualnie inne przygotowane pliki. Po nagraniu płyty
+sprawdź poprawność jej odczytu. Opisz płytę numerem zdającego i pozostaw zapakowaną w pudełku na
+stanowisku wraz z arkuszem egzaminacyjnym.
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie podlegać będzie 5 rezultatów:
+   −   operacje na bazie danych,
+   −   zawartość witryny internetowej,
+   −   działanie witryny internetowej,
+   −   styl CSS witryny internetowej,
+   −   skrypt połączenia z bazą.
+
+
+
+
+                                                Strona 7 z 7
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD opisaną numerem PESEL                                   ,
+której jakość nagrania została przeze mnie sprawdzona.
+
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD, opisana numerem PESEL zdającego.
+
+
+                                                               ……………………………........…
+                                                               Czytelny podpis Przewodniczącego ZN
+

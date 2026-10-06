@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Komputery</title>
+<link rel="stylesheet" href="styl.css">
+<link rel="icon" href="favicon.png" type="image/png">
+<script src="skrypt.js"></script>
+</head>
+<body>
+<div id="kontener">
+<header id="baner"><img src="animacja.gif" alt="Pogotowie komputerowe"></header>
+<nav id="menu"><a href="index.html">Strona Główna</a> <a href="kontakt.html">Kontakt</a></nav>
+<section class="blok"></section>
+<section class="blok">
+<h2>Kontakt</h2>
+<form>
+<table>
+<tr><td>Imię: </td><td><input type="text" id="imie"></td></tr>
+<tr><td>Nazwisko: </td><td><input type="text" id="nazwisko"></td></tr>
+<tr><td>E-mail: </td><td><input type="email" id="email"></td></tr>
+<tr><td>Zgłoszenie: </td><td><select id="usluga">
+<option>naprawa komputerów</option>
+<option>odzyskiwanie danych</option>
+<option>wirusy</option>
+<option>konfiguracja LAN</option>
+</select></td></tr>
+<tr><td></td><td><input type="checkbox" id="kopia" checked> <label for="kopia">Wyślij kopię wiadomości</label></td></tr>
+<tr><td></td><td><button type="reset">Czyść</button> <button type="button" onclick="wyslij()">Wyślij</button></td></tr>
+</table>
+</form>
+<hr>
+<p id="komunikat"></p>
+</section>
+<section class="blok"></section>
+<footer>Autor: <em>00000000000</em></footer>
+</div>
+</body>
+</html>

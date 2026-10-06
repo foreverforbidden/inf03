@@ -1,0 +1,64 @@
+{
+  "code": "inf03_2025_01_09",
+  "pass": true,
+  "fails": [],
+  "warns": [
+    "zdobywcy.php: odnosnik do pominietego zrzutu kw1.png",
+    "zdobywcy.php: odnosnik do pominietego zrzutu kw2.png",
+    "zdobywcy.php: odnosnik do pominietego zrzutu kw3.png",
+    "zdobywcy.php: odnosnik do pominietego zrzutu kw4.png",
+    "formularz zdobywcy.php->zdobywcy.php [post]: odnosnik do pominietego zrzutu kw1.png",
+    "formularz zdobywcy.php->zdobywcy.php [post]: odnosnik do pominietego zrzutu kw2.png",
+    "formularz zdobywcy.php->zdobywcy.php [post]: odnosnik do pominietego zrzutu kw3.png",
+    "formularz zdobywcy.php->zdobywcy.php [post]: odnosnik do pominietego zrzutu kw4.png"
+  ],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT pasmo, nazwa_gory, wysokosc FROM gory ORDER BY wysokosc DESC LIMIT 10",
+      "ok": true,
+      "rows": 10,
+      "preview": "+-------+----------------------------------+----------+\n| pasmo | nazwa_gory                       | wysokosc |\n+-------+----------------------------------+----------+\n| Tatry | Rysy                             |     2499 |\n| Tatry | Mięguszowiecki Szczyt            |     2438 |\n| Tatry | Niżnie Rysy                      |     2430 |\n| Tatry | Mięguszowiecki Szczyt Czarny     |     2410 |\n| Tatry | Mięguszowiecki Szczyt Pośredni   |     2393 |\n| Tatry | Hińczowa Turnia                  |     2377 |"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT nazwisko, imie, funkcja, email FROM osoby",
+      "ok": true,
+      "rows": 15,
+      "preview": "+----------+-----------+------------------+----------------------------+\n| nazwisko | imie      | funkcja          | email                      |\n+----------+-----------+------------------+----------------------------+\n| K.       | Tomasz    | przewodnik       | k.tomasz@zdobywcyxyz.pl    |\n| G.       | Arkadiusz | uczestnik        | g.arek@zdobywcyxyz.pl      |\n| C.       | Grzegorz  | organizator      | c.grzegorz@zdobywcyxyz.pl  |\n| B.       | Urszula   | uczestnik        | b.urszula@zdobywcyxyz.pl   |\n| J.       | Dariusz   | przewodnik       | j.dariusz@zdobywcyxyz.pl   |\n| W.       | Nataniel  | zaopatrzeniowiec | w.nataniel@zdobywcyxyz.pl  |"
+    },
+    {
+      "n": 3,
+      "sql": "INSERT INTO osiagniecia (gora_id, osoba_id, data_zdobycia) VALUES (182, 4, '2024-06-08')",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    },
+    {
+      "n": 4,
+      "sql": "INSERT INTO osoby (nazwisko, imie, funkcja, email) VALUES ('M.', 'Miłosz', 'uczestnik', 'm.milosz@zdobywcyxyz.pl')",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "zdobywcy.php",
+      "status": 200,
+      "bytes": 3141
+    },
+    {
+      "page": "formularz zdobywcy.php->zdobywcy.php [post]",
+      "status": 200,
+      "bytes": 3141,
+      "fields": {
+        "nazwisko": "Test",
+        "imie": "Test",
+        "funkcja": "Test",
+        "email": "test@example.com"
+      }
+    }
+  ],
+  "checked_at": "2026-10-06 18:45:36"
+}

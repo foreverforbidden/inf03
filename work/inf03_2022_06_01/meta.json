@@ -1,0 +1,21 @@
+{
+  "password": "WedkoWaniE&",
+  "db": "wedkowanie",
+  "required_files": [
+    "kwerendy.txt",
+    "przeglądarka.txt",
+    "ryba1.jpg",
+    "styl_1.css",
+    "wedkuj.php"
+  ],
+  "image_count": null,
+  "pages": [
+    "wedkuj.php"
+  ],
+  "code": "inf03_2022_06_01",
+  "pdf": "inf03_arkusze/inf03_2022_06_01_arkusz.pdf",
+  "sql_files": [
+    "materialy/baza.sql"
+  ],
+  "problems": []
+}

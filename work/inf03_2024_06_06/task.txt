@@ -1,0 +1,305 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 06
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+                                                                              Miejsce na naklejkę z numerem
+Numer PESEL zdającego*                                                          PESEL i z kodem ośrodka
+
+
+
+
+Czas trwania egzaminu: 150 minut.                                                         INF.03-06-24.06-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2024                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL
+          i naklej naklejkę z numerem PESEL i z kodem ośrodka.
+    2.    Na KARCIE OCENY w oznaczonym miejscu przyklej naklejkę z numerem PESEL oraz wpisz:
+          − swój numer PESEL*,
+          − oznaczenie kwalifikacji,
+          − numer zadania,
+          − numer stanowiska.
+    3.    Sprawdź, czy arkusz egzaminacyjny zawiera 7 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    4.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    5.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    6.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    7.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami oraz KARTĘ
+          OCENY na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu
+          nadzorującego.
+    8.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania egzaminu.
+
+                                                                                               Powodzenia!
+* w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+
+
+
+
+Układ graficzny
+© CKE 2023
+Zadanie egzaminacyjne
+UWAGA: katalog z rezultatami pracy oraz płytę należy opisać numerem zdającego, którym został podpisany
+arkusz, czyli numerem PESEL lub w przypadku jego braku numerem paszportu. Dalej w zadaniu numer ten
+jest nazwany numerem zdającego.
+
+Wykonaj aplikację do rejestracji na konferencję, wykorzystując pakiet XAMPP, edytor grafiki rastrowej oraz edytor
+zaznaczający składnię.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się archiwum
+ZIP o nazwie pliki6 zabezpieczone hasłem: ^konfErEncja&
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego.
+Rozpakowane pliki należy umieścić w tym folderze. Po skończonej pracy wszystkie wyniki należy zapisać
+w tym folderze.
+
+Operacje na bazie danych
+Baza danych jest zgodna ze strukturą przedstawioną na obrazie 1. Pole zaplacono w bazie danych jest
+reprezentowane jako typ TINYINT(1) i przyjmuje wartość 1, gdy uczestnik zapłacił za konferencję lub 0
+w przeciwnym przypadku
+
+
+
+
+                                            Obraz 1. Baza danych
+
+Za pomocą narzędzia phpMyAdmin wykonaj operacje na bazie danych:
+   ‒ Utwórz bazę danych o nazwie konferencja, z zestawem polskich znaków (np. utf8_unicode_ci)
+   ‒ Do bazy zaimportuj tabele z pliku baza.sql z rozpakowanego archiwum
+   ‒ Wykonaj zrzut ekranu po imporcie. Zrzut zapisz w formacie PNG i nazwij import. Nie kadruj zrzutu.
+      Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+      widoczne elementy wskazujące na poprawnie wykonany import tabel.
+   ‒ Wykonaj zapytania SQL działające na bazie konferencja. Zapytania zapisz w pliku kwerendy.txt.
+      Wykonaj zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie JPEG
+      i nadaj im nazwy kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora z widocznym
+      paskiem zadań.
+          ‒ Zapytanie 1: wybierające jedynie imię, nazwisko i koszt konferencji dla uczestników, którzy jeszcze nie
+              zapłacili za konferencję
+          ‒ Zapytanie 2: liczące dla wszystkich uczestników: średni koszt konferencji z nazwą kolumny
+              (alias) „Średni koszt”, sumę kosztów z nazwą kolumny (alias) „Całkowity koszt”, liczbę
+              zapisanych w bazie uczestników z nazwą kolumny (alias) „Liczba uczestników”
+          ‒ Zapytanie 3: wybierające jedynie nazwę wykładu i przypisane jej nazwiska i e-maile
+              uczestników, dla tych uczestników, którzy zapłacili za konferencję. Należy posłużyć się relacją
+          ‒ Zapytanie 4: usuwające kolumnę z hasłem uczestnika
+
+
+                                                  Strona 2 z 7
+                                          Witryna internetowa
+
+
+
+
+                           Obraz 2. Witryna internetowa. Stan początkowy
+
+Cechy grafiki:
+   ‒ Na grafice tulipany.jpg należy zastosować filtr rozmycia Gaussa. Rozmycie ma być niewielkie, tak
+      aby można było dalej rozpoznać kwiaty na obrazie. Dla grafiki na obrazie 2 zastosowano rozmiar
+      rozmycia 3,5 w obu osiach. Należy wykonać zrzut ekranu potwierdzający zastosowanie filtru i nazwać
+      go rozmycie.png. Na zrzucie ma być widoczne okno dialogowe służące do podania parametrów
+      rozmycia.
+
+Cechy witryny:
+   ‒ Składa się ze strony o nazwie rejestracja.html zapisanej w języku HTML5
+   ‒ Ustawiony język zawartości strony na polski
+   ‒ Jawnie zastosowany właściwy standard kodowania polskich znaków
+   ‒ Tytuł strony widoczny na karcie przeglądarki: „Rejestracja”
+   ‒ Arkusz stylów w pliku o nazwie styl.css prawidłowo połączony z kodem strony
+   ‒ Podział strony na baner, poniżej blok główny, na dole cztery bloki stopki. Podział zrealizowany
+      wyłącznie za pomocą semantycznych znaczników sekcji języka HTML5 tak, aby po uruchomieniu
+      w przeglądarce wygląd układu bloków był zgodny z obrazem 2
+   ‒ Zawartość banera: nagłówek pierwszego stopnia o treści „Formularz rejestracyjny konferencji Nasze
+      Kwiaty”. Fraza „Nasze Kwiaty” jest zapisana w znaczniku semantycznym, który jest pochylony
+      i oznacza tekst uwypuklony
+   ‒ Zawartość bloku głównego: formularz złożony z trzech bloków, które zawierają kolejno:
+       ‒ Blok 1:
+           ‒   Nagłówek drugiego stopnia o treści „Dane osobowe”
+           ‒   Pole edycyjne z podpowiedzią „Wpisz imię...”, pole jest wymagane
+           ‒   Pole edycyjne z podpowiedzią „Wpisz nazwisko...”, pole jest wymagane
+           ‒   Przycisk o treści „Następna karta”, którego kliknięcie powoduje wywołanie funkcji skryptu
+       ‒   Blok 2:
+           ‒ Nagłówek drugiego stopnia o treści „Dane kontaktowe”
+               ‒ Pole edycyjne z podpowiedzią „Twój e-mail...”, pole typu dedykowanego do wpisania
+                     adresu e-mail
+
+                                               Strona 3 z 7
+                  ‒   Pole edycyjne z podpowiedzią „Twój numer telefonu...”, pole typu dedykowanego do
+                      wpisania telefonu
+            ‒ Przycisk o treści „Następna karta”, którego kliknięcie powoduje wywołanie funkcji skryptu
+       ‒   Blok 3:
+            ‒   Nagłówek drugiego stopnia o treści „Hasło do logowania”
+            ‒   Pole edycyjne z podpowiedzią „Podaj hasło”, pole ukrywa wpisywane hasło
+            ‒   Pole edycyjne z podpowiedzią „Powtórz hasło”, pole ukrywa wpisywane hasło
+            ‒   Przycisk o treści „Zatwierdź”, którego kliknięcie powoduje wywołanie funkcji skryptu
+
+   ‒   Zawartość pierwszego bloku stopki:
+          ‒ Film motyl.mp4, z kontrolkami umożliwiającymi sterowanie filmem. W przypadku problemów
+             z odtworzeniem filmu pojawia się tekst: „Przeglądarka nie obsługuje tego formatu”
+   ‒   Zawartość drugiego bloku stopki:
+          ‒ Nagłówek trzeciego stopnia o treści: „Plan konferencji”
+          ‒ Tabela o dwóch wierszach i dwóch kolumnach. Dane to tabeli przedstawiono w Tabeli 1
+
+Tabela 1. Dane do tabeli z drugiego bloku stopki
+ 9:00 - 12:00    Pielęgnacja roślin
+ 13:00 - 15:00   Targi kwiatowe
+
+   ‒   Zawartość trzeciego bloku stopki: paragraf (akapit) z odnośnikiem do adresu https://kwiaty.pl/ o treści
+       „Internetowa kwiaciarnia”
+   ‒   Zawartość czwartego bloku stopki: paragraf o treści: „Formularz wykonał: ”, dalej wstawiony numer
+       zdającego.
+
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie styl.css. Cechy formatowania CSS,
+działające na stronie:
+   ‒   Domyślne formatowanie wszystkich selektorów: krój czcionki Cambria
+   ‒   Dla banera: kolor tła #C2185B, biały kolor czcionki, wyrównanie tekstu do środka, marginesy
+       wewnętrzne 15 px
+   ‒   Dla bloku głównego: tło stanowi obraz tulipany.jpg, wysokość 500 px
+   ‒   Wspólne dla wszystkich bloków stopki: kolor tła #C2185B, biały kolor czcionki, szerokość 25%,
+       wysokość 240 px
+   ‒   Wspólne dla trzech bloków w formularzu: bloki umieszczone obok siebie, kolor tła #FCE4EC,
+       szerokość 25%, wysokość 300 px, marginesy zewnętrzne 25 px, wewnętrzne 16 px
+   ‒   Dodatkowo pierwszy blok jest widoczny, pozostałe dwa są ukryte. Należy zastosować właściwość
+       CSS, która jedynie ukrywa blok, a nie usuwa go
+   ‒   Dla selektora paragrafu: margines wewnętrzny górny 20 px
+   ‒   Dla odnośnika: biały kolor czcionki
+   ‒   Dla wszystkich pól edycyjnych oprócz przycisków: szerokość 80%, wysokość 30 px, marginesy
+       zewnętrzne 10 px
+   ‒   Dla wszystkich przycisków: kolor tła #c2185b, biały kolor czcionki, margines zewnętrzny górny 50 px,
+       margines zewnętrzny lewy 60%, marginesy wewnętrzne 20 px, brak obramowania
+   ‒   Dla video: szerokość i wysokość 100%
+
+
+
+                                                Strona 4 z 7
+Uwaga: styl CSS paragrafu należy zdefiniować wyłącznie przy pomocy selektora znacznika paragrafu. Jest
+to uwarunkowane projektem późniejszej rozbudowy witryny.
+
+Skrypt
+Wymagania dotyczące skryptu:
+   ‒ Napisany w języku JavaScript
+   ‒   Należy stosować znaczące nazewnictwo wszystkich zmiennych i funkcji
+   ‒   Działanie funkcji dla kliknięcia przycisku z pierwszego bloku (obraz 3):
+       ‒ Ukrywany jest blok 1
+       ‒ Blok 2 staje się widoczny
+   ‒   Działanie funkcji dla kliknięcia przycisku z drugiego bloku (obraz 4):
+       ‒ Ukrywany jest blok 2
+       ‒ Blok 3 staje się widoczny
+   ‒   Działanie funkcji dla kliknięcia przycisku z trzeciego bloku:
+       ‒ W przypadku, gdy wpisane do pól edycyjnych hasła nie są identyczne wyświetlane jest okienko
+           popup z komunikatem „Podane hasła różnią się” (obraz 5)
+       ‒ Imię i nazwisko wpisane w pierwszym bloku są pobrane i wyświetlone w konsoli jako napis o treści
+           „Witaj <imie> <nazwisko>”, gdzie wartości w nawiasach są pobrane z pól edycyjnych (obraz 6)
+
+
+
+
+                          Obraz 3. Po kliknięciu przycisku w pierwszym bloku
+
+
+
+
+                            Obraz 4. Po kliknięciu przycisku w drugim bloku
+
+
+
+
+                                                 Strona 5 z 7
+                           Obraz 5. Gdy hasła są różne
+
+
+
+
+Obraz 6. Konsola po zatwierdzeniu. Imię wpisano Alicja, nazwisko wpisano Kowalska
+
+
+
+
+                                   Strona 6 z 7
+Tabela 2. Wybrane pola i metody modelu DOM języka JavaScript
+           Wyszukiwanie elementów                          Zmiana elementów
+ document.getElementById(id)                element.innerHTML = "nowa zawartość"
+ document.getElementsByTagName(TagName)     element.attribute_name = "nowa zawartość"
+ document.getElementsByClassName(ClassName) element.setAttribute(atrybut, wartosc)
+ document.getElementsByName(ElementName)    element.style.property_name = "nowa zawartość"
+ document.querySelector(CSSselector)
+ document.querySelectorAll(CSSselector)
+
+     Operacje na elementach dokumentu                            Wybrane właściwości obiektu style
+ document.createElement(element)                     backgroundColor
+ document.removeChild(element)                       color
+ document.appendChild(element)                       fontSize
+ document.replaceChild(element)                      fontStyle = "normal | italic | oblique | initial | inherit"
+ document.write(text)                                fontWeight = "normal | lighter | bold | bolder | value |
+                                                     initial | inherit"
+                                                     listStyleType = "circle| decimal | disc | none | square |
+                                                     initial..."
+Wybrane zdarzenia HTML
+       Zdarzenia myszy                     Zdarzenia klawiatury                   Zdarzenia obiektów
+ onclick                             onkeydown                             onload
+ ondblclick                          onkeypress                            onresize
+ onmouseover                         onkeyup                               onfocusin
+ onmouseout                                                                onfocusout
+ Elementy formularzy                                   Metody i pola obiektu string (JS)
+ Ważniejsze typy pola input: button, checkbox,         Length
+ number, password, radio, text                         indexOf(text)
+ Inne elementy: select, textarea                       search(text)
+                                                       substr(startIndex, endIndex)
+                                                       replace(textToReplace, newText)
+                                                       toUpperCase()
+                                                       toLowerCase()
+
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego, powinny znajdować się pliki: import.png,
+kw1.jpg, kw2.jpg, kw3.jpg, kw4.jpg kwerendy.txt, motyl.mp4, przeglądarka.txt, rejestracja.html, rozmycie.png,
+styl.css, tulipany.jpg ewentualnie inne przygotowane pliki. Po nagraniu płyty sprawdź poprawność jej odczytu.
+Opisz płytę numerem zdającego i pozostaw zapakowaną w pudełku na stanowisku wraz z arkuszem
+egzaminacyjnym.
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie będzie podlegać 5 rezultatów:
+   ‒   operacje na bazie danych,
+   ‒   zawartość witryny internetowej,
+   ‒   działanie witryny internetowej,
+   ‒   styl CSS witryny internetowej,
+   ‒   skrypt.
+
+
+
+
+                                                Strona 7 z 7
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD opisaną numerem PESEL                                   ,
+której jakość nagrania została przeze mnie sprawdzona.
+
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD, opisana numerem PESEL zdającego.
+
+
+                                                               ……………………………........…
+                                                               Czytelny podpis Przewodniczącego ZN
+

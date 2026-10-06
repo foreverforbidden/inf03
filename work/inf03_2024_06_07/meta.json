@@ -1,0 +1,22 @@
+{
+  "password": "%WAg@Poj@zdoW",
+  "db": "wazenietirow",
+  "required_files": [
+    "kwerendy.txt",
+    "obraz1.png",
+    "obraz2.jpg",
+    "przeglądarka.txt",
+    "styl.css",
+    "wazenie.php"
+  ],
+  "image_count": null,
+  "pages": [
+    "wazenie.php"
+  ],
+  "code": "inf03_2024_06_07",
+  "pdf": "inf03_arkusze/inf03_2024_06_07_arkusz.pdf",
+  "sql_files": [
+    "materialy/baza.sql"
+  ],
+  "problems": []
+}

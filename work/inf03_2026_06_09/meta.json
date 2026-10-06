@@ -1,0 +1,21 @@
+{
+  "password": "ReStAuRac1a",
+  "db": "restauracja",
+  "required_files": [
+    "index.html",
+    "styl.css",
+    "kwerendy.txt",
+    "przeglądarka.txt",
+    "logo.png"
+  ],
+  "image_count": null,
+  "pages": [
+    "index.html"
+  ],
+  "code": "inf03_2026_06_09",
+  "pdf": "inf03_arkusze/inf03_2026_06_09_arkusz.pdf",
+  "sql_files": [
+    "materialy/restauracja.sql"
+  ],
+  "problems": []
+}

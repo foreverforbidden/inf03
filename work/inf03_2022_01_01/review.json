@@ -1,0 +1,8 @@
+{
+  "code": "inf03_2022_01_01",
+  "pass": true,
+  "score": "55/55",
+  "fails": [],
+  "na": ["utworzenie bazy w phpMyAdmin", "import baza.sql i zrzut zad1.jpg", "zrzuty kw1-kw4.jpg", "nagranie płyty / folder PESEL"],
+  "notes": "Etykieta 'Ile osób?:' z dwukropkiem zgodna z Obrazem 2. verify.json: 0 fail, 1 warn (zad1.jpg - zrzut, pomijany). Układ bloków zgodny z ilustracją (lewy 60% + prawy 40% border-box, dolny clear:both). Zapytania 1-4 poprawne względem danych (typ 2 = 5 wierszy, typ 3 i cena<15 = 2 wiersze)."
+}

@@ -1,0 +1,10 @@
+{
+  "code": "inf03_2025_01_12",
+  "pass": false,
+  "score": "40/41",
+  "fails": [
+    {"item": "Do grafiki wypieki.jpg należy dołączyć grafikę rogal.jpg po prawej stronie. Lewy koniec rogala zachodzi pod precel.", "problem": "W wypieki.png rogal (x≈1415–1630) jest oddzielony od precla (kończy się x≈1365) szerokim odstępem; lewy koniec rogala nie zachodzi pod precel, wbrew ilustracji 2.", "fix": "Przesunąć warstwę z rogalem w lewo tak, aby jego lewy koniec znalazł się pod preclem (warstwa rogala pod warstwą wypieków), zachować tło przezroczyste, cień w prawo i w dół oraz wymiar 1700x240, zapisać ponownie jako wypieki.png."}
+  ],
+  "na": ["zrzuty ekranu import.png, kw1-kw4.png (brak plików kw*.png i odnośniki do nich z verify.json nie są oceniane)", "utworzenie bazy w phpMyAdmin / import (potwierdzony tylko przez poprawne działanie zapytań)", "nagranie płyty"],
+  "notes": "Kwerendy, skrypty PHP, HTML i CSS zgodne z treścią. Paragraf stopki ma 'AUTOR: ' z dwukropkiem (dopuszczalny drobny dodatek)."
+}

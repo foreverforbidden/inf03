@@ -1,0 +1,21 @@
+{
+  "password": "BibLio#tek@",
+  "db": "biblioteka",
+  "required_files": [
+    "biblioteka.php",
+    "kwerendy.txt",
+    "obraz.png",
+    "przeglądarka.txt",
+    "styl.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "biblioteka.php"
+  ],
+  "code": "inf03_2025_06_06",
+  "pdf": "inf03_arkusze/inf03_2025_06_06_arkusz.pdf",
+  "sql_files": [
+    "materialy/biblio.sql"
+  ],
+  "problems": []
+}

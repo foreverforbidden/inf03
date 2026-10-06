@@ -1,0 +1,1 @@
+{"code":"inf03_2024_06_02","pass":true,"score":"45/45","fails":[],"na":["import.png","kw1-kw5.jpg","utworzenie bazy i import w phpMyAdmin","nagranie płyty"],"notes":"Zapytanie 1 pobiera uczestnicy.id (=3), co równa się logowanie_id Jeremiego, wynik poprawny. Układ zgodny z obrazem 2. Obrazy 70x70."}

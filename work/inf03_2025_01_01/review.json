@@ -1,0 +1,14 @@
+{
+  "code": "inf03_2025_01_01",
+  "pass": false,
+  "score": "42/43",
+  "fails": [
+    {
+      "item": "Grafika: baner.png wykadrowany z klawiatura.jpg do 1000x100 zgodnie z kadrem z ilustracji 2",
+      "problem": "wynik/baner.png ma właściwy rozmiar (1000x100), napis jest poprawny (Arial, pogrubiony, kursywa, biały, wyśrodkowany), ale kadr jest inny niż na ilustracji 2. Ilustracja pokazuje klawisze 9, 0, O, P, { }, Backspace u góry, Enter na dole i Insert/Delete po prawej. Baner pokazuje fragment przesunięty w prawo i w dół (klawisze Enter u góry, Delete i End, bez Backspace i Insert), czyli wycięto złą część obrazu (ok. x=220, y=100 zamiast ok. x=0-40, y=40-50).",
+      "fix": "Wykadruj klawiatura.jpg (1500x300) do 1000x100 tak, aby w kadrze był Backspace u góry i Enter na dole oraz Insert/Delete po prawej (przesunięcie ok. x=0..40, y=ok. 40..50). Następnie dodaj napis i zapisz jako baner.png."
+    }
+  ],
+  "na": ["zrzuty ekranu import.jpg, kw1-kw4.png", "utworzenie bazy i import w phpMyAdmin", "nagranie płyty"],
+  "notes": "Kwerendy 1-4, HTML, CSS i skrypt JS są poprawne. verify.json nie zgłasza błędów. Uwaga: reguła header, nav, footer obejmuje też nagłówek (tło #625B5B), co nie jest wymagane, ale nie jest oceniane jako błąd."
+}

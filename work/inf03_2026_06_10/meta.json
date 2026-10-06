@@ -1,0 +1,24 @@
+{
+  "password": "LaBoRaToR2um",
+  "db": "laboratorium",
+  "required_files": [
+    "login.php",
+    "wyniki.php",
+    "wyloguj.php",
+    "styl.css",
+    "kwerendy.txt",
+    "przeglądarka.txt"
+  ],
+  "image_count": null,
+  "pages": [
+    "login.php",
+    "wyniki.php",
+    "wyloguj.php"
+  ],
+  "code": "inf03_2026_06_10",
+  "pdf": "inf03_arkusze/inf03_2026_06_10_arkusz.pdf",
+  "sql_files": [
+    "materialy/laboratorium.sql"
+  ],
+  "problems": []
+}

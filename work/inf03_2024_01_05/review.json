@@ -1,0 +1,1 @@
+{"code":"inf03_2024_01_05","pass":true,"score":"54/54","fails":[],"na":["zrzuty import.png, kw1-kw4.jpg","utworzenie bazy salon i import w phpMyAdmin","nagranie płyty / folder z numerem zdającego"],"notes":"Kwerendy zweryfikowane na bazie (verify.json bez fail). HTML, CSS (układ floatów zgodny z Obrazem 2), skrypt i grafiki (240 px i 700 px) poprawne."}

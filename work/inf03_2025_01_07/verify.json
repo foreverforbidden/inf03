@@ -1,0 +1,52 @@
+{
+  "code": "inf03_2025_01_07",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT LOWER(nazwa) FROM wojewodztwa",
+      "ok": true,
+      "rows": 16,
+      "preview": "+----------------------+\n| LOWER(nazwa)         |\n+----------------------+\n| dolnośląskie         |\n| kujawsko-pomorskie   |\n| lubelskie            |\n| lubuskie             |\n| łódzkie              |\n| małopolskie          |"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT COUNT(*) FROM miasta WHERE id_wojewodztwa = 1",
+      "ok": true,
+      "rows": 1,
+      "preview": "+----------+\n| COUNT(*) |\n+----------+\n|       91 |\n+----------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT miasta.nazwa, wojewodztwa.nazwa FROM miasta JOIN wojewodztwa ON miasta.id_wojewodztwa = wojewodztwa.id WHERE miasta.nazwa LIKE 'Lu%' ORDER BY miasta.nazwa",
+      "ok": true,
+      "rows": 16,
+      "preview": "+--------------------+----------------------+\n| nazwa              | nazwa                |\n+--------------------+----------------------+\n| Lubaczów           | PODKARPACKIE         |\n| Lubań              | DOLNOŚLĄSKIE         |\n| Lubartów           | LUBELSKIE            |\n| Lubawa             | WARMIŃSKO-MAZURSKIE  |\n| Lubawka            | DOLNOŚLĄSKIE         |\n| Lubień Kujawski    | KUJAWSKO-POMORSKIE   |"
+    },
+    {
+      "n": 4,
+      "sql": "SELECT wojewodztwa.nazwa, COUNT(miasta.id) AS `Liczba miast` FROM wojewodztwa JOIN miasta ON miasta.id_wojewodztwa = wojewodztwa.id GROUP BY wojewodztwa.id, wojewodztwa.nazwa",
+      "ok": true,
+      "rows": 16,
+      "preview": "+----------------------+--------------+\n| nazwa                | Liczba miast |\n+----------------------+--------------+\n| DOLNOŚLĄSKIE         |           91 |\n| KUJAWSKO-POMORSKIE   |           52 |\n| LUBELSKIE            |           46 |\n| LUBUSKIE             |           42 |\n| ŁÓDZKIE              |           44 |\n| MAŁOPOLSKIE          |           61 |"
+    }
+  ],
+  "pages": [
+    {
+      "page": "index.php",
+      "status": 200,
+      "bytes": 885
+    },
+    {
+      "page": "formularz index.php->index.php [post]",
+      "status": 200,
+      "bytes": 966,
+      "fields": {
+        "filtr": "Test"
+      }
+    }
+  ],
+  "checked_at": "2026-10-06 18:44:42"
+}

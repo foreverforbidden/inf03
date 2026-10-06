@@ -1,0 +1,279 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 01
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+                                                                              Miejsce na naklejkę z numerem
+Numer PESEL zdającego*                                                          PESEL i z kodem ośrodka
+
+
+
+
+Czas trwania egzaminu: 150 minut.                                                         INF.03-01-25.06-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2025                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL
+          i naklej naklejkę z numerem PESEL i z kodem ośrodka.
+    2.    Na KARCIE OCENY w oznaczonym miejscu przyklej naklejkę z numerem PESEL oraz wpisz:
+          − swój numer PESEL*,
+          − oznaczenie kwalifikacji,
+          − numer zadania,
+          − numer stanowiska.
+    3.    Sprawdź, czy arkusz egzaminacyjny zawiera 6 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    4.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    5.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    6.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    7.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami oraz KARTĘ
+          OCENY na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu
+          nadzorującego.
+    8.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania egzaminu.
+
+                                                                                               Powodzenia!
+* w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+
+
+
+
+Układ graficzny
+© CKE 2023
+Zadanie egzaminacyjne
+
+UWAGA: numer, którym został podpisany arkusz egzaminacyjny (PESEL lub w przypadku jego braku numer
+paszportu) jest w zadaniu nazywany numerem zdającego.
+
+Wykonaj aplikację internetową zawierającą ranking gier komputerowych, wykorzystując edytor grafiki rastrowej, pakiet
+XAMPP oraz edytor zaznaczający składnię.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się archiwum
+7z o nazwie pliki1 zabezpieczone hasłem: Gry&KomputErowE
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego,
+którym został podpisany arkusz. Rozpakowane pliki należy umieścić w tym folderze. Po skończonej pracy
+wszystkie wyniki należy zapisać w tym folderze. Zaleca się, aby rozpakowane pliki graficzne znajdowały się
+w tym samym folderze, co pliki źródłowe strony.
+
+Operacje na bazie danych
+Baza danych jest zgodna ze strukturą przedstawioną na ilustracji 1.
+
+
+
+
+                                           Ilustracja 1. Baza danych
+
+W tabeli 2 umieszczono wybrane funkcje tekstowe dla bazy danych MariaDB. Za pomocą narzędzia
+phpMyAdmin wykonaj operacje na bazie danych:
+   ‒ Utwórz bazę danych o nazwie gry, z zestawem polskich znaków (np. utf8_unicode_ci)
+   ‒ Do bazy zaimportuj tabele z pliku baza.sql z rozpakowanego archiwum
+   ‒ Wykonaj zrzut ekranu po imporcie. Zrzut zapisz w formacie PNG pod nazwą import. Nie kadruj zrzutu.
+      Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+      widoczne elementy wskazujące na poprawnie wykonany import tabel
+   ‒ Wykonaj zapytania SQL działające na bazie gry. Zapytania zapisz w pliku kwerendy.txt. Wykonaj
+      zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie JPEG i nadaj im
+      nazwy kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora z widocznym paskiem
+      zadań
+          ‒ Zapytanie 1: wybierające jedynie id, nazwę i zdjęcie z tabeli gry
+          ‒ Zapytanie 2: wybierające jedynie nazwę, pierwsze 100 znaków opisu, punkty oraz cenę
+              z tabeli gry dla wiersza o id równym 1
+          ‒ Zapytanie 3: wybierające jedynie pola nazwa i punkty z pięciu pierwszych wierszy
+              o najwyższej punktacji z tabeli gry
+          ‒ Zapytanie 4: wstawiające do tabeli gry wiersz o danych zawartych w pliku rekord.txt (dane
+              należy skopiować z pliku do zapytania). Klucz główny nadawany automatycznie.
+
+
+
+
+                                                   Strona 2 z 6
+                                         Witryna internetowa
+
+
+
+
+                                Ilustracja 2. Witryna internetowa.
+      Kursor na obrazie – widoczny dymek z tekstem, w stopce w formularzu wprowadzono 6
+
+Przygotowanie grafiki:
+   ‒ Plik zamczysko.jpg, wypakowany z archiwum, należy przeskalować zachowując proporcje do
+       szerokości 550 px
+
+Cechy witryny:
+   ‒ Składa się ze strony o nazwie gry.php
+   ‒ Zapisana w języku HTML5
+   ‒ Zadeklarowany polski język zawartości witryny
+   ‒ Jawnie zastosowany właściwy standard kodowania polskich
+      znaków
+   ‒ Tytuł strony widoczny na karcie przeglądarki: „Gry
+      komputerowe”
+   ‒ Arkusz stylów w pliku o nazwie styl.css prawidłowo połączony
+      z kodem strony
+   ‒ Podział strony na bloki zrealizowany za pomocą
+      semantycznych znaczników bloków języka HTML5 tak, aby po
+      uruchomieniu w przeglądarce układ bloków na stronie był
+      zgodny z ilustracją 3                                                Ilustracja 3. Układ bloków
+   ‒ Zawartość bloku nagłówkowego: nagłówek pierwszego stopnia
+      o treści „Ranking gier komputerowych”
+   ‒ Zawartość sekcji lewej:
+          ‒ Nagłówek trzeciego stopnia o treści: „Top 5 gier w tym miesiącu”
+          ‒ Lista punktowana (nieuporządkowana) wypełniona przez skrypt 1
+          ‒ Nagłówek trzeciego stopnia o treści: „Nasz sklep”
+          ‒ Odnośnik o treści „Tu kupisz gry” prowadzący do adresu http://sklep.gry.pl
+                                             Strona 3 z 6
+          ‒ Nagłówek trzeciego stopnia o treści: „Stronę wykonał”
+          ‒ Paragraf z numerem zdającego
+   ‒   Zawartość sekcji środkowej: Efekt działania skryptu 2
+   ‒   Zawartość sekcji prawej:
+          ‒ Nagłówek trzeciego stopnia o treści: „Dodaj nową grę”
+          ‒ Formularz wysyłający dane do tego samego pliku metodą bezpieczną
+          ‒ Formularz zawiera cztery pola edycyjne podpisane etykietami: nazwa, opis, cena, zdjęcie oraz
+             przycisk DODAJ, rozmieszczone zgodnie z ilustracją 2
+   ‒   Zawartość stopki:
+          ‒ Formularz wysyłający dane do tego samego pliku metodą bezpieczną
+          ‒ Formularz zawiera pole edycyjne i przycisk o treści „Pokaż opis”
+          ‒ Efekt działania skryptu 3
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie styl.css
+Cechy formatowania CSS, działające na stronie:
+    ‒ Domyślne formatowanie wszystkich selektorów: krój czcionki Garamond, biały kolor czcionki (uwaga:
+       zależnie od przeglądarki kolor czcionki przycisku może nie zostać odziedziczony, więc przyjmie kolor
+       czarny, co nie jest błędem)
+    ‒ Dla bloku nagłówkowego: kolor tła Indigo, wyrównanie tekstu do środka, marginesy wewnętrzne 2 px
+    ‒ Dla sekcji lewej i prawej: kolor tła Indigo, wysokość 600 px
+    ‒ Dla sekcji środkowej: czarny kolor tła, wysokość 600 px, zawsze widoczne paski przewijania
+    ‒ Dla wszystkich rodzajów ekranu o szerokości większej niż 800 px szerokość sekcji lewej i prawej
+       wynosi 20%, środkowej 60% (są wyświetlane obok siebie)
+    ‒ Dla wszystkich rodzajów ekranu o pozostałej szerokości sekcje lewa, środkowa i prawa są
+       wyświetlane jedna pod drugą
+    ‒ Dla stopki: kolor tła Indigo, wysokość 150 px
+    ‒ Dla oznaczenia liczby punktów widocznych na ilustracji 4: kolor tła Tomato,
+       zaokrąglenie rogów 50%, marginesy wewnętrzne 5 px
+    ‒ Dla elementu listy: marginesy wewnętrzne 5 px                                           Ilustracja 4
+    ‒ Dla bloków gier znajdujących się w sekcji środkowej: bloki są umieszczone jeden obok drugiego,
+       wyrównanie tekstu do środka, marginesy wewnętrzne 3 px
+    ‒ Dla pola edycyjnego: marginesy zewnętrzne 10 px, kolor czcionki Indigo.
+Skrypt połączenia z bazą
+W tabeli 1 podano wybór funkcji PHP do obsługi bazy danych. Wymagania dotyczące skryptów:
+   ‒ Napisane w języku PHP
+   ‒ Należy stosować znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim
+   ‒ Skrypty łączą się z serwerem bazodanowym na localhost, użytkownik root bez hasła, baza danych
+      o nazwie gry
+   ‒ Skrypt 1
+        − Wysyła do bazy danych zapytanie 3
+        − Zwrócone wiersze są wyświetlane w elementach listy z sekcji lewej według wzoru: „<nazwa>
+            <punkty>”, gdzie nawiasy <> oznaczają wartość pobraną z bazy danych. Liczba punktów jest
+            dodatkowo formatowana stylem, którego efekt jest widoczny na ilustracji 4
+   ‒ Skrypt 2
+        − Wysyła do bazy danych zapytanie 1
+        − Zwrócone zapytaniem wiersze są wyświetlone w bloku, który składa się z:
+               ‒ Obrazu, którego źródłem jest pole zdjecie, tekstem alternatywnym jest pole nazwa,
+                   a podpowiedzią (dymek widoczny na ilustracji 2 dla pierwszej grafiki) jest pole id
+               ‒ Paragrafu z nazwą zdjęcia
+   ‒ Skrypt 3 związany z formularzem w stopce
+        − Jeżeli wpisano id do pola edycyjnego, skrypt wysyła do bazy danych zapytanie 2 zmodyfikowane
+            tak, że wybierany jest wiersz o id podanym w polu edycyjnym
+        − Zwrócony zapytaniem wiersz jest wyświetlany pod formularzem według wzoru:
+               ‒ W nagłówku drugiego stopnia: „<nazwa>, <punkty> punktów, <cena> zł”, gdzie nawiasy
+                   <> oznaczają wartość pobraną z bazy danych
+               ‒ Opis w paragrafie
+                                                 Strona 4 z 6
+   ‒ Skrypt 4 związany z formularzem z sekcji prawej
+     ‒ Jeżeli wypełniono pole nazwa, skrypt wysyła do bazy zmodyfikowane zapytanie 4 w ten sposób,
+        że wstawione są wartości pobrane z formularza, a liczba punktów wynosi 0
+   ‒ Na końcu jest zamykane połączenie z serwerem.
+
+
+Tabela 1. Wybór funkcji języka PHP do obsługi bazy MySQLi i MariaDB
+            Funkcje bilioteki mysqli                             Zwracana wartość
+mysqli_connect(serwer, użytkownik,                    id połączenia lub FALSE, gdy niepowodzenie
+hasło, nazwa_bazy)
+mysqli_select_db(id_polaczenia,                       TRUE/FALSE w zależności od stanu operacji
+nazwa_bazy)
+mysqli_error(id_polaczenia)                           Tekst komunikatu błędu
+mysqli_close(id_polaczenia)                           TRUE/FALSE w zależności od stanu operacji
+mysqli_query(id_polaczenia, zapytanie) Wynik zapytania
+mysqli_fetch_row(wynik_zapytania)                     Tablica numeryczna odpowiadająca wierszowi zapytania
+mysqli_fetch_array(wynik_zapytania)                   Tablica zawierająca kolejny wiersz z podanych w wyniku
+                                                      zapytania lub FALSE, jeżeli nie ma więcej wierszy
+                                                      w wyniku zapytania
+mysqli_num_rows(wynik_zapytania)                      Liczba wierszy w podanym zapytaniu
+mysqli_num_fields(wynik_zapytania)                    Liczba kolumn w podanym zapytaniu
+isset($zmienna)                                       TRUE/FALSE w zależności od tego, czy $zmienna istnieje
+
+Tabela 2. Wybrane funkcje tekstowe w MariaDB
+          Funkcja                                          Opis
+ LEFT(exp, n)              Dla wyrażenia napisowego exp zwraca n znaków od lewej strony
+ RIGHT(exp, n)             Dla wyrażenia napisowego exp zwraca n znaków od prawej strony
+
+Tabela 3. Semantic Elements in HTML
+
+       Tag                                               Description
+ <article>        Defines independent, self-contained content
+ <aside>          Defines content aside from the page content
+ <details>        Defines additional details that the user can view or hide
+ <figcaption>     Defines a caption for a <figure> element
+ <figure>         Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+ <footer>         Defines a footer for a document or section
+ <header>         Specifies a header for a document or section
+ <main>           Specifies the main content of a document
+ <mark>           Defines marked/highlighted text
+ <nav>            Defines navigation links
+ <section>        Defines a section in a document
+ <summary>        Defines a visible heading for a <details> element
+ <time>           Defines a date/time
+
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego, powinny znajdować się pliki:
+Czarodziejka.jpg, gry.php, import.png, kalipso.jpg, katedra.jpg, krokodyl.jpg, kw1.jpg, kw2.jpg, kw3.jpg,
+kw4.jpg,    kwerendy.txt,     Mag.jpg,      NieznanyLad.jpg,   Persja.jpg,    przeglądarka.txt,   styl.css,
+WyprawaNaKsiezyc.jpg, zamczysko.jpg, ewentualnie inne przygotowane pliki. Po nagraniu płyty sprawdź
+poprawność jej odczytu. Opisz płytę numerem zdającego, którym został podpisany arkusz i pozostaw
+zapakowaną w pudełku na stanowisku wraz z arkuszem egzaminacyjnym.
+                                                Strona 5 z 6
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie będzie podlegać 5 rezultatów:
+  ‒ operacje na bazie danych,
+  ‒ zawartość witryny internetowej,
+  ‒ działanie witryny internetowej,
+  ‒ styl CSS witryny internetowej,
+  ‒ skrypt połączenia z bazą.
+
+
+
+
+                                        Strona 6 z 6
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD opisaną numerem PESEL                                   ,
+której jakość nagrania została przeze mnie sprawdzona.
+
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD, opisana numerem PESEL zdającego.
+
+
+                                                               ……………………………........…
+                                                               Czytelny podpis Przewodniczącego ZN
+

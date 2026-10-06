@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Planer zadań</title>
+<link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<aside><img src="obraz.jpg" alt="notatki"></aside>
+<header><h2>Moje zadania</h2></header>
+<nav>
+<input type="text" id="poleZadania" placeholder="Dodaj zadanie...">
+<button onclick="dodajZadanie()">Dodaj</button>
+</nav>
+<main>
+<ul id="listaZadan">
+<li>Wyprowadzić psa<button onclick="wykonane(this)">Wykonane</button></li>
+<li>Gimnastyka<button onclick="wykonane(this)">Wykonane</button></li>
+<li>Zakupy<button onclick="wykonane(this)">Wykonane</button></li>
+<li>Spacer z kumplem<button onclick="wykonane(this)">Wykonane</button></li>
+<li>Odrabianie lekcji z młodszą siostrą<button onclick="wykonane(this)">Wykonane</button></li>
+<li>Projekt na geografię<button onclick="wykonane(this)">Wykonane</button></li>
+</ul>
+</main>
+<footer><h3>Notatki: 00000000000</h3></footer>
+<script>
+function wykonane(przycisk) {
+    przycisk.parentNode.style.textDecoration = "line-through";
+}
+function dodajZadanie() {
+    const pole = document.getElementById("poleZadania");
+    const element = document.createElement("li");
+    element.appendChild(document.createTextNode(pole.value));
+    const przycisk = document.createElement("button");
+    przycisk.innerText = "Wykonane";
+    przycisk.onclick = function () { wykonane(przycisk); };
+    element.appendChild(przycisk);
+    document.getElementById("listaZadan").appendChild(element);
+}
+</script>
+</body>
+</html>

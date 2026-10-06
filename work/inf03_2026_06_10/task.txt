@@ -1,0 +1,357 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 10
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+
+Numer PESEL zdającego*                                                        Miejsce na naklejkę z numerem
+                                                                                PESEL i z kodem ośrodka
+
+         Numer stanowiska
+
+
+
+
+Czas trwania egzaminu: 150 minut                                                         INF.03-10-26.06-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2026                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL*,
+          numer stanowiska i naklej naklejkę** z numerem PESEL i z kodem ośrodka.
+    2.    Sprawdź, czy arkusz egzaminacyjny zawiera 8 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    3.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    4.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    5.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    6.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami wykonania zadania
+          na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu nadzorującego.
+    7.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania
+          egzaminu.
+
+                                                                                               Powodzenia!
+
+ * w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+** w przypadku otrzymania naklejki
+
+
+Układ graficzny
+© CKE 2025
+Zadanie egzaminacyjne
+
+UWAGA: numer, którym został podpisany arkusz egzaminacyjny (PESEL lub w przypadku jego braku, numer
+paszportu) jest w zadaniu nazywany numerem zdającego.
+
+Wykonaj aplikację internetową dla laboratorium medycznego, wykorzystując zainstalowane na komputerze
+aplikacje.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się archiwum
+7z o nazwie pliki20 zabezpieczone hasłem: LaBoRaToR2um
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego.
+Wszystkie wyniki należy zapisać w tym folderze.
+
+Operacje na bazie danych
+Do wykonania operacji na bazie należy wykorzystać tabele przedstawione na ilustracji 1.
+
+
+
+
+                                       Ilustracja 1. Baza danych
+
+Za pomocą narzędzia phpMyAdmin wykonaj następujące operacje na bazie danych:
+   − Utwórz bazę danych o nazwie laboratorium, z zestawem polskich znaków (np. utf8_polish_ci)
+   − Do utworzonej bazy zaimportuj tabele z pliku laboratorium.sql
+   − Wykonaj zrzut ekranu po imporcie. Zapisz zrzut w formacie PNG pod nazwą import. Nie kadruj zrzutu.
+      Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+      widoczne elementy wskazujące na poprawnie wykonany import tabel
+   − Wykonaj zapytania SQL działające na bazie laboratorium. Zapytania zapisz w pliku kwerendy.txt.
+      Wykonaj zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie PNG
+      i nadaj im nazwy kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora z widocznym
+      paskiem zadań
+          −   Zapytanie 1: wybierające jedynie imię i nazwisko diagnosty laboratoryjnego z tabeli Diagnosta
+              posortowane malejąco według nazwiska
+          −   Zapytanie 2: zliczające liczbę zleceń pogrupowanych po datach (bez uwzględnienia godziny).
+              Wybierane są jedynie daty i liczby zleceń
+
+                                              Strona 2 z 8
+          −    Zapytanie 3: wybierające jedynie daty zleceń dla pacjenta o nazwisku Nowicki. Należy
+               posłużyć się relacją
+           − Zapytanie 4: wybierające jedynie imię, nazwisko oraz pesel pacjenta z tabeli Pacjent, datę
+               z tabeli Zlecenie, datę i plik z tabeli Wynik. Należy posłużyć się relacją i odpowiednim
+               rodzajem złączenia. Wybierane są wszystkie zlecenia niezależenie od tego czy jest im
+               przypisany wynik
+Witryna internetowa
+Witryna internetowa składa się ze stron login.php, wyniki.php oraz pliku wyloguj.php. Do prawidłowego
+działania witryny niezbędne są pliki formatu PDF znajdujące się w dołączonym archiwum. Wygląd stron
+przedstawiono na ilustracjach 2 i 3.
+
+
+
+
+                                Ilustracja 2. Wygląd strony login.php
+
+
+
+
+                               Ilustracja 3. Wygląd strony wyniki.php
+                                              Strona 3 z 8
+Cechy wspólne dla stron login.php i wyniki.php:
+   −   Zapisana w języku HTML5
+   −   Zadeklarowany polski język zawartości witryny
+   −   Jawnie zastosowany właściwy standard kodowania polskich
+       znaków
+   −   Arkusz stylów w pliku o nazwie styl.css prawidłowo połączony
+       z kodem strony
+   −   Podział strony na bloki: nagłówkowy, główny oraz stopka.
+       Podział zrealizowany za pomocą semantycznych znaczników          Ilustracja 4. Układ bloków
+       języka HTML5, tak aby po uruchomieniu w przeglądarce układ
+       bloków na stronie był zgody z ilustracją 4
+   −   Zwartość bloku stopki:
+           − Paragraf o treści „Wykonał:” dalej wstawiony numer zdającego
+
+Cechy strony login.php:
+   −   Efekt działania skryptu 1
+   −   Tytuł strony widoczny na karcie przeglądarki: „Zaloguj się”
+   −   Zawartość bloku nagłówkowego: nagłówek pierwszego stopnia o treści „Portal laboratorium”
+   −   Zawartość bloku głównego:
+          − Nagłówek drugiego stopnia o treści „Zaloguj się do systemu”
+          − Formularz wysyłający dane metodą bezpieczną do pliku login.php, składający się z pól:
+                 − Etykieta o treści „Login:”
+                 − Pole edycyjne
+                 − Etykieta o treści „Hasło:”
+                 − Pole edycyjne służące, do wpisywania hasła, ukrywające wprowadzone znaki
+                 − Przycisk o treści „Zaloguj” wysyłający dane z formularza do skryptu 1
+                  −   Układ pól zgodny z ilustracją 2
+                  −   Etykiety są powiązane z odpowiednimi polami edycyjnymi
+
+Cechy strony wyniki.php:
+   − Efekt działania skryptu 2
+   −   Tytuł strony widoczny na karcie przeglądarki: „Przeglądaj wyniki”
+   −   Zawartość bloku nagłówkowego:
+          − Nagłówek pierwszego stopnia o treści „Portal laboratorium”
+          − Paragraf z wynikiem działania skryptu 2
+          − Paragraf z odnośnikiem do pliku wyloguj.php o treści „Wyloguj”
+   −   Zawartość bloku głównego:
+           −   Nagłówek drugiego stopnia o treści „Wyniki pacjentów”
+           −   Blok zawierający tabelę z 6 kolumnami. Pierwszy wiersz zawiera komórki nagłówkowe
+               kolejno: „Imię pacjenta”, „Nazwisko pacjenta”, „PESEL”, „Data zlecenia”, „Data wykonania”,
+               „Wynik”. Zawartość tabeli generowana jest skryptem 3
+
+
+
+
+                                                  Strona 4 z 8
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie styl.css. Cechy formatowania CSS
+działające na stronie:
+    − Dla selektora ciała strony: krój czcionki Verdana, w przypadku jego braku sans-serif, kolor tła
+       #D4F1F4, kolor czcionki #05445E
+    − Dla bloku głównego na stronie login.php: szerokość 50 em, marginesy zewnętrzne automatycznie
+       wyliczane przez przeglądarkę, marginesy wewnętrzne 20 px
+    − Dla bloku stopki: wyrównanie tekstu do prawej strony
+    − Dla bloku nagłówkowego: marginesy zewnętrzne 40 px
+    − Dla bloku z tabelą: marginesy zewnętrzne 40 px, marginesy wewnętrzne 20 px
+    − Dla bloku głównego na stronie login.php, dla bloku nagłówkowego oraz dla bloku z tabelą: kolor tła
+       #75E6DA, zaokrąglenie obramowania 5 px, cień elementu o przesunięciu poziomym i pionowym
+       10 px, rozmyciu 5 px i kolorze LightBlue
+    − Dla selektora nagłówka pierwszego stopnia, selektora nagłówka drugiego stopnia oraz selektora
+       formularza: wyrównanie tekstu do środka
+    − Dla selektora formularza: marginesy zewnętrzne 10 px
+    − Dla przycisku o treści “Zaloguj”: szerokość 14 em
+    − Dla tabeli: marginesy zewnętrzne automatycznie wyliczone przez przeglądarkę, obramowanie
+       połączone
+    − Dla tabeli i wiersza tabeli: obramowanie linią ciągłą 1 px o kolorze #189AB4
+    − Dla komórek nagłówkowych tabeli i komórek tabeli: marginesy wewnętrzne 10 px
+    − Dla odnośnika: brak podkreślenia
+    − Gdy kursor znajdzie się na wierszu tabeli kolor tła zmienia się na biały o przeźroczystości 0.8
+
+Uwaga: styl CSS ciała strony, formularza, nagłówka pierwszego i drugiego stopnia należy zdefiniować
+wyłącznie przy pomocy selektora tego znacznika. Jest to uwarunkowane projektem późniejszej rozbudowy
+witryny.
+
+Skrypty działające po stronie serwera
+W tabelach na końcu arkusza zamieszczono pomoc przydatną do napisania skryptów. Wymagania wspólne
+dotyczące skryptów:
+    − Napisane w języku PHP
+    − Należy stosować znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim
+    − Skrypty wykorzystują mechanizm sesji
+
+Skrypt 1 (login.php):
+    − Jeżeli dane zostały wysłane z formularza i login to admin, a hasło to TajneHaslo321* ustawiana jest
+       zmienna sesji zawierająca aktualną nazwę użytkownika oraz zostaje załadowana strona wyniki.php
+
+Skrypt 2 (wyniki.php):
+    − Jeżeli zmienna sesji zawierająca aktualną nazwę użytkownika nie jest ustawiona następuje
+       przekierowanie do strony login.php
+    − W bloku nagłówkowym, w akapicie wyświetlany jest napis „Witaj, <użytkownik>” gdzie <użytkownik>
+       to nazwa użytkownika pobrana ze zmiennej sesji. Nazwa użytkownika jest zapisana w znaczniku
+       semantycznym oznaczającym tekst ważny, formatowany domyślnie jako pogrubiony
+
+                                                Strona 5 z 8
+Skrypt 3 (wyniki.php, tabela):
+    − Łączy się z serwerem bazodanowym na localhost, użytkownik root bez hasła, baza danych o nazwie
+       laboratorium
+    − Wysyła do bazy danych zapytanie 4
+    − Wyniki zapytania wyświetlane są jako kolejne wiersze tabeli (zgodnie z ilustracją 3)
+    − W ostatniej kolumnie tabeli, gdy z bazy została zwrócona niepusta nazwa pliku wstawiany jest
+       odnośnik o treści „wynik” prowadzący do pliku o nazwie zwróconej z bazy. Odnośnik otwiera się
+       w nowej karcie przeglądarki
+    − Ostatnią operacją skryptu jest zamknięcie połączenia z bazą danych
+
+Skrypt 4 (wyloguj.php):
+    − Jeżeli jest ustawiona zmienna sesji zawierająca nazwę użytkownika to jest ona usuwana (dane sesji
+       są czyszczone)
+    − Następuje przekierowanie do strony login.php
+
+Tabela 1. Wybór funkcji języka PHP do obsługi bazy MySQL i MariaDB
+            Funkcje biblioteki mysqli                             Zwracana wartość
+ mysqli_connect(serwer, użytkownik,
+ hasło, nazwa_bazy)                              id połączenia lub FALSE, gdy niepowodzenie
+ mysqli_select_db(id_polaczenia,
+ nazwa_bazy)                                     TRUE/FALSE w zależności od stanu operacji
+ mysqli_error(id_polaczenia)                     Tekst komunikatu błędu
+ mysqli_close(id_polaczenia)                     TRUE/FALSE w zależności od stanu operacji
+ mysqli_query(id_polaczenia,
+ zapytanie)                                      Wynik zapytania
+
+ mysqli_fetch_row(wynik_zapytania)               Tablica numeryczna przechowująca kolejny wiersz
+                                                 z podanych w wyniku zapytania
+                                                 Tablica asocjacyjna zawierająca kolejny wiersz z
+ mysqli_fetch_array(wynik_zapytania)             podanych w wyniku zapytania lub FALSE, jeżeli nie
+                                                 ma więcej wierszy w wyniku zapytania
+ mysqli_num_rows(wynik_zapytania)                Liczba wierszy w podanym wyniku zapytania
+ mysqli_num_fields(wynik_zapytania)              Liczba kolumn w podanym zapytaniu
+                                                 TRUE/FALSE w zależności od, tego czy $zmienna
+ isset($zmienna)
+                                                 istnieje
+
+
+Tabela 2. Wybrane funkcje do obsługi sesji w PHP
+ Funkcja                                     Opis
+ session_start()                             Rozpoczyna sesję i umożliwia dostęp do zmiennych
+                                             sesyjnych
+ $_SESSION['nazwa']                          Ustawia lub zmienia wartość zmiennej sesyjnej o podanej
+                                             nazwie
+ unset($_SESSION['nazwa'])                   Usuwa zmienną sesyjną o podanej nazwie
+ session_destroy()                           Usuwa wszystkie zmienne sesyjne i kończy sesję
+
+Tabela 3. Wybrane zastosowanie funkcji header w PHP
+ Nazwa i wartość nagłówka                            Opis
+ header("Location: [URL]");                          Przekierowuje klienta do innego adresu URL
+ header("Content-Type: application/json");           Określa typ MIME odpowiedzi jako JSON
+ header("Cache-Control: no-cache, must-revalidate"); Zapobiega przechowywaniu odpowiedzi w
+                                                     pamięci podręcznej
+ header("HTTP/1.0 404 Not Found");                   Wysyła kod statusu 404 oznaczający, że zasób nie
+                                                     został znaleziony
+
+                                             Strona 6 z 8
+Tabela 4. Wybrane funkcje języka SQL operujące na dacie i czasie
+ Funkcja                      Wartość zwracana
+ CURDATE()                    aktualna data w formacie YYYY-MM-DD, np: 2016-04-05
+ CURTIME()                    aktualny czas w formacie HH:MM:SS, np: 09:06:34
+ YEAR()                       rok dla podanej w parametrze daty, np: 2016
+ MONTH()                      miesiąc dla podanej w parametrze daty, np: 4
+ DAY()                        dzień dla podanej w parametrze daty, np: 5
+ HOUR()                       godzina od podanego w parametrze czasu, np: 9
+ MINUTE()                     minuty od podanego w parametrze czasu, np: 6
+ SECOND()                     sekundy od podanego w parametrze czasu, np: 34
+ DATE()                       tworzy typ DATE z innego typu np. DATETIME
+
+Tabela 5. Wybrane fragmenty pomocy ze strony w3schools.com na temat właściwości box-shadow
+CSS Syntax
+box-shadow: h-offset v-offset blur spread color;
+Property Values
+ Value          Description
+ h-offset       Required. The horizontal offset of the shadow. A positive value puts the shadow on the
+                right side of the box, a negative value puts the shadow on the left side of the box
+ v-offset       Required. The vertical offset of the shadow. A positive value puts the shadow below the
+                box, a negative value puts the shadow above the box
+ blur           Optional. The blur radius. The higher the number, the more blurred the shadow will be
+ spread         Optional. The spread radius. A positive value increases the size of the shadow, a negative
+                value decreases the size of the shadow
+ color          Optional. The color of the shadow. The default value is the text color. Look at CSS Color
+                Values for a complete list of possible color values.
+
+Tabela 6. Semantic Elements in HTML
+      Tag                                              Description
+<article>      Defines independent, self-contained content
+<aside>        Defines content aside from the page content
+<details>      Defines additional details that the user can view or hide
+<figcaption>   Defines a caption for a <figure> element
+<figure>       Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+<footer>       Defines a footer for a document or section
+<header>       Specifies a header for a document or section
+<main>         Specifies the main content of a document
+<mark>         Defines marked/highlighted text
+<nav>          Defines navigation links
+<section>      Defines a section in a document
+<summary>      Defines a visible heading for a <details> element
+<time>         Defines a date/time
+
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego, powinny znajdować się pliki: login.php,
+wyniki.php, wyloguj.php, styl.css, kwerendy.txt, przeglądarka.txt, zrzuty ekranu: import.png, kw1.png,
+kw2.png, kw3.png, kw4.png, 3 pliki formatu PDF, ewentualnie inne przygotowane pliki. Po nagraniu płyty
+sprawdź poprawność jej odczytu. Opisz płytę numerem zdającego i pozostaw zapakowaną w pudełku na
+stanowisku wraz z arkuszem egzaminacyjnym.
+                                                Strona 7 z 8
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie podlegać będzie 5 rezultatów:
+   − operacje na bazie danych,
+   − zawartość witryny internetowej,
+   −   działanie witryny internetowej,
+   −   styl CSS witryny internetowej,
+   −   skrypty.
+
+
+
+
+                                         Strona 8 z 8
+Wypełnia zdający w przypadku nagranej płyty
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD/DVD z rezultatami wykonania zadania egzaminacyjnego
+
+opisaną przeze mnie numerem PESEL                                         i oświadczam, że jakość nagrania
+
+została przeze mnie sprawdzona.
+
+
+Wypełnia zdający w przypadku nienagranej (pustej) płyty
+
+
+Poświadczam numerem PESEL                                            , że do arkusza nie dołączam płyty
+
+CD/DVD z rezultatami wykonania zadania egzaminacyjnego.
+
+
+Wypełnia Przewodniczący ZN
+
+
+   □ Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD/DVD, opisana numerem
+       PESEL zdającego.
+
+   □ Potwierdzam, że do arkusza egzaminacyjnego nie została dołączona płyta CD/DVD.
+
+                                                          ……………………………………………..
+                                                          Czytelny podpis Przewodniczącego ZN
+

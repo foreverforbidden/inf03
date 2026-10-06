@@ -1,0 +1,25 @@
+{
+  "password": "Z@Rok!Matur@",
+  "db": "matura",
+  "required_files": [
+    "index.php",
+    "kwerendy.txt",
+    "ma.jpg",
+    "przeglądarka.txt",
+    "ra.jpg",
+    "styl.css",
+    "tu.jpg",
+    "wynik.php"
+  ],
+  "image_count": null,
+  "pages": [
+    "index.php",
+    "wynik.php"
+  ],
+  "code": "inf03_2026_01_04",
+  "pdf": "inf03_arkusze/inf03_2026_01_04_arkusz.pdf",
+  "sql_files": [
+    "materialy/egzamin.sql"
+  ],
+  "problems": []
+}

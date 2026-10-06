@@ -1,0 +1,296 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 08
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+
+Numer PESEL zdającego*                                                        Miejsce na naklejkę z numerem
+                                                                                PESEL i z kodem ośrodka
+
+         Numer stanowiska
+
+
+
+
+Czas trwania egzaminu: 150 minut                                                         INF.03-08-26.06-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2026                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL*,
+          numer stanowiska i naklej naklejkę** z numerem PESEL i z kodem ośrodka.
+    2.    Sprawdź, czy arkusz egzaminacyjny zawiera 6 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    3.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    4.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    5.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    6.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami wykonania zadania
+          na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu nadzorującego.
+    7.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania
+          egzaminu.
+
+                                                                                               Powodzenia!
+
+ * w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+** w przypadku otrzymania naklejki
+
+
+Układ graficzny
+© CKE 2025
+Zadanie egzaminacyjne
+UWAGA: numer, którym został podpisany arkusz egzaminacyjny (PESEL lub w przypadku jego braku, numer
+paszportu) jest w zadaniu nazywany numerem zdającego.
+Wykonaj aplikację internetową portalu wypożyczalni gier, wykorzystując zainstalowane na komputerze
+aplikacje.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się
+archiwum 7z o nazwie pliki18 zabezpieczone hasłem: WypożyczalniaGierWideo
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego.
+Po skończonej pracy wszystkie wyniki należy zapisać w tym folderze.
+
+Operacje na bazie danych
+Do wykonania operacji na bazie należy wykorzystać tabele przedstawione na ilustracji 1. Na potrzeby
+zadania model bazy danych został uproszczony. W tabeli gry pole gatunek zawiera nazwy gatunków danej
+gry, oddzielone przecinkami.
+
+
+
+
+                                       Ilustracja 1. Baza danych
+Za pomocą narzędzia phpMyAdmin wykonaj następujące operacje na bazie danych:
+   ‒ Utwórz bazę danych o nazwie bazagier, z zestawem znaków utf8mb4_unicode_ci
+   ‒ Do utworzonej bazy zaimportuj tabele z pliku bazagier.sql
+   ‒ Wykonaj zrzut ekranu po imporcie. Zapisz zrzut w formacie PNG pod nazwą import. Nie kadruj zrzutu.
+      Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+      widoczne elementy wskazujące na poprawnie wykonany import tabel
+   ‒ Wykonaj zapytania SQL działające na bazie bazagier. Zapytania zapisz w pliku kwerendy.txt.
+      Wykonaj zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie JPEG
+      i nadaj im nazwy kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora z widocznym
+      paskiem zadań
+      ‒ Zapytanie 1: wybierające jedynie tytuły i gatunki gier wydanych w latach 2018 ÷ 2023, dla których
+          jednym z gatunków jest „Niezależne”
+      ‒ Zapytanie 2: wybierające jedynie nazwę każdego producenta w bazie oraz liczbę gier, które ten
+          producent wyprodukował, zgrupowane po nazwie producenta. Kolumnie z liczbą gier należy
+          nadać nazwę (alias) „liczba_gier”. Należy posłużyć się relacją i odpowiednim rodzajem złączenia
+          (wybrani są wszyscy producenci, nawet z zerową liczbą gier)
+      ‒ Zapytanie 3: wybierające identyfikatory i tytuły gier, odpowiadającą im nazwę producenta z tabeli
+          producenci oraz odpowiadającą im nazwę wydawcy z tabeli wydawcy. Kolumnie z nazwą
+          producenta należy nadać nazwę (alias) „producent”, a kolumnie z nazwą wydawcy – (alias)
+          „wydawca”. Należy posłużyć się złożoną relacją
+      ‒ Zapytanie 4: dodające do tabeli gry kolumnę ocena typu liczbowego, kolumna nie może być pusta,
+          a jej wartość domyślna to 5
+
+                                              Strona 2 z 6
+Witryna internetowa
+
+
+
+
+  Ilustracja 2. Wygląd strony w pliku index.html, kursor znajduje się na przedostatniej miniaturze
+
+Przygotowanie grafiki:
+   ‒ Plik gra10.png, wypakowany z archiwum, należy przeskalować do szerokości 1024 px
+       z zachowaniem proporcji obrazu, a następnie wykadrować w pionie do wymiaru 576 px.
+       Tak przygotowaną grafikę należy zapisać w pliku gra10.jpg
+
+Witryna internetowa składa się ze stron index.html oraz onas.html. Ich wygląd przedstawiono na ilustracjach
+Ilustracja 2 i 4.
+
+Cechy wspólne dla obu stron:
+   ‒ Zapisane w języku HTML5
+   ‒ Zadeklarowany polski język zawartości witryny
+   ‒ Jawnie zastosowany właściwy standard kodowania polskich znaków
+   ‒ Arkusz stylów styl_gier.css właściwie połączony z kodem strony
+   ‒ Plik skryptu skrypty.js właściwie połączony z kodem strony
+   ‒ Podział strony na bloki: nagłówkowy 1, nagłówkowy 2, główny, stopki.
+      Podział zrealizowany za pomocą semantycznych znaczników języka
+      HTML5 tak, aby po uruchomieniu w przeglądarce układ bloków był
+                                                                                 Ilustracja 3. Układ bloków
+      zgodny z ilustracją 3
+   ‒ Zawartość bloku nagłówkowego 1:
+         ‒ Nagłówek drugiego stopnia zawierający odnośnik do pliku index.html o treści „PoGRAJmy!”
+   ‒ Zawartość bloku nagłówkowego 2:
+         ‒ Lista punktowana (nieuporządkowana), której elementami są: odnośnik do pliku index.html
+             o treści „Strona główna”, odnośnik do pliku onas.html o treści „O nas”
+   ‒ Zawartość stopki:
+         ‒ Paragraf o treści: „Autor:” dalej wstawiony numer zdającego. Numer zdającego należy zapisać
+             przy użyciu znacznika semantycznego oznaczającego tekst ważny domyślnie formatowany
+             jako pogrubiony
+         ‒ Paragraf zawierający efekt działania funkcji licznik ze skryptu
+                                              Strona 3 z 6
+Cechy strony index.html:
+   ‒ Tytuł strony widoczny na karcie przeglądarki: „Najlepsze gry | PoGRAJmy!”
+   ‒ Zawartość bloku głównego:
+          ‒ Nagłówek pierwszego stopnia o treści: „Oto nasz wybór najciekawszych gier”
+          ‒ Blok zawierający dziesięć obrazów od gra1.jpg do gra10.jpg, każdy obraz ma ustawiony:
+                 ‒ Tekst alternatywny „Miniatura gry”
+                 ‒ Podpowiedź (dymek pojawiający się po najechaniu kursorem na obraz) „Tytuł gry”
+
+
+
+
+                               Ilustracja 4. Wygląd strony onas.html
+
+Cechy strony onas.html:
+   ‒ Tytuł strony widoczny na karcie przeglądarki: „O nas | PoGRAJmy!”
+   ‒ Zawartość bloku głównego:
+          ‒ Nagłówek pierwszego stopnia o treści: „Twoje centrum rozrywki”
+          ‒ Blok zawierający trzy obrazy: gra10.jpg, gra5.jpg oraz gra1.jpg
+          ‒ Trzy paragrafy z treścią skopiowaną z pliku teksty_marketingowe.txt
+          ‒ W skopiowanej treści fragmenty między gwiazdkami należy zapisać za pomocą znaczników
+              semantycznych oznaczających tekst ważny, formatowany domyślnie jako pogrubiony.
+              Fragmenty między znakami podkreślenia zapisać za pomocą znaczników semantycznych
+              oznaczających tekst uwypuklony, formatowany domyślnie jako pochylony. Znaki gwiazdki
+              i podkreślenia należy usunąć (ilustracja 4)
+
+
+
+
+                                            Strona 4 z 6
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie styl_gier.css. Cechy formatowania CSS
+działające na stronie:
+    ‒ Domyślne formatowanie wszystkich selektorów: krój czcionki „Segoe UI”, a w przypadku jej braku
+        „Tahoma”
+    ‒ Dla bloku nagłówkowego 1: szerokość 40%
+    ‒ Dla bloku nagłówkowego 2: szerokość 60%, wyrównanie zawartości bloku do prawej strony
+    ‒ Dla listy punktowanej: brak punktora
+    ‒ Dla elementu listy: wyświetlanie jako element liniowy
+    ‒ Dla odnośnika: brak podkreślenia, kolor czcionki #0077A2
+    ‒ Jedynie dla odnośnika znajdującego się w elemencie listy: marginesy wewnętrzne 1 em
+    ‒ Dla selektora nagłówka pierwszego stopnia: wyrównanie tekstu do środka
+    ‒ Dla selektora obrazu: szerokość 20 em, marginesy zewnętrzne 1 em
+    ‒ Obrazy są wyświetlane obok siebie zgodnie z ilustracją 2 i 4
+    ‒ Gdy kursor znajdzie się na obrazie: dodawany jest obrys (outline) o szerokości 3 px linią kreskową
+        koloru #E30613
+
+Uwaga: styl CSS nagłówka pierwszego stopnia i obrazu należy zdefiniować wyłącznie przy pomocy selektora
+tego znacznika. Jest to uwarunkowane projektem późniejszej rozbudowy witryny.
+
+Skrypt działający po stronie klienta
+Wymagania dotyczące skryptu:
+− Należy stosować znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim
+− Plik skrypty.js powinien zawierać funkcję licznik napisaną w języku JavaScript
+−   Funkcja jest wywoływana w momencie załadowania się stron index.html oraz onas.html
+
+Funkcja licznik:
+    −   Wykorzystuje obiekt localStorage do przechowania licznika wyświetleń strony
+    −   Po każdym odwiedzeniu strony zwiększa liczbę jej wyświetleń o 1
+    −   W paragrafie znajdującym się w stopce witryny wyświetla napis „Liczba wejść na stronę: X”, gdzie X
+        jest liczbą wyświetleń strony
+
+
+Tabela 1. Metody mechanizmu localStorage
+             Metoda                                                       Opis
+ localStorage.setItem(key,                     Ustawia klucz key na wartość value, a jeśli klucz ten
+ value)                                        już istnieje – aktualizuje jego wartość.
+ localStorage.removeItem(key)                  Usuwa klucz key. Jeśli klucz ten nie istnieje, metoda
+                                               nie robi nic.
+ localStorage.getItem(key)                     Zwraca wartość przypisaną do klucza key lub wartość
+                                               null, gdy klucz ten nie istnieje.
+ localStorage.clear()                          Usuwa wszystkie klucze ustawione w obiekcie
+                                               localStorage.
+
+
+
+
+                                               Strona 5 z 6
+Tabela 2. Wybrane zdarzenia języka JavaScript
+   Zdarzenie                                            Opis
+ onload             Wywoływane, gdy cały dokument, w tym wszystkie zasoby, takie jak obrazy i
+                    skrypty, zostaną w pełni załadowane.
+ onclick            Wywoływane, gdy użytkownik kliknie na element (także dotknie na ekranach
+                    dotykowych).
+ onchange           Wywoływane, gdy wartość elementu zmienia się i zmiana ta zostanie
+                    zatwierdzona (np. po opuszczeniu pola tekstowego lub wybraniu nowej wartości
+                    w polu wyboru).
+ onsubmit           Wywoływane, gdy przesyłany jest formularz. Umożliwia to przechwycenie i
+                    ewentualnie przerwanie przesyłania formularza.
+ onmouseover        Wywoływane, gdy kursor myszy przechodzi nad elementem.
+
+Tabela 3. Semantic Elements in HTML
+      Tag                                             Description
+ <article>        Defines independent, self-contained content
+ <aside>          Defines content aside from the page content
+ <details>        Defines additional details that the user can view or hide
+ <figcaption>     Defines a caption for a <figure> element
+ <figure>         Specifies self-contained content, like illustrations, diagrams, photos, code listings,
+                  etc.
+ <footer>         Defines a footer for a document or section
+ <header>         Specifies a header for a document or section
+ <main>           Specifies the main content of a document
+ <mark>           Defines marked/highlighted text
+ <nav>            Defines navigation links
+ <section>        Defines a section in a document
+ <summary>        Defines a visible heading for a <details> element
+ <time>           Defines a date/time
+
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego powinny znajdować się pliki: index.html,
+onas.html, pliki grafik: od gra1.jpg do gra10.jpg, gra10.png, kwerendy.txt, skrypty.js, styl_gier.css, zrzuty
+ekranowe: import, kw1, kw2, kw3, kw4, przeglądarka.txt, ewentualnie inne przygotowane pliki. Po nagraniu
+płyty sprawdź poprawność jej odczytu. Opisz płytę numerem zdającego i pozostaw zapakowaną w pudełku
+na stanowisku wraz z arkuszem egzaminacyjnym.
+
+
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie podlegać będzie 5 rezultatów:
+   −   operacje na bazie danych,
+   −   zawartość witryny internetowej,
+   −   działanie witryny internetowej,
+   −   styl CSS witryny internetowej,
+   −   skrypt.
+
+
+
+
+                                                Strona 6 z 6
+Wypełnia zdający w przypadku nagranej płyty
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD/DVD z rezultatami wykonania zadania egzaminacyjnego
+
+opisaną przeze mnie numerem PESEL                                         i oświadczam, że jakość nagrania
+
+została przeze mnie sprawdzona.
+
+
+Wypełnia zdający w przypadku nienagranej (pustej) płyty
+
+
+Poświadczam numerem PESEL                                            , że do arkusza nie dołączam płyty
+
+CD/DVD z rezultatami wykonania zadania egzaminacyjnego.
+
+
+Wypełnia Przewodniczący ZN
+
+
+   □ Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD/DVD, opisana numerem
+       PESEL zdającego.
+
+   □ Potwierdzam, że do arkusza egzaminacyjnego nie została dołączona płyta CD/DVD.
+
+                                                          ……………………………………………..
+                                                          Czytelny podpis Przewodniczącego ZN
+

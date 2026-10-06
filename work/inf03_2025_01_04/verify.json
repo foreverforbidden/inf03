@@ -1,0 +1,59 @@
+{
+  "code": "inf03_2025_01_04",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT model FROM produkt",
+      "ok": true,
+      "rows": 4,
+      "preview": "+---------+\n| model   |\n+---------+\n| O-23-45 |\n| P-59-03 |\n| T-02-44 |\n| T-03-32 |\n+---------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT buty.model, buty.nazwa, buty.cena, produkt.nazwa_pliku FROM buty JOIN produkt ON buty.model = produkt.model",
+      "ok": true,
+      "rows": 4,
+      "preview": "+---------+---------------------+--------+-------------+\n| model   | nazwa               | cena   | nazwa_pliku |\n+---------+---------------------+--------+-------------+\n| P-59-03 | PÓŁBUTY WIZYTOWE    | 188.00 | but1.png    |\n| T-02-44 | TRZEWIKI SZNUROWANE | 399.00 | but2.png    |\n| T-03-32 | TRAMPKI SLIP ON     |  77.99 | but3.png    |\n| O-23-45 | OBUWIE TRENINGOWE   | 179.00 | but4.png    |\n+---------+---------------------+--------+-------------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT buty.nazwa, buty.cena, produkt.kolor, produkt.kod_produktu, produkt.material, produkt.nazwa_pliku FROM buty JOIN produkt ON buty.model = produkt.model WHERE buty.model = 'P-59-03'",
+      "ok": true,
+      "rows": 1,
+      "preview": "+--------------------+--------+--------+--------------+------------------+-------------+\n| nazwa              | cena   | kolor  | kod_produktu | material         | nazwa_pliku |\n+--------------------+--------+--------+--------------+------------------+-------------+\n| PÓŁBUTY WIZYTOWE   | 188.00 | czarny |       419069 | skóra naturalna  | but1.png    |\n+--------------------+--------+--------+--------------+------------------+-------------+"
+    },
+    {
+      "n": 4,
+      "sql": "INSERT INTO kategorie (nazwa_kat) VALUES ('Sandały')",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "index.php",
+      "status": 200,
+      "bytes": 1470
+    },
+    {
+      "page": "zamow.php",
+      "status": 200,
+      "bytes": 320
+    },
+    {
+      "page": "formularz index.php->zamow.php [post]",
+      "status": 200,
+      "bytes": 320,
+      "fields": {
+        "model": "Test",
+        "rozmiar": "Test",
+        "liczba": "2"
+      }
+    }
+  ],
+  "checked_at": "2026-10-06 18:44:45"
+}

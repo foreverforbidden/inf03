@@ -1,0 +1,32 @@
+{
+  "password": "(G@LeriA)",
+  "db": "galeria",
+  "required_files": [
+    "car.jpg",
+    "cat.jpg",
+    "galeria.php",
+    "jesien.jpg",
+    "jeziorko.jpg",
+    "kiev.jpg",
+    "kwerendy.txt",
+    "motyl.jpg",
+    "owce.jpg",
+    "prague.jpg",
+    "przeglądarka.txt",
+    "styl.css",
+    "taxi.jpg",
+    "tulipany.jpg",
+    "woodpecker.jpg",
+    "wroclaw.jpg"
+  ],
+  "image_count": null,
+  "pages": [
+    "galeria.php"
+  ],
+  "code": "inf03_2024_06_04",
+  "pdf": "inf03_arkusze/inf03_2024_06_04_arkusz.pdf",
+  "sql_files": [
+    "materialy/baza.sql"
+  ],
+  "problems": []
+}

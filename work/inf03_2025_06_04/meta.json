@@ -1,0 +1,21 @@
+{
+  "password": "*PrzEwozy!",
+  "db": "przewozy",
+  "required_files": [
+    "auto.png",
+    "kwerendy.txt",
+    "przeglądarka.txt",
+    "przewozy.php",
+    "styles.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "przewozy.php"
+  ],
+  "code": "inf03_2025_06_04",
+  "pdf": "inf03_arkusze/inf03_2025_06_04_arkusz.pdf",
+  "sql_files": [
+    "materialy/baza.sql"
+  ],
+  "problems": []
+}

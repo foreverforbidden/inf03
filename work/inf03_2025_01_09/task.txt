@@ -1,0 +1,248 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 09
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+                                                                              Miejsce na naklejkę z numerem
+Numer PESEL zdającego*                                                          PESEL i z kodem ośrodka
+
+
+
+
+Czas trwania egzaminu: 150 minut.                                                         INF.03-09-25.01-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2025                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL
+          i naklej naklejkę z numerem PESEL i z kodem ośrodka.
+    2.    Na KARCIE OCENY w oznaczonym miejscu przyklej naklejkę z numerem PESEL oraz wpisz:
+          − swój numer PESEL*,
+          − oznaczenie kwalifikacji,
+          − numer zadania,
+          − numer stanowiska.
+    3.    Sprawdź, czy arkusz egzaminacyjny zawiera 5 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    4.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    5.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    6.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    7.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami oraz KARTĘ
+          OCENY na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu
+          nadzorującego.
+    8.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania egzaminu.
+
+                                                                                               Powodzenia!
+* w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+
+
+
+
+Układ graficzny
+© CKE 2023
+Zadanie egzaminacyjne
+
+UWAGA: numer, którym został podpisany arkusz egzaminacyjny (PESEL lub w przypadku jego braku numer
+paszportu) jest w zadaniu nazywany numerem zdającego.
+
+Wykonaj aplikację internetową portalu Koła zdobywców gór polskich, wykorzystując edytor grafiki rastrowej,
+pakiet XAMPP oraz edytor zaznaczający składnię.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się
+archiwum 7z o nazwie pliki4 zabezpieczone hasłem: $ZdobyWcy&
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego.
+Rozpakowane pliki należy umieścić w tym folderze. Po skończonej pracy wszystkie wyniki należy zapisać
+w tym folderze.
+
+Operacje na bazie danych
+Baza danych zawiera trzy tabele przedstawione na ilustracji 1. Tabela gory zawiera pole tekstowe pasmo
+zawierające nazwy pasm górskich, pole tekstowe nazwa_gory zawierające nazwy szczytów występujących
+w Polsce oraz pole wysokosc zawierające wysokość szczytu wyrażoną w metrach. Tabela osiągniecia
+umożliwia dostęp do informacji, które osoby zdobyły szczyty oraz daty ich zdobycia. Tabela osoby zawiera
+informację o osobach należących do koła zdobywców, ich funkcjach i adresach e-mail
+
+
+
+
+                                       Ilustracja 1. Baza danych
+
+Za pomocą narzędzia phpMyAdmin wykonaj następujące operacje na bazie danych:
+−   Utwórz bazę danych o nazwie zdobywcy, z zestawem polskich znaków (np. utf8_unicode_ci)
+−   Z rozpakowanego archiwum zaimportuj tabele z pliku baza.sql do utworzonej bazy
+−   Wykonaj zrzut ekranu po imporcie. Zapisz zrzut w formacie PNG pod nazwą import. Nie kadruj zrzutu.
+    Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+    widoczne elementy wskazujące na poprawnie wykonany import tabel
+−   Wykonaj zapytania SQL działające na bazie zdobywcy. Zapytania zapisz w pliku kwerendy.txt. Wykonaj
+    zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie PNG i nadaj im nazwy
+    kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora z widocznym paskiem zadań
+      −   Zapytanie 1: wybierające jedynie pasmo, nazwę góry i jej wysokość z tabeli gory i wyświetlające
+          pierwszych 10 rekordów posortowanych malejąco według wysokości
+      −   Zapytanie 2: wybierające jedynie nazwisko, imię, funkcję i email z tabeli osoby
+      −   Zapytanie 3: wstawiające osiągnięcie w postaci zdobycia góry „Łysica - Skała Agaty” (id=182)
+          przez uczestnika B. Urszula (id=4) w dniu 2024-06-08, klucz główny uzyskiwany automatycznie
+      −   Zapytanie 4: wstawiające nową osobę: M., Miłosz, uczestnik, m.milosz@zdobywcyxyz.pl do tabeli
+          osoby, klucz główny uzyskiwany automatycznie
+                                              Strona 2 z 5
+Witryna internetowa
+
+
+
+
+                               Ilustracja 2. Wygląd witryny internetowej
+
+Cechy grafiki:
+− Nazwa pliku logo.png, grafika wykonana na podstawie pliku logo.jpg
+−   Tło przezroczyste
+−   Umieszczony na środku mapy tekst o treści „ZDOBYWCY GÓR” zapisany czcionką szeryfową, w kolorze
+    zielonym. Tekst nie może wychodzić poza obszar mapy. Patrz ilustracja 2
+−   Przeskalowana z zachowaniem proporcji do szerokości 600 px
+
+Cechy witryny:
+−   Składa się ze strony o nazwie zdobywcy.php
+−   Zapisana w języku HTML5
+−   Zadeklarowany polski język zawartości witryny
+−   Jawnie zastosowany właściwy standard kodowania polskich znaków
+−   Tytuł strony „ZDOBYWCY GÓR” widoczny na karcie przeglądarki
+−   Arkusz stylów w pliku o nazwie styles.css prawidłowo połączony z kodem strony
+−   Podział strony na blok nagłówkowy, poniżej blok nawigacji, poniżej obok siebie bloki lewy i prawy, na
+    dole blok stopki. Podział zrealizowany za pomocą semantycznych znaczników sekcji języka HTML5 tak,
+    aby po uruchomieniu w przeglądarce wygląd układu bloków był zgodny z ilustracją 2
+−   Zawartość bloku nagłówkowego: nagłówek pierwszego stopnia o treści: „Klub zdobywców gór polskich”
+−   Zawartość bloku nawigacji: odnośniki do plików zawierających zrzuty ekranu wykonanych kwerend
+    z treścią: kwerenda1, kwerenda2, kwerenda3, kwerenda4
+−   Zawartość bloku lewego:
+       − Grafika logo.png z tekstem alternatywnym o treści: „logo zdobywcy”
+      −   Nagłówek trzeciego stopnia o treści: „razem z nami:”
+
+                                               Strona 3 z 5
+        −
+        Lista punktowana (nieuporządkowana) zawierająca elementy: „wyjazdy”, „szkolenia”, „rekreacja”,
+        „wypoczynek”, „wyzwania”
+−   Zawartość bloku prawego:
+        −   Nagłówek drugiego stopnia o treści: „Dołącz do naszego zespołu!”
+        −   Paragraf zawierający tekst „Wpisz swoje dane do formularza:”
+        −   Formularz wysyłający dane do tego samego pliku metodą bezpieczną, zawierający:
+            − Pole edycyjne poprzedzone etykietą „Nazwisko: ”
+            − Pole edycyjne poprzedzone etykietą „Imię: ”
+            − Pole listy rozwijanej poprzedzone etykietą „Funkcja: ”, o elementach: „uczestnik”,
+                „przewodnik”, „zaopatrzeniowiec”, „organizator”, „ratownik”
+            − Pole edycyjne przeznaczone do wpisywania adresu email, poprzedzone etykietą „Email: ”
+            − Przycisk „Dodaj” wysyłający dane z formularza do skryptu 2
+            − Tabela o 4 kolumnach, pierwszy jej wiersz zawiera komórki nagłówkowe: Nazwisko, Imię,
+                Funkcja, Email. Tabela jest wypełniana za pomocą skryptu 1
+−   Zawartość stopki: paragraf „Stronę wykonał: ”, dalej wstawiony numer zdającego
+
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie styles.css. Cechy formatowania CSS,
+działające na stronie:
+    − Dla selektora ciała strony: kolor tła #DDEEDD, krój czcionki Tahoma, wyrównanie tekstu do środka
+    − Dla selektora listy punktowanej: typ punktora kwadrat
+    − Dla selektora elementu listy: wyrównanie tekstu do lewej
+    − Wspólne dla bloku nagłówkowego i stopki: biały kolor czcionki, rozmiar czcionki 120%, marginesy
+        wewnętrzne 10 px
+    − Dodatkowo dla bloku nagłówkowego: kolor tła #409FFF
+    −   Dodatkowo dla stopki: kolor tła #A0A0A0
+    −   Dla bloku nawigacji: kolor tła #FFFFFF, odstępy między wyrazami 30 px, marginesy wewnętrzne
+        10 px
+    −   Dla bloku lewego: kolor tła #E4C0A8, szerokość 30%, wysokość 650 px
+    −   Dla bloku prawego: szerokość 70%, wysokość 650 px, paski przewijania widoczne tylko gdy tekst nie
+        mieści się w bloku
+    −   Dla selektora odnośnika: kolor czcionki #009900
+    −   Wspólne dla tabeli i wszystkich komórek tabeli: obramowanie ciągłe koloru czarnego o grubości 1 px
+    −   Dodatkowo dla tabeli: margines zewnętrzny górny 20 px, marginesy zewnętrzne automatycznie
+        wyliczane przez przeglądarkę
+    −   Dla selektora obrazu: szerokość 90%
+
+Uwaga: styl CSS ciała strony, odnośnika, listy punktowanej, elementu listy i obrazu należy zdefiniować
+wyłącznie przy pomocy selektora tego znacznika. Jest to uwarunkowane projektem późniejszej rozbudowy
+witryny.
+
+
+
+
+                                               Strona 4 z 5
+Skrypty połączenia z bazą
+W tabeli 1 zamieszczono wybrane funkcje PHP do obsługi bazy danych. Wymagania dotyczące skryptów:
+   − Napisane w języku PHP
+   − Należy stosować znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim
+   − Łączą się z serwerem bazodanowym na localhost, użytkownik root bez hasła, baza danych o nazwie
+      zdobywcy
+   − Skrypt 1
+       −   Wysyła do bazy danych zapytanie 2
+       −   W każdym wierszu tabeli, w odpowiednich komórkach, wyświetlane są zwrócone zapytaniem
+           kolejne wiersze z bazy
+   −   Skrypt 2 wysyła do bazy danych zmodyfikowane zapytanie 4, w ten sposób, że dane do zapytania są
+       pobrane z formularza. Zapytanie jest wysyłane tylko wtedy, gdy podano dane w formularzu
+   −   Na końcu jest zamykane połączenie z serwerem
+
+Tabela 1. Wybór funkcji języka PHP do obsługi bazy MySQL i MariaDB
+            Funkcje biblioteki mysqli                            Zwracana wartość
+ mysqli_connect(serwer, użytkownik,              id połączenia lub FALSE, gdy niepowodzenie
+ hasło, nazwa_bazy)
+ mysqli_select_db(id_polaczenia,                 TRUE/FALSE w zależności od stanu operacji
+ nazwa_bazy)
+ mysqli_error(id_polaczenia)                     Tekst komunikatu błędu
+ mysqli_close(id_polaczenia)                     TRUE/FALSE w zależności od stanu operacji
+ mysqli_query(id_polaczenia,                     Wynik zapytania
+ zapytanie)
+ mysqli_fetch_row(wynik_zapytania)               Tablica numeryczna odpowiadająca wierszowi
+                                                 zapytania
+ mysqli_fetch_array(wynik_zapytania)             Tablica zawierająca kolejny wiersz z podanych w
+                                                 wyniku zapytania lub FALSE, jeżeli nie ma więcej
+                                                 wierszy w wyniku zapytania
+ mysqli_num_rows(wynik_zapytania)                Liczba wierszy w podanym zapytaniu
+ mysqli_num_fields(wynik_zapytania)              Liczba kolumn w podanym zapytaniu
+ isset($zmienna)                                 Sprawdzenie, czy $zmienna istnieje
+
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego, powinny znajdować się pliki: import.png,
+kw1.png, kw2.png, kw3.png, kw4.png, kwerendy.txt, logo.png, styles.css, zdobywcy.php, przeglądarka.txt
+oraz ewentualnie inne przygotowane pliki. Po nagraniu płyty sprawdź poprawność jej odczytu. Opisz płytę
+numerem zdającego i pozostaw zapakowaną w pudełku na stanowisku wraz z arkuszem egzaminacyjnym.
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie podlegać będzie 5 rezultatów:
+   − operacje na bazie danych,
+   −   zawartość witryny internetowej,
+   −   działanie witryny internetowej,
+   −   styl CSS witryny internetowej,
+   −   skrypt połączenia z bazą.
+
+
+
+                                               Strona 5 z 5
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD opisaną numerem PESEL                                   ,
+której jakość nagrania została przeze mnie sprawdzona.
+
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD, opisana numerem PESEL zdającego.
+
+
+                                                               ……………………………........…
+                                                               Czytelny podpis Przewodniczącego ZN
+

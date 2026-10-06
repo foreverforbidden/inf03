@@ -1,0 +1,23 @@
+{
+  "password": "kaL(end)arz%",
+  "db": "terminarz",
+  "required_files": [
+    "kalendarz.php",
+    "kwerendy.txt",
+    "logo1.png",
+    "przeglądarka.txt",
+    "sierpien.html",
+    "styl6.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "kalendarz.php",
+    "sierpien.html"
+  ],
+  "code": "inf03_2024_01_04",
+  "pdf": "inf03_arkusze/inf03_2024_01_04_arkusz.pdf",
+  "sql_files": [
+    "materialy/baza.sql"
+  ],
+  "problems": []
+}

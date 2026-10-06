@@ -1,0 +1,21 @@
+{
+  "password": "kaL(end)arz%",
+  "db": "kalendarz",
+  "required_files": [
+    "kwerendy.txt",
+    "logo2.png",
+    "organizer.php",
+    "przeglądarka.txt",
+    "styl5.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "organizer.php"
+  ],
+  "code": "inf03_2023_01_05",
+  "pdf": "inf03_arkusze/inf03_2023_01_05_arkusz.pdf",
+  "sql_files": [
+    "materialy/baza5.sql"
+  ],
+  "problems": []
+}

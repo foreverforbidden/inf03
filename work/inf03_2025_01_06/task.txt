@@ -1,0 +1,299 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 06
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+                                                                              Miejsce na naklejkę z numerem
+Numer PESEL zdającego*                                                          PESEL i z kodem ośrodka
+
+
+
+
+Czas trwania egzaminu: 150 minut.                                                         INF.03-06-25.01-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2025                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL
+          i naklej naklejkę z numerem PESEL i z kodem ośrodka.
+    2.    Na KARCIE OCENY w oznaczonym miejscu przyklej naklejkę z numerem PESEL oraz wpisz:
+          − swój numer PESEL*,
+          − oznaczenie kwalifikacji,
+          − numer zadania,
+          − numer stanowiska.
+    3.    Sprawdź, czy arkusz egzaminacyjny zawiera 6 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    4.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    5.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    6.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    7.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami oraz KARTĘ
+          OCENY na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu
+          nadzorującego.
+    8.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania egzaminu.
+
+                                                                                               Powodzenia!
+* w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+
+
+
+
+Układ graficzny
+© CKE 2023
+Zadanie egzaminacyjne
+UWAGA: numer, którym został podpisany arkusz egzaminacyjny (PESEL lub w przypadku jego braku numer
+paszportu) jest w zadaniu nazywany numerem zdającego.
+
+Wykonaj aplikację internetową serwisu poświęconego systemom liczbowym, wykorzystując edytor grafiki
+rastrowej, pakiet XAMPP oraz edytor zaznaczający składnię.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się
+archiwum 7z o nazwie pliki14 zabezpieczone hasłem: Cyf3rki#
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego.
+Rozpakowane pliki należy umieścić w tym folderze. Po skończonej pracy wszystkie wyniki należy zapisać
+w tym folderze.
+
+Operacje na bazie danych
+Baza danych zawiera jedną tabelę przedstawioną na ilustracji 1. Tabela zawodnicy zawiera informacje
+o klasach, do których uczęszczają członkowie koła, ich pseudonimach, zdobytych tytułach i rankingach.
+W tabeli znajduje się również pole data_zdobycia, które umożliwia zapisanie informacji, kiedy dany zawodnik
+zdobył swój tytuł.
+
+
+
+
+                                        Ilustracja 1. Baza danych
+
+Za pomocą narzędzia phpMyAdmin wykonaj następujące operacje na bazie danych:
+− Utwórz bazę danych o nazwie szachy, z zestawem polskich znaków (np. utf8_unicode_ci)
+−   Do utworzonej bazy zaimportuj tabele z pliku szachy.sql z rozpakowanego archiwum
+−   Wykonaj zrzut ekranu po imporcie. Zapisz zrzut w formacie PNG pod nazwą import. Nie kadruj zrzutu.
+    Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+    widoczne elementy wskazujące na poprawnie wykonany import tabel
+−   Wykonaj zapytania SQL działające na bazie szachy. Zapytania zapisz w pliku kwerendy.txt. Wykonaj
+    zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie PNG i nadaj im
+    nazwy kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora, z widocznym paskiem
+    zadań
+     −   Zapytanie 1: wybierające jedynie pseudonimy zawodników, którzy zdobyli tytuł w lipcu 2020 roku
+     −   Zapytanie 2: wybierające jedynie pseudonimy i tytuły zawodników z klasy 3A który zdobyli
+         dowolny, niepusty tytuł
+     −   Zapytanie 3: wybierające jedynie pseudonim, klasę i ranking dla pierwszych 10 zawodników
+         o najniższej pozycji w rankingu, posortowane według rankingu
+     −   Zapytanie 4: wybierające dla zawodników z niepustym tytułem jedynie pseudonim i datę zdobycia
+         oraz obliczające ile minęło dni od daty zdobycia tytułu do dnia dzisiejszego. Obliczona liczba dni
+         powinna być zapisana pod nazwą kolumny (aliasem) „dni”
+
+
+
+                                                Strona 2 z 6
+Grafika
+Przygotowanie grafiki 2.png (ilustracja 2):
+− Utworzona na bazie grafiki 2a.png, w ten sposób że jest jej lustrzanym odbiciem względem osi pionowej
+− Kolor czcionki, którą zapisano cyfrę „2”, niebieski (0000FF)
+− Tło przezroczyste
+−   Nazwa grafiki 2.png
+
+
+
+
+                  Ilustracja 2. Efekt przekształcenia obrazu z pliku 2a.png do 2.png
+
+Przygotowanie animacji o nazwie cyfry.gif:
+−   Na animację składają się pliki, kolejno: 0.png, 1.png, 2.png, 3.png, 4.png, 5.png, 6.png, 7.png, 8.png,
+    9.png, A.png, B.png, C.png, D.png, E.png i F.png
+−   Nie należy zmieniać właściwości grafik: przezroczystości i wymiarów 200 x 200 px
+−   Każdy obraz jest pokazywany w animacji przez 750 ms, jedna klatka na warstwę. Udokumentuj
+    ustawienie parametru za pomocą zrzutu ekranu o nazwie parametry_animacji.png. Zrzut musi
+    obejmować cały obszar ekranu z widocznym paskiem zadań
+
+Witryna internetowa
+
+
+
+
+                               Ilustracja 3. Wygląd witryny internetowej
+
+Cechy witryny:
+−   Składa się ze strony o nazwie systemy.html
+−   Zapisana w języku HTML5
+−   Zadeklarowany polski język zawartości witryny
+−   Jawnie zastosowany właściwy standard kodowania polskich znaków
+−   Tytuł strony widoczny na karcie przeglądarki: „Systemy liczbowe”
+−   Arkusz stylów w pliku o nazwie styl.css prawidłowo połączony z kodem strony
+
+
+
+
+                                               Strona 3 z 6
+−   Podział strony na bloki: nagłówkowy, poniżej trzy bloki umieszczone obok siebie, na dole stopka. Podział
+    zrealizowany za pomocą semantycznych znaczników sekcji języka HTML5 tak,
+    aby po uruchomieniu w przeglądarce wygląd układu bloków był zgodny
+    z ilustracją 3
+−   Zawartość bloku nagłówkowego:
+    −   Animacja cyfry.gif z tekstem alternatywnym „Cyfry szesnastkowe”
+    −   Nagłówek pierwszego stopnia o treści „Pozycyjne systemy liczbowe”
+−   Zawartość bloku lewego:
+    −  Tabela o 3 kolumnach i 7 wierszach, której układ oraz zawartość przedstawia
+       ilustracja 4. Pierwszy wiersz składa się z komórek nagłówkowych
+−   Zawartość bloku środkowego:
+    − Pole edycyjne przeznaczone do wpisywania liczb, z podpowiedzią: „Wpisz
+        liczbę dziesiętną”
+                                                                                        Ilustracja 4. Tabela
+    − Przycisk o treści „Przelicz na binarny”, jego wciśnięcie uruchamia skrypt
+    − Paragraf o treści: „Brak obliczeń”
+−   Zawartość bloku prawego:
+    −   Nagłówek drugiego stopnia o treści „Słowniczek”
+    −  Lista definicji, zawierająca terminy i ich definicje. Tekst można skopiować z pliku systemy.txt
+    −  Termin „Heksadecymalny” w liście definicji jest odnośnikiem prowadzącym do strony internetowej
+       https://szesnastkowy_system_liczbowy.pl
+−   Zawartość stopki: Paragraf o treści „Stronę opracował: ”, dalej numer zdającego. Numer jest formatowany
+    semantycznym znacznikiem służącym do uwypuklenia tekstu, poprzez zapisanie go kursywą
+
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie styl.css. Cechy formatowania CSS
+działające na stronie:
+− Dla ciała strony: krój czcionki Georgia, biały kolor czcionki
+−   Wspólne dla bloków nagłówkowego i stopki: kolor tła #824555, wyrównanie tekstu do środka, marginesy
+    wewnętrzne 20 px
+−   Wspólne bloków lewego i środkowego: szerokość 30%, wysokość 350 px
+−   Dodatkowo kolor tła dla bloku lewego #A26475, dla bloku środkowego #824555
+−   Dla bloku prawego: kolor tła #A26470, szerokość 40%, wysokość 350 px, paski przewijania widoczne
+    jedynie, gdy treść nie mieści się w bloku
+−   Dla obrazu: oblewanie tekstem z prawej strony (obraz po lewej stronie), szerokość 50 px
+−   Wspólne dla selektorów tabeli, paragrafu oraz terminu listy definicji: marginesy zewnętrzne 10 px
+−   Dodatkowo dla terminu listy definicji: górny margines wewnętrzny 20 px
+−   Wspólne dla komórki i komórki nagłówkowej tabeli: obramowanie linią ciągłą o grubości 3 px, koloru
+    #824555, margines wewnętrzny 5 px
+
+Uwaga: styl CSS tabeli, paragrafu i terminu listy definicji należy zdefiniować wyłącznie przy pomocy selektora
+tych znaczników. Jest to uwarunkowane projektem późniejszej rozbudowy witryny.
+
+
+
+
+                                                Strona 4 z 6
+Skrypt
+W tabeli 1 zamieszczono wybrane funkcje obiektu Math języka JavaScript. Wymagania dotyczące skryptu:
+− Wykonywany po stronie przeglądarki
+− Należy stosować znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim
+− Wartość, w postaci liczby dziesiętnej, pobraną z pola edycyjnego, przekształca na system binarny
+−   Wyświetla w paragrafie pod przyciskiem obliczoną liczbę binarną. Liczba binarna jest rozdzielona spacją
+    na części (co cztery cyfry począwszy od prawej strony) oraz zakończona oznaczeniem kodu w postaci
+    tekstu „(2)”, zapisanym w indeksie dolnym
+
+
+
+
+                   Ilustracja 5. Przykład działania skryptu dla liczby dziesiętnej 537
+
+Przykład algorytmu zamiany liczby dziesiętnej na binarną
+
+K1: Czytaj liczba dziesiętna (L)
+K2: Liczba binarna (B) przypisz pusty napis ""
+K3: B przypisz L mod 2
+K4: L = L/ 2 (zaokrąglona do niższej całkowitej)
+K5: Jeśli L = 0 idź do K6; w przeciwnym razie idź do K3
+K6: Odwróć napis B tak że ostatnia cyfra staje się pierwszą itd. wypisz B
+
+
+Tabela 1. Wybrane własności i metody obiektu Math języka JavaScript
+ Własność / metoda                                      Opis
+ Math.PI             Zwraca wartość stałej Pi (około 3,1415)
+ Math.SQRT2          Zwraca pierwiastek kwadratowy z liczby 2 (około 1,414)
+ Math.abs()          Zwraca wartość bezwzględną liczby podanej jako argument
+ Math.ceil()         Zwraca najmniejszą liczbę całkowitą większą od lub równą liczbie podanej
+                     jako argument
+ Math.floor()        Zwraca największą liczbę całkowitą mniejszą od lub równą liczbie podanej
+                     jako argument
+ Math.pow()          Zwraca liczbę podaną jako pierwszy argument podniesioną do potęgi
+                     podanej jako drugi argument
+ Math.random()       Metoda bezargumentowa; zwraca liczbę pseudolosową z przedziału [0, 1)
+ Math.round()        Zwraca liczbę podaną jako argument zaokrągloną do najbliższej liczby
+                     całkowitej
+ Math.sqrt()         Zwraca pierwiastek kwadratowy liczby podanej jako argument
+
+
+
+
+                                                Strona 5 z 6
+Tabela 2. Wybrane pola i metody modelu DOM języka JavaScript
+          Wyszukiwanie elementów                                Zmiana elementów
+ document.getElementById(id)                             element.innerHTML = "nowa
+ document.getElementsByTagName(TagName)                  zawartość"
+ document.getElementsByClassName(ClassName)              element.attribute_name = "nowa
+ document.getElementsByName(ElementName)                 zawartość"
+ document.querySelector(CSSselector)                     element.setAttribute(atrybut, wartosc)
+ document.querySelectorAll(CSSselector)                  element.style.property_name = "nowa
+                                                         zawartość"
+
+Wybrane zdarzenia HTML
+      Zdarzenia myszy                    Zdarzenia klawiatury           Zdarzenia obiektów
+ onclick                            onkeydown                         onload
+ ondblclick                         onkeypress                        onresize
+ onmouseover                        onkeyup                           onfocusin
+ onmouseout                                                           onfocusout
+
+Tabela 3. Wybrane funkcje daty i czasu w MariaDB
+             Funkcja                                              Opis
+ ADDDATE                             Adds days or another interval to a date.
+ ADDTIME                             Adds a time to a time or datetime.
+ CONVERT_TZ                          Converts a datetime from one time zone to another.
+ CURDATE, CURRENT_DATE               Returns the current date.
+ CURTIME, CURRENT_TIME               Returns the current time.
+ NOW, CURRENT_TIMESTAMP              Returns the current date and time.
+
+
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego, powinny znajdować się pliki: 2.png,
+cyfry.gif, import.png, kw1.png, kw2.png, kw3.png, kw4.png, kwerendy.txt, parametry_animacji.png,
+przeglądarka.txt, styl.css, systemy.html, ewentualnie inne przygotowane pliki. Po nagraniu płyty sprawdź
+poprawność jej odczytu. Opisz płytę numerem zdającego i pozostaw zapakowaną w pudełku na stanowisku
+wraz z arkuszem egzaminacyjnym.
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie podlegać będzie 5 rezultatów:
+   −   operacje na bazie danych,
+   −   zawartość witryny internetowej,
+   −   działanie witryny internetowej,
+   −   styl CSS witryny internetowej,
+   −   skrypt.
+
+
+
+
+                                              Strona 6 z 6
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD opisaną numerem PESEL                                   ,
+której jakość nagrania została przeze mnie sprawdzona.
+
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD, opisana numerem PESEL zdającego.
+
+
+                                                               ……………………………........…
+                                                               Czytelny podpis Przewodniczącego ZN
+

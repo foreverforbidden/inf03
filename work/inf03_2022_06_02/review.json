@@ -1,0 +1,8 @@
+{
+  "code": "inf03_2022_06_02",
+  "pass": true,
+  "score": "42/42",
+  "fails": [],
+  "na": ["utworzenie bazy w phpMyAdmin", "zrzuty ekranu import.png, kw1-kw5.jpg", "nagranie płyty", "folder z numerem zdającego"],
+  "notes": "Wszystkie kwerendy OK na prawdziwej bazie, strony HTTP 200, CSS i skrypt zgodne z treścią, grafiki 80 px szerokości, samochod.png RGBA."
+}

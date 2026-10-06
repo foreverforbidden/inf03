@@ -1,0 +1,11 @@
+-- Zapytanie 1
+SELECT idObiekt, plik, nazwa FROM obiekty WHERE panstwo = 'Islandia';
+
+-- Zapytanie 2
+SELECT obiekty.plik, obiekty.nazwa, obiekty.nazwaCechy, obiekty.wartoscCechy, obiekty.opis, rodzaje.rodzaj FROM obiekty JOIN rodzaje ON obiekty.idRodzaj = rodzaje.idRodzaj WHERE obiekty.idObiekt = 46;
+
+-- Zapytanie 3
+SELECT nazwa FROM obiekty WHERE panstwo = 'Islandia' AND idRodzaj = 10;
+
+-- Zapytanie 4
+SELECT rodzaje.rodzaj, COUNT(obiekty.idObiekt) AS 'Liczba obiektów' FROM rodzaje JOIN obiekty ON rodzaje.idRodzaj = obiekty.idRodzaj GROUP BY rodzaje.idRodzaj, rodzaje.rodzaj;

@@ -1,0 +1,58 @@
+{
+  "code": "inf03_2023_06_01",
+  "pass": true,
+  "fails": [],
+  "warns": [
+    "pominiety (prawdopodobnie zrzut ekranu): baza.jpg",
+    "pominiety (prawdopodobnie zrzut ekranu): kwerenda1.jpg",
+    "pominiety (prawdopodobnie zrzut ekranu): kwerenda2.jpg",
+    "pominiety (prawdopodobnie zrzut ekranu): kwerenda3.jpg",
+    "pominiety (prawdopodobnie zrzut ekranu): kwerenda4.jpg"
+  ],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT nazwa FROM towary WHERE promocja = 1",
+      "ok": true,
+      "rows": 4,
+      "preview": "+------------------+\n| nazwa            |\n+------------------+\n| Gumka do mazania |\n| Cienkopis        |\n| Pisaki 60 szt.   |\n| Markery 4 szt.   |\n+------------------+"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT cena FROM towary WHERE nazwa = 'Markery 4 szt.'",
+      "ok": true,
+      "rows": 1,
+      "preview": "+------+\n| cena |\n+------+\n| 22.4 |\n+------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT dostawcy.id, dostawcy.nazwa, COUNT(towary.id) AS liczba_towarow FROM dostawcy LEFT JOIN towary ON towary.idDostawcy = dostawcy.id GROUP BY dostawcy.id, dostawcy.nazwa",
+      "ok": true,
+      "rows": 3,
+      "preview": "+----+---------------------+----------------+\n| id | nazwa               | liczba_towarow |\n+----+---------------------+----------------+\n|  1 | Papiernictwo        |              4 |\n|  2 | Art. szkolne        |              4 |\n|  3 | Wszystko dla ucznia |              2 |\n+----+---------------------+----------------+"
+    },
+    {
+      "n": 4,
+      "sql": "ALTER TABLE dostawcy ADD informacje TEXT",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "index.php",
+      "status": 200,
+      "bytes": 1203
+    },
+    {
+      "page": "formularz index.php->index.php [post]",
+      "status": 200,
+      "bytes": 1203,
+      "fields": {
+        "towar": "Test"
+      }
+    }
+  ],
+  "checked_at": "2026-10-06 18:40:09"
+}

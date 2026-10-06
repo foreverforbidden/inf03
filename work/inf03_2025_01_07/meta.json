@@ -1,0 +1,22 @@
+{
+  "password": "@PolSki3Miast@",
+  "db": "wykaz",
+  "required_files": [
+    "baner.jpg",
+    "fav.png",
+    "index.php",
+    "kwerendy.txt",
+    "przeglądarka.txt",
+    "style.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "index.php"
+  ],
+  "code": "inf03_2025_01_07",
+  "pdf": "inf03_arkusze/inf03_2025_01_07_arkusz.pdf",
+  "sql_files": [
+    "materialy/wykaz.sql"
+  ],
+  "problems": []
+}

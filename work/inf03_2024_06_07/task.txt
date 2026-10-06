@@ -1,0 +1,277 @@
+                                                                             Arkusz zawiera informacje
+                                                                          prawnie chronione do momentu
+                                                                               rozpoczęcia egzaminu
+
+
+Nazwa kwalifikacji: Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych
+Symbol kwalifikacji: INF.03
+Numer zadania: 07
+Wersja arkusza: SG
+
+
+                                        Wypełnia zdający
+                                                                              Miejsce na naklejkę z numerem
+Numer PESEL zdającego*                                                          PESEL i z kodem ośrodka
+
+
+
+
+Czas trwania egzaminu: 150 minut.                                                         INF.03-07-24.06-SG
+
+
+EGZAMIN ZAWODOWY
+                                                               PODSTAWA PROGRAMOWA
+Rok 2024                                                               2019
+CZĘŚĆ PRAKTYCZNA
+
+Instrukcja dla zdającego
+    1.    Na pierwszej stronie arkusza egzaminacyjnego wpisz w oznaczonym miejscu swój numer PESEL
+          i naklej naklejkę z numerem PESEL i z kodem ośrodka.
+    2.    Na KARCIE OCENY w oznaczonym miejscu przyklej naklejkę z numerem PESEL oraz wpisz:
+          − swój numer PESEL*,
+          − oznaczenie kwalifikacji,
+          − numer zadania,
+          − numer stanowiska.
+    3.    Sprawdź, czy arkusz egzaminacyjny zawiera 6 stron i nie zawiera błędów. Ewentualny brak stron lub
+          inne usterki zgłoś przez podniesienie ręki przewodniczącemu zespołu nadzorującego.
+    4.    Zapoznaj się z treścią zadania oraz stanowiskiem egzaminacyjnym. Masz na to 10 minut. Czas ten
+          nie jest wliczany do czasu trwania egzaminu.
+    5.    Czas rozpoczęcia i zakończenia pracy zapisze w widocznym miejscu przewodniczący zespołu
+          nadzorującego.
+    6.    Wykonaj samodzielnie zadanie egzaminacyjne. Przestrzegaj zasad bezpieczeństwa i organizacji
+          pracy.
+    7.    Po zakończeniu wykonania zadania pozostaw arkusz egzaminacyjny z rezultatami oraz KARTĘ
+          OCENY na swoim stanowisku lub w miejscu wskazanym przez przewodniczącego zespołu
+          nadzorującego.
+    8.    Po uzyskaniu zgody zespołu nadzorującego możesz opuścić salę/miejsce przeprowadzania egzaminu.
+
+                                                                                               Powodzenia!
+* w przypadku braku numeru PESEL – seria i numer paszportu lub innego dokumentu potwierdzającego tożsamość
+
+
+
+
+Układ graficzny
+© CKE 2023
+Zadanie egzaminacyjne
+UWAGA: folder z rezultatami pracy oraz płytę należy opisać numerem zdającego, którym został podpisany
+arkusz, czyli numerem PESEL lub w przypadku jego braku numerem paszportu. Dalej w zadaniu numer ten
+jest nazwany numerem zdającego.
+Wykonaj testową aplikację internetową dla miejskiego ważenia pojazdów, wykorzystując edytor grafiki rastrowej, pakiet
+XAMPP oraz edytor zaznaczający składnię.
+Aby wykonać zadanie, należy zalogować się na konto Egzamin bez hasła. Na pulpicie znajduje się archiwum
+ZIP o nazwie pliki7 zabezpieczone hasłem: %WAg@Poj@zdoW
+Archiwum należy rozpakować.
+Na pulpicie konta Egzamin należy utworzyć folder. Jako nazwy folderu należy użyć numeru zdającego,
+którym został podpisany arkusz. Rozpakowane pliki należy umieścić w tym folderze. Po skończonej pracy
+wszystkie wyniki należy zapisać w tym folderze.
+Operacje na bazie danych
+Baza danych jest zgodna ze strukturą przedstawioną na obrazie 1. Tabele są połączone relacją 1..n. Pole
+waga przechowuje wartości wagi w tonach na jedną oś pojazdu.
+
+
+
+
+                                             Obraz 1. Baza danych
+
+W tabeli 2 umieszczono wybrane funkcje czasu i daty dla bazy danych MariaDB. Za pomocą narzędzia
+phpMyAdmin wykonaj operacje na bazie danych:
+   ‒ Utwórz bazę danych o nazwie wazenietirow, z zestawem polskich znaków (np. utf8_unicode_ci)
+   ‒ Do bazy zaimportuj tabele z pliku baza.sql z rozpakowanego archiwum
+   ‒ Wykonaj zrzut ekranu po imporcie. Zrzut zapisz w formacie PNG i nazwij import. Nie kadruj zrzutu.
+      Powinien on obejmować cały ekran monitora, z widocznym paskiem zadań. Na zrzucie powinny być
+      widoczne elementy wskazujące na poprawnie wykonany import tabel.
+   ‒ Wykonaj zapytania SQL działające na bazie wazenietirow. Zapytania zapisz w pliku kwerendy.txt.
+      Wykonaj zrzuty ekranu przedstawiające wyniki działania kwerend. Zrzuty zapisz w formacie JPEG
+      i nadaj im nazwy kw1, kw2, kw3, kw4. Zrzuty powinny obejmować cały ekran monitora z widocznym
+      paskiem zadań.
+          ‒ Zapytanie 1: aktualizujące tabelę wagi. Rekordy, w których pole lokalizacje_id jest równe: 2, 3, 4 mają
+              zmienione datę i czas na wartości aktualne. Zapytanie ma charakter uniwersalny, zawsze zmienia
+              wartość na aktualną datę / czas
+          ‒ Zapytanie 2: wybierające jedynie ulicę z tabeli lokalizacje
+          ‒ Zapytanie 3: wstawiające do tabeli wagi rekord z danymi: lokalizacje_id: 5, waga: losowa
+              liczba z przedziału 1..10 (wygenerowana funkcją), rejestracja: DW12345, aktualna data (do
+              pola dzien) i aktualny czas (do pola czas). Klucz główny nadawany automatycznie. Zapytanie
+              ma charakter uniwersalny, zawsze wstawia wartość aktualnej daty i czasu
+          ‒ Zapytanie 4: wybierające jedynie pola rejestracja, waga, dzien, czas z tabeli wagi
+              i odpowiadające mu pole ulica z tabeli lokalizacje dla pojazdów, których waga na oś
+              przekracza 5 t. Należy posłużyć się relacją
+
+                                                   Strona 2 z 6
+                                           Witryna internetowa
+
+
+
+
+              Obraz 2. Witryna internetowa. Kursor ustawiony na trzecim wierszu tabeli
+
+Przygotowanie grafiki:
+   ‒ Plik obraz1.png, wypakowany z archiwum, należy zmodyfikować w ten sposób, że zamiast informacji
+       8T na przedstawionym znaku powinna być zapisana wartość 5T. Zmodyfikowany obraz jest widoczny
+       na obrazie 2.
+   ‒ Plik obraz2.jpg odbić wzdłuż osi pionowej oraz przeskalować z zachowaniem proporcji tak, aby jego
+       szerokość wynosiła dokładnie 350 px. Zmodyfikowany obraz jest widoczny na obrazie 2.
+
+Cechy witryny:
+   ‒ Składa się ze strony o nazwie wazenie.php zapisanej w języku HTML5
+   ‒ Ustawiony język zawartości strony na polski
+   ‒ Jawnie zastosowany właściwy standard kodowania polskich znaków
+   ‒ Tytuł strony widoczny na karcie przeglądarki: „Ważenie samochodów ciężarowych”
+   ‒ Arkusz stylów w pliku o nazwie styl.css prawidłowo połączony z kodem strony
+   ‒ Podział strony na bloki: na górze dwa bloki banera, poniżej trzy bloki: lewy, środkowy i prawy, na dole
+      blok stopki. Podział zrealizowany wyłącznie za pomocą semantycznych znaczników sekcji języka
+      HTML5 tak, aby po uruchomieniu w przeglądarce wygląd układu bloków był zgodny z obrazem 2
+   ‒ Zawartość pierwszego banera: nagłówek pierwszego stopnia o treści „Ważenie pojazdów we
+      Wrocławiu”
+   ‒ Zawartość drugiego banera: obraz1.png z tekstem alternatywnym o treści: „waga”
+   ‒ Zawartość bloku lewego:
+        ‒ Nagłówek drugiego stopnia o treści: „Lokalizacje wag”
+        ‒ Lista numerowana (uporządkowana) wypełniona przez skrypt 1
+        ‒ Nagłówek drugiego stopnia o treści: „Kontakt”
+        ‒ Odnośnik pocztowy o treści „napisz” prowadzący do adresu wazenie@wroclaw.pl
+   ‒ Zawartość bloku środkowego:
+        ‒ Nagłówek drugiego stopnia o treści: „Alerty”
+        ‒ Tabela o pięciu kolumnach wypełniona danymi
+
+                                               Strona 3 z 6
+              ‒  pierwszy wiersz zawiera komórki nagłówkowe o treści kolejno: „rejestracja”, „ulica”,
+                 „waga”, „dzień”, „czas”
+              ‒ kolejne wiersze wypełnione są przez skrypt 2 zgodnie z obrazem 2
+          ‒ Efekt działania skryptu 3
+   ‒   Zawartość bloku prawego: obraz2.jpg z tekstem alternatywnym o treści: „tir”
+   ‒   Zawartość stopki: akapit (paragraf) o treści: „Stronę wykonał: ”, następnie numer zdającego.
+
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie styl.css.
+Cechy formatowania CSS, działające na stronie:
+   ‒   Domyślne formatowanie wszystkich selektorów: krój czcionki Tahoma
+   ‒   Wspólne dla obu bloków banera: kolor tła #519657, biały kolor czcionki, wyrównanie tekstu do środka,
+       wysokość 150 px
+   ‒   Dodatkowo pierwszy baner ma szerokość 70%, drugi 30%
+   ‒   Wspólne dla bloku lewego, środkowego i prawego: kolor tła #E1E1E1, wysokość 450 px
+   ‒   Dodatkowo bloki lewy i prawy mają szerokość 25%
+   ‒   Dodatkowo blok środkowy ma szerokość 50% oraz paski przewijania, które pojawiają się jedynie, gdy
+       zawartość nie mieści się w bloku
+   ‒   Dla stopki: kolor tła #80C683, wyrównanie tekstu do środka
+   ‒   Jedynie dla obrazu o nazwie obraz2.jpg: szerokość 100%, marginesy wewnętrzne górny i dolny 100 px,
+       pozostałe 0
+   ‒   Dla selektora tabeli: obramowanie linią ciągłą o szerokości 1 px i kolorze #80C683
+   ‒   Dla selektora komórki tabeli: marginesy wewnętrzne 2 px
+   ‒   Gdy kursor myszy znajdzie się na wierszu tabeli kolor tła wiersza zmienia się na #80C683
+   ‒   Ostatni wiersz tabeli ma tło czerwone
+
+Uwaga: style CSS tabeli, wiersza i komórki tabeli należy zdefiniować wyłącznie przy pomocy selektora dla
+danego znacznika. Jest to uwarunkowane projektem późniejszej rozbudowy witryny.
+
+
+
+
+                                               Strona 4 z 6
+Skrypt połączenia z bazą
+W tabeli 1 podano wybór funkcji PHP do obsługi bazy danych. Wymagania dotyczące skryptów:
+   ‒   Napisane w języku PHP
+   ‒   Należy stosować znaczące nazewnictwo wszystkich zmiennych lub funkcji
+   ‒   Skrypty łączą się z serwerem bazodanowym na localhost, użytkownik root bez hasła, baza danych
+       o nazwie wazenietirow
+   ‒   Skrypt 1
+       − Wysyła do bazy danych zapytanie 2
+       − Zwrócone nazwy ulic są wyświetlane w elementach listy numerowanej z bloku lewego, według
+           wzoru: ”ulica <nazwa_ulicy>”, gdzie nawiasy <> oznaczają wartość pobraną z bazy danych
+   ‒   Skrypt 2
+       − Wysyła do bazy danych zapytanie 4 (kolejność wybieranych
+           pól w zapytaniu zgodna z obrazem 3)
+       − Każdy zwrócony zapytaniem wiersz jest wyświetlany
+           w osobnym wierszu tabeli z bloku środkowego
+   ‒   Skrypt 3
+       − Wysyła do bazy danych zapytanie 3
+       − Odświeża aktualną stronę co 10 sekund.
+   ‒  Na końcu jest zamykane połączenie z serwerem.
+Na obrazie 3 zaprezentowano działanie skryptów 2 i 3. Do tabeli są
+dopisywane nowo wstawione wiersze spełniające kryterium wagi.
+
+                                                                        Obraz 3. Działanie skryptów 2 i 3
+
+
+
+
+Tabela 1. Wybór funkcji języka PHP do obsługi bazy MySQLi i MariaDB
+            Funkcje bilioteki mysqli                             Zwracana wartość
+mysqli_connect(serwer, użytkownik,                    id połączenia lub FALSE, gdy niepowodzenie
+hasło, nazwa_bazy)
+mysqli_select_db(id_polaczenia,                       TRUE/FALSE w zależności od stanu operacji
+nazwa_bazy)
+mysqli_error(id_polaczenia)                           Tekst komunikatu błędu
+mysqli_close(id_polaczenia)                           TRUE/FALSE w zależności od stanu operacji
+mysqli_query(id_polaczenia, zapytanie) Wynik zapytania
+mysqli_fetch_row(wynik_zapytania)                     Tablica numeryczna odpowiadająca wierszowi zapytania
+mysqli_fetch_array(wynik_zapytania)                   Tablica zawierająca kolejny wiersz z podanych w wyniku
+                                                      zapytania lub FALSE, jeżeli nie ma więcej wierszy w
+                                                      wyniku zapytania
+mysqli_num_rows(wynik_zapytania)                      Liczba wierszy w podanym zapytaniu
+mysqli_num_fields(wynik_zapytania)                    Liczba kolumn w podanym zapytaniu
+
+
+
+
+                                                 Strona 5 z 6
+Tabela 2. Wybrane funkcje daty i czasu w MariaDB
+             Funkcja                                                 Opis
+ ADDDATE                             Adds days or another interval to a date.
+ ADDTIME                             Adds a time to a time or datetime.
+ CONVERT_TZ                          Converts a datetime from one time zone to another.
+ CURDATE, CURRENT_DATE               Returns the current date.
+ CURTIME, CURRENT_TIME               Returns the current time.
+ NOW, CURRENT_TIMESTAMP              Returns the current date and time.
+
+Pomoc do funkcji RAND w MariaDB
+Description
+Returns a random DOUBLE precision floating point value v in the range 0 <= v < 1.0. If a constant integer
+argument N is specified, it is used as the seed value, which produces a repeatable sequence of column
+values. In the example below, note that the sequences of values produced by RAND(3) is the same both
+places where it occurs.
+Practical uses
+The expression to get a random integer from a given range is the following:
+FLOOR(min_value + RAND() * (max_value - min_value +1))
+
+
+UWAGA: po zakończeniu pracy utwórz plik tekstowy o nazwie przeglądarka.txt. Zapisz w nim nazwę
+przeglądarki internetowej, w której weryfikowana była poprawność działania witryny. Umieść go w folderze
+z numerem zdającego.
+Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego, którym został podpisany arkusz, powinny
+znajdować się pliki: import.png, kw1.jpg, kw2.jpg, kw3.jpg, kw4.jpg, kwerendy.txt, obraz1.png, obraz2.jpg,
+przeglądarka.txt, styl.css, wazenie.php, ewentualnie inne przygotowane pliki. Po nagraniu płyty sprawdź
+poprawność jej odczytu. Opisz płytę numerem zdającego, którym został podpisany arkusz i pozostaw
+zapakowaną w pudełku na stanowisku wraz z arkuszem egzaminacyjnym.
+
+Czas przeznaczony na wykonanie zadania wynosi 150 minut.
+
+Ocenie będzie podlegać 5 rezultatów:
+   ‒   operacje na bazie danych,
+   ‒   zawartość witryny internetowej,
+   ‒   działanie witryny internetowej,
+   ‒   styl CSS witryny internetowej,
+   ‒   skrypt połączenia z bazą.
+
+
+
+
+                                              Strona 6 z 6
+Wypełnia zdający
+
+
+
+
+Do arkusza egzaminacyjnego dołączam płytę CD opisaną numerem PESEL                                   ,
+której jakość nagrania została przeze mnie sprawdzona.
+
+
+
+Wypełnia Przewodniczący ZN
+
+
+Potwierdzam, że do arkusza egzaminacyjnego dołączona jest płyta CD, opisana numerem PESEL zdającego.
+
+
+                                                               ……………………………........…
+                                                               Czytelny podpis Przewodniczącego ZN
+

@@ -1,0 +1,24 @@
+{
+  "password": "XSaloon[Fryz]",
+  "db": "fryzjer",
+  "required_files": [
+    "fryzura.html",
+    "index.html",
+    "kwerendy.txt",
+    "obraz1.jpg",
+    "obraz2.jpg",
+    "przeglądarka.txt",
+    "styl8.css"
+  ],
+  "image_count": null,
+  "pages": [
+    "fryzura.html",
+    "index.html"
+  ],
+  "code": "inf03_2024_01_08",
+  "pdf": "inf03_arkusze/inf03_2024_01_08_arkusz.pdf",
+  "sql_files": [
+    "materialy/egzamin2.sql"
+  ],
+  "problems": []
+}
