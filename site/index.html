@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trener INF.03</title>
+  <meta name="description" content="Nauka pisania arkuszy egzaminu INF.03 na prawdziwych zadaniach CKE, z natychmiastowym sprawdzaniem.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%232563eb'/><text x='16' y='22' font-size='15' font-family='system-ui' font-weight='700' text-anchor='middle' fill='white'>03</text></svg>">
+  <link rel="stylesheet" href="vendor/codemirror/codemirror.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    try { const t = localStorage.getItem('inf03-theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) { /* brak dostepu */ }
+  </script>
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#/"><span class="logo">03</span> Trener INF.03</a>
+    <nav class="mainnav">
+      <a href="#/" data-nav="home">Start</a>
+      <a href="#/lekcje" data-nav="lekcje">Lekcje</a>
+      <a href="#/arkusze" data-nav="arkusze">Arkusze</a>
+      <a href="#/postep" data-nav="postep">Postęp</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Zmień motyw" title="Zmień motyw">◐</button>
+  </header>
+  <main id="app" tabindex="-1">
+    <p class="loading">Ładowanie…</p>
+  </main>
+  <footer class="foot">
+    <p>Zadania pochodzą z arkuszy egzaminu zawodowego INF.03 (CKE). Postęp zapisuje się tylko w tej przeglądarce; kopię zrobisz w zakładce <a href="#/postep">Postęp</a>.</p>
+  </footer>
+
+  <script src="vendor/sqljs/sql-wasm.js"></script>
+  <script src="vendor/codemirror/codemirror.js"></script>
+  <script src="vendor/codemirror/mode/sql/sql.js"></script>
+  <script src="vendor/codemirror/addon/edit/matchbrackets.js"></script>
+  <script src="vendor/codemirror/addon/edit/closebrackets.js"></script>
+  <script src="vendor/codemirror/addon/selection/active-line.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
