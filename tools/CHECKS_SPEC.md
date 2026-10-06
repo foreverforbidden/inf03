@@ -22,7 +22,7 @@ Wzorcowe przykłady (sprawdzone, przejdź je w całości przed pisaniem):
 8. Wartości CSS jak w treści (kolory nazwami lub szesnastkowo, jednostki jak w treści).
 9. **Nie zaostrzaj struktury.** Podział na bloki sprawdzaj jednym `exists` z polem `selectors` (lista, np. `["header", "nav", "main", "footer"]`; powtórzony selektor oznacza „co najmniej tyle”), a nie łańcuchem `header ~ nav ~ main`: kolejność i położenie pilnują kryteria `layout`. Nie zakładaj kontenera, którego treść nie podaje.
 10. **Zdarzenia JS sprawdzaj działaniem, nie zapisem.** Nie sprawdzaj atrybutu `onclick` (dozwolone jest też `addEventListener`); wystarczą kryteria `js`. W krokach `js` nie używaj id ani klas, których treść nie podaje: użyj selektora ze struktury (`main form input:nth-of-type(2)`) albo dodaj `hint`.
-11. **Przyciski**: treść „przycisk o treści X” dopuszcza `button` i `input[type=button|submit]`. Selektor: `button, input[type=button], input[type=submit]`; tekst: kryterium `exists` z `:is(...)` albo `text` na `button` z `hint`, gdy wzorzec to `button`.
+11. **Przyciski**: treść „przycisk o treści X” dopuszcza `button` i `input[type=button|submit]`. Selektor: `button, input[type=button], input[type=submit]` (dla „czyść” także `input[type=reset]`); napis sprawdzaj typem `text` z tym selektorem i `equals` (dla `input` porównywane jest `value`).
 12. **`cssRule` tylko gdy treść wymaga zapisu pod selektorem** („wyłącznie selektorem znacznika”, „dla selektora X”) albo dla elementów tworzonych przez PHP/JS. Gdy treść opisuje tylko efekt, a `css` nie daje się sprawdzić (np. `margin: auto`, właściwość na elemencie z wrapperem), użyj `cssRule` z `"matching": true`: przechodzi dowolna reguła, której selektor trafia w element. Wyśrodkowanie: `"prop": "margin-left", "value": "auto"` (przejdzie `margin: auto` i `margin: 0 auto`).
 13. Kryterium `file` tylko dla plików nazwanych w treści. Nazwa pliku grafiki: gdy treść dopuszcza dowolny format, `attr` z `contains` (`"logo."`), nie `equals`.
 14. Pierwsze kryterium `head` **każdej** strony (pole `page`) sprawdza DOCTYPE; `"doctype": false` tylko w kolejnych kryteriach `head` tej samej strony.
@@ -46,7 +46,7 @@ Wzorcowe przykłady (sprawdzone, przejdź je w całości przed pisaniem):
 | `cssRule` | `selector`, `prop`, `value`, opcjonalnie `matching: true` | deklaracja zapisana dokładnie pod tym selektorem (dla „wyłącznie przy pomocy selektora znacznika”); z `matching` dowolna reguła trafiająca w element |
 | `hover` | `selector`, `prop`, `value` | reguła `:hover` pasująca do elementu |
 | `layout` | `a`, `b`, `relation`: `leftOf` / `rightOf` / `above` / `below` / `sameRow` / `fullWidth` (bez `b`) | położenie bloków jak na ilustracji układu |
-| `js` | `steps`: lista `{"set": sel, "value": v}`, `{"click": sel}`, `{"hover": sel}`, `{"wait": ms}`; `expect`: lista oczekiwań | każde kryterium `js` uruchamia stronę od nowa |
+| `js` | `steps`: lista `{"set": sel, "value": v}`, `{"click": sel}`, `{"hover": sel}`, `{"blur": sel}` (utrata fokusu), `{"wait": ms}`; `set` wywołuje też `input`, `change` i `keyup`; `expect`: lista oczekiwań | każde kryterium `js` uruchamia stronę od nowa |
 | `file` | `name` | wymagany plik istnieje |
 | `image` | `name`, `width` / `height` (px), `alpha: true` (przezroczystość) | grafika wgrana przez kursanta; tylko dla `web.graphics` |
 | `php`, `manual` | tylko `desc` | wyświetlane, nie liczone automatycznie |

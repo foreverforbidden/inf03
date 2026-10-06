@@ -18,8 +18,9 @@ function replaceAssetRefs(text, uploads, html = false) {
     // adres wzgledny musi byc bezwzgledny, bo strona w podgladzie ma <base> ustawione na materialy
     const url = /^(blob:|data:|https?:)/i.test(rel) ? rel : new URL(rel, document.baseURI).href;
     const n = escRe(name);
-    if (html) out = out.replace(new RegExp(`\\b(src|href)\\s*=\\s*(["']?)${n}\\2(?=[\\s>/])`, 'gi'), `$1=$2${url}$2 data-inf03-orig="${name}"`);
-    out = out.replace(new RegExp(`(["'(=\\s])${n}(["')\\s>])`, 'g'), `$1${url}$2`);
+    if (html) out = out.replace(new RegExp(`\\b(src|href)\\s*=\\s*(["']?)${n}\\2(?=[\\s>/])`, 'gi'), `$1=$2${url}$2 data-inf03-orig="${name}" data-inf03-url="${url}"`);
+    // tekst w title/alt/value zostaje (np. title="10.jpg" to opis, nie adres)
+    out = out.replace(new RegExp(`(?<!\\b(?:title|alt|value|placeholder)\\s*=\\s*["']?)(["'(=\\s])${n}(["')\\s>])`, 'g'), `$1${url}$2`);
   }
   return out;
 }
@@ -165,6 +166,18 @@ function ruleValueMatches(el, style, prop, expected) {
   return norm(a) === norm(b);
 }
 
+// wymiar zapisany w regule trafiajacej w element (np. 50% w kontenerze flex, ktory zwęża bloki)
+function declaredOn(el, prop, value) {
+  const win = el.ownerDocument.defaultView;
+  if (el.style.getPropertyValue(prop) && ruleValueMatches(el, el.style, prop, value)) return true;
+  for (const { rule, media } of allRules(el.ownerDocument)) {
+    if (media && !win.matchMedia(media).matches) continue;
+    const hit = rule.selectorText.split(',').some((p) => { if (/:(hover|active|focus|visited)|::/i.test(p)) return false; try { return el.matches(p); } catch (e) { return false; } });
+    if (hit && ruleValueMatches(el, rule.style, prop, value)) return true;
+  }
+  return false;
+}
+
 function* allRules(doc) {
   function* walk(list, media) {
     for (const r of list) {
@@ -179,7 +192,7 @@ function* allRules(doc) {
   }
 }
 
-const normSel = (s) => s.replace(/\s+/g, ' ').replace(/\s*([>+~,])\s*/g, '$1').trim().toLowerCase();
+const normSel = (s) => s.replace(/\[\s*([\w-]+)\s*([~|^$*]?=)\s*(["'])(.*?)\3\s*\]/g, '[$1$2$4]').replace(/\s+/g, ' ').replace(/\s*([>+~,])\s*/g, '$1').trim().toLowerCase();
 
 // ---------- pojedyncze kryteria ----------
 
@@ -226,15 +239,19 @@ function checkStatic(doc, c, project, entry) {
       const nodes = [...doc.querySelectorAll(c.selector)];
       if (!nodes.length) return { ok: false, msg: `brak elementu „${c.selector}”` };
       const cand = c.index != null ? [nodes[c.index]].filter(Boolean) : c.any === false ? [nodes[0]] : nodes;
-      if (cand.some((n) => textMatch(n.textContent, c))) return { ok: true };
-      return { ok: false, msg: `tekst „${norm(cand[0]?.textContent).slice(0, 80)}” ≠ „${c.equals ?? c.contains ?? c.startsWith ?? c.matches}”` };
+      // przycisk <input> ma napis w value, nie w tresci
+      const txt = (n) => (n && n.tagName === 'INPUT' ? n.value : n?.textContent);
+      if (cand.some((n) => textMatch(txt(n), c))) return { ok: true };
+      return { ok: false, msg: `tekst „${norm(txt(cand[0])).slice(0, 80)}” ≠ „${c.equals ?? c.contains ?? c.startsWith ?? c.matches}”` };
     }
     case 'attr': {
       const nodes = [...doc.querySelectorAll(c.selector)];
       if (!nodes.length) return { ok: false, msg: `brak elementu „${c.selector}”` };
       const cand = c.index != null ? [nodes[c.index]].filter(Boolean) : nodes;
       const test = (n) => {
-        const v = /^(src|href)$/i.test(c.attr) && n.dataset.inf03Orig ? n.dataset.inf03Orig : n.getAttribute(c.attr);
+        // oryginalna nazwa tylko dopoki skrypt nie zmienil atrybutu
+        const raw = n.getAttribute(c.attr);
+        const v = /^(src|href)$/i.test(c.attr) && n.dataset.inf03Orig && raw === n.dataset.inf03Url ? n.dataset.inf03Orig : raw;
         if (c.absent) return v == null;
         if (v == null) return false;
         if (c.equals != null) return norm(v).toLowerCase() === norm(c.equals).toLowerCase() || (c.attr === 'src' || c.attr === 'href' ? v.endsWith(`/${c.equals}`) || decodeURIComponent(v) === c.equals : false);
@@ -251,6 +268,7 @@ function checkStatic(doc, c, project, entry) {
       const targets = c.all ? nodes : [el];
       for (const t of targets) {
         const r = cmpCss(t, c.prop, c.value, null, c.tolerance);
+        if (!r.ok && /^(min-|max-)?(width|height)$/.test(c.prop) && declaredOn(t, c.prop, c.value)) continue;
         if (!r.ok) return { ok: false, msg: `${c.prop} elementu „${c.selector}” = ${norm(r.got)}, oczekiwano ${c.value}` };
       }
       return { ok: true };
@@ -281,7 +299,19 @@ function checkStatic(doc, c, project, entry) {
     }
     case 'hover': {
       const el = doc.querySelector(c.selector);
-      if (!el) return { ok: false, msg: `brak elementu „${c.selector}”` };
+      if (!el) {
+        // element tworzony przez PHP: szukamy reguly „selektor:hover” zapisanej doslownie
+        const want = normSel(c.selector), temp = doc.body.appendChild(doc.createElement('div'));
+        try {
+          for (const { rule } of allRules(doc)) {
+            for (const part of rule.selectorText.split(',')) {
+              if (!/:hover/i.test(part) || normSel(part.replace(/:hover/gi, '')) !== want) continue;
+              if (!c.prop || ruleValueMatches(temp, rule.style, c.prop, c.value)) return { ok: true };
+            }
+          }
+        } finally { temp.remove(); }
+        return { ok: false, msg: `brak reguły „${c.selector}:hover”${c.prop ? ` z ${c.prop}: ${c.value}` : ''}` };
+      }
       for (const { rule } of allRules(doc)) {
         for (const part of rule.selectorText.split(',')) {
           if (!/:hover/i.test(part)) continue;
@@ -355,6 +385,13 @@ async function checkJs(project, entry, c) {
         else el.value = s.value;
         el.dispatchEvent(new win.Event('input', { bubbles: true }));
         el.dispatchEvent(new win.Event('change', { bubbles: true }));
+        el.dispatchEvent(new win.KeyboardEvent('keyup', { bubbles: true }));
+      } else if (s.blur) {
+        // utrata fokusu (onblur / focusout)
+        const el = doc.querySelector(s.blur);
+        if (!el) return { ok: false, msg: `brak pola „${s.blur}”` };
+        el.dispatchEvent(new win.FocusEvent('blur'));
+        el.dispatchEvent(new win.FocusEvent('focusout', { bubbles: true }));
       } else if (s.click) {
         const el = doc.querySelector(s.click);
         if (!el) return { ok: false, msg: `brak elementu „${s.click}”` };
@@ -399,7 +436,20 @@ async function checkJs(project, entry, c) {
 
 // ---------- wszystkie kryteria ----------
 
+// pole tekstowe bez atrybutu type tez jest polem edycyjnym
+const looseSel = (s) => (typeof s === 'string' ? s.replace(/input\[type=["']?text["']?\]/gi, 'input:is([type="text" i], :not([type]))') : s);
+function loosen(c) {
+  if (c.type === 'cssRule' || c.type === 'hover') return c;
+  const out = { ...c };
+  for (const k of ['selector', 'a', 'b']) out[k] = looseSel(out[k]);
+  if (out.selectors) out.selectors = out.selectors.map(looseSel);
+  if (out.steps) out.steps = out.steps.map((st) => Object.fromEntries(Object.entries(st).map(([k, v]) => [k, k === 'value' || k === 'eval' ? v : looseSel(v)])));
+  if (out.expect) out.expect = out.expect.map((e) => ({ ...e, selector: looseSel(e.selector) }));
+  return out;
+}
+
 export async function runChecks(checks, project, entry) {
+  checks = checks.map(loosen);
   const results = new Array(checks.length);
   // kryteria statyczne grupowane wg (szerokosc okna, strona): jedno zaladowanie na grupe
   const groups = new Map();

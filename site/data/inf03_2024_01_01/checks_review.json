@@ -1,18 +1,38 @@
 {
   "code": "inf03_2024_01_01",
   "pass": false,
-  "missing": [
-    "Grafika: logo (tło przezroczyste, 100x100 px, napis „IT” niebieski wypełniający grafikę, nazwa logo, format z przezroczystością) - brak kryteriów w sekcji grafika",
-    "Grafika: baner1 i baner2 (tło przezroczyste, 200x1000 px, grafika.jpg przeskalowana do wysokości 200 px i wyrównana do lewej, napis po prawej: „Usługi informatyczne” / „doświadczenie, niezawodność, konkurencyjne ceny”, czcionka szeryfowa, pochylona, niebieska) - brak kryteriów",
-    "Animacja: animacja.gif z klatek baner1 i baner2, opóźnienie 3000 ms - brak kryterium (co najmniej plik/manual; klatki.jpg pomijamy zgodnie ze specyfikacją)"
-  ],
+  "missing": [],
   "wrong": [
-    {"index": 125, "problem": "Kroki js używają #imie, #nazwisko, #zgloszenie, a treść nie podaje żadnych identyfikatorów, kryterium nie ma hint. Dotyczy też indeksów 126-129 (te same kroki).", "fix": "Zamień selektory na strukturalne: 'main table tr:nth-of-type(1) input' (imię), 'main table tr:nth-of-type(2) input' (nazwisko), 'main table textarea' (zgłoszenie), 'main table input[type=checkbox]'. Zrób to w indeksach 125-129."},
-    {"index": 126, "problem": "Klik 'main table tr:nth-of-type(6) button:last-of-type' zakłada element button, a kryterium HTML (84) dopuszcza też input. Kursant z input type=button nie przejdzie testów js mimo poprawnego skryptu.", "fix": "Użyj 'main table tr:nth-of-type(6) :is(button,input):last-child' albo dodaj hint 'przyciski jako button'. Zrób to w indeksach 125-129."},
-    {"index": 3, "problem": "Kryterium „Plik skrypt.js” wymaga pliku, którego treść arkusza nie wymienia (lista plików: animacja, baner1, baner2, index, klatki, kontakt, logo, przeglądarka, styl, uslugi + „ewentualnie inne”). Skrypt może być w pliku .js o innej nazwie lub inline.", "fix": "Usuń to kryterium albo zamień na kryterium nieblokujące (np. manual). Funkcjonalność skryptu sprawdzają i tak testy js."},
-    {"index": 8, "problem": "Ikona witryny: equals 'logo.png'. Treść wymaga pliku logo w „formacie umożliwiającym zapis przezroczystości” (PNG, GIF, WebP...), więc rozszerzenie jest dowolne. Zaostrzenie wymagań.", "fix": "Użyj 'contains': 'logo.' zamiast equals 'logo.png'. To samo w indeksach 25 i 42."},
-    {"index": 11, "problem": "Obraz logo w bloku logo: equals 'logo.png' - to samo zaostrzenie co wyżej.", "fix": "Użyj 'contains': 'logo.' zamiast equals. To samo w indeksach 28 i 45."},
-    {"index": 22, "problem": "Pierwsze kryterium head dla uslugi.html i kontakt.html (indeks 39) ma doctype:false, więc DOCTYPE (HTML 5, punkt dotyczący wszystkich stron) nie jest tam sprawdzany nigdzie.", "fix": "Usuń 'doctype': false z kryteriów 22 i 39 (zostaw je w kolejnych kryteriach head)."}
+    {
+      "index": 86,
+      "problem": "Kryterium „tekst przycisku Resetuj” czyta textContent całego wiersza tabeli (tr:nth-of-type(6)). Dla przycisku <input type=\"reset\" value=\"Resetuj\"> tekst jest w value, więc kryterium nie przejdzie, mimo że reguła 11 dopuszcza input. Wzorzec używa <button>, więc walidator tego nie wykrywa.",
+      "fix": "Użyć selektora przycisków i equals: \"selector\": \"main table tr:nth-of-type(6) button, main table tr:nth-of-type(6) input[type=reset]\", \"equals\": \"Resetuj\" (text dla input czyta value)."
+    },
+    {
+      "index": 89,
+      "problem": "Kryterium „kontakt.html: paragraf na komunikat w bloku głównym” (exists main hr ~ p) wymaga w statycznym HTML paragrafu, którego treść części o witrynie nie podaje (lista zawartości kontakt.html: h2, tabela, linia pozioma). Paragraf może być utworzony przez skrypt, a wtedy kryterium wymaga czegoś spoza treści (reguła 2). Jego działanie pilnują już kryteria js.",
+      "fix": "Usunąć to kryterium (paragraf pod linią jest sprawdzany przez kryteria js, które po kliknięciu czytają main hr ~ p)."
+    },
+    {
+      "index": 115,
+      "problem": "Kryteria „Przyciski: kolor tła/czcionki, wyłącznie selektorem przycisków” (cssRule) z selektorem tylko „button” i match „button”. Dla przycisku <input type=\"button\">/<input type=\"submit\"> element nie zostanie znaleziony (match → tymczasowy div, porównanie tylko po dokładnym selektorze), więc poprawne rozwiązanie z input się nie zalicza. Reguła 11 dopuszcza button i input[type=button|submit|reset] jako przyciski. Dotyczy też indeksu 116.",
+      "fix": "Ustawić \"selector\": \"button, input[type=button], input[type=submit], input[type=reset]\", \"match\": \"button, input[type=button], input[type=submit], input[type=reset]\" oraz \"matching\": true (przejdzie dowolna reguła trafiająca w pierwszy przycisk), z tym samym zabiegiem dla indeksu 116 (color: Navy)."
+    },
+    {
+      "index": 116,
+      "problem": "Jak wyżej: kryterium koloru czcionki przycisków (Navy) ma ten sam zbyt wąski selektor „button”.",
+      "fix": "Taka sama poprawka jak dla indeksu 115 (selektor i match z listą przycisków oraz \"matching\": true)."
+    },
+    {
+      "index": 76,
+      "problem": "Pole edycyjne w wierszach Imię i Nazwisko sprawdzane selektorem input[type=text] wymaga jawnego atrybutu type. Treść mówi tylko „Pole edycyjne”; <input name=\"imie\"> bez type to poprawne pole tekstowe, a kryterium go nie zaliczy (zaostrzenie, reguła 2/9). Dotyczy też indeksu 77.",
+      "fix": "Użyć selektora bez wymogu atrybutu type: \"main table tr:nth-of-type(1) input\" (dla wiersza 2: tr:nth-of-type(2) input), ewentualnie input:not([type=checkbox]):not([type=email])."
+    },
+    {
+      "index": 77,
+      "problem": "Jak wyżej: pole edycyjne w wierszu „Nazwisko” (input[type=text]) wymaga jawnego type.",
+      "fix": "Selektor \"main table tr:nth-of-type(2) input\"."
+    }
   ],
-  "notes": "Zgodność treści, teksty equals, wartości CSS, hover, układ (header leftOf nav, baner pod, main pod, footer na dole) i manual dla skryptu są w porządku; PHP nie występuje w arkuszu. Walidator: 132 kryteria, wzorzec 100%. Uwagi drobne (nieblokujące): (a) web.graphics w sheet.json jest puste, więc typ image nie jest dostępny; dlatego grafiki trzeba pokryć kryteriami manual w sekcji grafika (albo uzupełnić web.graphics: logo, baner1, baner2, animacja.gif); (b) selektory 'section' i 'section img' dla banera zadziałają błędnie, gdy kontener to section (kryterium podziału dopuszcza body > section), bo trafią w kontener, rozważ 'section:not(:first-child)' lub hint o kontenerze jako div; (c) input[type=text] wymaga jawnego type, pole edycyjne bez type też jest poprawne; (d) kryterium 84 (Prześlij) używa text/contains, dla input[value] może nie zadziałać."
+  "notes": "Indeksy liczone od 0 w tablicy checks.json. Walidator: 134 kryteria, 129 auto, wzorzec 100%. Kompletność OK: wszystkie punkty z treści pokryte (grafika, banery i animacja jako manual wg reguły 15, bo web.graphics jest puste; zrzut klatki.jpg pominięty zgodnie z regułą 1). Układ OK względem Obrazu 3 (header leftOf nav, nav above section, section above main, footer below main). Selektory nie używają img[src]/a[href]; PHP nie dotyczy. Uwaga drobna, bez zgłoszenia: kryteria dla header/nav/main/footer nie mają hint, ale hint z kryterium podziału na bloki jest wspólny; opcjonalnie dodać. Kryteria tabeli zakładają td (nie th) w komórkach; akceptowalne przy treści „2 kolumny na 6 wierszy”."
 }

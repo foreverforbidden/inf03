@@ -53,7 +53,7 @@
   {"section": "css", "desc": "Nagłówek czwartego stopnia: tekst do środka (selektor znacznika)", "type": "cssRule", "selector": "h4", "prop": "text-align", "value": "center"},
   {"section": "css", "desc": "Odnośnik: biały kolor czcionki (selektor znacznika)", "type": "cssRule", "selector": "a", "prop": "color", "value": "white"},
   {"section": "css", "desc": "Odnośnik: tekst bez podkreślenia (selektor znacznika)", "type": "cssRule", "selector": "a", "prop": "text-decoration", "value": "none"},
-  {"section": "css", "desc": "Kursor na odnośniku: kolor tła #12538A", "type": "cssRule", "selector": "a:hover", "prop": "background-color", "value": "#12538A", "hint": "odnośniki tworzone skryptem"},
+  {"section": "css", "desc": "Kursor na odnośniku: kolor tła #12538A", "type": "hover", "selector": "a", "prop": "background-color", "value": "#12538A", "hint": "odnośniki tworzone skryptem"},
   {"section": "css", "desc": "Klasa bloków sekcji: kolor tła #2B6BA0", "type": "cssRule", "selector": ".blok", "prop": "background-color", "value": "#2B6BA0", "hint": "klasa .blok przypisana blokom drugiej sekcji (tworzonym skryptem)"},
   {"section": "css", "desc": "Klasa bloków sekcji: biały kolor czcionki", "type": "cssRule", "selector": ".blok", "prop": "color", "value": "white", "hint": "klasa .blok przypisana blokom drugiej sekcji (tworzonym skryptem)"},
   {"section": "css", "desc": "Klasa bloków sekcji: szerokość 150 px", "type": "cssRule", "selector": ".blok", "prop": "width", "value": "150px", "hint": "klasa .blok przypisana blokom drugiej sekcji (tworzonym skryptem)"},
@@ -67,5 +67,5 @@
   {"section": "css", "desc": "Układ: pierwszy blok sekcji nad drugim", "type": "layout", "a": "section:nth-of-type(1)", "b": "section:nth-of-type(2)", "relation": "above"},
   {"section": "css", "desc": "Układ: stopka pod blokami", "type": "layout", "a": "footer", "b": "section:nth-of-type(2)", "relation": "below"},
   {"section": "css", "desc": "Układ: stopka pod blokiem bocznym", "type": "layout", "a": "footer", "b": "aside", "relation": "below"},
-  {"section": "css", "desc": "Bloki klasy ustawione obok siebie (np. float: left)", "type": "manual"}
+  {"section": "css", "desc": "Klasa bloków sekcji: bloki ustawione obok siebie", "type": "cssRule", "selector": ".blok", "prop": "float", "value": "left", "hint": "klasa .blok przypisana blokom drugiej sekcji (tworzonym skryptem); obok siebie np. przez float: left"}
 ]

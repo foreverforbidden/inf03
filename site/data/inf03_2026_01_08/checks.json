@@ -37,7 +37,7 @@
   {"section": "php", "desc": "szczyty.php: efekt skryptu 3 (dane wybranego szczytu)", "type": "php", "page": "szczyty.php"},
   {"section": "php", "desc": "szczyty.php: obraz z alt „szczyt”, nagłówek h2 z nazwą, dwa nagłówki h3 („wysokość: … metrów n.p.m.”, „pasmo górskie: …”), paragraf z opisem (skrypt 3)", "type": "php", "page": "szczyty.php"},
   {"section": "php", "desc": "Skrypty łączą się z bazą korona (localhost, root, bez hasła), zamykają połączenie, znaczące nazwy zmiennych", "type": "php"},
-  {"section": "css", "desc": "Domyślnie: krój czcionki Lato, sans-serif", "type": "cssRule", "selector": "*", "prop": "font-family", "value": "Lato, sans-serif"},
+  {"section": "css", "desc": "Domyślnie: krój czcionki Lato, sans-serif", "type": "css", "selector": "h1", "prop": "font-family", "value": "Lato, sans-serif"},
   {"section": "css", "desc": "Domyślnie: wyrównanie tekstu do środka", "type": "css", "selector": "h1", "prop": "text-align", "value": "center"},
   {"section": "css", "desc": "Domyślnie: kolor czcionki #333", "type": "css", "selector": "h1", "prop": "color", "value": "#333"},
   {"section": "css", "desc": "Czcionka Lato dodana regułami @font-face dla regular i bold", "type": "manual"},

@@ -43,7 +43,7 @@
   {"section": "css", "desc": "Trzeci artykuł: tło DarkOrchid", "type": "css", "selector": "article:nth-of-type(3)", "prop": "background-color", "value": "DarkOrchid"},
   {"section": "css", "desc": "Obraz: szerokość 70% (selektor znacznika)", "type": "cssRule", "selector": "img", "prop": "width", "value": "70%"},
   {"section": "css", "desc": "Paragraf: marginesy wewnętrzne 20 px (selektor znacznika)", "type": "cssRule", "selector": "p", "prop": "padding", "value": "20px"},
-  {"section": "css", "desc": "Tabela: wyśrodkowanie (selektor znacznika)", "type": "css", "selector": "table", "prop": "margin-left", "value": "auto"},
+  {"section": "css", "desc": "Tabela: wyśrodkowanie (selektor znacznika)", "type": "cssRule", "matching": true, "selector": "table", "prop": "margin-left", "value": "auto"},
   {"section": "css", "desc": "Tabela: szerokość 70% (selektor znacznika)", "type": "cssRule", "selector": "table", "prop": "width", "value": "70%"},
   {"section": "css", "desc": "Tabela: obramowanie ciągłe SteelBlue 1 px (selektor znacznika)", "type": "cssRule", "selector": "table", "prop": "border", "value": "1px solid SteelBlue"},
   {"section": "css", "desc": "Kursor na wierszu tabeli: tło SteelBlue", "type": "hover", "selector": "table tr", "prop": "background-color", "value": "SteelBlue"},

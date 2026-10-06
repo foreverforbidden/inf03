@@ -8,8 +8,7 @@
   {"section": "html", "desc": "Zapisane w HTML5, polski język, kodowanie UTF-8", "type": "head", "page": "index.html", "lang": "pl", "charset": true},
   {"section": "html", "desc": "Tytuł strony „Najlepsze gry | PoGRAJmy!”", "type": "head", "page": "index.html", "doctype": false, "title": "Najlepsze gry | PoGRAJmy!"},
   {"section": "html", "desc": "Arkusz styl_gier.css połączony z kodem strony", "type": "head", "page": "index.html", "doctype": false, "stylesheet": "styl_gier.css"},
-  {"section": "html", "desc": "Podział na bloki: nagłówkowy 1, nagłówkowy 2, główny, stopki", "type": "exists", "page": "index.html", "selector": "header", "hint": "blok nagłówkowy 1 jako header, nagłówkowy 2 jako nav"},
-  {"section": "html", "desc": "Bloki nagłówkowy 2, główny, stopki", "type": "exists", "page": "index.html", "hint": "blok nagłówkowy 1 jako header, nagłówkowy 2 jako nav", "selectors": ["header", "nav", "main", "footer"]},
+  {"section": "html", "desc": "Podział strony na bloki: nagłówkowy 1, nagłówkowy 2, główny, stopki", "type": "exists", "page": "index.html", "hint": "blok nagłówkowy 1 jako header, nagłówkowy 2 jako nav", "selectors": ["header", "nav", "main", "footer"]},
   {"section": "html", "desc": "Blok nagłówkowy 1: nagłówek drugiego stopnia z odnośnikiem „PoGRAJmy!”", "type": "text", "page": "index.html", "selector": "header h2 a", "equals": "PoGRAJmy!"},
   {"section": "html", "desc": "Odnośnik w nagłówku 1 do index.html", "type": "attr", "page": "index.html", "selector": "header h2 a", "attr": "href", "equals": "index.html"},
   {"section": "html", "desc": "Blok nagłówkowy 2: lista punktowana z dwoma elementami", "type": "exists", "page": "index.html", "selector": "nav ul li", "count": 2, "hint": "blok nagłówkowy 1 jako header, nagłówkowy 2 jako nav"},
@@ -23,8 +22,7 @@
   {"section": "html", "desc": "Zapisane w HTML5, polski język, kodowanie UTF-8", "type": "head", "page": "onas.html", "lang": "pl", "charset": true, "doctype": true},
   {"section": "html", "desc": "Tytuł strony „O nas | PoGRAJmy!”", "type": "head", "page": "onas.html", "doctype": false, "title": "O nas | PoGRAJmy!"},
   {"section": "html", "desc": "Arkusz styl_gier.css połączony z kodem strony", "type": "head", "page": "onas.html", "doctype": false, "stylesheet": "styl_gier.css"},
-  {"section": "html", "desc": "Podział na bloki: nagłówkowy 1, nagłówkowy 2, główny, stopki", "type": "exists", "page": "onas.html", "selector": "header", "hint": "blok nagłówkowy 1 jako header, nagłówkowy 2 jako nav"},
-  {"section": "html", "desc": "Bloki nagłówkowy 2, główny, stopki", "type": "exists", "page": "onas.html", "hint": "blok nagłówkowy 1 jako header, nagłówkowy 2 jako nav", "selectors": ["header", "nav", "main", "footer"]},
+  {"section": "html", "desc": "Podział strony na bloki: nagłówkowy 1, nagłówkowy 2, główny, stopki", "type": "exists", "page": "onas.html", "hint": "blok nagłówkowy 1 jako header, nagłówkowy 2 jako nav", "selectors": ["header", "nav", "main", "footer"]},
   {"section": "html", "desc": "Blok nagłówkowy 1: nagłówek drugiego stopnia z odnośnikiem „PoGRAJmy!”", "type": "text", "page": "onas.html", "selector": "header h2 a", "equals": "PoGRAJmy!"},
   {"section": "html", "desc": "Odnośnik w nagłówku 1 do index.html", "type": "attr", "page": "onas.html", "selector": "header h2 a", "attr": "href", "equals": "index.html"},
   {"section": "html", "desc": "Blok nagłówkowy 2: lista punktowana z dwoma elementami", "type": "exists", "page": "onas.html", "selector": "nav ul li", "count": 2, "hint": "blok nagłówkowy 1 jako header, nagłówkowy 2 jako nav"},
@@ -77,5 +75,6 @@
   {"section": "css", "desc": "Obrazy obok siebie (index.html)", "type": "layout", "page": "index.html", "a": "main img:nth-of-type(1)", "b": "main img:nth-of-type(2)", "relation": "sameRow"},
   {"section": "js", "desc": "Funkcja licznik wywoływana przy załadowaniu index.html: „Liczba wejść na stronę: X”", "type": "js", "page": "index.html", "steps": [], "expect": [{"selector": "footer p:nth-of-type(2)", "contains": "Liczba wejść na stronę: "}]},
   {"section": "js", "desc": "Funkcja licznik wywoływana przy załadowaniu onas.html", "type": "js", "page": "onas.html", "steps": [], "expect": [{"selector": "footer p:nth-of-type(2)", "contains": "Liczba wejść na stronę: "}]},
+  {"section": "js", "desc": "Plik skrypty.js właściwie połączony z kodem obu stron", "type": "manual"},
   {"section": "js", "desc": "Licznik z localStorage, zwiększany o 1, znaczące nazewnictwo", "type": "manual"}
 ]

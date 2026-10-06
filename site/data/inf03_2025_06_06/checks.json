@@ -11,7 +11,7 @@
   {"section": "html", "desc": "Pierwszy blok sekcji: nagłówek drugiego stopnia „Liryka”", "type": "text", "selector": "section:nth-of-type(1) h2", "equals": "Liryka"},
   {"section": "html", "desc": "Pierwsza sekcja: formularz wysyłający dane metodą bezpieczną", "type": "attr", "selector": "section:nth-of-type(1) form", "attr": "method", "equals": "post"},
   {"section": "html", "desc": "Pierwsza sekcja: lista rozwijana", "type": "exists", "selector": "section:nth-of-type(1) form select"},
-  {"section": "html", "desc": "Pierwsza sekcja: przycisk „Rezerwuj”", "type": "exists", "selector": "section:nth-of-type(1) form input[type=submit][value='Rezerwuj'], section:nth-of-type(1) form button"},
+  {"section": "html", "desc": "Pierwsza sekcja: przycisk „Rezerwuj”", "type": "text", "selector": "section:nth-of-type(1) form button, section:nth-of-type(1) form input[type=button], section:nth-of-type(1) form input[type=submit]", "equals": "Rezerwuj"},
   {"section": "php", "desc": "Lista rozwijana wypełniona skryptem 2 (tytuł w treści opcji, id w atrybucie value)", "type": "php"},
   {"section": "php", "desc": "Efekt działania skryptu 3 („Książka … została zarezerwowana”, tylko w odpowiedniej sekcji)", "type": "php"},
   {"section": "html", "desc": "Drugi blok sekcji: nagłówek drugiego stopnia „Epika”", "type": "text", "selector": "section:nth-of-type(2) h2", "equals": "Epika"},

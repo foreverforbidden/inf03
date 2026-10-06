@@ -27,7 +27,7 @@
   {"section": "html", "desc": "Formularz wysyłający dane metodą bezpieczną (post)", "type": "attr", "selector": "main > section:nth-of-type(2) form", "attr": "method", "equals": "post"},
   {"section": "html", "desc": "Formularz wysyła dane do tego samego pliku", "type": "attr", "selector": "main > section:nth-of-type(2) form", "attr": "action", "contains": "zdrowie.php"},
   {"section": "html", "desc": "Formularz: lista rozwijana", "type": "exists", "selector": "main > section:nth-of-type(2) form select"},
-  {"section": "html", "desc": "Formularz: przycisk „Sprawdź”", "type": "exists", "selector": "main > section:nth-of-type(2) form input[type=submit][value='Sprawdź'], main > section:nth-of-type(2) form button"},
+  {"section": "html", "desc": "Formularz: przycisk o treści „Sprawdź”", "type": "text", "selector": "main > section:nth-of-type(2) form button, main > section:nth-of-type(2) form input[type=button], main > section:nth-of-type(2) form input[type=submit]", "equals": "Sprawdź"},
   {"section": "html", "desc": "Blok na efekt działania skryptu 3 w sekcji prawej", "type": "exists", "selector": "main > section:nth-of-type(2) div", "hint": "blok jako div w sekcji prawej"},
   {"section": "php", "desc": "Lista rozwijana wypełniona skryptem 2 (id w value, nazwa w treści opcji)", "type": "php"},
   {"section": "php", "desc": "Skrypt 3 tylko po wysłaniu formularza: zapytanie 3 z id z formularza, objawy w span ze spacją przed i po", "type": "php"},

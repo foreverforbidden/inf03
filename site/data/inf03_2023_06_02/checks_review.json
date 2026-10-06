@@ -1,0 +1,33 @@
+{
+  "code": "inf03_2023_06_02",
+  "pass": false,
+  "missing": [],
+  "wrong": [
+    {
+      "index": 7,
+      "problem": "Dokładnie 3 elementy section to zaostrzenie struktury (zasada 9: 'co najmniej tyle'). Treść mówi tylko o podziale znacznikami sekcji; uczeń może też zrobić baner i stopkę jako section (5 sekcji), a wtedy kryterium oblewa, choć kryterium 6 (selectors) przechodzi. Kryterium dubluje też kryterium 6.",
+      "fix": "Usunąć kryterium (pokrywa je index 6) albo zamienić na min: 3 zamiast count: 3."
+    },
+    {
+      "index": 24,
+      "problem": "Przycisk „OBLICZ” sprawdzany przez exists z :is(button, input[type=button][value='OBLICZ'], ...). Dla button wystarczy dowolny button (napis nie jest sprawdzany), a selektor atrybutu value zamiast typu text. Niezgodne z zasadą 11.",
+      "fix": "{\"type\":\"text\",\"selector\":\"section:nth-of-type(2) form :is(button, input[type=button], input[type=submit])\",\"equals\":\"OBLICZ\"} (webcheck dla input porównuje value); można zostawić hint, że przycisk to button lub input."
+    },
+    {
+      "index": 58,
+      "problem": "Najechanie na wiersz to efekt :hover na elementach tworzonych przez PHP; do tego służy typ hover, a nie cssRule (zasady 6 i 12, tabela typów). Wynik w praktyce podobny, ale typ jest niewłaściwy.",
+      "fix": "{\"section\":\"css\",\"type\":\"hover\",\"selector\":\"tr\",\"prop\":\"color\",\"value\":\"#90CAF9\",\"hint\":\"wiersze tworzone skryptem: reguła tr:hover\"} (webcheck dla braku elementu tr szuka reguły 'tr:hover')."
+    },
+    {
+      "index": 59,
+      "problem": "cssRule wymaga dokładnie selektora input[type=\"number\"]. Treść mówi 'selektor pola edycyjnego', nie podaje atrybutu typu; poprawne jest też input { margin-top: 15px } i takie rozwiązanie oblałoby kryterium (zasada 3 i 12).",
+      "fix": "Dodać \"matching\": true (selektor input[type=number] istnieje statycznie, więc przejdzie dowolna reguła trafiająca w to pole, w tym 'input' i 'input[type=number]')."
+    },
+    {
+      "index": 60,
+      "problem": "Jak index 59: margin-bottom pod dokładnie input[type=\"number\"].",
+      "fix": "Dodać \"matching\": true."
+    }
+  ],
+  "notes": "Walidator OK (69 kryteriów, 66 auto, 3 php, bez problemów). Kompletność: wszystkie punkty (grafika, cechy witryny, bloki, CSS, skrypty 1 i 2, połączenie z bazą) pokryte; skrypt 1 i 2 oraz tabela 4x2 poprawnie jako php. Teksty equals zgodne z treścią, wartości CSS zgodne, brak selektorów img[src]/a[href]. Układ (index 61-67) zgodny z ilustracją: baner na górze na całą szerokość, trzy bloki obok siebie, stopka pod nimi. Indeksy liczone od 0. Uwagi niebędące błędami: (a) action=\"index.php\" (index 13) wyklucza pominięty/pusty action, choć to też 'ten sam plik'; można rozważyć luzowanie; (b) tylko kryterium 6 ma hint o header/footer, a pozostałe selektory (header h1, footer h4, section:nth-of-type) zakładają ten sam wzorzec; wystarczające, ale dodanie hint byłoby bezpieczniejsze."
+}

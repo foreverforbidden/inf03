@@ -96,5 +96,5 @@
   {"section": "css", "desc": "Klasa miniatury: padding 10px", "type": "cssRule", "page": "islandia.php", "selector": ".miniatury", "prop": "padding", "value": "10px", "hint": "obrazy tworzone skryptem 3: klasa miniatury"},
   {"section": "css", "desc": "Klasa miniatury: opacity 0.8", "type": "cssRule", "page": "islandia.php", "selector": ".miniatury", "prop": "opacity", "value": "0.8", "hint": "obrazy tworzone skryptem 3: klasa miniatury"},
   {"section": "css", "desc": "Klasa miniatury: transition 1s", "type": "cssRule", "page": "islandia.php", "selector": ".miniatury", "prop": "transition", "value": "opacity 1s", "hint": "obrazy tworzone skryptem 3: klasa miniatury"},
-  {"section": "css", "desc": "Kursor na miniaturze: przezroczystość 1", "type": "cssRule", "page": "islandia.php", "selector": ".miniatury:hover", "prop": "opacity", "value": "1", "hint": "obrazy tworzone skryptem 3: klasa miniatury"}
+  {"section": "css", "desc": "Kursor na miniaturze: przezroczystość 1", "type": "hover", "page": "islandia.php", "selector": ".miniatury", "prop": "opacity", "value": "1", "hint": "obrazy tworzone skryptem 3: klasa miniatury"}
 ]

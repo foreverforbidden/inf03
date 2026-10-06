@@ -34,7 +34,7 @@
   {"section": "html", "desc": "Tekst alternatywny: klon", "type": "attr", "selector": "aside img", "index": 7, "attr": "alt", "equals": "klon"},
   {"section": "html", "desc": "Tekst alternatywny: magnolia", "type": "attr", "selector": "aside img", "index": 8, "attr": "alt", "equals": "magnolia"},
   {"section": "html", "desc": "Pole edycyjne z podpowiedzią „Wyszukaj drzewo…”", "type": "attr", "selector": "aside input", "attr": "placeholder", "equals": "Wyszukaj drzewo…"},
-  {"section": "html", "desc": "Przycisk „Szukaj”", "type": "text", "selector": "aside button", "equals": "Szukaj"},
+  {"section": "html", "desc": "Przycisk „Szukaj”", "type": "text", "selector": "button, input[type=button], input[type=submit]", "equals": "Szukaj"},
   {"section": "html", "desc": "Blok nawigacyjny: lista punktowana z trzema elementami", "type": "exists", "selector": "nav ul > li", "count": 3},
   {"section": "html", "desc": "Odsyłacz do lisciaste.html – drzewa liściaste", "type": "attr", "selector": "nav li a", "index": 0, "attr": "href", "equals": "lisciaste.html"},
   {"section": "html", "desc": "Odsyłacz do iglaste.png – drzewa iglaste", "type": "attr", "selector": "nav li a", "index": 1, "attr": "href", "equals": "iglaste.png"},
@@ -87,7 +87,7 @@
   {"section": "js", "desc": "Skrypt 1: opis drzewa w paragrafie z klasą opis", "type": "js", "steps": [{"click": "aside img:nth-of-type(1)"}], "expect": [{"selector": "main p", "attr": "class", "contains": "opis"}, {"selector": "main p", "contains": "Duże drzewo liściaste z gładką"}]},
   {"section": "js", "desc": "Skrypt 1: usuwa poprzednią zawartość bloku głównego (jeden h2 po dwóch kliknięciach)", "type": "js", "steps": [{"click": "aside img:nth-of-type(1)"}, {"click": "aside img:nth-of-type(2)"}], "expect": [{"selector": "main h2", "count": 1}, {"selector": "main h2", "equals": "lipa"}]},
   {"section": "js", "desc": "Skrypt 1: inny obraz (magnolia, indeks 8)", "type": "js", "steps": [{"click": "aside img:nth-of-type(9)"}], "expect": [{"selector": "main h2", "equals": "magnolia"}, {"selector": "main p", "contains": "Magnolia to drzewo lub krzew"}]},
-  {"section": "js", "desc": "Skrypt 2: wpisano istniejące drzewo (klon) – informacje jak w skrypcie 1", "type": "js", "steps": [{"set": "aside input", "value": "klon"}, {"click": "aside button"}], "expect": [{"selector": "main h2", "equals": "klon"}, {"selector": "main p", "contains": "dłoniastymi liśćmi"}]},
-  {"section": "js", "desc": "Skrypt 2: nieistniejące drzewo (akacja) – komunikat w bloku głównym", "type": "js", "steps": [{"set": "aside input", "value": "akacja"}, {"click": "aside button"}], "expect": [{"selector": "main", "contains": "Drzewa, o którym chcesz znaleźć informacje, nie ma w naszym Atlasie drzew."}]},
+  {"section": "js", "desc": "Skrypt 2: wpisano istniejące drzewo (klon) – informacje jak w skrypcie 1", "type": "js", "steps": [{"set": "aside input", "value": "klon"}, {"click": "button, input[type=button], input[type=submit]"}], "expect": [{"selector": "main h2", "equals": "klon"}, {"selector": "main p", "contains": "dłoniastymi liśćmi"}]},
+  {"section": "js", "desc": "Skrypt 2: nieistniejące drzewo (akacja) – komunikat w bloku głównym", "type": "js", "steps": [{"set": "aside input", "value": "akacja"}, {"click": "button, input[type=button], input[type=submit]"}], "expect": [{"selector": "main", "contains": "Drzewa, o którym chcesz znaleźć informacje, nie ma w naszym Atlasie drzew."}]},
   {"section": "js", "desc": "Znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim", "type": "manual"}
 ]

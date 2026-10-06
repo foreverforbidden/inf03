@@ -1,566 +1,73 @@
 [
- {
-  "section": "grafika",
-  "desc": "baner.jpg: szerokość 1000 px, wysokość 150 px",
-  "type": "image",
-  "name": "baner.jpg",
-  "width": 1000,
-  "height": 150
- },
- {
-  "section": "grafika",
-  "desc": "Gradient, kod.jpg z perspektywą, napis „Firma szkoleniowa” (ocena wzrokowa)",
-  "type": "manual"
- },
- {
-  "section": "pliki",
-  "desc": "Plik index.html",
-  "type": "file",
-  "name": "index.html"
- },
- {
-  "section": "pliki",
-  "desc": "Plik style.css",
-  "type": "file",
-  "name": "style.css"
- },
- {
-  "section": "pliki",
-  "desc": "Plik szkolenia.php",
-  "type": "file",
-  "name": "szkolenia.php"
- },
- {
-  "section": "pliki",
-  "desc": "Plik baner.jpg",
-  "type": "file",
-  "name": "baner.jpg"
- },
- {
-  "section": "html",
-  "desc": "Zapisane w języku HTML5, polski język, kodowanie UTF-8",
-  "type": "head",
-  "page": "index.html",
-  "lang": "pl",
-  "charset": true
- },
- {
-  "section": "html",
-  "desc": "Tytuł strony „Firma szkoleniowa”",
-  "type": "head",
-  "page": "index.html",
-  "doctype": false,
-  "title": "Firma szkoleniowa"
- },
- {
-  "section": "html",
-  "desc": "Arkusz stylów style.css prawidłowo połączony",
-  "type": "head",
-  "page": "index.html",
-  "doctype": false,
-  "stylesheet": "style.css"
- },
- {
-  "section": "html",
-  "desc": "Kontener, a w nim: blok nagłówkowy, menu, główny, stopka (semantyczne znaczniki)",
-  "type": "exists",
-  "page": "index.html",
-  "selector": "body > div > header ~ nav ~ main ~ footer",
-  "hint": "kontener jako div#kontener; menu jako nav, główny jako main"
- },
- {
-  "section": "html",
-  "desc": "Układ: menu i blok główny obok siebie, poniżej nagłówka",
-  "type": "layout",
-  "page": "index.html",
-  "a": "nav",
-  "b": "main",
-  "relation": "leftOf"
- },
- {
-  "section": "html",
-  "desc": "Układ: blok nagłówkowy nad menu",
-  "type": "layout",
-  "page": "index.html",
-  "a": "header",
-  "b": "nav",
-  "relation": "above"
- },
- {
-  "section": "html",
-  "desc": "Układ: stopka na dole pod blokami",
-  "type": "layout",
-  "page": "index.html",
-  "a": "footer",
-  "b": "main",
-  "relation": "below"
- },
- {
-  "section": "html",
-  "desc": "Blok nagłówkowy: obraz baner.jpg",
-  "type": "attr",
-  "page": "index.html",
-  "selector": "header img",
-  "attr": "src",
-  "equals": "baner.jpg"
- },
- {
-  "section": "html",
-  "desc": "Obraz z tekstem alternatywnym „Szkolenia”",
-  "type": "attr",
-  "page": "index.html",
-  "selector": "header img",
-  "attr": "alt",
-  "equals": "Szkolenia"
- },
- {
-  "section": "html",
-  "desc": "Menu: lista punktowana z dwoma elementami",
-  "type": "exists",
-  "page": "index.html",
-  "selector": "nav ul li",
-  "count": 2
- },
- {
-  "section": "html",
-  "desc": "Odnośnik „Strona główna”",
-  "type": "text",
-  "page": "index.html",
-  "selector": "nav li:nth-of-type(1) a",
-  "equals": "Strona główna"
- },
- {
-  "section": "html",
-  "desc": "Odnośnik do index.html",
-  "type": "attr",
-  "page": "index.html",
-  "selector": "nav li:nth-of-type(1) a",
-  "attr": "href",
-  "equals": "index.html"
- },
- {
-  "section": "html",
-  "desc": "Odnośnik „Szkolenia”",
-  "type": "text",
-  "page": "index.html",
-  "selector": "nav li:nth-of-type(2) a",
-  "equals": "Szkolenia"
- },
- {
-  "section": "html",
-  "desc": "Odnośnik do szkolenia.php",
-  "type": "attr",
-  "page": "index.html",
-  "selector": "nav li:nth-of-type(2) a",
-  "attr": "href",
-  "equals": "szkolenia.php"
- },
- {
-  "section": "html",
-  "desc": "Stopka: nagłówek drugiego stopnia „Firma szkoleniowa, ul. Główna 1, 23-456 Warszawa”",
-  "type": "text",
-  "page": "index.html",
-  "selector": "footer h2",
-  "equals": "Firma szkoleniowa, ul. Główna 1, 23-456 Warszawa"
- },
- {
-  "section": "html",
-  "desc": "Stopka: akapit „Autor: ” i numer zdającego",
-  "type": "text",
-  "page": "index.html",
-  "selector": "footer p",
-  "startsWith": "Autor:"
- },
- {
-  "section": "html",
-  "desc": "Zapisane w języku HTML5, polski język, kodowanie UTF-8",
-  "type": "head",
-  "page": "szkolenia.php",
-  "lang": "pl",
-  "charset": true
- },
- {
-  "section": "html",
-  "desc": "Tytuł strony „Firma szkoleniowa”",
-  "type": "head",
-  "page": "szkolenia.php",
-  "doctype": false,
-  "title": "Firma szkoleniowa"
- },
- {
-  "section": "html",
-  "desc": "Arkusz stylów style.css prawidłowo połączony",
-  "type": "head",
-  "page": "szkolenia.php",
-  "doctype": false,
-  "stylesheet": "style.css"
- },
- {
-  "section": "html",
-  "desc": "Kontener, a w nim: blok nagłówkowy, menu, główny, stopka (semantyczne znaczniki)",
-  "type": "exists",
-  "page": "szkolenia.php",
-  "selector": "body > div > header ~ nav ~ main ~ footer",
-  "hint": "kontener jako div#kontener; menu jako nav, główny jako main"
- },
- {
-  "section": "html",
-  "desc": "Układ: menu i blok główny obok siebie, poniżej nagłówka",
-  "type": "layout",
-  "page": "szkolenia.php",
-  "a": "nav",
-  "b": "main",
-  "relation": "leftOf"
- },
- {
-  "section": "html",
-  "desc": "Układ: blok nagłówkowy nad menu",
-  "type": "layout",
-  "page": "szkolenia.php",
-  "a": "header",
-  "b": "nav",
-  "relation": "above"
- },
- {
-  "section": "html",
-  "desc": "Układ: stopka na dole pod blokami",
-  "type": "layout",
-  "page": "szkolenia.php",
-  "a": "footer",
-  "b": "main",
-  "relation": "below"
- },
- {
-  "section": "html",
-  "desc": "Blok nagłówkowy: obraz baner.jpg",
-  "type": "attr",
-  "page": "szkolenia.php",
-  "selector": "header img",
-  "attr": "src",
-  "equals": "baner.jpg"
- },
- {
-  "section": "html",
-  "desc": "Obraz z tekstem alternatywnym „Szkolenia”",
-  "type": "attr",
-  "page": "szkolenia.php",
-  "selector": "header img",
-  "attr": "alt",
-  "equals": "Szkolenia"
- },
- {
-  "section": "html",
-  "desc": "Menu: lista punktowana z dwoma elementami",
-  "type": "exists",
-  "page": "szkolenia.php",
-  "selector": "nav ul li",
-  "count": 2
- },
- {
-  "section": "html",
-  "desc": "Odnośnik „Strona główna”",
-  "type": "text",
-  "page": "szkolenia.php",
-  "selector": "nav li:nth-of-type(1) a",
-  "equals": "Strona główna"
- },
- {
-  "section": "html",
-  "desc": "Odnośnik do index.html",
-  "type": "attr",
-  "page": "szkolenia.php",
-  "selector": "nav li:nth-of-type(1) a",
-  "attr": "href",
-  "equals": "index.html"
- },
- {
-  "section": "html",
-  "desc": "Odnośnik „Szkolenia”",
-  "type": "text",
-  "page": "szkolenia.php",
-  "selector": "nav li:nth-of-type(2) a",
-  "equals": "Szkolenia"
- },
- {
-  "section": "html",
-  "desc": "Odnośnik do szkolenia.php",
-  "type": "attr",
-  "page": "szkolenia.php",
-  "selector": "nav li:nth-of-type(2) a",
-  "attr": "href",
-  "equals": "szkolenia.php"
- },
- {
-  "section": "html",
-  "desc": "Stopka: nagłówek drugiego stopnia „Firma szkoleniowa, ul. Główna 1, 23-456 Warszawa”",
-  "type": "text",
-  "page": "szkolenia.php",
-  "selector": "footer h2",
-  "equals": "Firma szkoleniowa, ul. Główna 1, 23-456 Warszawa"
- },
- {
-  "section": "html",
-  "desc": "Stopka: akapit „Autor: ” i numer zdającego",
-  "type": "text",
-  "page": "szkolenia.php",
-  "selector": "footer p",
-  "startsWith": "Autor:"
- },
- {
-  "section": "html",
-  "desc": "Blok główny index.html: nagłówek pierwszego stopnia „Zapraszamy do udziału w szkoleniach z branży IT”",
-  "type": "text",
-  "page": "index.html",
-  "selector": "main h1",
-  "matches": "^Zapraszamy do udziału\\s*w szkoleniach\\s*z branży IT$"
- },
- {
-  "section": "html",
-  "desc": "Łamanie wiersza po słowach „udziału” i „szkoleniach” (dwa znaczniki br)",
-  "type": "exists",
-  "page": "index.html",
-  "selector": "main h1 br",
-  "count": 2
- },
- {
-  "section": "php",
-  "desc": "Blok główny szkolenia.php: efekt działania skryptu",
-  "type": "php"
- },
- {
-  "section": "css",
-  "desc": "Krój czcionki Tahoma dla wszystkich selektorów",
-  "type": "css",
-  "page": "index.html",
-  "selector": "h1",
-  "prop": "font-family",
-  "value": "Tahoma"
- },
- {
-  "section": "css",
-  "desc": "Krój czcionki Tahoma (menu)",
-  "type": "css",
-  "page": "index.html",
-  "selector": "a",
-  "prop": "font-family",
-  "value": "Tahoma"
- },
- {
-  "section": "css",
-  "desc": "Kontener: kolor tła #FB8E02",
-  "type": "css",
-  "page": "index.html",
-  "selector": "body > div",
-  "prop": "background-color",
-  "value": "#FB8E02"
- },
- {
-  "section": "css",
-  "desc": "Menu: kolor tła #232323",
-  "type": "css",
-  "page": "index.html",
-  "selector": "nav",
-  "prop": "background-color",
-  "value": "#232323"
- },
- {
-  "section": "css",
-  "desc": "Menu: szerokość 20%",
-  "type": "css",
-  "page": "index.html",
-  "selector": "nav",
-  "prop": "width",
-  "value": "20%"
- },
- {
-  "section": "css",
-  "desc": "Menu: wysokość 450 px",
-  "type": "css",
-  "page": "index.html",
-  "selector": "nav",
-  "prop": "height",
-  "value": "450px"
- },
- {
-  "section": "css",
-  "desc": "Blok główny: kolor tła #AEC6E6",
-  "type": "css",
-  "page": "index.html",
-  "selector": "main",
-  "prop": "background-color",
-  "value": "#AEC6E6"
- },
- {
-  "section": "css",
-  "desc": "Blok główny: szerokość 80%",
-  "type": "css",
-  "page": "index.html",
-  "selector": "main",
-  "prop": "width",
-  "value": "80%"
- },
- {
-  "section": "css",
-  "desc": "Blok główny: wysokość 450 px",
-  "type": "css",
-  "page": "index.html",
-  "selector": "main",
-  "prop": "height",
-  "value": "450px"
- },
- {
-  "section": "css",
-  "desc": "Blok główny: paski przewijania zawsze widoczne",
-  "type": "css",
-  "page": "index.html",
-  "selector": "main",
-  "prop": "overflow",
-  "value": "scroll"
- },
- {
-  "section": "css",
-  "desc": "Stopka: marginesy wewnętrzne 2 px",
-  "type": "css",
-  "page": "index.html",
-  "selector": "footer",
-  "prop": "padding",
-  "value": "2px"
- },
- {
-  "section": "css",
-  "desc": "Stopka: wyrównanie tekstu do prawej",
-  "type": "css",
-  "page": "index.html",
-  "selector": "footer",
-  "prop": "text-align",
-  "value": "right"
- },
- {
-  "section": "css",
-  "desc": "Obraz: szerokość 100%",
-  "type": "css",
-  "page": "index.html",
-  "selector": "img",
-  "prop": "width",
-  "value": "100%"
- },
- {
-  "section": "css",
-  "desc": "h1: marginesy wewnętrzne 50 px (selektor znacznika)",
-  "type": "cssRule",
-  "selector": "h1",
-  "prop": "padding",
-  "value": "50px"
- },
- {
-  "section": "css",
-  "desc": "h1: kolor czcionki Maroon (selektor znacznika)",
-  "type": "cssRule",
-  "selector": "h1",
-  "prop": "color",
-  "value": "Maroon"
- },
- {
-  "section": "css",
-  "desc": "Lista punktowana: brak symboli punktorów",
-  "type": "css",
-  "page": "index.html",
-  "selector": "ul",
-  "prop": "list-style-type",
-  "value": "none"
- },
- {
-  "section": "css",
-  "desc": "li: kolor tła #FB8E02 (selektor znacznika)",
-  "type": "cssRule",
-  "selector": "li",
-  "prop": "background-color",
-  "value": "#FB8E02"
- },
- {
-  "section": "css",
-  "desc": "li: szerokość 95% (selektor znacznika)",
-  "type": "cssRule",
-  "selector": "li",
-  "prop": "width",
-  "value": "95%"
- },
- {
-  "section": "css",
-  "desc": "li: marginesy wewnętrzne 5 px (selektor znacznika)",
-  "type": "cssRule",
-  "selector": "li",
-  "prop": "padding",
-  "value": "5px"
- },
- {
-  "section": "css",
-  "desc": "li: margines zewnętrzny górny 10 px (selektor znacznika)",
-  "type": "cssRule",
-  "selector": "li",
-  "prop": "margin-top",
-  "value": "10px"
- },
- {
-  "section": "css",
-  "desc": "a: brak podkreślenia (selektor znacznika)",
-  "type": "cssRule",
-  "selector": "a",
-  "prop": "text-decoration",
-  "value": "none"
- },
- {
-  "section": "css",
-  "desc": "a: kolor czcionki #232323 (selektor znacznika)",
-  "type": "cssRule",
-  "selector": "a",
-  "prop": "color",
-  "value": "#232323"
- },
- {
-  "section": "css",
-  "desc": "a: rozmiar czcionki 110% (selektor znacznika)",
-  "type": "cssRule",
-  "selector": "a",
-  "prop": "font-size",
-  "value": "110%"
- },
- {
-  "section": "css",
-  "desc": "Element listy po najechaniu: tło #B36501",
-  "type": "hover",
-  "selector": "li",
-  "prop": "background-color",
-  "value": "#B36501"
- },
- {
-  "section": "php",
-  "desc": "Skrypt: połączenie z localhost, root bez hasła, baza firma",
-  "type": "php"
- },
- {
-  "section": "php",
-  "desc": "Skrypt: zapytanie 1 (daty i tematy szkoleń rosnąco wg daty)",
-  "type": "php"
- },
- {
-  "section": "php",
-  "desc": "Skrypt: data i temat oddzielone spacją, każdy w osobnym paragrafie w bloku głównym",
-  "type": "php"
- },
- {
-  "section": "php",
-  "desc": "Skrypt: wiersze zapisane jako osobne linie w harmonogram.txt",
-  "type": "php"
- },
- {
-  "section": "php",
-  "desc": "Skrypt: zamknięcie połączenia z serwerem",
-  "type": "php"
- },
- {
-  "section": "manual",
-  "desc": "Znaczące nazewnictwo zmiennych i funkcji w skrypcie",
-  "type": "manual"
- }
+  {"section": "grafika", "desc": "baner.jpg: szerokość 1000 px, wysokość 150 px", "type": "image", "name": "baner.jpg", "width": 1000, "height": 150},
+  {"section": "grafika", "desc": "Gradient, kod.jpg z perspektywą, napis „Firma szkoleniowa” (ocena wzrokowa)", "type": "manual"},
+  {"section": "pliki", "desc": "Plik index.html", "type": "file", "name": "index.html"},
+  {"section": "pliki", "desc": "Plik style.css", "type": "file", "name": "style.css"},
+  {"section": "pliki", "desc": "Plik szkolenia.php", "type": "file", "name": "szkolenia.php"},
+  {"section": "pliki", "desc": "Plik baner.jpg", "type": "file", "name": "baner.jpg"},
+  {"section": "html", "desc": "Zapisane w języku HTML5, polski język, kodowanie UTF-8", "type": "head", "page": "index.html", "lang": "pl", "charset": true},
+  {"section": "html", "desc": "Tytuł strony „Firma szkoleniowa”", "type": "head", "page": "index.html", "doctype": false, "title": "Firma szkoleniowa"},
+  {"section": "html", "desc": "Arkusz stylów style.css prawidłowo połączony", "type": "head", "page": "index.html", "doctype": false, "stylesheet": "style.css"},
+  {"section": "html", "desc": "Podział na bloki: nagłówkowy, menu, główny, stopka (semantyczne znaczniki)", "type": "exists", "page": "index.html", "hint": "menu jako nav, blok główny jako main", "selectors": ["header", "nav", "main", "footer"]},
+  {"section": "html", "desc": "Układ: menu i blok główny obok siebie, poniżej nagłówka", "type": "layout", "page": "index.html", "a": "nav", "b": "main", "relation": "leftOf"},
+  {"section": "html", "desc": "Układ: blok nagłówkowy nad menu", "type": "layout", "page": "index.html", "a": "header", "b": "nav", "relation": "above"},
+  {"section": "html", "desc": "Układ: stopka na dole pod blokami", "type": "layout", "page": "index.html", "a": "footer", "b": "main", "relation": "below"},
+  {"section": "html", "desc": "Blok nagłówkowy: obraz baner.jpg", "type": "attr", "page": "index.html", "selector": "header img", "attr": "src", "equals": "baner.jpg"},
+  {"section": "html", "desc": "Obraz z tekstem alternatywnym „Szkolenia”", "type": "attr", "page": "index.html", "selector": "header img", "attr": "alt", "equals": "Szkolenia"},
+  {"section": "html", "desc": "Menu: lista punktowana z dwoma elementami", "type": "exists", "page": "index.html", "selector": "nav ul li", "count": 2},
+  {"section": "html", "desc": "Odnośnik „Strona główna”", "type": "text", "page": "index.html", "selector": "nav li:nth-of-type(1) a", "equals": "Strona główna"},
+  {"section": "html", "desc": "Odnośnik do index.html", "type": "attr", "page": "index.html", "selector": "nav li:nth-of-type(1) a", "attr": "href", "equals": "index.html"},
+  {"section": "html", "desc": "Odnośnik „Szkolenia”", "type": "text", "page": "index.html", "selector": "nav li:nth-of-type(2) a", "equals": "Szkolenia"},
+  {"section": "html", "desc": "Odnośnik do szkolenia.php", "type": "attr", "page": "index.html", "selector": "nav li:nth-of-type(2) a", "attr": "href", "equals": "szkolenia.php"},
+  {"section": "html", "desc": "Stopka: nagłówek drugiego stopnia „Firma szkoleniowa, ul. Główna 1, 23-456 Warszawa”", "type": "text", "page": "index.html", "selector": "footer h2", "equals": "Firma szkoleniowa, ul. Główna 1, 23-456 Warszawa"},
+  {"section": "html", "desc": "Stopka: akapit „Autor: ” i numer zdającego", "type": "text", "page": "index.html", "selector": "footer p", "startsWith": "Autor:"},
+  {"section": "html", "desc": "Zapisane w języku HTML5, polski język, kodowanie UTF-8", "type": "head", "page": "szkolenia.php", "lang": "pl", "charset": true},
+  {"section": "html", "desc": "Tytuł strony „Firma szkoleniowa”", "type": "head", "page": "szkolenia.php", "doctype": false, "title": "Firma szkoleniowa"},
+  {"section": "html", "desc": "Arkusz stylów style.css prawidłowo połączony", "type": "head", "page": "szkolenia.php", "doctype": false, "stylesheet": "style.css"},
+  {"section": "html", "desc": "Podział na bloki: nagłówkowy, menu, główny, stopka (semantyczne znaczniki)", "type": "exists", "page": "szkolenia.php", "hint": "menu jako nav, blok główny jako main", "selectors": ["header", "nav", "main", "footer"]},
+  {"section": "html", "desc": "Układ: menu i blok główny obok siebie, poniżej nagłówka", "type": "layout", "page": "szkolenia.php", "a": "nav", "b": "main", "relation": "leftOf"},
+  {"section": "html", "desc": "Układ: blok nagłówkowy nad menu", "type": "layout", "page": "szkolenia.php", "a": "header", "b": "nav", "relation": "above"},
+  {"section": "html", "desc": "Układ: stopka na dole pod blokami", "type": "layout", "page": "szkolenia.php", "a": "footer", "b": "main", "relation": "below"},
+  {"section": "html", "desc": "Blok nagłówkowy: obraz baner.jpg", "type": "attr", "page": "szkolenia.php", "selector": "header img", "attr": "src", "equals": "baner.jpg"},
+  {"section": "html", "desc": "Obraz z tekstem alternatywnym „Szkolenia”", "type": "attr", "page": "szkolenia.php", "selector": "header img", "attr": "alt", "equals": "Szkolenia"},
+  {"section": "html", "desc": "Menu: lista punktowana z dwoma elementami", "type": "exists", "page": "szkolenia.php", "selector": "nav ul li", "count": 2},
+  {"section": "html", "desc": "Odnośnik „Strona główna”", "type": "text", "page": "szkolenia.php", "selector": "nav li:nth-of-type(1) a", "equals": "Strona główna"},
+  {"section": "html", "desc": "Odnośnik do index.html", "type": "attr", "page": "szkolenia.php", "selector": "nav li:nth-of-type(1) a", "attr": "href", "equals": "index.html"},
+  {"section": "html", "desc": "Odnośnik „Szkolenia”", "type": "text", "page": "szkolenia.php", "selector": "nav li:nth-of-type(2) a", "equals": "Szkolenia"},
+  {"section": "html", "desc": "Odnośnik do szkolenia.php", "type": "attr", "page": "szkolenia.php", "selector": "nav li:nth-of-type(2) a", "attr": "href", "equals": "szkolenia.php"},
+  {"section": "html", "desc": "Stopka: nagłówek drugiego stopnia „Firma szkoleniowa, ul. Główna 1, 23-456 Warszawa”", "type": "text", "page": "szkolenia.php", "selector": "footer h2", "equals": "Firma szkoleniowa, ul. Główna 1, 23-456 Warszawa"},
+  {"section": "html", "desc": "Stopka: akapit „Autor: ” i numer zdającego", "type": "text", "page": "szkolenia.php", "selector": "footer p", "startsWith": "Autor:"},
+  {"section": "html", "desc": "Blok główny index.html: nagłówek pierwszego stopnia „Zapraszamy do udziału w szkoleniach z branży IT”", "type": "text", "page": "index.html", "selector": "main h1", "matches": "^Zapraszamy do udziału\\s*w szkoleniach\\s*z branży IT$"},
+  {"section": "html", "desc": "Łamanie wiersza po słowach „udziału” i „szkoleniach” (dwa znaczniki br)", "type": "exists", "page": "index.html", "selector": "main h1 br", "count": 2},
+  {"section": "php", "desc": "Blok główny szkolenia.php: efekt działania skryptu", "type": "php"},
+  {"section": "css", "desc": "Krój czcionki Tahoma dla wszystkich selektorów", "type": "css", "page": "index.html", "selector": "h1", "prop": "font-family", "value": "Tahoma"},
+  {"section": "css", "desc": "Krój czcionki Tahoma (menu)", "type": "css", "page": "index.html", "selector": "a", "prop": "font-family", "value": "Tahoma"},
+  {"section": "css", "desc": "Kontener: kolor tła #FB8E02", "type": "css", "page": "index.html", "selector": "body > div", "prop": "background-color", "value": "#FB8E02", "hint": "kontener jako div"},
+  {"section": "css", "desc": "Menu: kolor tła #232323", "type": "css", "page": "index.html", "selector": "nav", "prop": "background-color", "value": "#232323"},
+  {"section": "css", "desc": "Menu: szerokość 20%", "type": "css", "page": "index.html", "selector": "nav", "prop": "width", "value": "20%"},
+  {"section": "css", "desc": "Menu: wysokość 450 px", "type": "css", "page": "index.html", "selector": "nav", "prop": "height", "value": "450px"},
+  {"section": "css", "desc": "Blok główny: kolor tła #AEC6E6", "type": "css", "page": "index.html", "selector": "main", "prop": "background-color", "value": "#AEC6E6"},
+  {"section": "css", "desc": "Blok główny: szerokość 80%", "type": "css", "page": "index.html", "selector": "main", "prop": "width", "value": "80%"},
+  {"section": "css", "desc": "Blok główny: wysokość 450 px", "type": "css", "page": "index.html", "selector": "main", "prop": "height", "value": "450px"},
+  {"section": "css", "desc": "Blok główny: paski przewijania zawsze widoczne", "type": "css", "page": "index.html", "selector": "main", "prop": "overflow", "value": "scroll"},
+  {"section": "css", "desc": "Stopka: marginesy wewnętrzne 2 px", "type": "css", "page": "index.html", "selector": "footer", "prop": "padding", "value": "2px"},
+  {"section": "css", "desc": "Stopka: wyrównanie tekstu do prawej", "type": "css", "page": "index.html", "selector": "footer", "prop": "text-align", "value": "right"},
+  {"section": "css", "desc": "Obraz: szerokość 100%", "type": "css", "page": "index.html", "selector": "img", "prop": "width", "value": "100%"},
+  {"section": "css", "desc": "h1: marginesy wewnętrzne 50 px (selektor znacznika)", "type": "cssRule", "selector": "h1", "prop": "padding", "value": "50px"},
+  {"section": "css", "desc": "h1: kolor czcionki Maroon (selektor znacznika)", "type": "cssRule", "selector": "h1", "prop": "color", "value": "Maroon"},
+  {"section": "css", "desc": "Lista punktowana: brak symboli punktorów", "type": "css", "page": "index.html", "selector": "ul", "prop": "list-style-type", "value": "none"},
+  {"section": "css", "desc": "li: kolor tła #FB8E02 (selektor znacznika)", "type": "cssRule", "selector": "li", "prop": "background-color", "value": "#FB8E02"},
+  {"section": "css", "desc": "li: szerokość 95% (selektor znacznika)", "type": "cssRule", "selector": "li", "prop": "width", "value": "95%"},
+  {"section": "css", "desc": "li: marginesy wewnętrzne 5 px (selektor znacznika)", "type": "cssRule", "selector": "li", "prop": "padding", "value": "5px"},
+  {"section": "css", "desc": "li: margines zewnętrzny górny 10 px (selektor znacznika)", "type": "cssRule", "selector": "li", "prop": "margin-top", "value": "10px"},
+  {"section": "css", "desc": "a: brak podkreślenia (selektor znacznika)", "type": "cssRule", "selector": "a", "prop": "text-decoration", "value": "none"},
+  {"section": "css", "desc": "a: kolor czcionki #232323 (selektor znacznika)", "type": "cssRule", "selector": "a", "prop": "color", "value": "#232323"},
+  {"section": "css", "desc": "a: rozmiar czcionki 110% (selektor znacznika)", "type": "cssRule", "selector": "a", "prop": "font-size", "value": "110%"},
+  {"section": "css", "desc": "Element listy po najechaniu: tło #B36501", "type": "hover", "selector": "li", "prop": "background-color", "value": "#B36501"},
+  {"section": "php", "desc": "Skrypt: połączenie z localhost, root bez hasła, baza firma", "type": "php"},
+  {"section": "php", "desc": "Skrypt: zapytanie 1 (daty i tematy szkoleń rosnąco wg daty)", "type": "php"},
+  {"section": "php", "desc": "Skrypt: data i temat oddzielone spacją, każdy w osobnym paragrafie w bloku głównym", "type": "php"},
+  {"section": "php", "desc": "Skrypt: wiersze zapisane jako osobne linie w harmonogram.txt", "type": "php"},
+  {"section": "php", "desc": "Skrypt: zamknięcie połączenia z serwerem", "type": "php"},
+  {"section": "manual", "desc": "Znaczące nazewnictwo zmiennych i funkcji w skrypcie", "type": "manual"}
 ]

@@ -2,11 +2,10 @@
   {"section": "grafika", "desc": "promocja.png: przeskalowany z zachowaniem proporcji do szerokości 180 px, z zachowaniem przezroczystości, ta sama nazwa", "type": "image", "name": "promocja.png", "width": 180, "alpha": true},
   {"section": "pliki", "desc": "Strona index.php", "type": "file", "name": "index.php"},
   {"section": "pliki", "desc": "Arkusz stylów styl.css", "type": "file", "name": "styl.css"},
-
   {"section": "html", "desc": "Zapisana w języku HTML5, język polski, jawnie kodowanie znaków (UTF-8)", "type": "head", "lang": "pl", "charset": true},
   {"section": "html", "desc": "Tytuł strony „Sklep dla uczniów”", "type": "head", "doctype": false, "title": "Sklep dla uczniów"},
   {"section": "html", "desc": "Arkusz stylów w pliku styl.css prawidłowo połączony z kodem strony", "type": "head", "doctype": false, "stylesheet": "styl.css"},
-  {"section": "html", "desc": "Podział strony na pięć bloków za pomocą znaczników sekcji (baner, lewy, środkowy, prawy, stopka)", "type": "exists", "selector": "body > section", "min": 5, "hint": "pięć bloków jako section: baner, lewy, środkowy, prawy, stopka (w tej kolejności)"},
+  {"section": "html", "desc": "Podział strony na pięć bloków za pomocą znaczników sekcji (baner, lewy, środkowy, prawy, stopka)", "type": "exists", "selectors": ["body > section", "body > section", "body > section", "body > section", "body > section"], "hint": "pięć bloków jako section: baner, lewy, środkowy, prawy, stopka (w tej kolejności)"},
   {"section": "html", "desc": "Zawartość banera: nagłówek pierwszego stopnia „Dzisiejsze promocje naszego sklepu”", "type": "text", "selector": "body > section:nth-of-type(1) h1", "equals": "Dzisiejsze promocje naszego sklepu"},
   {"section": "html", "desc": "Blok lewy: nagłówek drugiego stopnia „Taniej o 30%”", "type": "text", "selector": "body > section:nth-of-type(2) h2", "equals": "Taniej o 30%"},
   {"section": "html", "desc": "Blok lewy: lista numerowana (uporządkowana)", "type": "exists", "selector": "body > section:nth-of-type(2) ol"},
@@ -20,7 +19,7 @@
   {"section": "html", "desc": "Lista rozwijalna: „Cienkopis”", "type": "text", "selector": "body > section:nth-of-type(3) form select option", "equals": "Cienkopis", "index": 1},
   {"section": "html", "desc": "Lista rozwijalna: „Pisaki 60 szt.”", "type": "text", "selector": "body > section:nth-of-type(3) form select option", "equals": "Pisaki 60 szt.", "index": 2},
   {"section": "html", "desc": "Lista rozwijalna: „Markery 4 szt.”", "type": "text", "selector": "body > section:nth-of-type(3) form select option", "equals": "Markery 4 szt.", "index": 3},
-  {"section": "html", "desc": "Formularz: przycisk SPRAWDŹ", "type": "exists", "selector": "body > section:nth-of-type(3) form input[type=submit][value='SPRAWDŹ'], body > section:nth-of-type(3) form button[type=submit]"},
+  {"section": "html", "desc": "Formularz: przycisk SPRAWDŹ", "hint": "przycisk jako input submit z value SPRAWDŹ lub button z tekstem SPRAWDŹ", "type": "text", "selector": "body > section:nth-of-type(3) form button, body > section:nth-of-type(3) form input[type=button], body > section:nth-of-type(3) form input[type=submit]", "equals": "SPRAWDŹ"},
   {"section": "html", "desc": "Blok środkowy: blok zawierający efekt działania skryptu 2", "type": "exists", "selector": "body > section:nth-of-type(3) section", "hint": "blok wyniku jako section wewnątrz bloku środkowego"},
   {"section": "php", "desc": "Skrypt 2: pobranie nazwy towaru z formularza, zapytanie 2 z nazwą towaru w warunku, cena promocyjna niższa o 30%, wypisanie „cena regularna: …” i „cena w promocji 30%: …” w bloku pod formularzem", "type": "php"},
   {"section": "html", "desc": "Blok prawy: nagłówek drugiego stopnia „Kontakt”", "type": "text", "selector": "body > section:nth-of-type(4) h2", "equals": "Kontakt"},
@@ -30,7 +29,6 @@
   {"section": "html", "desc": "Blok prawy: obraz promocja.png", "type": "attr", "selector": "body > section:nth-of-type(4) img", "attr": "src", "equals": "promocja.png"},
   {"section": "html", "desc": "Obraz z tekstem alternatywnym „promocja”", "type": "attr", "selector": "body > section:nth-of-type(4) img", "attr": "alt", "equals": "promocja"},
   {"section": "html", "desc": "Stopka: nagłówek czwartego stopnia „Autor strony: ” i numer zdającego", "type": "text", "selector": "body > section:nth-of-type(5) h4", "startsWith": "Autor strony:"},
-
   {"section": "css", "desc": "Domyślnie dla wszystkich selektorów: krój czcionki Garamond", "type": "css", "selector": "h2", "prop": "font-family", "value": "Garamond"},
   {"section": "css", "desc": "Domyślnie dla wszystkich selektorów: wyrównanie tekstu do środka", "type": "css", "selector": "h2", "prop": "text-align", "value": "center"},
   {"section": "css", "desc": "Baner: kolor tła #8C7B75", "type": "css", "selector": "body > section:nth-of-type(1)", "prop": "background-color", "value": "#8C7B75"},
@@ -58,14 +56,12 @@
   {"section": "css", "desc": "Obraz: marginesy wewnętrzne 5 px", "type": "css", "selector": "img", "prop": "padding", "value": "5px"},
   {"section": "css", "desc": "Obraz: zaokrąglenie obramowania 10%", "type": "css", "selector": "img", "prop": "border-top-left-radius", "value": "10%"},
   {"section": "css", "desc": "Obraz: styl zdefiniowany wyłącznie selektorem znacznika img (obramowanie)", "type": "cssRule", "selector": "img", "prop": "border", "value": "1px dashed #8C7B75"},
-  {"section": "css", "desc": "Blok z wynikiem skryptu 2: margines zewnętrzny górny 100 px", "type": "css", "selector": "body > section:nth-of-type(3) section", "prop": "margin-top", "value": "100px"},
-  {"section": "css", "desc": "Blok z wynikiem skryptu 2: obramowanie 1 px linią ciągłą koloru #8C7B75", "type": "css", "selector": "body > section:nth-of-type(3) section", "prop": "border-top", "value": "1px solid #8C7B75"},
-
+  {"section": "css", "desc": "Blok z wynikiem skryptu 2: margines zewnętrzny górny 100 px", "type": "css", "selector": "body > section:nth-of-type(3) section", "prop": "margin-top", "value": "100px", "hint": "blok wyniku jako section wewnątrz bloku środkowego"},
+  {"section": "css", "desc": "Blok z wynikiem skryptu 2: obramowanie 1 px linią ciągłą koloru #8C7B75", "type": "css", "selector": "body > section:nth-of-type(3) section", "prop": "border-top", "value": "1px solid #8C7B75", "hint": "blok wyniku jako section wewnątrz bloku środkowego"},
   {"section": "css", "desc": "Układ: baner na górze, nad blokiem lewym", "type": "layout", "a": "body > section:nth-of-type(1)", "b": "body > section:nth-of-type(2)", "relation": "above"},
   {"section": "css", "desc": "Układ: blok lewy po lewej od środkowego", "type": "layout", "a": "body > section:nth-of-type(2)", "b": "body > section:nth-of-type(3)", "relation": "leftOf"},
   {"section": "css", "desc": "Układ: blok środkowy po lewej od prawego", "type": "layout", "a": "body > section:nth-of-type(3)", "b": "body > section:nth-of-type(4)", "relation": "leftOf"},
   {"section": "css", "desc": "Układ: bloki lewy i prawy w jednym rzędzie", "type": "layout", "a": "body > section:nth-of-type(2)", "b": "body > section:nth-of-type(4)", "relation": "sameRow"},
   {"section": "css", "desc": "Układ: stopka na dole, pod blokami", "type": "layout", "a": "body > section:nth-of-type(5)", "b": "body > section:nth-of-type(2)", "relation": "below"},
-
   {"section": "php", "desc": "Skrypt łączy się z bazą sklep na localhost (użytkownik root bez hasła), jest w pliku index.php i na końcu zamyka połączenie z serwerem", "type": "php"}
 ]

@@ -1,0 +1,9 @@
+{"code": "inf03_2024_01_08", "pass": false,
+ "missing": [
+  "fryzura.html: „Cztery pola radio, jedno pod drugim” - brak kryterium na ułożenie pól jedno pod drugim (np. layout above dla section#lewy2 input:nth-of-type(1) i (2), (2) i (3), (3) i (4)); jest tylko liczba pól (exists count 4) i podpisy",
+  "fryzura.html: „Poniżej przycisk o treści »Odkryj promocję«” - desc mówi „poniżej pól radio”, ale położenie nie jest sprawdzane (brak layout above: ostatnie pole radio nad przyciskiem); podobnie akapit „pod przyciskiem” to tylko exists min 1 bez relacji położenia (layout above: przycisk nad section#lewy2 p)"
+ ],
+ "wrong": [
+  {"index": "wiele (0-based): 10, 12-20, 22, 24, 26-32, 35-42, 61, 63-71, 73, 75, 77-83, 86-93, 109, 111, 113-116", "problem": "60 kryteriów używa section#lewy1/#lewy2/#lewy3/#prawy1/#prawy2 (identyfikatorów, których treść nie podaje), a nie mają pola hint (hint jest tylko przy pierwszym kryterium danego bloku na stronie). Dotyczy zwłaszcza wszystkich layout i css, w tym świeżo dodanych kryteriów, gdzie kursant nie dowie się, dlaczego kryterium nie przechodzi, jeśli nazwie bloki inaczej (zasada 3).", "fix": "Dodać hint do kryteriów layout i css/hover/text korzystających z tych selektorów (np. \"bloki jako section#lewy1, #lewy2, #lewy3, #prawy1, #prawy2 w kolejności z Obrazu 2\"); wystarczy krótki wspólny hint, powtórzony w kolejnych kryteriach."}
+ ],
+ "notes": "Pozostałe wymagania pokryte i zgodne z treścią: grafika (250/650 px), pliki, head z DOCTYPE jako pierwszym na obu stronach, bloki, nagłówki i odnośniki, tabela 5x2 z treścią Tabeli 1, obrazy i alt, akapity, stopka (startsWith), układ (zgodny z Obrazem 2, validator OK), wszystkie style CSS (cssRule dla table/h4/img/a, margin auto z matching, hover tr, radio margin 7px), cztery kryteria js dla ceny o 10 zł niższej, manual dla nazewnictwa. Walidator: ok, brak problemów (123 auto, 1 manual). Brak użycia img[src]/a[href] w selektorach. Brak PHP w arkuszu."}

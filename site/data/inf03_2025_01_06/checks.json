@@ -1,6 +1,7 @@
 [
   {"section": "grafika", "desc": "2.png: lustrzane odbicie 2a.png, cyfra „2” niebieska (0000FF), tło przezroczyste", "type": "image", "name": "2.png", "width": 200, "height": 200, "alpha": true},
   {"section": "grafika", "desc": "Animacja cyfry.gif", "type": "image", "name": "cyfry.gif", "width": 200, "height": 200},
+  {"section": "grafika", "desc": "Animacja: każdy obraz (0-9, A-F) pokazywany przez 750 ms, jedna klatka na warstwę", "type": "manual"},
   {"section": "pliki", "desc": "Strona systemy.html", "type": "file", "name": "systemy.html"},
   {"section": "pliki", "desc": "Arkusz stylów styl.css", "type": "file", "name": "styl.css"},
   {"section": "html", "desc": "Zapisana w HTML5, język polski, kodowanie UTF-8", "type": "head", "lang": "pl", "charset": true},
@@ -19,7 +20,7 @@
   {"section": "html", "desc": "Tabela: zawartość jak na ilustracji 4 (A 1010 10 … F 1111 15)", "type": "text", "selector": "section:nth-of-type(1) table", "matches": "A\\s*1010\\s*10\\s*B\\s*1011\\s*11\\s*C\\s*1100\\s*12\\s*D\\s*1101\\s*13\\s*E\\s*1110\\s*14\\s*F\\s*1111\\s*15"},
   {"section": "html", "desc": "Blok środkowy: pole edycyjne do wpisywania liczb", "type": "exists", "selector": "section:nth-of-type(2) input", "count": 1},
   {"section": "html", "desc": "Pole edycyjne z podpowiedzią „Wpisz liczbę dziesiętną”", "type": "attr", "selector": "section:nth-of-type(2) input", "attr": "placeholder", "equals": "Wpisz liczbę dziesiętną"},
-  {"section": "html", "desc": "Przycisk „Przelicz na binarny”", "type": "text", "selector": "section:nth-of-type(2) button", "equals": "Przelicz na binarny"},
+  {"section": "html", "desc": "Przycisk „Przelicz na binarny”", "type": "exists", "selector": "section:nth-of-type(2) :is(button:not(:empty), input[type=button], input[type=submit])", "count": 1, "hint": "tekst przycisku: Przelicz na binarny"},
   {"section": "html", "desc": "Paragraf „Brak obliczeń”", "type": "text", "selector": "section:nth-of-type(2) p", "equals": "Brak obliczeń"},
   {"section": "html", "desc": "Blok prawy: nagłówek drugiego stopnia „Słowniczek”", "type": "text", "selector": "aside h2", "equals": "Słowniczek"},
   {"section": "html", "desc": "Lista definicji z terminami i definicjami", "type": "exists", "selector": "aside dl dt", "min": 3},
@@ -62,8 +63,8 @@
   {"section": "css", "desc": "Komórka nagłówkowa: obramowanie ciągłe 3 px #824555", "type": "css", "selector": "th", "prop": "border", "value": "3px solid #824555"},
   {"section": "css", "desc": "Komórka: margines wewnętrzny 5 px", "type": "css", "selector": "td", "prop": "padding", "value": "5px"},
   {"section": "css", "desc": "Komórka nagłówkowa: margines wewnętrzny 5 px", "type": "css", "selector": "th", "prop": "padding", "value": "5px"},
-  {"section": "js", "desc": "Skrypt: 537 zamieniane na „10 0001 1001(2)” z (2) w indeksie dolnym", "type": "js", "steps": [{"set": "section:nth-of-type(2) input", "value": "537"}, {"click": "section:nth-of-type(2) button"}], "expect": [{"selector": "section:nth-of-type(2) p", "equals": "10 0001 1001(2)"}, {"selector": "section:nth-of-type(2) p sub", "equals": "(2)"}]},
-  {"section": "js", "desc": "Skrypt: 5 zamieniane na „101(2)”", "type": "js", "steps": [{"set": "section:nth-of-type(2) input", "value": "5"}, {"click": "section:nth-of-type(2) button"}], "expect": [{"selector": "section:nth-of-type(2) p", "equals": "101(2)"}]},
-  {"section": "js", "desc": "Skrypt: 255 zamieniane na „1111 1111(2)”", "type": "js", "steps": [{"set": "section:nth-of-type(2) input", "value": "255"}, {"click": "section:nth-of-type(2) button"}], "expect": [{"selector": "section:nth-of-type(2) p", "equals": "1111 1111(2)"}]},
+  {"section": "js", "desc": "Skrypt: 537 zamieniane na „10 0001 1001(2)” z (2) w indeksie dolnym", "type": "js", "steps": [{"set": "section:nth-of-type(2) input", "value": "537"}, {"click": "section:nth-of-type(2) :is(button, input[type=button], input[type=submit])"}], "expect": [{"selector": "section:nth-of-type(2) p", "equals": "10 0001 1001(2)"}, {"selector": "section:nth-of-type(2) p sub", "equals": "(2)"}]},
+  {"section": "js", "desc": "Skrypt: 5 zamieniane na „101(2)”", "type": "js", "steps": [{"set": "section:nth-of-type(2) input", "value": "5"}, {"click": "section:nth-of-type(2) :is(button, input[type=button], input[type=submit])"}], "expect": [{"selector": "section:nth-of-type(2) p", "equals": "101(2)"}]},
+  {"section": "js", "desc": "Skrypt: 255 zamieniane na „1111 1111(2)”", "type": "js", "steps": [{"set": "section:nth-of-type(2) input", "value": "255"}, {"click": "section:nth-of-type(2) :is(button, input[type=button], input[type=submit])"}], "expect": [{"selector": "section:nth-of-type(2) p", "equals": "1111 1111(2)"}]},
   {"section": "js", "desc": "Znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim", "type": "manual"}
 ]

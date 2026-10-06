@@ -14,6 +14,7 @@
   {"section": "php", "desc": "Blok artykułu: efekt działania skryptu 1 (h3 „Pakiet <nazwa> - cena <cena> zł” i paragraf z opisem)", "type": "php"},
   {"section": "html", "desc": "Blok artykułu: odnośnik „Dowiedz się więcej”", "type": "text", "selector": "article a", "equals": "Dowiedz się więcej"},
   {"section": "html", "desc": "Odnośnik prowadzi do opis.html", "type": "attr", "selector": "article a", "attr": "href", "equals": "opis.html"},
+  {"section": "html", "desc": "Plik opis.html zawiera „Strona w trakcie budowy”", "type": "text", "page": "opis.html", "selector": "body", "contains": "Strona w trakcie budowy"},
   {"section": "html", "desc": "Pierwsza sekcja: nagłówek drugiego stopnia „Standardowy”", "type": "text", "selector": "main section:nth-of-type(1) h2", "equals": "Standardowy"},
   {"section": "html", "desc": "Pierwsza sekcja: lista punktowana", "type": "exists", "selector": "main section:nth-of-type(1) ul"},
   {"section": "php", "desc": "Pierwsza sekcja: elementy listy z efektem skryptu 2 (tylko cecha)", "type": "php"},

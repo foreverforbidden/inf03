@@ -11,7 +11,6 @@
         <header>
             <img src="baner.jpg" alt="Polska">
         </header>
-        <aside id="lewa">
         <section id="lewy-gorny">
             <h4>Podaj początek nazwy miasta</h4>
             <form action="index.php" method="post">
@@ -23,7 +22,6 @@
             <p>Egzamin INF.03</p>
             <p>Autor: 00000000000</p>
         </section>
-        </aside>
         <section id="prawy">
             <h1>Wyniki wyszukiwania miast z uwzględnieniem filtra:</h1>
             <?php

@@ -1,9 +1,9 @@
 [
   {"section": "grafika", "desc": "logo.png: przezroczyste tło", "type": "image", "name": "logo.png", "alpha": true},
   {"section": "grafika", "desc": "logo.png przeskalowane z zachowaniem proporcji do dokładnej wysokości 100 px", "type": "image", "name": "logo.png", "height": 100},
+  {"section": "grafika", "desc": "logo.png skadrowane tak, aby kształt wypełniał całość obrazu", "type": "manual"},
   {"section": "pliki", "desc": "Strona pracownicy.html", "type": "file", "name": "pracownicy.html"},
   {"section": "pliki", "desc": "Arkusz stylów styl.css", "type": "file", "name": "styl.css"},
-  {"section": "pliki", "desc": "Skrypt w języku JavaScript", "type": "file", "name": "skrypt.js"},
   {"section": "html", "desc": "Strona zapisana w języku HTML5, język zawartości polski, jawne kodowanie UTF-8", "type": "head", "lang": "pl", "charset": true},
   {"section": "html", "desc": "Tytuł strony „Nasz zespół”", "type": "head", "doctype": false, "title": "Nasz zespół"},
   {"section": "html", "desc": "Arkusz stylów styl.css prawidłowo połączony z kodem strony", "type": "head", "doctype": false, "stylesheet": "styl.css"},
@@ -40,6 +40,8 @@
   {"section": "html", "desc": "Cytat 3: treść w cudzysłowach", "type": "text", "selector": "body > section blockquote", "index": 2, "matches": "^[\"„”“]Niezadowolony pracownik jest dla mnie źródłem nauki[\"”“„]"},
   {"section": "html", "desc": "Cytaty: imię w paragrafie", "type": "exists", "selector": "body > section blockquote p", "count": 3},
   {"section": "html", "desc": "Cytat 1: imię w paragrafie", "type": "text", "selector": "body > section blockquote:nth-of-type(1) p", "contains": "Krzysztof"},
+  {"section": "html", "desc": "Cytat 2: imię w paragrafie", "type": "exists", "selector": "body > section blockquote:nth-of-type(2) p"},
+  {"section": "html", "desc": "Cytat 3: imię w paragrafie", "type": "exists", "selector": "body > section blockquote:nth-of-type(3) p"},
   {"section": "html", "desc": "Stopka: paragraf „Stronę wykonał: ” i numer zdającego", "type": "text", "selector": "footer p", "startsWith": "Stronę wykonał:"},
   {"section": "css", "desc": "Domyślnie dla wszystkich selektorów: krój czcionki Bookman Old Style, zapasowo Serif", "type": "cssRule", "selector": "*", "prop": "font-family", "value": "Bookman Old Style, serif"},
   {"section": "css", "desc": "Bloki banera: kolor tła DarkCyan", "type": "css", "selector": "header", "all": true, "prop": "background-color", "value": "DarkCyan"},
@@ -82,6 +84,5 @@
   {"section": "js", "desc": "Kliknięcie w pierwszy cytat: pierwszy ukryty, drugi uwidoczniony blokowo", "type": "js", "steps": [{"click": "body > section blockquote:nth-of-type(1)"}], "expect": [{"selector": "body > section blockquote:nth-of-type(1)", "css": "display", "value": "none"}, {"selector": "body > section blockquote:nth-of-type(2)", "css": "display", "value": "block"}]},
   {"section": "js", "desc": "Kliknięcie w drugi cytat: drugi ukryty, trzeci uwidoczniony blokowo", "type": "js", "steps": [{"click": "body > section blockquote:nth-of-type(1)"}, {"click": "body > section blockquote:nth-of-type(2)"}], "expect": [{"selector": "body > section blockquote:nth-of-type(2)", "css": "display", "value": "none"}, {"selector": "body > section blockquote:nth-of-type(3)", "css": "display", "value": "block"}]},
   {"section": "js", "desc": "Kliknięcie w trzeci cytat: trzeci ukryty, pierwszy uwidoczniony blokowo", "type": "js", "steps": [{"click": "body > section blockquote:nth-of-type(1)"}, {"click": "body > section blockquote:nth-of-type(2)"}, {"click": "body > section blockquote:nth-of-type(3)"}], "expect": [{"selector": "body > section blockquote:nth-of-type(3)", "css": "display", "value": "none"}, {"selector": "body > section blockquote:nth-of-type(1)", "css": "display", "value": "block"}]},
-  {"section": "js", "desc": "Skrypt: znaczące nazewnictwo wszystkich zmiennych i funkcji", "type": "manual"},
-  {"section": "js", "desc": "Skrypt: ukrywanie i uwidacznianie cytatów przez zmianę wartości właściwości CSS", "type": "manual"}
+  {"section": "js", "desc": "Skrypt: znaczące nazewnictwo wszystkich zmiennych i funkcji", "type": "manual"}
 ]

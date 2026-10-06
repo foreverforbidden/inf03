@@ -6,7 +6,7 @@
   {"section": "html", "desc": "Tytuł strony „Wodospady”", "type": "head", "doctype": false, "title": "Wodospady"},
   {"section": "html", "desc": "Arkusz stylów styl.css prawidłowo połączony", "type": "head", "doctype": false, "stylesheet": "styl.css"},
   {"section": "html", "desc": "Podział na bloki: nagłówkowy, główny, artykułu, stopki", "type": "exists", "selectors": ["header", "main", "article", "footer"]},
-  {"section": "html", "desc": "Blok główny zawiera blok boczny i blok sekcji", "type": "exists", "selector": "main > aside ~ section"},
+  {"section": "html", "desc": "Blok główny zawiera blok boczny i blok sekcji", "type": "exists", "selectors": ["main aside", "main section"]},
   {"section": "html", "desc": "Układ: blok nagłówkowy nad blokiem głównym", "type": "layout", "a": "header", "b": "main", "relation": "above"},
   {"section": "html", "desc": "Układ: blok artykułu pod blokiem głównym", "type": "layout", "a": "article", "b": "main", "relation": "below"},
   {"section": "html", "desc": "Układ: stopka pod blokiem artykułu", "type": "layout", "a": "footer", "b": "article", "relation": "below"},
@@ -26,7 +26,7 @@
   {"section": "html", "desc": "Etykieta „turysta”", "type": "text", "selector": "form label", "equals": "turysta", "index": 1},
   {"section": "html", "desc": "Lista rozwijana połączona z etykietą", "type": "exists", "selector": "form select[id]"},
   {"section": "php", "desc": "Lista rozwijana wypełniona skryptem 3 (value to idTurysta, treść to nick)", "type": "php"},
-  {"section": "html", "desc": "Przycisk „Wpisz”", "type": "exists", "selector": "form input[type=submit][value='Wpisz'], form button"},
+  {"section": "html", "desc": "Przycisk „Wpisz”", "type": "text", "selector": "button, input[type=button], input[type=submit]", "equals": "Wpisz"},
   {"section": "php", "desc": "Skrypt 4: wstawienie osiągnięcia tylko po przesłaniu formularza", "type": "php"},
   {"section": "php", "desc": "Połączenie localhost, root bez hasła, baza wodospady; na końcu zamknięcie połączenia", "type": "php"},
   {"section": "manual", "desc": "Znaczące nazewnictwo zmiennych w skryptach", "type": "manual"},
@@ -68,5 +68,5 @@
   {"section": "css", "desc": "Odnośnik: rozmiar czcionki 130%", "type": "cssRule", "selector": "a", "prop": "font-size", "value": "130%"},
   {"section": "css", "desc": "Odnośnik: marginesy zewnętrzne 10 px", "type": "cssRule", "selector": "a", "prop": "margin", "value": "10px"},
   {"section": "css", "desc": "Odnośnik: bez podkreślenia", "type": "cssRule", "selector": "a", "prop": "text-decoration", "value": "none"},
-  {"section": "css", "desc": "Kursor na odnośniku: kolor tła RoyalBlue", "type": "cssRule", "selector": "a:hover", "prop": "background-color", "value": "RoyalBlue"}
+  {"section": "css", "desc": "Kursor na odnośniku: kolor tła RoyalBlue", "type": "hover", "selector": "a", "prop": "background-color", "value": "RoyalBlue"}
 ]

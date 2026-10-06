@@ -58,9 +58,10 @@
   {"section": "css", "desc": "Obok siebie trzy obrazy", "type": "layout", "page": "index.html", "a": "main img:nth-of-type(1)", "b": "main img:nth-of-type(3)", "relation": "sameRow"},
   {"section": "html", "desc": "Blok prawy znajdz.php: nagłówek drugiego stopnia „Znajdź kwiaciarnię”", "type": "text", "page": "znajdz.php", "selector": "main h2", "equals": "Znajdź kwiaciarnię", "hint": "blok prawy jako main"},
   {"section": "html", "desc": "Formularz wysyłający dane metodą bezpieczną", "type": "attr", "page": "znajdz.php", "selector": "main form", "attr": "method", "equals": "post"},
+  {"section": "html", "desc": "Formularz wysyła dane „do tego samego pliku” (action wskazuje znajdz.php lub brak action)", "type": "manual"},
   {"section": "html", "desc": "Pole edycyjne w formularzu", "type": "exists", "page": "znajdz.php", "selector": "main form input[type=text], main form input:not([type])"},
   {"section": "html", "desc": "Pole edycyjne poprzedzone napisem „Podaj nazwę miasta:”", "type": "text", "page": "znajdz.php", "selector": "main form", "startsWith": "Podaj nazwę miasta:"},
-  {"section": "html", "desc": "Przycisk „SPRAWDŹ” wysyłający dane", "type": "exists", "page": "znajdz.php", "selector": "main form input[type=submit][value='SPRAWDŹ'], main form button:not([type=button]):not([type=reset])"},
+  {"section": "html", "desc": "Przycisk „SPRAWDŹ” wysyłający dane", "hint": "przycisk jako input type=submit lub button", "page": "znajdz.php", "type": "text", "selector": "main form button, main form input[type=button], main form input[type=submit]", "equals": "SPRAWDŹ"},
   {"section": "php", "desc": "Skrypt pobiera dane z pola edycyjnego i wysyła do bazy zmodyfikowane zapytanie 1 z wpisanym miastem", "type": "php"},
   {"section": "php", "desc": "Pod przyciskiem w nagłówku trzeciego stopnia wyświetlane nazwa i ulica oddzielone przecinkiem", "type": "php"},
   {"section": "php", "desc": "Skrypt łączy się z bazą kwiaciarnia (localhost, root, bez hasła) i po operacjach zamyka połączenie", "type": "php"},
@@ -89,5 +90,5 @@
   {"section": "css", "desc": "Element listy: marginesy zewnętrzne 5 px", "type": "css", "page": "index.html", "selector": "nav ol > li", "prop": "margin", "value": "5px"},
   {"section": "css", "desc": "Element listy: marginesy zewnętrzne 5 px wyłącznie selektorem li", "type": "cssRule", "page": "index.html", "selector": "li", "prop": "margin", "value": "5px"},
   {"section": "css", "desc": "Marker elementu listy: kolor czcionki Snow (li::marker)", "type": "cssRule", "page": "index.html", "selector": "li::marker", "match": "li", "prop": "color", "value": "Snow"},
-  {"section": "css", "desc": "Nagłówek trzeciego stopnia: marginesy zewnętrzne górny i dolny 50 px, pozostałe 0", "type": "cssRule", "page": "znajdz.php", "selector": "h3", "match": "main", "prop": "margin", "value": "50px 0"}
+  {"section": "css", "desc": "Nagłówek trzeciego stopnia: marginesy zewnętrzne górny i dolny 50 px, pozostałe 0", "type": "cssRule", "page": "znajdz.php", "selector": "h3", "match": "main", "hint": "nagłówek tworzony skryptem: selektor h3", "prop": "margin", "value": "50px 0"}
 ]
