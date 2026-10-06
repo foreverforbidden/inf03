@@ -1,0 +1,479 @@
+[
+ {
+  "section": "grafika",
+  "desc": "ryba1.jpg: przeskalowany z zachowaniem proporcji, szerokość dokładnie 400 px",
+  "type": "image",
+  "name": "ryba1.jpg",
+  "width": 400
+ },
+ {
+  "section": "pliki",
+  "desc": "Strona wedkuj.php",
+  "type": "file",
+  "name": "wedkuj.php"
+ },
+ {
+  "section": "pliki",
+  "desc": "Arkusz stylów styl_1.css",
+  "type": "file",
+  "name": "styl_1.css"
+ },
+ {
+  "section": "html",
+  "desc": "Strona zapisana w języku HTML5, zadeklarowany język polski, jawnie kodowanie UTF-8",
+  "type": "head",
+  "lang": "pl",
+  "charset": true
+ },
+ {
+  "section": "html",
+  "desc": "Tytuł strony „Wędkowanie”",
+  "type": "head",
+  "doctype": false,
+  "title": "Wędkowanie"
+ },
+ {
+  "section": "html",
+  "desc": "Arkusz stylów w pliku styl_1.css prawidłowo połączony z kodem strony",
+  "type": "head",
+  "doctype": false,
+  "stylesheet": "styl_1.css"
+ },
+ {
+  "section": "html",
+  "desc": "Podział na bloki znacznikami sekcji: baner, dwa bloki lewe, blok prawy, stopka",
+  "type": "exists",
+  "selector": "header ~ section ~ section ~ section ~ footer",
+  "hint": "baner jako header, trzy znaczniki section (dwa lewe i prawy), stopka jako footer"
+ },
+ {
+  "section": "html",
+  "desc": "Trzy bloki sekcji (dwa lewe i jeden prawy)",
+  "type": "exists",
+  "selector": "section",
+  "count": 3
+ },
+ {
+  "section": "html",
+  "desc": "Układ: baner na górze, nad blokami lewymi",
+  "type": "layout",
+  "a": "header",
+  "b": "section:nth-of-type(1)",
+  "relation": "above"
+ },
+ {
+  "section": "html",
+  "desc": "Układ: dwa bloki lewe jeden pod drugim",
+  "type": "layout",
+  "a": "section:nth-of-type(1)",
+  "b": "section:nth-of-type(2)",
+  "relation": "above"
+ },
+ {
+  "section": "html",
+  "desc": "Układ: blok prawy obok bloków lewych (po prawej stronie)",
+  "type": "layout",
+  "a": "section:nth-of-type(3)",
+  "b": "section:nth-of-type(2)",
+  "relation": "rightOf"
+ },
+ {
+  "section": "html",
+  "desc": "Układ: stopka na dole, pod blokami",
+  "type": "layout",
+  "a": "footer",
+  "b": "section:nth-of-type(2)",
+  "relation": "below"
+ },
+ {
+  "section": "html",
+  "desc": "Zawartość banera: nagłówek pierwszego stopnia „Portal dla wędkarzy”",
+  "type": "text",
+  "selector": "header h1",
+  "equals": "Portal dla wędkarzy"
+ },
+ {
+  "section": "html",
+  "desc": "Pierwszy blok lewy: nagłówek trzeciego stopnia „Ryby zamieszkujące rzeki”",
+  "type": "text",
+  "selector": "section:nth-of-type(1) h3",
+  "equals": "Ryby zamieszkujące rzeki"
+ },
+ {
+  "section": "html",
+  "desc": "Pierwszy blok lewy: lista numerowana (uporządkowana)",
+  "type": "exists",
+  "selector": "section:nth-of-type(1) ol"
+ },
+ {
+  "section": "php",
+  "desc": "Lista wypełniona przez skrypt 1: każdy wiersz zapytania 3 w osobnym elemencie listy według wzoru „<nazwa_gatunku> pływa w rzece <nazwa_akwenu>, <wojewodztwo>”",
+  "type": "php"
+ },
+ {
+  "section": "html",
+  "desc": "Drugi blok lewy: nagłówek trzeciego stopnia „Ryby drapieżne naszych wód”",
+  "type": "text",
+  "selector": "section:nth-of-type(2) h3",
+  "equals": "Ryby drapieżne naszych wód"
+ },
+ {
+  "section": "html",
+  "desc": "Drugi blok lewy: tabela",
+  "type": "exists",
+  "selector": "section:nth-of-type(2) table"
+ },
+ {
+  "section": "html",
+  "desc": "Tabela: trzy komórki nagłówkowe w pierwszym wierszu",
+  "type": "exists",
+  "selector": "section:nth-of-type(2) table tr:first-child th",
+  "count": 3
+ },
+ {
+  "section": "html",
+  "desc": "Pierwsza komórka nagłówkowa „L.p.”",
+  "type": "text",
+  "selector": "section:nth-of-type(2) table th",
+  "index": 0,
+  "equals": "L.p."
+ },
+ {
+  "section": "html",
+  "desc": "Druga komórka nagłówkowa „Gatunek”",
+  "type": "text",
+  "selector": "section:nth-of-type(2) table th",
+  "index": 1,
+  "equals": "Gatunek"
+ },
+ {
+  "section": "html",
+  "desc": "Trzecia komórka nagłówkowa „Występowanie”",
+  "type": "text",
+  "selector": "section:nth-of-type(2) table th",
+  "index": 2,
+  "equals": "Występowanie"
+ },
+ {
+  "section": "php",
+  "desc": "Kolejne wiersze tabeli wypełnione przez skrypt 2 (zapytanie 1, każdy rekord w osobnym wierszu, trzy kolumny)",
+  "type": "php"
+ },
+ {
+  "section": "html",
+  "desc": "Blok prawy: obraz ryba1.jpg",
+  "type": "attr",
+  "selector": "section:nth-of-type(3) img",
+  "attr": "src",
+  "equals": "ryba1.jpg"
+ },
+ {
+  "section": "html",
+  "desc": "Blok prawy: tekst alternatywny obrazu „Sum”",
+  "type": "attr",
+  "selector": "section:nth-of-type(3) img",
+  "attr": "alt",
+  "equals": "Sum"
+ },
+ {
+  "section": "html",
+  "desc": "Blok prawy: w kolejnej linii odnośnik do pliku kwerendy.txt",
+  "type": "attr",
+  "selector": "section:nth-of-type(3) a",
+  "attr": "href",
+  "equals": "kwerendy.txt"
+ },
+ {
+  "section": "html",
+  "desc": "Odnośnik z treścią „Pobierz kwerendy”",
+  "type": "text",
+  "selector": "section:nth-of-type(3) a",
+  "equals": "Pobierz kwerendy"
+ },
+ {
+  "section": "html",
+  "desc": "Stopka: akapit z treścią „Stronę wykonał: ” i numerem zdającego",
+  "type": "text",
+  "selector": "footer p",
+  "startsWith": "Stronę wykonał:"
+ },
+ {
+  "section": "css",
+  "desc": "Domyślnie dla wszystkich selektorów: krój czcionki Helvetica",
+  "type": "css",
+  "selector": "h3",
+  "prop": "font-family",
+  "value": "Helvetica"
+ },
+ {
+  "section": "css",
+  "desc": "Baner: kolor tła #00838F",
+  "type": "css",
+  "selector": "header",
+  "prop": "background-color",
+  "value": "#00838F"
+ },
+ {
+  "section": "css",
+  "desc": "Stopka: kolor tła #00838F",
+  "type": "css",
+  "selector": "footer",
+  "prop": "background-color",
+  "value": "#00838F"
+ },
+ {
+  "section": "css",
+  "desc": "Baner: biały kolor czcionki",
+  "type": "css",
+  "selector": "header",
+  "prop": "color",
+  "value": "white"
+ },
+ {
+  "section": "css",
+  "desc": "Stopka: biały kolor czcionki",
+  "type": "css",
+  "selector": "footer",
+  "prop": "color",
+  "value": "white"
+ },
+ {
+  "section": "css",
+  "desc": "Baner: marginesy wewnętrzne 5 px",
+  "type": "css",
+  "selector": "header",
+  "prop": "padding",
+  "value": "5px"
+ },
+ {
+  "section": "css",
+  "desc": "Stopka: marginesy wewnętrzne 5 px",
+  "type": "css",
+  "selector": "footer",
+  "prop": "padding",
+  "value": "5px"
+ },
+ {
+  "section": "css",
+  "desc": "Baner: rozmiar czcionki 130%",
+  "type": "css",
+  "selector": "header",
+  "prop": "font-size",
+  "value": "130%"
+ },
+ {
+  "section": "css",
+  "desc": "Stopka: rozmiar czcionki 130%",
+  "type": "css",
+  "selector": "footer",
+  "prop": "font-size",
+  "value": "130%"
+ },
+ {
+  "section": "css",
+  "desc": "Baner: wyrównanie tekstu do środka",
+  "type": "css",
+  "selector": "header",
+  "prop": "text-align",
+  "value": "center"
+ },
+ {
+  "section": "css",
+  "desc": "Stopka: wyrównanie tekstu do środka",
+  "type": "css",
+  "selector": "footer",
+  "prop": "text-align",
+  "value": "center"
+ },
+ {
+  "section": "css",
+  "desc": "Bloki lewe: kolor tła #EFEFEF",
+  "type": "css",
+  "selector": "section:nth-of-type(1)",
+  "prop": "background-color",
+  "value": "#EFEFEF"
+ },
+ {
+  "section": "css",
+  "desc": "Drugi blok lewy: kolor tła #EFEFEF",
+  "type": "css",
+  "selector": "section:nth-of-type(2)",
+  "prop": "background-color",
+  "value": "#EFEFEF"
+ },
+ {
+  "section": "css",
+  "desc": "Pierwszy blok lewy: szerokość 55%",
+  "type": "css",
+  "selector": "section:nth-of-type(1)",
+  "prop": "width",
+  "value": "55%"
+ },
+ {
+  "section": "css",
+  "desc": "Drugi blok lewy: szerokość 55%",
+  "type": "css",
+  "selector": "section:nth-of-type(2)",
+  "prop": "width",
+  "value": "55%"
+ },
+ {
+  "section": "css",
+  "desc": "Pierwszy blok lewy: wysokość 150 px",
+  "type": "css",
+  "selector": "section:nth-of-type(1)",
+  "prop": "height",
+  "value": "150px"
+ },
+ {
+  "section": "css",
+  "desc": "Drugi blok lewy: wysokość 300 px",
+  "type": "css",
+  "selector": "section:nth-of-type(2)",
+  "prop": "height",
+  "value": "300px"
+ },
+ {
+  "section": "css",
+  "desc": "Blok prawy: kolor tła #4FB3BF",
+  "type": "css",
+  "selector": "section:nth-of-type(3)",
+  "prop": "background-color",
+  "value": "#4FB3BF"
+ },
+ {
+  "section": "css",
+  "desc": "Blok prawy: szerokość 45%",
+  "type": "css",
+  "selector": "section:nth-of-type(3)",
+  "prop": "width",
+  "value": "45%"
+ },
+ {
+  "section": "css",
+  "desc": "Blok prawy: wysokość 450 px",
+  "type": "css",
+  "selector": "section:nth-of-type(3)",
+  "prop": "height",
+  "value": "450px"
+ },
+ {
+  "section": "css",
+  "desc": "Blok prawy: wyrównanie tekstu do środka",
+  "type": "css",
+  "selector": "section:nth-of-type(3)",
+  "prop": "text-align",
+  "value": "center"
+ },
+ {
+  "section": "css",
+  "desc": "Obraz: cień o przesunięciu 10 px w obu osiach, rozmyciu 7 px i kolorze DimGray",
+  "type": "css",
+  "selector": "img",
+  "prop": "box-shadow",
+  "value": "10px 10px 7px DimGray"
+ },
+ {
+  "section": "css",
+  "desc": "Obraz: marginesy zewnętrzne 20 px",
+  "type": "css",
+  "selector": "img",
+  "prop": "margin",
+  "value": "20px"
+ },
+ {
+  "section": "css",
+  "desc": "Obraz: styl zdefiniowany wyłącznie selektorem znacznika (cień)",
+  "type": "cssRule",
+  "selector": "img",
+  "prop": "box-shadow",
+  "value": "10px 10px 7px DimGray"
+ },
+ {
+  "section": "css",
+  "desc": "Obraz: styl zdefiniowany wyłącznie selektorem znacznika (marginesy)",
+  "type": "cssRule",
+  "selector": "img",
+  "prop": "margin",
+  "value": "20px"
+ },
+ {
+  "section": "css",
+  "desc": "Tabela: obramowanie linią ciągłą 1 px w kolorze #4FB3BF",
+  "type": "css",
+  "selector": "table",
+  "prop": "border-top",
+  "value": "1px solid #4FB3BF"
+ },
+ {
+  "section": "css",
+  "desc": "Komórki tabeli: obramowanie linią ciągłą 1 px w kolorze #4FB3BF (selektor znacznika td)",
+  "type": "cssRule",
+  "selector": "td",
+  "prop": "border",
+  "value": "1px solid #4FB3BF",
+  "match": "th"
+ },
+ {
+  "section": "css",
+  "desc": "Komórki nagłówkowe: obramowanie linią ciągłą 1 px w kolorze #4FB3BF",
+  "type": "css",
+  "selector": "th",
+  "prop": "border-top",
+  "value": "1px solid #4FB3BF"
+ },
+ {
+  "section": "css",
+  "desc": "Obramowanie tabeli i komórek połączone",
+  "type": "css",
+  "selector": "table",
+  "prop": "border-collapse",
+  "value": "collapse"
+ },
+ {
+  "section": "css",
+  "desc": "Tabela: marginesy zewnętrzne wyliczane automatycznie (auto)",
+  "type": "cssRule",
+  "selector": "table",
+  "prop": "margin",
+  "value": "auto"
+ },
+ {
+  "section": "css",
+  "desc": "Tabela: szerokość 80%",
+  "type": "css",
+  "selector": "table",
+  "prop": "width",
+  "value": "80%"
+ },
+ {
+  "section": "css",
+  "desc": "Komórki tabeli: marginesy wewnętrzne 4 px (selektor znacznika td)",
+  "type": "cssRule",
+  "selector": "td",
+  "prop": "padding",
+  "value": "4px",
+  "match": "th"
+ },
+ {
+  "section": "css",
+  "desc": "Komórki nagłówkowe: marginesy wewnętrzne 4 px",
+  "type": "css",
+  "selector": "th",
+  "prop": "padding",
+  "value": "4px"
+ },
+ {
+  "section": "css",
+  "desc": "Kursor na wierszu tabeli: kolor tła wiersza #4FB3BF",
+  "type": "hover",
+  "selector": "table tr",
+  "prop": "background-color",
+  "value": "#4FB3BF"
+ },
+ {
+  "section": "php",
+  "desc": "Skrypty w PHP łączą się z serwerem na localhost, użytkownik root bez hasła, baza wedkowanie, a na końcu zamykają połączenie z serwerem",
+  "type": "php"
+ }
+]

@@ -1,0 +1,521 @@
+[
+{
+"section": "pliki",
+"desc": "Strona wycieczki.php",
+"type": "file",
+"name": "wycieczki.php"
+},
+{
+"section": "pliki",
+"desc": "Arkusz stylów styl4.css",
+"type": "file",
+"name": "styl4.css"
+},
+{
+"section": "html",
+"desc": "Zapisana w języku HTML 5, jawnie kodowanie polskich znaków (UTF-8), język witryny: polski",
+"type": "head",
+"lang": "pl",
+"charset": true
+},
+{
+"section": "html",
+"desc": "Tytuł strony „Wycieczki po Europie”",
+"type": "head",
+"doctype": false,
+"title": "Wycieczki po Europie"
+},
+{
+"section": "html",
+"desc": "Arkusz stylów w pliku styl4.css prawidłowo połączony z kodem strony",
+"type": "head",
+"doctype": false,
+"stylesheet": "styl4.css"
+},
+{
+"section": "html",
+"desc": "Podział strony za pomocą znaczników sekcji: baner, blok z danymi, trzy bloki obok siebie, stopka",
+"type": "exists",
+"selector": "section:nth-of-type(1) ~ section:nth-of-type(2) ~ section:nth-of-type(3) ~ section:nth-of-type(4) ~ section:nth-of-type(5) ~ section:nth-of-type(6)",
+"hint": "baner, dane, lewy, środkowy, prawy i stopka jako kolejne znaczniki section"
+},
+{
+"section": "html",
+"desc": "Zawartość banera: nagłówek pierwszego stopnia „BIURO TURYSTYCZNE”",
+"type": "text",
+"selector": "section:nth-of-type(1) h1",
+"equals": "BIURO TURYSTYCZNE"
+},
+{
+"section": "html",
+"desc": "Blok z danymi: nagłówek trzeciego stopnia „Wycieczki, na które są wolne miejsca”",
+"type": "text",
+"selector": "section:nth-of-type(2) h3",
+"equals": "Wycieczki, na które są wolne miejsca"
+},
+{
+"section": "html",
+"desc": "Blok z danymi: lista punktowana (nieuporządkowana)",
+"type": "exists",
+"selector": "section:nth-of-type(2) ul"
+},
+{
+"section": "php",
+"desc": "Lista wypełniona skryptem 1: zapytanie 1, elementy listy „<id>. dnia <dataWyjazdu> jedziemy do <cel>, cena: <cena>”",
+"type": "php"
+},
+{
+"section": "html",
+"desc": "Lewy blok: nagłówek drugiego stopnia „Bestselery”",
+"type": "text",
+"selector": "section:nth-of-type(3) h2",
+"equals": "Bestselery"
+},
+{
+"section": "html",
+"desc": "Lewy blok: tabela",
+"type": "exists",
+"selector": "section:nth-of-type(3) table",
+"count": 1
+},
+{
+"section": "html",
+"desc": "Tabela o trzech wierszach",
+"type": "exists",
+"selector": "section:nth-of-type(3) table tr",
+"count": 3
+},
+{
+"section": "html",
+"desc": "Tabela o dwóch kolumnach",
+"type": "exists",
+"selector": "section:nth-of-type(3) table td:nth-child(2)",
+"count": 3
+},
+{
+"section": "html",
+"desc": "Tabela: komórka „Wenecja” (wiersz 1, kolumna 1)",
+"type": "text",
+"selector": "section:nth-of-type(3) table tr:nth-child(1) td:nth-child(1)",
+"equals": "Wenecja"
+},
+{
+"section": "html",
+"desc": "Tabela: komórka „kwiecień” (wiersz 1, kolumna 2)",
+"type": "text",
+"selector": "section:nth-of-type(3) table tr:nth-child(1) td:nth-child(2)",
+"equals": "kwiecień"
+},
+{
+"section": "html",
+"desc": "Tabela: komórka „Londyn” (wiersz 2, kolumna 1)",
+"type": "text",
+"selector": "section:nth-of-type(3) table tr:nth-child(2) td:nth-child(1)",
+"equals": "Londyn"
+},
+{
+"section": "html",
+"desc": "Tabela: komórka „lipiec” (wiersz 2, kolumna 2)",
+"type": "text",
+"selector": "section:nth-of-type(3) table tr:nth-child(2) td:nth-child(2)",
+"equals": "lipiec"
+},
+{
+"section": "html",
+"desc": "Tabela: komórka „Rzym” (wiersz 3, kolumna 1)",
+"type": "text",
+"selector": "section:nth-of-type(3) table tr:nth-child(3) td:nth-child(1)",
+"equals": "Rzym"
+},
+{
+"section": "html",
+"desc": "Tabela: komórka „wrzesień” (wiersz 3, kolumna 2)",
+"type": "text",
+"selector": "section:nth-of-type(3) table tr:nth-child(3) td:nth-child(2)",
+"equals": "wrzesień"
+},
+{
+"section": "html",
+"desc": "Środkowy blok: nagłówek drugiego stopnia „Nasze zdjęcia”",
+"type": "text",
+"selector": "section:nth-of-type(4) h2",
+"equals": "Nasze zdjęcia"
+},
+{
+"section": "php",
+"desc": "Środkowy blok: efekt działania skryptu 2 (kolejne obrazy)",
+"type": "php"
+},
+{
+"section": "php",
+"desc": "Skrypt 2: zapytanie 2, pole nazwaPliku jako źródło obrazu, pole podpis jako tekst alternatywny",
+"type": "php"
+},
+{
+"section": "html",
+"desc": "Prawy blok: nagłówek drugiego stopnia „Skontaktuj się”",
+"type": "text",
+"selector": "section:nth-of-type(5) h2",
+"equals": "Skontaktuj się"
+},
+{
+"section": "html",
+"desc": "Prawy blok: odnośnik o treści „napisz do nas”",
+"type": "text",
+"selector": "section:nth-of-type(5) a",
+"equals": "napisz do nas"
+},
+{
+"section": "html",
+"desc": "Prawy blok: odnośnik do adresu e-mail turysta@wycieczki.pl",
+"type": "attr",
+"selector": "section:nth-of-type(5) a",
+"attr": "href",
+"contains": "turysta@wycieczki.pl"
+},
+{
+"section": "html",
+"desc": "Prawy blok: paragraf „telefon: 111222333”",
+"type": "text",
+"selector": "section:nth-of-type(5) p",
+"equals": "telefon: 111222333"
+},
+{
+"section": "html",
+"desc": "Stopka: akapit „Stronę wykonał: ” i numer zdającego",
+"type": "text",
+"selector": "section:nth-of-type(6) p",
+"startsWith": "Stronę wykonał:"
+},
+{
+"section": "css",
+"desc": "Domyślnie dla wszystkich selektorów: krój czcionki Helvetica",
+"type": "css",
+"selector": "h2",
+"prop": "font-family",
+"value": "Helvetica"
+},
+{
+"section": "css",
+"desc": "Baner i stopka: kolor tła #B3BC6D",
+"type": "css",
+"selector": "section:nth-of-type(1)",
+"prop": "background-color",
+"value": "#B3BC6D"
+},
+{
+"section": "css",
+"desc": "Baner i stopka: kolor tła #B3BC6D (stopka)",
+"type": "css",
+"selector": "section:nth-of-type(6)",
+"prop": "background-color",
+"value": "#B3BC6D"
+},
+{
+"section": "css",
+"desc": "Baner i stopka: biały kolor czcionki",
+"type": "css",
+"selector": "section:nth-of-type(1)",
+"prop": "color",
+"value": "white"
+},
+{
+"section": "css",
+"desc": "Baner i stopka: biały kolor czcionki (stopka)",
+"type": "css",
+"selector": "section:nth-of-type(6)",
+"prop": "color",
+"value": "white"
+},
+{
+"section": "css",
+"desc": "Baner i stopka: wyrównanie tekstu do środka",
+"type": "css",
+"selector": "section:nth-of-type(1)",
+"prop": "text-align",
+"value": "center"
+},
+{
+"section": "css",
+"desc": "Baner i stopka: wyrównanie tekstu do środka (stopka)",
+"type": "css",
+"selector": "section:nth-of-type(6)",
+"prop": "text-align",
+"value": "center"
+},
+{
+"section": "css",
+"desc": "Baner i stopka: marginesy wewnętrzne 5 px",
+"type": "css",
+"selector": "section:nth-of-type(1)",
+"prop": "padding",
+"value": "5px"
+},
+{
+"section": "css",
+"desc": "Baner i stopka: marginesy wewnętrzne 5 px (stopka)",
+"type": "css",
+"selector": "section:nth-of-type(6)",
+"prop": "padding",
+"value": "5px"
+},
+{
+"section": "css",
+"desc": "Blok z danymi: kolor tła #FFFFCE",
+"type": "css",
+"selector": "section:nth-of-type(2)",
+"prop": "background-color",
+"value": "#FFFFCE"
+},
+{
+"section": "css",
+"desc": "Blok z danymi: kolor czcionki Olive",
+"type": "css",
+"selector": "section:nth-of-type(2)",
+"prop": "color",
+"value": "Olive"
+},
+{
+"section": "css",
+"desc": "Blok z danymi: marginesy wewnętrzne górny 10 px",
+"type": "css",
+"selector": "section:nth-of-type(2)",
+"prop": "padding-top",
+"value": "10px"
+},
+{
+"section": "css",
+"desc": "Blok z danymi: marginesy wewnętrzne dolny 10 px",
+"type": "css",
+"selector": "section:nth-of-type(2)",
+"prop": "padding-bottom",
+"value": "10px"
+},
+{
+"section": "css",
+"desc": "Blok z danymi: marginesy wewnętrzne prawy 150 px",
+"type": "css",
+"selector": "section:nth-of-type(2)",
+"prop": "padding-right",
+"value": "150px"
+},
+{
+"section": "css",
+"desc": "Blok z danymi: marginesy wewnętrzne lewy 150 px",
+"type": "css",
+"selector": "section:nth-of-type(2)",
+"prop": "padding-left",
+"value": "150px"
+},
+{
+"section": "css",
+"desc": "Blok lewy: kolor tła #E6EE9C",
+"type": "css",
+"selector": "section:nth-of-type(3)",
+"prop": "background-color",
+"value": "#E6EE9C"
+},
+{
+"section": "css",
+"desc": "Blok prawy: kolor tła #E6EE9C",
+"type": "css",
+"selector": "section:nth-of-type(5)",
+"prop": "background-color",
+"value": "#E6EE9C"
+},
+{
+"section": "css",
+"desc": "Blok lewy: szerokość 25%",
+"type": "css",
+"selector": "section:nth-of-type(3)",
+"prop": "width",
+"value": "25%"
+},
+{
+"section": "css",
+"desc": "Blok prawy: szerokość 25%",
+"type": "css",
+"selector": "section:nth-of-type(5)",
+"prop": "width",
+"value": "25%"
+},
+{
+"section": "css",
+"desc": "Blok lewy: wysokość 450 px",
+"type": "css",
+"selector": "section:nth-of-type(3)",
+"prop": "height",
+"value": "450px"
+},
+{
+"section": "css",
+"desc": "Blok prawy: wysokość 450 px",
+"type": "css",
+"selector": "section:nth-of-type(5)",
+"prop": "height",
+"value": "450px"
+},
+{
+"section": "css",
+"desc": "Blok lewy: wyrównanie tekstu do środka",
+"type": "css",
+"selector": "section:nth-of-type(3)",
+"prop": "text-align",
+"value": "center"
+},
+{
+"section": "css",
+"desc": "Blok prawy: wyrównanie tekstu do środka",
+"type": "css",
+"selector": "section:nth-of-type(5)",
+"prop": "text-align",
+"value": "center"
+},
+{
+"section": "css",
+"desc": "Blok środkowy: kolor tła #FFFFCE",
+"type": "css",
+"selector": "section:nth-of-type(4)",
+"prop": "background-color",
+"value": "#FFFFCE"
+},
+{
+"section": "css",
+"desc": "Blok środkowy: szerokość 50%",
+"type": "css",
+"selector": "section:nth-of-type(4)",
+"prop": "width",
+"value": "50%"
+},
+{
+"section": "css",
+"desc": "Blok środkowy: wysokość 450 px",
+"type": "css",
+"selector": "section:nth-of-type(4)",
+"prop": "height",
+"value": "450px"
+},
+{
+"section": "css",
+"desc": "Selektor tabeli: obramowanie linią ciągłą 1 px, kolor Olive (wyłącznie selektor znacznika)",
+"type": "cssRule",
+"selector": "table",
+"prop": "border",
+"value": "1px solid Olive"
+},
+{
+"section": "css",
+"desc": "Selektor tabeli: marginesy zewnętrzne wyliczane automatycznie (wyłącznie selektor znacznika)",
+"type": "cssRule",
+"selector": "table",
+"prop": "margin",
+"value": "auto"
+},
+{
+"section": "css",
+"desc": "Selektor tabeli: szerokość 70% (wyłącznie selektor znacznika)",
+"type": "cssRule",
+"selector": "table",
+"prop": "width",
+"value": "70%"
+},
+{
+"section": "css",
+"desc": "Selektor nagłówka drugiego stopnia: wyrównanie tekstu do środka (wyłącznie selektor znacznika)",
+"type": "cssRule",
+"selector": "h2",
+"prop": "text-align",
+"value": "center"
+},
+{
+"section": "css",
+"desc": "Pierwsza litera nagłówka drugiego stopnia: rozmiar czcionki 150%",
+"type": "cssRule",
+"selector": "h2::first-letter",
+"prop": "font-size",
+"value": "150%"
+},
+{
+"section": "css",
+"desc": "Pierwsza litera nagłówka drugiego stopnia: kolor czcionki Olive",
+"type": "cssRule",
+"selector": "h2::first-letter",
+"prop": "color",
+"value": "Olive"
+},
+{
+"section": "css",
+"desc": "Selektor obrazu: wysokość 100 px (wyłącznie selektor znacznika)",
+"type": "cssRule",
+"selector": "img",
+"prop": "height",
+"value": "100px"
+},
+{
+"section": "css",
+"desc": "Selektor obrazu: marginesy wewnętrzne 7 px (wyłącznie selektor znacznika)",
+"type": "cssRule",
+"selector": "img",
+"prop": "padding",
+"value": "7px"
+},
+{
+"section": "css",
+"desc": "Kursor na obrazie: kolor tła #B3BC6D",
+"type": "cssRule",
+"selector": "img:hover",
+"prop": "background-color",
+"value": "rgb(179, 188, 109)",
+"hint": "kolor tła #B3BC6D w regule img:hover"
+},
+{
+"section": "css",
+"desc": "Układ: baner na górze, nad blokiem z danymi",
+"type": "layout",
+"a": "section:nth-of-type(1)",
+"b": "section:nth-of-type(2)",
+"relation": "above"
+},
+{
+"section": "css",
+"desc": "Układ: blok z danymi nad blokami lewym, środkowym i prawym",
+"type": "layout",
+"a": "section:nth-of-type(2)",
+"b": "section:nth-of-type(3)",
+"relation": "above"
+},
+{
+"section": "css",
+"desc": "Układ: blok lewy obok środkowego (po jego lewej)",
+"type": "layout",
+"a": "section:nth-of-type(3)",
+"b": "section:nth-of-type(4)",
+"relation": "leftOf"
+},
+{
+"section": "css",
+"desc": "Układ: blok środkowy obok prawego (po jego lewej)",
+"type": "layout",
+"a": "section:nth-of-type(4)",
+"b": "section:nth-of-type(5)",
+"relation": "leftOf"
+},
+{
+"section": "css",
+"desc": "Układ: stopka poniżej bloków lewego, środkowego i prawego",
+"type": "layout",
+"a": "section:nth-of-type(6)",
+"b": "section:nth-of-type(4)",
+"relation": "below"
+},
+{
+"section": "php",
+"desc": "Skrypt łączy się z serwerem bazodanowym na localhost, użytkownik root bez hasła, baza biuro",
+"type": "php"
+},
+{
+"section": "php",
+"desc": "Na końcu działania skrypt zamyka połączenie z serwerem",
+"type": "php"
+}
+]

@@ -1,0 +1,1259 @@
+[
+{
+"section": "pliki",
+"desc": "Plik index.html",
+"type": "file",
+"name": "index.html"
+},
+{
+"section": "pliki",
+"desc": "Plik kontakt.html",
+"type": "file",
+"name": "kontakt.html"
+},
+{
+"section": "pliki",
+"desc": "Plik uslugi.html",
+"type": "file",
+"name": "uslugi.html"
+},
+{
+"section": "pliki",
+"desc": "Plik skrypt.js",
+"type": "file",
+"name": "skrypt.js"
+},
+{
+"section": "pliki",
+"desc": "Plik styl.css",
+"type": "file",
+"name": "styl.css"
+},
+{
+"section": "html",
+"desc": "Zapisane w języku HTML 5, język polski, kodowanie UTF-8",
+"type": "head",
+"page": "index.html",
+"lang": "pl",
+"charset": true
+},
+{
+"section": "html",
+"desc": "Tytuł strony „Firma IT”",
+"type": "head",
+"page": "index.html",
+"doctype": false,
+"title": "Firma IT"
+},
+{
+"section": "html",
+"desc": "Arkusz stylów styl.css połączony z kodem strony",
+"type": "head",
+"page": "index.html",
+"doctype": false,
+"stylesheet": "styl.css"
+},
+{
+"section": "html",
+"desc": "Ikona witryny z pliku logo",
+"type": "attr",
+"page": "index.html",
+"selector": "link[rel~='icon']",
+"attr": "href",
+"equals": "logo.png"
+},
+{
+"section": "html",
+"desc": "Podział strony na bloki: kontener, w nim logo, menu, baner, blok główny i stopka",
+"type": "exists",
+"page": "index.html",
+"selector": "body > div > header ~ nav ~ section ~ main ~ footer, body > section > header ~ nav ~ section ~ main ~ footer",
+"hint": "blok logo jako header, menu jako nav, baner jako section, blok główny jako main, stopka jako footer, kontener jako div"
+},
+{
+"section": "html",
+"desc": "Blok logo: obraz logo z tekstem alternatywnym „firma it”",
+"type": "attr",
+"page": "index.html",
+"selector": "header img",
+"attr": "alt",
+"equals": "firma it"
+},
+{
+"section": "html",
+"desc": "Blok logo: obraz logo",
+"type": "attr",
+"page": "index.html",
+"selector": "header img",
+"attr": "src",
+"equals": "logo.png"
+},
+{
+"section": "html",
+"desc": "Menu: odnośnik „Strona Główna”",
+"type": "text",
+"page": "index.html",
+"selector": "nav a",
+"index": 0,
+"equals": "Strona Główna"
+},
+{
+"section": "html",
+"desc": "Menu: odnośnik „Strona Główna” prowadzi do index.html",
+"type": "attr",
+"page": "index.html",
+"selector": "nav a",
+"index": 0,
+"attr": "href",
+"equals": "index.html"
+},
+{
+"section": "html",
+"desc": "Menu: odnośnik „Usługi”",
+"type": "text",
+"page": "index.html",
+"selector": "nav a",
+"index": 1,
+"equals": "Usługi"
+},
+{
+"section": "html",
+"desc": "Menu: odnośnik „Usługi” prowadzi do uslugi.html",
+"type": "attr",
+"page": "index.html",
+"selector": "nav a",
+"index": 1,
+"attr": "href",
+"equals": "uslugi.html"
+},
+{
+"section": "html",
+"desc": "Menu: odnośnik „Kontakt”",
+"type": "text",
+"page": "index.html",
+"selector": "nav a",
+"index": 2,
+"equals": "Kontakt"
+},
+{
+"section": "html",
+"desc": "Menu: odnośnik „Kontakt” prowadzi do kontakt.html",
+"type": "attr",
+"page": "index.html",
+"selector": "nav a",
+"index": 2,
+"attr": "href",
+"equals": "kontakt.html"
+},
+{
+"section": "html",
+"desc": "Baner: plik animacja.gif",
+"type": "attr",
+"page": "index.html",
+"selector": "section img",
+"attr": "src",
+"equals": "animacja.gif",
+"hint": "blok logo jako header, menu jako nav, baner jako section, blok główny jako main, stopka jako footer, kontener jako div"
+},
+{
+"section": "html",
+"desc": "Baner: tekst alternatywny „Usługi informatyczne”",
+"type": "attr",
+"page": "index.html",
+"selector": "section img",
+"attr": "alt",
+"equals": "Usługi informatyczne",
+"hint": "blok logo jako header, menu jako nav, baner jako section, blok główny jako main, stopka jako footer, kontener jako div"
+},
+{
+"section": "html",
+"desc": "Stopka: tekst „Autor strony: ” i numer zdającego",
+"type": "text",
+"page": "index.html",
+"selector": "footer",
+"startsWith": "Autor strony:"
+},
+{
+"section": "html",
+"desc": "Numer zdającego pogrubiony znacznikiem tekstu ważnego (strong)",
+"type": "exists",
+"page": "index.html",
+"selector": "footer strong"
+},
+{
+"section": "html",
+"desc": "Zapisane w języku HTML 5, język polski, kodowanie UTF-8",
+"type": "head",
+"page": "uslugi.html",
+"lang": "pl",
+"charset": true,
+"doctype": false
+},
+{
+"section": "html",
+"desc": "Tytuł strony „Firma IT”",
+"type": "head",
+"page": "uslugi.html",
+"doctype": false,
+"title": "Firma IT"
+},
+{
+"section": "html",
+"desc": "Arkusz stylów styl.css połączony z kodem strony",
+"type": "head",
+"page": "uslugi.html",
+"doctype": false,
+"stylesheet": "styl.css"
+},
+{
+"section": "html",
+"desc": "Ikona witryny z pliku logo",
+"type": "attr",
+"page": "uslugi.html",
+"selector": "link[rel~='icon']",
+"attr": "href",
+"equals": "logo.png"
+},
+{
+"section": "html",
+"desc": "Podział strony na bloki: kontener, w nim logo, menu, baner, blok główny i stopka",
+"type": "exists",
+"page": "uslugi.html",
+"selector": "body > div > header ~ nav ~ section ~ main ~ footer, body > section > header ~ nav ~ section ~ main ~ footer",
+"hint": "blok logo jako header, menu jako nav, baner jako section, blok główny jako main, stopka jako footer, kontener jako div"
+},
+{
+"section": "html",
+"desc": "Blok logo: obraz logo z tekstem alternatywnym „firma it”",
+"type": "attr",
+"page": "uslugi.html",
+"selector": "header img",
+"attr": "alt",
+"equals": "firma it"
+},
+{
+"section": "html",
+"desc": "Blok logo: obraz logo",
+"type": "attr",
+"page": "uslugi.html",
+"selector": "header img",
+"attr": "src",
+"equals": "logo.png"
+},
+{
+"section": "html",
+"desc": "Menu: odnośnik „Strona Główna”",
+"type": "text",
+"page": "uslugi.html",
+"selector": "nav a",
+"index": 0,
+"equals": "Strona Główna"
+},
+{
+"section": "html",
+"desc": "Menu: odnośnik „Strona Główna” prowadzi do index.html",
+"type": "attr",
+"page": "uslugi.html",
+"selector": "nav a",
+"index": 0,
+"attr": "href",
+"equals": "index.html"
+},
+{
+"section": "html",
+"desc": "Menu: odnośnik „Usługi”",
+"type": "text",
+"page": "uslugi.html",
+"selector": "nav a",
+"index": 1,
+"equals": "Usługi"
+},
+{
+"section": "html",
+"desc": "Menu: odnośnik „Usługi” prowadzi do uslugi.html",
+"type": "attr",
+"page": "uslugi.html",
+"selector": "nav a",
+"index": 1,
+"attr": "href",
+"equals": "uslugi.html"
+},
+{
+"section": "html",
+"desc": "Menu: odnośnik „Kontakt”",
+"type": "text",
+"page": "uslugi.html",
+"selector": "nav a",
+"index": 2,
+"equals": "Kontakt"
+},
+{
+"section": "html",
+"desc": "Menu: odnośnik „Kontakt” prowadzi do kontakt.html",
+"type": "attr",
+"page": "uslugi.html",
+"selector": "nav a",
+"index": 2,
+"attr": "href",
+"equals": "kontakt.html"
+},
+{
+"section": "html",
+"desc": "Baner: plik animacja.gif",
+"type": "attr",
+"page": "uslugi.html",
+"selector": "section img",
+"attr": "src",
+"equals": "animacja.gif",
+"hint": "blok logo jako header, menu jako nav, baner jako section, blok główny jako main, stopka jako footer, kontener jako div"
+},
+{
+"section": "html",
+"desc": "Baner: tekst alternatywny „Usługi informatyczne”",
+"type": "attr",
+"page": "uslugi.html",
+"selector": "section img",
+"attr": "alt",
+"equals": "Usługi informatyczne",
+"hint": "blok logo jako header, menu jako nav, baner jako section, blok główny jako main, stopka jako footer, kontener jako div"
+},
+{
+"section": "html",
+"desc": "Stopka: tekst „Autor strony: ” i numer zdającego",
+"type": "text",
+"page": "uslugi.html",
+"selector": "footer",
+"startsWith": "Autor strony:"
+},
+{
+"section": "html",
+"desc": "Numer zdającego pogrubiony znacznikiem tekstu ważnego (strong)",
+"type": "exists",
+"page": "uslugi.html",
+"selector": "footer strong"
+},
+{
+"section": "html",
+"desc": "Zapisane w języku HTML 5, język polski, kodowanie UTF-8",
+"type": "head",
+"page": "kontakt.html",
+"lang": "pl",
+"charset": true,
+"doctype": false
+},
+{
+"section": "html",
+"desc": "Tytuł strony „Firma IT”",
+"type": "head",
+"page": "kontakt.html",
+"doctype": false,
+"title": "Firma IT"
+},
+{
+"section": "html",
+"desc": "Arkusz stylów styl.css połączony z kodem strony",
+"type": "head",
+"page": "kontakt.html",
+"doctype": false,
+"stylesheet": "styl.css"
+},
+{
+"section": "html",
+"desc": "Ikona witryny z pliku logo",
+"type": "attr",
+"page": "kontakt.html",
+"selector": "link[rel~='icon']",
+"attr": "href",
+"equals": "logo.png"
+},
+{
+"section": "html",
+"desc": "Podział strony na bloki: kontener, w nim logo, menu, baner, blok główny i stopka",
+"type": "exists",
+"page": "kontakt.html",
+"selector": "body > div > header ~ nav ~ section ~ main ~ footer, body > section > header ~ nav ~ section ~ main ~ footer",
+"hint": "blok logo jako header, menu jako nav, baner jako section, blok główny jako main, stopka jako footer, kontener jako div"
+},
+{
+"section": "html",
+"desc": "Blok logo: obraz logo z tekstem alternatywnym „firma it”",
+"type": "attr",
+"page": "kontakt.html",
+"selector": "header img",
+"attr": "alt",
+"equals": "firma it"
+},
+{
+"section": "html",
+"desc": "Blok logo: obraz logo",
+"type": "attr",
+"page": "kontakt.html",
+"selector": "header img",
+"attr": "src",
+"equals": "logo.png"
+},
+{
+"section": "html",
+"desc": "Menu: odnośnik „Strona Główna”",
+"type": "text",
+"page": "kontakt.html",
+"selector": "nav a",
+"index": 0,
+"equals": "Strona Główna"
+},
+{
+"section": "html",
+"desc": "Menu: odnośnik „Strona Główna” prowadzi do index.html",
+"type": "attr",
+"page": "kontakt.html",
+"selector": "nav a",
+"index": 0,
+"attr": "href",
+"equals": "index.html"
+},
+{
+"section": "html",
+"desc": "Menu: odnośnik „Usługi”",
+"type": "text",
+"page": "kontakt.html",
+"selector": "nav a",
+"index": 1,
+"equals": "Usługi"
+},
+{
+"section": "html",
+"desc": "Menu: odnośnik „Usługi” prowadzi do uslugi.html",
+"type": "attr",
+"page": "kontakt.html",
+"selector": "nav a",
+"index": 1,
+"attr": "href",
+"equals": "uslugi.html"
+},
+{
+"section": "html",
+"desc": "Menu: odnośnik „Kontakt”",
+"type": "text",
+"page": "kontakt.html",
+"selector": "nav a",
+"index": 2,
+"equals": "Kontakt"
+},
+{
+"section": "html",
+"desc": "Menu: odnośnik „Kontakt” prowadzi do kontakt.html",
+"type": "attr",
+"page": "kontakt.html",
+"selector": "nav a",
+"index": 2,
+"attr": "href",
+"equals": "kontakt.html"
+},
+{
+"section": "html",
+"desc": "Baner: plik animacja.gif",
+"type": "attr",
+"page": "kontakt.html",
+"selector": "section img",
+"attr": "src",
+"equals": "animacja.gif",
+"hint": "blok logo jako header, menu jako nav, baner jako section, blok główny jako main, stopka jako footer, kontener jako div"
+},
+{
+"section": "html",
+"desc": "Baner: tekst alternatywny „Usługi informatyczne”",
+"type": "attr",
+"page": "kontakt.html",
+"selector": "section img",
+"attr": "alt",
+"equals": "Usługi informatyczne",
+"hint": "blok logo jako header, menu jako nav, baner jako section, blok główny jako main, stopka jako footer, kontener jako div"
+},
+{
+"section": "html",
+"desc": "Stopka: tekst „Autor strony: ” i numer zdającego",
+"type": "text",
+"page": "kontakt.html",
+"selector": "footer",
+"startsWith": "Autor strony:"
+},
+{
+"section": "html",
+"desc": "Numer zdającego pogrubiony znacznikiem tekstu ważnego (strong)",
+"type": "exists",
+"page": "kontakt.html",
+"selector": "footer strong"
+},
+{
+"section": "html",
+"desc": "index.html: nagłówek drugiego stopnia „Firma IT”",
+"type": "text",
+"page": "index.html",
+"selector": "main h2",
+"equals": "Firma IT"
+},
+{
+"section": "html",
+"desc": "index.html: paragraf „Jesteśmy firmą z wieloletnim doświadczeniem w zakresie IT.”",
+"type": "text",
+"page": "index.html",
+"selector": "main p",
+"equals": "Jesteśmy firmą z wieloletnim doświadczeniem w zakresie IT."
+},
+{
+"section": "html",
+"desc": "index.html: linia pozioma",
+"type": "exists",
+"page": "index.html",
+"selector": "main hr"
+},
+{
+"section": "html",
+"desc": "uslugi.html: nagłówek drugiego stopnia „Oferta”",
+"type": "text",
+"page": "uslugi.html",
+"selector": "main h2",
+"equals": "Oferta"
+},
+{
+"section": "html",
+"desc": "uslugi.html: lista numerowana z 4 elementami",
+"type": "exists",
+"page": "uslugi.html",
+"selector": "main ol > li",
+"count": 4
+},
+{
+"section": "html",
+"desc": "uslugi.html: element listy „Outsourcing IT”",
+"type": "text",
+"page": "uslugi.html",
+"selector": "main ol li",
+"index": 0,
+"equals": "Outsourcing IT"
+},
+{
+"section": "html",
+"desc": "uslugi.html: element listy „Konfiguracja komputerów”",
+"type": "text",
+"page": "uslugi.html",
+"selector": "main ol li",
+"index": 1,
+"equals": "Konfiguracja komputerów"
+},
+{
+"section": "html",
+"desc": "uslugi.html: element listy „Sprzęt komputerowy”",
+"type": "text",
+"page": "uslugi.html",
+"selector": "main ol li",
+"index": 2,
+"equals": "Sprzęt komputerowy"
+},
+{
+"section": "html",
+"desc": "uslugi.html: element listy „Strony internetowe”",
+"type": "text",
+"page": "uslugi.html",
+"selector": "main ol li",
+"index": 3,
+"equals": "Strony internetowe"
+},
+{
+"section": "html",
+"desc": "uslugi.html: linia pozioma",
+"type": "exists",
+"page": "uslugi.html",
+"selector": "main hr"
+},
+{
+"section": "html",
+"desc": "kontakt.html: nagłówek drugiego stopnia „Kontakt”",
+"type": "text",
+"page": "kontakt.html",
+"selector": "main h2",
+"equals": "Kontakt"
+},
+{
+"section": "html",
+"desc": "kontakt.html: tabela o wymiarze 2 kolumny na 6 wierszy",
+"type": "exists",
+"page": "kontakt.html",
+"selector": "main table tr",
+"count": 6
+},
+{
+"section": "html",
+"desc": "kontakt.html: w każdym wierszu tabeli 2 komórki",
+"type": "exists",
+"page": "kontakt.html",
+"selector": "main table td",
+"count": 12
+},
+{
+"section": "html",
+"desc": "Tabela: napis „Imię:” w pierwszej kolumnie wiersza 1",
+"type": "text",
+"page": "kontakt.html",
+"selector": "main table tr:nth-of-type(1) td:nth-of-type(1)",
+"equals": "Imię:"
+},
+{
+"section": "html",
+"desc": "Tabela: napis „Nazwisko:” w pierwszej kolumnie wiersza 2",
+"type": "text",
+"page": "kontakt.html",
+"selector": "main table tr:nth-of-type(2) td:nth-of-type(1)",
+"equals": "Nazwisko:"
+},
+{
+"section": "html",
+"desc": "Tabela: napis „E-mail:” w pierwszej kolumnie wiersza 3",
+"type": "text",
+"page": "kontakt.html",
+"selector": "main table tr:nth-of-type(3) td:nth-of-type(1)",
+"equals": "E-mail:"
+},
+{
+"section": "html",
+"desc": "Tabela: napis „Zgłoszenie” w pierwszej kolumnie wiersza 4",
+"type": "text",
+"page": "kontakt.html",
+"selector": "main table tr:nth-of-type(4) td:nth-of-type(1)",
+"equals": "Zgłoszenie"
+},
+{
+"section": "html",
+"desc": "Tabela: pole edycyjne w wierszu „Imię”",
+"type": "exists",
+"page": "kontakt.html",
+"selector": "main table tr:nth-of-type(1) input[type=text]"
+},
+{
+"section": "html",
+"desc": "Tabela: pole edycyjne w wierszu „Nazwisko”",
+"type": "exists",
+"page": "kontakt.html",
+"selector": "main table tr:nth-of-type(2) input[type=text]"
+},
+{
+"section": "html",
+"desc": "Tabela: pole edycyjne typu e-mail",
+"type": "exists",
+"page": "kontakt.html",
+"selector": "main table tr:nth-of-type(3) input[type=email]"
+},
+{
+"section": "html",
+"desc": "Tabela: pole wielowierszowe, 10 wierszy",
+"type": "attr",
+"page": "kontakt.html",
+"selector": "main table textarea",
+"attr": "rows",
+"equals": "10"
+},
+{
+"section": "html",
+"desc": "Tabela: pole wielowierszowe, 40 kolumn",
+"type": "attr",
+"page": "kontakt.html",
+"selector": "main table textarea",
+"attr": "cols",
+"equals": "40"
+},
+{
+"section": "html",
+"desc": "Tabela: pusta komórka w wierszu 5",
+"type": "text",
+"page": "kontakt.html",
+"selector": "main table tr:nth-of-type(5) td:nth-of-type(1)",
+"matches": "^$"
+},
+{
+"section": "html",
+"desc": "Tabela: pole wyboru",
+"type": "exists",
+"page": "kontakt.html",
+"selector": "main table tr:nth-of-type(5) input[type=checkbox]"
+},
+{
+"section": "html",
+"desc": "Tabela: napis „Zapoznałam/em się z regulaminem”",
+"type": "text",
+"page": "kontakt.html",
+"selector": "main table tr:nth-of-type(5) td:nth-of-type(2)",
+"contains": "Zapoznałam/em się z regulaminem"
+},
+{
+"section": "html",
+"desc": "Tabela: pusta komórka w wierszu 6",
+"type": "text",
+"page": "kontakt.html",
+"selector": "main table tr:nth-of-type(6) td:nth-of-type(1)",
+"matches": "^$"
+},
+{
+"section": "html",
+"desc": "Tabela: przycisk „Resetuj” czyszczący kontrolki",
+"type": "exists",
+"page": "kontakt.html",
+"selector": "main table tr:nth-of-type(6) :is(button,input)[type=reset]"
+},
+{
+"section": "html",
+"desc": "Tabela: tekst przycisku „Resetuj”",
+"type": "text",
+"page": "kontakt.html",
+"selector": "main table tr:nth-of-type(6)",
+"contains": "Resetuj"
+},
+{
+"section": "html",
+"desc": "Tabela: przycisk „Prześlij”",
+"type": "text",
+"page": "kontakt.html",
+"selector": "main table tr:nth-of-type(6) button, main table tr:nth-of-type(6) input",
+"contains": "Prześlij"
+},
+{
+"section": "html",
+"desc": "kontakt.html: linia pozioma",
+"type": "exists",
+"page": "kontakt.html",
+"selector": "main hr"
+},
+{
+"section": "html",
+"desc": "kontakt.html: paragraf na komunikat w bloku głównym",
+"type": "exists",
+"page": "kontakt.html",
+"selector": "main hr ~ p"
+},
+{
+"section": "css",
+"desc": "Cała strona: kolor tła #EEEEEE",
+"type": "css",
+"page": "index.html",
+"selector": "body",
+"prop": "background-color",
+"value": "#EEEEEE"
+},
+{
+"section": "css",
+"desc": "Cała strona: krój czcionki Helvetica",
+"type": "css",
+"page": "index.html",
+"selector": "h2",
+"prop": "font-family",
+"value": "Helvetica"
+},
+{
+"section": "css",
+"desc": "Kontener: szerokość 90%",
+"type": "css",
+"page": "index.html",
+"selector": "body > div, body > section",
+"prop": "width",
+"value": "90%",
+"hint": "blok logo jako header, menu jako nav, baner jako section, blok główny jako main, stopka jako footer, kontener jako div"
+},
+{
+"section": "css",
+"desc": "Kontener: marginesy zewnętrzne wyliczone przez przeglądarkę (auto)",
+"type": "css",
+"page": "index.html",
+"selector": "body > div, body > section",
+"prop": "margin-left",
+"value": "64px",
+"tolerance": 8,
+"hint": "blok logo jako header, menu jako nav, baner jako section, blok główny jako main, stopka jako footer, kontener jako div"
+},
+{
+"section": "css",
+"desc": "Blok logo: kolor tła LightBlue",
+"type": "css",
+"page": "index.html",
+"selector": "header",
+"prop": "background-color",
+"value": "LightBlue"
+},
+{
+"section": "css",
+"desc": "Blok logo: wysokość 100 px",
+"type": "css",
+"page": "index.html",
+"selector": "header",
+"prop": "height",
+"value": "100px"
+},
+{
+"section": "css",
+"desc": "Blok logo: szerokość 50%",
+"type": "css",
+"page": "index.html",
+"selector": "header",
+"prop": "width",
+"value": "50%"
+},
+{
+"section": "css",
+"desc": "Blok logo: margines wewnętrzny górny 10 px",
+"type": "css",
+"page": "index.html",
+"selector": "header",
+"prop": "padding-top",
+"value": "10px"
+},
+{
+"section": "css",
+"desc": "Blok logo: margines wewnętrzny dolny 10 px",
+"type": "css",
+"page": "index.html",
+"selector": "header",
+"prop": "padding-bottom",
+"value": "10px"
+},
+{
+"section": "css",
+"desc": "Blok menu: kolor tła LightBlue",
+"type": "css",
+"page": "index.html",
+"selector": "nav",
+"prop": "background-color",
+"value": "LightBlue"
+},
+{
+"section": "css",
+"desc": "Blok menu: wysokość 100 px",
+"type": "css",
+"page": "index.html",
+"selector": "nav",
+"prop": "height",
+"value": "100px"
+},
+{
+"section": "css",
+"desc": "Blok menu: szerokość 50%",
+"type": "css",
+"page": "index.html",
+"selector": "nav",
+"prop": "width",
+"value": "50%"
+},
+{
+"section": "css",
+"desc": "Blok menu: margines wewnętrzny górny 10 px",
+"type": "css",
+"page": "index.html",
+"selector": "nav",
+"prop": "padding-top",
+"value": "10px"
+},
+{
+"section": "css",
+"desc": "Blok menu: margines wewnętrzny dolny 10 px",
+"type": "css",
+"page": "index.html",
+"selector": "nav",
+"prop": "padding-bottom",
+"value": "10px"
+},
+{
+"section": "css",
+"desc": "Baner: kolor tła #DDDDDD",
+"type": "css",
+"page": "index.html",
+"selector": "section",
+"prop": "background-color",
+"value": "#DDDDDD",
+"hint": "blok logo jako header, menu jako nav, baner jako section, blok główny jako main, stopka jako footer, kontener jako div"
+},
+{
+"section": "css",
+"desc": "Baner: wysokość 200 px",
+"type": "css",
+"page": "index.html",
+"selector": "section",
+"prop": "height",
+"value": "200px",
+"hint": "blok logo jako header, menu jako nav, baner jako section, blok główny jako main, stopka jako footer, kontener jako div"
+},
+{
+"section": "css",
+"desc": "Blok główny: kolor czcionki Navy",
+"type": "css",
+"page": "index.html",
+"selector": "main",
+"prop": "color",
+"value": "Navy"
+},
+{
+"section": "css",
+"desc": "Blok główny: marginesy zewnętrzne 50 px",
+"type": "css",
+"page": "index.html",
+"selector": "main",
+"prop": "margin-top",
+"value": "50px"
+},
+{
+"section": "css",
+"desc": "Blok główny: marginesy zewnętrzne 50 px",
+"type": "css",
+"page": "index.html",
+"selector": "main",
+"prop": "margin-right",
+"value": "50px"
+},
+{
+"section": "css",
+"desc": "Blok główny: marginesy zewnętrzne 50 px",
+"type": "css",
+"page": "index.html",
+"selector": "main",
+"prop": "margin-bottom",
+"value": "50px"
+},
+{
+"section": "css",
+"desc": "Blok główny: marginesy zewnętrzne 50 px",
+"type": "css",
+"page": "index.html",
+"selector": "main",
+"prop": "margin-left",
+"value": "50px"
+},
+{
+"section": "css",
+"desc": "Blok główny: wysokość 400 px",
+"type": "css",
+"page": "index.html",
+"selector": "main",
+"prop": "height",
+"value": "400px"
+},
+{
+"section": "css",
+"desc": "Stopka: wyrównanie tekstu do prawej strony",
+"type": "css",
+"page": "index.html",
+"selector": "footer",
+"prop": "text-align",
+"value": "right"
+},
+{
+"section": "css",
+"desc": "Stopka: kolor tła LightBlue",
+"type": "css",
+"page": "index.html",
+"selector": "footer",
+"prop": "background-color",
+"value": "LightBlue"
+},
+{
+"section": "css",
+"desc": "Stopka: marginesy wewnętrzne 10 px",
+"type": "css",
+"page": "index.html",
+"selector": "footer",
+"prop": "padding",
+"value": "10px"
+},
+{
+"section": "css",
+"desc": "Przyciski: kolor tła LightBlue, wyłącznie selektorem przycisków",
+"type": "cssRule",
+"page": "kontakt.html",
+"selector": "button",
+"prop": "background-color",
+"value": "LightBlue",
+"match": "button"
+},
+{
+"section": "css",
+"desc": "Przyciski: kolor czcionki Navy, wyłącznie selektorem przycisków",
+"type": "cssRule",
+"page": "kontakt.html",
+"selector": "button",
+"prop": "color",
+"value": "Navy",
+"match": "button"
+},
+{
+"section": "css",
+"desc": "Odnośniki menu: czcionka koloru Navy",
+"type": "css",
+"page": "index.html",
+"selector": "nav a",
+"prop": "color",
+"value": "Navy",
+"all": true
+},
+{
+"section": "css",
+"desc": "Odnośniki menu: rozmiar czcionki 150%",
+"type": "css",
+"page": "index.html",
+"selector": "nav a",
+"prop": "font-size",
+"value": "150%"
+},
+{
+"section": "css",
+"desc": "Odnośniki menu: pogrubione",
+"type": "css",
+"page": "index.html",
+"selector": "nav a",
+"prop": "font-weight",
+"value": "bold"
+},
+{
+"section": "css",
+"desc": "Odnośniki menu: bez podkreślenia",
+"type": "css",
+"page": "index.html",
+"selector": "nav a",
+"prop": "text-decoration-line",
+"value": "none"
+},
+{
+"section": "css",
+"desc": "Odnośniki menu: margines zewnętrzny 10 px",
+"type": "css",
+"page": "index.html",
+"selector": "nav a",
+"prop": "margin",
+"value": "10px"
+},
+{
+"section": "css",
+"desc": "Odnośniki menu: margines wewnętrzny 5 px",
+"type": "css",
+"page": "index.html",
+"selector": "nav a",
+"prop": "padding",
+"value": "5px"
+},
+{
+"section": "css",
+"desc": "Odnośnik menu po wskazaniu kursorem: obramowanie 1 px ciągłe Navy",
+"type": "hover",
+"page": "index.html",
+"selector": "nav a",
+"prop": "border",
+"value": "1px solid Navy"
+},
+{
+"section": "css",
+"desc": "Układ: logo i menu obok siebie",
+"type": "layout",
+"page": "index.html",
+"a": "header",
+"b": "nav",
+"relation": "leftOf",
+"hint": "blok logo jako header, menu jako nav, baner jako section, blok główny jako main, stopka jako footer, kontener jako div"
+},
+{
+"section": "css",
+"desc": "Układ: baner poniżej logo i menu",
+"type": "layout",
+"page": "index.html",
+"a": "nav",
+"b": "section",
+"relation": "above",
+"hint": "blok logo jako header, menu jako nav, baner jako section, blok główny jako main, stopka jako footer, kontener jako div"
+},
+{
+"section": "css",
+"desc": "Układ: blok główny poniżej banera",
+"type": "layout",
+"page": "index.html",
+"a": "section",
+"b": "main",
+"relation": "above",
+"hint": "blok logo jako header, menu jako nav, baner jako section, blok główny jako main, stopka jako footer, kontener jako div"
+},
+{
+"section": "css",
+"desc": "Układ: stopka na dole, pod blokiem głównym",
+"type": "layout",
+"page": "index.html",
+"a": "footer",
+"b": "main",
+"relation": "below",
+"hint": "blok logo jako header, menu jako nav, baner jako section, blok główny jako main, stopka jako footer, kontener jako div"
+},
+{
+"section": "js",
+"desc": "Skrypt wywoływany przyciskiem „Prześlij”: bez zaznaczonego pola wyboru komunikat „Musisz zapoznać się z regulaminem” w paragrafie bloku głównego",
+"type": "js",
+"page": "kontakt.html",
+"steps": [
+{
+"set": "#imie",
+"value": "Jan"
+},
+{
+"set": "#nazwisko",
+"value": "Kowalski"
+},
+{
+"set": "#zgloszenie",
+"value": "Potrzebuję pomocy"
+},
+{
+"click": "main table tr:nth-of-type(6) button:last-of-type"
+}
+],
+"expect": [
+{
+"selector": "main hr ~ p",
+"equals": "Musisz zapoznać się z regulaminem"
+}
+]
+},
+{
+"section": "js",
+"desc": "Brak zaznaczenia pola wyboru: komunikat w kolorze czerwonym",
+"type": "js",
+"page": "kontakt.html",
+"steps": [
+{
+"set": "#imie",
+"value": "Jan"
+},
+{
+"set": "#nazwisko",
+"value": "Kowalski"
+},
+{
+"set": "#zgloszenie",
+"value": "Potrzebuję pomocy"
+},
+{
+"click": "main table tr:nth-of-type(6) button:last-of-type"
+}
+],
+"expect": [
+{
+"selector": "main hr ~ p",
+"css": "color",
+"value": "red"
+}
+]
+},
+{
+"section": "js",
+"desc": "Zaznaczone pole wyboru: komunikat „<IMIĘ> <NAZWISKO> Treść Twojej sprawy: <zgłoszenie>”, imię i nazwisko wielkimi literami",
+"type": "js",
+"page": "kontakt.html",
+"steps": [
+{
+"set": "#imie",
+"value": "Jan"
+},
+{
+"set": "#nazwisko",
+"value": "Kowalski"
+},
+{
+"set": "#zgloszenie",
+"value": "Potrzebuję pomocy"
+},
+{
+"set": "input[type=checkbox]",
+"value": true
+},
+{
+"click": "main table tr:nth-of-type(6) button:last-of-type"
+}
+],
+"expect": [
+{
+"selector": "main hr ~ p",
+"contains": "JAN KOWALSKI"
+},
+{
+"selector": "main hr ~ p",
+"contains": "Treść Twojej sprawy: Potrzebuję pomocy"
+}
+]
+},
+{
+"section": "js",
+"desc": "Zaznaczone pole wyboru: komunikat w kolorze Navy",
+"type": "js",
+"page": "kontakt.html",
+"steps": [
+{
+"set": "#imie",
+"value": "Jan"
+},
+{
+"set": "#nazwisko",
+"value": "Kowalski"
+},
+{
+"set": "#zgloszenie",
+"value": "Potrzebuję pomocy"
+},
+{
+"set": "input[type=checkbox]",
+"value": true
+},
+{
+"click": "main table tr:nth-of-type(6) button:last-of-type"
+}
+],
+"expect": [
+{
+"selector": "main hr ~ p",
+"css": "color",
+"value": "Navy"
+}
+]
+},
+{
+"section": "js",
+"desc": "Po nazwisku występuje łamanie linii",
+"type": "js",
+"page": "kontakt.html",
+"steps": [
+{
+"set": "#imie",
+"value": "Jan"
+},
+{
+"set": "#nazwisko",
+"value": "Kowalski"
+},
+{
+"set": "#zgloszenie",
+"value": "Potrzebuję pomocy"
+},
+{
+"set": "input[type=checkbox]",
+"value": true
+},
+{
+"click": "main table tr:nth-of-type(6) button:last-of-type"
+}
+],
+"expect": [
+{
+"selector": "main hr ~ p br",
+"count": 1
+}
+]
+},
+{
+"section": "js",
+"desc": "Skrypt pobiera wartości wprowadzone do kontrolek",
+"type": "manual"
+},
+{
+"section": "js",
+"desc": "Znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim",
+"type": "manual"
+}
+]

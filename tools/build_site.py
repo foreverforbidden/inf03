@@ -354,7 +354,8 @@ def illustrations(pdf, out_dir):
     pages = []
     for i in range(2, n + 1):
         t = subprocess.run(["pdftotext", "-f", str(i), "-l", str(i), pdf, "-"], capture_output=True, text=True).stdout
-        if re.search(r"Ilustracja \d", t):
+        # podpisy: "Ilustracja 2. ..." (od 2025) albo "Obraz 2. ..." (wczesniej); "Obraz 1.jpg" to nie podpis
+        if re.search(r"(Ilustracja|Obraz|Rysunek)\s+\d+\.(\s|$)", t, re.M):
             pages.append(i)
     names = []
     for i in pages:

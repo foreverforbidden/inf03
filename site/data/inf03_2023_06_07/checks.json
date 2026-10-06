@@ -1,0 +1,434 @@
+[
+ {
+  "section": "grafika",
+  "desc": "biblioteka.png: przeskalowana z zachowaniem proporcji do szerokości dokładnie 100 px",
+  "type": "image",
+  "name": "biblioteka.png",
+  "width": 100
+ },
+ {
+  "section": "grafika",
+  "desc": "biblioteka.png: zapisana w odcieniach szarości",
+  "type": "manual"
+ },
+ {
+  "section": "pliki",
+  "desc": "Strona o nazwie biblioteka.php",
+  "type": "file",
+  "name": "biblioteka.php"
+ },
+ {
+  "section": "pliki",
+  "desc": "Arkusz stylów w pliku style.css",
+  "type": "file",
+  "name": "style.css"
+ },
+ {
+  "section": "html",
+  "desc": "Zapisana w języku HTML5, język zawartości polski, kodowanie UTF-8",
+  "type": "head",
+  "lang": "pl",
+  "charset": true
+ },
+ {
+  "section": "html",
+  "desc": "Tytuł strony „Biblioteka”",
+  "type": "head",
+  "doctype": false,
+  "title": "Biblioteka"
+ },
+ {
+  "section": "html",
+  "desc": "Arkusz stylów w pliku style.css prawidłowo połączony z kodem strony",
+  "type": "head",
+  "doctype": false,
+  "stylesheet": "style.css"
+ },
+ {
+  "section": "html",
+  "desc": "Podział na bloki znacznikami sekcji: baner, lewy, środkowy, prawy i stopka (pięć sekcji)",
+  "type": "exists",
+  "selector": "section",
+  "count": 5
+ },
+ {
+  "section": "html",
+  "desc": "Baner: nagłówek pierwszego stopnia „Biblioteka w Książkowicach Małych”",
+  "type": "text",
+  "selector": "section:nth-of-type(1) h1",
+  "equals": "Biblioteka w Książkowicach Małych"
+ },
+ {
+  "section": "html",
+  "desc": "Blok lewy: nagłówek czwartego stopnia „Dodaj czytelnika”",
+  "type": "text",
+  "selector": "section:nth-of-type(2) h4",
+  "equals": "Dodaj czytelnika"
+ },
+ {
+  "section": "html",
+  "desc": "Blok lewy: formularz wysyłający dane do tego samego pliku (biblioteka.php)",
+  "type": "attr",
+  "selector": "section:nth-of-type(2) form",
+  "attr": "action",
+  "contains": "biblioteka.php"
+ },
+ {
+  "section": "html",
+  "desc": "Blok lewy: formularz wysyłający dane metodą post",
+  "type": "attr",
+  "selector": "section:nth-of-type(2) form",
+  "attr": "method",
+  "equals": "post"
+ },
+ {
+  "section": "html",
+  "desc": "Formularz: pole edycyjne poprzedzone napisem „imię: ”",
+  "type": "text",
+  "selector": "section:nth-of-type(2) form",
+  "contains": "imię:"
+ },
+ {
+  "section": "html",
+  "desc": "Formularz: pole edycyjne poprzedzone napisem „nazwisko: ”",
+  "type": "text",
+  "selector": "section:nth-of-type(2) form",
+  "contains": "nazwisko:"
+ },
+ {
+  "section": "html",
+  "desc": "Formularz: pole edycyjne typu numerycznego poprzedzone napisem „symbol: ”",
+  "type": "text",
+  "selector": "section:nth-of-type(2) form",
+  "contains": "symbol:"
+ },
+ {
+  "section": "html",
+  "desc": "Formularz: dwa pola edycyjne tekstowe (imię, nazwisko)",
+  "type": "exists",
+  "selector": "section:nth-of-type(2) form input[type=text]",
+  "count": 2
+ },
+ {
+  "section": "html",
+  "desc": "Formularz: pole edycyjne typu numerycznego",
+  "type": "exists",
+  "selector": "section:nth-of-type(2) form input[type=number]",
+  "count": 1
+ },
+ {
+  "section": "html",
+  "desc": "Formularz: przycisk AKCEPTUJ wysyłający dane z formularza",
+  "type": "exists",
+  "selector": "section:nth-of-type(2) form button:not([type=button]):not([type=reset]), section:nth-of-type(2) form input[type=submit]"
+ },
+ {
+  "section": "php",
+  "desc": "Skrypt 1: pobiera dane z formularza i wyświetla napis „Dodano czytelnika <imie> <nazwisko>”",
+  "type": "php"
+ },
+ {
+  "section": "php",
+  "desc": "Skrypt 1: wysyła do bazy zmodyfikowane zapytanie 1 wstawiające dane z formularza (imię, nazwisko, symbol w polu kod)",
+  "type": "php"
+ },
+ {
+  "section": "html",
+  "desc": "Blok środkowy: obraz biblioteka.png",
+  "type": "attr",
+  "selector": "section:nth-of-type(3) img",
+  "attr": "src",
+  "contains": "biblioteka.png"
+ },
+ {
+  "section": "html",
+  "desc": "Blok środkowy: obraz z tekstem alternatywnym „biblioteka”",
+  "type": "attr",
+  "selector": "section:nth-of-type(3) img",
+  "attr": "alt",
+  "equals": "biblioteka"
+ },
+ {
+  "section": "html",
+  "desc": "Blok środkowy: nagłówek szóstego stopnia „ul. Czytelników 15; Książkowice Małe”",
+  "type": "text",
+  "selector": "section:nth-of-type(3) h6",
+  "equals": "ul. Czytelników 15; Książkowice Małe"
+ },
+ {
+  "section": "html",
+  "desc": "Nagłówek szóstego stopnia: nazwa ulicy i numer lokalu połączone nierozdzielającą spacją (&nbsp;)",
+  "type": "manual"
+ },
+ {
+  "section": "html",
+  "desc": "Blok środkowy: paragraf „Czy masz jakieś uwagi?”",
+  "type": "text",
+  "selector": "section:nth-of-type(3) p",
+  "equals": "Czy masz jakieś uwagi?"
+ },
+ {
+  "section": "html",
+  "desc": "Paragraf „Czy masz jakieś uwagi?” jest odsyłaczem pocztowym do adresu biuro@bib.pl",
+  "type": "attr",
+  "selector": "section:nth-of-type(3) p a",
+  "attr": "href",
+  "equals": "mailto:biuro@bib.pl"
+ },
+ {
+  "section": "html",
+  "desc": "Blok prawy: nagłówek czwartego stopnia „Nasi czytelnicy:”",
+  "type": "text",
+  "selector": "section:nth-of-type(4) h4",
+  "equals": "Nasi czytelnicy:"
+ },
+ {
+  "section": "html",
+  "desc": "Blok prawy: lista numerowana (uporządkowana)",
+  "type": "exists",
+  "selector": "section:nth-of-type(4) ol"
+ },
+ {
+  "section": "php",
+  "desc": "Skrypt 2: lista numerowana wypełniona wynikiem zapytania 2 (imię i nazwisko czytelnika jako elementy listy)",
+  "type": "php"
+ },
+ {
+  "section": "html",
+  "desc": "Stopka: paragraf „Projekt witryny: ” i numer zdającego",
+  "type": "text",
+  "selector": "section:nth-of-type(5) p",
+  "startsWith": "Projekt witryny:"
+ },
+ {
+  "section": "css",
+  "desc": "Domyślne formatowanie wszystkich selektorów: krój czcionki Tahoma",
+  "type": "css",
+  "selector": "section:nth-of-type(2) h4",
+  "prop": "font-family",
+  "value": "Tahoma"
+ },
+ {
+  "section": "css",
+  "desc": "Baner: kolor tła SaddleBrown",
+  "type": "css",
+  "selector": "section:nth-of-type(1)",
+  "prop": "background-color",
+  "value": "SaddleBrown"
+ },
+ {
+  "section": "css",
+  "desc": "Stopka: kolor tła SaddleBrown",
+  "type": "css",
+  "selector": "section:nth-of-type(5)",
+  "prop": "background-color",
+  "value": "SaddleBrown"
+ },
+ {
+  "section": "css",
+  "desc": "Baner: biały kolor czcionki",
+  "type": "css",
+  "selector": "section:nth-of-type(1)",
+  "prop": "color",
+  "value": "white"
+ },
+ {
+  "section": "css",
+  "desc": "Stopka: biały kolor czcionki",
+  "type": "css",
+  "selector": "section:nth-of-type(5)",
+  "prop": "color",
+  "value": "white"
+ },
+ {
+  "section": "css",
+  "desc": "Baner: marginesy wewnętrzne 3 px",
+  "type": "css",
+  "selector": "section:nth-of-type(1)",
+  "prop": "padding",
+  "value": "3px"
+ },
+ {
+  "section": "css",
+  "desc": "Stopka: marginesy wewnętrzne 3 px",
+  "type": "css",
+  "selector": "section:nth-of-type(5)",
+  "prop": "padding",
+  "value": "3px"
+ },
+ {
+  "section": "css",
+  "desc": "Baner: wyrównanie tekstu do środka",
+  "type": "css",
+  "selector": "section:nth-of-type(1)",
+  "prop": "text-align",
+  "value": "center"
+ },
+ {
+  "section": "css",
+  "desc": "Stopka: wyrównanie tekstu do środka",
+  "type": "css",
+  "selector": "section:nth-of-type(5)",
+  "prop": "text-align",
+  "value": "center"
+ },
+ {
+  "section": "css",
+  "desc": "Panel lewy: kolor tła Tan",
+  "type": "css",
+  "selector": "section:nth-of-type(2)",
+  "prop": "background-color",
+  "value": "Tan"
+ },
+ {
+  "section": "css",
+  "desc": "Panel prawy: kolor tła Tan",
+  "type": "css",
+  "selector": "section:nth-of-type(4)",
+  "prop": "background-color",
+  "value": "Tan"
+ },
+ {
+  "section": "css",
+  "desc": "Panel lewy: wysokość 400 px",
+  "type": "css",
+  "selector": "section:nth-of-type(2)",
+  "prop": "height",
+  "value": "400px"
+ },
+ {
+  "section": "css",
+  "desc": "Panel prawy: wysokość 400 px",
+  "type": "css",
+  "selector": "section:nth-of-type(4)",
+  "prop": "height",
+  "value": "400px"
+ },
+ {
+  "section": "css",
+  "desc": "Panel lewy: szerokość 40%",
+  "type": "css",
+  "selector": "section:nth-of-type(2)",
+  "prop": "width",
+  "value": "40%"
+ },
+ {
+  "section": "css",
+  "desc": "Panel prawy: szerokość 40%",
+  "type": "css",
+  "selector": "section:nth-of-type(4)",
+  "prop": "width",
+  "value": "40%"
+ },
+ {
+  "section": "css",
+  "desc": "Panel środkowy: kolor tła Wheat",
+  "type": "css",
+  "selector": "section:nth-of-type(3)",
+  "prop": "background-color",
+  "value": "Wheat"
+ },
+ {
+  "section": "css",
+  "desc": "Panel środkowy: wysokość 400 px",
+  "type": "css",
+  "selector": "section:nth-of-type(3)",
+  "prop": "height",
+  "value": "400px"
+ },
+ {
+  "section": "css",
+  "desc": "Panel środkowy: szerokość 20%",
+  "type": "css",
+  "selector": "section:nth-of-type(3)",
+  "prop": "width",
+  "value": "20%"
+ },
+ {
+  "section": "css",
+  "desc": "Selektor obrazu: margines zewnętrzny prawy 20 px (wyłącznie selektor znacznika img)",
+  "type": "cssRule",
+  "selector": "img",
+  "prop": "margin-right",
+  "value": "20px"
+ },
+ {
+  "section": "css",
+  "desc": "Selektor obrazu: oblewanie z lewej strony zgodnie z Obrazem 2 (obraz po prawej, tekst opływa go z lewej)",
+  "type": "cssRule",
+  "selector": "img",
+  "prop": "float",
+  "value": "right"
+ },
+ {
+  "section": "css",
+  "desc": "Selektor nagłówka czwartego stopnia: wyrównanie tekstu do środka (wyłącznie selektor znacznika h4)",
+  "type": "cssRule",
+  "selector": "h4",
+  "prop": "text-align",
+  "value": "center"
+ },
+ {
+  "section": "css",
+  "desc": "Selektor pola edycyjnego: marginesy zewnętrzne 5 px (wyłącznie selektor znacznika input)",
+  "type": "cssRule",
+  "selector": "input",
+  "prop": "margin",
+  "value": "5px"
+ },
+ {
+  "section": "css",
+  "desc": "Po najechaniu na element listy: tło Sienna (elementy listy generuje PHP, sprawdzane ręcznie: reguła li:hover)",
+  "type": "manual"
+ },
+ {
+  "section": "css",
+  "desc": "Po najechaniu na element listy: biały kolor czcionki (elementy listy generuje PHP, sprawdzane ręcznie: reguła li:hover)",
+  "type": "manual"
+ },
+ {
+  "section": "css",
+  "desc": "Układ (Obraz 2): baner na górze, nad blokami lewym, środkowym i prawym",
+  "type": "layout",
+  "a": "section:nth-of-type(1)",
+  "b": "section:nth-of-type(2)",
+  "relation": "above"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: blok lewy z lewej strony bloku środkowego",
+  "type": "layout",
+  "a": "section:nth-of-type(2)",
+  "b": "section:nth-of-type(3)",
+  "relation": "leftOf"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: blok środkowy z lewej strony bloku prawego",
+  "type": "layout",
+  "a": "section:nth-of-type(3)",
+  "b": "section:nth-of-type(4)",
+  "relation": "leftOf"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: bloki lewy, środkowy i prawy w jednym rzędzie",
+  "type": "layout",
+  "a": "section:nth-of-type(2)",
+  "b": "section:nth-of-type(4)",
+  "relation": "sameRow"
+ },
+ {
+  "section": "css",
+  "desc": "Układ: stopka na dole, pod blokami",
+  "type": "layout",
+  "a": "section:nth-of-type(5)",
+  "b": "section:nth-of-type(4)",
+  "relation": "below"
+ },
+ {
+  "section": "php",
+  "desc": "Skrypt łączy się z bazą biblioteka (localhost, root, bez hasła) i na końcu zamyka połączenie z serwerem",
+  "type": "php"
+ }
+]

@@ -112,6 +112,33 @@ await p.fill('#f-q', 'biblioteka');
 const filtered = await p.locator('.sheet-row').count();
 ok(all === 79 && filtered > 0 && filtered < all, `lista arkuszy i filtr (${all} → ${filtered})`);
 
+// mikrocwiczenie HTML: zla i dobra odpowiedz
+await p.goto(`${BASE}#/cw/html-szkielet/0`);
+await p.waitForSelector('.ws .CodeMirror');
+await p.click('#check');
+await p.waitForSelector('#verdict .verdict.bad');
+ok(true, 'ćwiczenie HTML: pusty plik odrzucony');
+await typeSql(p, '<!DOCTYPE html>\n<html lang="pl">\n<head>\n<meta charset="UTF-8">\n<title>Biblioteka miejska</title>\n<link rel="stylesheet" href="styl.css">\n</head>\n<body></body>\n</html>');
+await p.click('#check');
+await p.waitForSelector('#verdict .verdict.ok', { timeout: 20000 });
+ok(true, 'ćwiczenie HTML: poprawny szkielet przyjęty');
+if (shots) await p.screenshot({ path: `${shots}/cw-html.png`, fullPage: true });
+
+// pelny arkusz: wzorzec wczytany do edytora daje komplet punktow
+p.on('dialog', (d) => d.accept());
+await p.goto(`${BASE}#/arkusz/inf03_2026_06_04/strona`);
+await p.waitForSelector('.ws .CodeMirror');
+await p.click('#sol');
+await p.waitForSelector('#loadsol');
+await p.click('#loadsol');
+await p.waitForTimeout(500);
+await p.click('#check');
+await p.waitForFunction(() => /\d+\/\d+/.test(document.getElementById('score').textContent) && !document.getElementById('check').disabled, null, { timeout: 120000 });
+const score = await p.textContent('#score');
+const [got, max] = score.match(/(\d+)\/(\d+)/).slice(1).map(Number);
+ok(got === max && max > 50, `arkusz 2026_06_04: wzorzec ${got}/${max}`);
+if (shots) await p.screenshot({ path: `${shots}/arkusz-wynik.png`, fullPage: false });
+
 // widok na telefonie
 const m = await page({ width: 375, height: 800 });
 await m.goto(`${BASE}#/sql/${code}/2`);

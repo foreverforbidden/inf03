@@ -14,7 +14,9 @@ export function stripPhp(src) {
 // podmiana wgranych grafik na ich adresy; w atrybutach src/href zostaje oryginalna nazwa w data-inf03-orig
 function replaceAssetRefs(text, uploads, html = false) {
   let out = text;
-  for (const [name, url] of Object.entries(uploads || {})) {
+  for (const [name, rel] of Object.entries(uploads || {})) {
+    // adres wzgledny musi byc bezwzgledny, bo strona w podgladzie ma <base> ustawione na materialy
+    const url = /^(blob:|data:|https?:)/i.test(rel) ? rel : new URL(rel, document.baseURI).href;
     const n = escRe(name);
     if (html) out = out.replace(new RegExp(`\\b(src|href)\\s*=\\s*(["']?)${n}\\2(?=[\\s>/])`, 'gi'), `$1=$2${url}$2 data-inf03-orig="${name}"`);
     out = out.replace(new RegExp(`(["'(=\\s])${n}(["')\\s>])`, 'g'), `$1${url}$2`);
