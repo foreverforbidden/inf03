@@ -1,6 +1,6 @@
 # Status arkuszy INF.03
 
-**done**: 49 · **review_fail**: 2 · **verify_fail**: 1 · **todo**: 27 · **razem**: 79
+**done**: 58 · **review_fail**: 0 · **verify_fail**: 0 · **todo**: 21 · **razem**: 79
 
 | Arkusz | Stan | Próby | verify | review | Uwagi |
 |---|---|---|---|---|---|
@@ -35,9 +35,9 @@
 | inf03_2024_06_10 | done | 1 | PASS | PASS 58/58 |  |
 | inf03_2024_06_11 | done | 1 | PASS | PASS all/all |  |
 | inf03_2024_06_12 | done | 1 | PASS | PASS all/all |  |
-| inf03_2025_01_01 | review_fail | 3 | PASS | FAIL ~44/45 | Dla klasy o nazwie kontrolki: marginesy zewnętrzne |
+| inf03_2025_01_01 | done | 3 | PASS | PASS all/all |  |
 | inf03_2025_01_02 | done | 1 | PASS | PASS 45/45 |  |
-| inf03_2025_01_03 | review_fail | 2 | PASS | FAIL all-1 | Wyeksportuj dane z tabeli imieniny do pliku CSV o  |
+| inf03_2025_01_03 | done | 2 | PASS | PASS all/all |  |
 | inf03_2025_01_04 | done | 1 | PASS | PASS all/all |  |
 | inf03_2025_01_05 | done | 1 | PASS | PASS 34/34 |  |
 | inf03_2025_01_06 | done | 1 | PASS | PASS all/all |  |
@@ -55,15 +55,15 @@
 | inf03_2025_06_06 | done | 1 | PASS | PASS all |  |
 | inf03_2025_06_07 | done | 1 | PASS | PASS all/all |  |
 | inf03_2025_06_08 | done | 1 | PASS | PASS all/all |  |
-| inf03_2025_06_09 | todo | 1 | PASS | – |  |
-| inf03_2025_06_10 | todo | 1 | PASS | – |  |
-| inf03_2025_06_11 | todo | 1 | PASS | – |  |
-| inf03_2025_06_12 | todo | 1 | PASS | – |  |
-| inf03_2026_01_01 | todo | 1 | PASS | – |  |
-| inf03_2026_01_02 | todo | 1 | PASS | – |  |
-| inf03_2026_01_03 | verify_fail | 1 | FAIL (1) | – | kwerendy.txt: brak zapytan |
+| inf03_2025_06_09 | done | 1 | PASS | PASS all/all |  |
+| inf03_2025_06_10 | done | 1 | PASS | PASS  |  |
+| inf03_2025_06_11 | done | 1 | PASS | PASS  |  |
+| inf03_2025_06_12 | done | 1 | PASS | PASS  |  |
+| inf03_2026_01_01 | done | 1 | PASS | PASS all |  |
+| inf03_2026_01_02 | done | 1 | PASS | PASS all/all |  |
+| inf03_2026_01_03 | done | 1 | PASS | PASS all/all |  |
 | inf03_2026_01_04 | todo | 1 | – | – |  |
-| inf03_2026_01_05 | todo | 1 | – | – |  |
+| inf03_2026_01_05 | todo | 1 | PASS | – |  |
 | inf03_2026_01_06 | todo | 1 | – | – |  |
 | inf03_2026_01_07 | todo | 1 | – | – |  |
 | inf03_2026_01_08 | todo | 1 | – | – |  |

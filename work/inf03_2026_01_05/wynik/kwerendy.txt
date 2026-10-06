@@ -1,0 +1,8 @@
+-- Zapytanie 1
+SELECT id, imie, nazwisko FROM personel WHERE status = 'policjant';
+-- Zapytanie 2
+SELECT typ, COUNT(*) FROM pojazdy GROUP BY typ;
+-- Zapytanie 3
+SELECT id, nazwisko FROM personel WHERE id NOT IN (SELECT id_personel FROM rejestr);
+-- Zapytanie 4
+INSERT INTO rejestr (id_personel, id_pojazd, data) VALUES (1, 14, CURDATE());

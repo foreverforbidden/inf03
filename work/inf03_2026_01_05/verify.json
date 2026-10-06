@@ -1,0 +1,60 @@
+{
+  "code": "inf03_2026_01_05",
+  "pass": true,
+  "fails": [],
+  "warns": [],
+  "queries": [
+    {
+      "n": 1,
+      "sql": "SELECT id, imie, nazwisko FROM personel WHERE status = 'policjant'",
+      "ok": true,
+      "rows": 11,
+      "preview": "+----+------------+-----------+\n| id | imie       | nazwisko  |\n+----+------------+-----------+\n|  1 | Jan        | Kos       |\n|  2 | Aleksander | Nowak     |\n|  5 | Katarzyna  | Wotyk     |\n|  6 | Anna       | Binarek   |\n|  7 | Eliza      | Idus      |\n|  8 | Roman      | Kieraś    |"
+    },
+    {
+      "n": 2,
+      "sql": "SELECT typ, COUNT(*) FROM pojazdy GROUP BY typ",
+      "ok": true,
+      "rows": 2,
+      "preview": "+-----+----------+\n| typ | COUNT(*) |\n+-----+----------+\n| K   |        6 |\n| R   |       24 |\n+-----+----------+"
+    },
+    {
+      "n": 3,
+      "sql": "SELECT id, nazwisko FROM personel WHERE id NOT IN (SELECT id_personel FROM rejestr)",
+      "ok": true,
+      "rows": 3,
+      "preview": "+----+----------+\n| id | nazwisko |\n+----+----------+\n|  2 | Nowak    |\n|  3 | Nosowska |\n|  4 | Mizera   |\n+----+----------+"
+    },
+    {
+      "n": 4,
+      "sql": "INSERT INTO rejestr (id_personel, id_pojazd, data) VALUES (1, 14, CURDATE())",
+      "ok": true,
+      "rows": 0,
+      "preview": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": "index.php",
+      "status": 200,
+      "bytes": 1583
+    },
+    {
+      "page": "formularz index.php->index.php [post]",
+      "status": 200,
+      "bytes": 1583,
+      "fields": {
+        "status": "policjant"
+      }
+    },
+    {
+      "page": "formularz index.php->index.php [post]",
+      "status": 200,
+      "bytes": 1583,
+      "fields": {
+        "idosoby": "2"
+      }
+    }
+  ],
+  "checked_at": "2026-10-06 17:03:00"
+}

@@ -30,7 +30,7 @@
       "sql": "SELECT marka, model, cena FROM pojazdy ORDER BY RAND() LIMIT 2",
       "ok": true,
       "rows": 2,
-      "preview": "+-------+-------+-------+\n| marka | model | cena  |\n+-------+-------+-------+\n| AM    | beta  | 72000 |\n| BM    | beta  | 88000 |\n+-------+-------+-------+"
+      "preview": "+-------+-------+-------+\n| marka | model | cena  |\n+-------+-------+-------+\n| BM    | beta  | 77000 |\n| BM    | beta  | 84000 |\n+-------+-------+-------+"
     }
   ],
   "pages": [
@@ -40,5 +40,5 @@
       "bytes": 1575
     }
   ],
-  "checked_at": "2026-10-06 17:01:55"
+  "checked_at": "2026-10-06 17:02:49"
 }
