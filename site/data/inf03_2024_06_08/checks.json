@@ -2,11 +2,10 @@
   {"section": "grafika", "desc": "Plik obraz.png: skadrowany do niebieskiej plakietki, tło przezroczyste, wysokość 200 px (z zachowaniem proporcji), format PNG", "type": "image", "name": "obraz.png", "height": 200, "alpha": true},
   {"section": "pliki", "desc": "Strona rejestracja.html", "type": "file", "name": "rejestracja.html"},
   {"section": "pliki", "desc": "Arkusz stylów styl.css", "type": "file", "name": "styl.css"},
-
   {"section": "html", "desc": "Strona zapisana w języku HTML5, język zawartości polski, kodowanie UTF-8", "type": "head", "lang": "pl", "charset": true},
   {"section": "html", "desc": "Tytuł strony „Sklep - rejestracja”", "type": "head", "doctype": false, "title": "Sklep - rejestracja"},
   {"section": "html", "desc": "Arkusz stylów styl.css prawidłowo połączony z kodem strony", "type": "head", "doctype": false, "stylesheet": "styl.css"},
-  {"section": "html", "desc": "Podział strony semantycznymi znacznikami sekcji: blok boczny, baner, blok główny, blok paska postępu i stopka", "type": "exists", "selector": "body > aside ~ header ~ main ~ section ~ footer", "hint": "blok boczny jako aside, baner jako header, blok główny jako main, pasek postępu jako section, stopka jako footer"},
+  {"section": "html", "desc": "Podział strony semantycznymi znacznikami sekcji: blok boczny, baner, blok główny, blok paska postępu i stopka", "type": "exists", "hint": "blok boczny jako aside, baner jako header, blok główny jako main, pasek postępu jako section, stopka jako footer", "selectors": ["aside", "header", "main", "section", "footer"]},
   {"section": "html", "desc": "Blok boczny: obraz obraz.png", "type": "attr", "selector": "aside img", "attr": "src", "equals": "obraz.png"},
   {"section": "html", "desc": "Blok boczny: obraz z tekstem alternatywnym „promocje”", "type": "attr", "selector": "aside img", "attr": "alt", "equals": "promocje"},
   {"section": "html", "desc": "Blok boczny: nagłówek drugiego stopnia „Sprawdź promocje”", "type": "text", "selector": "aside h2", "equals": "Sprawdź promocje"},
@@ -40,7 +39,6 @@
   {"section": "html", "desc": "Blok paska postępu zawiera pusty blok (sekcję)", "type": "exists", "selector": "body > section > section", "count": 1, "hint": "blok paska postępu jako section poza main, a w nim pusta section"},
   {"section": "html", "desc": "Pusty blok w bloku paska postępu nie ma zawartości", "type": "text", "selector": "body > section > section", "equals": ""},
   {"section": "html", "desc": "Stopka: nagłówek czwartego stopnia „Rejestrację do sklepu wykonał: ” i numer zdającego", "type": "text", "selector": "footer h4", "startsWith": "Rejestrację do sklepu wykonał:"},
-
   {"section": "css", "desc": "Domyślne formatowanie wszystkich selektorów: krój czcionki Cambria (nagłówek h2)", "type": "css", "selector": "aside h2", "prop": "font-family", "value": "Cambria"},
   {"section": "css", "desc": "Domyślne formatowanie wszystkich selektorów: krój czcionki Cambria (paragraf)", "type": "css", "selector": "main section:nth-of-type(1) p", "index": 0, "prop": "font-family", "value": "Cambria"},
   {"section": "css", "desc": "Dla ciała dokumentu: kolor tła Linen", "type": "css", "selector": "body", "prop": "background-color", "value": "Linen"},
@@ -86,7 +84,6 @@
   {"section": "css", "desc": "Układ: blok boczny obok bloku głównego", "type": "layout", "a": "aside", "b": "main", "relation": "leftOf"},
   {"section": "css", "desc": "Układ: stopka na dole pod blokiem bocznym", "type": "layout", "a": "footer", "b": "aside", "relation": "below"},
   {"section": "css", "desc": "Układ: stopka na całą szerokość", "type": "layout", "a": "footer", "relation": "fullWidth"},
-
   {"section": "js", "desc": "Wciśnięcie „Adres”: widoczny tylko blok drugi", "type": "js", "steps": [{"click": "main button:nth-of-type(2)"}], "expect": [{"selector": "main section:nth-of-type(1)", "css": "display", "value": "none"}, {"selector": "main section:nth-of-type(2)", "css": "display", "value": "block"}, {"selector": "main section:nth-of-type(3)", "css": "display", "value": "none"}]},
   {"section": "js", "desc": "Wciśnięcie „Kontakt”: widoczny tylko blok trzeci", "type": "js", "steps": [{"click": "main button:nth-of-type(3)"}], "expect": [{"selector": "main section:nth-of-type(1)", "css": "display", "value": "none"}, {"selector": "main section:nth-of-type(2)", "css": "display", "value": "none"}, {"selector": "main section:nth-of-type(3)", "css": "display", "value": "block"}]},
   {"section": "js", "desc": "Wciśnięcie „Klient” po „Adres”: widoczny tylko blok pierwszy", "type": "js", "steps": [{"click": "main button:nth-of-type(2)"}, {"click": "main button:nth-of-type(1)"}], "expect": [{"selector": "main section:nth-of-type(1)", "css": "display", "value": "block"}, {"selector": "main section:nth-of-type(2)", "css": "display", "value": "none"}, {"selector": "main section:nth-of-type(3)", "css": "display", "value": "none"}]},

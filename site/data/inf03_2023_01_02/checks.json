@@ -1,730 +1,87 @@
 [
-{
-"section": "grafika",
-"desc": "1.bmp przeskalowany bez zachowania proporcji do 300 px na 300 px, zapisany jako 1.jpg",
-"type": "image",
-"name": "1.jpg",
-"width": 300,
-"height": 300
-},
-{
-"section": "grafika",
-"desc": "2.bmp przeskalowany bez zachowania proporcji do 300 px na 300 px, zapisany jako 2.jpg",
-"type": "image",
-"name": "2.jpg",
-"width": 300,
-"height": 300
-},
-{
-"section": "grafika",
-"desc": "3.bmp przeskalowany bez zachowania proporcji do 300 px na 300 px, zapisany jako 3.jpg",
-"type": "image",
-"name": "3.jpg",
-"width": 300,
-"height": 300
-},
-{
-"section": "grafika",
-"desc": "Obrazy zapisane w odcieniach szarości i w formacie JPEG",
-"type": "manual"
-},
-{
-"section": "pliki",
-"desc": "Strona/plik index.html",
-"type": "file",
-"name": "index.html"
-},
-{
-"section": "pliki",
-"desc": "Strona/plik cennik.php",
-"type": "file",
-"name": "cennik.php"
-},
-{
-"section": "pliki",
-"desc": "Strona/plik kalkulator.html",
-"type": "file",
-"name": "kalkulator.html"
-},
-{
-"section": "pliki",
-"desc": "Strona/plik styl2.css",
-"type": "file",
-"name": "styl2.css"
-},
-{
-"section": "html",
-"desc": "Na stronie kalkulator.html zapisano „strona w trakcie budowy”",
-"type": "text",
-"page": "kalkulator.html",
-"selector": "body",
-"contains": "strona w trakcie budowy"
-},
-{
-"section": "html",
-"desc": "Zapisane w języku HTML 5, polski język, kodowanie UTF-8",
-"type": "head",
-"lang": "pl",
-"charset": true,
-"page": "index.html"
-},
-{
-"section": "html",
-"desc": "Tytuł strony „Wynajem pokoi”",
-"type": "head",
-"doctype": false,
-"title": "Wynajem pokoi",
-"page": "index.html"
-},
-{
-"section": "html",
-"desc": "Arkusz stylów styl2.css prawidłowo połączony z kodem strony",
-"type": "head",
-"doctype": false,
-"stylesheet": "styl2.css",
-"page": "index.html"
-},
-{
-"section": "html",
-"desc": "Podział na bloki: baner, trzy bloki obok siebie (lewy, środkowy, prawy), stopka",
-"type": "exists",
-"selector": "header ~ section ~ section ~ section ~ footer",
-"page": "index.html"
-},
-{
-"section": "html",
-"desc": "Trzy bloki sekcji (lewy, środkowy, prawy)",
-"type": "exists",
-"selector": "section",
-"count": 3,
-"page": "index.html"
-},
-{
-"section": "html",
-"desc": "Baner: nagłówek pierwszego stopnia „Pensjonat pod dobrym humorem”",
-"type": "text",
-"selector": "header h1",
-"equals": "Pensjonat pod dobrym humorem",
-"page": "index.html"
-},
-{
-"section": "html",
-"desc": "Blok lewy: odnośnik „GŁÓWNA”",
-"type": "text",
-"selector": "section:nth-of-type(1) a",
-"equals": "GŁÓWNA",
-"hint": "blok lewy jako pierwszy znacznik section",
-"page": "index.html"
-},
-{
-"section": "html",
-"desc": "Blok lewy: odnośnik do pliku index.html",
-"type": "attr",
-"selector": "section:nth-of-type(1) a",
-"attr": "href",
-"equals": "index.html",
-"page": "index.html"
-},
-{
-"section": "html",
-"desc": "Blok lewy: obraz 1.jpg",
-"type": "attr",
-"selector": "section:nth-of-type(1) img",
-"attr": "src",
-"equals": "1.jpg",
-"page": "index.html"
-},
-{
-"section": "html",
-"desc": "Blok lewy: obraz z tekstem alternatywnym „pokoje”",
-"type": "attr",
-"selector": "section:nth-of-type(1) img",
-"attr": "alt",
-"equals": "pokoje",
-"page": "index.html"
-},
-{
-"section": "html",
-"desc": "Blok prawy: odnośnik „KALKULATOR”",
-"type": "text",
-"selector": "section:nth-of-type(3) a",
-"equals": "KALKULATOR",
-"hint": "blok prawy jako trzeci znacznik section",
-"page": "index.html"
-},
-{
-"section": "html",
-"desc": "Blok prawy: odnośnik do pliku kalkulator.html",
-"type": "attr",
-"selector": "section:nth-of-type(3) a",
-"attr": "href",
-"equals": "kalkulator.html",
-"page": "index.html"
-},
-{
-"section": "html",
-"desc": "Blok prawy: obraz 3.jpg",
-"type": "attr",
-"selector": "section:nth-of-type(3) img",
-"attr": "src",
-"equals": "3.jpg",
-"page": "index.html"
-},
-{
-"section": "html",
-"desc": "Blok prawy: obraz z tekstem alternatywnym „pokoje”",
-"type": "attr",
-"selector": "section:nth-of-type(3) img",
-"attr": "alt",
-"equals": "pokoje",
-"page": "index.html"
-},
-{
-"section": "html",
-"desc": "Stopka: akapit „Stronę opracował: ” i numer zdającego",
-"type": "text",
-"selector": "footer p",
-"startsWith": "Stronę opracował:",
-"page": "index.html"
-},
-{
-"section": "html",
-"desc": "Blok środkowy: odnośnik „CENNIK”",
-"type": "text",
-"selector": "section:nth-of-type(2) a",
-"equals": "CENNIK",
-"hint": "blok środkowy jako drugi znacznik section",
-"page": "index.html"
-},
-{
-"section": "html",
-"desc": "Blok środkowy: odnośnik do pliku cennik.php",
-"type": "attr",
-"selector": "section:nth-of-type(2) a",
-"attr": "href",
-"equals": "cennik.php",
-"page": "index.html"
-},
-{
-"section": "html",
-"desc": "Zapisane w języku HTML 5, polski język, kodowanie UTF-8",
-"type": "head",
-"lang": "pl",
-"charset": true,
-"page": "cennik.php"
-},
-{
-"section": "html",
-"desc": "Tytuł strony „Wynajem pokoi”",
-"type": "head",
-"doctype": false,
-"title": "Wynajem pokoi",
-"page": "cennik.php"
-},
-{
-"section": "html",
-"desc": "Arkusz stylów styl2.css prawidłowo połączony z kodem strony",
-"type": "head",
-"doctype": false,
-"stylesheet": "styl2.css",
-"page": "cennik.php"
-},
-{
-"section": "html",
-"desc": "Podział na bloki: baner, trzy bloki obok siebie (lewy, środkowy, prawy), stopka",
-"type": "exists",
-"selector": "header ~ section ~ section ~ section ~ footer",
-"page": "cennik.php"
-},
-{
-"section": "html",
-"desc": "Trzy bloki sekcji (lewy, środkowy, prawy)",
-"type": "exists",
-"selector": "section",
-"count": 3,
-"page": "cennik.php"
-},
-{
-"section": "html",
-"desc": "Baner: nagłówek pierwszego stopnia „Pensjonat pod dobrym humorem”",
-"type": "text",
-"selector": "header h1",
-"equals": "Pensjonat pod dobrym humorem",
-"page": "cennik.php"
-},
-{
-"section": "html",
-"desc": "Blok lewy: odnośnik „GŁÓWNA”",
-"type": "text",
-"selector": "section:nth-of-type(1) a",
-"equals": "GŁÓWNA",
-"hint": "blok lewy jako pierwszy znacznik section",
-"page": "cennik.php"
-},
-{
-"section": "html",
-"desc": "Blok lewy: odnośnik do pliku index.html",
-"type": "attr",
-"selector": "section:nth-of-type(1) a",
-"attr": "href",
-"equals": "index.html",
-"page": "cennik.php"
-},
-{
-"section": "html",
-"desc": "Blok lewy: obraz 1.jpg",
-"type": "attr",
-"selector": "section:nth-of-type(1) img",
-"attr": "src",
-"equals": "1.jpg",
-"page": "cennik.php"
-},
-{
-"section": "html",
-"desc": "Blok lewy: obraz z tekstem alternatywnym „pokoje”",
-"type": "attr",
-"selector": "section:nth-of-type(1) img",
-"attr": "alt",
-"equals": "pokoje",
-"page": "cennik.php"
-},
-{
-"section": "html",
-"desc": "Blok prawy: odnośnik „KALKULATOR”",
-"type": "text",
-"selector": "section:nth-of-type(3) a",
-"equals": "KALKULATOR",
-"hint": "blok prawy jako trzeci znacznik section",
-"page": "cennik.php"
-},
-{
-"section": "html",
-"desc": "Blok prawy: odnośnik do pliku kalkulator.html",
-"type": "attr",
-"selector": "section:nth-of-type(3) a",
-"attr": "href",
-"equals": "kalkulator.html",
-"page": "cennik.php"
-},
-{
-"section": "html",
-"desc": "Blok prawy: obraz 3.jpg",
-"type": "attr",
-"selector": "section:nth-of-type(3) img",
-"attr": "src",
-"equals": "3.jpg",
-"page": "cennik.php"
-},
-{
-"section": "html",
-"desc": "Blok prawy: obraz z tekstem alternatywnym „pokoje”",
-"type": "attr",
-"selector": "section:nth-of-type(3) img",
-"attr": "alt",
-"equals": "pokoje",
-"page": "cennik.php"
-},
-{
-"section": "html",
-"desc": "Stopka: akapit „Stronę opracował: ” i numer zdającego",
-"type": "text",
-"selector": "footer p",
-"startsWith": "Stronę opracował:",
-"page": "cennik.php"
-},
-{
-"section": "html",
-"desc": "Blok środkowy: odnośnik „CENNIK”",
-"type": "text",
-"selector": "section:nth-of-type(2) a",
-"equals": "CENNIK",
-"hint": "blok środkowy jako drugi znacznik section",
-"page": "cennik.php"
-},
-{
-"section": "html",
-"desc": "Blok środkowy: odnośnik do pliku cennik.php",
-"type": "attr",
-"selector": "section:nth-of-type(2) a",
-"attr": "href",
-"equals": "cennik.php",
-"page": "cennik.php"
-},
-{
-"section": "html",
-"desc": "Blok środkowy index.html: obraz 2.jpg",
-"type": "attr",
-"page": "index.html",
-"selector": "section:nth-of-type(2) img",
-"attr": "src",
-"equals": "2.jpg"
-},
-{
-"section": "html",
-"desc": "Blok środkowy index.html: obraz z tekstem alternatywnym „pokoje”",
-"type": "attr",
-"page": "index.html",
-"selector": "section:nth-of-type(2) img",
-"attr": "alt",
-"equals": "pokoje"
-},
-{
-"section": "html",
-"desc": "Blok środkowy cennik.php: tabela",
-"type": "exists",
-"page": "cennik.php",
-"selector": "section:nth-of-type(2) table"
-},
-{
-"section": "php",
-"desc": "Tabela o trzech kolumnach wypełniana skryptem: każdy wiersz wyniku zapytania 1 w kolejnym wierszu tabeli",
-"type": "php"
-},
-{
-"section": "php",
-"desc": "Skrypt łączy się z serwerem bazy danych na localhost, użytkownik root bez hasła, baza „wynajem”, wysyła zapytanie 1 i na końcu zamyka połączenie",
-"type": "php"
-},
-{
-"section": "css",
-"desc": "Domyślnie dla wszystkich selektorów: krój czcionki Garamond",
-"type": "css",
-"page": "index.html",
-"selector": "h1",
-"prop": "font-family",
-"value": "Garamond"
-},
-{
-"section": "css",
-"desc": "Domyślnie dla wszystkich selektorów: wyrównanie tekstu do środka",
-"type": "css",
-"page": "index.html",
-"selector": "h1",
-"prop": "text-align",
-"value": "center"
-},
-{
-"section": "css",
-"desc": "Dla selektora ciała strony: kolor tła Lavender",
-"type": "css",
-"page": "index.html",
-"selector": "body",
-"prop": "background-color",
-"value": "Lavender"
-},
-{
-"section": "css",
-"desc": "Wspólne dla banera i stopki: kolor tła #AF8EB5 (banera)",
-"type": "css",
-"page": "index.html",
-"selector": "header",
-"prop": "background-color",
-"value": "#AF8EB5"
-},
-{
-"section": "css",
-"desc": "Wspólne dla banera i stopki: biały kolor czcionki (banera)",
-"type": "css",
-"page": "index.html",
-"selector": "header",
-"prop": "color",
-"value": "white"
-},
-{
-"section": "css",
-"desc": "Wspólne dla banera i stopki: marginesy wewnętrzne 10 px (banera)",
-"type": "css",
-"page": "index.html",
-"selector": "header",
-"prop": "padding",
-"value": "10px"
-},
-{
-"section": "css",
-"desc": "Wspólne dla banera i stopki: kolor tła #AF8EB5 (stopki)",
-"type": "css",
-"page": "index.html",
-"selector": "footer",
-"prop": "background-color",
-"value": "#AF8EB5"
-},
-{
-"section": "css",
-"desc": "Wspólne dla banera i stopki: biały kolor czcionki (stopki)",
-"type": "css",
-"page": "index.html",
-"selector": "footer",
-"prop": "color",
-"value": "white"
-},
-{
-"section": "css",
-"desc": "Wspólne dla banera i stopki: marginesy wewnętrzne 10 px (stopki)",
-"type": "css",
-"page": "index.html",
-"selector": "footer",
-"prop": "padding",
-"value": "10px"
-},
-{
-"section": "css",
-"desc": "Bloki lewy, środkowy i prawy: kolor tła #E1BEE7",
-"type": "css",
-"page": "index.html",
-"selector": "section",
-"prop": "background-color",
-"value": "#E1BEE7",
-"all": true
-},
-{
-"section": "css",
-"desc": "Bloki lewy, środkowy i prawy: szerokość 30%",
-"type": "css",
-"page": "index.html",
-"selector": "section",
-"prop": "width",
-"value": "30%",
-"all": true
-},
-{
-"section": "css",
-"desc": "Bloki lewy, środkowy i prawy: wysokość 500 px",
-"type": "css",
-"page": "index.html",
-"selector": "section",
-"prop": "height",
-"value": "500px",
-"all": true
-},
-{
-"section": "css",
-"desc": "Bloki lewy, środkowy i prawy: margines wewnętrzny górny 40 px",
-"type": "css",
-"page": "index.html",
-"selector": "section",
-"prop": "padding-top",
-"value": "40px",
-"all": true
-},
-{
-"section": "css",
-"desc": "Bloki lewy, środkowy i prawy: marginesy zewnętrzne 15 px",
-"type": "css",
-"page": "index.html",
-"selector": "section",
-"prop": "margin",
-"value": "15px",
-"all": true
-},
-{
-"section": "css",
-"desc": "Bloki lewy, środkowy i prawy: cień 10 px w obu osiach, rozmycie 10 px, kolor DimGray",
-"type": "css",
-"page": "index.html",
-"selector": "section",
-"prop": "box-shadow",
-"value": "10px 10px 10px DimGray",
-"all": true
-},
-{
-"section": "css",
-"desc": "Odnośnik: kolor czcionki Indigo",
-"type": "css",
-"page": "index.html",
-"selector": "a",
-"prop": "color",
-"value": "Indigo",
-"all": true
-},
-{
-"section": "css",
-"desc": "Odnośnik: rozmiar czcionki 150%",
-"type": "cssRule",
-"page": "index.html",
-"selector": "a",
-"prop": "font-size",
-"value": "150%"
-},
-{
-"section": "css",
-"desc": "Odnośnik: marginesy wewnętrzne 10 px",
-"type": "css",
-"page": "index.html",
-"selector": "a",
-"prop": "padding",
-"value": "10px",
-"all": true
-},
-{
-"section": "css",
-"desc": "Odnośnik: czcionka pogrubiona",
-"type": "css",
-"page": "index.html",
-"selector": "a",
-"prop": "font-weight",
-"value": "bold",
-"all": true
-},
-{
-"section": "css",
-"desc": "Odnośnik, kursor: kolor tła Indigo",
-"type": "hover",
-"page": "index.html",
-"selector": "a",
-"prop": "background-color",
-"value": "Indigo"
-},
-{
-"section": "css",
-"desc": "Odnośnik, kursor: biały kolor czcionki",
-"type": "hover",
-"page": "index.html",
-"selector": "a",
-"prop": "color",
-"value": "white"
-},
-{
-"section": "css",
-"desc": "Obraz: obramowanie linią ciągłą",
-"type": "cssRule",
-"page": "index.html",
-"selector": "img",
-"prop": "border-top-style",
-"value": "solid"
-},
-{
-"section": "css",
-"desc": "Obraz: obramowanie o szerokości 1 px",
-"type": "cssRule",
-"page": "index.html",
-"selector": "img",
-"prop": "border-top-width",
-"value": "1px"
-},
-{
-"section": "css",
-"desc": "Obraz: szerokość 80%",
-"type": "cssRule",
-"page": "index.html",
-"selector": "img",
-"prop": "width",
-"value": "80%"
-},
-{
-"section": "css",
-"desc": "Obraz: marginesy zewnętrzne górny i dolny 40 px",
-"type": "cssRule",
-"page": "index.html",
-"selector": "img",
-"prop": "margin-top",
-"value": "40px"
-},
-{
-"section": "css",
-"desc": "Obraz: marginesy zewnętrzne lewy i prawy wyliczane automatycznie",
-"type": "cssRule",
-"page": "index.html",
-"selector": "img",
-"prop": "margin-left",
-"value": "auto"
-},
-{
-"section": "css",
-"desc": "Tabela: obramowanie linią ciągłą",
-"type": "css",
-"page": "cennik.php",
-"selector": "table",
-"prop": "border-top-style",
-"value": "solid"
-},
-{
-"section": "css",
-"desc": "Tabela: obramowanie o szerokości 1 px",
-"type": "css",
-"page": "cennik.php",
-"selector": "table",
-"prop": "border-top-width",
-"value": "1px"
-},
-{
-"section": "css",
-"desc": "Tabela: szerokość 80%",
-"type": "css",
-"page": "cennik.php",
-"selector": "table",
-"prop": "width",
-"value": "80%"
-},
-{
-"section": "css",
-"desc": "Tabela: marginesy zewnętrzne górny i dolny 40 px",
-"type": "css",
-"page": "cennik.php",
-"selector": "table",
-"prop": "margin-top",
-"value": "40px"
-},
-{
-"section": "css",
-"desc": "Tabela: marginesy zewnętrzne lewy i prawy wyliczane automatycznie",
-"type": "cssRule",
-"page": "cennik.php",
-"selector": "table",
-"prop": "margin",
-"value": "40px auto"
-},
-{
-"section": "css",
-"desc": "Style odnośnika, obrazu i tabeli wyłącznie selektorem znacznika (odnośnik: a)",
-"type": "cssRule",
-"page": "index.html",
-"selector": "a",
-"prop": "color",
-"value": "Indigo"
-},
-{
-"section": "css",
-"desc": "Układ: baner nad blokami",
-"type": "layout",
-"page": "index.html",
-"a": "header",
-"b": "section:nth-of-type(1)",
-"relation": "above"
-},
-{
-"section": "css",
-"desc": "Układ: blok lewy obok środkowego (środkowy po prawej od lewego)",
-"type": "layout",
-"page": "index.html",
-"a": "section:nth-of-type(1)",
-"b": "section:nth-of-type(2)",
-"relation": "leftOf"
-},
-{
-"section": "css",
-"desc": "Układ: blok środkowy obok prawego",
-"type": "layout",
-"page": "index.html",
-"a": "section:nth-of-type(2)",
-"b": "section:nth-of-type(3)",
-"relation": "leftOf"
-},
-{
-"section": "css",
-"desc": "Układ: bloki lewy, środkowy i prawy w jednym rzędzie",
-"type": "layout",
-"page": "index.html",
-"a": "section:nth-of-type(1)",
-"b": "section:nth-of-type(3)",
-"relation": "sameRow"
-},
-{
-"section": "css",
-"desc": "Układ: stopka na dole, pod blokami",
-"type": "layout",
-"page": "index.html",
-"a": "footer",
-"b": "section:nth-of-type(2)",
-"relation": "below"
-}
+  {"section": "grafika", "desc": "1.bmp przeskalowany bez zachowania proporcji do 300 px na 300 px, zapisany jako 1.jpg", "type": "image", "name": "1.jpg", "width": 300, "height": 300},
+  {"section": "grafika", "desc": "2.bmp przeskalowany bez zachowania proporcji do 300 px na 300 px, zapisany jako 2.jpg", "type": "image", "name": "2.jpg", "width": 300, "height": 300},
+  {"section": "grafika", "desc": "3.bmp przeskalowany bez zachowania proporcji do 300 px na 300 px, zapisany jako 3.jpg", "type": "image", "name": "3.jpg", "width": 300, "height": 300},
+  {"section": "grafika", "desc": "Obrazy zapisane w odcieniach szarości i w formacie JPEG", "type": "manual"},
+  {"section": "pliki", "desc": "Strona/plik index.html", "type": "file", "name": "index.html"},
+  {"section": "pliki", "desc": "Strona/plik cennik.php", "type": "file", "name": "cennik.php"},
+  {"section": "pliki", "desc": "Strona/plik kalkulator.html", "type": "file", "name": "kalkulator.html"},
+  {"section": "pliki", "desc": "Strona/plik styl2.css", "type": "file", "name": "styl2.css"},
+  {"section": "html", "desc": "Na stronie kalkulator.html zapisano „strona w trakcie budowy”", "type": "text", "page": "kalkulator.html", "selector": "body", "contains": "strona w trakcie budowy"},
+  {"section": "html", "desc": "Zapisane w języku HTML 5, polski język, kodowanie UTF-8", "type": "head", "lang": "pl", "charset": true, "page": "index.html"},
+  {"section": "html", "desc": "Tytuł strony „Wynajem pokoi”", "type": "head", "doctype": false, "title": "Wynajem pokoi", "page": "index.html"},
+  {"section": "html", "desc": "Arkusz stylów styl2.css prawidłowo połączony z kodem strony", "type": "head", "doctype": false, "stylesheet": "styl2.css", "page": "index.html"},
+  {"section": "html", "desc": "Podział na bloki: baner, trzy bloki obok siebie (lewy, środkowy, prawy), stopka", "type": "exists", "page": "index.html", "selectors": ["header", "section", "section", "section", "footer"]},
+  {"section": "html", "desc": "Trzy bloki sekcji (lewy, środkowy, prawy)", "type": "exists", "selector": "section", "count": 3, "page": "index.html"},
+  {"section": "html", "desc": "Baner: nagłówek pierwszego stopnia „Pensjonat pod dobrym humorem”", "type": "text", "selector": "header h1", "equals": "Pensjonat pod dobrym humorem", "page": "index.html"},
+  {"section": "html", "desc": "Blok lewy: odnośnik „GŁÓWNA”", "type": "text", "selector": "section:nth-of-type(1) a", "equals": "GŁÓWNA", "hint": "blok lewy jako pierwszy znacznik section", "page": "index.html"},
+  {"section": "html", "desc": "Blok lewy: odnośnik do pliku index.html", "type": "attr", "selector": "section:nth-of-type(1) a", "attr": "href", "equals": "index.html", "page": "index.html"},
+  {"section": "html", "desc": "Blok lewy: obraz 1.jpg", "type": "attr", "selector": "section:nth-of-type(1) img", "attr": "src", "equals": "1.jpg", "page": "index.html"},
+  {"section": "html", "desc": "Blok lewy: obraz z tekstem alternatywnym „pokoje”", "type": "attr", "selector": "section:nth-of-type(1) img", "attr": "alt", "equals": "pokoje", "page": "index.html"},
+  {"section": "html", "desc": "Blok prawy: odnośnik „KALKULATOR”", "type": "text", "selector": "section:nth-of-type(3) a", "equals": "KALKULATOR", "hint": "blok prawy jako trzeci znacznik section", "page": "index.html"},
+  {"section": "html", "desc": "Blok prawy: odnośnik do pliku kalkulator.html", "type": "attr", "selector": "section:nth-of-type(3) a", "attr": "href", "equals": "kalkulator.html", "page": "index.html"},
+  {"section": "html", "desc": "Blok prawy: obraz 3.jpg", "type": "attr", "selector": "section:nth-of-type(3) img", "attr": "src", "equals": "3.jpg", "page": "index.html"},
+  {"section": "html", "desc": "Blok prawy: obraz z tekstem alternatywnym „pokoje”", "type": "attr", "selector": "section:nth-of-type(3) img", "attr": "alt", "equals": "pokoje", "page": "index.html"},
+  {"section": "html", "desc": "Stopka: akapit „Stronę opracował: ” i numer zdającego", "type": "text", "selector": "footer p", "startsWith": "Stronę opracował:", "page": "index.html"},
+  {"section": "html", "desc": "Blok środkowy: odnośnik „CENNIK”", "type": "text", "selector": "section:nth-of-type(2) a", "equals": "CENNIK", "hint": "blok środkowy jako drugi znacznik section", "page": "index.html"},
+  {"section": "html", "desc": "Blok środkowy: odnośnik do pliku cennik.php", "type": "attr", "selector": "section:nth-of-type(2) a", "attr": "href", "equals": "cennik.php", "page": "index.html"},
+  {"section": "html", "desc": "Zapisane w języku HTML 5, polski język, kodowanie UTF-8", "type": "head", "lang": "pl", "charset": true, "page": "cennik.php"},
+  {"section": "html", "desc": "Tytuł strony „Wynajem pokoi”", "type": "head", "doctype": false, "title": "Wynajem pokoi", "page": "cennik.php"},
+  {"section": "html", "desc": "Arkusz stylów styl2.css prawidłowo połączony z kodem strony", "type": "head", "doctype": false, "stylesheet": "styl2.css", "page": "cennik.php"},
+  {"section": "html", "desc": "Podział na bloki: baner, trzy bloki obok siebie (lewy, środkowy, prawy), stopka", "type": "exists", "page": "cennik.php", "selectors": ["header", "section", "section", "section", "footer"]},
+  {"section": "html", "desc": "Trzy bloki sekcji (lewy, środkowy, prawy)", "type": "exists", "selector": "section", "count": 3, "page": "cennik.php"},
+  {"section": "html", "desc": "Baner: nagłówek pierwszego stopnia „Pensjonat pod dobrym humorem”", "type": "text", "selector": "header h1", "equals": "Pensjonat pod dobrym humorem", "page": "cennik.php"},
+  {"section": "html", "desc": "Blok lewy: odnośnik „GŁÓWNA”", "type": "text", "selector": "section:nth-of-type(1) a", "equals": "GŁÓWNA", "hint": "blok lewy jako pierwszy znacznik section", "page": "cennik.php"},
+  {"section": "html", "desc": "Blok lewy: odnośnik do pliku index.html", "type": "attr", "selector": "section:nth-of-type(1) a", "attr": "href", "equals": "index.html", "page": "cennik.php"},
+  {"section": "html", "desc": "Blok lewy: obraz 1.jpg", "type": "attr", "selector": "section:nth-of-type(1) img", "attr": "src", "equals": "1.jpg", "page": "cennik.php"},
+  {"section": "html", "desc": "Blok lewy: obraz z tekstem alternatywnym „pokoje”", "type": "attr", "selector": "section:nth-of-type(1) img", "attr": "alt", "equals": "pokoje", "page": "cennik.php"},
+  {"section": "html", "desc": "Blok prawy: odnośnik „KALKULATOR”", "type": "text", "selector": "section:nth-of-type(3) a", "equals": "KALKULATOR", "hint": "blok prawy jako trzeci znacznik section", "page": "cennik.php"},
+  {"section": "html", "desc": "Blok prawy: odnośnik do pliku kalkulator.html", "type": "attr", "selector": "section:nth-of-type(3) a", "attr": "href", "equals": "kalkulator.html", "page": "cennik.php"},
+  {"section": "html", "desc": "Blok prawy: obraz 3.jpg", "type": "attr", "selector": "section:nth-of-type(3) img", "attr": "src", "equals": "3.jpg", "page": "cennik.php"},
+  {"section": "html", "desc": "Blok prawy: obraz z tekstem alternatywnym „pokoje”", "type": "attr", "selector": "section:nth-of-type(3) img", "attr": "alt", "equals": "pokoje", "page": "cennik.php"},
+  {"section": "html", "desc": "Stopka: akapit „Stronę opracował: ” i numer zdającego", "type": "text", "selector": "footer p", "startsWith": "Stronę opracował:", "page": "cennik.php"},
+  {"section": "html", "desc": "Blok środkowy: odnośnik „CENNIK”", "type": "text", "selector": "section:nth-of-type(2) a", "equals": "CENNIK", "hint": "blok środkowy jako drugi znacznik section", "page": "cennik.php"},
+  {"section": "html", "desc": "Blok środkowy: odnośnik do pliku cennik.php", "type": "attr", "selector": "section:nth-of-type(2) a", "attr": "href", "equals": "cennik.php", "page": "cennik.php"},
+  {"section": "html", "desc": "Blok środkowy index.html: obraz 2.jpg", "type": "attr", "page": "index.html", "selector": "section:nth-of-type(2) img", "attr": "src", "equals": "2.jpg"},
+  {"section": "html", "desc": "Blok środkowy index.html: obraz z tekstem alternatywnym „pokoje”", "type": "attr", "page": "index.html", "selector": "section:nth-of-type(2) img", "attr": "alt", "equals": "pokoje"},
+  {"section": "html", "desc": "Blok środkowy cennik.php: tabela", "type": "exists", "page": "cennik.php", "selector": "section:nth-of-type(2) table"},
+  {"section": "php", "desc": "Tabela o trzech kolumnach wypełniana skryptem: każdy wiersz wyniku zapytania 1 w kolejnym wierszu tabeli", "type": "php"},
+  {"section": "php", "desc": "Skrypt łączy się z serwerem bazy danych na localhost, użytkownik root bez hasła, baza „wynajem”, wysyła zapytanie 1 i na końcu zamyka połączenie", "type": "php"},
+  {"section": "css", "desc": "Domyślnie dla wszystkich selektorów: krój czcionki Garamond", "type": "css", "page": "index.html", "selector": "h1", "prop": "font-family", "value": "Garamond"},
+  {"section": "css", "desc": "Domyślnie dla wszystkich selektorów: wyrównanie tekstu do środka", "type": "css", "page": "index.html", "selector": "h1", "prop": "text-align", "value": "center"},
+  {"section": "css", "desc": "Dla selektora ciała strony: kolor tła Lavender", "type": "css", "page": "index.html", "selector": "body", "prop": "background-color", "value": "Lavender"},
+  {"section": "css", "desc": "Wspólne dla banera i stopki: kolor tła #AF8EB5 (banera)", "type": "css", "page": "index.html", "selector": "header", "prop": "background-color", "value": "#AF8EB5"},
+  {"section": "css", "desc": "Wspólne dla banera i stopki: biały kolor czcionki (banera)", "type": "css", "page": "index.html", "selector": "header", "prop": "color", "value": "white"},
+  {"section": "css", "desc": "Wspólne dla banera i stopki: marginesy wewnętrzne 10 px (banera)", "type": "css", "page": "index.html", "selector": "header", "prop": "padding", "value": "10px"},
+  {"section": "css", "desc": "Wspólne dla banera i stopki: kolor tła #AF8EB5 (stopki)", "type": "css", "page": "index.html", "selector": "footer", "prop": "background-color", "value": "#AF8EB5"},
+  {"section": "css", "desc": "Wspólne dla banera i stopki: biały kolor czcionki (stopki)", "type": "css", "page": "index.html", "selector": "footer", "prop": "color", "value": "white"},
+  {"section": "css", "desc": "Wspólne dla banera i stopki: marginesy wewnętrzne 10 px (stopki)", "type": "css", "page": "index.html", "selector": "footer", "prop": "padding", "value": "10px"},
+  {"section": "css", "desc": "Bloki lewy, środkowy i prawy: kolor tła #E1BEE7", "type": "css", "page": "index.html", "selector": "section", "prop": "background-color", "value": "#E1BEE7", "all": true},
+  {"section": "css", "desc": "Bloki lewy, środkowy i prawy: szerokość 30%", "type": "css", "page": "index.html", "selector": "section", "prop": "width", "value": "30%", "all": true},
+  {"section": "css", "desc": "Bloki lewy, środkowy i prawy: wysokość 500 px", "type": "css", "page": "index.html", "selector": "section", "prop": "height", "value": "500px", "all": true},
+  {"section": "css", "desc": "Bloki lewy, środkowy i prawy: margines wewnętrzny górny 40 px", "type": "css", "page": "index.html", "selector": "section", "prop": "padding-top", "value": "40px", "all": true},
+  {"section": "css", "desc": "Bloki lewy, środkowy i prawy: marginesy zewnętrzne 15 px", "type": "css", "page": "index.html", "selector": "section", "prop": "margin", "value": "15px", "all": true},
+  {"section": "css", "desc": "Bloki lewy, środkowy i prawy: cień 10 px w obu osiach, rozmycie 10 px, kolor DimGray", "type": "css", "page": "index.html", "selector": "section", "prop": "box-shadow", "value": "10px 10px 10px DimGray", "all": true},
+  {"section": "css", "desc": "Odnośnik: kolor czcionki Indigo", "type": "css", "page": "index.html", "selector": "a", "prop": "color", "value": "Indigo", "all": true},
+  {"section": "css", "desc": "Odnośnik: rozmiar czcionki 150%", "type": "cssRule", "page": "index.html", "selector": "a", "prop": "font-size", "value": "150%"},
+  {"section": "css", "desc": "Odnośnik: marginesy wewnętrzne 10 px", "type": "css", "page": "index.html", "selector": "a", "prop": "padding", "value": "10px", "all": true},
+  {"section": "css", "desc": "Odnośnik: czcionka pogrubiona", "type": "css", "page": "index.html", "selector": "a", "prop": "font-weight", "value": "bold", "all": true},
+  {"section": "css", "desc": "Odnośnik, kursor: kolor tła Indigo", "type": "hover", "page": "index.html", "selector": "a", "prop": "background-color", "value": "Indigo"},
+  {"section": "css", "desc": "Odnośnik, kursor: biały kolor czcionki", "type": "hover", "page": "index.html", "selector": "a", "prop": "color", "value": "white"},
+  {"section": "css", "desc": "Obraz: obramowanie linią ciągłą", "type": "cssRule", "page": "index.html", "selector": "img", "prop": "border-top-style", "value": "solid"},
+  {"section": "css", "desc": "Obraz: obramowanie o szerokości 1 px", "type": "cssRule", "page": "index.html", "selector": "img", "prop": "border-top-width", "value": "1px"},
+  {"section": "css", "desc": "Obraz: szerokość 80%", "type": "cssRule", "page": "index.html", "selector": "img", "prop": "width", "value": "80%"},
+  {"section": "css", "desc": "Obraz: marginesy zewnętrzne górny i dolny 40 px", "type": "cssRule", "page": "index.html", "selector": "img", "prop": "margin-top", "value": "40px"},
+  {"section": "css", "desc": "Obraz: marginesy zewnętrzne lewy i prawy wyliczane automatycznie", "type": "cssRule", "page": "index.html", "selector": "img", "prop": "margin-left", "value": "auto"},
+  {"section": "css", "desc": "Tabela: obramowanie linią ciągłą", "type": "css", "page": "cennik.php", "selector": "table", "prop": "border-top-style", "value": "solid"},
+  {"section": "css", "desc": "Tabela: obramowanie o szerokości 1 px", "type": "css", "page": "cennik.php", "selector": "table", "prop": "border-top-width", "value": "1px"},
+  {"section": "css", "desc": "Tabela: szerokość 80%", "type": "css", "page": "cennik.php", "selector": "table", "prop": "width", "value": "80%"},
+  {"section": "css", "desc": "Tabela: marginesy zewnętrzne górny i dolny 40 px", "type": "css", "page": "cennik.php", "selector": "table", "prop": "margin-top", "value": "40px"},
+  {"section": "css", "desc": "Tabela: marginesy zewnętrzne lewy i prawy wyliczane automatycznie", "type": "cssRule", "page": "cennik.php", "selector": "table", "prop": "margin", "value": "40px auto"},
+  {"section": "css", "desc": "Style odnośnika, obrazu i tabeli wyłącznie selektorem znacznika (odnośnik: a)", "type": "cssRule", "page": "index.html", "selector": "a", "prop": "color", "value": "Indigo"},
+  {"section": "css", "desc": "Układ: baner nad blokami", "type": "layout", "page": "index.html", "a": "header", "b": "section:nth-of-type(1)", "relation": "above"},
+  {"section": "css", "desc": "Układ: blok lewy obok środkowego (środkowy po prawej od lewego)", "type": "layout", "page": "index.html", "a": "section:nth-of-type(1)", "b": "section:nth-of-type(2)", "relation": "leftOf"},
+  {"section": "css", "desc": "Układ: blok środkowy obok prawego", "type": "layout", "page": "index.html", "a": "section:nth-of-type(2)", "b": "section:nth-of-type(3)", "relation": "leftOf"},
+  {"section": "css", "desc": "Układ: bloki lewy, środkowy i prawy w jednym rzędzie", "type": "layout", "page": "index.html", "a": "section:nth-of-type(1)", "b": "section:nth-of-type(3)", "relation": "sameRow"},
+  {"section": "css", "desc": "Układ: stopka na dole, pod blokami", "type": "layout", "page": "index.html", "a": "footer", "b": "section:nth-of-type(2)", "relation": "below"}
 ]

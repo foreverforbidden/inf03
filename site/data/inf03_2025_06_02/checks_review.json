@@ -1,0 +1,18 @@
+{
+ "code": "inf03_2025_06_02",
+ "pass": false,
+ "missing": [],
+ "wrong": [
+  {
+   "index": 6,
+   "problem": "Selektor `aside ~ header ~ nav ~ main ~ footer` wymusza, że wszystkie pięć bloków jest rodzeństwem (np. bez opakowania w div) i występuje w kodzie w kolejności aside, header, nav, main, footer. Treść podaje tylko użycie semantycznych znaczników i układ z ilustracji 3, a nie kolejność w źródle ani brak kontenera.",
+   "fix": "Zastąpić kryterium pięcioma `exists` (aside, header, nav, main, footer, każdy count 1), zostawić `hint` o znacznikach. Układ pilnują już kryteria `layout`."
+  },
+  {
+   "index": 17,
+   "problem": "`attr` `nav button` z `onclick` wymaga atrybutu onclick w HTML. Treść wymaga tylko, by wciśnięcie „Dodaj” wywoływało funkcję w skrypcie. Obsługa przez addEventListener lub element.onclick w JS byłaby poprawna, a to kryterium jej nie zaliczy, czyli zaostrza treść. Działanie przycisku sprawdzają już kryteria `js`.",
+   "fix": "Usunąć kryterium albo zamienić na `manual`. Samo działanie pokrywają kryteria `js` (indeksy 60 do 64)."
+  }
+ ],
+ "notes": "Pozostałe punkty z treści (grafika 610 px, pliki, head, układ zgodny z ilustracją 3, zawartość bloków, wszystkie wpisy listy, cały CSS z hoverem i parzystymi, skrypt Wykonane i Dodaj, manual dla nazewnictwa) są pokryte. Teksty i wartości CSS zgodne z treścią, brak img[src]/a[href], brak id i klas spoza treści, brak PHP. Margin-left auto nie jest sprawdzany na pusto (test z margin: 40px 0 daje porażkę). Drobna uwaga, nie błąd: kryteria js sprawdzają line-through na samym li, więc przekreślenie tylko w span nie przejdzie."
+}

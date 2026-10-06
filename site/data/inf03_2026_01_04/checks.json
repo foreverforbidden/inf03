@@ -1,554 +1,71 @@
 [
- {
-  "section": "pliki",
-  "desc": "Strona index.php",
-  "type": "file",
-  "name": "index.php"
- },
- {
-  "section": "pliki",
-  "desc": "Strona wynik.php",
-  "type": "file",
-  "name": "wynik.php"
- },
- {
-  "section": "pliki",
-  "desc": "Arkusz stylów styl.css",
-  "type": "file",
-  "name": "styl.css"
- },
- {
-  "section": "html",
-  "desc": "Zapisane w HTML5, polski język, kodowanie UTF-8",
-  "type": "head",
-  "page": "index.php",
-  "lang": "pl",
-  "charset": true
- },
- {
-  "section": "html",
-  "desc": "Tytuł strony „Matura”",
-  "type": "head",
-  "page": "index.php",
-  "doctype": false,
-  "title": "Matura"
- },
- {
-  "section": "html",
-  "desc": "Arkusz stylów styl.css prawidłowo połączony",
-  "type": "head",
-  "page": "index.php",
-  "doctype": false,
-  "stylesheet": "styl.css"
- },
- {
-  "section": "html",
-  "desc": "Bloki semantyczne: nagłówkowy, boczny, dwie sekcje, stopka",
-  "type": "exists",
-  "page": "index.php",
-  "selector": "header ~ aside ~ section ~ section ~ footer"
- },
- {
-  "section": "html",
-  "desc": "Nagłówek pierwszego stopnia „System informacji dla maturzystów”",
-  "type": "text",
-  "page": "index.php",
-  "selector": "header h1",
-  "equals": "System informacji dla maturzystów"
- },
- {
-  "section": "html",
-  "desc": "Blok boczny: trzy grafiki",
-  "type": "exists",
-  "page": "index.php",
-  "selector": "aside img",
-  "count": 3
- },
- {
-  "section": "html",
-  "desc": "Blok boczny: grafika 1 ma.jpg",
-  "type": "attr",
-  "page": "index.php",
-  "selector": "aside img",
-  "index": 0,
-  "attr": "src",
-  "equals": "ma.jpg"
- },
- {
-  "section": "html",
-  "desc": "Blok boczny: grafika 2 tu.jpg",
-  "type": "attr",
-  "page": "index.php",
-  "selector": "aside img",
-  "index": 1,
-  "attr": "src",
-  "equals": "tu.jpg"
- },
- {
-  "section": "html",
-  "desc": "Blok boczny: grafika 3 ra.jpg",
-  "type": "attr",
-  "page": "index.php",
-  "selector": "aside img",
-  "index": 2,
-  "attr": "src",
-  "equals": "ra.jpg"
- },
- {
-  "section": "html",
-  "desc": "Grafiki z tekstem alternatywnym „Matura”",
-  "type": "attr",
-  "page": "index.php",
-  "selector": "aside img",
-  "attr": "alt",
-  "equals": "Matura",
-  "all": true
- },
- {
-  "section": "php",
-  "desc": "Drugi blok sekcji: cztery bloki z tą samą klasą, w każdym nagłówek czwartego stopnia „Przedmioty”, „Lata”, „Najlepszy wynik”, „Najgorszy wynik”",
-  "type": "php",
-  "page": "index.php"
- },
- {
-  "section": "html",
-  "desc": "Stopka: paragraf „Stronę wykonał: ” i numer zdającego",
-  "type": "text",
-  "page": "index.php",
-  "selector": "footer p",
-  "startsWith": "Stronę wykonał:"
- },
- {
-  "section": "php",
-  "desc": "Bloki drugiej sekcji: efekt skryptu 1 (przedmioty, lata, najlepszy i najgorszy wynik z %)",
-  "type": "php",
-  "page": "index.php"
- },
- {
-  "section": "html",
-  "desc": "Zapisane w HTML5, polski język, kodowanie UTF-8",
-  "type": "head",
-  "page": "wynik.php",
-  "lang": "pl",
-  "charset": true
- },
- {
-  "section": "html",
-  "desc": "Tytuł strony „Matura”",
-  "type": "head",
-  "page": "wynik.php",
-  "doctype": false,
-  "title": "Matura"
- },
- {
-  "section": "html",
-  "desc": "Arkusz stylów styl.css prawidłowo połączony",
-  "type": "head",
-  "page": "wynik.php",
-  "doctype": false,
-  "stylesheet": "styl.css"
- },
- {
-  "section": "html",
-  "desc": "Bloki semantyczne: nagłówkowy, boczny, dwie sekcje, stopka",
-  "type": "exists",
-  "page": "wynik.php",
-  "selector": "header ~ aside ~ section ~ section ~ footer"
- },
- {
-  "section": "html",
-  "desc": "Nagłówek pierwszego stopnia „System informacji dla maturzystów”",
-  "type": "text",
-  "page": "wynik.php",
-  "selector": "header h1",
-  "equals": "System informacji dla maturzystów"
- },
- {
-  "section": "html",
-  "desc": "Blok boczny: trzy grafiki",
-  "type": "exists",
-  "page": "wynik.php",
-  "selector": "aside img",
-  "count": 3
- },
- {
-  "section": "html",
-  "desc": "Blok boczny: grafika 1 ma.jpg",
-  "type": "attr",
-  "page": "wynik.php",
-  "selector": "aside img",
-  "index": 0,
-  "attr": "src",
-  "equals": "ma.jpg"
- },
- {
-  "section": "html",
-  "desc": "Blok boczny: grafika 2 tu.jpg",
-  "type": "attr",
-  "page": "wynik.php",
-  "selector": "aside img",
-  "index": 1,
-  "attr": "src",
-  "equals": "tu.jpg"
- },
- {
-  "section": "html",
-  "desc": "Blok boczny: grafika 3 ra.jpg",
-  "type": "attr",
-  "page": "wynik.php",
-  "selector": "aside img",
-  "index": 2,
-  "attr": "src",
-  "equals": "ra.jpg"
- },
- {
-  "section": "html",
-  "desc": "Grafiki z tekstem alternatywnym „Matura”",
-  "type": "attr",
-  "page": "wynik.php",
-  "selector": "aside img",
-  "attr": "alt",
-  "equals": "Matura",
-  "all": true
- },
- {
-  "section": "php",
-  "desc": "Drugi blok sekcji: cztery bloki z tą samą klasą, w każdym nagłówek czwartego stopnia „Przedmioty”, „Lata”, „Najlepszy wynik”, „Najgorszy wynik”",
-  "type": "php",
-  "page": "wynik.php"
- },
- {
-  "section": "html",
-  "desc": "Stopka: paragraf „Stronę wykonał: ” i numer zdającego",
-  "type": "text",
-  "page": "wynik.php",
-  "selector": "footer p",
-  "startsWith": "Stronę wykonał:"
- },
- {
-  "section": "php",
-  "desc": "Bloki drugiej sekcji: efekt skryptu 1 (przedmioty, lata, najlepszy i najgorszy wynik z %)",
-  "type": "php",
-  "page": "wynik.php"
- },
- {
-  "section": "html",
-  "desc": "Pierwsza sekcja: nagłówek trzeciego stopnia „Wybierz ucznia z listy:”",
-  "type": "text",
-  "page": "index.php",
-  "selector": "section:nth-of-type(1) h3",
-  "equals": "Wybierz ucznia z listy:"
- },
- {
-  "section": "php",
-  "desc": "Skrypt 2: odnośniki „<id>. <imie> <nazwisko>” do wynik.php z parametrami id, imie, nazwisko metodą GET",
-  "type": "php",
-  "page": "index.php"
- },
- {
-  "section": "php",
-  "desc": "Skrypt 3: w nagłówku drugiego stopnia imię i nazwisko z GET",
-  "type": "php",
-  "page": "wynik.php"
- },
- {
-  "section": "php",
-  "desc": "Skrypt 3: zapytanie 5 dla ucznia o id z GET; h3 z rokiem i sesją, p z „przedmiot: punkty”",
-  "type": "php",
-  "page": "wynik.php"
- },
- {
-  "section": "php",
-  "desc": "Połączenie z bazą matura (localhost, root, bez hasła), zamknięcie połączenia, znaczące nazwy zmiennych",
-  "type": "php"
- },
- {
-  "section": "css",
-  "desc": "Ciało strony: krój czcionki cursive, w przeciwnym razie sans-serif (selektor znacznika)",
-  "type": "cssRule",
-  "selector": "body",
-  "prop": "font-family",
-  "value": "cursive, sans-serif"
- },
- {
-  "section": "css",
-  "desc": "Ciało strony: kolor tła #4682B4 (selektor znacznika)",
-  "type": "cssRule",
-  "selector": "body",
-  "prop": "background-color",
-  "value": "#4682B4"
- },
- {
-  "section": "css",
-  "desc": "Blok nagłówkowy: kolor tła #0F0F64",
-  "type": "css",
-  "selector": "header",
-  "prop": "background-color",
-  "value": "#0F0F64"
- },
- {
-  "section": "css",
-  "desc": "Blok nagłówkowy: biały kolor czcionki",
-  "type": "css",
-  "selector": "header",
-  "prop": "color",
-  "value": "white"
- },
- {
-  "section": "css",
-  "desc": "Blok nagłówkowy: tekst do środka",
-  "type": "css",
-  "selector": "header",
-  "prop": "text-align",
-  "value": "center"
- },
- {
-  "section": "css",
-  "desc": "Blok nagłówkowy: marginesy wewnętrzne 3 px",
-  "type": "css",
-  "selector": "header",
-  "prop": "padding",
-  "value": "3px"
- },
- {
-  "section": "css",
-  "desc": "Blok stopka: kolor tła #0F0F64",
-  "type": "css",
-  "selector": "footer",
-  "prop": "background-color",
-  "value": "#0F0F64"
- },
- {
-  "section": "css",
-  "desc": "Blok stopka: biały kolor czcionki",
-  "type": "css",
-  "selector": "footer",
-  "prop": "color",
-  "value": "white"
- },
- {
-  "section": "css",
-  "desc": "Blok stopka: tekst do środka",
-  "type": "css",
-  "selector": "footer",
-  "prop": "text-align",
-  "value": "center"
- },
- {
-  "section": "css",
-  "desc": "Blok stopka: marginesy wewnętrzne 3 px",
-  "type": "css",
-  "selector": "footer",
-  "prop": "padding",
-  "value": "3px"
- },
- {
-  "section": "css",
-  "desc": "Blok boczny: szerokość 20%",
-  "type": "css",
-  "selector": "aside",
-  "prop": "width",
-  "value": "20%"
- },
- {
-  "section": "css",
-  "desc": "Blok boczny: wysokość 500 px",
-  "type": "css",
-  "selector": "aside",
-  "prop": "height",
-  "value": "500px"
- },
- {
-  "section": "css",
-  "desc": "Bloki sekcji: szerokość 80%",
-  "type": "css",
-  "selector": "section",
-  "prop": "width",
-  "value": "80%",
-  "all": true
- },
- {
-  "section": "css",
-  "desc": "Bloki sekcji: wysokość 250 px",
-  "type": "css",
-  "selector": "section",
-  "prop": "height",
-  "value": "250px",
-  "all": true
- },
- {
-  "section": "css",
-  "desc": "Bloki sekcji: paski przewijania tylko w przypadku przepełnienia",
-  "type": "css",
-  "selector": "section",
-  "prop": "overflow",
-  "value": "auto",
-  "all": true
- },
- {
-  "section": "css",
-  "desc": "Obraz: szerokość 150 px (selektor znacznika)",
-  "type": "cssRule",
-  "selector": "img",
-  "prop": "width",
-  "value": "150px"
- },
- {
-  "section": "css",
-  "desc": "Obraz: marginesy wewnętrzne 2 px (selektor znacznika)",
-  "type": "cssRule",
-  "selector": "img",
-  "prop": "padding",
-  "value": "2px"
- },
- {
-  "section": "css",
-  "desc": "Nagłówek czwartego stopnia: tekst do środka (selektor znacznika)",
-  "type": "cssRule",
-  "selector": "h4",
-  "prop": "text-align",
-  "value": "center"
- },
- {
-  "section": "css",
-  "desc": "Odnośnik: biały kolor czcionki (selektor znacznika)",
-  "type": "cssRule",
-  "selector": "a",
-  "prop": "color",
-  "value": "white"
- },
- {
-  "section": "css",
-  "desc": "Odnośnik: tekst bez podkreślenia (selektor znacznika)",
-  "type": "cssRule",
-  "selector": "a",
-  "prop": "text-decoration",
-  "value": "none"
- },
- {
-  "section": "css",
-  "desc": "Kursor na odnośniku: kolor tła #12538A",
-  "type": "cssRule",
-  "selector": "a:hover",
-  "prop": "background-color",
-  "value": "#12538A",
-  "hint": "odnośniki tworzone skryptem"
- },
- {
-  "section": "css",
-  "desc": "Klasa bloków sekcji: kolor tła #2B6BA0",
-  "type": "cssRule",
-  "selector": ".blok",
-  "prop": "background-color",
-  "value": "#2B6BA0",
-  "hint": "klasa .blok przypisana blokom drugiej sekcji (tworzonym skryptem)"
- },
- {
-  "section": "css",
-  "desc": "Klasa bloków sekcji: biały kolor czcionki",
-  "type": "cssRule",
-  "selector": ".blok",
-  "prop": "color",
-  "value": "white",
-  "hint": "klasa .blok przypisana blokom drugiej sekcji (tworzonym skryptem)"
- },
- {
-  "section": "css",
-  "desc": "Klasa bloków sekcji: szerokość 150 px",
-  "type": "cssRule",
-  "selector": ".blok",
-  "prop": "width",
-  "value": "150px",
-  "hint": "klasa .blok przypisana blokom drugiej sekcji (tworzonym skryptem)"
- },
- {
-  "section": "css",
-  "desc": "Klasa bloków sekcji: wysokość 150 px",
-  "type": "cssRule",
-  "selector": ".blok",
-  "prop": "height",
-  "value": "150px",
-  "hint": "klasa .blok przypisana blokom drugiej sekcji (tworzonym skryptem)"
- },
- {
-  "section": "css",
-  "desc": "Klasa bloków sekcji: marginesy zewnętrzne 10 px",
-  "type": "cssRule",
-  "selector": ".blok",
-  "prop": "margin",
-  "value": "10px",
-  "hint": "klasa .blok przypisana blokom drugiej sekcji (tworzonym skryptem)"
- },
- {
-  "section": "css",
-  "desc": "Klasa bloków sekcji: marginesy wewnętrzne 5 px",
-  "type": "cssRule",
-  "selector": ".blok",
-  "prop": "padding",
-  "value": "5px",
-  "hint": "klasa .blok przypisana blokom drugiej sekcji (tworzonym skryptem)"
- },
- {
-  "section": "css",
-  "desc": "Klasa bloków sekcji: zaokrąglenie rogów 10 px",
-  "type": "cssRule",
-  "selector": ".blok",
-  "prop": "border-radius",
-  "value": "10px",
-  "hint": "klasa .blok przypisana blokom drugiej sekcji (tworzonym skryptem)"
- },
- {
-  "section": "css",
-  "desc": "Klasa bloków sekcji: cień 3 px w obu osiach, rozmycie 5 px, czarny",
-  "type": "cssRule",
-  "selector": ".blok",
-  "prop": "box-shadow",
-  "value": "3px 3px 5px black",
-  "hint": "klasa .blok przypisana blokom drugiej sekcji (tworzonym skryptem)"
- },
- {
-  "section": "css",
-  "desc": "Układ: nagłówek nad blokiem bocznym",
-  "type": "layout",
-  "a": "header",
-  "b": "aside",
-  "relation": "above"
- },
- {
-  "section": "css",
-  "desc": "Układ: blok boczny po lewej od sekcji",
-  "type": "layout",
-  "a": "aside",
-  "b": "section:nth-of-type(1)",
-  "relation": "leftOf"
- },
- {
-  "section": "css",
-  "desc": "Układ: pierwszy blok sekcji nad drugim",
-  "type": "layout",
-  "a": "section:nth-of-type(1)",
-  "b": "section:nth-of-type(2)",
-  "relation": "above"
- },
- {
-  "section": "css",
-  "desc": "Układ: stopka pod blokami",
-  "type": "layout",
-  "a": "footer",
-  "b": "section:nth-of-type(2)",
-  "relation": "below"
- },
- {
-  "section": "css",
-  "desc": "Układ: stopka pod blokiem bocznym",
-  "type": "layout",
-  "a": "footer",
-  "b": "aside",
-  "relation": "below"
- },
- {
-  "section": "css",
-  "desc": "Bloki klasy ustawione obok siebie (np. float: left)",
-  "type": "manual"
- }
+  {"section": "pliki", "desc": "Strona index.php", "type": "file", "name": "index.php"},
+  {"section": "pliki", "desc": "Strona wynik.php", "type": "file", "name": "wynik.php"},
+  {"section": "pliki", "desc": "Arkusz stylów styl.css", "type": "file", "name": "styl.css"},
+  {"section": "html", "desc": "Zapisane w HTML5, polski język, kodowanie UTF-8", "type": "head", "page": "index.php", "lang": "pl", "charset": true},
+  {"section": "html", "desc": "Tytuł strony „Matura”", "type": "head", "page": "index.php", "doctype": false, "title": "Matura"},
+  {"section": "html", "desc": "Arkusz stylów styl.css prawidłowo połączony", "type": "head", "page": "index.php", "doctype": false, "stylesheet": "styl.css"},
+  {"section": "html", "desc": "Bloki semantyczne: nagłówkowy, boczny, dwie sekcje, stopka", "type": "exists", "page": "index.php", "selectors": ["header", "aside", "section", "section", "footer"]},
+  {"section": "html", "desc": "Nagłówek pierwszego stopnia „System informacji dla maturzystów”", "type": "text", "page": "index.php", "selector": "header h1", "equals": "System informacji dla maturzystów"},
+  {"section": "html", "desc": "Blok boczny: trzy grafiki", "type": "exists", "page": "index.php", "selector": "aside img", "count": 3},
+  {"section": "html", "desc": "Blok boczny: grafika 1 ma.jpg", "type": "attr", "page": "index.php", "selector": "aside img", "index": 0, "attr": "src", "equals": "ma.jpg"},
+  {"section": "html", "desc": "Blok boczny: grafika 2 tu.jpg", "type": "attr", "page": "index.php", "selector": "aside img", "index": 1, "attr": "src", "equals": "tu.jpg"},
+  {"section": "html", "desc": "Blok boczny: grafika 3 ra.jpg", "type": "attr", "page": "index.php", "selector": "aside img", "index": 2, "attr": "src", "equals": "ra.jpg"},
+  {"section": "html", "desc": "Grafiki z tekstem alternatywnym „Matura”", "type": "attr", "page": "index.php", "selector": "aside img", "attr": "alt", "equals": "Matura", "all": true},
+  {"section": "php", "desc": "Drugi blok sekcji: cztery bloki z tą samą klasą, w każdym nagłówek czwartego stopnia „Przedmioty”, „Lata”, „Najlepszy wynik”, „Najgorszy wynik”", "type": "php", "page": "index.php"},
+  {"section": "html", "desc": "Stopka: paragraf „Stronę wykonał: ” i numer zdającego", "type": "text", "page": "index.php", "selector": "footer p", "startsWith": "Stronę wykonał:"},
+  {"section": "php", "desc": "Bloki drugiej sekcji: efekt skryptu 1 (przedmioty, lata, najlepszy i najgorszy wynik z %)", "type": "php", "page": "index.php"},
+  {"section": "html", "desc": "Zapisane w HTML5, polski język, kodowanie UTF-8", "type": "head", "page": "wynik.php", "lang": "pl", "charset": true},
+  {"section": "html", "desc": "Tytuł strony „Matura”", "type": "head", "page": "wynik.php", "doctype": false, "title": "Matura"},
+  {"section": "html", "desc": "Arkusz stylów styl.css prawidłowo połączony", "type": "head", "page": "wynik.php", "doctype": false, "stylesheet": "styl.css"},
+  {"section": "html", "desc": "Bloki semantyczne: nagłówkowy, boczny, dwie sekcje, stopka", "type": "exists", "page": "wynik.php", "selectors": ["header", "aside", "section", "section", "footer"]},
+  {"section": "html", "desc": "Nagłówek pierwszego stopnia „System informacji dla maturzystów”", "type": "text", "page": "wynik.php", "selector": "header h1", "equals": "System informacji dla maturzystów"},
+  {"section": "html", "desc": "Blok boczny: trzy grafiki", "type": "exists", "page": "wynik.php", "selector": "aside img", "count": 3},
+  {"section": "html", "desc": "Blok boczny: grafika 1 ma.jpg", "type": "attr", "page": "wynik.php", "selector": "aside img", "index": 0, "attr": "src", "equals": "ma.jpg"},
+  {"section": "html", "desc": "Blok boczny: grafika 2 tu.jpg", "type": "attr", "page": "wynik.php", "selector": "aside img", "index": 1, "attr": "src", "equals": "tu.jpg"},
+  {"section": "html", "desc": "Blok boczny: grafika 3 ra.jpg", "type": "attr", "page": "wynik.php", "selector": "aside img", "index": 2, "attr": "src", "equals": "ra.jpg"},
+  {"section": "html", "desc": "Grafiki z tekstem alternatywnym „Matura”", "type": "attr", "page": "wynik.php", "selector": "aside img", "attr": "alt", "equals": "Matura", "all": true},
+  {"section": "php", "desc": "Drugi blok sekcji: cztery bloki z tą samą klasą, w każdym nagłówek czwartego stopnia „Przedmioty”, „Lata”, „Najlepszy wynik”, „Najgorszy wynik”", "type": "php", "page": "wynik.php"},
+  {"section": "html", "desc": "Stopka: paragraf „Stronę wykonał: ” i numer zdającego", "type": "text", "page": "wynik.php", "selector": "footer p", "startsWith": "Stronę wykonał:"},
+  {"section": "php", "desc": "Bloki drugiej sekcji: efekt skryptu 1 (przedmioty, lata, najlepszy i najgorszy wynik z %)", "type": "php", "page": "wynik.php"},
+  {"section": "html", "desc": "Pierwsza sekcja: nagłówek trzeciego stopnia „Wybierz ucznia z listy:”", "type": "text", "page": "index.php", "selector": "section:nth-of-type(1) h3", "equals": "Wybierz ucznia z listy:"},
+  {"section": "php", "desc": "Skrypt 2: odnośniki „<id>. <imie> <nazwisko>” do wynik.php z parametrami id, imie, nazwisko metodą GET", "type": "php", "page": "index.php"},
+  {"section": "php", "desc": "Skrypt 3: w nagłówku drugiego stopnia imię i nazwisko z GET", "type": "php", "page": "wynik.php"},
+  {"section": "php", "desc": "Skrypt 3: zapytanie 5 dla ucznia o id z GET; h3 z rokiem i sesją, p z „przedmiot: punkty”", "type": "php", "page": "wynik.php"},
+  {"section": "php", "desc": "Połączenie z bazą matura (localhost, root, bez hasła), zamknięcie połączenia, znaczące nazwy zmiennych", "type": "php"},
+  {"section": "css", "desc": "Ciało strony: krój czcionki cursive, w przeciwnym razie sans-serif (selektor znacznika)", "type": "cssRule", "selector": "body", "prop": "font-family", "value": "cursive, sans-serif"},
+  {"section": "css", "desc": "Ciało strony: kolor tła #4682B4 (selektor znacznika)", "type": "cssRule", "selector": "body", "prop": "background-color", "value": "#4682B4"},
+  {"section": "css", "desc": "Blok nagłówkowy: kolor tła #0F0F64", "type": "css", "selector": "header", "prop": "background-color", "value": "#0F0F64"},
+  {"section": "css", "desc": "Blok nagłówkowy: biały kolor czcionki", "type": "css", "selector": "header", "prop": "color", "value": "white"},
+  {"section": "css", "desc": "Blok nagłówkowy: tekst do środka", "type": "css", "selector": "header", "prop": "text-align", "value": "center"},
+  {"section": "css", "desc": "Blok nagłówkowy: marginesy wewnętrzne 3 px", "type": "css", "selector": "header", "prop": "padding", "value": "3px"},
+  {"section": "css", "desc": "Blok stopka: kolor tła #0F0F64", "type": "css", "selector": "footer", "prop": "background-color", "value": "#0F0F64"},
+  {"section": "css", "desc": "Blok stopka: biały kolor czcionki", "type": "css", "selector": "footer", "prop": "color", "value": "white"},
+  {"section": "css", "desc": "Blok stopka: tekst do środka", "type": "css", "selector": "footer", "prop": "text-align", "value": "center"},
+  {"section": "css", "desc": "Blok stopka: marginesy wewnętrzne 3 px", "type": "css", "selector": "footer", "prop": "padding", "value": "3px"},
+  {"section": "css", "desc": "Blok boczny: szerokość 20%", "type": "css", "selector": "aside", "prop": "width", "value": "20%"},
+  {"section": "css", "desc": "Blok boczny: wysokość 500 px", "type": "css", "selector": "aside", "prop": "height", "value": "500px"},
+  {"section": "css", "desc": "Bloki sekcji: szerokość 80%", "type": "css", "selector": "section", "prop": "width", "value": "80%", "all": true},
+  {"section": "css", "desc": "Bloki sekcji: wysokość 250 px", "type": "css", "selector": "section", "prop": "height", "value": "250px", "all": true},
+  {"section": "css", "desc": "Bloki sekcji: paski przewijania tylko w przypadku przepełnienia", "type": "css", "selector": "section", "prop": "overflow", "value": "auto", "all": true},
+  {"section": "css", "desc": "Obraz: szerokość 150 px (selektor znacznika)", "type": "cssRule", "selector": "img", "prop": "width", "value": "150px"},
+  {"section": "css", "desc": "Obraz: marginesy wewnętrzne 2 px (selektor znacznika)", "type": "cssRule", "selector": "img", "prop": "padding", "value": "2px"},
+  {"section": "css", "desc": "Nagłówek czwartego stopnia: tekst do środka (selektor znacznika)", "type": "cssRule", "selector": "h4", "prop": "text-align", "value": "center"},
+  {"section": "css", "desc": "Odnośnik: biały kolor czcionki (selektor znacznika)", "type": "cssRule", "selector": "a", "prop": "color", "value": "white"},
+  {"section": "css", "desc": "Odnośnik: tekst bez podkreślenia (selektor znacznika)", "type": "cssRule", "selector": "a", "prop": "text-decoration", "value": "none"},
+  {"section": "css", "desc": "Kursor na odnośniku: kolor tła #12538A", "type": "cssRule", "selector": "a:hover", "prop": "background-color", "value": "#12538A", "hint": "odnośniki tworzone skryptem"},
+  {"section": "css", "desc": "Klasa bloków sekcji: kolor tła #2B6BA0", "type": "cssRule", "selector": ".blok", "prop": "background-color", "value": "#2B6BA0", "hint": "klasa .blok przypisana blokom drugiej sekcji (tworzonym skryptem)"},
+  {"section": "css", "desc": "Klasa bloków sekcji: biały kolor czcionki", "type": "cssRule", "selector": ".blok", "prop": "color", "value": "white", "hint": "klasa .blok przypisana blokom drugiej sekcji (tworzonym skryptem)"},
+  {"section": "css", "desc": "Klasa bloków sekcji: szerokość 150 px", "type": "cssRule", "selector": ".blok", "prop": "width", "value": "150px", "hint": "klasa .blok przypisana blokom drugiej sekcji (tworzonym skryptem)"},
+  {"section": "css", "desc": "Klasa bloków sekcji: wysokość 150 px", "type": "cssRule", "selector": ".blok", "prop": "height", "value": "150px", "hint": "klasa .blok przypisana blokom drugiej sekcji (tworzonym skryptem)"},
+  {"section": "css", "desc": "Klasa bloków sekcji: marginesy zewnętrzne 10 px", "type": "cssRule", "selector": ".blok", "prop": "margin", "value": "10px", "hint": "klasa .blok przypisana blokom drugiej sekcji (tworzonym skryptem)"},
+  {"section": "css", "desc": "Klasa bloków sekcji: marginesy wewnętrzne 5 px", "type": "cssRule", "selector": ".blok", "prop": "padding", "value": "5px", "hint": "klasa .blok przypisana blokom drugiej sekcji (tworzonym skryptem)"},
+  {"section": "css", "desc": "Klasa bloków sekcji: zaokrąglenie rogów 10 px", "type": "cssRule", "selector": ".blok", "prop": "border-radius", "value": "10px", "hint": "klasa .blok przypisana blokom drugiej sekcji (tworzonym skryptem)"},
+  {"section": "css", "desc": "Klasa bloków sekcji: cień 3 px w obu osiach, rozmycie 5 px, czarny", "type": "cssRule", "selector": ".blok", "prop": "box-shadow", "value": "3px 3px 5px black", "hint": "klasa .blok przypisana blokom drugiej sekcji (tworzonym skryptem)"},
+  {"section": "css", "desc": "Układ: nagłówek nad blokiem bocznym", "type": "layout", "a": "header", "b": "aside", "relation": "above"},
+  {"section": "css", "desc": "Układ: blok boczny po lewej od sekcji", "type": "layout", "a": "aside", "b": "section:nth-of-type(1)", "relation": "leftOf"},
+  {"section": "css", "desc": "Układ: pierwszy blok sekcji nad drugim", "type": "layout", "a": "section:nth-of-type(1)", "b": "section:nth-of-type(2)", "relation": "above"},
+  {"section": "css", "desc": "Układ: stopka pod blokami", "type": "layout", "a": "footer", "b": "section:nth-of-type(2)", "relation": "below"},
+  {"section": "css", "desc": "Układ: stopka pod blokiem bocznym", "type": "layout", "a": "footer", "b": "aside", "relation": "below"},
+  {"section": "css", "desc": "Bloki klasy ustawione obok siebie (np. float: left)", "type": "manual"}
 ]

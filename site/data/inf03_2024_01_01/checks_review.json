@@ -1,0 +1,18 @@
+{
+  "code": "inf03_2024_01_01",
+  "pass": false,
+  "missing": [
+    "Grafika: logo (tło przezroczyste, 100x100 px, napis „IT” niebieski wypełniający grafikę, nazwa logo, format z przezroczystością) - brak kryteriów w sekcji grafika",
+    "Grafika: baner1 i baner2 (tło przezroczyste, 200x1000 px, grafika.jpg przeskalowana do wysokości 200 px i wyrównana do lewej, napis po prawej: „Usługi informatyczne” / „doświadczenie, niezawodność, konkurencyjne ceny”, czcionka szeryfowa, pochylona, niebieska) - brak kryteriów",
+    "Animacja: animacja.gif z klatek baner1 i baner2, opóźnienie 3000 ms - brak kryterium (co najmniej plik/manual; klatki.jpg pomijamy zgodnie ze specyfikacją)"
+  ],
+  "wrong": [
+    {"index": 125, "problem": "Kroki js używają #imie, #nazwisko, #zgloszenie, a treść nie podaje żadnych identyfikatorów, kryterium nie ma hint. Dotyczy też indeksów 126-129 (te same kroki).", "fix": "Zamień selektory na strukturalne: 'main table tr:nth-of-type(1) input' (imię), 'main table tr:nth-of-type(2) input' (nazwisko), 'main table textarea' (zgłoszenie), 'main table input[type=checkbox]'. Zrób to w indeksach 125-129."},
+    {"index": 126, "problem": "Klik 'main table tr:nth-of-type(6) button:last-of-type' zakłada element button, a kryterium HTML (84) dopuszcza też input. Kursant z input type=button nie przejdzie testów js mimo poprawnego skryptu.", "fix": "Użyj 'main table tr:nth-of-type(6) :is(button,input):last-child' albo dodaj hint 'przyciski jako button'. Zrób to w indeksach 125-129."},
+    {"index": 3, "problem": "Kryterium „Plik skrypt.js” wymaga pliku, którego treść arkusza nie wymienia (lista plików: animacja, baner1, baner2, index, klatki, kontakt, logo, przeglądarka, styl, uslugi + „ewentualnie inne”). Skrypt może być w pliku .js o innej nazwie lub inline.", "fix": "Usuń to kryterium albo zamień na kryterium nieblokujące (np. manual). Funkcjonalność skryptu sprawdzają i tak testy js."},
+    {"index": 8, "problem": "Ikona witryny: equals 'logo.png'. Treść wymaga pliku logo w „formacie umożliwiającym zapis przezroczystości” (PNG, GIF, WebP...), więc rozszerzenie jest dowolne. Zaostrzenie wymagań.", "fix": "Użyj 'contains': 'logo.' zamiast equals 'logo.png'. To samo w indeksach 25 i 42."},
+    {"index": 11, "problem": "Obraz logo w bloku logo: equals 'logo.png' - to samo zaostrzenie co wyżej.", "fix": "Użyj 'contains': 'logo.' zamiast equals. To samo w indeksach 28 i 45."},
+    {"index": 22, "problem": "Pierwsze kryterium head dla uslugi.html i kontakt.html (indeks 39) ma doctype:false, więc DOCTYPE (HTML 5, punkt dotyczący wszystkich stron) nie jest tam sprawdzany nigdzie.", "fix": "Usuń 'doctype': false z kryteriów 22 i 39 (zostaw je w kolejnych kryteriach head)."}
+  ],
+  "notes": "Zgodność treści, teksty equals, wartości CSS, hover, układ (header leftOf nav, baner pod, main pod, footer na dole) i manual dla skryptu są w porządku; PHP nie występuje w arkuszu. Walidator: 132 kryteria, wzorzec 100%. Uwagi drobne (nieblokujące): (a) web.graphics w sheet.json jest puste, więc typ image nie jest dostępny; dlatego grafiki trzeba pokryć kryteriami manual w sekcji grafika (albo uzupełnić web.graphics: logo, baner1, baner2, animacja.gif); (b) selektory 'section' i 'section img' dla banera zadziałają błędnie, gdy kontener to section (kryterium podziału dopuszcza body > section), bo trafią w kontener, rozważ 'section:not(:first-child)' lub hint o kontenerze jako div; (c) input[type=text] wymaga jawnego type, pole edycyjne bez type też jest poprawne; (d) kryterium 84 (Prześlij) używa text/contains, dla input[value] może nie zadziałać."
+}

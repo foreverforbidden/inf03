@@ -1,13 +1,8 @@
 {
   "code": "inf03_2026_06_09",
-  "ok": false,
+  "ok": true,
   "total": 79,
   "auto": 78,
   "manual": 1,
-  "problems": [
-    "wzorzec nie spełnia #41 „Sekcja nagłówkowa lewa: szerokość 80%”: width elementu „header section:nth-of-type(1)” = 1011.19px, oczekiwano 80%",
-    "wzorzec nie spełnia #44 „Sekcja nagłówkowa prawa: szerokość 20%”: width elementu „header section:nth-of-type(2)” = 252.797px, oczekiwano 20%",
-    "wzorzec nie spełnia #53 „Lewa sekcja główna: szerokość 25%”: width elementu „main section:nth-of-type(1)” = 316px, oczekiwano 25%",
-    "wzorzec nie spełnia #54 „Prawa sekcja główna: szerokość 75%”: width elementu „main section:nth-of-type(2)” = 948px, oczekiwano 75%"
-  ]
+  "problems": []
 }

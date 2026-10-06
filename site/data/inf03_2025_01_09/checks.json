@@ -4,11 +4,10 @@
   {"section": "grafika", "desc": "Tekst „ZDOBYWCY GÓR” na środku mapy, czcionka szeryfowa, kolor zielony, nie wychodzi poza mapę (ocena wzrokowa)", "type": "manual"},
   {"section": "pliki", "desc": "Strona o nazwie zdobywcy.php", "type": "file", "name": "zdobywcy.php"},
   {"section": "pliki", "desc": "Arkusz stylów styles.css", "type": "file", "name": "styles.css"},
-
   {"section": "html", "desc": "Zapisana w języku HTML5, polski język, kodowanie UTF-8", "type": "head", "lang": "pl", "charset": true},
   {"section": "html", "desc": "Tytuł strony „ZDOBYWCY GÓR”", "type": "head", "doctype": false, "title": "ZDOBYWCY GÓR"},
   {"section": "html", "desc": "Arkusz stylów w pliku styles.css prawidłowo połączony z kodem strony", "type": "head", "doctype": false, "stylesheet": "styles.css"},
-  {"section": "html", "desc": "Podział na blok nagłówkowy, nawigacji, lewy, prawy i stopkę znacznikami semantycznymi", "type": "exists", "selector": "header ~ nav ~ aside ~ main ~ footer", "hint": "blok lewy jako aside, prawy jako main"},
+  {"section": "html", "desc": "Podział na blok nagłówkowy, nawigacji, lewy, prawy i stopkę znacznikami semantycznymi", "type": "exists", "hint": "blok lewy jako aside, prawy jako main", "selectors": ["header", "nav", "aside", "main", "footer"]},
   {"section": "html", "desc": "Blok nagłówkowy: nagłówek pierwszego stopnia „Klub zdobywców gór polskich”", "type": "text", "selector": "header h1", "equals": "Klub zdobywców gór polskich"},
   {"section": "html", "desc": "Blok nawigacji: cztery odnośniki", "type": "exists", "selector": "nav a", "count": 4},
   {"section": "html", "desc": "Odnośnik „kwerenda1”", "type": "text", "selector": "nav a", "index": 0, "equals": "kwerenda1"},
@@ -48,7 +47,6 @@
   {"section": "html", "desc": "Nagłówek tabeli: Funkcja", "type": "text", "selector": "main table th", "index": 2, "equals": "Funkcja"},
   {"section": "html", "desc": "Nagłówek tabeli: Email", "type": "text", "selector": "main table th", "index": 3, "equals": "Email"},
   {"section": "html", "desc": "Stopka: paragraf „Stronę wykonał: ” i numer zdającego", "type": "text", "selector": "footer p", "startsWith": "Stronę wykonał:"},
-
   {"section": "css", "desc": "Ciało strony: kolor tła #DDEEDD (wyłącznie selektor znacznika)", "type": "cssRule", "selector": "body", "prop": "background-color", "value": "#DDEEDD"},
   {"section": "css", "desc": "Ciało strony: krój czcionki Tahoma (wyłącznie selektor znacznika)", "type": "cssRule", "selector": "body", "prop": "font-family", "value": "Tahoma"},
   {"section": "css", "desc": "Ciało strony: wyrównanie tekstu do środka (wyłącznie selektor znacznika)", "type": "cssRule", "selector": "body", "prop": "text-align", "value": "center"},
@@ -83,7 +81,6 @@
   {"section": "css", "desc": "Układ: blok lewy obok bloku prawego", "type": "layout", "a": "aside", "b": "main", "relation": "leftOf"},
   {"section": "css", "desc": "Układ: bloki lewy i prawy w jednym rzędzie", "type": "layout", "a": "aside", "b": "main", "relation": "sameRow"},
   {"section": "css", "desc": "Układ: stopka pod blokami", "type": "layout", "a": "footer", "b": "main", "relation": "below"},
-
   {"section": "php", "desc": "Skrypty łączą się z bazą zdobywcy (localhost, root, bez hasła) i na końcu zamykają połączenie", "type": "php"},
   {"section": "php", "desc": "Skrypt 1: zapytanie 2, kolejne wiersze z bazy w komórkach tabeli", "type": "php"},
   {"section": "php", "desc": "Skrypt 2: zmodyfikowane zapytanie 4 z danymi z formularza, wysyłane tylko gdy podano dane", "type": "php"},

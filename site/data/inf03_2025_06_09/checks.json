@@ -1,661 +1,81 @@
 [
-{
-"section": "grafika",
-"desc": "cegla.jpg: wysokość 60 px (przeskalowana z zachowaniem proporcji)",
-"type": "image",
-"name": "cegla.jpg",
-"height": 60
-},
-{
-"section": "grafika",
-"desc": "tapeta_prawa.png: odbita poziomo wersja tapeta_lewa.png",
-"type": "file",
-"name": "tapeta_prawa.png"
-},
-{
-"section": "pliki",
-"desc": "Strona zlecenia.php",
-"type": "file",
-"name": "zlecenia.php"
-},
-{
-"section": "pliki",
-"desc": "Strona kontakt.html",
-"type": "file",
-"name": "kontakt.html"
-},
-{
-"section": "pliki",
-"desc": "Arkusz stylów styl.css",
-"type": "file",
-"name": "styl.css"
-},
-{
-"section": "html",
-"desc": "Zapisana w języku HTML5, polski język, kodowanie UTF-8",
-"type": "head",
-"lang": "pl",
-"charset": true,
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Tytuł strony „Remonty”",
-"type": "head",
-"doctype": false,
-"title": "Remonty",
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Arkusz stylów styl.css prawidłowo połączony",
-"type": "head",
-"doctype": false,
-"stylesheet": "styl.css",
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"page": "kontakt.html",
-"desc": "W pliku kontakt.html tekst „Strona w budowie”",
-"type": "text",
-"selector": "body",
-"contains": "Strona w budowie"
-},
-{
-"section": "html",
-"desc": "Bloki semantyczne: nagłówkowy, główny, stopka",
-"type": "exists",
-"selector": "header ~ main ~ footer",
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Blok główny zawiera blok nawigacyjny, dwie sekcje, boczny",
-"type": "exists",
-"selector": "main > nav",
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Blok główny: dwie sekcje",
-"type": "exists",
-"selector": "main > section",
-"count": 2,
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Blok główny: blok boczny",
-"type": "exists",
-"selector": "main > aside",
-"count": 1,
-"page": "zlecenia.php"
-},
-{
-"section": "layout",
-"desc": "Układ: nagłówek nad blokiem głównym",
-"type": "layout",
-"a": "header",
-"b": "main",
-"relation": "above",
-"page": "zlecenia.php"
-},
-{
-"section": "layout",
-"desc": "Układ: sekcja lewa obok środkowej",
-"type": "layout",
-"a": "section:nth-of-type(1)",
-"b": "section:nth-of-type(2)",
-"relation": "leftOf",
-"page": "zlecenia.php"
-},
-{
-"section": "layout",
-"desc": "Układ: blok boczny na prawo od bloku nawigacyjnego",
-"type": "layout",
-"a": "aside",
-"b": "nav",
-"relation": "rightOf",
-"page": "zlecenia.php"
-},
-{
-"section": "layout",
-"desc": "Układ: nawigacja nad sekcjami",
-"type": "layout",
-"a": "nav",
-"b": "section:nth-of-type(1)",
-"relation": "above",
-"page": "zlecenia.php"
-},
-{
-"section": "layout",
-"desc": "Układ: stopka pod blokiem głównym",
-"type": "layout",
-"a": "footer",
-"b": "main",
-"relation": "below",
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Nagłówek pierwszego stopnia „Malowanie i gipsowanie” w bloku nagłówkowym",
-"type": "text",
-"selector": "header h1",
-"equals": "Malowanie i gipsowanie",
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Odnośnik „Kontakt” do kontakt.html",
-"type": "text",
-"selector": "nav a",
-"index": 0,
-"equals": "Kontakt",
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Odnośnik do kontakt.html",
-"type": "attr",
-"selector": "nav a",
-"index": 0,
-"attr": "href",
-"equals": "kontakt.html",
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Odnośnik „Partnerzy”",
-"type": "text",
-"selector": "nav a",
-"index": 1,
-"equals": "Partnerzy",
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Odnośnik do https://remonty.pl",
-"type": "attr",
-"selector": "nav a",
-"index": 1,
-"attr": "href",
-"equals": "https://remonty.pl",
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Odnośnik „Partnerzy” otwiera się w nowej karcie",
-"type": "attr",
-"selector": "nav a",
-"index": 1,
-"attr": "target",
-"equals": "_blank",
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Blok boczny: trzy obrazy",
-"type": "exists",
-"selector": "aside img",
-"count": 3,
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Obraz 1 tapeta_lewa.png",
-"type": "attr",
-"selector": "aside img",
-"index": 0,
-"attr": "src",
-"equals": "tapeta_lewa.png",
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Obraz 2 tapeta_prawa.png",
-"type": "attr",
-"selector": "aside img",
-"index": 1,
-"attr": "src",
-"equals": "tapeta_prawa.png",
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Obraz 3 tapeta_lewa.png",
-"type": "attr",
-"selector": "aside img",
-"index": 2,
-"attr": "src",
-"equals": "tapeta_lewa.png",
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Obrazy z tekstem alternatywnym „usługi”",
-"type": "attr",
-"selector": "aside img",
-"all": true,
-"attr": "alt",
-"equals": "usługi",
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Sekcja lewa: nagłówek drugiego stopnia „Dla klientów”",
-"type": "text",
-"selector": "section:nth-of-type(1) h2",
-"equals": "Dla klientów",
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Sekcja lewa: formularz metodą bezpieczną",
-"type": "attr",
-"selector": "section:nth-of-type(1) form",
-"attr": "method",
-"equals": "post",
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Etykieta „Ilu co najmniej pracowników potrzebujesz?”",
-"type": "text",
-"selector": "section:nth-of-type(1) form label",
-"equals": "Ilu co najmniej pracowników potrzebujesz?",
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Pole edycyjne tylko na liczby całkowite",
-"type": "attr",
-"selector": "section:nth-of-type(1) form input",
-"attr": "type",
-"equals": "number",
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Przycisk „Szukaj firm”",
-"type": "exists",
-"selector": "section:nth-of-type(1) form input[type=submit][value='Szukaj firm'], section:nth-of-type(1) form button",
-"page": "zlecenia.php"
-},
-{
-"section": "php",
-"desc": "Skrypt 1: zapytanie 2 z wartością z formularza, paragrafy „<firma>, <liczbaPracownikow> pracowników”, tylko gdy wypełniono formularz",
-"type": "php"
-},
-{
-"section": "html",
-"desc": "Sekcja środkowa: nagłówek drugiego stopnia „Dla wykonawców”",
-"type": "text",
-"selector": "section:nth-of-type(2) h2",
-"equals": "Dla wykonawców",
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Sekcja środkowa: formularz metodą bezpieczną",
-"type": "attr",
-"selector": "section:nth-of-type(2) form",
-"attr": "method",
-"equals": "post",
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Lista rozwijana",
-"type": "exists",
-"selector": "section:nth-of-type(2) form select",
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Dwa pola opcji",
-"type": "exists",
-"selector": "section:nth-of-type(2) form input[type=radio]",
-"count": 2,
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Pole opcji „malowanie”",
-"type": "text",
-"selector": "section:nth-of-type(2) form",
-"contains": "malowanie",
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Pole „malowanie” domyślnie zaznaczone",
-"type": "attr",
-"selector": "section:nth-of-type(2) form input[type=radio]",
-"index": 0,
-"attr": "checked",
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Pole opcji „gipsowanie”",
-"type": "text",
-"selector": "section:nth-of-type(2) form",
-"contains": "gipsowanie",
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Pole „gipsowanie” niezaznaczone domyślnie",
-"type": "attr",
-"selector": "section:nth-of-type(2) form input[type=radio]",
-"index": 1,
-"attr": "checked",
-"absent": true,
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Wybrać można tylko jedno pole opcji (wspólna nazwa)",
-"type": "attr",
-"selector": "section:nth-of-type(2) form input[type=radio]",
-"attr": "name",
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Przycisk „Szukaj klientów”",
-"type": "exists",
-"selector": "section:nth-of-type(2) form input[type=submit][value='Szukaj klientów'], section:nth-of-type(2) form button",
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Lista punktowana (nieuporządkowana)",
-"type": "exists",
-"selector": "section:nth-of-type(2) ul",
-"page": "zlecenia.php"
-},
-{
-"section": "php",
-"desc": "Skrypt 2: lista rozwijana wypełniona miastami z zapytania 3",
-"type": "php"
-},
-{
-"section": "php",
-"desc": "Skrypt 3: zapytanie 4 z miastem i rodzajem z formularza, elementy listy „imię - cena”, tylko gdy wypełniono formularz",
-"type": "php"
-},
-{
-"section": "php",
-"desc": "Skrypty: połączenie localhost, root bez hasła, baza remonty; zamknięcie połączenia na końcu",
-"type": "php"
-},
-{
-"section": "manual",
-"desc": "Znaczące nazewnictwo zmiennych i funkcji",
-"type": "manual"
-},
-{
-"section": "html",
-"desc": "Stopka: paragraf „Stronę wykonał: ” i numer zdającego",
-"type": "text",
-"selector": "footer p",
-"startsWith": "Stronę wykonał:",
-"page": "zlecenia.php"
-},
-{
-"section": "html",
-"desc": "Tekst w stopce w znaczniku tekstu ważnego (strong)",
-"type": "exists",
-"selector": "footer p strong",
-"page": "zlecenia.php"
-},
-{
-"section": "css",
-"desc": "Domyślnie dla wszystkich selektorów: krój czcionki Century Gothic, w przypadku braku Verdana",
-"type": "css",
-"selector": "h2",
-"prop": "font-family",
-"value": "\"Century Gothic\", Verdana",
-"page": "zlecenia.php"
-},
-{
-"section": "css",
-"desc": "Ciało strony: kolor tła #F0EAE2 (wyłącznie selektor znacznika)",
-"type": "cssRule",
-"selector": "body",
-"prop": "background-color",
-"value": "#F0EAE2",
-"page": "zlecenia.php"
-},
-{
-"section": "css",
-"desc": "Nagłówek: tło obraz cegla.jpg",
-"type": "css",
-"selector": "header",
-"prop": "background-image",
-"value": "url(\"cegla.jpg\")",
-"page": "zlecenia.php"
-},
-{
-"section": "css",
-"desc": "Stopka: tło obraz cegla.jpg",
-"type": "css",
-"selector": "footer",
-"prop": "background-image",
-"value": "url(\"cegla.jpg\")",
-"page": "zlecenia.php"
-},
-{
-"section": "css",
-"desc": "Nagłówek: biały kolor czcionki",
-"type": "css",
-"selector": "header",
-"prop": "color",
-"value": "white",
-"page": "zlecenia.php"
-},
-{
-"section": "css",
-"desc": "Stopka: biały kolor czcionki",
-"type": "css",
-"selector": "footer",
-"prop": "color",
-"value": "white",
-"page": "zlecenia.php"
-},
-{
-"section": "css",
-"desc": "Nagłówek: wysokość 60 px",
-"type": "css",
-"selector": "header",
-"prop": "height",
-"value": "60px",
-"page": "zlecenia.php"
-},
-{
-"section": "css",
-"desc": "Stopka: wysokość 60 px",
-"type": "css",
-"selector": "footer",
-"prop": "height",
-"value": "60px",
-"page": "zlecenia.php"
-},
-{
-"section": "css",
-"desc": "Nagłówek: wyrównanie tekstu do środka",
-"type": "css",
-"selector": "header",
-"prop": "text-align",
-"value": "center",
-"page": "zlecenia.php"
-},
-{
-"section": "css",
-"desc": "Stopka: wyrównanie tekstu do środka",
-"type": "css",
-"selector": "footer",
-"prop": "text-align",
-"value": "center",
-"page": "zlecenia.php"
-},
-{
-"section": "css",
-"desc": "Blok nawigacyjny: kolor tła #824555",
-"type": "css",
-"selector": "nav",
-"prop": "background-color",
-"value": "#824555",
-"page": "zlecenia.php"
-},
-{
-"section": "css",
-"desc": "Blok nawigacyjny: szerokość 80%",
-"type": "css",
-"selector": "nav",
-"prop": "width",
-"value": "80%",
-"page": "zlecenia.php"
-},
-{
-"section": "css",
-"desc": "Blok nawigacyjny: wysokość 60 px",
-"type": "css",
-"selector": "nav",
-"prop": "height",
-"value": "60px",
-"page": "zlecenia.php"
-},
-{
-"section": "css",
-"desc": "Blok boczny: szerokość 20%",
-"type": "css",
-"selector": "aside",
-"prop": "width",
-"value": "20%",
-"page": "zlecenia.php"
-},
-{
-"section": "css",
-"desc": "Blok boczny: wysokość 560 px",
-"type": "css",
-"selector": "aside",
-"prop": "height",
-"value": "560px",
-"page": "zlecenia.php"
-},
-{
-"section": "css",
-"desc": "Blok boczny: wyrównanie tekstu do prawej",
-"type": "css",
-"selector": "aside",
-"prop": "text-align",
-"value": "right",
-"page": "zlecenia.php"
-},
-{
-"section": "css",
-"desc": "Blok boczny: zawartość poza blokiem ukryta",
-"type": "css",
-"selector": "aside",
-"prop": "overflow",
-"value": "hidden",
-"page": "zlecenia.php"
-},
-{
-"section": "css",
-"desc": "Obrazy w bloku bocznym: szerokość 100%",
-"type": "css",
-"selector": "aside img",
-"all": true,
-"prop": "width",
-"value": "100%",
-"page": "zlecenia.php"
-},
-{
-"section": "css",
-"desc": "Obie sekcje: szerokość 40%",
-"type": "css",
-"selector": "section",
-"all": true,
-"prop": "width",
-"value": "40%",
-"page": "zlecenia.php"
-},
-{
-"section": "css",
-"desc": "Obie sekcje: wysokość 500 px",
-"type": "css",
-"selector": "section",
-"all": true,
-"prop": "height",
-"value": "500px",
-"page": "zlecenia.php"
-},
-{
-"section": "css",
-"desc": "Obie sekcje: paski przewijania tylko w razie przepełnienia",
-"type": "css",
-"selector": "section",
-"all": true,
-"prop": "overflow",
-"value": "auto",
-"page": "zlecenia.php"
-},
-{
-"section": "css",
-"desc": "Nagłówek drugiego stopnia: wyrównanie do środka (selektor znacznika)",
-"type": "cssRule",
-"selector": "h2",
-"prop": "text-align",
-"value": "center",
-"page": "zlecenia.php"
-},
-{
-"section": "css",
-"desc": "Odnośnik: kolor tekstu #F0EAE2 (selektor znacznika)",
-"type": "cssRule",
-"selector": "a",
-"prop": "color",
-"value": "#F0EAE2",
-"page": "zlecenia.php"
-},
-{
-"section": "css",
-"desc": "Odnośnik: lewy margines wewnętrzny 100 px (selektor znacznika)",
-"type": "cssRule",
-"selector": "a",
-"prop": "padding-left",
-"value": "100px",
-"page": "zlecenia.php"
-},
-{
-"section": "css",
-"desc": "Odnośnik: tylko lewy margines wewnętrzny (prawy 0)",
-"type": "css",
-"selector": "nav a",
-"prop": "padding-right",
-"value": "0px",
-"page": "zlecenia.php"
-},
-{
-"section": "css",
-"desc": "Odnośnik: rozmiar czcionki 180% (selektor znacznika)",
-"type": "cssRule",
-"selector": "a",
-"prop": "font-size",
-"value": "180%",
-"page": "zlecenia.php"
-},
-{
-"section": "css",
-"desc": "Odnośnik po najechaniu: kolor biały",
-"type": "hover",
-"selector": "nav a",
-"prop": "color",
-"value": "white",
-"page": "zlecenia.php"
-}
+  {"section": "grafika", "desc": "cegla.jpg: wysokość 60 px (przeskalowana z zachowaniem proporcji)", "type": "image", "name": "cegla.jpg", "height": 60},
+  {"section": "grafika", "desc": "tapeta_prawa.png: odbita poziomo wersja tapeta_lewa.png", "type": "file", "name": "tapeta_prawa.png"},
+  {"section": "pliki", "desc": "Strona zlecenia.php", "type": "file", "name": "zlecenia.php"},
+  {"section": "pliki", "desc": "Strona kontakt.html", "type": "file", "name": "kontakt.html"},
+  {"section": "pliki", "desc": "Arkusz stylów styl.css", "type": "file", "name": "styl.css"},
+  {"section": "html", "desc": "Zapisana w języku HTML5, polski język, kodowanie UTF-8", "type": "head", "lang": "pl", "charset": true, "page": "zlecenia.php"},
+  {"section": "html", "desc": "Tytuł strony „Remonty”", "type": "head", "doctype": false, "title": "Remonty", "page": "zlecenia.php"},
+  {"section": "html", "desc": "Arkusz stylów styl.css prawidłowo połączony", "type": "head", "doctype": false, "stylesheet": "styl.css", "page": "zlecenia.php"},
+  {"section": "html", "page": "kontakt.html", "desc": "W pliku kontakt.html tekst „Strona w budowie”", "type": "text", "selector": "body", "contains": "Strona w budowie"},
+  {"section": "html", "desc": "Bloki semantyczne: nagłówkowy, główny, stopka", "type": "exists", "page": "zlecenia.php", "selectors": ["header", "main", "footer"]},
+  {"section": "html", "desc": "Blok główny zawiera blok nawigacyjny, dwie sekcje, boczny", "type": "exists", "selector": "main > nav", "page": "zlecenia.php"},
+  {"section": "html", "desc": "Blok główny: dwie sekcje", "type": "exists", "selector": "main > section", "count": 2, "page": "zlecenia.php"},
+  {"section": "html", "desc": "Blok główny: blok boczny", "type": "exists", "selector": "main > aside", "count": 1, "page": "zlecenia.php"},
+  {"section": "layout", "desc": "Układ: nagłówek nad blokiem głównym", "type": "layout", "a": "header", "b": "main", "relation": "above", "page": "zlecenia.php"},
+  {"section": "layout", "desc": "Układ: sekcja lewa obok środkowej", "type": "layout", "a": "section:nth-of-type(1)", "b": "section:nth-of-type(2)", "relation": "leftOf", "page": "zlecenia.php"},
+  {"section": "layout", "desc": "Układ: blok boczny na prawo od bloku nawigacyjnego", "type": "layout", "a": "aside", "b": "nav", "relation": "rightOf", "page": "zlecenia.php"},
+  {"section": "layout", "desc": "Układ: nawigacja nad sekcjami", "type": "layout", "a": "nav", "b": "section:nth-of-type(1)", "relation": "above", "page": "zlecenia.php"},
+  {"section": "layout", "desc": "Układ: stopka pod blokiem głównym", "type": "layout", "a": "footer", "b": "main", "relation": "below", "page": "zlecenia.php"},
+  {"section": "html", "desc": "Nagłówek pierwszego stopnia „Malowanie i gipsowanie” w bloku nagłówkowym", "type": "text", "selector": "header h1", "equals": "Malowanie i gipsowanie", "page": "zlecenia.php"},
+  {"section": "html", "desc": "Odnośnik „Kontakt” do kontakt.html", "type": "text", "selector": "nav a", "index": 0, "equals": "Kontakt", "page": "zlecenia.php"},
+  {"section": "html", "desc": "Odnośnik do kontakt.html", "type": "attr", "selector": "nav a", "index": 0, "attr": "href", "equals": "kontakt.html", "page": "zlecenia.php"},
+  {"section": "html", "desc": "Odnośnik „Partnerzy”", "type": "text", "selector": "nav a", "index": 1, "equals": "Partnerzy", "page": "zlecenia.php"},
+  {"section": "html", "desc": "Odnośnik do https://remonty.pl", "type": "attr", "selector": "nav a", "index": 1, "attr": "href", "equals": "https://remonty.pl", "page": "zlecenia.php"},
+  {"section": "html", "desc": "Odnośnik „Partnerzy” otwiera się w nowej karcie", "type": "attr", "selector": "nav a", "index": 1, "attr": "target", "equals": "_blank", "page": "zlecenia.php"},
+  {"section": "html", "desc": "Blok boczny: trzy obrazy", "type": "exists", "selector": "aside img", "count": 3, "page": "zlecenia.php"},
+  {"section": "html", "desc": "Obraz 1 tapeta_lewa.png", "type": "attr", "selector": "aside img", "index": 0, "attr": "src", "equals": "tapeta_lewa.png", "page": "zlecenia.php"},
+  {"section": "html", "desc": "Obraz 2 tapeta_prawa.png", "type": "attr", "selector": "aside img", "index": 1, "attr": "src", "equals": "tapeta_prawa.png", "page": "zlecenia.php"},
+  {"section": "html", "desc": "Obraz 3 tapeta_lewa.png", "type": "attr", "selector": "aside img", "index": 2, "attr": "src", "equals": "tapeta_lewa.png", "page": "zlecenia.php"},
+  {"section": "html", "desc": "Obrazy z tekstem alternatywnym „usługi”", "type": "attr", "selector": "aside img", "all": true, "attr": "alt", "equals": "usługi", "page": "zlecenia.php"},
+  {"section": "html", "desc": "Sekcja lewa: nagłówek drugiego stopnia „Dla klientów”", "type": "text", "selector": "section:nth-of-type(1) h2", "equals": "Dla klientów", "page": "zlecenia.php"},
+  {"section": "html", "desc": "Sekcja lewa: formularz metodą bezpieczną", "type": "attr", "selector": "section:nth-of-type(1) form", "attr": "method", "equals": "post", "page": "zlecenia.php"},
+  {"section": "html", "desc": "Etykieta „Ilu co najmniej pracowników potrzebujesz?”", "type": "text", "selector": "section:nth-of-type(1) form label", "equals": "Ilu co najmniej pracowników potrzebujesz?", "page": "zlecenia.php"},
+  {"section": "html", "desc": "Pole edycyjne tylko na liczby całkowite", "type": "attr", "selector": "section:nth-of-type(1) form input", "attr": "type", "equals": "number", "page": "zlecenia.php"},
+  {"section": "html", "desc": "Przycisk „Szukaj firm”", "type": "exists", "selector": "section:nth-of-type(1) form input[type=submit][value='Szukaj firm'], section:nth-of-type(1) form button", "page": "zlecenia.php"},
+  {"section": "php", "desc": "Skrypt 1: zapytanie 2 z wartością z formularza, paragrafy „<firma>, <liczbaPracownikow> pracowników”, tylko gdy wypełniono formularz", "type": "php"},
+  {"section": "html", "desc": "Sekcja środkowa: nagłówek drugiego stopnia „Dla wykonawców”", "type": "text", "selector": "section:nth-of-type(2) h2", "equals": "Dla wykonawców", "page": "zlecenia.php"},
+  {"section": "html", "desc": "Sekcja środkowa: formularz metodą bezpieczną", "type": "attr", "selector": "section:nth-of-type(2) form", "attr": "method", "equals": "post", "page": "zlecenia.php"},
+  {"section": "html", "desc": "Lista rozwijana", "type": "exists", "selector": "section:nth-of-type(2) form select", "page": "zlecenia.php"},
+  {"section": "html", "desc": "Dwa pola opcji", "type": "exists", "selector": "section:nth-of-type(2) form input[type=radio]", "count": 2, "page": "zlecenia.php"},
+  {"section": "html", "desc": "Pole opcji „malowanie”", "type": "text", "selector": "section:nth-of-type(2) form", "contains": "malowanie", "page": "zlecenia.php"},
+  {"section": "html", "desc": "Pole „malowanie” domyślnie zaznaczone", "type": "attr", "selector": "section:nth-of-type(2) form input[type=radio]", "index": 0, "attr": "checked", "page": "zlecenia.php"},
+  {"section": "html", "desc": "Pole opcji „gipsowanie”", "type": "text", "selector": "section:nth-of-type(2) form", "contains": "gipsowanie", "page": "zlecenia.php"},
+  {"section": "html", "desc": "Pole „gipsowanie” niezaznaczone domyślnie", "type": "attr", "selector": "section:nth-of-type(2) form input[type=radio]", "index": 1, "attr": "checked", "absent": true, "page": "zlecenia.php"},
+  {"section": "html", "desc": "Wybrać można tylko jedno pole opcji (wspólna nazwa)", "type": "attr", "selector": "section:nth-of-type(2) form input[type=radio]", "attr": "name", "page": "zlecenia.php"},
+  {"section": "html", "desc": "Przycisk „Szukaj klientów”", "type": "exists", "selector": "section:nth-of-type(2) form input[type=submit][value='Szukaj klientów'], section:nth-of-type(2) form button", "page": "zlecenia.php"},
+  {"section": "html", "desc": "Lista punktowana (nieuporządkowana)", "type": "exists", "selector": "section:nth-of-type(2) ul", "page": "zlecenia.php"},
+  {"section": "php", "desc": "Skrypt 2: lista rozwijana wypełniona miastami z zapytania 3", "type": "php"},
+  {"section": "php", "desc": "Skrypt 3: zapytanie 4 z miastem i rodzajem z formularza, elementy listy „imię - cena”, tylko gdy wypełniono formularz", "type": "php"},
+  {"section": "php", "desc": "Skrypty: połączenie localhost, root bez hasła, baza remonty; zamknięcie połączenia na końcu", "type": "php"},
+  {"section": "manual", "desc": "Znaczące nazewnictwo zmiennych i funkcji", "type": "manual"},
+  {"section": "html", "desc": "Stopka: paragraf „Stronę wykonał: ” i numer zdającego", "type": "text", "selector": "footer p", "startsWith": "Stronę wykonał:", "page": "zlecenia.php"},
+  {"section": "html", "desc": "Tekst w stopce w znaczniku tekstu ważnego (strong)", "type": "exists", "selector": "footer p strong", "page": "zlecenia.php"},
+  {"section": "css", "desc": "Domyślnie dla wszystkich selektorów: krój czcionki Century Gothic, w przypadku braku Verdana", "type": "css", "selector": "h2", "prop": "font-family", "value": "\"Century Gothic\", Verdana", "page": "zlecenia.php"},
+  {"section": "css", "desc": "Ciało strony: kolor tła #F0EAE2 (wyłącznie selektor znacznika)", "type": "cssRule", "selector": "body", "prop": "background-color", "value": "#F0EAE2", "page": "zlecenia.php"},
+  {"section": "css", "desc": "Nagłówek: tło obraz cegla.jpg", "type": "css", "selector": "header", "prop": "background-image", "value": "url(\"cegla.jpg\")", "page": "zlecenia.php"},
+  {"section": "css", "desc": "Stopka: tło obraz cegla.jpg", "type": "css", "selector": "footer", "prop": "background-image", "value": "url(\"cegla.jpg\")", "page": "zlecenia.php"},
+  {"section": "css", "desc": "Nagłówek: biały kolor czcionki", "type": "css", "selector": "header", "prop": "color", "value": "white", "page": "zlecenia.php"},
+  {"section": "css", "desc": "Stopka: biały kolor czcionki", "type": "css", "selector": "footer", "prop": "color", "value": "white", "page": "zlecenia.php"},
+  {"section": "css", "desc": "Nagłówek: wysokość 60 px", "type": "css", "selector": "header", "prop": "height", "value": "60px", "page": "zlecenia.php"},
+  {"section": "css", "desc": "Stopka: wysokość 60 px", "type": "css", "selector": "footer", "prop": "height", "value": "60px", "page": "zlecenia.php"},
+  {"section": "css", "desc": "Nagłówek: wyrównanie tekstu do środka", "type": "css", "selector": "header", "prop": "text-align", "value": "center", "page": "zlecenia.php"},
+  {"section": "css", "desc": "Stopka: wyrównanie tekstu do środka", "type": "css", "selector": "footer", "prop": "text-align", "value": "center", "page": "zlecenia.php"},
+  {"section": "css", "desc": "Blok nawigacyjny: kolor tła #824555", "type": "css", "selector": "nav", "prop": "background-color", "value": "#824555", "page": "zlecenia.php"},
+  {"section": "css", "desc": "Blok nawigacyjny: szerokość 80%", "type": "css", "selector": "nav", "prop": "width", "value": "80%", "page": "zlecenia.php"},
+  {"section": "css", "desc": "Blok nawigacyjny: wysokość 60 px", "type": "css", "selector": "nav", "prop": "height", "value": "60px", "page": "zlecenia.php"},
+  {"section": "css", "desc": "Blok boczny: szerokość 20%", "type": "css", "selector": "aside", "prop": "width", "value": "20%", "page": "zlecenia.php"},
+  {"section": "css", "desc": "Blok boczny: wysokość 560 px", "type": "css", "selector": "aside", "prop": "height", "value": "560px", "page": "zlecenia.php"},
+  {"section": "css", "desc": "Blok boczny: wyrównanie tekstu do prawej", "type": "css", "selector": "aside", "prop": "text-align", "value": "right", "page": "zlecenia.php"},
+  {"section": "css", "desc": "Blok boczny: zawartość poza blokiem ukryta", "type": "css", "selector": "aside", "prop": "overflow", "value": "hidden", "page": "zlecenia.php"},
+  {"section": "css", "desc": "Obrazy w bloku bocznym: szerokość 100%", "type": "css", "selector": "aside img", "all": true, "prop": "width", "value": "100%", "page": "zlecenia.php"},
+  {"section": "css", "desc": "Obie sekcje: szerokość 40%", "type": "css", "selector": "section", "all": true, "prop": "width", "value": "40%", "page": "zlecenia.php"},
+  {"section": "css", "desc": "Obie sekcje: wysokość 500 px", "type": "css", "selector": "section", "all": true, "prop": "height", "value": "500px", "page": "zlecenia.php"},
+  {"section": "css", "desc": "Obie sekcje: paski przewijania tylko w razie przepełnienia", "type": "css", "selector": "section", "all": true, "prop": "overflow", "value": "auto", "page": "zlecenia.php"},
+  {"section": "css", "desc": "Nagłówek drugiego stopnia: wyrównanie do środka (selektor znacznika)", "type": "cssRule", "selector": "h2", "prop": "text-align", "value": "center", "page": "zlecenia.php"},
+  {"section": "css", "desc": "Odnośnik: kolor tekstu #F0EAE2 (selektor znacznika)", "type": "cssRule", "selector": "a", "prop": "color", "value": "#F0EAE2", "page": "zlecenia.php"},
+  {"section": "css", "desc": "Odnośnik: lewy margines wewnętrzny 100 px (selektor znacznika)", "type": "cssRule", "selector": "a", "prop": "padding-left", "value": "100px", "page": "zlecenia.php"},
+  {"section": "css", "desc": "Odnośnik: tylko lewy margines wewnętrzny (prawy 0)", "type": "css", "selector": "nav a", "prop": "padding-right", "value": "0px", "page": "zlecenia.php"},
+  {"section": "css", "desc": "Odnośnik: rozmiar czcionki 180% (selektor znacznika)", "type": "cssRule", "selector": "a", "prop": "font-size", "value": "180%", "page": "zlecenia.php"},
+  {"section": "css", "desc": "Odnośnik po najechaniu: kolor biały", "type": "hover", "selector": "nav a", "prop": "color", "value": "white", "page": "zlecenia.php"}
 ]

@@ -1,571 +1,79 @@
 [
- {
-  "section": "pliki",
-  "desc": "Strona index.php",
-  "type": "file",
-  "name": "index.php"
- },
- {
-  "section": "pliki",
-  "desc": "Arkusz stylów styl.css",
-  "type": "file",
-  "name": "styl.css"
- },
- {
-  "section": "html",
-  "desc": "Zapisana w języku HTML5, polski język, kodowanie UTF-8",
-  "type": "head",
-  "lang": "pl",
-  "charset": true
- },
- {
-  "section": "html",
-  "desc": "Tytuł strony „ZGŁOSZENIA”",
-  "type": "head",
-  "doctype": false,
-  "title": "ZGŁOSZENIA"
- },
- {
-  "section": "html",
-  "desc": "Arkusz stylów styl.css połączony z kodem strony",
-  "type": "head",
-  "doctype": false,
-  "stylesheet": "styl.css"
- },
- {
-  "section": "html",
-  "desc": "Bloki semantyczne: nagłówkowy, główny, stopka",
-  "type": "exists",
-  "selector": "header ~ main ~ footer"
- },
- {
-  "section": "html",
-  "desc": "Blok główny z blokami sekcji lewej i prawej",
-  "type": "exists",
-  "selector": "main > section",
-  "count": 2,
-  "hint": "bloki sekcji jako section w main"
- },
- {
-  "section": "html",
-  "desc": "Nagłówek pierwszego stopnia „Zgłoszenia wydarzeń” w bloku nagłówkowym",
-  "type": "text",
-  "selector": "header h1",
-  "equals": "Zgłoszenia wydarzeń"
- },
- {
-  "section": "html",
-  "desc": "Sekcja lewa: nagłówek drugiego stopnia „Personel”",
-  "type": "text",
-  "selector": "main section:nth-of-type(1) h2",
-  "equals": "Personel"
- },
- {
-  "section": "html",
-  "desc": "Sekcja lewa: formularz metodą bezpieczną",
-  "type": "attr",
-  "selector": "main section:nth-of-type(1) form",
-  "attr": "method",
-  "equals": "post"
- },
- {
-  "section": "html",
-  "desc": "Sekcja lewa: formularz wysyłający do tego samego pliku",
-  "type": "attr",
-  "selector": "main section:nth-of-type(1) form",
-  "attr": "action",
-  "contains": "index.php",
-  "hint": "action=\"index.php\""
- },
- {
-  "section": "html",
-  "desc": "Pole opcji „Policjant”, domyślnie zaznaczone",
-  "type": "attr",
-  "selector": "main section:nth-of-type(1) form input[type=radio]",
-  "index": 0,
-  "attr": "checked"
- },
- {
-  "section": "html",
-  "desc": "Pole opcji „Ratownik”",
-  "type": "exists",
-  "selector": "main section:nth-of-type(1) form input[type=radio]",
-  "count": 2
- },
- {
-  "section": "html",
-  "desc": "Tekst „Policjant” przy polu opcji",
-  "type": "text",
-  "selector": "main section:nth-of-type(1) form",
-  "contains": "Policjant"
- },
- {
-  "section": "html",
-  "desc": "Tekst „Ratownik” przy polu opcji",
-  "type": "text",
-  "selector": "main section:nth-of-type(1) form",
-  "contains": "Ratownik"
- },
- {
-  "section": "html",
-  "desc": "Tylko jedno pole opcji zaznaczone naraz (wspólny atrybut name)",
-  "type": "attr",
-  "selector": "main section:nth-of-type(1) form input[type=radio]",
-  "attr": "name",
-  "equals": "status",
-  "all": true,
-  "hint": "oba pola opcji z name=\"status\""
- },
- {
-  "section": "html",
-  "desc": "Przycisk „Pokaż”",
-  "type": "exists",
-  "selector": "main section:nth-of-type(1) form input[type=submit][value='Pokaż'], main section:nth-of-type(1) form button"
- },
- {
-  "section": "html",
-  "desc": "Przycisk „Pokaż” – treść",
-  "type": "text",
-  "selector": "main section:nth-of-type(1) form button",
-  "equals": "Pokaż"
- },
- {
-  "section": "php",
-  "desc": "Tabela z trzema kolumnami",
-  "type": "php"
- },
- {
-  "section": "php",
-  "desc": "Komórka nagłówkowa „Id”",
-  "type": "php"
- },
- {
-  "section": "php",
-  "desc": "Komórka nagłówkowa „Imię”",
-  "type": "php"
- },
- {
-  "section": "php",
-  "desc": "Komórka nagłówkowa „Nazwisko”",
-  "type": "php"
- },
- {
-  "section": "php",
-  "desc": "Skrypt 1: wiersze tabeli z zapytania 1 dla wybranej opcji (domyślnie policjant)",
-  "type": "php"
- },
- {
-  "section": "php",
-  "desc": "Skrypt 1: nagłówek trzeciego stopnia „Wybrano opcję: <opcja>” przed tabelą",
-  "type": "php"
- },
- {
-  "section": "php",
-  "desc": "Nagłówek h3 przed tabelą",
-  "type": "php"
- },
- {
-  "section": "html",
-  "desc": "Sekcja prawa: nagłówek drugiego stopnia „Nowe zgłoszenie”",
-  "type": "text",
-  "selector": "main section:nth-of-type(2) h2",
-  "equals": "Nowe zgłoszenie"
- },
- {
-  "section": "html",
-  "desc": "Sekcja prawa: lista numerowana (uporządkowana)",
-  "type": "exists",
-  "selector": "main section:nth-of-type(2) ol"
- },
- {
-  "section": "php",
-  "desc": "Skrypt 2: elementy listy z zapytania 3",
-  "type": "php"
- },
- {
-  "section": "html",
-  "desc": "Sekcja prawa: formularz metodą bezpieczną",
-  "type": "attr",
-  "selector": "main section:nth-of-type(2) form",
-  "attr": "method",
-  "equals": "post"
- },
- {
-  "section": "html",
-  "desc": "Sekcja prawa: formularz wysyłający do tego samego pliku",
-  "type": "attr",
-  "selector": "main section:nth-of-type(2) form",
-  "attr": "action",
-  "contains": "index.php",
-  "hint": "action=\"index.php\""
- },
- {
-  "section": "html",
-  "desc": "Etykieta „Wybierz id osoby z listy: ”",
-  "type": "text",
-  "selector": "main section:nth-of-type(2) form label",
-  "startsWith": "Wybierz id osoby z listy:"
- },
- {
-  "section": "html",
-  "desc": "Etykieta powiązana z polem edycyjnym (for)",
-  "type": "attr",
-  "selector": "main section:nth-of-type(2) form label",
-  "attr": "for"
- },
- {
-  "section": "html",
-  "desc": "Pole edycyjne do wpisywania liczb",
-  "type": "exists",
-  "selector": "main section:nth-of-type(2) form input[type=number]"
- },
- {
-  "section": "html",
-  "desc": "Przycisk „Dodaj zgłoszenie”",
-  "type": "text",
-  "selector": "main section:nth-of-type(2) form button",
-  "equals": "Dodaj zgłoszenie",
-  "hint": "przycisk jako button lub input[type=submit] z value"
- },
- {
-  "section": "php",
-  "desc": "Skrypt 3: po wysłaniu formularza zmodyfikowane zapytanie 4 z id personelu z formularza",
-  "type": "php"
- },
- {
-  "section": "html",
-  "desc": "Stopka: paragraf „Stronę wykonał: ” i numer zdającego",
-  "type": "text",
-  "selector": "footer p",
-  "startsWith": "Stronę wykonał:"
- },
- {
-  "section": "css",
-  "desc": "Domyślnie dla wszystkich selektorów: krój czcionki Tahoma",
-  "type": "css",
-  "selector": "h2",
-  "prop": "font-family",
-  "value": "Tahoma"
- },
- {
-  "section": "css",
-  "desc": "Nagłówek i stopka: kolor tła Maroon",
-  "type": "css",
-  "selector": "header",
-  "prop": "background-color",
-  "value": "Maroon"
- },
- {
-  "section": "css",
-  "desc": "Stopka: kolor tła Maroon",
-  "type": "css",
-  "selector": "footer",
-  "prop": "background-color",
-  "value": "Maroon"
- },
- {
-  "section": "css",
-  "desc": "Nagłówek: biały kolor czcionki",
-  "type": "css",
-  "selector": "header",
-  "prop": "color",
-  "value": "white"
- },
- {
-  "section": "css",
-  "desc": "Stopka: biały kolor czcionki",
-  "type": "css",
-  "selector": "footer",
-  "prop": "color",
-  "value": "white"
- },
- {
-  "section": "css",
-  "desc": "Nagłówek: marginesy wewnętrzne 10 px",
-  "type": "css",
-  "selector": "header",
-  "prop": "padding",
-  "value": "10px"
- },
- {
-  "section": "css",
-  "desc": "Stopka: marginesy wewnętrzne 10 px",
-  "type": "css",
-  "selector": "footer",
-  "prop": "padding",
-  "value": "10px"
- },
- {
-  "section": "css",
-  "desc": "Sekcja lewa: szerokość 50%",
-  "type": "css",
-  "selector": "main section:nth-of-type(1)",
-  "prop": "width",
-  "value": "50%"
- },
- {
-  "section": "css",
-  "desc": "Sekcja lewa: wysokość 500 px",
-  "type": "css",
-  "selector": "main section:nth-of-type(1)",
-  "prop": "height",
-  "value": "500px"
- },
- {
-  "section": "css",
-  "desc": "Sekcja prawa: szerokość 50%",
-  "type": "css",
-  "selector": "main section:nth-of-type(2)",
-  "prop": "width",
-  "value": "50%"
- },
- {
-  "section": "css",
-  "desc": "Sekcja prawa: wysokość 500 px",
-  "type": "css",
-  "selector": "main section:nth-of-type(2)",
-  "prop": "height",
-  "value": "500px"
- },
- {
-  "section": "css",
-  "desc": "Sekcja lewa: kolor tła LightSalmon",
-  "type": "css",
-  "selector": "main section:nth-of-type(1)",
-  "prop": "background-color",
-  "value": "LightSalmon"
- },
- {
-  "section": "css",
-  "desc": "Sekcja prawa: kolor tła DarkSalmon",
-  "type": "css",
-  "selector": "main section:nth-of-type(2)",
-  "prop": "background-color",
-  "value": "DarkSalmon"
- },
- {
-  "section": "css",
-  "desc": "Nagłówek h1: wyrównanie do środka (wyłącznie selektor znacznika)",
-  "type": "cssRule",
-  "selector": "h1",
-  "prop": "text-align",
-  "value": "center"
- },
- {
-  "section": "css",
-  "desc": "Nagłówek h2: wyrównanie do środka (wyłącznie selektor znacznika)",
-  "type": "cssRule",
-  "selector": "h2",
-  "prop": "text-align",
-  "value": "center"
- },
- {
-  "section": "css",
-  "desc": "Nagłówek h3: wyrównanie do środka (wyłącznie selektor znacznika)",
-  "type": "cssRule",
-  "selector": "h3",
-  "prop": "text-align",
-  "value": "center"
- },
- {
-  "section": "css",
-  "desc": "Selektor table: obramowanie linią ciągłą 1 px Maroon (wyłącznie selektor znacznika)",
-  "type": "cssRule",
-  "selector": "table",
-  "prop": "border",
-  "value": "1px solid Maroon"
- },
- {
-  "section": "css",
-  "desc": "Selektor td: obramowanie linią ciągłą 1 px Maroon (wyłącznie selektor znacznika)",
-  "type": "cssRule",
-  "selector": "td",
-  "prop": "border",
-  "value": "1px solid Maroon"
- },
- {
-  "section": "css",
-  "desc": "Tabela: szerokość 85%",
-  "type": "cssRule",
-  "selector": "table",
-  "prop": "width",
-  "value": "85%"
- },
- {
-  "section": "css",
-  "desc": "Tabela: krawędzie połączone w jedno obramowanie",
-  "type": "cssRule",
-  "selector": "table",
-  "prop": "border-collapse",
-  "value": "collapse"
- },
- {
-  "section": "css",
-  "desc": "Tabela: marginesy zewnętrzne wyliczane automatycznie",
-  "type": "cssRule",
-  "selector": "table",
-  "prop": "margin",
-  "value": "auto"
- },
- {
-  "section": "css",
-  "desc": "Lista numerowana: brak punktora",
-  "type": "css",
-  "selector": "ol",
-  "prop": "list-style-type",
-  "value": "none"
- },
- {
-  "section": "css",
-  "desc": "Przyciski: background-color Maroon",
-  "type": "css",
-  "selector": "section button, section input[type=submit]",
-  "all": true,
-  "prop": "background-color",
-  "value": "Maroon"
- },
- {
-  "section": "css",
-  "desc": "Przyciski: color white",
-  "type": "css",
-  "selector": "section button, section input[type=submit]",
-  "all": true,
-  "prop": "color",
-  "value": "white"
- },
- {
-  "section": "css",
-  "desc": "Przyciski: margin-left 20px",
-  "type": "css",
-  "selector": "section button, section input[type=submit]",
-  "all": true,
-  "prop": "margin-left",
-  "value": "20px"
- },
- {
-  "section": "css",
-  "desc": "Przyciski: margin-top 0px",
-  "type": "css",
-  "selector": "section button, section input[type=submit]",
-  "all": true,
-  "prop": "margin-top",
-  "value": "0px"
- },
- {
-  "section": "css",
-  "desc": "Przyciski: margin-right 0px",
-  "type": "css",
-  "selector": "section button, section input[type=submit]",
-  "all": true,
-  "prop": "margin-right",
-  "value": "0px"
- },
- {
-  "section": "css",
-  "desc": "Przyciski: margin-bottom 0px",
-  "type": "css",
-  "selector": "section button, section input[type=submit]",
-  "all": true,
-  "prop": "margin-bottom",
-  "value": "0px"
- },
- {
-  "section": "css",
-  "desc": "Przyciski: padding 10px",
-  "type": "css",
-  "selector": "section button, section input[type=submit]",
-  "all": true,
-  "prop": "padding",
-  "value": "10px"
- },
- {
-  "section": "css",
-  "desc": "Przyciski: border-top-style none",
-  "type": "css",
-  "selector": "section button, section input[type=submit]",
-  "all": true,
-  "prop": "border-top-style",
-  "value": "none"
- },
- {
-  "section": "css",
-  "desc": "Przyciski: border-top-left-radius 20px",
-  "type": "css",
-  "selector": "section button, section input[type=submit]",
-  "all": true,
-  "prop": "border-top-left-radius",
-  "value": "20px"
- },
- {
-  "section": "css",
-  "desc": "Kursor na przycisku: kolor tła biały",
-  "type": "hover",
-  "selector": "section button, section input[type=submit]",
-  "prop": "background-color",
-  "value": "white"
- },
- {
-  "section": "css",
-  "desc": "Kursor na przycisku: kolor czcionki Maroon",
-  "type": "hover",
-  "selector": "section button, section input[type=submit]",
-  "prop": "color",
-  "value": "Maroon"
- },
- {
-  "section": "css",
-  "desc": "Układ: blok nagłówkowy nad blokiem głównym",
-  "type": "layout",
-  "a": "header",
-  "b": "main",
-  "relation": "above"
- },
- {
-  "section": "css",
-  "desc": "Układ: sekcja lewa i prawa w jednym rzędzie",
-  "type": "layout",
-  "a": "main section:nth-of-type(1)",
-  "b": "main section:nth-of-type(2)",
-  "relation": "sameRow"
- },
- {
-  "section": "css",
-  "desc": "Układ: sekcja lewa po lewej od prawej",
-  "type": "layout",
-  "a": "main section:nth-of-type(1)",
-  "b": "main section:nth-of-type(2)",
-  "relation": "leftOf"
- },
- {
-  "section": "css",
-  "desc": "Układ: stopka pod blokami sekcji",
-  "type": "layout",
-  "a": "footer",
-  "b": "main section:nth-of-type(1)",
-  "relation": "below"
- },
- {
-  "section": "css",
-  "desc": "Układ: nagłówek na całą szerokość",
-  "type": "layout",
-  "a": "header",
-  "relation": "fullWidth"
- },
- {
-  "section": "css",
-  "desc": "Układ: stopka na całą szerokość",
-  "type": "layout",
-  "a": "footer",
-  "relation": "fullWidth"
- },
- {
-  "section": "php",
-  "desc": "Skrypty łączą się z bazą zgloszenia (localhost, root, bez hasła) i na końcu zamykają połączenie",
-  "type": "php"
- },
- {
-  "section": "manual",
-  "desc": "Znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim",
-  "type": "manual"
- }
+  {"section": "pliki", "desc": "Strona index.php", "type": "file", "name": "index.php"},
+  {"section": "pliki", "desc": "Arkusz stylów styl.css", "type": "file", "name": "styl.css"},
+  {"section": "html", "desc": "Zapisana w języku HTML5, polski język, kodowanie UTF-8", "type": "head", "lang": "pl", "charset": true},
+  {"section": "html", "desc": "Tytuł strony „ZGŁOSZENIA”", "type": "head", "doctype": false, "title": "ZGŁOSZENIA"},
+  {"section": "html", "desc": "Arkusz stylów styl.css połączony z kodem strony", "type": "head", "doctype": false, "stylesheet": "styl.css"},
+  {"section": "html", "desc": "Bloki semantyczne: nagłówkowy, główny, stopka", "type": "exists", "selectors": ["header", "main", "footer"]},
+  {"section": "html", "desc": "Blok główny z blokami sekcji lewej i prawej", "type": "exists", "selector": "main > section", "count": 2, "hint": "bloki sekcji jako section w main"},
+  {"section": "html", "desc": "Nagłówek pierwszego stopnia „Zgłoszenia wydarzeń” w bloku nagłówkowym", "type": "text", "selector": "header h1", "equals": "Zgłoszenia wydarzeń"},
+  {"section": "html", "desc": "Sekcja lewa: nagłówek drugiego stopnia „Personel”", "type": "text", "selector": "main section:nth-of-type(1) h2", "equals": "Personel"},
+  {"section": "html", "desc": "Sekcja lewa: formularz metodą bezpieczną", "type": "attr", "selector": "main section:nth-of-type(1) form", "attr": "method", "equals": "post"},
+  {"section": "html", "desc": "Sekcja lewa: formularz wysyłający do tego samego pliku", "type": "attr", "selector": "main section:nth-of-type(1) form", "attr": "action", "contains": "index.php", "hint": "action=\"index.php\""},
+  {"section": "html", "desc": "Pole opcji „Policjant”, domyślnie zaznaczone", "type": "attr", "selector": "main section:nth-of-type(1) form input[type=radio]", "index": 0, "attr": "checked"},
+  {"section": "html", "desc": "Pole opcji „Ratownik”", "type": "exists", "selector": "main section:nth-of-type(1) form input[type=radio]", "count": 2},
+  {"section": "html", "desc": "Tekst „Policjant” przy polu opcji", "type": "text", "selector": "main section:nth-of-type(1) form", "contains": "Policjant"},
+  {"section": "html", "desc": "Tekst „Ratownik” przy polu opcji", "type": "text", "selector": "main section:nth-of-type(1) form", "contains": "Ratownik"},
+  {"section": "html", "desc": "Tylko jedno pole opcji zaznaczone naraz (wspólny atrybut name)", "type": "attr", "selector": "main section:nth-of-type(1) form input[type=radio]", "attr": "name", "equals": "status", "all": true, "hint": "oba pola opcji z name=\"status\""},
+  {"section": "html", "desc": "Przycisk „Pokaż”", "type": "exists", "selector": "main section:nth-of-type(1) form input[type=submit][value='Pokaż'], main section:nth-of-type(1) form button"},
+  {"section": "html", "desc": "Przycisk „Pokaż” – treść", "type": "text", "selector": "main section:nth-of-type(1) form button", "equals": "Pokaż"},
+  {"section": "php", "desc": "Tabela z trzema kolumnami", "type": "php"},
+  {"section": "php", "desc": "Komórka nagłówkowa „Id”", "type": "php"},
+  {"section": "php", "desc": "Komórka nagłówkowa „Imię”", "type": "php"},
+  {"section": "php", "desc": "Komórka nagłówkowa „Nazwisko”", "type": "php"},
+  {"section": "php", "desc": "Skrypt 1: wiersze tabeli z zapytania 1 dla wybranej opcji (domyślnie policjant)", "type": "php"},
+  {"section": "php", "desc": "Skrypt 1: nagłówek trzeciego stopnia „Wybrano opcję: <opcja>” przed tabelą", "type": "php"},
+  {"section": "php", "desc": "Nagłówek h3 przed tabelą", "type": "php"},
+  {"section": "html", "desc": "Sekcja prawa: nagłówek drugiego stopnia „Nowe zgłoszenie”", "type": "text", "selector": "main section:nth-of-type(2) h2", "equals": "Nowe zgłoszenie"},
+  {"section": "html", "desc": "Sekcja prawa: lista numerowana (uporządkowana)", "type": "exists", "selector": "main section:nth-of-type(2) ol"},
+  {"section": "php", "desc": "Skrypt 2: elementy listy z zapytania 3", "type": "php"},
+  {"section": "html", "desc": "Sekcja prawa: formularz metodą bezpieczną", "type": "attr", "selector": "main section:nth-of-type(2) form", "attr": "method", "equals": "post"},
+  {"section": "html", "desc": "Sekcja prawa: formularz wysyłający do tego samego pliku", "type": "attr", "selector": "main section:nth-of-type(2) form", "attr": "action", "contains": "index.php", "hint": "action=\"index.php\""},
+  {"section": "html", "desc": "Etykieta „Wybierz id osoby z listy: ”", "type": "text", "selector": "main section:nth-of-type(2) form label", "startsWith": "Wybierz id osoby z listy:"},
+  {"section": "html", "desc": "Etykieta powiązana z polem edycyjnym (for)", "type": "attr", "selector": "main section:nth-of-type(2) form label", "attr": "for"},
+  {"section": "html", "desc": "Pole edycyjne do wpisywania liczb", "type": "exists", "selector": "main section:nth-of-type(2) form input[type=number]"},
+  {"section": "html", "desc": "Przycisk „Dodaj zgłoszenie”", "type": "text", "selector": "main section:nth-of-type(2) form button", "equals": "Dodaj zgłoszenie", "hint": "przycisk jako button lub input[type=submit] z value"},
+  {"section": "php", "desc": "Skrypt 3: po wysłaniu formularza zmodyfikowane zapytanie 4 z id personelu z formularza", "type": "php"},
+  {"section": "html", "desc": "Stopka: paragraf „Stronę wykonał: ” i numer zdającego", "type": "text", "selector": "footer p", "startsWith": "Stronę wykonał:"},
+  {"section": "css", "desc": "Domyślnie dla wszystkich selektorów: krój czcionki Tahoma", "type": "css", "selector": "h2", "prop": "font-family", "value": "Tahoma"},
+  {"section": "css", "desc": "Nagłówek i stopka: kolor tła Maroon", "type": "css", "selector": "header", "prop": "background-color", "value": "Maroon"},
+  {"section": "css", "desc": "Stopka: kolor tła Maroon", "type": "css", "selector": "footer", "prop": "background-color", "value": "Maroon"},
+  {"section": "css", "desc": "Nagłówek: biały kolor czcionki", "type": "css", "selector": "header", "prop": "color", "value": "white"},
+  {"section": "css", "desc": "Stopka: biały kolor czcionki", "type": "css", "selector": "footer", "prop": "color", "value": "white"},
+  {"section": "css", "desc": "Nagłówek: marginesy wewnętrzne 10 px", "type": "css", "selector": "header", "prop": "padding", "value": "10px"},
+  {"section": "css", "desc": "Stopka: marginesy wewnętrzne 10 px", "type": "css", "selector": "footer", "prop": "padding", "value": "10px"},
+  {"section": "css", "desc": "Sekcja lewa: szerokość 50%", "type": "css", "selector": "main section:nth-of-type(1)", "prop": "width", "value": "50%"},
+  {"section": "css", "desc": "Sekcja lewa: wysokość 500 px", "type": "css", "selector": "main section:nth-of-type(1)", "prop": "height", "value": "500px"},
+  {"section": "css", "desc": "Sekcja prawa: szerokość 50%", "type": "css", "selector": "main section:nth-of-type(2)", "prop": "width", "value": "50%"},
+  {"section": "css", "desc": "Sekcja prawa: wysokość 500 px", "type": "css", "selector": "main section:nth-of-type(2)", "prop": "height", "value": "500px"},
+  {"section": "css", "desc": "Sekcja lewa: kolor tła LightSalmon", "type": "css", "selector": "main section:nth-of-type(1)", "prop": "background-color", "value": "LightSalmon"},
+  {"section": "css", "desc": "Sekcja prawa: kolor tła DarkSalmon", "type": "css", "selector": "main section:nth-of-type(2)", "prop": "background-color", "value": "DarkSalmon"},
+  {"section": "css", "desc": "Nagłówek h1: wyrównanie do środka (wyłącznie selektor znacznika)", "type": "cssRule", "selector": "h1", "prop": "text-align", "value": "center"},
+  {"section": "css", "desc": "Nagłówek h2: wyrównanie do środka (wyłącznie selektor znacznika)", "type": "cssRule", "selector": "h2", "prop": "text-align", "value": "center"},
+  {"section": "css", "desc": "Nagłówek h3: wyrównanie do środka (wyłącznie selektor znacznika)", "type": "cssRule", "selector": "h3", "prop": "text-align", "value": "center"},
+  {"section": "css", "desc": "Selektor table: obramowanie linią ciągłą 1 px Maroon (wyłącznie selektor znacznika)", "type": "cssRule", "selector": "table", "prop": "border", "value": "1px solid Maroon"},
+  {"section": "css", "desc": "Selektor td: obramowanie linią ciągłą 1 px Maroon (wyłącznie selektor znacznika)", "type": "cssRule", "selector": "td", "prop": "border", "value": "1px solid Maroon"},
+  {"section": "css", "desc": "Tabela: szerokość 85%", "type": "cssRule", "selector": "table", "prop": "width", "value": "85%"},
+  {"section": "css", "desc": "Tabela: krawędzie połączone w jedno obramowanie", "type": "cssRule", "selector": "table", "prop": "border-collapse", "value": "collapse"},
+  {"section": "css", "desc": "Tabela: marginesy zewnętrzne wyliczane automatycznie", "type": "cssRule", "selector": "table", "prop": "margin", "value": "auto"},
+  {"section": "css", "desc": "Lista numerowana: brak punktora", "type": "css", "selector": "ol", "prop": "list-style-type", "value": "none"},
+  {"section": "css", "desc": "Przyciski: background-color Maroon", "type": "css", "selector": "section button, section input[type=submit]", "all": true, "prop": "background-color", "value": "Maroon"},
+  {"section": "css", "desc": "Przyciski: color white", "type": "css", "selector": "section button, section input[type=submit]", "all": true, "prop": "color", "value": "white"},
+  {"section": "css", "desc": "Przyciski: margin-left 20px", "type": "css", "selector": "section button, section input[type=submit]", "all": true, "prop": "margin-left", "value": "20px"},
+  {"section": "css", "desc": "Przyciski: margin-top 0px", "type": "css", "selector": "section button, section input[type=submit]", "all": true, "prop": "margin-top", "value": "0px"},
+  {"section": "css", "desc": "Przyciski: margin-right 0px", "type": "css", "selector": "section button, section input[type=submit]", "all": true, "prop": "margin-right", "value": "0px"},
+  {"section": "css", "desc": "Przyciski: margin-bottom 0px", "type": "css", "selector": "section button, section input[type=submit]", "all": true, "prop": "margin-bottom", "value": "0px"},
+  {"section": "css", "desc": "Przyciski: padding 10px", "type": "css", "selector": "section button, section input[type=submit]", "all": true, "prop": "padding", "value": "10px"},
+  {"section": "css", "desc": "Przyciski: border-top-style none", "type": "css", "selector": "section button, section input[type=submit]", "all": true, "prop": "border-top-style", "value": "none"},
+  {"section": "css", "desc": "Przyciski: border-top-left-radius 20px", "type": "css", "selector": "section button, section input[type=submit]", "all": true, "prop": "border-top-left-radius", "value": "20px"},
+  {"section": "css", "desc": "Kursor na przycisku: kolor tła biały", "type": "hover", "selector": "section button, section input[type=submit]", "prop": "background-color", "value": "white"},
+  {"section": "css", "desc": "Kursor na przycisku: kolor czcionki Maroon", "type": "hover", "selector": "section button, section input[type=submit]", "prop": "color", "value": "Maroon"},
+  {"section": "css", "desc": "Układ: blok nagłówkowy nad blokiem głównym", "type": "layout", "a": "header", "b": "main", "relation": "above"},
+  {"section": "css", "desc": "Układ: sekcja lewa i prawa w jednym rzędzie", "type": "layout", "a": "main section:nth-of-type(1)", "b": "main section:nth-of-type(2)", "relation": "sameRow"},
+  {"section": "css", "desc": "Układ: sekcja lewa po lewej od prawej", "type": "layout", "a": "main section:nth-of-type(1)", "b": "main section:nth-of-type(2)", "relation": "leftOf"},
+  {"section": "css", "desc": "Układ: stopka pod blokami sekcji", "type": "layout", "a": "footer", "b": "main section:nth-of-type(1)", "relation": "below"},
+  {"section": "css", "desc": "Układ: nagłówek na całą szerokość", "type": "layout", "a": "header", "relation": "fullWidth"},
+  {"section": "css", "desc": "Układ: stopka na całą szerokość", "type": "layout", "a": "footer", "relation": "fullWidth"},
+  {"section": "php", "desc": "Skrypty łączą się z bazą zgloszenia (localhost, root, bez hasła) i na końcu zamykają połączenie", "type": "php"},
+  {"section": "manual", "desc": "Znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim", "type": "manual"}
 ]

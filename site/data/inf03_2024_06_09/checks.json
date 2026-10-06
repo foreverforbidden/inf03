@@ -3,11 +3,10 @@
   {"section": "grafika", "desc": "6.jpg skadrowana do rozmiaru 640 px na 427 px (wysokość 427 px)", "type": "image", "name": "6.jpg", "height": 427},
   {"section": "pliki", "desc": "Strona o nazwie galeria.html", "type": "file", "name": "galeria.html"},
   {"section": "pliki", "desc": "Arkusz stylów w pliku styl.css", "type": "file", "name": "styl.css"},
-
   {"section": "html", "desc": "Strona zapisana w języku HTML5, język zawartości polski, jawnie kodowanie UTF-8", "type": "head", "lang": "pl", "charset": true},
   {"section": "html", "desc": "Tytuł strony „Biuro turystyczne”", "type": "head", "doctype": false, "title": "Biuro turystyczne"},
   {"section": "html", "desc": "Arkusz stylów styl.css prawidłowo połączony z kodem strony", "type": "head", "doctype": false, "stylesheet": "styl.css"},
-  {"section": "html", "desc": "Podział strony semantycznymi znacznikami: baner, trzy bloki (lewy, środkowy, prawy), blok miniatur, stopka", "type": "exists", "selector": "body > header ~ aside ~ main ~ aside ~ section ~ footer", "hint": "blok lewy i prawy jako aside, środkowy jako main, miniatury jako section"},
+  {"section": "html", "desc": "Podział strony semantycznymi znacznikami: baner, trzy bloki (lewy, środkowy, prawy), blok miniatur, stopka", "type": "exists", "hint": "blok lewy i prawy jako aside, środkowy jako main, miniatury jako section", "selectors": ["header", "aside", "main", "aside", "section", "footer"]},
   {"section": "html", "desc": "Baner: nagłówek pierwszego stopnia „Zwiedzamy Polskę”", "type": "text", "selector": "header h1", "equals": "Zwiedzamy Polskę"},
   {"section": "html", "desc": "Blok lewy: przycisk „<”", "type": "text", "selector": "body > aside:nth-of-type(1) button", "equals": "<", "hint": "blok lewy jako aside (pierwszy)"},
   {"section": "html", "desc": "Blok lewy: przycisk wywołuje funkcję wyświetlającą poprzednie zdjęcie", "type": "attr", "selector": "body > aside:nth-of-type(1) button", "attr": "onclick"},
@@ -35,7 +34,6 @@
   {"section": "html", "desc": "Stopka: odnośnik „Więcej zdjęć”", "type": "text", "selector": "footer a", "equals": "Więcej zdjęć"},
   {"section": "html", "desc": "Odnośnik do strony http://pixabay.com", "type": "attr", "selector": "footer a", "attr": "href", "contains": "pixabay.com"},
   {"section": "html", "desc": "Odnośnik otwiera się w nowej karcie przeglądarki", "type": "attr", "selector": "footer a", "attr": "target", "equals": "_blank"},
-
   {"section": "css", "desc": "Domyślne formatowanie wszystkich selektorów: krój czcionki Georgia", "type": "css", "selector": "h1", "prop": "font-family", "value": "Georgia"},
   {"section": "css", "desc": "Domyślne formatowanie wszystkich selektorów: biały kolor czcionki", "type": "css", "selector": "h3", "prop": "color", "value": "white"},
   {"section": "css", "desc": "Baner: kolor tła Maroon", "type": "css", "selector": "header", "prop": "background-color", "value": "Maroon"},
@@ -73,7 +71,6 @@
   {"section": "css", "desc": "Układ: blok miniatur pod blokami lewym, środkowym i prawym", "type": "layout", "a": "body > section", "b": "body > main", "relation": "below"},
   {"section": "css", "desc": "Układ: stopka pod blokiem miniatur", "type": "layout", "a": "footer", "b": "body > section", "relation": "below"},
   {"section": "css", "desc": "Układ: baner na całą szerokość", "type": "layout", "a": "header", "relation": "fullWidth"},
-
   {"section": "js", "desc": "Skrypt: znaczące nazewnictwo wszystkich zmiennych i funkcji", "type": "manual"},
   {"section": "js", "desc": "Funkcja następnego zdjęcia: 1.jpg zmienia na 2.jpg", "type": "js", "steps": [{"click": "body > aside:nth-of-type(2) button"}], "expect": [{"selector": "body > main img", "attr": "src", "contains": "2.jpg"}]},
   {"section": "js", "desc": "Funkcja następnego zdjęcia: po 7.jpg wyświetla 1.jpg", "type": "js", "steps": [{"click": "body > aside:nth-of-type(2) button"}, {"click": "body > aside:nth-of-type(2) button"}, {"click": "body > aside:nth-of-type(2) button"}, {"click": "body > aside:nth-of-type(2) button"}, {"click": "body > aside:nth-of-type(2) button"}, {"click": "body > aside:nth-of-type(2) button"}, {"click": "body > aside:nth-of-type(2) button"}], "expect": [{"selector": "body > main img", "attr": "src", "contains": "1.jpg"}]},

@@ -1,513 +1,65 @@
 [
-{
-"section": "pliki",
-"desc": "Strona index.php",
-"type": "file",
-"name": "index.php"
-},
-{
-"section": "pliki",
-"desc": "Strona zamow.php",
-"type": "file",
-"name": "zamow.php"
-},
-{
-"section": "pliki",
-"desc": "Arkusz stylów style.css",
-"type": "file",
-"name": "style.css"
-},
-{
-"section": "html",
-"desc": "index.php: HTML5, polski język, kodowanie UTF-8",
-"type": "head",
-"page": "index.php",
-"lang": "pl",
-"charset": true
-},
-{
-"section": "html",
-"desc": "index.php: tytuł „Obuwie”",
-"type": "head",
-"page": "index.php",
-"doctype": false,
-"title": "Obuwie"
-},
-{
-"section": "html",
-"desc": "index.php: arkusz style.css połączony z kodem strony",
-"type": "head",
-"page": "index.php",
-"doctype": false,
-"stylesheet": "style.css"
-},
-{
-"section": "html",
-"desc": "zamow.php: HTML5, polski język, kodowanie UTF-8",
-"type": "head",
-"page": "zamow.php",
-"lang": "pl",
-"charset": true
-},
-{
-"section": "html",
-"desc": "zamow.php: tytuł „Obuwie”",
-"type": "head",
-"page": "zamow.php",
-"doctype": false,
-"title": "Obuwie"
-},
-{
-"section": "html",
-"desc": "zamow.php: arkusz style.css połączony z kodem strony",
-"type": "head",
-"page": "zamow.php",
-"doctype": false,
-"stylesheet": "style.css"
-},
-{
-"section": "html",
-"desc": "index.php: bloki semantyczne: nagłówkowy, poniżej główny, na dole stopka",
-"type": "exists",
-"page": "index.php",
-"selector": "header ~ main ~ footer"
-},
-{
-"section": "html",
-"desc": "zamow.php: bloki semantyczne: nagłówkowy, poniżej główny, na dole stopka",
-"type": "exists",
-"page": "zamow.php",
-"selector": "header ~ main ~ footer"
-},
-{
-"section": "html",
-"desc": "index.php: układ bloków zgodny z ilustracją 2: nagłówkowy nad głównym",
-"type": "layout",
-"page": "index.php",
-"a": "header",
-"b": "main",
-"relation": "above"
-},
-{
-"section": "html",
-"desc": "index.php: główny nad stopką",
-"type": "layout",
-"page": "index.php",
-"a": "main",
-"b": "footer",
-"relation": "above"
-},
-{
-"section": "html",
-"desc": "zamow.php: układ bloków: nagłówkowy nad głównym",
-"type": "layout",
-"page": "zamow.php",
-"a": "header",
-"b": "main",
-"relation": "above"
-},
-{
-"section": "html",
-"desc": "zamow.php: główny nad stopką",
-"type": "layout",
-"page": "zamow.php",
-"a": "main",
-"b": "footer",
-"relation": "above"
-},
-{
-"section": "html",
-"desc": "index.php: blok nagłówkowy: nagłówek pierwszego stopnia „Obuwie męskie”",
-"type": "text",
-"page": "index.php",
-"selector": "header h1",
-"equals": "Obuwie męskie"
-},
-{
-"section": "html",
-"desc": "zamow.php: blok nagłówkowy: nagłówek pierwszego stopnia „Obuwie męskie”",
-"type": "text",
-"page": "zamow.php",
-"selector": "header h1",
-"equals": "Obuwie męskie"
-},
-{
-"section": "html",
-"desc": "index.php: stopka: paragraf „Autor strony: ” i numer zdającego",
-"type": "text",
-"page": "index.php",
-"selector": "footer p",
-"startsWith": "Autor strony:"
-},
-{
-"section": "html",
-"desc": "zamow.php: stopka: paragraf „Autor strony: ” i numer zdającego",
-"type": "text",
-"page": "zamow.php",
-"selector": "footer p",
-"startsWith": "Autor strony:"
-},
-{
-"section": "html",
-"desc": "index.php: formularz wysyłający dane metodą bezpieczną (post)",
-"type": "attr",
-"page": "index.php",
-"selector": "main form",
-"attr": "method",
-"equals": "post"
-},
-{
-"section": "html",
-"desc": "index.php: formularz wysyła dane do pliku zamow.php",
-"type": "attr",
-"page": "index.php",
-"selector": "main form",
-"attr": "action",
-"equals": "zamow.php"
-},
-{
-"section": "html",
-"desc": "index.php: dwie listy rozwijane w formularzu",
-"type": "exists",
-"page": "index.php",
-"selector": "main form select",
-"count": 2
-},
-{
-"section": "html",
-"desc": "index.php: etykieta „Model: ”",
-"type": "text",
-"page": "index.php",
-"selector": "main form label",
-"equals": "Model:",
-"index": 0
-},
-{
-"section": "html",
-"desc": "index.php: etykieta „Rozmiar: ”",
-"type": "text",
-"page": "index.php",
-"selector": "main form label",
-"equals": "Rozmiar:",
-"index": 1
-},
-{
-"section": "html",
-"desc": "index.php: etykieta „Liczba par: ”",
-"type": "text",
-"page": "index.php",
-"selector": "main form label",
-"equals": "Liczba par:",
-"index": 2
-},
-{
-"section": "php",
-"desc": "Lista „Rozmiar” wypełniona liczbami od 40 do 43",
-"type": "php"
-},
-{
-"section": "html",
-"desc": "index.php: pole edycyjne do wpisywania wartości liczbowych",
-"type": "attr",
-"page": "index.php",
-"selector": "main form input:not([type=submit])",
-"attr": "type",
-"equals": "number"
-},
-{
-"section": "html",
-"desc": "index.php: przycisk „Zamów” wysyłający dane formularza",
-"type": "exists",
-"page": "index.php",
-"selector": "main form input[type=submit][value='Zamów'], main form button:not([type=button]):not([type=reset])"
-},
-{
-"section": "php",
-"desc": "Skrypt 1: zapytanie 1 i wyświetlenie modeli jako elementów listy rozwijanej",
-"type": "php"
-},
-{
-"section": "php",
-"desc": "Skrypt 2: zapytanie 2 i blok produktu (obraz z alt „but męski”, h2 z nazwą, h5 „Model: <model>”, h4 „Cena: <cena>”) dla każdego wiersza",
-"type": "php"
-},
-{
-"section": "html",
-"desc": "zamow.php: nagłówek drugiego stopnia „Zamówienie”",
-"type": "text",
-"page": "zamow.php",
-"selector": "main h2",
-"equals": "Zamówienie",
-"index": 0
-},
-{
-"section": "html",
-"desc": "zamow.php: odnośnik „Strona główna”",
-"type": "text",
-"page": "zamow.php",
-"selector": "main a",
-"equals": "Strona główna"
-},
-{
-"section": "html",
-"desc": "zamow.php: odnośnik prowadzi do index.php",
-"type": "attr",
-"page": "zamow.php",
-"selector": "main a",
-"attr": "href",
-"equals": "index.php"
-},
-{
-"section": "php",
-"desc": "Skrypt 3: zapytanie 3 z modelem z formularza; obraz (alt „but męski”), h2 z nazwą, paragrafy „cena za <liczbaPar> par: <wartośćCałkowita> zł”, „Szczegóły produktu: <kolor>, <materiał>”, „Rozmiar: <rozmiar>”",
-"type": "php"
-},
-{
-"section": "css",
-"desc": "Domyślnie dla wszystkich selektorów: krój czcionki Cambria",
-"type": "css",
-"page": "index.php",
-"selector": "h1",
-"prop": "font-family",
-"value": "Cambria"
-},
-{
-"section": "css",
-"desc": "Blok nagłówkowy: kolor tła Sienna",
-"type": "css",
-"page": "index.php",
-"selector": "header",
-"prop": "background-color",
-"value": "Sienna"
-},
-{
-"section": "css",
-"desc": "Stopka: kolor tła Sienna",
-"type": "css",
-"page": "index.php",
-"selector": "footer",
-"prop": "background-color",
-"value": "Sienna"
-},
-{
-"section": "css",
-"desc": "Blok nagłówkowy: biały kolor czcionki",
-"type": "css",
-"page": "index.php",
-"selector": "header",
-"prop": "color",
-"value": "white"
-},
-{
-"section": "css",
-"desc": "Stopka: biały kolor czcionki",
-"type": "css",
-"page": "index.php",
-"selector": "footer",
-"prop": "color",
-"value": "white"
-},
-{
-"section": "css",
-"desc": "Blok nagłówkowy: marginesy wewnętrzne 5 px",
-"type": "css",
-"page": "index.php",
-"selector": "header",
-"prop": "padding",
-"value": "5px"
-},
-{
-"section": "css",
-"desc": "Stopka: marginesy wewnętrzne 5 px",
-"type": "css",
-"page": "index.php",
-"selector": "footer",
-"prop": "padding",
-"value": "5px"
-},
-{
-"section": "css",
-"desc": "Blok nagłówkowy: wyrównanie tekstu do środka",
-"type": "css",
-"page": "index.php",
-"selector": "header",
-"prop": "text-align",
-"value": "center"
-},
-{
-"section": "css",
-"desc": "Stopka: wyrównanie tekstu do środka",
-"type": "css",
-"page": "index.php",
-"selector": "footer",
-"prop": "text-align",
-"value": "center"
-},
-{
-"section": "css",
-"desc": "Blok główny: kolor tła AntiqueWhite",
-"type": "css",
-"page": "index.php",
-"selector": "main",
-"prop": "background-color",
-"value": "AntiqueWhite"
-},
-{
-"section": "css",
-"desc": "Blok główny: wysokość 700 px",
-"type": "css",
-"page": "index.php",
-"selector": "main",
-"prop": "height",
-"value": "700px"
-},
-{
-"section": "css",
-"desc": "Blok główny: rozmiar czcionki 120%",
-"type": "cssRule",
-"page": "index.php",
-"selector": "main",
-"prop": "font-size",
-"value": "120%"
-},
-{
-"section": "css",
-"desc": "Blok główny: paski przewijania gdy zawartość się nie mieści",
-"type": "css",
-"page": "index.php",
-"selector": "main",
-"prop": "overflow",
-"value": "auto"
-},
-{
-"section": "css",
-"desc": "Klasa kontrolki: szerokość 150 px",
-"type": "css",
-"page": "index.php",
-"selector": ".kontrolka",
-"all": true,
-"prop": "width",
-"value": "150px"
-},
-{
-"section": "css",
-"desc": "Klasa kontrolki: marginesy zewnętrzne 10 px",
-"type": "css",
-"page": "index.php",
-"selector": ".kontrolka",
-"all": true,
-"prop": "margin",
-"value": "10px"
-},
-{
-"section": "css",
-"desc": "Klasa kontrolki przypisana do wszystkich elementów formularza (listy, pole edycyjne, przycisk)",
-"type": "exists",
-"page": "index.php",
-"selector": "main form .kontrolka",
-"count": 4
-},
-{
-"section": "css",
-"desc": "Klasa buty: szerokość 70%",
-"type": "cssRule",
-"selector": ".buty",
-"prop": "width",
-"value": "70%"
-},
-{
-"section": "css",
-"desc": "Klasa buty: marginesy zewnętrzne 15 px",
-"type": "cssRule",
-"selector": ".buty",
-"prop": "margin",
-"value": "15px"
-},
-{
-"section": "css",
-"desc": "Klasa buty: marginesy wewnętrzne 7 px",
-"type": "cssRule",
-"selector": ".buty",
-"prop": "padding",
-"value": "7px"
-},
-{
-"section": "css",
-"desc": "Klasa buty: obramowanie linią ciągłą 1 px Sienna",
-"type": "cssRule",
-"selector": ".buty",
-"prop": "border",
-"value": "1px solid Sienna"
-},
-{
-"section": "css",
-"desc": "Klasa buty: zaokrąglenie rogów 30 px",
-"type": "cssRule",
-"selector": ".buty",
-"prop": "border",
-"value": "1px solid Sienna"
-},
-{
-"section": "php",
-"desc": "Klasa buty przypisana do bloków produktu (skrypt 2)",
-"type": "php"
-},
-{
-"section": "css",
-"desc": "Kursor na bloku produktu (klasa buty): kolor tła Linen",
-"type": "cssRule",
-"selector": ".buty:hover",
-"prop": "background-color",
-"value": "Linen"
-},
-{
-"section": "css",
-"desc": "Selektor obrazu: opływany po prawej stronie (obraz po lewej)",
-"type": "cssRule",
-"page": "index.php",
-"selector": "img",
-"prop": "float",
-"value": "left"
-},
-{
-"section": "css",
-"desc": "Selektor obrazu: margines zewnętrzny prawy 30 px",
-"type": "cssRule",
-"page": "index.php",
-"selector": "img",
-"prop": "margin-right",
-"value": "30px"
-},
-{
-"section": "css",
-"desc": "Selektor nagłówka czwartego stopnia: kolor tła Sienna",
-"type": "cssRule",
-"page": "index.php",
-"selector": "h4",
-"prop": "background-color",
-"value": "Sienna"
-},
-{
-"section": "css",
-"desc": "Selektor nagłówka czwartego stopnia: biały kolor czcionki",
-"type": "cssRule",
-"page": "index.php",
-"selector": "h4",
-"prop": "color",
-"value": "white"
-},
-{
-"section": "css",
-"desc": "Selektor nagłówka czwartego stopnia: wyrównanie tekstu do prawej",
-"type": "cssRule",
-"page": "index.php",
-"selector": "h4",
-"prop": "text-align",
-"value": "right"
-},
-{
-"section": "php",
-"desc": "Skrypty łączą się z bazą obuwie (localhost, root, bez hasła), znaczące nazwy zmiennych, na końcu zamykają połączenie",
-"type": "php"
-}
+  {"section": "pliki", "desc": "Strona index.php", "type": "file", "name": "index.php"},
+  {"section": "pliki", "desc": "Strona zamow.php", "type": "file", "name": "zamow.php"},
+  {"section": "pliki", "desc": "Arkusz stylów style.css", "type": "file", "name": "style.css"},
+  {"section": "html", "desc": "index.php: HTML5, polski język, kodowanie UTF-8", "type": "head", "page": "index.php", "lang": "pl", "charset": true},
+  {"section": "html", "desc": "index.php: tytuł „Obuwie”", "type": "head", "page": "index.php", "doctype": false, "title": "Obuwie"},
+  {"section": "html", "desc": "index.php: arkusz style.css połączony z kodem strony", "type": "head", "page": "index.php", "doctype": false, "stylesheet": "style.css"},
+  {"section": "html", "desc": "zamow.php: HTML5, polski język, kodowanie UTF-8", "type": "head", "page": "zamow.php", "lang": "pl", "charset": true},
+  {"section": "html", "desc": "zamow.php: tytuł „Obuwie”", "type": "head", "page": "zamow.php", "doctype": false, "title": "Obuwie"},
+  {"section": "html", "desc": "zamow.php: arkusz style.css połączony z kodem strony", "type": "head", "page": "zamow.php", "doctype": false, "stylesheet": "style.css"},
+  {"section": "html", "desc": "index.php: bloki semantyczne: nagłówkowy, poniżej główny, na dole stopka", "type": "exists", "page": "index.php", "selectors": ["header", "main", "footer"]},
+  {"section": "html", "desc": "zamow.php: bloki semantyczne: nagłówkowy, poniżej główny, na dole stopka", "type": "exists", "page": "zamow.php", "selectors": ["header", "main", "footer"]},
+  {"section": "html", "desc": "index.php: układ bloków zgodny z ilustracją 2: nagłówkowy nad głównym", "type": "layout", "page": "index.php", "a": "header", "b": "main", "relation": "above"},
+  {"section": "html", "desc": "index.php: główny nad stopką", "type": "layout", "page": "index.php", "a": "main", "b": "footer", "relation": "above"},
+  {"section": "html", "desc": "zamow.php: układ bloków: nagłówkowy nad głównym", "type": "layout", "page": "zamow.php", "a": "header", "b": "main", "relation": "above"},
+  {"section": "html", "desc": "zamow.php: główny nad stopką", "type": "layout", "page": "zamow.php", "a": "main", "b": "footer", "relation": "above"},
+  {"section": "html", "desc": "index.php: blok nagłówkowy: nagłówek pierwszego stopnia „Obuwie męskie”", "type": "text", "page": "index.php", "selector": "header h1", "equals": "Obuwie męskie"},
+  {"section": "html", "desc": "zamow.php: blok nagłówkowy: nagłówek pierwszego stopnia „Obuwie męskie”", "type": "text", "page": "zamow.php", "selector": "header h1", "equals": "Obuwie męskie"},
+  {"section": "html", "desc": "index.php: stopka: paragraf „Autor strony: ” i numer zdającego", "type": "text", "page": "index.php", "selector": "footer p", "startsWith": "Autor strony:"},
+  {"section": "html", "desc": "zamow.php: stopka: paragraf „Autor strony: ” i numer zdającego", "type": "text", "page": "zamow.php", "selector": "footer p", "startsWith": "Autor strony:"},
+  {"section": "html", "desc": "index.php: formularz wysyłający dane metodą bezpieczną (post)", "type": "attr", "page": "index.php", "selector": "main form", "attr": "method", "equals": "post"},
+  {"section": "html", "desc": "index.php: formularz wysyła dane do pliku zamow.php", "type": "attr", "page": "index.php", "selector": "main form", "attr": "action", "equals": "zamow.php"},
+  {"section": "html", "desc": "index.php: dwie listy rozwijane w formularzu", "type": "exists", "page": "index.php", "selector": "main form select", "count": 2},
+  {"section": "html", "desc": "index.php: etykieta „Model: ”", "type": "text", "page": "index.php", "selector": "main form label", "equals": "Model:", "index": 0},
+  {"section": "html", "desc": "index.php: etykieta „Rozmiar: ”", "type": "text", "page": "index.php", "selector": "main form label", "equals": "Rozmiar:", "index": 1},
+  {"section": "html", "desc": "index.php: etykieta „Liczba par: ”", "type": "text", "page": "index.php", "selector": "main form label", "equals": "Liczba par:", "index": 2},
+  {"section": "php", "desc": "Lista „Rozmiar” wypełniona liczbami od 40 do 43", "type": "php"},
+  {"section": "html", "desc": "index.php: pole edycyjne do wpisywania wartości liczbowych", "type": "attr", "page": "index.php", "selector": "main form input:not([type=submit])", "attr": "type", "equals": "number"},
+  {"section": "html", "desc": "index.php: przycisk „Zamów” wysyłający dane formularza", "type": "exists", "page": "index.php", "selector": "main form input[type=submit][value='Zamów'], main form button:not([type=button]):not([type=reset])"},
+  {"section": "php", "desc": "Skrypt 1: zapytanie 1 i wyświetlenie modeli jako elementów listy rozwijanej", "type": "php"},
+  {"section": "php", "desc": "Skrypt 2: zapytanie 2 i blok produktu (obraz z alt „but męski”, h2 z nazwą, h5 „Model: <model>”, h4 „Cena: <cena>”) dla każdego wiersza", "type": "php"},
+  {"section": "html", "desc": "zamow.php: nagłówek drugiego stopnia „Zamówienie”", "type": "text", "page": "zamow.php", "selector": "main h2", "equals": "Zamówienie", "index": 0},
+  {"section": "html", "desc": "zamow.php: odnośnik „Strona główna”", "type": "text", "page": "zamow.php", "selector": "main a", "equals": "Strona główna"},
+  {"section": "html", "desc": "zamow.php: odnośnik prowadzi do index.php", "type": "attr", "page": "zamow.php", "selector": "main a", "attr": "href", "equals": "index.php"},
+  {"section": "php", "desc": "Skrypt 3: zapytanie 3 z modelem z formularza; obraz (alt „but męski”), h2 z nazwą, paragrafy „cena za <liczbaPar> par: <wartośćCałkowita> zł”, „Szczegóły produktu: <kolor>, <materiał>”, „Rozmiar: <rozmiar>”", "type": "php"},
+  {"section": "css", "desc": "Domyślnie dla wszystkich selektorów: krój czcionki Cambria", "type": "css", "page": "index.php", "selector": "h1", "prop": "font-family", "value": "Cambria"},
+  {"section": "css", "desc": "Blok nagłówkowy: kolor tła Sienna", "type": "css", "page": "index.php", "selector": "header", "prop": "background-color", "value": "Sienna"},
+  {"section": "css", "desc": "Stopka: kolor tła Sienna", "type": "css", "page": "index.php", "selector": "footer", "prop": "background-color", "value": "Sienna"},
+  {"section": "css", "desc": "Blok nagłówkowy: biały kolor czcionki", "type": "css", "page": "index.php", "selector": "header", "prop": "color", "value": "white"},
+  {"section": "css", "desc": "Stopka: biały kolor czcionki", "type": "css", "page": "index.php", "selector": "footer", "prop": "color", "value": "white"},
+  {"section": "css", "desc": "Blok nagłówkowy: marginesy wewnętrzne 5 px", "type": "css", "page": "index.php", "selector": "header", "prop": "padding", "value": "5px"},
+  {"section": "css", "desc": "Stopka: marginesy wewnętrzne 5 px", "type": "css", "page": "index.php", "selector": "footer", "prop": "padding", "value": "5px"},
+  {"section": "css", "desc": "Blok nagłówkowy: wyrównanie tekstu do środka", "type": "css", "page": "index.php", "selector": "header", "prop": "text-align", "value": "center"},
+  {"section": "css", "desc": "Stopka: wyrównanie tekstu do środka", "type": "css", "page": "index.php", "selector": "footer", "prop": "text-align", "value": "center"},
+  {"section": "css", "desc": "Blok główny: kolor tła AntiqueWhite", "type": "css", "page": "index.php", "selector": "main", "prop": "background-color", "value": "AntiqueWhite"},
+  {"section": "css", "desc": "Blok główny: wysokość 700 px", "type": "css", "page": "index.php", "selector": "main", "prop": "height", "value": "700px"},
+  {"section": "css", "desc": "Blok główny: rozmiar czcionki 120%", "type": "cssRule", "page": "index.php", "selector": "main", "prop": "font-size", "value": "120%"},
+  {"section": "css", "desc": "Blok główny: paski przewijania gdy zawartość się nie mieści", "type": "css", "page": "index.php", "selector": "main", "prop": "overflow", "value": "auto"},
+  {"section": "css", "desc": "Klasa kontrolki: szerokość 150 px", "type": "css", "page": "index.php", "selector": ".kontrolka", "all": true, "prop": "width", "value": "150px"},
+  {"section": "css", "desc": "Klasa kontrolki: marginesy zewnętrzne 10 px", "type": "css", "page": "index.php", "selector": ".kontrolka", "all": true, "prop": "margin", "value": "10px"},
+  {"section": "css", "desc": "Klasa kontrolki przypisana do wszystkich elementów formularza (listy, pole edycyjne, przycisk)", "type": "exists", "page": "index.php", "selector": "main form .kontrolka", "count": 4},
+  {"section": "css", "desc": "Klasa buty: szerokość 70%", "type": "cssRule", "selector": ".buty", "prop": "width", "value": "70%"},
+  {"section": "css", "desc": "Klasa buty: marginesy zewnętrzne 15 px", "type": "cssRule", "selector": ".buty", "prop": "margin", "value": "15px"},
+  {"section": "css", "desc": "Klasa buty: marginesy wewnętrzne 7 px", "type": "cssRule", "selector": ".buty", "prop": "padding", "value": "7px"},
+  {"section": "css", "desc": "Klasa buty: obramowanie linią ciągłą 1 px Sienna", "type": "cssRule", "selector": ".buty", "prop": "border", "value": "1px solid Sienna"},
+  {"section": "css", "desc": "Klasa buty: zaokrąglenie rogów 30 px", "type": "cssRule", "selector": ".buty", "prop": "border", "value": "1px solid Sienna"},
+  {"section": "php", "desc": "Klasa buty przypisana do bloków produktu (skrypt 2)", "type": "php"},
+  {"section": "css", "desc": "Kursor na bloku produktu (klasa buty): kolor tła Linen", "type": "cssRule", "selector": ".buty:hover", "prop": "background-color", "value": "Linen"},
+  {"section": "css", "desc": "Selektor obrazu: opływany po prawej stronie (obraz po lewej)", "type": "cssRule", "page": "index.php", "selector": "img", "prop": "float", "value": "left"},
+  {"section": "css", "desc": "Selektor obrazu: margines zewnętrzny prawy 30 px", "type": "cssRule", "page": "index.php", "selector": "img", "prop": "margin-right", "value": "30px"},
+  {"section": "css", "desc": "Selektor nagłówka czwartego stopnia: kolor tła Sienna", "type": "cssRule", "page": "index.php", "selector": "h4", "prop": "background-color", "value": "Sienna"},
+  {"section": "css", "desc": "Selektor nagłówka czwartego stopnia: biały kolor czcionki", "type": "cssRule", "page": "index.php", "selector": "h4", "prop": "color", "value": "white"},
+  {"section": "css", "desc": "Selektor nagłówka czwartego stopnia: wyrównanie tekstu do prawej", "type": "cssRule", "page": "index.php", "selector": "h4", "prop": "text-align", "value": "right"},
+  {"section": "php", "desc": "Skrypty łączą się z bazą obuwie (localhost, root, bez hasła), znaczące nazwy zmiennych, na końcu zamykają połączenie", "type": "php"}
 ]

@@ -4,11 +4,10 @@
   {"section": "grafika", "desc": "obraz2.jpg odbity wzdłuż osi pionowej", "type": "manual"},
   {"section": "pliki", "desc": "Strona wazenie.php", "type": "file", "name": "wazenie.php"},
   {"section": "pliki", "desc": "Arkusz stylów styl.css", "type": "file", "name": "styl.css"},
-
   {"section": "html", "desc": "Zapisana w języku HTML5, język polski, kodowanie UTF-8", "type": "head", "lang": "pl", "charset": true},
   {"section": "html", "desc": "Tytuł strony „Ważenie samochodów ciężarowych”", "type": "head", "doctype": false, "title": "Ważenie samochodów ciężarowych"},
   {"section": "html", "desc": "Arkusz stylów w pliku styl.css prawidłowo połączony z kodem strony", "type": "head", "doctype": false, "stylesheet": "styl.css"},
-  {"section": "html", "desc": "Podział na bloki semantyczne: dwa bloki banera, blok lewy, środkowy i prawy, stopka", "type": "exists", "selector": "header ~ header ~ aside ~ main ~ aside ~ footer", "hint": "banery jako dwa header, blok lewy jako aside, środkowy jako main, prawy jako aside, na końcu footer"},
+  {"section": "html", "desc": "Podział na bloki semantyczne: dwa bloki banera, blok lewy, środkowy i prawy, stopka", "type": "exists", "hint": "banery jako dwa header, blok lewy jako aside, środkowy jako main, prawy jako aside, na końcu footer", "selectors": ["header", "header", "aside", "main", "aside", "footer"]},
   {"section": "html", "desc": "Dwa bloki banera", "type": "exists", "selector": "header", "count": 2},
   {"section": "html", "desc": "Pierwszy baner: nagłówek pierwszego stopnia „Ważenie pojazdów we Wrocławiu”", "type": "text", "selector": "header:nth-of-type(1) h1", "equals": "Ważenie pojazdów we Wrocławiu"},
   {"section": "html", "desc": "Drugi baner: obraz1.png", "type": "attr", "selector": "header:nth-of-type(2) img", "attr": "src", "equals": "obraz1.png"},
@@ -34,7 +33,6 @@
   {"section": "html", "desc": "Blok prawy: obraz2.jpg", "type": "attr", "selector": "aside:nth-of-type(2) img", "attr": "src", "equals": "obraz2.jpg", "hint": "blok prawy jako drugi aside"},
   {"section": "html", "desc": "Blok prawy: tekst alternatywny „tir”", "type": "attr", "selector": "aside:nth-of-type(2) img", "attr": "alt", "equals": "tir"},
   {"section": "html", "desc": "Stopka: akapit o treści „Stronę wykonał: ”, następnie numer zdającego", "type": "text", "selector": "footer p", "startsWith": "Stronę wykonał:"},
-
   {"section": "css", "desc": "Domyślny krój czcionki Tahoma (nagłówek)", "type": "css", "selector": "h2", "prop": "font-family", "value": "Tahoma"},
   {"section": "css", "desc": "Domyślny krój czcionki Tahoma (akapit)", "type": "css", "selector": "footer p", "prop": "font-family", "value": "Tahoma"},
   {"section": "css", "desc": "Oba banery: kolor tła #519657", "type": "css", "selector": "header", "prop": "background-color", "value": "#519657", "all": true},

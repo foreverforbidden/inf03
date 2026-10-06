@@ -20,6 +20,13 @@ Wzorcowe przykłady (sprawdzone, przejdź je w całości przed pisaniem):
 6. Treść generowana przez PHP (pętle, dane z bazy, obsługa formularza) to kryterium `{"type": "php"}` z opisem. Nie sprawdzasz jej automatycznie. **Style** elementów tworzonych przez PHP (np. bloki generowane skryptem) sprawdzaj jednak typem `cssRule` z selektorem z wzorca i polem `hint` (np. `"hint": "bloki tworzone skryptem: selektor main section"`), a nie `manual`; wartość jest porównywana po normalizacji przez przeglądarkę, więc kolejność zapisu nie ma znaczenia.
 7. Coś, czego nie da się sprawdzić automatycznie (np. „znaczące nazewnictwo zmiennych”), to `{"type": "manual"}`. Używaj oszczędnie.
 8. Wartości CSS jak w treści (kolory nazwami lub szesnastkowo, jednostki jak w treści).
+9. **Nie zaostrzaj struktury.** Podział na bloki sprawdzaj jednym `exists` z polem `selectors` (lista, np. `["header", "nav", "main", "footer"]`; powtórzony selektor oznacza „co najmniej tyle”), a nie łańcuchem `header ~ nav ~ main`: kolejność i położenie pilnują kryteria `layout`. Nie zakładaj kontenera, którego treść nie podaje.
+10. **Zdarzenia JS sprawdzaj działaniem, nie zapisem.** Nie sprawdzaj atrybutu `onclick` (dozwolone jest też `addEventListener`); wystarczą kryteria `js`. W krokach `js` nie używaj id ani klas, których treść nie podaje: użyj selektora ze struktury (`main form input:nth-of-type(2)`) albo dodaj `hint`.
+11. **Przyciski**: treść „przycisk o treści X” dopuszcza `button` i `input[type=button|submit]`. Selektor: `button, input[type=button], input[type=submit]`; tekst: kryterium `exists` z `:is(...)` albo `text` na `button` z `hint`, gdy wzorzec to `button`.
+12. **`cssRule` tylko gdy treść wymaga zapisu pod selektorem** („wyłącznie selektorem znacznika”, „dla selektora X”) albo dla elementów tworzonych przez PHP/JS. Gdy treść opisuje tylko efekt, a `css` nie daje się sprawdzić (np. `margin: auto`, właściwość na elemencie z wrapperem), użyj `cssRule` z `"matching": true`: przechodzi dowolna reguła, której selektor trafia w element. Wyśrodkowanie: `"prop": "margin-left", "value": "auto"` (przejdzie `margin: auto` i `margin: 0 auto`).
+13. Kryterium `file` tylko dla plików nazwanych w treści. Nazwa pliku grafiki: gdy treść dopuszcza dowolny format, `attr` z `contains` (`"logo."`), nie `equals`.
+14. Pierwsze kryterium `head` **każdej** strony (pole `page`) sprawdza DOCTYPE; `"doctype": false` tylko w kolejnych kryteriach `head` tej samej strony.
+15. Cechy grafiki, której nie ma w `web.graphics` (np. animacja GIF, baner do narysowania): `manual` z opisem cech z treści.
 
 ## Pola wspólne
 - `section`: `pliki` | `grafika` | `html` | `css` | `js` | `php`
@@ -32,11 +39,11 @@ Wzorcowe przykłady (sprawdzone, przejdź je w całości przed pisaniem):
 | typ | pola | znaczenie |
 |---|---|---|
 | `head` | `lang`, `charset: true`, `title`, `stylesheet`, `doctype: false` (pomija sprawdzenie DOCTYPE) | nagłówek dokumentu; pierwsze kryterium `head` zostaw z DOCTYPE, kolejne z `"doctype": false` |
-| `exists` | `selector`, opcjonalnie `count` lub `min` | element istnieje / jest ich dokładnie N / co najmniej N |
+| `exists` | `selector`, opcjonalnie `count` lub `min`; albo `selectors` (lista) | element istnieje / jest ich dokładnie N / co najmniej N; z `selectors`: każdy z bloków istnieje |
 | `text` | `selector`, jedno z `equals`, `contains`, `startsWith`, `matches` (regex), opcjonalnie `index` | tekst elementu (białe znaki znormalizowane); bez `index` wystarczy dowolny pasujący element |
 | `attr` | `selector`, `attr`, `equals` / `contains` / nic (sam atrybut) / `"absent": true`, opcjonalnie `index`, `all` | atrybut, np. `alt`, `src`, `href`, `method`, `disabled`, `checked`, `type` |
 | `css` | `selector`, `prop`, `value`, opcjonalnie `index`, `all` | wartość obliczona; `%` przeliczane względem rodzica; kolory i długości normalizowane |
-| `cssRule` | `selector`, `prop`, `value` | deklaracja zapisana dokładnie pod tym selektorem (dla „wyłącznie przy pomocy selektora znacznika”) |
+| `cssRule` | `selector`, `prop`, `value`, opcjonalnie `matching: true` | deklaracja zapisana dokładnie pod tym selektorem (dla „wyłącznie przy pomocy selektora znacznika”); z `matching` dowolna reguła trafiająca w element |
 | `hover` | `selector`, `prop`, `value` | reguła `:hover` pasująca do elementu |
 | `layout` | `a`, `b`, `relation`: `leftOf` / `rightOf` / `above` / `below` / `sameRow` / `fullWidth` (bez `b`) | położenie bloków jak na ilustracji układu |
 | `js` | `steps`: lista `{"set": sel, "value": v}`, `{"click": sel}`, `{"hover": sel}`, `{"wait": ms}`; `expect`: lista oczekiwań | każde kryterium `js` uruchamia stronę od nowa |

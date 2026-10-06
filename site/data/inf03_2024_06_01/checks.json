@@ -7,7 +7,7 @@
   {"section": "html", "desc": "Arkusz stylów w pliku styl.css prawidłowo połączony z kodem strony", "type": "head", "doctype": false, "stylesheet": "styl.css"},
   {"section": "html", "desc": "Obraz motor.png poza blokami", "type": "attr", "selector": "body > img", "attr": "src", "equals": "motor.png"},
   {"section": "html", "desc": "Obraz motor.png o tekście alternatywnym „motocykl”", "type": "attr", "selector": "body > img", "attr": "alt", "equals": "motocykl"},
-  {"section": "html", "desc": "Podział na bloki semantycznymi znacznikami sekcji: baner, trzy bloki (lewy i dwa prawe), stopka", "type": "exists", "selector": "header ~ nav ~ aside ~ section ~ footer", "hint": "blok lewy jako nav, pierwszy prawy jako aside, drugi prawy jako section"},
+  {"section": "html", "desc": "Podział na bloki semantycznymi znacznikami sekcji: baner, trzy bloki (lewy i dwa prawe), stopka", "type": "exists", "hint": "blok lewy jako nav, pierwszy prawy jako aside, drugi prawy jako section", "selectors": ["header", "nav", "aside", "section", "footer"]},
   {"section": "html", "desc": "Baner: nagłówek pierwszego stopnia „Motocykle - moja pasja”", "type": "text", "selector": "header h1", "equals": "Motocykle - moja pasja"},
   {"section": "html", "desc": "Blok lewy: nagłówek drugiego stopnia „Gdzie pojechać?”", "type": "text", "selector": "nav h2", "equals": "Gdzie pojechać?", "hint": "blok lewy jako nav"},
   {"section": "html", "desc": "Blok lewy: lista definicji (Description List)", "type": "exists", "selector": "nav dl", "hint": "blok lewy jako nav"},

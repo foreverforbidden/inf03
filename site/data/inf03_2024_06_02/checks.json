@@ -1,805 +1,93 @@
 [
- {
-  "section": "grafika",
-  "desc": "Jolka.jpg wykadrowana do kwadratu z całą twarzą i przeskalowana dokładnie do 70 px na 70 px",
-  "type": "image",
-  "name": "Jolka.jpg",
-  "width": 70,
-  "height": 70
- },
- {
-  "section": "pliki",
-  "desc": "Strona o nazwie chat.html",
-  "type": "file",
-  "name": "chat.html"
- },
- {
-  "section": "pliki",
-  "desc": "Arkusz stylów w pliku o nazwie styl.css",
-  "type": "file",
-  "name": "styl.css"
- },
- {
-  "section": "html",
-  "desc": "Strona w języku HTML5, język zawartości polski, jawnie kodowanie UTF-8",
-  "type": "head",
-  "lang": "pl",
-  "charset": true
- },
- {
-  "section": "html",
-  "desc": "Tytuł strony „Chat”",
-  "type": "head",
-  "doctype": false,
-  "title": "Chat"
- },
- {
-  "section": "html",
-  "desc": "Arkusz stylów w pliku styl.css prawidłowo połączony z kodem strony",
-  "type": "head",
-  "doctype": false,
-  "stylesheet": "styl.css"
- },
- {
-  "section": "html",
-  "desc": "Podział strony semantycznymi znacznikami: baner, blok główny, blok boczny, stopka",
-  "type": "exists",
-  "selector": "header ~ main ~ footer",
-  "hint": "baner jako header, blok główny jako main, blok boczny jako aside, stopka jako footer"
- },
- {
-  "section": "html",
-  "desc": "Blok boczny jako znacznik semantyczny",
-  "type": "exists",
-  "selector": "aside",
-  "count": 1
- },
- {
-  "section": "css",
-  "desc": "Układ: baner nad blokiem głównym",
-  "type": "layout",
-  "a": "header",
-  "b": "main",
-  "relation": "above"
- },
- {
-  "section": "css",
-  "desc": "Układ: blok boczny obok banera (po prawej)",
-  "type": "layout",
-  "a": "aside",
-  "b": "header",
-  "relation": "rightOf"
- },
- {
-  "section": "css",
-  "desc": "Układ: stopka na dole, pod blokami",
-  "type": "layout",
-  "a": "footer",
-  "b": "aside",
-  "relation": "below"
- },
- {
-  "section": "css",
-  "desc": "Układ: stopka pod blokiem głównym",
-  "type": "layout",
-  "a": "footer",
-  "b": "main",
-  "relation": "below"
- },
- {
-  "section": "html",
-  "desc": "Zawartość banera: nagłówek drugiego stopnia „Chat”",
-  "type": "text",
-  "selector": "header h2",
-  "equals": "Chat"
- },
- {
-  "section": "html",
-  "desc": "Blok boczny: nagłówek trzeciego stopnia „Chaty”",
-  "type": "text",
-  "selector": "aside h3",
-  "equals": "Chaty",
-  "index": 0
- },
- {
-  "section": "html",
-  "desc": "Blok boczny: lista punktowana",
-  "type": "exists",
-  "selector": "aside > ul",
-  "count": 1
- },
- {
-  "section": "html",
-  "desc": "Lista punktowana: pierwszy element „Ogólny”",
-  "type": "text",
-  "selector": "aside > ul > li:nth-of-type(1)",
-  "equals": "Ogólny"
- },
- {
-  "section": "html",
-  "desc": "Lista punktowana: drugi element „Tematyczne” (zagnieżdża listę numerowaną)",
-  "type": "text",
-  "selector": "aside > ul > li:nth-of-type(2)",
-  "startsWith": "Tematyczne"
- },
- {
-  "section": "html",
-  "desc": "Drugi element zagnieżdża listę numerowaną z czterema elementami",
-  "type": "exists",
-  "selector": "aside > ul > li:nth-of-type(2) > ol > li",
-  "count": 4
- },
- {
-  "section": "html",
-  "desc": "Lista numerowana: „Turystyczny”",
-  "type": "text",
-  "selector": "aside ol li:nth-of-type(1)",
-  "equals": "Turystyczny"
- },
- {
-  "section": "html",
-  "desc": "Lista numerowana: „Żeglarski”",
-  "type": "text",
-  "selector": "aside ol li:nth-of-type(2)",
-  "equals": "Żeglarski"
- },
- {
-  "section": "html",
-  "desc": "Lista numerowana: „Filatelistyczny”",
-  "type": "text",
-  "selector": "aside ol li:nth-of-type(3)",
-  "equals": "Filatelistyczny"
- },
- {
-  "section": "html",
-  "desc": "Lista numerowana: „Hodowla zwierzątek domowych”",
-  "type": "text",
-  "selector": "aside ol li:nth-of-type(4)",
-  "equals": "Hodowla zwierzątek domowych"
- },
- {
-  "section": "html",
-  "desc": "Blok boczny: nagłówek trzeciego stopnia „Uczestnicy”",
-  "type": "text",
-  "selector": "aside h3",
-  "equals": "Uczestnicy",
-  "index": 1
- },
- {
-  "section": "html",
-  "desc": "Blok boczny: paragraf „Jolanta Nowak”",
-  "type": "text",
-  "selector": "aside p",
-  "equals": "Jolanta Nowak",
-  "index": 0
- },
- {
-  "section": "html",
-  "desc": "Blok boczny: obraz Jolka.jpg",
-  "type": "attr",
-  "selector": "aside img",
-  "attr": "src",
-  "contains": "Jolka.jpg",
-  "index": 0
- },
- {
-  "section": "html",
-  "desc": "Obraz Jolka.jpg z tekstem alternatywnym „Jolanta Nowak”",
-  "type": "attr",
-  "selector": "aside img",
-  "attr": "alt",
-  "equals": "Jolanta Nowak",
-  "index": 0
- },
- {
-  "section": "html",
-  "desc": "Blok boczny: paragraf „Krzysztof Łukasiński”",
-  "type": "text",
-  "selector": "aside p",
-  "equals": "Krzysztof Łukasiński",
-  "index": 1
- },
- {
-  "section": "html",
-  "desc": "Blok boczny: obraz Krzysiek.jpg",
-  "type": "attr",
-  "selector": "aside img",
-  "attr": "src",
-  "contains": "Krzysiek.jpg",
-  "index": 1
- },
- {
-  "section": "html",
-  "desc": "Obraz Krzysiek.jpg z tekstem alternatywnym „Krzysztof Łukasiński”",
-  "type": "attr",
-  "selector": "aside img",
-  "attr": "alt",
-  "equals": "Krzysztof Łukasiński",
-  "index": 1
- },
- {
-  "section": "html",
-  "desc": "Blok główny: blok chatu",
-  "type": "exists",
-  "selector": "main > div:nth-of-type(1)",
-  "hint": "blok chatu jako div w bloku głównym, przed polem wiadomości"
- },
- {
-  "section": "html",
-  "desc": "Blok chatu: dwa bloki z wypowiedziami",
-  "type": "exists",
-  "selector": "main > div:nth-of-type(1) > div",
-  "count": 2,
-  "hint": "wypowiedzi jako div w bloku chatu"
- },
- {
-  "section": "html",
-  "desc": "Wypowiedź Jolanty: obraz Jolka.jpg",
-  "type": "attr",
-  "selector": "main > div:nth-of-type(1) > div:nth-of-type(1) img",
-  "attr": "src",
-  "contains": "Jolka.jpg"
- },
- {
-  "section": "html",
-  "desc": "Wypowiedź Jolanty: paragraf „Cześć idziesz jutro do kina?”",
-  "type": "text",
-  "selector": "main > div:nth-of-type(1) > div:nth-of-type(1) p",
-  "equals": "Cześć idziesz jutro do kina?"
- },
- {
-  "section": "html",
-  "desc": "Wypowiedź Krzysztofa: obraz Krzysiek.jpg",
-  "type": "attr",
-  "selector": "main > div:nth-of-type(1) > div:nth-of-type(2) img",
-  "attr": "src",
-  "contains": "Krzysiek.jpg"
- },
- {
-  "section": "html",
-  "desc": "Wypowiedź Krzysztofa: paragraf „Tak! A ty?”",
-  "type": "text",
-  "selector": "main > div:nth-of-type(1) > div:nth-of-type(2) p",
-  "equals": "Tak! A ty?"
- },
- {
-  "section": "html",
-  "desc": "Napis „Wpisz wiadomość:”",
-  "type": "text",
-  "selector": "main",
-  "contains": "Wpisz wiadomość:"
- },
- {
-  "section": "html",
-  "desc": "Pole edycyjne tekstowe",
-  "type": "exists",
-  "selector": "main input[type=text]",
-  "count": 1
- },
- {
-  "section": "html",
-  "desc": "Przycisk o treści „Wyślij”",
-  "type": "text",
-  "selector": "main button",
-  "equals": "Wyślij",
-  "index": 0
- },
- {
-  "section": "html",
-  "desc": "Przycisk o treści „Generuj losową odpowiedź”",
-  "type": "text",
-  "selector": "main button",
-  "equals": "Generuj losową odpowiedź",
-  "index": 1
- },
- {
-  "section": "css",
-  "desc": "Obok siebie: napis „Wpisz wiadomość:”, pole edycyjne i przycisk „Wyślij” (pole i przycisk w jednym rzędzie)",
-  "type": "layout",
-  "a": "main input[type=text]",
-  "b": "main button:nth-of-type(1)",
-  "relation": "sameRow"
- },
- {
-  "section": "css",
-  "desc": "Poniżej: przycisk „Generuj losową odpowiedź”",
-  "type": "layout",
-  "a": "main button:nth-of-type(2)",
-  "b": "main button:nth-of-type(1)",
-  "relation": "below"
- },
- {
-  "section": "css",
-  "desc": "Układ: pole wiadomości pod blokiem chatu",
-  "type": "layout",
-  "a": "main input[type=text]",
-  "b": "main > div:nth-of-type(1)",
-  "relation": "below"
- },
- {
-  "section": "html",
-  "desc": "Stopka: nagłówek piątego stopnia „Chat wykonał: ” i numer zdającego",
-  "type": "text",
-  "selector": "footer h5",
-  "startsWith": "Chat wykonał:"
- },
- {
-  "section": "css",
-  "desc": "Domyślnie dla wszystkich selektorów: krój czcionki Garamond",
-  "type": "css",
-  "selector": "aside h3",
-  "prop": "font-family",
-  "value": "Garamond"
- },
- {
-  "section": "css",
-  "desc": "Domyślnie dla wszystkich selektorów: krój czcionki Garamond (paragrafy)",
-  "type": "css",
-  "selector": "aside p",
-  "prop": "font-family",
-  "value": "Garamond"
- },
- {
-  "section": "css",
-  "desc": "Baner: kolor tła Tomato",
-  "type": "css",
-  "selector": "header",
-  "prop": "background-color",
-  "value": "Tomato"
- },
- {
-  "section": "css",
-  "desc": "Baner: biały kolor czcionki",
-  "type": "css",
-  "selector": "header",
-  "prop": "color",
-  "value": "white"
- },
- {
-  "section": "css",
-  "desc": "Baner: wyrównanie tekstu do środka",
-  "type": "css",
-  "selector": "header",
-  "prop": "text-align",
-  "value": "center"
- },
- {
-  "section": "css",
-  "desc": "Baner: szerokość 80%",
-  "type": "css",
-  "selector": "header",
-  "prop": "width",
-  "value": "80%"
- },
- {
-  "section": "css",
-  "desc": "Baner: wysokość 80 px",
-  "type": "css",
-  "selector": "header",
-  "prop": "height",
-  "value": "80px"
- },
- {
-  "section": "css",
-  "desc": "Blok główny: szerokość 80%",
-  "type": "css",
-  "selector": "main",
-  "prop": "width",
-  "value": "80%"
- },
- {
-  "section": "css",
-  "desc": "Blok główny: wysokość 600 px",
-  "type": "css",
-  "selector": "main",
-  "prop": "height",
-  "value": "600px"
- },
- {
-  "section": "css",
-  "desc": "Blok boczny: kolor tła Coral",
-  "type": "css",
-  "selector": "aside",
-  "prop": "background-color",
-  "value": "Coral"
- },
- {
-  "section": "css",
-  "desc": "Blok boczny: szerokość 20%",
-  "type": "css",
-  "selector": "aside",
-  "prop": "width",
-  "value": "20%"
- },
- {
-  "section": "css",
-  "desc": "Blok boczny: wysokość 680 px",
-  "type": "css",
-  "selector": "aside",
-  "prop": "height",
-  "value": "680px"
- },
- {
-  "section": "css",
-  "desc": "Stopka: kolor tła Tomato",
-  "type": "css",
-  "selector": "footer",
-  "prop": "background-color",
-  "value": "Tomato"
- },
- {
-  "section": "css",
-  "desc": "Stopka: biały kolor czcionki",
-  "type": "css",
-  "selector": "footer",
-  "prop": "color",
-  "value": "white"
- },
- {
-  "section": "css",
-  "desc": "Stopka: wyrównanie tekstu do środka",
-  "type": "css",
-  "selector": "footer",
-  "prop": "text-align",
-  "value": "center"
- },
- {
-  "section": "css",
-  "desc": "Selektor obrazu: zaokrąglenie rogów 50% (wyłącznie selektor znacznika)",
-  "type": "cssRule",
-  "selector": "img",
-  "prop": "border-radius",
-  "value": "50%"
- },
- {
-  "section": "css",
-  "desc": "Selektor obrazu: margines wewnętrzny lewy 10 px (wyłącznie selektor znacznika)",
-  "type": "cssRule",
-  "selector": "img",
-  "prop": "padding-left",
-  "value": "10px"
- },
- {
-  "section": "css",
-  "desc": "Selektor obrazu: margines wewnętrzny prawy 10 px (wyłącznie selektor znacznika)",
-  "type": "cssRule",
-  "selector": "img",
-  "prop": "padding-right",
-  "value": "10px"
- },
- {
-  "section": "css",
-  "desc": "Blok chatu: obramowanie linią ciągłą 1 px w kolorze Tomato",
-  "type": "css",
-  "selector": "main > div:nth-of-type(1)",
-  "prop": "border-top",
-  "value": "1px solid Tomato"
- },
- {
-  "section": "css",
-  "desc": "Blok chatu: marginesy zewnętrzne 15 px",
-  "type": "css",
-  "selector": "main > div:nth-of-type(1)",
-  "prop": "margin",
-  "value": "15px"
- },
- {
-  "section": "css",
-  "desc": "Blok chatu: wysokość 470 px",
-  "type": "css",
-  "selector": "main > div:nth-of-type(1)",
-  "prop": "height",
-  "value": "470px"
- },
- {
-  "section": "css",
-  "desc": "Blok chatu: paski przewijania zawsze widoczne",
-  "type": "css",
-  "selector": "main > div:nth-of-type(1)",
-  "prop": "overflow",
-  "value": "scroll"
- },
- {
-  "section": "css",
-  "desc": "Bloki z wypowiedziami: zaokrąglenie rogów 5 px",
-  "type": "css",
-  "selector": "main > div:nth-of-type(1) > div",
-  "all": true,
-  "prop": "border-top-left-radius",
-  "value": "5px"
- },
- {
-  "section": "css",
-  "desc": "Bloki z wypowiedziami: szerokość 90%",
-  "type": "css",
-  "selector": "main > div:nth-of-type(1) > div",
-  "all": true,
-  "prop": "width",
-  "value": "90%"
- },
- {
-  "section": "css",
-  "desc": "Bloki z wypowiedziami: wysokość 70 px",
-  "type": "css",
-  "selector": "main > div:nth-of-type(1) > div",
-  "all": true,
-  "prop": "height",
-  "value": "70px"
- },
- {
-  "section": "css",
-  "desc": "Bloki z wypowiedziami: marginesy zewnętrzne 2%",
-  "type": "css",
-  "selector": "main > div:nth-of-type(1) > div",
-  "all": true,
-  "prop": "margin-top",
-  "value": "2%"
- },
- {
-  "section": "css",
-  "desc": "Bloki z wypowiedziami: marginesy wewnętrzne 3 px",
-  "type": "css",
-  "selector": "main > div:nth-of-type(1) > div",
-  "all": true,
-  "prop": "padding",
-  "value": "3px"
- },
- {
-  "section": "css",
-  "desc": "Wypowiedź Jolanty: kolor tła #EEE",
-  "type": "css",
-  "selector": "main > div:nth-of-type(1) > div:nth-of-type(1)",
-  "prop": "background-color",
-  "value": "#EEE"
- },
- {
-  "section": "css",
-  "desc": "Wypowiedź Jolanty: obraz opływany tekstem z prawej strony (obraz po lewej)",
-  "type": "css",
-  "selector": "main > div:nth-of-type(1) > div:nth-of-type(1) img",
-  "prop": "float",
-  "value": "left"
- },
- {
-  "section": "css",
-  "desc": "Wypowiedź Krzysztofa: kolor tła #CCC",
-  "type": "css",
-  "selector": "main > div:nth-of-type(1) > div:nth-of-type(2)",
-  "prop": "background-color",
-  "value": "#CCC"
- },
- {
-  "section": "css",
-  "desc": "Wypowiedź Krzysztofa: wyrównanie tekstu do prawej strony",
-  "type": "css",
-  "selector": "main > div:nth-of-type(1) > div:nth-of-type(2)",
-  "prop": "text-align",
-  "value": "right"
- },
- {
-  "section": "css",
-  "desc": "Wypowiedź Krzysztofa: obraz opływany tekstem z lewej strony (obraz po prawej)",
-  "type": "css",
-  "selector": "main > div:nth-of-type(1) > div:nth-of-type(2) img",
-  "prop": "float",
-  "value": "right"
- },
- {
-  "section": "css",
-  "desc": "Oba przyciski: kolor tła Tomato",
-  "type": "css",
-  "selector": "main button",
-  "all": true,
-  "prop": "background-color",
-  "value": "Tomato"
- },
- {
-  "section": "css",
-  "desc": "Oba przyciski: obramowanie linią ciągłą 1 px w kolorze DarkRed",
-  "type": "css",
-  "selector": "main button",
-  "all": true,
-  "prop": "border-top",
-  "value": "1px solid DarkRed"
- },
- {
-  "section": "css",
-  "desc": "Oba przyciski: marginesy wewnętrzne 5 px",
-  "type": "css",
-  "selector": "main button",
-  "all": true,
-  "prop": "padding",
-  "value": "5px"
- },
- {
-  "section": "css",
-  "desc": "Oba przyciski: czcionka pogrubiona",
-  "type": "css",
-  "selector": "main button",
-  "all": true,
-  "prop": "font-weight",
-  "value": "bold"
- },
- {
-  "section": "css",
-  "desc": "Pole edycyjne tekstowe: szerokość 500 px",
-  "type": "css",
-  "selector": "main input[type=text]",
-  "prop": "width",
-  "value": "500px"
- },
- {
-  "section": "js",
-  "desc": "Kliknięcie „Wyślij”: tekst z pola edycyjnego umieszczony w oknie chatu jako ostatni (trzeci blok z wypowiedzią)",
-  "type": "js",
-  "steps": [
-   {
-    "set": "main input[type=text]",
-    "value": "Test wiadomosci"
-   },
-   {
-    "click": "main button:nth-of-type(1)"
-   }
-  ],
-  "expect": [
-   {
-    "selector": "main > div:nth-of-type(1) > div",
-    "count": 3
-   },
-   {
-    "selector": "main > div:nth-of-type(1) > div:nth-of-type(3) p",
-    "equals": "Test wiadomosci"
-   }
-  ]
- },
- {
-  "section": "js",
-  "desc": "Kliknięcie „Wyślij”: wypowiedź Jolanty zawiera obraz Jolka.jpg",
-  "type": "js",
-  "steps": [
-   {
-    "set": "main input[type=text]",
-    "value": "Test wiadomosci"
-   },
-   {
-    "click": "main button:nth-of-type(1)"
-   }
-  ],
-  "expect": [
-   {
-    "selector": "main > div:nth-of-type(1) > div:nth-of-type(3) img",
-    "attr": "src",
-    "contains": "Jolka.jpg"
-   }
-  ]
- },
- {
-  "section": "js",
-  "desc": "Kliknięcie „Wyślij”: wypowiedź sformatowana jak wypowiedź Jolanty (kolor tła #EEE)",
-  "type": "js",
-  "steps": [
-   {
-    "set": "main input[type=text]",
-    "value": "Test wiadomosci"
-   },
-   {
-    "click": "main button:nth-of-type(1)"
-   }
-  ],
-  "expect": [
-   {
-    "selector": "main > div:nth-of-type(1) > div:nth-of-type(3)",
-    "css": "background-color",
-    "value": "#EEE"
-   }
-  ]
- },
- {
-  "section": "js",
-  "desc": "Kliknięcie „Wyślij” dwa razy: nowe wypowiedzi dodawane jako ostatnie",
-  "type": "js",
-  "steps": [
-   {
-    "set": "main input[type=text]",
-    "value": "Pierwsza"
-   },
-   {
-    "click": "main button:nth-of-type(1)"
-   },
-   {
-    "set": "main input[type=text]",
-    "value": "Druga"
-   },
-   {
-    "click": "main button:nth-of-type(1)"
-   }
-  ],
-  "expect": [
-   {
-    "selector": "main > div:nth-of-type(1) > div",
-    "count": 4
-   },
-   {
-    "selector": "main > div:nth-of-type(1) > div:nth-of-type(4) p",
-    "equals": "Druga"
-   }
-  ]
- },
- {
-  "section": "js",
-  "desc": "Kliknięcie „Generuj losową odpowiedź”: wypowiedź Krzysztofa dodana jako ostatnia z obrazem Krzysiek.jpg",
-  "type": "js",
-  "steps": [
-   {
-    "click": "main button:nth-of-type(2)"
-   }
-  ],
-  "expect": [
-   {
-    "selector": "main > div:nth-of-type(1) > div",
-    "count": 3
-   },
-   {
-    "selector": "main > div:nth-of-type(1) > div:nth-of-type(3) img",
-    "attr": "src",
-    "contains": "Krzysiek.jpg"
-   }
-  ]
- },
- {
-  "section": "js",
-  "desc": "Kliknięcie „Generuj losową odpowiedź”: tekst jest jednym z 9 elementów tablicy z tekstyDoChatu.txt",
-  "type": "js",
-  "steps": [
-   {
-    "click": "main button:nth-of-type(2)"
-   }
-  ],
-  "expect": [
-   {
-    "selector": "main > div:nth-of-type(1) > div:nth-of-type(3) p",
-    "matches": "^(Świetnie!|Kto gra główną rolę\\?|Lubisz filmy Tego reżysera\\?|Będę 10 minut wcześniej|Może kupimy sobie popcorn\\?|Ja wolę Colę|Zaproszę jeszcze Grześka|Tydzień temu też byłem w kinie na Diunie|Ja funduję bilety)$"
-   }
-  ]
- },
- {
-  "section": "js",
-  "desc": "Kliknięcie „Generuj losową odpowiedź”: wypowiedź sformatowana jak wypowiedź Krzysztofa (kolor tła #CCC)",
-  "type": "js",
-  "steps": [
-   {
-    "click": "main button:nth-of-type(2)"
-   }
-  ],
-  "expect": [
-   {
-    "selector": "main > div:nth-of-type(1) > div:nth-of-type(3)",
-    "css": "background-color",
-    "value": "#CCC"
-   }
-  ]
- },
- {
-  "section": "js",
-  "desc": "Skrypt napisany w JavaScript, po zapełnieniu bloku chatu przewijany do nowo wstawionej wypowiedzi (scrollIntoView)",
-  "type": "manual"
- },
- {
-  "section": "js",
-  "desc": "Wypowiedzi Krzysztofa losowane z wcześniej zadeklarowanej tablicy 9 elementów; indeks to losowa liczba od 0 do 8",
-  "type": "manual"
- },
- {
-  "section": "js",
-  "desc": "Znaczące nazewnictwo wszystkich zmiennych i funkcji",
-  "type": "manual"
- },
- {
-  "section": "css",
-  "desc": "Układ: blok boczny po prawej stronie bloku głównego",
-  "type": "layout",
-  "a": "aside",
-  "b": "main",
-  "relation": "rightOf"
- }
+  {"section": "grafika", "desc": "Jolka.jpg wykadrowana do kwadratu z całą twarzą i przeskalowana dokładnie do 70 px na 70 px", "type": "image", "name": "Jolka.jpg", "width": 70, "height": 70},
+  {"section": "pliki", "desc": "Strona o nazwie chat.html", "type": "file", "name": "chat.html"},
+  {"section": "pliki", "desc": "Arkusz stylów w pliku o nazwie styl.css", "type": "file", "name": "styl.css"},
+  {"section": "html", "desc": "Strona w języku HTML5, język zawartości polski, jawnie kodowanie UTF-8", "type": "head", "lang": "pl", "charset": true},
+  {"section": "html", "desc": "Tytuł strony „Chat”", "type": "head", "doctype": false, "title": "Chat"},
+  {"section": "html", "desc": "Arkusz stylów w pliku styl.css prawidłowo połączony z kodem strony", "type": "head", "doctype": false, "stylesheet": "styl.css"},
+  {"section": "html", "desc": "Podział strony semantycznymi znacznikami: baner, blok główny, blok boczny, stopka", "type": "exists", "hint": "baner jako header, blok główny jako main, blok boczny jako aside, stopka jako footer", "selectors": ["header", "main", "footer"]},
+  {"section": "html", "desc": "Blok boczny jako znacznik semantyczny", "type": "exists", "selector": "aside", "count": 1},
+  {"section": "css", "desc": "Układ: baner nad blokiem głównym", "type": "layout", "a": "header", "b": "main", "relation": "above"},
+  {"section": "css", "desc": "Układ: blok boczny obok banera (po prawej)", "type": "layout", "a": "aside", "b": "header", "relation": "rightOf"},
+  {"section": "css", "desc": "Układ: stopka na dole, pod blokami", "type": "layout", "a": "footer", "b": "aside", "relation": "below"},
+  {"section": "css", "desc": "Układ: stopka pod blokiem głównym", "type": "layout", "a": "footer", "b": "main", "relation": "below"},
+  {"section": "html", "desc": "Zawartość banera: nagłówek drugiego stopnia „Chat”", "type": "text", "selector": "header h2", "equals": "Chat"},
+  {"section": "html", "desc": "Blok boczny: nagłówek trzeciego stopnia „Chaty”", "type": "text", "selector": "aside h3", "equals": "Chaty", "index": 0},
+  {"section": "html", "desc": "Blok boczny: lista punktowana", "type": "exists", "selector": "aside > ul", "count": 1},
+  {"section": "html", "desc": "Lista punktowana: pierwszy element „Ogólny”", "type": "text", "selector": "aside > ul > li:nth-of-type(1)", "equals": "Ogólny"},
+  {"section": "html", "desc": "Lista punktowana: drugi element „Tematyczne” (zagnieżdża listę numerowaną)", "type": "text", "selector": "aside > ul > li:nth-of-type(2)", "startsWith": "Tematyczne"},
+  {"section": "html", "desc": "Drugi element zagnieżdża listę numerowaną z czterema elementami", "type": "exists", "selector": "aside > ul > li:nth-of-type(2) > ol > li", "count": 4},
+  {"section": "html", "desc": "Lista numerowana: „Turystyczny”", "type": "text", "selector": "aside ol li:nth-of-type(1)", "equals": "Turystyczny"},
+  {"section": "html", "desc": "Lista numerowana: „Żeglarski”", "type": "text", "selector": "aside ol li:nth-of-type(2)", "equals": "Żeglarski"},
+  {"section": "html", "desc": "Lista numerowana: „Filatelistyczny”", "type": "text", "selector": "aside ol li:nth-of-type(3)", "equals": "Filatelistyczny"},
+  {"section": "html", "desc": "Lista numerowana: „Hodowla zwierzątek domowych”", "type": "text", "selector": "aside ol li:nth-of-type(4)", "equals": "Hodowla zwierzątek domowych"},
+  {"section": "html", "desc": "Blok boczny: nagłówek trzeciego stopnia „Uczestnicy”", "type": "text", "selector": "aside h3", "equals": "Uczestnicy", "index": 1},
+  {"section": "html", "desc": "Blok boczny: paragraf „Jolanta Nowak”", "type": "text", "selector": "aside p", "equals": "Jolanta Nowak", "index": 0},
+  {"section": "html", "desc": "Blok boczny: obraz Jolka.jpg", "type": "attr", "selector": "aside img", "attr": "src", "contains": "Jolka.jpg", "index": 0},
+  {"section": "html", "desc": "Obraz Jolka.jpg z tekstem alternatywnym „Jolanta Nowak”", "type": "attr", "selector": "aside img", "attr": "alt", "equals": "Jolanta Nowak", "index": 0},
+  {"section": "html", "desc": "Blok boczny: paragraf „Krzysztof Łukasiński”", "type": "text", "selector": "aside p", "equals": "Krzysztof Łukasiński", "index": 1},
+  {"section": "html", "desc": "Blok boczny: obraz Krzysiek.jpg", "type": "attr", "selector": "aside img", "attr": "src", "contains": "Krzysiek.jpg", "index": 1},
+  {"section": "html", "desc": "Obraz Krzysiek.jpg z tekstem alternatywnym „Krzysztof Łukasiński”", "type": "attr", "selector": "aside img", "attr": "alt", "equals": "Krzysztof Łukasiński", "index": 1},
+  {"section": "html", "desc": "Blok główny: blok chatu", "type": "exists", "selector": "main > div:nth-of-type(1)", "hint": "blok chatu jako div w bloku głównym, przed polem wiadomości"},
+  {"section": "html", "desc": "Blok chatu: dwa bloki z wypowiedziami", "type": "exists", "selector": "main > div:nth-of-type(1) > div", "count": 2, "hint": "wypowiedzi jako div w bloku chatu"},
+  {"section": "html", "desc": "Wypowiedź Jolanty: obraz Jolka.jpg", "type": "attr", "selector": "main > div:nth-of-type(1) > div:nth-of-type(1) img", "attr": "src", "contains": "Jolka.jpg"},
+  {"section": "html", "desc": "Wypowiedź Jolanty: paragraf „Cześć idziesz jutro do kina?”", "type": "text", "selector": "main > div:nth-of-type(1) > div:nth-of-type(1) p", "equals": "Cześć idziesz jutro do kina?"},
+  {"section": "html", "desc": "Wypowiedź Krzysztofa: obraz Krzysiek.jpg", "type": "attr", "selector": "main > div:nth-of-type(1) > div:nth-of-type(2) img", "attr": "src", "contains": "Krzysiek.jpg"},
+  {"section": "html", "desc": "Wypowiedź Krzysztofa: paragraf „Tak! A ty?”", "type": "text", "selector": "main > div:nth-of-type(1) > div:nth-of-type(2) p", "equals": "Tak! A ty?"},
+  {"section": "html", "desc": "Napis „Wpisz wiadomość:”", "type": "text", "selector": "main", "contains": "Wpisz wiadomość:"},
+  {"section": "html", "desc": "Pole edycyjne tekstowe", "type": "exists", "selector": "main input[type=text]", "count": 1},
+  {"section": "html", "desc": "Przycisk o treści „Wyślij”", "type": "text", "selector": "main button", "equals": "Wyślij", "index": 0},
+  {"section": "html", "desc": "Przycisk o treści „Generuj losową odpowiedź”", "type": "text", "selector": "main button", "equals": "Generuj losową odpowiedź", "index": 1},
+  {"section": "css", "desc": "Obok siebie: napis „Wpisz wiadomość:”, pole edycyjne i przycisk „Wyślij” (pole i przycisk w jednym rzędzie)", "type": "layout", "a": "main input[type=text]", "b": "main button:nth-of-type(1)", "relation": "sameRow"},
+  {"section": "css", "desc": "Poniżej: przycisk „Generuj losową odpowiedź”", "type": "layout", "a": "main button:nth-of-type(2)", "b": "main button:nth-of-type(1)", "relation": "below"},
+  {"section": "css", "desc": "Układ: pole wiadomości pod blokiem chatu", "type": "layout", "a": "main input[type=text]", "b": "main > div:nth-of-type(1)", "relation": "below"},
+  {"section": "html", "desc": "Stopka: nagłówek piątego stopnia „Chat wykonał: ” i numer zdającego", "type": "text", "selector": "footer h5", "startsWith": "Chat wykonał:"},
+  {"section": "css", "desc": "Domyślnie dla wszystkich selektorów: krój czcionki Garamond", "type": "css", "selector": "aside h3", "prop": "font-family", "value": "Garamond"},
+  {"section": "css", "desc": "Domyślnie dla wszystkich selektorów: krój czcionki Garamond (paragrafy)", "type": "css", "selector": "aside p", "prop": "font-family", "value": "Garamond"},
+  {"section": "css", "desc": "Baner: kolor tła Tomato", "type": "css", "selector": "header", "prop": "background-color", "value": "Tomato"},
+  {"section": "css", "desc": "Baner: biały kolor czcionki", "type": "css", "selector": "header", "prop": "color", "value": "white"},
+  {"section": "css", "desc": "Baner: wyrównanie tekstu do środka", "type": "css", "selector": "header", "prop": "text-align", "value": "center"},
+  {"section": "css", "desc": "Baner: szerokość 80%", "type": "css", "selector": "header", "prop": "width", "value": "80%"},
+  {"section": "css", "desc": "Baner: wysokość 80 px", "type": "css", "selector": "header", "prop": "height", "value": "80px"},
+  {"section": "css", "desc": "Blok główny: szerokość 80%", "type": "css", "selector": "main", "prop": "width", "value": "80%"},
+  {"section": "css", "desc": "Blok główny: wysokość 600 px", "type": "css", "selector": "main", "prop": "height", "value": "600px"},
+  {"section": "css", "desc": "Blok boczny: kolor tła Coral", "type": "css", "selector": "aside", "prop": "background-color", "value": "Coral"},
+  {"section": "css", "desc": "Blok boczny: szerokość 20%", "type": "css", "selector": "aside", "prop": "width", "value": "20%"},
+  {"section": "css", "desc": "Blok boczny: wysokość 680 px", "type": "css", "selector": "aside", "prop": "height", "value": "680px"},
+  {"section": "css", "desc": "Stopka: kolor tła Tomato", "type": "css", "selector": "footer", "prop": "background-color", "value": "Tomato"},
+  {"section": "css", "desc": "Stopka: biały kolor czcionki", "type": "css", "selector": "footer", "prop": "color", "value": "white"},
+  {"section": "css", "desc": "Stopka: wyrównanie tekstu do środka", "type": "css", "selector": "footer", "prop": "text-align", "value": "center"},
+  {"section": "css", "desc": "Selektor obrazu: zaokrąglenie rogów 50% (wyłącznie selektor znacznika)", "type": "cssRule", "selector": "img", "prop": "border-radius", "value": "50%"},
+  {"section": "css", "desc": "Selektor obrazu: margines wewnętrzny lewy 10 px (wyłącznie selektor znacznika)", "type": "cssRule", "selector": "img", "prop": "padding-left", "value": "10px"},
+  {"section": "css", "desc": "Selektor obrazu: margines wewnętrzny prawy 10 px (wyłącznie selektor znacznika)", "type": "cssRule", "selector": "img", "prop": "padding-right", "value": "10px"},
+  {"section": "css", "desc": "Blok chatu: obramowanie linią ciągłą 1 px w kolorze Tomato", "type": "css", "selector": "main > div:nth-of-type(1)", "prop": "border-top", "value": "1px solid Tomato"},
+  {"section": "css", "desc": "Blok chatu: marginesy zewnętrzne 15 px", "type": "css", "selector": "main > div:nth-of-type(1)", "prop": "margin", "value": "15px"},
+  {"section": "css", "desc": "Blok chatu: wysokość 470 px", "type": "css", "selector": "main > div:nth-of-type(1)", "prop": "height", "value": "470px"},
+  {"section": "css", "desc": "Blok chatu: paski przewijania zawsze widoczne", "type": "css", "selector": "main > div:nth-of-type(1)", "prop": "overflow", "value": "scroll"},
+  {"section": "css", "desc": "Bloki z wypowiedziami: zaokrąglenie rogów 5 px", "type": "css", "selector": "main > div:nth-of-type(1) > div", "all": true, "prop": "border-top-left-radius", "value": "5px"},
+  {"section": "css", "desc": "Bloki z wypowiedziami: szerokość 90%", "type": "css", "selector": "main > div:nth-of-type(1) > div", "all": true, "prop": "width", "value": "90%"},
+  {"section": "css", "desc": "Bloki z wypowiedziami: wysokość 70 px", "type": "css", "selector": "main > div:nth-of-type(1) > div", "all": true, "prop": "height", "value": "70px"},
+  {"section": "css", "desc": "Bloki z wypowiedziami: marginesy zewnętrzne 2%", "type": "css", "selector": "main > div:nth-of-type(1) > div", "all": true, "prop": "margin-top", "value": "2%"},
+  {"section": "css", "desc": "Bloki z wypowiedziami: marginesy wewnętrzne 3 px", "type": "css", "selector": "main > div:nth-of-type(1) > div", "all": true, "prop": "padding", "value": "3px"},
+  {"section": "css", "desc": "Wypowiedź Jolanty: kolor tła #EEE", "type": "css", "selector": "main > div:nth-of-type(1) > div:nth-of-type(1)", "prop": "background-color", "value": "#EEE"},
+  {"section": "css", "desc": "Wypowiedź Jolanty: obraz opływany tekstem z prawej strony (obraz po lewej)", "type": "css", "selector": "main > div:nth-of-type(1) > div:nth-of-type(1) img", "prop": "float", "value": "left"},
+  {"section": "css", "desc": "Wypowiedź Krzysztofa: kolor tła #CCC", "type": "css", "selector": "main > div:nth-of-type(1) > div:nth-of-type(2)", "prop": "background-color", "value": "#CCC"},
+  {"section": "css", "desc": "Wypowiedź Krzysztofa: wyrównanie tekstu do prawej strony", "type": "css", "selector": "main > div:nth-of-type(1) > div:nth-of-type(2)", "prop": "text-align", "value": "right"},
+  {"section": "css", "desc": "Wypowiedź Krzysztofa: obraz opływany tekstem z lewej strony (obraz po prawej)", "type": "css", "selector": "main > div:nth-of-type(1) > div:nth-of-type(2) img", "prop": "float", "value": "right"},
+  {"section": "css", "desc": "Oba przyciski: kolor tła Tomato", "type": "css", "selector": "main button", "all": true, "prop": "background-color", "value": "Tomato"},
+  {"section": "css", "desc": "Oba przyciski: obramowanie linią ciągłą 1 px w kolorze DarkRed", "type": "css", "selector": "main button", "all": true, "prop": "border-top", "value": "1px solid DarkRed"},
+  {"section": "css", "desc": "Oba przyciski: marginesy wewnętrzne 5 px", "type": "css", "selector": "main button", "all": true, "prop": "padding", "value": "5px"},
+  {"section": "css", "desc": "Oba przyciski: czcionka pogrubiona", "type": "css", "selector": "main button", "all": true, "prop": "font-weight", "value": "bold"},
+  {"section": "css", "desc": "Pole edycyjne tekstowe: szerokość 500 px", "type": "css", "selector": "main input[type=text]", "prop": "width", "value": "500px"},
+  {"section": "js", "desc": "Kliknięcie „Wyślij”: tekst z pola edycyjnego umieszczony w oknie chatu jako ostatni (trzeci blok z wypowiedzią)", "type": "js", "steps": [{"set": "main input[type=text]", "value": "Test wiadomosci"}, {"click": "main button:nth-of-type(1)"}], "expect": [{"selector": "main > div:nth-of-type(1) > div", "count": 3}, {"selector": "main > div:nth-of-type(1) > div:nth-of-type(3) p", "equals": "Test wiadomosci"}]},
+  {"section": "js", "desc": "Kliknięcie „Wyślij”: wypowiedź Jolanty zawiera obraz Jolka.jpg", "type": "js", "steps": [{"set": "main input[type=text]", "value": "Test wiadomosci"}, {"click": "main button:nth-of-type(1)"}], "expect": [{"selector": "main > div:nth-of-type(1) > div:nth-of-type(3) img", "attr": "src", "contains": "Jolka.jpg"}]},
+  {"section": "js", "desc": "Kliknięcie „Wyślij”: wypowiedź sformatowana jak wypowiedź Jolanty (kolor tła #EEE)", "type": "js", "steps": [{"set": "main input[type=text]", "value": "Test wiadomosci"}, {"click": "main button:nth-of-type(1)"}], "expect": [{"selector": "main > div:nth-of-type(1) > div:nth-of-type(3)", "css": "background-color", "value": "#EEE"}]},
+  {"section": "js", "desc": "Kliknięcie „Wyślij” dwa razy: nowe wypowiedzi dodawane jako ostatnie", "type": "js", "steps": [{"set": "main input[type=text]", "value": "Pierwsza"}, {"click": "main button:nth-of-type(1)"}, {"set": "main input[type=text]", "value": "Druga"}, {"click": "main button:nth-of-type(1)"}], "expect": [{"selector": "main > div:nth-of-type(1) > div", "count": 4}, {"selector": "main > div:nth-of-type(1) > div:nth-of-type(4) p", "equals": "Druga"}]},
+  {"section": "js", "desc": "Kliknięcie „Generuj losową odpowiedź”: wypowiedź Krzysztofa dodana jako ostatnia z obrazem Krzysiek.jpg", "type": "js", "steps": [{"click": "main button:nth-of-type(2)"}], "expect": [{"selector": "main > div:nth-of-type(1) > div", "count": 3}, {"selector": "main > div:nth-of-type(1) > div:nth-of-type(3) img", "attr": "src", "contains": "Krzysiek.jpg"}]},
+  {"section": "js", "desc": "Kliknięcie „Generuj losową odpowiedź”: tekst jest jednym z 9 elementów tablicy z tekstyDoChatu.txt", "type": "js", "steps": [{"click": "main button:nth-of-type(2)"}], "expect": [{"selector": "main > div:nth-of-type(1) > div:nth-of-type(3) p", "matches": "^(Świetnie!|Kto gra główną rolę\\?|Lubisz filmy Tego reżysera\\?|Będę 10 minut wcześniej|Może kupimy sobie popcorn\\?|Ja wolę Colę|Zaproszę jeszcze Grześka|Tydzień temu też byłem w kinie na Diunie|Ja funduję bilety)$"}]},
+  {"section": "js", "desc": "Kliknięcie „Generuj losową odpowiedź”: wypowiedź sformatowana jak wypowiedź Krzysztofa (kolor tła #CCC)", "type": "js", "steps": [{"click": "main button:nth-of-type(2)"}], "expect": [{"selector": "main > div:nth-of-type(1) > div:nth-of-type(3)", "css": "background-color", "value": "#CCC"}]},
+  {"section": "js", "desc": "Skrypt napisany w JavaScript, po zapełnieniu bloku chatu przewijany do nowo wstawionej wypowiedzi (scrollIntoView)", "type": "manual"},
+  {"section": "js", "desc": "Wypowiedzi Krzysztofa losowane z wcześniej zadeklarowanej tablicy 9 elementów; indeks to losowa liczba od 0 do 8", "type": "manual"},
+  {"section": "js", "desc": "Znaczące nazewnictwo wszystkich zmiennych i funkcji", "type": "manual"},
+  {"section": "css", "desc": "Układ: blok boczny po prawej stronie bloku głównego", "type": "layout", "a": "aside", "b": "main", "relation": "rightOf"}
 ]

@@ -2,11 +2,10 @@
   {"section": "grafika", "desc": "obraz1.png: przezroczyste tło, obszar województwa dolnośląskiego wypełniony kolorem niebieskim", "type": "image", "name": "obraz1.png", "alpha": true},
   {"section": "pliki", "desc": "Strona poziomRzek.php", "type": "file", "name": "poziomRzek.php"},
   {"section": "pliki", "desc": "Arkusz stylów styl.css", "type": "file", "name": "styl.css"},
-
   {"section": "html", "desc": "Strona zapisana w języku HTML5, język zawartości polski, jawnie kodowanie znaków UTF-8", "type": "head", "lang": "pl", "charset": true},
   {"section": "html", "desc": "Tytuł strony „Poziomy rzek”", "type": "head", "doctype": false, "title": "Poziomy rzek"},
   {"section": "html", "desc": "Arkusz stylów w pliku styl.css prawidłowo połączony z kodem strony", "type": "head", "doctype": false, "stylesheet": "styl.css"},
-  {"section": "html", "desc": "Podział na bloki semantycznymi znacznikami: dwa bloki banera, menu, bloki lewy i prawy, stopka", "type": "exists", "selector": "header ~ header ~ nav ~ main ~ aside ~ footer", "hint": "baner jako dwa znaczniki header, menu jako nav, blok lewy jako main, blok prawy jako aside, stopka jako footer"},
+  {"section": "html", "desc": "Podział na bloki semantycznymi znacznikami: dwa bloki banera, menu, bloki lewy i prawy, stopka", "type": "exists", "hint": "baner jako dwa znaczniki header, menu jako nav, blok lewy jako main, blok prawy jako aside, stopka jako footer", "selectors": ["header", "header", "nav", "main", "aside", "footer"]},
   {"section": "html", "desc": "Dwa bloki banera", "type": "exists", "selector": "header", "count": 2},
   {"section": "html", "desc": "Pierwszy baner: obraz1.png", "type": "attr", "selector": "header:nth-of-type(1) img", "attr": "src", "equals": "obraz1.png"},
   {"section": "html", "desc": "Pierwszy baner: tekst alternatywny „Mapa Polski”", "type": "attr", "selector": "header:nth-of-type(1) img", "attr": "alt", "equals": "Mapa Polski"},
@@ -41,7 +40,6 @@
   {"section": "html", "desc": "Blok prawy: obraz obraz2.jpg", "type": "attr", "selector": "aside img", "attr": "src", "equals": "obraz2.jpg"},
   {"section": "html", "desc": "Obraz w bloku prawym: tekst alternatywny „rzeka”", "type": "attr", "selector": "aside img", "attr": "alt", "equals": "rzeka"},
   {"section": "html", "desc": "Stopka: akapit „Stronę wykonał: ” i numer zdającego", "type": "text", "selector": "footer p", "startsWith": "Stronę wykonał:"},
-
   {"section": "css", "desc": "Domyślne formatowanie wszystkich selektorów: krój czcionki Georgia", "type": "css", "selector": "h1", "prop": "font-family", "value": "Georgia"},
   {"section": "css", "desc": "Domyślny krój czcionki Georgia także w akapicie", "type": "css", "selector": "footer p", "prop": "font-family", "value": "Georgia"},
   {"section": "css", "desc": "Bloki banera: kolor tła Navy", "type": "css", "selector": "header", "all": true, "prop": "background-color", "value": "Navy"},
@@ -73,7 +71,6 @@
   {"section": "css", "desc": "Układ: blok lewy obok bloku prawego", "type": "layout", "a": "main", "b": "aside", "relation": "leftOf"},
   {"section": "css", "desc": "Układ: bloki lewy i prawy pod menu", "type": "layout", "a": "nav", "b": "main", "relation": "above"},
   {"section": "css", "desc": "Układ: stopka na dole pod blokami", "type": "layout", "a": "footer", "b": "main", "relation": "below"},
-
   {"section": "php", "desc": "Skrypty łączą się z serwerem bazodanowym na localhost, użytkownik root bez hasła, baza rzeki; znaczące nazewnictwo zmiennych lub funkcji", "type": "php"},
   {"section": "php", "desc": "Zapytanie 2 dla „Wszystkie”; zapytanie 3 lub zapytanie 2 z warunkiem dla „Ponad stan ostrzegawczy”; zmodyfikowane zapytanie 3 lub zapytanie 2 z warunkiem dla „Ponad stan alarmowy”", "type": "php"}
 ]

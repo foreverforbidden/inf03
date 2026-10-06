@@ -2,11 +2,10 @@
   {"section": "grafika", "desc": "ToyotaYaris.jpg: przeskalowana z zachowaniem proporcji do szerokości dokładnie 500 px", "type": "image", "name": "ToyotaYaris.jpg", "width": 500},
   {"section": "pliki", "desc": "Strona KupAuto.php", "type": "file", "name": "KupAuto.php"},
   {"section": "pliki", "desc": "Arkusz stylów styl.css", "type": "file", "name": "styl.css"},
-
   {"section": "html", "desc": "Strona zapisana w języku HTML5, język witryny polski, jawnie kodowanie UTF-8", "type": "head", "lang": "pl", "charset": true},
   {"section": "html", "desc": "Tytuł strony „Komis aut”", "type": "head", "doctype": false, "title": "Komis aut"},
   {"section": "html", "desc": "Arkusz stylów w pliku styl.css prawidłowo połączony z kodem strony", "type": "head", "doctype": false, "stylesheet": "styl.css"},
-  {"section": "html", "desc": "Podział na bloki: baner, trzy bloki główne jeden pod drugim, na dole blok stopki (semantyczne znaczniki sekcji)", "type": "exists", "selector": "header ~ main ~ main ~ main ~ footer", "hint": "baner jako header, bloki główne jako trzy znaczniki main, stopka jako footer"},
+  {"section": "html", "desc": "Podział na bloki: baner, trzy bloki główne jeden pod drugim, na dole blok stopki (semantyczne znaczniki sekcji)", "type": "exists", "hint": "baner jako header, bloki główne jako trzy znaczniki main, stopka jako footer", "selectors": ["header", "main", "main", "main", "footer"]},
   {"section": "html", "desc": "Trzy bloki główne", "type": "exists", "selector": "main", "count": 3, "hint": "bloki główne jako main"},
   {"section": "html", "desc": "Baner: nagłówek pierwszego stopnia „KupAuto! Internetowy Komis Samochodowy”", "type": "text", "selector": "header h1", "equals": "KupAuto! Internetowy Komis Samochodowy"},
   {"section": "html", "desc": "Fraza „KupAuto!” w znaczniku uwydatnienia zapisywanym czcionką pochyłą", "type": "text", "selector": "header h1 em", "equals": "KupAuto!"},
@@ -22,7 +21,6 @@
   {"section": "html", "desc": "Stopka: paragraf „Stronę wykonał: ” i numer zdającego", "type": "text", "selector": "footer p", "startsWith": "Stronę wykonał:", "index": 0},
   {"section": "html", "desc": "Stopka: paragraf z odnośnikiem „Znajdź nas także”", "type": "text", "selector": "footer p a", "equals": "Znajdź nas także"},
   {"section": "html", "desc": "Odnośnik prowadzi do strony http://firmy.pl/komis", "type": "attr", "selector": "footer p a", "attr": "href", "equals": "http://firmy.pl/komis"},
-
   {"section": "css", "desc": "Domyślnie dla wszystkich selektorów: krój czcionki Roboto, w przypadku braku Serif", "type": "css", "selector": "main:nth-of-type(2) h2", "prop": "font-family", "value": "Roboto, Serif"},
   {"section": "css", "desc": "Baner: kolor tła Crimson", "type": "css", "selector": "header", "prop": "background-color", "value": "Crimson"},
   {"section": "css", "desc": "Baner: biały kolor czcionki", "type": "css", "selector": "header", "prop": "color", "value": "white"},
@@ -51,7 +49,6 @@
   {"section": "css", "desc": "Układ: drugi blok główny pod pierwszym", "type": "layout", "a": "main:nth-of-type(2)", "b": "main:nth-of-type(1)", "relation": "below"},
   {"section": "css", "desc": "Układ: trzeci blok główny pod drugim", "type": "layout", "a": "main:nth-of-type(3)", "b": "main:nth-of-type(2)", "relation": "below"},
   {"section": "css", "desc": "Układ: stopka pod trzecim blokiem głównym", "type": "layout", "a": "footer", "b": "main:nth-of-type(3)", "relation": "below"},
-
   {"section": "php", "desc": "Skrypty łączą się z serwerem bazodanowym na localhost, użytkownik root bez hasła, baza kupauto; na końcu zamykane jest połączenie z serwerem", "type": "php"},
   {"section": "manual", "desc": "Znaczące nazewnictwo wszystkich zmiennych lub funkcji", "type": "manual"}
 ]

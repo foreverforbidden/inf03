@@ -210,6 +210,13 @@ function checkStatic(doc, c, project, entry) {
       return fails.length ? { ok: false, msg: fails.join('; ') } : { ok: true };
     }
     case 'exists': {
+      if (c.selectors) {
+        // kilka blokow, kazdy osobno (powtorzony selektor = co najmniej tyle elementow); bez wymogu kolejnosci w kodzie
+        const need = {};
+        for (const s of c.selectors) need[s] = (need[s] || 0) + 1;
+        const miss = Object.entries(need).filter(([s, k]) => doc.querySelectorAll(s).length < k).map(([s, k]) => (k > 1 ? `${k}× ${s}` : s));
+        return miss.length ? { ok: false, msg: `brak: ${miss.join(', ')}` } : { ok: true };
+      }
       const n = doc.querySelectorAll(c.selector).length;
       if (c.count != null) return n === c.count ? { ok: true } : { ok: false, msg: `elementów „${c.selector}”: ${n}, oczekiwano ${c.count}` };
       if (c.min != null) return n >= c.min ? { ok: true } : { ok: false, msg: `elementów „${c.selector}”: ${n}, oczekiwano co najmniej ${c.min}` };
@@ -255,11 +262,16 @@ function checkStatic(doc, c, project, entry) {
       const temp = el ? null : doc.body.appendChild(doc.createElement('div'));
       if (temp) el = temp;
       const want = normSel(c.selector);
+      // matching: dowolna regula, ktorej selektor trafia w element (bez pseudoklas), nie tylko dokladnie ten selektor
+      const hits = (sel) => {
+        const parts = sel.split(',');
+        if (!c.matching || temp) return parts.map(normSel).includes(want);
+        return parts.some((p) => { if (/:(hover|active|focus|visited|link)|::/i.test(p)) return false; try { return el.matches(p); } catch (e) { return false; } });
+      };
       try {
         for (const { rule, media } of allRules(doc)) {
           if (!!c.media !== !!media) continue;
-          const parts = rule.selectorText.split(',').map(normSel);
-          if (!parts.includes(want)) continue;
+          if (!hits(rule.selectorText)) continue;
           if (!c.prop || ruleValueMatches(el, rule.style, c.prop, c.value)) return { ok: true };
         }
       } finally {

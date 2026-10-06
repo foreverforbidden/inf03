@@ -1,521 +1,71 @@
 [
- {
-  "section": "grafika",
-  "desc": "zakupy.png: szerokość dokładnie 180 px, zachowanie przezroczystości, ta sama nazwa",
-  "type": "image",
-  "name": "zakupy.png",
-  "width": 180,
-  "alpha": true
- },
- {
-  "section": "pliki",
-  "desc": "Strona index.php",
-  "type": "file",
-  "name": "index.php"
- },
- {
-  "section": "pliki",
-  "desc": "Arkusz stylów styl.css",
-  "type": "file",
-  "name": "styl.css"
- },
- {
-  "section": "html",
-  "desc": "Zapisana w języku HTML5, język zawartości polski, jawne kodowanie polskich znaków",
-  "type": "head",
-  "lang": "pl",
-  "charset": true
- },
- {
-  "section": "html",
-  "desc": "Tytuł strony „Hurtownia szkolna”",
-  "type": "head",
-  "doctype": false,
-  "title": "Hurtownia szkolna"
- },
- {
-  "section": "html",
-  "desc": "Arkusz stylów w pliku styl.css prawidłowo połączony z kodem strony",
-  "type": "head",
-  "doctype": false,
-  "stylesheet": "styl.css"
- },
- {
-  "section": "html",
-  "desc": "Podział na bloki znacznikami sekcji: baner, bloki lewy, środkowy i prawy, stopka",
-  "type": "exists",
-  "selector": "header ~ section ~ section ~ section ~ footer",
-  "hint": "baner jako header, trzy bloki jako section, stopka jako footer"
- },
- {
-  "section": "html",
-  "desc": "Trzy bloki: lewy, środkowy i prawy (znaczniki sekcji)",
-  "type": "exists",
-  "selector": "section",
-  "count": 3
- },
- {
-  "section": "html",
-  "desc": "Baner: nagłówek pierwszego stopnia „Hurtownia z najlepszymi cenami”",
-  "type": "text",
-  "selector": "header h1",
-  "equals": "Hurtownia z najlepszymi cenami"
- },
- {
-  "section": "html",
-  "desc": "Blok lewy: nagłówek drugiego stopnia „Nasze ceny”",
-  "type": "text",
-  "selector": "section:nth-of-type(1) h2",
-  "equals": "Nasze ceny"
- },
- {
-  "section": "html",
-  "desc": "Blok lewy: tabela",
-  "type": "exists",
-  "selector": "section:nth-of-type(1) table",
-  "count": 1
- },
- {
-  "section": "php",
-  "desc": "Tabela o czterech wierszach i dwóch kolumnach wypełniona skryptem 1 (nazwa towaru i cena w komórkach)",
-  "type": "php"
- },
- {
-  "section": "html",
-  "desc": "Blok środkowy: nagłówek drugiego stopnia „Koszt zakupów”",
-  "type": "text",
-  "selector": "section:nth-of-type(2) h2",
-  "equals": "Koszt zakupów"
- },
- {
-  "section": "html",
-  "desc": "Formularz wysyłający dane do tego samego pliku (index.php)",
-  "type": "attr",
-  "selector": "section:nth-of-type(2) form",
-  "attr": "action",
-  "equals": "index.php"
- },
- {
-  "section": "html",
-  "desc": "Formularz wysyłający dane metodą bezpieczną (post)",
-  "type": "attr",
-  "selector": "section:nth-of-type(2) form",
-  "attr": "method",
-  "equals": "post"
- },
- {
-  "section": "html",
-  "desc": "Napis „wybierz artykuł: ”",
-  "type": "text",
-  "selector": "section:nth-of-type(2) form",
-  "contains": "wybierz artykuł:"
- },
- {
-  "section": "html",
-  "desc": "Lista rozwijalna",
-  "type": "exists",
-  "selector": "section:nth-of-type(2) form select",
-  "count": 1
- },
- {
-  "section": "html",
-  "desc": "Lista rozwijalna: cztery pozycje",
-  "type": "exists",
-  "selector": "section:nth-of-type(2) form select option",
-  "count": 4
- },
- {
-  "section": "html",
-  "desc": "Lista rozwijalna: pozycja „Zeszyt 60 kartek”",
-  "type": "text",
-  "selector": "section:nth-of-type(2) form select option",
-  "equals": "Zeszyt 60 kartek",
-  "index": 0
- },
- {
-  "section": "html",
-  "desc": "Lista rozwijalna: pozycja „Zeszyt 32 kartki”",
-  "type": "text",
-  "selector": "section:nth-of-type(2) form select option",
-  "equals": "Zeszyt 32 kartki",
-  "index": 1
- },
- {
-  "section": "html",
-  "desc": "Lista rozwijalna: pozycja „Cyrkiel”",
-  "type": "text",
-  "selector": "section:nth-of-type(2) form select option",
-  "equals": "Cyrkiel",
-  "index": 2
- },
- {
-  "section": "html",
-  "desc": "Lista rozwijalna: pozycja „Linijka 30 cm”",
-  "type": "text",
-  "selector": "section:nth-of-type(2) form select option",
-  "equals": "Linijka 30 cm",
-  "index": 3
- },
- {
-  "section": "html",
-  "desc": "Pole edycyjne typu numerycznego",
-  "type": "exists",
-  "selector": "section:nth-of-type(2) form input[type=number]",
-  "count": 1
- },
- {
-  "section": "html",
-  "desc": "Napis „liczba sztuk: ” poprzedzający pole edycyjne",
-  "type": "text",
-  "selector": "section:nth-of-type(2) form",
-  "contains": "liczba sztuk:"
- },
- {
-  "section": "html",
-  "desc": "Przycisk „OBLICZ”",
-  "type": "exists",
-  "selector": "section:nth-of-type(2) form input[type=submit][value='OBLICZ'], section:nth-of-type(2) form button",
-  "hint": "przycisk wysyłający formularz o napisie OBLICZ"
- },
- {
-  "section": "php",
-  "desc": "Skrypt 2: pobranie nazwy towaru i liczby sztuk, zapytanie 2 z warunkiem wg wyboru, wyliczenie i wyświetlenie pod formularzem „wartość zakupów: <obliczona_kwota>”",
-  "type": "php"
- },
- {
-  "section": "html",
-  "desc": "Blok prawy: nagłówek drugiego stopnia „Kontakt”",
-  "type": "text",
-  "selector": "section:nth-of-type(3) h2",
-  "equals": "Kontakt"
- },
- {
-  "section": "html",
-  "desc": "Blok prawy: obraz zakupy.png",
-  "type": "attr",
-  "selector": "section:nth-of-type(3) img",
-  "attr": "src",
-  "equals": "zakupy.png"
- },
- {
-  "section": "html",
-  "desc": "Blok prawy: obraz z tekstem alternatywnym „hurtownia”",
-  "type": "attr",
-  "selector": "section:nth-of-type(3) img",
-  "attr": "alt",
-  "equals": "hurtownia"
- },
- {
-  "section": "html",
-  "desc": "Blok prawy: paragraf „e-mail: hurt@poczta2.pl”",
-  "type": "text",
-  "selector": "section:nth-of-type(3) p",
-  "equals": "e-mail: hurt@poczta2.pl"
- },
- {
-  "section": "html",
-  "desc": "Adres hurt@poczta2.pl jest odsyłaczem pocztowym",
-  "type": "attr",
-  "selector": "section:nth-of-type(3) p a",
-  "attr": "href",
-  "equals": "mailto:hurt@poczta2.pl"
- },
- {
-  "section": "html",
-  "desc": "Stopka: nagłówek czwartego stopnia „Witrynę wykonał: ” i numer zdającego",
-  "type": "text",
-  "selector": "footer h4",
-  "startsWith": "Witrynę wykonał:"
- },
- {
-  "section": "css",
-  "desc": "Domyślnie dla wszystkich selektorów: krój czcionki Georgia",
-  "type": "css",
-  "selector": "h2",
-  "prop": "font-family",
-  "value": "Georgia"
- },
- {
-  "section": "css",
-  "desc": "Domyślnie dla wszystkich selektorów: krój czcionki Georgia (tekst akapitu)",
-  "type": "css",
-  "selector": "section:nth-of-type(3) p",
-  "prop": "font-family",
-  "value": "Georgia"
- },
- {
-  "section": "css",
-  "desc": "Domyślnie dla wszystkich selektorów: wyrównanie tekstu do środka",
-  "type": "css",
-  "selector": "h2",
-  "prop": "text-align",
-  "value": "center"
- },
- {
-  "section": "css",
-  "desc": "Domyślnie dla wszystkich selektorów: wyrównanie tekstu do środka (akapit)",
-  "type": "css",
-  "selector": "section:nth-of-type(3) p",
-  "prop": "text-align",
-  "value": "center"
- },
- {
-  "section": "css",
-  "desc": "Baner: kolor tła #4BA3C7",
-  "type": "css",
-  "selector": "header",
-  "prop": "background-color",
-  "value": "#4BA3C7"
- },
- {
-  "section": "css",
-  "desc": "Baner: biały kolor czcionki",
-  "type": "css",
-  "selector": "header",
-  "prop": "color",
-  "value": "white"
- },
- {
-  "section": "css",
-  "desc": "Baner: wysokość 80 px",
-  "type": "css",
-  "selector": "header",
-  "prop": "height",
-  "value": "80px"
- },
- {
-  "section": "css",
-  "desc": "Baner: rozmiar czcionki 120%",
-  "type": "css",
-  "selector": "header",
-  "prop": "font-size",
-  "value": "120%"
- },
- {
-  "section": "css",
-  "desc": "Stopka: kolor tła #4BA3C7",
-  "type": "css",
-  "selector": "footer",
-  "prop": "background-color",
-  "value": "#4BA3C7"
- },
- {
-  "section": "css",
-  "desc": "Stopka: biały kolor czcionki",
-  "type": "css",
-  "selector": "footer",
-  "prop": "color",
-  "value": "white"
- },
- {
-  "section": "css",
-  "desc": "Stopka: wysokość 80 px",
-  "type": "css",
-  "selector": "footer",
-  "prop": "height",
-  "value": "80px"
- },
- {
-  "section": "css",
-  "desc": "Stopka: rozmiar czcionki 120%",
-  "type": "css",
-  "selector": "footer",
-  "prop": "font-size",
-  "value": "120%"
- },
- {
-  "section": "css",
-  "desc": "Panel lewy: kolor tła #EFEFEF",
-  "type": "css",
-  "selector": "section:nth-of-type(1)",
-  "prop": "background-color",
-  "value": "#EFEFEF"
- },
- {
-  "section": "css",
-  "desc": "Panel lewy: wysokość 400 px",
-  "type": "css",
-  "selector": "section:nth-of-type(1)",
-  "prop": "height",
-  "value": "400px"
- },
- {
-  "section": "css",
-  "desc": "Panel lewy: szerokość 25%",
-  "type": "css",
-  "selector": "section:nth-of-type(1)",
-  "prop": "width",
-  "value": "25%"
- },
- {
-  "section": "css",
-  "desc": "Panel prawy: kolor tła #EFEFEF",
-  "type": "css",
-  "selector": "section:nth-of-type(3)",
-  "prop": "background-color",
-  "value": "#EFEFEF"
- },
- {
-  "section": "css",
-  "desc": "Panel prawy: wysokość 400 px",
-  "type": "css",
-  "selector": "section:nth-of-type(3)",
-  "prop": "height",
-  "value": "400px"
- },
- {
-  "section": "css",
-  "desc": "Panel prawy: szerokość 25%",
-  "type": "css",
-  "selector": "section:nth-of-type(3)",
-  "prop": "width",
-  "value": "25%"
- },
- {
-  "section": "css",
-  "desc": "Panel środkowy: kolor tła #90CAF9",
-  "type": "css",
-  "selector": "section:nth-of-type(2)",
-  "prop": "background-color",
-  "value": "#90CAF9"
- },
- {
-  "section": "css",
-  "desc": "Panel środkowy: wysokość 400 px",
-  "type": "css",
-  "selector": "section:nth-of-type(2)",
-  "prop": "height",
-  "value": "400px"
- },
- {
-  "section": "css",
-  "desc": "Panel środkowy: szerokość 50%",
-  "type": "css",
-  "selector": "section:nth-of-type(2)",
-  "prop": "width",
-  "value": "50%"
- },
- {
-  "section": "css",
-  "desc": "Tabela (wyłącznie selektor znacznika): margines zewnętrzny lewy 10 px",
-  "type": "cssRule",
-  "selector": "table",
-  "prop": "margin-left",
-  "value": "10px"
- },
- {
-  "section": "css",
-  "desc": "Tabela (wyłącznie selektor znacznika): szerokość 90%",
-  "type": "cssRule",
-  "selector": "table",
-  "prop": "width",
-  "value": "90%"
- },
- {
-  "section": "css",
-  "desc": "Tabela (wyłącznie selektor znacznika): obramowanie ciągłe 1 px, kolor #90CAF9",
-  "type": "cssRule",
-  "selector": "table",
-  "prop": "border",
-  "value": "1px solid #90CAF9"
- },
- {
-  "section": "css",
-  "desc": "Komórki tabeli (wyłącznie selektor znacznika): marginesy wewnętrzne 5 px",
-  "type": "cssRule",
-  "selector": "td",
-  "prop": "padding",
-  "value": "5px"
- },
- {
-  "section": "css",
-  "desc": "Komórki tabeli (wyłącznie selektor znacznika): obramowanie ciągłe 1 px, kolor #90CAF9",
-  "type": "cssRule",
-  "selector": "td",
-  "prop": "border",
-  "value": "1px solid #90CAF9",
-  "match": "table"
- },
- {
-  "section": "css",
-  "desc": "Po wskazaniu kursorem dowolnego wiersza tabeli kolor tekstu w tym wierszu #90CAF9 (reguła tr:hover)",
-  "type": "manual"
- },
- {
-  "section": "css",
-  "desc": "Pole edycyjne: margines zewnętrzny górny 15 px",
-  "type": "css",
-  "selector": "input[type=number]",
-  "prop": "margin-top",
-  "value": "15px",
-  "hint": "styl zdefiniowany wyłącznie selektorem pola edycyjnego"
- },
- {
-  "section": "css",
-  "desc": "Pole edycyjne: margines zewnętrzny dolny 15 px",
-  "type": "css",
-  "selector": "input[type=number]",
-  "prop": "margin-bottom",
-  "value": "15px",
-  "hint": "styl zdefiniowany wyłącznie selektorem pola edycyjnego"
- },
- {
-  "section": "css",
-  "desc": "Układ: baner na górze, nad blokami",
-  "type": "layout",
-  "a": "header",
-  "b": "section:nth-of-type(1)",
-  "relation": "above"
- },
- {
-  "section": "css",
-  "desc": "Układ: baner na całą szerokość",
-  "type": "layout",
-  "a": "header",
-  "relation": "fullWidth"
- },
- {
-  "section": "css",
-  "desc": "Układ: blok lewy obok środkowego (po jego lewej)",
-  "type": "layout",
-  "a": "section:nth-of-type(1)",
-  "b": "section:nth-of-type(2)",
-  "relation": "leftOf"
- },
- {
-  "section": "css",
-  "desc": "Układ: blok środkowy obok prawego (po jego lewej)",
-  "type": "layout",
-  "a": "section:nth-of-type(2)",
-  "b": "section:nth-of-type(3)",
-  "relation": "leftOf"
- },
- {
-  "section": "css",
-  "desc": "Układ: bloki lewy, środkowy i prawy w jednym rzędzie",
-  "type": "layout",
-  "a": "section:nth-of-type(1)",
-  "b": "section:nth-of-type(3)",
-  "relation": "sameRow"
- },
- {
-  "section": "css",
-  "desc": "Układ: stopka na dole, pod blokami",
-  "type": "layout",
-  "a": "footer",
-  "b": "section:nth-of-type(2)",
-  "relation": "below"
- },
- {
-  "section": "css",
-  "desc": "Układ: stopka na całą szerokość",
-  "type": "layout",
-  "a": "footer",
-  "relation": "fullWidth"
- },
- {
-  "section": "php",
-  "desc": "Skrypt łączy się z serwerem bazodanowym na localhost (użytkownik root bez hasła, baza sklep) i na końcu zamyka połączenie",
-  "type": "php"
- }
+  {"section": "grafika", "desc": "zakupy.png: szerokość dokładnie 180 px, zachowanie przezroczystości, ta sama nazwa", "type": "image", "name": "zakupy.png", "width": 180, "alpha": true},
+  {"section": "pliki", "desc": "Strona index.php", "type": "file", "name": "index.php"},
+  {"section": "pliki", "desc": "Arkusz stylów styl.css", "type": "file", "name": "styl.css"},
+  {"section": "html", "desc": "Zapisana w języku HTML5, język zawartości polski, jawne kodowanie polskich znaków", "type": "head", "lang": "pl", "charset": true},
+  {"section": "html", "desc": "Tytuł strony „Hurtownia szkolna”", "type": "head", "doctype": false, "title": "Hurtownia szkolna"},
+  {"section": "html", "desc": "Arkusz stylów w pliku styl.css prawidłowo połączony z kodem strony", "type": "head", "doctype": false, "stylesheet": "styl.css"},
+  {"section": "html", "desc": "Podział na bloki znacznikami sekcji: baner, bloki lewy, środkowy i prawy, stopka", "type": "exists", "hint": "baner jako header, trzy bloki jako section, stopka jako footer", "selectors": ["header", "section", "section", "section", "footer"]},
+  {"section": "html", "desc": "Trzy bloki: lewy, środkowy i prawy (znaczniki sekcji)", "type": "exists", "selector": "section", "count": 3},
+  {"section": "html", "desc": "Baner: nagłówek pierwszego stopnia „Hurtownia z najlepszymi cenami”", "type": "text", "selector": "header h1", "equals": "Hurtownia z najlepszymi cenami"},
+  {"section": "html", "desc": "Blok lewy: nagłówek drugiego stopnia „Nasze ceny”", "type": "text", "selector": "section:nth-of-type(1) h2", "equals": "Nasze ceny"},
+  {"section": "html", "desc": "Blok lewy: tabela", "type": "exists", "selector": "section:nth-of-type(1) table", "count": 1},
+  {"section": "php", "desc": "Tabela o czterech wierszach i dwóch kolumnach wypełniona skryptem 1 (nazwa towaru i cena w komórkach)", "type": "php"},
+  {"section": "html", "desc": "Blok środkowy: nagłówek drugiego stopnia „Koszt zakupów”", "type": "text", "selector": "section:nth-of-type(2) h2", "equals": "Koszt zakupów"},
+  {"section": "html", "desc": "Formularz wysyłający dane do tego samego pliku (index.php)", "type": "attr", "selector": "section:nth-of-type(2) form", "attr": "action", "equals": "index.php"},
+  {"section": "html", "desc": "Formularz wysyłający dane metodą bezpieczną (post)", "type": "attr", "selector": "section:nth-of-type(2) form", "attr": "method", "equals": "post"},
+  {"section": "html", "desc": "Napis „wybierz artykuł: ”", "type": "text", "selector": "section:nth-of-type(2) form", "contains": "wybierz artykuł:"},
+  {"section": "html", "desc": "Lista rozwijalna", "type": "exists", "selector": "section:nth-of-type(2) form select", "count": 1},
+  {"section": "html", "desc": "Lista rozwijalna: cztery pozycje", "type": "exists", "selector": "section:nth-of-type(2) form select option", "count": 4},
+  {"section": "html", "desc": "Lista rozwijalna: pozycja „Zeszyt 60 kartek”", "type": "text", "selector": "section:nth-of-type(2) form select option", "equals": "Zeszyt 60 kartek", "index": 0},
+  {"section": "html", "desc": "Lista rozwijalna: pozycja „Zeszyt 32 kartki”", "type": "text", "selector": "section:nth-of-type(2) form select option", "equals": "Zeszyt 32 kartki", "index": 1},
+  {"section": "html", "desc": "Lista rozwijalna: pozycja „Cyrkiel”", "type": "text", "selector": "section:nth-of-type(2) form select option", "equals": "Cyrkiel", "index": 2},
+  {"section": "html", "desc": "Lista rozwijalna: pozycja „Linijka 30 cm”", "type": "text", "selector": "section:nth-of-type(2) form select option", "equals": "Linijka 30 cm", "index": 3},
+  {"section": "html", "desc": "Pole edycyjne typu numerycznego", "type": "exists", "selector": "section:nth-of-type(2) form input[type=number]", "count": 1},
+  {"section": "html", "desc": "Napis „liczba sztuk: ” poprzedzający pole edycyjne", "type": "text", "selector": "section:nth-of-type(2) form", "contains": "liczba sztuk:"},
+  {"section": "html", "desc": "Przycisk „OBLICZ”", "type": "exists", "selector": "section:nth-of-type(2) form input[type=submit][value='OBLICZ'], section:nth-of-type(2) form button", "hint": "przycisk wysyłający formularz o napisie OBLICZ"},
+  {"section": "php", "desc": "Skrypt 2: pobranie nazwy towaru i liczby sztuk, zapytanie 2 z warunkiem wg wyboru, wyliczenie i wyświetlenie pod formularzem „wartość zakupów: <obliczona_kwota>”", "type": "php"},
+  {"section": "html", "desc": "Blok prawy: nagłówek drugiego stopnia „Kontakt”", "type": "text", "selector": "section:nth-of-type(3) h2", "equals": "Kontakt"},
+  {"section": "html", "desc": "Blok prawy: obraz zakupy.png", "type": "attr", "selector": "section:nth-of-type(3) img", "attr": "src", "equals": "zakupy.png"},
+  {"section": "html", "desc": "Blok prawy: obraz z tekstem alternatywnym „hurtownia”", "type": "attr", "selector": "section:nth-of-type(3) img", "attr": "alt", "equals": "hurtownia"},
+  {"section": "html", "desc": "Blok prawy: paragraf „e-mail: hurt@poczta2.pl”", "type": "text", "selector": "section:nth-of-type(3) p", "equals": "e-mail: hurt@poczta2.pl"},
+  {"section": "html", "desc": "Adres hurt@poczta2.pl jest odsyłaczem pocztowym", "type": "attr", "selector": "section:nth-of-type(3) p a", "attr": "href", "equals": "mailto:hurt@poczta2.pl"},
+  {"section": "html", "desc": "Stopka: nagłówek czwartego stopnia „Witrynę wykonał: ” i numer zdającego", "type": "text", "selector": "footer h4", "startsWith": "Witrynę wykonał:"},
+  {"section": "css", "desc": "Domyślnie dla wszystkich selektorów: krój czcionki Georgia", "type": "css", "selector": "h2", "prop": "font-family", "value": "Georgia"},
+  {"section": "css", "desc": "Domyślnie dla wszystkich selektorów: krój czcionki Georgia (tekst akapitu)", "type": "css", "selector": "section:nth-of-type(3) p", "prop": "font-family", "value": "Georgia"},
+  {"section": "css", "desc": "Domyślnie dla wszystkich selektorów: wyrównanie tekstu do środka", "type": "css", "selector": "h2", "prop": "text-align", "value": "center"},
+  {"section": "css", "desc": "Domyślnie dla wszystkich selektorów: wyrównanie tekstu do środka (akapit)", "type": "css", "selector": "section:nth-of-type(3) p", "prop": "text-align", "value": "center"},
+  {"section": "css", "desc": "Baner: kolor tła #4BA3C7", "type": "css", "selector": "header", "prop": "background-color", "value": "#4BA3C7"},
+  {"section": "css", "desc": "Baner: biały kolor czcionki", "type": "css", "selector": "header", "prop": "color", "value": "white"},
+  {"section": "css", "desc": "Baner: wysokość 80 px", "type": "css", "selector": "header", "prop": "height", "value": "80px"},
+  {"section": "css", "desc": "Baner: rozmiar czcionki 120%", "type": "css", "selector": "header", "prop": "font-size", "value": "120%"},
+  {"section": "css", "desc": "Stopka: kolor tła #4BA3C7", "type": "css", "selector": "footer", "prop": "background-color", "value": "#4BA3C7"},
+  {"section": "css", "desc": "Stopka: biały kolor czcionki", "type": "css", "selector": "footer", "prop": "color", "value": "white"},
+  {"section": "css", "desc": "Stopka: wysokość 80 px", "type": "css", "selector": "footer", "prop": "height", "value": "80px"},
+  {"section": "css", "desc": "Stopka: rozmiar czcionki 120%", "type": "css", "selector": "footer", "prop": "font-size", "value": "120%"},
+  {"section": "css", "desc": "Panel lewy: kolor tła #EFEFEF", "type": "css", "selector": "section:nth-of-type(1)", "prop": "background-color", "value": "#EFEFEF"},
+  {"section": "css", "desc": "Panel lewy: wysokość 400 px", "type": "css", "selector": "section:nth-of-type(1)", "prop": "height", "value": "400px"},
+  {"section": "css", "desc": "Panel lewy: szerokość 25%", "type": "css", "selector": "section:nth-of-type(1)", "prop": "width", "value": "25%"},
+  {"section": "css", "desc": "Panel prawy: kolor tła #EFEFEF", "type": "css", "selector": "section:nth-of-type(3)", "prop": "background-color", "value": "#EFEFEF"},
+  {"section": "css", "desc": "Panel prawy: wysokość 400 px", "type": "css", "selector": "section:nth-of-type(3)", "prop": "height", "value": "400px"},
+  {"section": "css", "desc": "Panel prawy: szerokość 25%", "type": "css", "selector": "section:nth-of-type(3)", "prop": "width", "value": "25%"},
+  {"section": "css", "desc": "Panel środkowy: kolor tła #90CAF9", "type": "css", "selector": "section:nth-of-type(2)", "prop": "background-color", "value": "#90CAF9"},
+  {"section": "css", "desc": "Panel środkowy: wysokość 400 px", "type": "css", "selector": "section:nth-of-type(2)", "prop": "height", "value": "400px"},
+  {"section": "css", "desc": "Panel środkowy: szerokość 50%", "type": "css", "selector": "section:nth-of-type(2)", "prop": "width", "value": "50%"},
+  {"section": "css", "desc": "Tabela (wyłącznie selektor znacznika): margines zewnętrzny lewy 10 px", "type": "cssRule", "selector": "table", "prop": "margin-left", "value": "10px"},
+  {"section": "css", "desc": "Tabela (wyłącznie selektor znacznika): szerokość 90%", "type": "cssRule", "selector": "table", "prop": "width", "value": "90%"},
+  {"section": "css", "desc": "Tabela (wyłącznie selektor znacznika): obramowanie ciągłe 1 px, kolor #90CAF9", "type": "cssRule", "selector": "table", "prop": "border", "value": "1px solid #90CAF9"},
+  {"section": "css", "desc": "Komórki tabeli (wyłącznie selektor znacznika): marginesy wewnętrzne 5 px", "type": "cssRule", "selector": "td", "prop": "padding", "value": "5px"},
+  {"section": "css", "desc": "Komórki tabeli (wyłącznie selektor znacznika): obramowanie ciągłe 1 px, kolor #90CAF9", "type": "cssRule", "selector": "td", "prop": "border", "value": "1px solid #90CAF9", "match": "table"},
+  {"section": "css", "desc": "Po wskazaniu kursorem dowolnego wiersza tabeli kolor tekstu w tym wierszu #90CAF9 (reguła tr:hover)", "type": "manual"},
+  {"section": "css", "desc": "Pole edycyjne: margines zewnętrzny górny 15 px", "type": "css", "selector": "input[type=number]", "prop": "margin-top", "value": "15px", "hint": "styl zdefiniowany wyłącznie selektorem pola edycyjnego"},
+  {"section": "css", "desc": "Pole edycyjne: margines zewnętrzny dolny 15 px", "type": "css", "selector": "input[type=number]", "prop": "margin-bottom", "value": "15px", "hint": "styl zdefiniowany wyłącznie selektorem pola edycyjnego"},
+  {"section": "css", "desc": "Układ: baner na górze, nad blokami", "type": "layout", "a": "header", "b": "section:nth-of-type(1)", "relation": "above"},
+  {"section": "css", "desc": "Układ: baner na całą szerokość", "type": "layout", "a": "header", "relation": "fullWidth"},
+  {"section": "css", "desc": "Układ: blok lewy obok środkowego (po jego lewej)", "type": "layout", "a": "section:nth-of-type(1)", "b": "section:nth-of-type(2)", "relation": "leftOf"},
+  {"section": "css", "desc": "Układ: blok środkowy obok prawego (po jego lewej)", "type": "layout", "a": "section:nth-of-type(2)", "b": "section:nth-of-type(3)", "relation": "leftOf"},
+  {"section": "css", "desc": "Układ: bloki lewy, środkowy i prawy w jednym rzędzie", "type": "layout", "a": "section:nth-of-type(1)", "b": "section:nth-of-type(3)", "relation": "sameRow"},
+  {"section": "css", "desc": "Układ: stopka na dole, pod blokami", "type": "layout", "a": "footer", "b": "section:nth-of-type(2)", "relation": "below"},
+  {"section": "css", "desc": "Układ: stopka na całą szerokość", "type": "layout", "a": "footer", "relation": "fullWidth"},
+  {"section": "php", "desc": "Skrypt łączy się z serwerem bazodanowym na localhost (użytkownik root bez hasła, baza sklep) i na końcu zamyka połączenie", "type": "php"}
 ]

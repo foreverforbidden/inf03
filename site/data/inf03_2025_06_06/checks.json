@@ -2,11 +2,10 @@
   {"section": "grafika", "desc": "obraz.png: przeskalowana z zachowaniem proporcji do wysokości 200 px, przezroczystość zamiast białego tła, format PNG", "type": "image", "name": "obraz.png", "height": 200, "alpha": true},
   {"section": "pliki", "desc": "Strona biblioteka.php", "type": "file", "name": "biblioteka.php"},
   {"section": "pliki", "desc": "Arkusz stylów styl.css", "type": "file", "name": "styl.css"},
-
   {"section": "html", "desc": "Zapisana w języku HTML5, polski język, kodowanie UTF-8", "type": "head", "lang": "pl", "charset": true},
   {"section": "html", "desc": "Tytuł strony „Biblioteka miejska”", "type": "head", "doctype": false, "title": "Biblioteka miejska"},
   {"section": "html", "desc": "Arkusz stylów w pliku styl.css prawidłowo połączony z kodem strony", "type": "head", "doctype": false, "stylesheet": "styl.css"},
-  {"section": "html", "desc": "Podział na bloki semantyczne: nagłówkowy, cztery bloki sekcji, stopka", "type": "exists", "selector": "header ~ section ~ section ~ section ~ section ~ footer"},
+  {"section": "html", "desc": "Podział na bloki semantyczne: nagłówkowy, cztery bloki sekcji, stopka", "type": "exists", "selectors": ["header", "section", "section", "section", "section", "footer"]},
   {"section": "html", "desc": "Cztery bloki sekcji", "type": "exists", "selector": "section", "count": 4},
   {"section": "php", "desc": "Zawartość bloku nagłówkowego: efekt działania skryptu 1 (20 razy obraz.png w pętli)", "type": "php"},
   {"section": "html", "desc": "Pierwszy blok sekcji: nagłówek drugiego stopnia „Liryka”", "type": "text", "selector": "section:nth-of-type(1) h2", "equals": "Liryka"},
@@ -27,7 +26,6 @@
   {"section": "php", "desc": "Lista wypełniona skryptem 4 (tytuł, id czytelnika i data oddania oddzielone spacją)", "type": "php"},
   {"section": "html", "desc": "Stopka: paragraf „Autor: ” i numer zdającego", "type": "text", "selector": "footer p", "startsWith": "Autor:"},
   {"section": "html", "desc": "Tekst w paragrafie stopki w znaczniku tekstu ważnego (strong)", "type": "exists", "selector": "footer p strong"},
-
   {"section": "css", "desc": "Domyślnie dla wszystkich selektorów: krój czcionki Cambria", "type": "css", "selector": "section h2", "prop": "font-family", "value": "Cambria"},
   {"section": "css", "desc": "Dla selektora ciała strony: kolor tła MistyRose (wyłącznie selektor znacznika)", "type": "cssRule", "selector": "body", "prop": "background-color", "value": "MistyRose"},
   {"section": "css", "desc": "Blok nagłówkowy i stopka: wysokość 200 px", "type": "css", "selector": "footer", "prop": "height", "value": "200px"},
@@ -48,6 +46,5 @@
   {"section": "css", "desc": "Układ: blok nagłówkowy nad sekcjami", "type": "layout", "a": "header", "b": "section:nth-of-type(1)", "relation": "above"},
   {"section": "css", "desc": "Układ: stopka pod sekcjami", "type": "layout", "a": "footer", "b": "section:nth-of-type(1)", "relation": "below"},
   {"section": "css", "desc": "Układ do 800 px: bloki sekcji jeden pod drugim", "type": "layout", "viewport": 600, "a": "section:nth-of-type(1)", "b": "section:nth-of-type(2)", "relation": "above"},
-
   {"section": "php", "desc": "Skrypty łączą się z bazą biblioteka (localhost, root, bez hasła) i na końcu zamykają połączenie", "type": "php"}
 ]

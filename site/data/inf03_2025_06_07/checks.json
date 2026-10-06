@@ -1,570 +1,79 @@
 [
- {
-  "section": "grafika",
-  "desc": "02.jpg: przeskalowana z zachowaniem proporcji do szerokości 200 px",
-  "type": "image",
-  "name": "02.jpg",
-  "width": 200
- },
- {
-  "section": "grafika",
-  "desc": "02.jpg: grafika odbita pionowo",
-  "type": "manual"
- },
- {
-  "section": "pliki",
-  "desc": "Plik index.php",
-  "type": "file",
-  "name": "index.php"
- },
- {
-  "section": "pliki",
-  "desc": "Plik styl.css",
-  "type": "file",
-  "name": "styl.css"
- },
- {
-  "section": "pliki",
-  "desc": "Plik wczasy.html",
-  "type": "file",
-  "name": "wczasy.html"
- },
- {
-  "section": "pliki",
-  "desc": "Plik wycieczki.html",
-  "type": "file",
-  "name": "wycieczki.html"
- },
- {
-  "section": "pliki",
-  "desc": "Plik allinclusive.html",
-  "type": "file",
-  "name": "allinclusive.html"
- },
- {
-  "section": "html",
-  "desc": "Podstrona wczasy.html: „Strona w trakcie budowy”",
-  "type": "text",
-  "page": "wczasy.html",
-  "selector": "body",
-  "contains": "Strona w trakcie budowy"
- },
- {
-  "section": "html",
-  "desc": "Podstrona wycieczki.html: „Strona w trakcie budowy”",
-  "type": "text",
-  "page": "wycieczki.html",
-  "selector": "body",
-  "contains": "Strona w trakcie budowy"
- },
- {
-  "section": "html",
-  "desc": "Podstrona allinclusive.html: „Strona w trakcie budowy”",
-  "type": "text",
-  "page": "allinclusive.html",
-  "selector": "body",
-  "contains": "Strona w trakcie budowy"
- },
- {
-  "section": "html",
-  "desc": "HTML5, język polski, kodowanie UTF-8",
-  "type": "head",
-  "lang": "pl",
-  "charset": true
- },
- {
-  "section": "html",
-  "desc": "Tytuł strony „Biuro turystyczne”",
-  "type": "head",
-  "doctype": false,
-  "title": "Biuro turystyczne"
- },
- {
-  "section": "html",
-  "desc": "Arkusz stylów styl.css połączony z kodem strony",
-  "type": "head",
-  "doctype": false,
-  "stylesheet": "styl.css"
- },
- {
-  "section": "html",
-  "desc": "Układ: blok nawigacyjny, główny, stopka (semantyczne znaczniki)",
-  "type": "exists",
-  "selector": "nav ~ main ~ footer"
- },
- {
-  "section": "html",
-  "desc": "Blok główny zawiera blok boczny i sekcję",
-  "type": "exists",
-  "selector": "main > aside ~ section"
- },
- {
-  "section": "html",
-  "desc": "Blok nawigacyjny: lista punktowana z trzema elementami",
-  "type": "exists",
-  "selector": "nav ul li",
-  "count": 3
- },
- {
-  "section": "html",
-  "desc": "Odnośnik do wczasy.html o treści „Wczasy”",
-  "type": "attr",
-  "selector": "nav li:nth-child(1) a",
-  "attr": "href",
-  "equals": "wczasy.html"
- },
- {
-  "section": "html",
-  "desc": "Odnośnik „Wczasy”: treść",
-  "type": "text",
-  "selector": "nav li:nth-child(1) a",
-  "equals": "Wczasy"
- },
- {
-  "section": "html",
-  "desc": "Odnośnik do wycieczki.html o treści „Wycieczki”",
-  "type": "attr",
-  "selector": "nav li:nth-child(2) a",
-  "attr": "href",
-  "equals": "wycieczki.html"
- },
- {
-  "section": "html",
-  "desc": "Odnośnik „Wycieczki”: treść",
-  "type": "text",
-  "selector": "nav li:nth-child(2) a",
-  "equals": "Wycieczki"
- },
- {
-  "section": "html",
-  "desc": "Odnośnik do allinclusive.html o treści „All inclusive”",
-  "type": "attr",
-  "selector": "nav li:nth-child(3) a",
-  "attr": "href",
-  "equals": "allinclusive.html"
- },
- {
-  "section": "html",
-  "desc": "Odnośnik „All inclusive”: treść",
-  "type": "text",
-  "selector": "nav li:nth-child(3) a",
-  "equals": "All inclusive"
- },
- {
-  "section": "html",
-  "desc": "Blok boczny: nagłówek trzeciego stopnia „Twój cel wyprawy”",
-  "type": "text",
-  "selector": "aside h3",
-  "equals": "Twój cel wyprawy"
- },
- {
-  "section": "html",
-  "desc": "Formularz wysyłający dane do index.php",
-  "type": "attr",
-  "selector": "aside form",
-  "attr": "action",
-  "equals": "index.php"
- },
- {
-  "section": "html",
-  "desc": "Formularz metodą bezpieczną (post)",
-  "type": "attr",
-  "selector": "aside form",
-  "attr": "method",
-  "equals": "post"
- },
- {
-  "section": "html",
-  "desc": "Etykieta „Miejsce wycieczki”",
-  "type": "text",
-  "selector": "aside form label",
-  "index": 0,
-  "equals": "Miejsce wycieczki"
- },
- {
-  "section": "html",
-  "desc": "Etykieta „Ile dorosłych?”",
-  "type": "text",
-  "selector": "aside form label",
-  "index": 1,
-  "equals": "Ile dorosłych?"
- },
- {
-  "section": "html",
-  "desc": "Etykieta „Ile dzieci?”",
-  "type": "text",
-  "selector": "aside form label",
-  "index": 2,
-  "equals": "Ile dzieci?"
- },
- {
-  "section": "html",
-  "desc": "Etykieta „Termin”",
-  "type": "text",
-  "selector": "aside form label",
-  "index": 3,
-  "equals": "Termin"
- },
- {
-  "section": "html",
-  "desc": "Etykieta „Miejsce wycieczki” powiązana z listą rozwijaną",
-  "type": "exists",
-  "selector": "aside form select[id]"
- },
- {
-  "section": "html",
-  "desc": "Etykiety powiązane z polami (atrybut for)",
-  "type": "attr",
-  "selector": "aside form label",
-  "attr": "for",
-  "all": true
- },
- {
-  "section": "html",
-  "desc": "Lista rozwijana w formularzu",
-  "type": "exists",
-  "selector": "aside form select"
- },
- {
-  "section": "html",
-  "desc": "Dwa pola edycyjne typu liczbowego",
-  "type": "exists",
-  "selector": "aside form input[type=number]",
-  "count": 2
- },
- {
-  "section": "html",
-  "desc": "Pole edycyjne typu data",
-  "type": "exists",
-  "selector": "aside form input[type=date]",
-  "count": 1
- },
- {
-  "section": "html",
-  "desc": "Przycisk „Symulacja ceny”",
-  "type": "exists",
-  "selector": "aside form input[type=submit][value='Symulacja ceny'], aside form button"
- },
- {
-  "section": "html",
-  "desc": "Nagłówek czwartego stopnia „Koszt wycieczki”",
-  "type": "text",
-  "selector": "aside h4",
-  "equals": "Koszt wycieczki"
- },
- {
-  "section": "html",
-  "desc": "Sekcja: nagłówek trzeciego stopnia „Wycieczki”",
-  "type": "text",
-  "selector": "main section h3",
-  "equals": "Wycieczki"
- },
- {
-  "section": "html",
-  "desc": "Stopka: paragraf „Autor: ” i numer zdającego",
-  "type": "text",
-  "selector": "footer p",
-  "startsWith": "Autor:"
- },
- {
-  "section": "php",
-  "desc": "Lista rozwijana wypełniona przez skrypt 1 (zapytanie 1, miejsca jako opcje)",
-  "type": "php"
- },
- {
-  "section": "php",
-  "desc": "Skrypt 2: zapytanie 2 z miejscem z formularza, wartość z połową ceny dla dzieci",
-  "type": "php"
- },
- {
-  "section": "php",
-  "desc": "Skrypt 2: paragrafy „W dniu: <termin>” i „<wartość> złotych”",
-  "type": "php"
- },
- {
-  "section": "php",
-  "desc": "Skrypt 3: bloki z klasą wycieczka z obrazem (alt „zdjęcie z wycieczki”), nagłówkiem h2 i paragrafem z ceną",
-  "type": "php"
- },
- {
-  "section": "php",
-  "desc": "Połączenie z bazą wyprawy (localhost, root bez hasła), zamknięcie na końcu; znaczące nazwy zmiennych",
-  "type": "manual"
- },
- {
-  "section": "css",
-  "desc": "Wszystkie selektory: krój Comic Sans MS",
-  "type": "css",
-  "selector": "h3",
-  "prop": "font-family",
-  "value": "\"Comic Sans MS\", sans-serif"
- },
- {
-  "section": "css",
-  "desc": "Wszystkie selektory: wyrównanie tekstu do środka",
-  "type": "css",
-  "selector": "h3",
-  "prop": "text-align",
-  "value": "center"
- },
- {
-  "section": "css",
-  "desc": "Blok nawigacyjny: kolor tła #00838F",
-  "type": "css",
-  "selector": "nav",
-  "prop": "background-color",
-  "value": "#00838F"
- },
- {
-  "section": "css",
-  "desc": "Blok nawigacyjny: kolor czcionki #B2DFDB",
-  "type": "css",
-  "selector": "nav",
-  "prop": "color",
-  "value": "#B2DFDB"
- },
- {
-  "section": "css",
-  "desc": "Blok nawigacyjny: marginesy wewnętrzne 10 px",
-  "type": "css",
-  "selector": "nav",
-  "prop": "padding",
-  "value": "10px"
- },
- {
-  "section": "css",
-  "desc": "Blok stopka: kolor tła #00838F",
-  "type": "css",
-  "selector": "footer",
-  "prop": "background-color",
-  "value": "#00838F"
- },
- {
-  "section": "css",
-  "desc": "Blok stopka: kolor czcionki #B2DFDB",
-  "type": "css",
-  "selector": "footer",
-  "prop": "color",
-  "value": "#B2DFDB"
- },
- {
-  "section": "css",
-  "desc": "Blok stopka: marginesy wewnętrzne 10 px",
-  "type": "css",
-  "selector": "footer",
-  "prop": "padding",
-  "value": "10px"
- },
- {
-  "section": "css",
-  "desc": "aside: szerokość 50%",
-  "type": "css",
-  "selector": "main aside",
-  "prop": "width",
-  "value": "50%"
- },
- {
-  "section": "css",
-  "desc": "aside: wysokość 600 px",
-  "type": "css",
-  "selector": "main aside",
-  "prop": "height",
-  "value": "600px"
- },
- {
-  "section": "css",
-  "desc": "aside: paski przewijania tylko przy przepełnieniu",
-  "type": "css",
-  "selector": "main aside",
-  "prop": "overflow",
-  "value": "auto"
- },
- {
-  "section": "css",
-  "desc": "section: szerokość 50%",
-  "type": "css",
-  "selector": "main section",
-  "prop": "width",
-  "value": "50%"
- },
- {
-  "section": "css",
-  "desc": "section: wysokość 600 px",
-  "type": "css",
-  "selector": "main section",
-  "prop": "height",
-  "value": "600px"
- },
- {
-  "section": "css",
-  "desc": "section: paski przewijania tylko przy przepełnieniu",
-  "type": "css",
-  "selector": "main section",
-  "prop": "overflow",
-  "value": "auto"
- },
- {
-  "section": "css",
-  "desc": "Blok boczny: kolor tła #B2DFDB",
-  "type": "css",
-  "selector": "aside",
-  "prop": "background-color",
-  "value": "#B2DFDB"
- },
- {
-  "section": "css",
-  "desc": "Klasa wycieczka: kolor tła #00838F z przezroczystością 0.7",
-  "type": "cssRule",
-  "selector": ".wycieczka",
-  "prop": "background-color",
-  "value": "rgba(0, 131, 143, 0.7)",
-  "hint": "bloki tworzone skryptem 3: selektor .wycieczka"
- },
- {
-  "section": "css",
-  "desc": "Klasa wycieczka: wysokość 150 px",
-  "type": "cssRule",
-  "selector": ".wycieczka",
-  "prop": "height",
-  "value": "150px",
-  "hint": "bloki tworzone skryptem 3: selektor .wycieczka"
- },
- {
-  "section": "css",
-  "desc": "Klasa wycieczka: marginesy zewnętrzne górny i dolny 10 px, boczne 100 px",
-  "type": "cssRule",
-  "selector": ".wycieczka",
-  "prop": "margin",
-  "value": "10px 100px",
-  "hint": "bloki tworzone skryptem 3: selektor .wycieczka"
- },
- {
-  "section": "css",
-  "desc": "Klasa wycieczka: zaokrąglenie rogów 30 px",
-  "type": "cssRule",
-  "selector": ".wycieczka",
-  "prop": "border-radius",
-  "value": "30px",
-  "hint": "bloki tworzone skryptem 3: selektor .wycieczka"
- },
- {
-  "section": "css",
-  "desc": "Kursor na bloku wycieczka: przezroczystość 1",
-  "type": "cssRule",
-  "selector": ".wycieczka:hover",
-  "prop": "background-color",
-  "value": "rgba(0, 131, 143, 1)",
-  "hint": "bloki tworzone skryptem 3: selektor .wycieczka"
- },
- {
-  "section": "css",
-  "desc": "Obraz: opływanie z lewej strony (obraz po prawej) (selektor znacznika)",
-  "type": "cssRule",
-  "selector": "img",
-  "prop": "float",
-  "value": "right"
- },
- {
-  "section": "css",
-  "desc": "Obraz: zaokrąglenie rogów 30 px",
-  "type": "cssRule",
-  "selector": "img",
-  "prop": "border-radius",
-  "value": "30px"
- },
- {
-  "section": "css",
-  "desc": "Obraz: marginesy zewnętrzne 7 px",
-  "type": "cssRule",
-  "selector": "img",
-  "prop": "margin",
-  "value": "7px"
- },
- {
-  "section": "css",
-  "desc": "Element listy: wyświetlanie liniowo-blokowe",
-  "type": "cssRule",
-  "selector": "li",
-  "prop": "display",
-  "value": "inline-block"
- },
- {
-  "section": "css",
-  "desc": "Element listy: bez punktorów",
-  "type": "cssRule",
-  "selector": "li",
-  "prop": "list-style-type",
-  "value": "none"
- },
- {
-  "section": "css",
-  "desc": "Odnośnik: kolor czcionki #B2DFDB",
-  "type": "cssRule",
-  "selector": "a",
-  "prop": "color",
-  "value": "#B2DFDB"
- },
- {
-  "section": "css",
-  "desc": "Odnośnik: bez podkreślenia",
-  "type": "cssRule",
-  "selector": "a",
-  "prop": "text-decoration",
-  "value": "none"
- },
- {
-  "section": "css",
-  "desc": "Odnośnik: margines zewnętrzny lewy 50 px",
-  "type": "cssRule",
-  "selector": "a",
-  "prop": "margin-left",
-  "value": "50px"
- },
- {
-  "section": "css",
-  "desc": "Kursor na odnośniku: biały kolor czcionki",
-  "type": "hover",
-  "selector": "nav a",
-  "prop": "color",
-  "value": "white"
- },
- {
-  "section": "css",
-  "desc": "Kursor na odnośniku: podkreślenie",
-  "type": "hover",
-  "selector": "nav a",
-  "prop": "text-decoration-line",
-  "value": "underline"
- },
- {
-  "section": "css",
-  "desc": "Układ: blok boczny obok sekcji (po lewej)",
-  "type": "layout",
-  "a": "aside",
-  "b": "section",
-  "relation": "leftOf"
- },
- {
-  "section": "css",
-  "desc": "Układ: blok nawigacyjny nad blokiem głównym",
-  "type": "layout",
-  "a": "nav",
-  "b": "main",
-  "relation": "above"
- },
- {
-  "section": "css",
-  "desc": "Układ: stopka pod blokiem głównym",
-  "type": "layout",
-  "a": "footer",
-  "b": "main",
-  "relation": "below"
- },
- {
-  "section": "css",
-  "desc": "Układ: blok nawigacyjny na całą szerokość",
-  "type": "layout",
-  "a": "nav",
-  "relation": "fullWidth"
- }
+  {"section": "grafika", "desc": "02.jpg: przeskalowana z zachowaniem proporcji do szerokości 200 px", "type": "image", "name": "02.jpg", "width": 200},
+  {"section": "grafika", "desc": "02.jpg: grafika odbita pionowo", "type": "manual"},
+  {"section": "pliki", "desc": "Plik index.php", "type": "file", "name": "index.php"},
+  {"section": "pliki", "desc": "Plik styl.css", "type": "file", "name": "styl.css"},
+  {"section": "pliki", "desc": "Plik wczasy.html", "type": "file", "name": "wczasy.html"},
+  {"section": "pliki", "desc": "Plik wycieczki.html", "type": "file", "name": "wycieczki.html"},
+  {"section": "pliki", "desc": "Plik allinclusive.html", "type": "file", "name": "allinclusive.html"},
+  {"section": "html", "desc": "Podstrona wczasy.html: „Strona w trakcie budowy”", "type": "text", "page": "wczasy.html", "selector": "body", "contains": "Strona w trakcie budowy"},
+  {"section": "html", "desc": "Podstrona wycieczki.html: „Strona w trakcie budowy”", "type": "text", "page": "wycieczki.html", "selector": "body", "contains": "Strona w trakcie budowy"},
+  {"section": "html", "desc": "Podstrona allinclusive.html: „Strona w trakcie budowy”", "type": "text", "page": "allinclusive.html", "selector": "body", "contains": "Strona w trakcie budowy"},
+  {"section": "html", "desc": "HTML5, język polski, kodowanie UTF-8", "type": "head", "lang": "pl", "charset": true},
+  {"section": "html", "desc": "Tytuł strony „Biuro turystyczne”", "type": "head", "doctype": false, "title": "Biuro turystyczne"},
+  {"section": "html", "desc": "Arkusz stylów styl.css połączony z kodem strony", "type": "head", "doctype": false, "stylesheet": "styl.css"},
+  {"section": "html", "desc": "Układ: blok nawigacyjny, główny, stopka (semantyczne znaczniki)", "type": "exists", "selectors": ["nav", "main", "footer"]},
+  {"section": "html", "desc": "Blok główny zawiera blok boczny i sekcję", "type": "exists", "selector": "main > aside ~ section"},
+  {"section": "html", "desc": "Blok nawigacyjny: lista punktowana z trzema elementami", "type": "exists", "selector": "nav ul li", "count": 3},
+  {"section": "html", "desc": "Odnośnik do wczasy.html o treści „Wczasy”", "type": "attr", "selector": "nav li:nth-child(1) a", "attr": "href", "equals": "wczasy.html"},
+  {"section": "html", "desc": "Odnośnik „Wczasy”: treść", "type": "text", "selector": "nav li:nth-child(1) a", "equals": "Wczasy"},
+  {"section": "html", "desc": "Odnośnik do wycieczki.html o treści „Wycieczki”", "type": "attr", "selector": "nav li:nth-child(2) a", "attr": "href", "equals": "wycieczki.html"},
+  {"section": "html", "desc": "Odnośnik „Wycieczki”: treść", "type": "text", "selector": "nav li:nth-child(2) a", "equals": "Wycieczki"},
+  {"section": "html", "desc": "Odnośnik do allinclusive.html o treści „All inclusive”", "type": "attr", "selector": "nav li:nth-child(3) a", "attr": "href", "equals": "allinclusive.html"},
+  {"section": "html", "desc": "Odnośnik „All inclusive”: treść", "type": "text", "selector": "nav li:nth-child(3) a", "equals": "All inclusive"},
+  {"section": "html", "desc": "Blok boczny: nagłówek trzeciego stopnia „Twój cel wyprawy”", "type": "text", "selector": "aside h3", "equals": "Twój cel wyprawy"},
+  {"section": "html", "desc": "Formularz wysyłający dane do index.php", "type": "attr", "selector": "aside form", "attr": "action", "equals": "index.php"},
+  {"section": "html", "desc": "Formularz metodą bezpieczną (post)", "type": "attr", "selector": "aside form", "attr": "method", "equals": "post"},
+  {"section": "html", "desc": "Etykieta „Miejsce wycieczki”", "type": "text", "selector": "aside form label", "index": 0, "equals": "Miejsce wycieczki"},
+  {"section": "html", "desc": "Etykieta „Ile dorosłych?”", "type": "text", "selector": "aside form label", "index": 1, "equals": "Ile dorosłych?"},
+  {"section": "html", "desc": "Etykieta „Ile dzieci?”", "type": "text", "selector": "aside form label", "index": 2, "equals": "Ile dzieci?"},
+  {"section": "html", "desc": "Etykieta „Termin”", "type": "text", "selector": "aside form label", "index": 3, "equals": "Termin"},
+  {"section": "html", "desc": "Etykieta „Miejsce wycieczki” powiązana z listą rozwijaną", "type": "exists", "selector": "aside form select[id]"},
+  {"section": "html", "desc": "Etykiety powiązane z polami (atrybut for)", "type": "attr", "selector": "aside form label", "attr": "for", "all": true},
+  {"section": "html", "desc": "Lista rozwijana w formularzu", "type": "exists", "selector": "aside form select"},
+  {"section": "html", "desc": "Dwa pola edycyjne typu liczbowego", "type": "exists", "selector": "aside form input[type=number]", "count": 2},
+  {"section": "html", "desc": "Pole edycyjne typu data", "type": "exists", "selector": "aside form input[type=date]", "count": 1},
+  {"section": "html", "desc": "Przycisk „Symulacja ceny”", "type": "exists", "selector": "aside form input[type=submit][value='Symulacja ceny'], aside form button"},
+  {"section": "html", "desc": "Nagłówek czwartego stopnia „Koszt wycieczki”", "type": "text", "selector": "aside h4", "equals": "Koszt wycieczki"},
+  {"section": "html", "desc": "Sekcja: nagłówek trzeciego stopnia „Wycieczki”", "type": "text", "selector": "main section h3", "equals": "Wycieczki"},
+  {"section": "html", "desc": "Stopka: paragraf „Autor: ” i numer zdającego", "type": "text", "selector": "footer p", "startsWith": "Autor:"},
+  {"section": "php", "desc": "Lista rozwijana wypełniona przez skrypt 1 (zapytanie 1, miejsca jako opcje)", "type": "php"},
+  {"section": "php", "desc": "Skrypt 2: zapytanie 2 z miejscem z formularza, wartość z połową ceny dla dzieci", "type": "php"},
+  {"section": "php", "desc": "Skrypt 2: paragrafy „W dniu: <termin>” i „<wartość> złotych”", "type": "php"},
+  {"section": "php", "desc": "Skrypt 3: bloki z klasą wycieczka z obrazem (alt „zdjęcie z wycieczki”), nagłówkiem h2 i paragrafem z ceną", "type": "php"},
+  {"section": "php", "desc": "Połączenie z bazą wyprawy (localhost, root bez hasła), zamknięcie na końcu; znaczące nazwy zmiennych", "type": "manual"},
+  {"section": "css", "desc": "Wszystkie selektory: krój Comic Sans MS", "type": "css", "selector": "h3", "prop": "font-family", "value": "\"Comic Sans MS\", sans-serif"},
+  {"section": "css", "desc": "Wszystkie selektory: wyrównanie tekstu do środka", "type": "css", "selector": "h3", "prop": "text-align", "value": "center"},
+  {"section": "css", "desc": "Blok nawigacyjny: kolor tła #00838F", "type": "css", "selector": "nav", "prop": "background-color", "value": "#00838F"},
+  {"section": "css", "desc": "Blok nawigacyjny: kolor czcionki #B2DFDB", "type": "css", "selector": "nav", "prop": "color", "value": "#B2DFDB"},
+  {"section": "css", "desc": "Blok nawigacyjny: marginesy wewnętrzne 10 px", "type": "css", "selector": "nav", "prop": "padding", "value": "10px"},
+  {"section": "css", "desc": "Blok stopka: kolor tła #00838F", "type": "css", "selector": "footer", "prop": "background-color", "value": "#00838F"},
+  {"section": "css", "desc": "Blok stopka: kolor czcionki #B2DFDB", "type": "css", "selector": "footer", "prop": "color", "value": "#B2DFDB"},
+  {"section": "css", "desc": "Blok stopka: marginesy wewnętrzne 10 px", "type": "css", "selector": "footer", "prop": "padding", "value": "10px"},
+  {"section": "css", "desc": "aside: szerokość 50%", "type": "css", "selector": "main aside", "prop": "width", "value": "50%"},
+  {"section": "css", "desc": "aside: wysokość 600 px", "type": "css", "selector": "main aside", "prop": "height", "value": "600px"},
+  {"section": "css", "desc": "aside: paski przewijania tylko przy przepełnieniu", "type": "css", "selector": "main aside", "prop": "overflow", "value": "auto"},
+  {"section": "css", "desc": "section: szerokość 50%", "type": "css", "selector": "main section", "prop": "width", "value": "50%"},
+  {"section": "css", "desc": "section: wysokość 600 px", "type": "css", "selector": "main section", "prop": "height", "value": "600px"},
+  {"section": "css", "desc": "section: paski przewijania tylko przy przepełnieniu", "type": "css", "selector": "main section", "prop": "overflow", "value": "auto"},
+  {"section": "css", "desc": "Blok boczny: kolor tła #B2DFDB", "type": "css", "selector": "aside", "prop": "background-color", "value": "#B2DFDB"},
+  {"section": "css", "desc": "Klasa wycieczka: kolor tła #00838F z przezroczystością 0.7", "type": "cssRule", "selector": ".wycieczka", "prop": "background-color", "value": "rgba(0, 131, 143, 0.7)", "hint": "bloki tworzone skryptem 3: selektor .wycieczka"},
+  {"section": "css", "desc": "Klasa wycieczka: wysokość 150 px", "type": "cssRule", "selector": ".wycieczka", "prop": "height", "value": "150px", "hint": "bloki tworzone skryptem 3: selektor .wycieczka"},
+  {"section": "css", "desc": "Klasa wycieczka: marginesy zewnętrzne górny i dolny 10 px, boczne 100 px", "type": "cssRule", "selector": ".wycieczka", "prop": "margin", "value": "10px 100px", "hint": "bloki tworzone skryptem 3: selektor .wycieczka"},
+  {"section": "css", "desc": "Klasa wycieczka: zaokrąglenie rogów 30 px", "type": "cssRule", "selector": ".wycieczka", "prop": "border-radius", "value": "30px", "hint": "bloki tworzone skryptem 3: selektor .wycieczka"},
+  {"section": "css", "desc": "Kursor na bloku wycieczka: przezroczystość 1", "type": "cssRule", "selector": ".wycieczka:hover", "prop": "background-color", "value": "rgba(0, 131, 143, 1)", "hint": "bloki tworzone skryptem 3: selektor .wycieczka"},
+  {"section": "css", "desc": "Obraz: opływanie z lewej strony (obraz po prawej) (selektor znacznika)", "type": "cssRule", "selector": "img", "prop": "float", "value": "right"},
+  {"section": "css", "desc": "Obraz: zaokrąglenie rogów 30 px", "type": "cssRule", "selector": "img", "prop": "border-radius", "value": "30px"},
+  {"section": "css", "desc": "Obraz: marginesy zewnętrzne 7 px", "type": "cssRule", "selector": "img", "prop": "margin", "value": "7px"},
+  {"section": "css", "desc": "Element listy: wyświetlanie liniowo-blokowe", "type": "cssRule", "selector": "li", "prop": "display", "value": "inline-block"},
+  {"section": "css", "desc": "Element listy: bez punktorów", "type": "cssRule", "selector": "li", "prop": "list-style-type", "value": "none"},
+  {"section": "css", "desc": "Odnośnik: kolor czcionki #B2DFDB", "type": "cssRule", "selector": "a", "prop": "color", "value": "#B2DFDB"},
+  {"section": "css", "desc": "Odnośnik: bez podkreślenia", "type": "cssRule", "selector": "a", "prop": "text-decoration", "value": "none"},
+  {"section": "css", "desc": "Odnośnik: margines zewnętrzny lewy 50 px", "type": "cssRule", "selector": "a", "prop": "margin-left", "value": "50px"},
+  {"section": "css", "desc": "Kursor na odnośniku: biały kolor czcionki", "type": "hover", "selector": "nav a", "prop": "color", "value": "white"},
+  {"section": "css", "desc": "Kursor na odnośniku: podkreślenie", "type": "hover", "selector": "nav a", "prop": "text-decoration-line", "value": "underline"},
+  {"section": "css", "desc": "Układ: blok boczny obok sekcji (po lewej)", "type": "layout", "a": "aside", "b": "section", "relation": "leftOf"},
+  {"section": "css", "desc": "Układ: blok nawigacyjny nad blokiem głównym", "type": "layout", "a": "nav", "b": "main", "relation": "above"},
+  {"section": "css", "desc": "Układ: stopka pod blokiem głównym", "type": "layout", "a": "footer", "b": "main", "relation": "below"},
+  {"section": "css", "desc": "Układ: blok nawigacyjny na całą szerokość", "type": "layout", "a": "nav", "relation": "fullWidth"}
 ]

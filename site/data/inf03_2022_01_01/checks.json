@@ -2,12 +2,11 @@
   {"section": "pliki", "desc": "Nazwa pliku: restauracja.html", "type": "file", "name": "restauracja.html"},
   {"section": "pliki", "desc": "Arkusz stylów w pliku styl_1.css", "type": "file", "name": "styl_1.css"},
   {"section": "pliki", "desc": "Skrypt w pliku rezerwacja.php", "type": "file", "name": "rezerwacja.php"},
-
   {"section": "html", "desc": "Zastosowany język HTML 5 i właściwy standard kodowania polskich znaków", "type": "head", "lang": "pl", "charset": true},
   {"section": "html", "desc": "Tytuł strony: „Restauracja Wszystkie Smaki”", "type": "head", "doctype": false, "title": "Restauracja Wszystkie Smaki"},
   {"section": "html", "desc": "Arkusz stylów styl_1.css prawidłowo połączony z kodem strony", "type": "head", "doctype": false, "stylesheet": "styl_1.css"},
   {"section": "html", "desc": "Podział na bloki znacznikami sekcji: baner, panele lewy i prawy, dolny (cztery sekcje) oraz stopka", "type": "exists", "selector": "section", "count": 4, "hint": "baner, panel lewy, panel prawy i panel dolny jako cztery kolejne znaczniki section"},
-  {"section": "html", "desc": "Stopka pod blokami sekcji", "type": "exists", "selector": "section ~ section ~ section ~ section ~ footer"},
+  {"section": "html", "desc": "Stopka pod blokami sekcji", "type": "exists", "selectors": ["section", "section", "section", "section", "footer"]},
   {"section": "html", "desc": "Baner: nagłówek pierwszego stopnia „Witamy w restauracji „Wszystkie Smaki””", "type": "text", "selector": "section:nth-of-type(1) h1", "matches": "^Witamy w restauracji [\"„”“]Wszystkie Smaki[\"”“]$"},
   {"section": "html", "desc": "Panel lewy: obraz menu.jpg", "type": "attr", "selector": "section:nth-of-type(2) img", "attr": "src", "equals": "menu.jpg"},
   {"section": "html", "desc": "Panel lewy: tekst alternatywny obrazu „Nasze danie”", "type": "attr", "selector": "section:nth-of-type(2) img", "attr": "alt", "equals": "Nasze danie"},
@@ -30,7 +29,6 @@
   {"section": "html", "desc": "Przycisk „REZERWUJ” wysyłający dane formularza", "type": "exists", "selector": "section:nth-of-type(4) form input[type=submit][value='REZERWUJ'], section:nth-of-type(4) form button[type=submit]"},
   {"section": "html", "desc": "Stopka: napis „Stronę internetową opracował: ” i numer", "type": "text", "selector": "footer", "startsWith": "Stronę internetową opracował:"},
   {"section": "html", "desc": "Numer zapisany pochyloną czcionką", "type": "exists", "selector": "footer em, footer i"},
-
   {"section": "css", "desc": "Cała strona: kolor tła #F6E5DC", "type": "css", "selector": "body", "prop": "background-color", "value": "#F6E5DC"},
   {"section": "css", "desc": "Cała strona: krój czcionki Verdana", "type": "css", "selector": "section:nth-of-type(4) h2", "prop": "font-family", "value": "Verdana"},
   {"section": "css", "desc": "Baner: kolor tła #2F180C", "type": "css", "selector": "section:nth-of-type(1)", "prop": "background-color", "value": "#2F180C"},
@@ -60,7 +58,6 @@
   {"section": "css", "desc": "Układ: panel lewy i prawy w jednym rzędzie", "type": "layout", "a": "section:nth-of-type(2)", "b": "section:nth-of-type(3)", "relation": "sameRow"},
   {"section": "css", "desc": "Układ: panel dolny pod panelami lewym i prawym", "type": "layout", "a": "section:nth-of-type(4)", "b": "section:nth-of-type(3)", "relation": "below"},
   {"section": "css", "desc": "Układ: stopka pod panelem dolnym", "type": "layout", "a": "footer", "b": "section:nth-of-type(4)", "relation": "below"},
-
   {"section": "php", "desc": "Skrypt wypisuje tekst „Dodano rezerwację do bazy”", "type": "php"},
   {"section": "php", "desc": "Łączy się z serwerem na localhost, użytkownik root bez hasła, baza „baza”", "type": "php"},
   {"section": "php", "desc": "Pobiera dane z formularza i wysyła zapytanie wstawiające rekord do tabeli rezerwacje (bez numeru stolika)", "type": "php"},

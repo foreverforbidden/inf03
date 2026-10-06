@@ -1,670 +1,74 @@
 [
-{
-"section": "grafika",
-"desc": "kolory.png: przycięta do butelek, wysokość 70 px z zachowaniem proporcji",
-"type": "image",
-"name": "kolory.png",
-"height": 70
-},
-{
-"section": "pliki",
-"desc": "Plik paznokcie.html",
-"type": "file",
-"name": "paznokcie.html"
-},
-{
-"section": "pliki",
-"desc": "Plik styl.css",
-"type": "file",
-"name": "styl.css"
-},
-{
-"section": "html",
-"desc": "Zapisana w języku HTML5, polski język, kodowanie UTF-8",
-"type": "head",
-"lang": "pl",
-"charset": true
-},
-{
-"section": "html",
-"desc": "Tytuł strony „Stylizacja paznokci”",
-"type": "head",
-"doctype": false,
-"title": "Stylizacja paznokci"
-},
-{
-"section": "html",
-"desc": "Arkusz stylów styl.css połączony z kodem strony",
-"type": "head",
-"doctype": false,
-"stylesheet": "styl.css"
-},
-{
-"section": "html",
-"desc": "Semantyczne bloki: boczny, główny, stopka",
-"type": "exists",
-"selector": "body > aside ~ main ~ footer"
-},
-{
-"section": "html",
-"desc": "Blok główny: blok nagłówkowy, nawigacyjny i trzy sekcje",
-"type": "exists",
-"selector": "main > header ~ nav ~ section ~ section ~ section"
-},
-{
-"section": "html",
-"desc": "Dokładnie trzy bloki sekcji",
-"type": "exists",
-"selector": "main section",
-"count": 3
-},
-{
-"section": "html",
-"desc": "Blok boczny: obraz manicure.jpg",
-"type": "attr",
-"selector": "aside img",
-"attr": "src",
-"equals": "manicure.jpg"
-},
-{
-"section": "html",
-"desc": "Blok boczny: tekst alternatywny „Stylizacja paznokci”",
-"type": "attr",
-"selector": "aside img",
-"attr": "alt",
-"equals": "Stylizacja paznokci"
-},
-{
-"section": "html",
-"desc": "Nagłówek pierwszego stopnia „Twoje wymarzone paznokcie”",
-"type": "text",
-"selector": "header h1",
-"equals": "Twoje wymarzone paznokcie"
-},
-{
-"section": "html",
-"desc": "Blok nawigacyjny: przycisk „Kolor”",
-"type": "text",
-"selector": "nav button",
-"index": 0,
-"equals": "Kolor"
-},
-{
-"section": "html",
-"desc": "Blok nawigacyjny: przycisk „Kształt”",
-"type": "text",
-"selector": "nav button",
-"index": 1,
-"equals": "Kształt"
-},
-{
-"section": "html",
-"desc": "Blok nawigacyjny: przycisk „Wzór”",
-"type": "text",
-"selector": "nav button",
-"index": 2,
-"equals": "Wzór"
-},
-{
-"section": "html",
-"desc": "Sekcja 1: nagłówek drugiego stopnia „Kolor”",
-"type": "text",
-"selector": "main section:nth-of-type(1) h2",
-"equals": "Kolor"
-},
-{
-"section": "html",
-"desc": "Sekcja 1: obraz kolory.png",
-"type": "attr",
-"selector": "main section:nth-of-type(1) img",
-"attr": "src",
-"equals": "kolory.png"
-},
-{
-"section": "html",
-"desc": "Sekcja 1: tekst alternatywny „Kolory paznokci”",
-"type": "attr",
-"selector": "main section:nth-of-type(1) img",
-"attr": "alt",
-"equals": "Kolory paznokci"
-},
-{
-"section": "html",
-"desc": "Sekcja 1: pole wyboru koloru, wartość początkowa #FF0000",
-"type": "exists",
-"selector": "main section:nth-of-type(1) input[type=color][value='#FF0000' i]"
-},
-{
-"section": "html",
-"desc": "Sekcja 2: nagłówek drugiego stopnia „Kształt”",
-"type": "text",
-"selector": "main section:nth-of-type(2) h2",
-"equals": "Kształt"
-},
-{
-"section": "html",
-"desc": "Sekcja 2: obraz ksztalt.png",
-"type": "attr",
-"selector": "main section:nth-of-type(2) img",
-"attr": "src",
-"equals": "ksztalt.png"
-},
-{
-"section": "html",
-"desc": "Sekcja 2: tekst alternatywny „Kształty paznokci”",
-"type": "attr",
-"selector": "main section:nth-of-type(2) img",
-"attr": "alt",
-"equals": "Kształty paznokci"
-},
-{
-"section": "html",
-"desc": "Sekcja 2: lista rozwijana z pięcioma opcjami",
-"type": "exists",
-"selector": "main section:nth-of-type(2) select option",
-"count": 5
-},
-{
-"section": "html",
-"desc": "Opcja listy „migdał”",
-"type": "text",
-"selector": "main section:nth-of-type(2) select option",
-"index": 0,
-"equals": "migdał"
-},
-{
-"section": "html",
-"desc": "Opcja listy „zaokrąglony”",
-"type": "text",
-"selector": "main section:nth-of-type(2) select option",
-"index": 1,
-"equals": "zaokrąglony"
-},
-{
-"section": "html",
-"desc": "Opcja listy „kwadratowy”",
-"type": "text",
-"selector": "main section:nth-of-type(2) select option",
-"index": 2,
-"equals": "kwadratowy"
-},
-{
-"section": "html",
-"desc": "Opcja listy „balerina”",
-"type": "text",
-"selector": "main section:nth-of-type(2) select option",
-"index": 3,
-"equals": "balerina"
-},
-{
-"section": "html",
-"desc": "Opcja listy „zaokrąglony kwadrat”",
-"type": "text",
-"selector": "main section:nth-of-type(2) select option",
-"index": 4,
-"equals": "zaokrąglony kwadrat"
-},
-{
-"section": "html",
-"desc": "Sekcja 3: nagłówek drugiego stopnia „Wzór”",
-"type": "text",
-"selector": "main section:nth-of-type(3) h2",
-"equals": "Wzór"
-},
-{
-"section": "html",
-"desc": "Sekcja 3: pole edycyjne liczb całkowitych od 1 do 10",
-"type": "exists",
-"selector": "main section:nth-of-type(3) input[type=number][min='1'][max='10']"
-},
-{
-"section": "html",
-"desc": "Stopka: paragraf „Autor strony: ” i numer zdającego",
-"type": "text",
-"selector": "footer p",
-"startsWith": "Autor strony:"
-},
-{
-"section": "html",
-"desc": "Numer zdającego w znaczniku em",
-"type": "exists",
-"selector": "footer p em"
-},
-{
-"section": "css",
-"desc": "Dla wszystkich selektorów: krój Trebuchet MS, sans-serif",
-"type": "css",
-"selector": "h2",
-"prop": "font-family",
-"value": "\"Trebuchet MS\", sans-serif"
-},
-{
-"section": "css",
-"desc": "Dla ciała strony: tło BlanchedAlmond",
-"type": "css",
-"selector": "body",
-"prop": "background-color",
-"value": "BlanchedAlmond"
-},
-{
-"section": "css",
-"desc": "Dla ciała strony: tekst do środka",
-"type": "css",
-"selector": "body",
-"prop": "text-align",
-"value": "center"
-},
-{
-"section": "css",
-"desc": "Blok boczny: szerokość 20%",
-"type": "css",
-"selector": "aside",
-"prop": "width",
-"value": "20%"
-},
-{
-"section": "css",
-"desc": "Obraz w bloku bocznym: szerokość 100%",
-"type": "css",
-"selector": "aside img",
-"prop": "width",
-"value": "100%"
-},
-{
-"section": "css",
-"desc": "Blok główny: szerokość 80%",
-"type": "css",
-"selector": "main",
-"prop": "width",
-"value": "80%"
-},
-{
-"section": "css",
-"desc": "Blok nawigacyjny: tekst do lewej",
-"type": "css",
-"selector": "nav",
-"prop": "text-align",
-"value": "left"
-},
-{
-"section": "css",
-"desc": "Blok nawigacyjny: margines lewy 10%",
-"type": "css",
-"selector": "nav",
-"prop": "margin-left",
-"value": "10%"
-},
-{
-"section": "css",
-"desc": "Bloki sekcji: tło Salmon",
-"type": "css",
-"selector": "main section",
-"all": true,
-"prop": "background-color",
-"value": "Salmon"
-},
-{
-"section": "css",
-"desc": "Bloki sekcji: margines lewy 10%",
-"type": "css",
-"selector": "main section",
-"all": true,
-"prop": "margin-left",
-"value": "10%"
-},
-{
-"section": "css",
-"desc": "Bloki sekcji: marginesy wewnętrzne 10 px",
-"type": "css",
-"selector": "main section",
-"all": true,
-"prop": "padding",
-"value": "10px"
-},
-{
-"section": "css",
-"desc": "Bloki sekcji: wysokość 250 px",
-"type": "css",
-"selector": "main section",
-"all": true,
-"prop": "height",
-"value": "250px"
-},
-{
-"section": "css",
-"desc": "Sekcja 1 wyświetlana blokowo",
-"type": "css",
-"selector": "main section:nth-of-type(1)",
-"prop": "display",
-"value": "block"
-},
-{
-"section": "css",
-"desc": "Sekcja 2 usunięta z układu",
-"type": "css",
-"selector": "main section:nth-of-type(2)",
-"prop": "display",
-"value": "none"
-},
-{
-"section": "css",
-"desc": "Sekcja 3 usunięta z układu",
-"type": "css",
-"selector": "main section:nth-of-type(3)",
-"prop": "display",
-"value": "none"
-},
-{
-"section": "css",
-"desc": "Przyciski: szerokość 26%",
-"type": "css",
-"selector": "nav button",
-"all": true,
-"prop": "width",
-"value": "26%"
-},
-{
-"section": "css",
-"desc": "Przyciski: biały kolor czcionki",
-"type": "css",
-"selector": "nav button",
-"all": true,
-"prop": "color",
-"value": "white"
-},
-{
-"section": "css",
-"desc": "Przyciski: brak obramowania",
-"type": "css",
-"selector": "nav button",
-"all": true,
-"prop": "border-top-style",
-"value": "none"
-},
-{
-"section": "css",
-"desc": "Przyciski: rozmiar czcionki 200%",
-"type": "css",
-"selector": "nav button",
-"all": true,
-"prop": "font-size",
-"value": "32px"
-},
-{
-"section": "css",
-"desc": "Pierwszy przycisk: tło Salmon",
-"type": "css",
-"selector": "nav button",
-"index": 0,
-"prop": "background-color",
-"value": "Salmon"
-},
-{
-"section": "css",
-"desc": "Pozostałe przyciski: tło Crimson",
-"type": "css",
-"selector": "nav button",
-"index": 1,
-"prop": "background-color",
-"value": "Crimson"
-},
-{
-"section": "css",
-"desc": "Pozostałe przyciski: tło Crimson",
-"type": "css",
-"selector": "nav button",
-"index": 2,
-"prop": "background-color",
-"value": "Crimson"
-},
-{
-"section": "css",
-"desc": "Klasa wzory: szerokość 70 px",
-"type": "css",
-"selector": ".wzory",
-"all": true,
-"prop": "width",
-"value": "70px"
-},
-{
-"section": "css",
-"desc": "Klasa wzory: marginesy zewnętrzne 5 px",
-"type": "css",
-"selector": ".wzory",
-"all": true,
-"prop": "margin",
-"value": "5px"
-},
-{
-"section": "css",
-"desc": "Klasa wzory: zaokrąglenie rogów 100%",
-"type": "css",
-"selector": ".wzory",
-"all": true,
-"prop": "border-top-left-radius",
-"value": "100%"
-},
-{
-"section": "css",
-"desc": "Układ: blok boczny po lewej od bloku głównego",
-"type": "layout",
-"a": "aside",
-"b": "main",
-"relation": "leftOf"
-},
-{
-"section": "css",
-"desc": "Układ: blok nagłówkowy nad blokiem nawigacyjnym",
-"type": "layout",
-"a": "main header",
-"b": "nav",
-"relation": "above"
-},
-{
-"section": "css",
-"desc": "Układ: blok nawigacyjny nad sekcją 1",
-"type": "layout",
-"a": "nav",
-"b": "main section:nth-of-type(1)",
-"relation": "above"
-},
-{
-"section": "css",
-"desc": "Układ: stopka pod blokami",
-"type": "layout",
-"a": "footer",
-"b": "main",
-"relation": "below"
-},
-{
-"section": "css",
-"desc": "Układ: stopka na całą szerokość",
-"type": "layout",
-"a": "footer",
-"relation": "fullWidth"
-},
-{
-"section": "js",
-"desc": "Skrypt 1: 10 obrazów w sekcji 3",
-"type": "exists",
-"selector": "main section:nth-of-type(3) img",
-"count": 10
-},
-{
-"section": "js",
-"desc": "Skrypt 1: każdy obraz z klasą wzory",
-"type": "exists",
-"selector": "main section:nth-of-type(3) img.wzory",
-"count": 10
-},
-{
-"section": "js",
-"desc": "Skrypt 1: obraz 1.jpg (pierwszy)",
-"type": "attr",
-"selector": "main section:nth-of-type(3) img",
-"index": 0,
-"attr": "src",
-"equals": "1.jpg"
-},
-{
-"section": "js",
-"desc": "Skrypt 1: obraz 10.jpg (ostatni)",
-"type": "attr",
-"selector": "main section:nth-of-type(3) img",
-"index": 9,
-"attr": "src",
-"equals": "10.jpg"
-},
-{
-"section": "js",
-"desc": "Skrypt 1: dymek z numerem obrazu (trzeci: 3)",
-"type": "attr",
-"selector": "main section:nth-of-type(3) img",
-"index": 2,
-"attr": "title",
-"equals": "3"
-},
-{
-"section": "js",
-"desc": "Skrypt 1: dymek z numerem obrazu (dziesiąty: 10)",
-"type": "attr",
-"selector": "main section:nth-of-type(3) img",
-"index": 9,
-"attr": "title",
-"equals": "10"
-},
-{
-"section": "js",
-"desc": "Skrypt 2: najechanie na „Kolor”: sekcja 1 blokowo, pozostałe usunięte, przycisk 1 Salmon, pozostałe Crimson",
-"type": "js",
-"steps": [
-{
-"hover": "nav button:nth-of-type(3)"
-},
-{
-"hover": "nav button:nth-of-type(1)"
-}
-],
-"expect": [
-{
-"selector": "main section:nth-of-type(1)",
-"css": "display",
-"value": "block"
-},
-{
-"selector": "main section:nth-of-type(2)",
-"css": "display",
-"value": "none"
-},
-{
-"selector": "main section:nth-of-type(3)",
-"css": "display",
-"value": "none"
-},
-{
-"selector": "nav button:nth-of-type(1)",
-"css": "background-color",
-"value": "Salmon"
-},
-{
-"selector": "nav button:nth-of-type(2)",
-"css": "background-color",
-"value": "Crimson"
-},
-{
-"selector": "nav button:nth-of-type(3)",
-"css": "background-color",
-"value": "Crimson"
-}
-]
-},
-{
-"section": "js",
-"desc": "Skrypt 2: najechanie na „Kształt”: sekcja 2 blokowo, pozostałe usunięte, przycisk 2 Salmon, pozostałe Crimson",
-"type": "js",
-"steps": [
-{
-"hover": "nav button:nth-of-type(2)"
-}
-],
-"expect": [
-{
-"selector": "main section:nth-of-type(1)",
-"css": "display",
-"value": "none"
-},
-{
-"selector": "main section:nth-of-type(2)",
-"css": "display",
-"value": "block"
-},
-{
-"selector": "main section:nth-of-type(3)",
-"css": "display",
-"value": "none"
-},
-{
-"selector": "nav button:nth-of-type(1)",
-"css": "background-color",
-"value": "Crimson"
-},
-{
-"selector": "nav button:nth-of-type(2)",
-"css": "background-color",
-"value": "Salmon"
-},
-{
-"selector": "nav button:nth-of-type(3)",
-"css": "background-color",
-"value": "Crimson"
-}
-]
-},
-{
-"section": "js",
-"desc": "Skrypt 2: najechanie na „Wzór”: sekcja 3 blokowo, pozostałe usunięte, przycisk 3 Salmon, pozostałe Crimson",
-"type": "js",
-"steps": [
-{
-"hover": "nav button:nth-of-type(3)"
-}
-],
-"expect": [
-{
-"selector": "main section:nth-of-type(1)",
-"css": "display",
-"value": "none"
-},
-{
-"selector": "main section:nth-of-type(2)",
-"css": "display",
-"value": "none"
-},
-{
-"selector": "main section:nth-of-type(3)",
-"css": "display",
-"value": "block"
-},
-{
-"selector": "nav button:nth-of-type(1)",
-"css": "background-color",
-"value": "Crimson"
-},
-{
-"selector": "nav button:nth-of-type(2)",
-"css": "background-color",
-"value": "Crimson"
-},
-{
-"selector": "nav button:nth-of-type(3)",
-"css": "background-color",
-"value": "Salmon"
-}
-]
-},
-{
-"section": "js",
-"desc": "Skrypt: nazewnictwo zmiennych i funkcji znaczące",
-"type": "manual"
-}
+  {"section": "grafika", "desc": "kolory.png: przycięta do butelek, wysokość 70 px z zachowaniem proporcji", "type": "image", "name": "kolory.png", "height": 70},
+  {"section": "pliki", "desc": "Plik paznokcie.html", "type": "file", "name": "paznokcie.html"},
+  {"section": "pliki", "desc": "Plik styl.css", "type": "file", "name": "styl.css"},
+  {"section": "html", "desc": "Zapisana w języku HTML5, polski język, kodowanie UTF-8", "type": "head", "lang": "pl", "charset": true},
+  {"section": "html", "desc": "Tytuł strony „Stylizacja paznokci”", "type": "head", "doctype": false, "title": "Stylizacja paznokci"},
+  {"section": "html", "desc": "Arkusz stylów styl.css połączony z kodem strony", "type": "head", "doctype": false, "stylesheet": "styl.css"},
+  {"section": "html", "desc": "Semantyczne bloki: boczny, główny, stopka", "type": "exists", "selectors": ["aside", "main", "footer"]},
+  {"section": "html", "desc": "Blok główny: blok nagłówkowy, nawigacyjny i trzy sekcje", "type": "exists", "selector": "main > header ~ nav ~ section ~ section ~ section"},
+  {"section": "html", "desc": "Dokładnie trzy bloki sekcji", "type": "exists", "selector": "main section", "count": 3},
+  {"section": "html", "desc": "Blok boczny: obraz manicure.jpg", "type": "attr", "selector": "aside img", "attr": "src", "equals": "manicure.jpg"},
+  {"section": "html", "desc": "Blok boczny: tekst alternatywny „Stylizacja paznokci”", "type": "attr", "selector": "aside img", "attr": "alt", "equals": "Stylizacja paznokci"},
+  {"section": "html", "desc": "Nagłówek pierwszego stopnia „Twoje wymarzone paznokcie”", "type": "text", "selector": "header h1", "equals": "Twoje wymarzone paznokcie"},
+  {"section": "html", "desc": "Blok nawigacyjny: przycisk „Kolor”", "type": "text", "selector": "nav button", "index": 0, "equals": "Kolor"},
+  {"section": "html", "desc": "Blok nawigacyjny: przycisk „Kształt”", "type": "text", "selector": "nav button", "index": 1, "equals": "Kształt"},
+  {"section": "html", "desc": "Blok nawigacyjny: przycisk „Wzór”", "type": "text", "selector": "nav button", "index": 2, "equals": "Wzór"},
+  {"section": "html", "desc": "Sekcja 1: nagłówek drugiego stopnia „Kolor”", "type": "text", "selector": "main section:nth-of-type(1) h2", "equals": "Kolor"},
+  {"section": "html", "desc": "Sekcja 1: obraz kolory.png", "type": "attr", "selector": "main section:nth-of-type(1) img", "attr": "src", "equals": "kolory.png"},
+  {"section": "html", "desc": "Sekcja 1: tekst alternatywny „Kolory paznokci”", "type": "attr", "selector": "main section:nth-of-type(1) img", "attr": "alt", "equals": "Kolory paznokci"},
+  {"section": "html", "desc": "Sekcja 1: pole wyboru koloru, wartość początkowa #FF0000", "type": "exists", "selector": "main section:nth-of-type(1) input[type=color][value='#FF0000' i]"},
+  {"section": "html", "desc": "Sekcja 2: nagłówek drugiego stopnia „Kształt”", "type": "text", "selector": "main section:nth-of-type(2) h2", "equals": "Kształt"},
+  {"section": "html", "desc": "Sekcja 2: obraz ksztalt.png", "type": "attr", "selector": "main section:nth-of-type(2) img", "attr": "src", "equals": "ksztalt.png"},
+  {"section": "html", "desc": "Sekcja 2: tekst alternatywny „Kształty paznokci”", "type": "attr", "selector": "main section:nth-of-type(2) img", "attr": "alt", "equals": "Kształty paznokci"},
+  {"section": "html", "desc": "Sekcja 2: lista rozwijana z pięcioma opcjami", "type": "exists", "selector": "main section:nth-of-type(2) select option", "count": 5},
+  {"section": "html", "desc": "Opcja listy „migdał”", "type": "text", "selector": "main section:nth-of-type(2) select option", "index": 0, "equals": "migdał"},
+  {"section": "html", "desc": "Opcja listy „zaokrąglony”", "type": "text", "selector": "main section:nth-of-type(2) select option", "index": 1, "equals": "zaokrąglony"},
+  {"section": "html", "desc": "Opcja listy „kwadratowy”", "type": "text", "selector": "main section:nth-of-type(2) select option", "index": 2, "equals": "kwadratowy"},
+  {"section": "html", "desc": "Opcja listy „balerina”", "type": "text", "selector": "main section:nth-of-type(2) select option", "index": 3, "equals": "balerina"},
+  {"section": "html", "desc": "Opcja listy „zaokrąglony kwadrat”", "type": "text", "selector": "main section:nth-of-type(2) select option", "index": 4, "equals": "zaokrąglony kwadrat"},
+  {"section": "html", "desc": "Sekcja 3: nagłówek drugiego stopnia „Wzór”", "type": "text", "selector": "main section:nth-of-type(3) h2", "equals": "Wzór"},
+  {"section": "html", "desc": "Sekcja 3: pole edycyjne liczb całkowitych od 1 do 10", "type": "exists", "selector": "main section:nth-of-type(3) input[type=number][min='1'][max='10']"},
+  {"section": "html", "desc": "Stopka: paragraf „Autor strony: ” i numer zdającego", "type": "text", "selector": "footer p", "startsWith": "Autor strony:"},
+  {"section": "html", "desc": "Numer zdającego w znaczniku em", "type": "exists", "selector": "footer p em"},
+  {"section": "css", "desc": "Dla wszystkich selektorów: krój Trebuchet MS, sans-serif", "type": "css", "selector": "h2", "prop": "font-family", "value": "\"Trebuchet MS\", sans-serif"},
+  {"section": "css", "desc": "Dla ciała strony: tło BlanchedAlmond", "type": "css", "selector": "body", "prop": "background-color", "value": "BlanchedAlmond"},
+  {"section": "css", "desc": "Dla ciała strony: tekst do środka", "type": "css", "selector": "body", "prop": "text-align", "value": "center"},
+  {"section": "css", "desc": "Blok boczny: szerokość 20%", "type": "css", "selector": "aside", "prop": "width", "value": "20%"},
+  {"section": "css", "desc": "Obraz w bloku bocznym: szerokość 100%", "type": "css", "selector": "aside img", "prop": "width", "value": "100%"},
+  {"section": "css", "desc": "Blok główny: szerokość 80%", "type": "css", "selector": "main", "prop": "width", "value": "80%"},
+  {"section": "css", "desc": "Blok nawigacyjny: tekst do lewej", "type": "css", "selector": "nav", "prop": "text-align", "value": "left"},
+  {"section": "css", "desc": "Blok nawigacyjny: margines lewy 10%", "type": "css", "selector": "nav", "prop": "margin-left", "value": "10%"},
+  {"section": "css", "desc": "Bloki sekcji: tło Salmon", "type": "css", "selector": "main section", "all": true, "prop": "background-color", "value": "Salmon"},
+  {"section": "css", "desc": "Bloki sekcji: margines lewy 10%", "type": "css", "selector": "main section", "all": true, "prop": "margin-left", "value": "10%"},
+  {"section": "css", "desc": "Bloki sekcji: marginesy wewnętrzne 10 px", "type": "css", "selector": "main section", "all": true, "prop": "padding", "value": "10px"},
+  {"section": "css", "desc": "Bloki sekcji: wysokość 250 px", "type": "css", "selector": "main section", "all": true, "prop": "height", "value": "250px"},
+  {"section": "css", "desc": "Sekcja 1 wyświetlana blokowo", "type": "css", "selector": "main section:nth-of-type(1)", "prop": "display", "value": "block"},
+  {"section": "css", "desc": "Sekcja 2 usunięta z układu", "type": "css", "selector": "main section:nth-of-type(2)", "prop": "display", "value": "none"},
+  {"section": "css", "desc": "Sekcja 3 usunięta z układu", "type": "css", "selector": "main section:nth-of-type(3)", "prop": "display", "value": "none"},
+  {"section": "css", "desc": "Przyciski: szerokość 26%", "type": "css", "selector": "nav button", "all": true, "prop": "width", "value": "26%"},
+  {"section": "css", "desc": "Przyciski: biały kolor czcionki", "type": "css", "selector": "nav button", "all": true, "prop": "color", "value": "white"},
+  {"section": "css", "desc": "Przyciski: brak obramowania", "type": "css", "selector": "nav button", "all": true, "prop": "border-top-style", "value": "none"},
+  {"section": "css", "desc": "Przyciski: rozmiar czcionki 200%", "type": "css", "selector": "nav button", "all": true, "prop": "font-size", "value": "32px"},
+  {"section": "css", "desc": "Pierwszy przycisk: tło Salmon", "type": "css", "selector": "nav button", "index": 0, "prop": "background-color", "value": "Salmon"},
+  {"section": "css", "desc": "Pozostałe przyciski: tło Crimson", "type": "css", "selector": "nav button", "index": 1, "prop": "background-color", "value": "Crimson"},
+  {"section": "css", "desc": "Pozostałe przyciski: tło Crimson", "type": "css", "selector": "nav button", "index": 2, "prop": "background-color", "value": "Crimson"},
+  {"section": "css", "desc": "Klasa wzory: szerokość 70 px", "type": "css", "selector": ".wzory", "all": true, "prop": "width", "value": "70px"},
+  {"section": "css", "desc": "Klasa wzory: marginesy zewnętrzne 5 px", "type": "css", "selector": ".wzory", "all": true, "prop": "margin", "value": "5px"},
+  {"section": "css", "desc": "Klasa wzory: zaokrąglenie rogów 100%", "type": "css", "selector": ".wzory", "all": true, "prop": "border-top-left-radius", "value": "100%"},
+  {"section": "css", "desc": "Układ: blok boczny po lewej od bloku głównego", "type": "layout", "a": "aside", "b": "main", "relation": "leftOf"},
+  {"section": "css", "desc": "Układ: blok nagłówkowy nad blokiem nawigacyjnym", "type": "layout", "a": "main header", "b": "nav", "relation": "above"},
+  {"section": "css", "desc": "Układ: blok nawigacyjny nad sekcją 1", "type": "layout", "a": "nav", "b": "main section:nth-of-type(1)", "relation": "above"},
+  {"section": "css", "desc": "Układ: stopka pod blokami", "type": "layout", "a": "footer", "b": "main", "relation": "below"},
+  {"section": "css", "desc": "Układ: stopka na całą szerokość", "type": "layout", "a": "footer", "relation": "fullWidth"},
+  {"section": "js", "desc": "Skrypt 1: 10 obrazów w sekcji 3", "type": "exists", "selector": "main section:nth-of-type(3) img", "count": 10},
+  {"section": "js", "desc": "Skrypt 1: każdy obraz z klasą wzory", "type": "exists", "selector": "main section:nth-of-type(3) img.wzory", "count": 10},
+  {"section": "js", "desc": "Skrypt 1: obraz 1.jpg (pierwszy)", "type": "attr", "selector": "main section:nth-of-type(3) img", "index": 0, "attr": "src", "equals": "1.jpg"},
+  {"section": "js", "desc": "Skrypt 1: obraz 10.jpg (ostatni)", "type": "attr", "selector": "main section:nth-of-type(3) img", "index": 9, "attr": "src", "equals": "10.jpg"},
+  {"section": "js", "desc": "Skrypt 1: dymek z numerem obrazu (trzeci: 3)", "type": "attr", "selector": "main section:nth-of-type(3) img", "index": 2, "attr": "title", "equals": "3"},
+  {"section": "js", "desc": "Skrypt 1: dymek z numerem obrazu (dziesiąty: 10)", "type": "attr", "selector": "main section:nth-of-type(3) img", "index": 9, "attr": "title", "equals": "10"},
+  {"section": "js", "desc": "Skrypt 2: najechanie na „Kolor”: sekcja 1 blokowo, pozostałe usunięte, przycisk 1 Salmon, pozostałe Crimson", "type": "js", "steps": [{"hover": "nav button:nth-of-type(3)"}, {"hover": "nav button:nth-of-type(1)"}], "expect": [{"selector": "main section:nth-of-type(1)", "css": "display", "value": "block"}, {"selector": "main section:nth-of-type(2)", "css": "display", "value": "none"}, {"selector": "main section:nth-of-type(3)", "css": "display", "value": "none"}, {"selector": "nav button:nth-of-type(1)", "css": "background-color", "value": "Salmon"}, {"selector": "nav button:nth-of-type(2)", "css": "background-color", "value": "Crimson"}, {"selector": "nav button:nth-of-type(3)", "css": "background-color", "value": "Crimson"}]},
+  {"section": "js", "desc": "Skrypt 2: najechanie na „Kształt”: sekcja 2 blokowo, pozostałe usunięte, przycisk 2 Salmon, pozostałe Crimson", "type": "js", "steps": [{"hover": "nav button:nth-of-type(2)"}], "expect": [{"selector": "main section:nth-of-type(1)", "css": "display", "value": "none"}, {"selector": "main section:nth-of-type(2)", "css": "display", "value": "block"}, {"selector": "main section:nth-of-type(3)", "css": "display", "value": "none"}, {"selector": "nav button:nth-of-type(1)", "css": "background-color", "value": "Crimson"}, {"selector": "nav button:nth-of-type(2)", "css": "background-color", "value": "Salmon"}, {"selector": "nav button:nth-of-type(3)", "css": "background-color", "value": "Crimson"}]},
+  {"section": "js", "desc": "Skrypt 2: najechanie na „Wzór”: sekcja 3 blokowo, pozostałe usunięte, przycisk 3 Salmon, pozostałe Crimson", "type": "js", "steps": [{"hover": "nav button:nth-of-type(3)"}], "expect": [{"selector": "main section:nth-of-type(1)", "css": "display", "value": "none"}, {"selector": "main section:nth-of-type(2)", "css": "display", "value": "none"}, {"selector": "main section:nth-of-type(3)", "css": "display", "value": "block"}, {"selector": "nav button:nth-of-type(1)", "css": "background-color", "value": "Crimson"}, {"selector": "nav button:nth-of-type(2)", "css": "background-color", "value": "Crimson"}, {"selector": "nav button:nth-of-type(3)", "css": "background-color", "value": "Salmon"}]},
+  {"section": "js", "desc": "Skrypt: nazewnictwo zmiennych i funkcji znaczące", "type": "manual"}
 ]

@@ -1,586 +1,76 @@
 [
- {
-  "section": "grafika",
-  "desc": "logo.png: białe tło zastąpione przezroczystością",
-  "type": "image",
-  "name": "logo.png",
-  "alpha": true
- },
- {
-  "section": "grafika",
-  "desc": "logo.png: wysokość 100 px",
-  "type": "image",
-  "name": "logo.png",
-  "height": 100
- },
- {
-  "section": "pliki",
-  "desc": "Plik index.php",
-  "type": "file",
-  "name": "index.php"
- },
- {
-  "section": "pliki",
-  "desc": "Plik szczyty.php",
-  "type": "file",
-  "name": "szczyty.php"
- },
- {
-  "section": "pliki",
-  "desc": "Plik styl.css",
-  "type": "file",
-  "name": "styl.css"
- },
- {
-  "section": "html",
-  "desc": "Zapisana w HTML5, polski język, kodowanie UTF-8",
-  "type": "head",
-  "page": "index.php",
-  "lang": "pl",
-  "charset": true
- },
- {
-  "section": "html",
-  "desc": "Tytuł strony „Korona gór polskich”",
-  "type": "head",
-  "page": "index.php",
-  "doctype": false,
-  "title": "Korona gór polskich"
- },
- {
-  "section": "html",
-  "desc": "Arkusz stylów styl.css prawidłowo połączony",
-  "type": "head",
-  "page": "index.php",
-  "doctype": false,
-  "stylesheet": "styl.css"
- },
- {
-  "section": "html",
-  "desc": "Układ bloków: dwa nagłówkowe, główny, sekcja, dwie stopki",
-  "type": "exists",
-  "page": "index.php",
-  "selector": "header ~ header ~ main ~ section ~ footer ~ footer"
- },
- {
-  "section": "html",
-  "desc": "Blok nagłówkowy 1: obraz logo.png",
-  "type": "attr",
-  "page": "index.php",
-  "selector": "header:nth-of-type(1) img",
-  "attr": "src",
-  "equals": "logo.png"
- },
- {
-  "section": "html",
-  "desc": "Blok nagłówkowy 1: tekst alternatywny „Logo”",
-  "type": "attr",
-  "page": "index.php",
-  "selector": "header:nth-of-type(1) img",
-  "attr": "alt",
-  "equals": "Logo"
- },
- {
-  "section": "html",
-  "desc": "Blok nagłówkowy 2: nagłówek pierwszego stopnia „Korona Gór Polskich”",
-  "type": "text",
-  "page": "index.php",
-  "selector": "header:nth-of-type(2) h1",
-  "equals": "Korona Gór Polskich"
- },
- {
-  "section": "html",
-  "desc": "Stopka 1: nagłówek trzeciego stopnia „Kontakt”",
-  "type": "text",
-  "page": "index.php",
-  "selector": "footer:nth-of-type(1) h3",
-  "equals": "Kontakt"
- },
- {
-  "section": "html",
-  "desc": "Stopka 1: lista punktowana z dwoma elementami",
-  "type": "exists",
-  "page": "index.php",
-  "selector": "footer:nth-of-type(1) ul > li",
-  "count": 2
- },
- {
-  "section": "html",
-  "desc": "Stopka 1: „Zadzwoń do nas: 111 222 333”",
-  "type": "text",
-  "page": "index.php",
-  "selector": "footer:nth-of-type(1) li:nth-child(1)",
-  "equals": "Zadzwoń do nas: 111 222 333"
- },
- {
-  "section": "html",
-  "desc": "Stopka 1: „Napisz do nas”",
-  "type": "text",
-  "page": "index.php",
-  "selector": "footer:nth-of-type(1) li:nth-child(2)",
-  "equals": "Napisz do nas"
- },
- {
-  "section": "html",
-  "desc": "Stopka 1: odsyłacz pocztowy do korona@gory.pl",
-  "type": "attr",
-  "page": "index.php",
-  "selector": "footer:nth-of-type(1) li:nth-child(2) a",
-  "attr": "href",
-  "equals": "mailto:korona@gory.pl"
- },
- {
-  "section": "html",
-  "desc": "Stopka 2: nagłówek trzeciego stopnia „© Wykonane przez: ” i numer zdającego",
-  "type": "text",
-  "page": "index.php",
-  "selector": "footer:nth-of-type(2) h3",
-  "startsWith": "© Wykonane przez:"
- },
- {
-  "section": "php",
-  "desc": "Blok sekcji: efekt działania skryptu 2 (obrazy z bazy z alt = nazwa szczytu, klasa miniatury)",
-  "type": "php",
-  "page": "index.php"
- },
- {
-  "section": "html",
-  "desc": "Zapisana w HTML5, polski język, kodowanie UTF-8 (szczyty.php)",
-  "type": "head",
-  "page": "szczyty.php",
-  "lang": "pl",
-  "charset": true
- },
- {
-  "section": "html",
-  "desc": "Tytuł strony „Korona gór polskich”",
-  "type": "head",
-  "page": "szczyty.php",
-  "doctype": false,
-  "title": "Korona gór polskich"
- },
- {
-  "section": "html",
-  "desc": "Arkusz stylów styl.css prawidłowo połączony",
-  "type": "head",
-  "page": "szczyty.php",
-  "doctype": false,
-  "stylesheet": "styl.css"
- },
- {
-  "section": "html",
-  "desc": "Układ bloków: dwa nagłówkowe, główny, sekcja, dwie stopki",
-  "type": "exists",
-  "page": "szczyty.php",
-  "selector": "header ~ header ~ main ~ section ~ footer ~ footer"
- },
- {
-  "section": "html",
-  "desc": "Blok nagłówkowy 1: obraz logo.png",
-  "type": "attr",
-  "page": "szczyty.php",
-  "selector": "header:nth-of-type(1) img",
-  "attr": "src",
-  "equals": "logo.png"
- },
- {
-  "section": "html",
-  "desc": "Blok nagłówkowy 1: tekst alternatywny „Logo”",
-  "type": "attr",
-  "page": "szczyty.php",
-  "selector": "header:nth-of-type(1) img",
-  "attr": "alt",
-  "equals": "Logo"
- },
- {
-  "section": "html",
-  "desc": "Blok nagłówkowy 2: nagłówek pierwszego stopnia „Korona Gór Polskich”",
-  "type": "text",
-  "page": "szczyty.php",
-  "selector": "header:nth-of-type(2) h1",
-  "equals": "Korona Gór Polskich"
- },
- {
-  "section": "html",
-  "desc": "Stopka 1: nagłówek trzeciego stopnia „Kontakt”",
-  "type": "text",
-  "page": "szczyty.php",
-  "selector": "footer:nth-of-type(1) h3",
-  "equals": "Kontakt"
- },
- {
-  "section": "html",
-  "desc": "Stopka 1: lista punktowana z dwoma elementami",
-  "type": "exists",
-  "page": "szczyty.php",
-  "selector": "footer:nth-of-type(1) ul > li",
-  "count": 2
- },
- {
-  "section": "html",
-  "desc": "Stopka 1: „Zadzwoń do nas: 111 222 333”",
-  "type": "text",
-  "page": "szczyty.php",
-  "selector": "footer:nth-of-type(1) li:nth-child(1)",
-  "equals": "Zadzwoń do nas: 111 222 333"
- },
- {
-  "section": "html",
-  "desc": "Stopka 1: „Napisz do nas”",
-  "type": "text",
-  "page": "szczyty.php",
-  "selector": "footer:nth-of-type(1) li:nth-child(2)",
-  "equals": "Napisz do nas"
- },
- {
-  "section": "html",
-  "desc": "Stopka 1: odsyłacz pocztowy do korona@gory.pl",
-  "type": "attr",
-  "page": "szczyty.php",
-  "selector": "footer:nth-of-type(1) li:nth-child(2) a",
-  "attr": "href",
-  "equals": "mailto:korona@gory.pl"
- },
- {
-  "section": "html",
-  "desc": "Stopka 2: nagłówek trzeciego stopnia „© Wykonane przez: ” i numer zdającego",
-  "type": "text",
-  "page": "szczyty.php",
-  "selector": "footer:nth-of-type(2) h3",
-  "startsWith": "© Wykonane przez:"
- },
- {
-  "section": "php",
-  "desc": "Blok sekcji: efekt działania skryptu 2 (obrazy z bazy z alt = nazwa szczytu, klasa miniatury)",
-  "type": "php",
-  "page": "szczyty.php"
- },
- {
-  "section": "php",
-  "desc": "Blok główny index.php: efekt skryptu 1 (nazwy szczytów w <span> jako odnośniki do szczyty.php z id metodą GET)",
-  "type": "php",
-  "page": "index.php"
- },
- {
-  "section": "php",
-  "desc": "index.php: nazwy szczytów w <span>, każda jako odnośnik do szczyty.php z id metodą GET",
-  "type": "php",
-  "page": "index.php"
- },
- {
-  "section": "php",
-  "desc": "szczyty.php: efekt skryptu 3 (dane wybranego szczytu)",
-  "type": "php",
-  "page": "szczyty.php"
- },
- {
-  "section": "php",
-  "desc": "szczyty.php: obraz z alt „szczyt”, nagłówek h2 z nazwą, dwa nagłówki h3 („wysokość: … metrów n.p.m.”, „pasmo górskie: …”), paragraf z opisem (skrypt 3)",
-  "type": "php",
-  "page": "szczyty.php"
- },
- {
-  "section": "php",
-  "desc": "Skrypty łączą się z bazą korona (localhost, root, bez hasła), zamykają połączenie, znaczące nazwy zmiennych",
-  "type": "php"
- },
- {
-  "section": "css",
-  "desc": "Domyślnie: krój czcionki Lato, sans-serif",
-  "type": "cssRule",
-  "selector": "*",
-  "prop": "font-family",
-  "value": "Lato, sans-serif"
- },
- {
-  "section": "css",
-  "desc": "Domyślnie: wyrównanie tekstu do środka",
-  "type": "css",
-  "selector": "h1",
-  "prop": "text-align",
-  "value": "center"
- },
- {
-  "section": "css",
-  "desc": "Domyślnie: kolor czcionki #333",
-  "type": "css",
-  "selector": "h1",
-  "prop": "color",
-  "value": "#333"
- },
- {
-  "section": "css",
-  "desc": "Czcionka Lato dodana regułami @font-face dla regular i bold",
-  "type": "manual"
- },
- {
-  "section": "css",
-  "desc": "Bloki nagłówkowe: wysokość 100 px",
-  "type": "css",
-  "selector": "header",
-  "all": true,
-  "prop": "height",
-  "value": "100px"
- },
- {
-  "section": "css",
-  "desc": "Stopki: wysokość 100 px",
-  "type": "css",
-  "selector": "footer",
-  "all": true,
-  "prop": "height",
-  "value": "100px"
- },
- {
-  "section": "css",
-  "desc": "Blok nagłówkowy 1: szerokość 30%",
-  "type": "css",
-  "selector": "header:nth-of-type(1)",
-  "prop": "width",
-  "value": "30%"
- },
- {
-  "section": "css",
-  "desc": "Stopka 1: szerokość 30%",
-  "type": "css",
-  "selector": "footer:nth-of-type(1)",
-  "prop": "width",
-  "value": "30%"
- },
- {
-  "section": "css",
-  "desc": "Blok nagłówkowy 2: szerokość 70%",
-  "type": "css",
-  "selector": "header:nth-of-type(2)",
-  "prop": "width",
-  "value": "70%"
- },
- {
-  "section": "css",
-  "desc": "Stopka 2: szerokość 70%",
-  "type": "css",
-  "selector": "footer:nth-of-type(2)",
-  "prop": "width",
-  "value": "70%"
- },
- {
-  "section": "css",
-  "desc": "Blok główny: kolor tła #E0F2F1",
-  "type": "css",
-  "selector": "main",
-  "prop": "background-color",
-  "value": "#E0F2F1"
- },
- {
-  "section": "css",
-  "desc": "Blok główny: marginesy wewnętrzne 100 px",
-  "type": "css",
-  "selector": "main",
-  "prop": "padding",
-  "value": "100px"
- },
- {
-  "section": "css",
-  "desc": "Blok sekcji: wysokość 90 px",
-  "type": "css",
-  "selector": "section",
-  "prop": "height",
-  "value": "90px"
- },
- {
-  "section": "css",
-  "desc": "Blok sekcji: ukryta zawartość przepełnienia",
-  "type": "css",
-  "selector": "section",
-  "prop": "overflow",
-  "value": "hidden"
- },
- {
-  "section": "css",
-  "desc": "Klasa miniatury: wysokość 90 px",
-  "type": "cssRule",
-  "selector": ".miniatury",
-  "prop": "height",
-  "value": "90px",
-  "hint": "obrazy tworzone skryptem 2 z klasą miniatury"
- },
- {
-  "section": "css",
-  "desc": "Selektor elementu listy: wyrównanie tekstu do lewej (wyłącznie selektor li)",
-  "type": "cssRule",
-  "selector": "li",
-  "prop": "text-align",
-  "value": "left"
- },
- {
-  "section": "css",
-  "desc": "Selektor span: margines wewnętrzny lewy 30 px (wyłącznie selektor span)",
-  "type": "cssRule",
-  "selector": "span",
-  "prop": "padding-left",
-  "value": "30px"
- },
- {
-  "section": "css",
-  "desc": "Potomek 2 selektora span: rozmiar czcionki 200%",
-  "type": "cssRule",
-  "selector": "span:nth-child(2)",
-  "prop": "font-size",
-  "value": "200%",
-  "hint": "elementy span tworzone skryptem 1"
- },
- {
-  "section": "css",
-  "desc": "Potomek 11 selektora span: rozmiar czcionki 200%",
-  "type": "cssRule",
-  "selector": "span:nth-child(11)",
-  "prop": "font-size",
-  "value": "200%",
-  "hint": "elementy span tworzone skryptem 1"
- },
- {
-  "section": "css",
-  "desc": "Potomek 3 selektora span: rozmiar czcionki 150%",
-  "type": "cssRule",
-  "selector": "span:nth-child(3)",
-  "prop": "font-size",
-  "value": "150%",
-  "hint": "elementy span tworzone skryptem 1"
- },
- {
-  "section": "css",
-  "desc": "Potomek 15 selektora span: rozmiar czcionki 150%",
-  "type": "cssRule",
-  "selector": "span:nth-child(15)",
-  "prop": "font-size",
-  "value": "150%",
-  "hint": "elementy span tworzone skryptem 1"
- },
- {
-  "section": "css",
-  "desc": "Potomek 4 selektora span: rozmiar czcionki 120%",
-  "type": "cssRule",
-  "selector": "span:nth-child(4)",
-  "prop": "font-size",
-  "value": "120%",
-  "hint": "elementy span tworzone skryptem 1"
- },
- {
-  "section": "css",
-  "desc": "Potomek 17 selektora span: rozmiar czcionki 120%",
-  "type": "cssRule",
-  "selector": "span:nth-child(17)",
-  "prop": "font-size",
-  "value": "120%",
-  "hint": "elementy span tworzone skryptem 1"
- },
- {
-  "section": "css",
-  "desc": "Potomek 5 selektora span: rozmiar czcionki 170%",
-  "type": "cssRule",
-  "selector": "span:nth-child(5)",
-  "prop": "font-size",
-  "value": "170%",
-  "hint": "elementy span tworzone skryptem 1"
- },
- {
-  "section": "css",
-  "desc": "Potomek 21 selektora span: rozmiar czcionki 170%",
-  "type": "cssRule",
-  "selector": "span:nth-child(21)",
-  "prop": "font-size",
-  "value": "170%",
-  "hint": "elementy span tworzone skryptem 1"
- },
- {
-  "section": "css",
-  "desc": "Potomek 7 selektora span: rozmiar czcionki 130%",
-  "type": "cssRule",
-  "selector": "span:nth-child(7)",
-  "prop": "font-size",
-  "value": "130%",
-  "hint": "elementy span tworzone skryptem 1"
- },
- {
-  "section": "css",
-  "desc": "Potomek 27 selektora span: rozmiar czcionki 130%",
-  "type": "cssRule",
-  "selector": "span:nth-child(27)",
-  "prop": "font-size",
-  "value": "130%",
-  "hint": "elementy span tworzone skryptem 1"
- },
- {
-  "section": "css",
-  "desc": "Potomek 9 selektora span: rozmiar czcionki 160%",
-  "type": "cssRule",
-  "selector": "span:nth-child(9)",
-  "prop": "font-size",
-  "value": "160%",
-  "hint": "elementy span tworzone skryptem 1"
- },
- {
-  "section": "css",
-  "desc": "Potomek 25 selektora span: rozmiar czcionki 160%",
-  "type": "cssRule",
-  "selector": "span:nth-child(25)",
-  "prop": "font-size",
-  "value": "160%",
-  "hint": "elementy span tworzone skryptem 1"
- },
- {
-  "section": "css",
-  "desc": "Układ: nagłówkowy 1 obok nagłówkowego 2",
-  "type": "layout",
-  "a": "header:nth-of-type(1)",
-  "b": "header:nth-of-type(2)",
-  "relation": "sameRow"
- },
- {
-  "section": "css",
-  "desc": "Układ: nagłówkowy 1 po lewej od nagłówkowego 2",
-  "type": "layout",
-  "a": "header:nth-of-type(1)",
-  "b": "header:nth-of-type(2)",
-  "relation": "leftOf"
- },
- {
-  "section": "css",
-  "desc": "Układ: blok główny pod nagłówkami",
-  "type": "layout",
-  "a": "header:nth-of-type(1)",
-  "b": "main",
-  "relation": "above"
- },
- {
-  "section": "css",
-  "desc": "Układ: blok sekcji pod głównym",
-  "type": "layout",
-  "a": "main",
-  "b": "section",
-  "relation": "above"
- },
- {
-  "section": "css",
-  "desc": "Układ: stopki pod sekcją",
-  "type": "layout",
-  "a": "section",
-  "b": "footer:nth-of-type(1)",
-  "relation": "above"
- },
- {
-  "section": "css",
-  "desc": "Układ: stopka 1 obok stopki 2",
-  "type": "layout",
-  "a": "footer:nth-of-type(1)",
-  "b": "footer:nth-of-type(2)",
-  "relation": "leftOf"
- },
- {
-  "section": "css",
-  "desc": "Układ: blok główny na całą szerokość",
-  "type": "layout",
-  "a": "main",
-  "relation": "fullWidth"
- }
+  {"section": "grafika", "desc": "logo.png: białe tło zastąpione przezroczystością", "type": "image", "name": "logo.png", "alpha": true},
+  {"section": "grafika", "desc": "logo.png: wysokość 100 px", "type": "image", "name": "logo.png", "height": 100},
+  {"section": "pliki", "desc": "Plik index.php", "type": "file", "name": "index.php"},
+  {"section": "pliki", "desc": "Plik szczyty.php", "type": "file", "name": "szczyty.php"},
+  {"section": "pliki", "desc": "Plik styl.css", "type": "file", "name": "styl.css"},
+  {"section": "html", "desc": "Zapisana w HTML5, polski język, kodowanie UTF-8", "type": "head", "page": "index.php", "lang": "pl", "charset": true},
+  {"section": "html", "desc": "Tytuł strony „Korona gór polskich”", "type": "head", "page": "index.php", "doctype": false, "title": "Korona gór polskich"},
+  {"section": "html", "desc": "Arkusz stylów styl.css prawidłowo połączony", "type": "head", "page": "index.php", "doctype": false, "stylesheet": "styl.css"},
+  {"section": "html", "desc": "Układ bloków: dwa nagłówkowe, główny, sekcja, dwie stopki", "type": "exists", "page": "index.php", "selectors": ["header", "header", "main", "section", "footer", "footer"]},
+  {"section": "html", "desc": "Blok nagłówkowy 1: obraz logo.png", "type": "attr", "page": "index.php", "selector": "header:nth-of-type(1) img", "attr": "src", "equals": "logo.png"},
+  {"section": "html", "desc": "Blok nagłówkowy 1: tekst alternatywny „Logo”", "type": "attr", "page": "index.php", "selector": "header:nth-of-type(1) img", "attr": "alt", "equals": "Logo"},
+  {"section": "html", "desc": "Blok nagłówkowy 2: nagłówek pierwszego stopnia „Korona Gór Polskich”", "type": "text", "page": "index.php", "selector": "header:nth-of-type(2) h1", "equals": "Korona Gór Polskich"},
+  {"section": "html", "desc": "Stopka 1: nagłówek trzeciego stopnia „Kontakt”", "type": "text", "page": "index.php", "selector": "footer:nth-of-type(1) h3", "equals": "Kontakt"},
+  {"section": "html", "desc": "Stopka 1: lista punktowana z dwoma elementami", "type": "exists", "page": "index.php", "selector": "footer:nth-of-type(1) ul > li", "count": 2},
+  {"section": "html", "desc": "Stopka 1: „Zadzwoń do nas: 111 222 333”", "type": "text", "page": "index.php", "selector": "footer:nth-of-type(1) li:nth-child(1)", "equals": "Zadzwoń do nas: 111 222 333"},
+  {"section": "html", "desc": "Stopka 1: „Napisz do nas”", "type": "text", "page": "index.php", "selector": "footer:nth-of-type(1) li:nth-child(2)", "equals": "Napisz do nas"},
+  {"section": "html", "desc": "Stopka 1: odsyłacz pocztowy do korona@gory.pl", "type": "attr", "page": "index.php", "selector": "footer:nth-of-type(1) li:nth-child(2) a", "attr": "href", "equals": "mailto:korona@gory.pl"},
+  {"section": "html", "desc": "Stopka 2: nagłówek trzeciego stopnia „© Wykonane przez: ” i numer zdającego", "type": "text", "page": "index.php", "selector": "footer:nth-of-type(2) h3", "startsWith": "© Wykonane przez:"},
+  {"section": "php", "desc": "Blok sekcji: efekt działania skryptu 2 (obrazy z bazy z alt = nazwa szczytu, klasa miniatury)", "type": "php", "page": "index.php"},
+  {"section": "html", "desc": "Zapisana w HTML5, polski język, kodowanie UTF-8 (szczyty.php)", "type": "head", "page": "szczyty.php", "lang": "pl", "charset": true},
+  {"section": "html", "desc": "Tytuł strony „Korona gór polskich”", "type": "head", "page": "szczyty.php", "doctype": false, "title": "Korona gór polskich"},
+  {"section": "html", "desc": "Arkusz stylów styl.css prawidłowo połączony", "type": "head", "page": "szczyty.php", "doctype": false, "stylesheet": "styl.css"},
+  {"section": "html", "desc": "Układ bloków: dwa nagłówkowe, główny, sekcja, dwie stopki", "type": "exists", "page": "szczyty.php", "selectors": ["header", "header", "main", "section", "footer", "footer"]},
+  {"section": "html", "desc": "Blok nagłówkowy 1: obraz logo.png", "type": "attr", "page": "szczyty.php", "selector": "header:nth-of-type(1) img", "attr": "src", "equals": "logo.png"},
+  {"section": "html", "desc": "Blok nagłówkowy 1: tekst alternatywny „Logo”", "type": "attr", "page": "szczyty.php", "selector": "header:nth-of-type(1) img", "attr": "alt", "equals": "Logo"},
+  {"section": "html", "desc": "Blok nagłówkowy 2: nagłówek pierwszego stopnia „Korona Gór Polskich”", "type": "text", "page": "szczyty.php", "selector": "header:nth-of-type(2) h1", "equals": "Korona Gór Polskich"},
+  {"section": "html", "desc": "Stopka 1: nagłówek trzeciego stopnia „Kontakt”", "type": "text", "page": "szczyty.php", "selector": "footer:nth-of-type(1) h3", "equals": "Kontakt"},
+  {"section": "html", "desc": "Stopka 1: lista punktowana z dwoma elementami", "type": "exists", "page": "szczyty.php", "selector": "footer:nth-of-type(1) ul > li", "count": 2},
+  {"section": "html", "desc": "Stopka 1: „Zadzwoń do nas: 111 222 333”", "type": "text", "page": "szczyty.php", "selector": "footer:nth-of-type(1) li:nth-child(1)", "equals": "Zadzwoń do nas: 111 222 333"},
+  {"section": "html", "desc": "Stopka 1: „Napisz do nas”", "type": "text", "page": "szczyty.php", "selector": "footer:nth-of-type(1) li:nth-child(2)", "equals": "Napisz do nas"},
+  {"section": "html", "desc": "Stopka 1: odsyłacz pocztowy do korona@gory.pl", "type": "attr", "page": "szczyty.php", "selector": "footer:nth-of-type(1) li:nth-child(2) a", "attr": "href", "equals": "mailto:korona@gory.pl"},
+  {"section": "html", "desc": "Stopka 2: nagłówek trzeciego stopnia „© Wykonane przez: ” i numer zdającego", "type": "text", "page": "szczyty.php", "selector": "footer:nth-of-type(2) h3", "startsWith": "© Wykonane przez:"},
+  {"section": "php", "desc": "Blok sekcji: efekt działania skryptu 2 (obrazy z bazy z alt = nazwa szczytu, klasa miniatury)", "type": "php", "page": "szczyty.php"},
+  {"section": "php", "desc": "Blok główny index.php: efekt skryptu 1 (nazwy szczytów w <span> jako odnośniki do szczyty.php z id metodą GET)", "type": "php", "page": "index.php"},
+  {"section": "php", "desc": "index.php: nazwy szczytów w <span>, każda jako odnośnik do szczyty.php z id metodą GET", "type": "php", "page": "index.php"},
+  {"section": "php", "desc": "szczyty.php: efekt skryptu 3 (dane wybranego szczytu)", "type": "php", "page": "szczyty.php"},
+  {"section": "php", "desc": "szczyty.php: obraz z alt „szczyt”, nagłówek h2 z nazwą, dwa nagłówki h3 („wysokość: … metrów n.p.m.”, „pasmo górskie: …”), paragraf z opisem (skrypt 3)", "type": "php", "page": "szczyty.php"},
+  {"section": "php", "desc": "Skrypty łączą się z bazą korona (localhost, root, bez hasła), zamykają połączenie, znaczące nazwy zmiennych", "type": "php"},
+  {"section": "css", "desc": "Domyślnie: krój czcionki Lato, sans-serif", "type": "cssRule", "selector": "*", "prop": "font-family", "value": "Lato, sans-serif"},
+  {"section": "css", "desc": "Domyślnie: wyrównanie tekstu do środka", "type": "css", "selector": "h1", "prop": "text-align", "value": "center"},
+  {"section": "css", "desc": "Domyślnie: kolor czcionki #333", "type": "css", "selector": "h1", "prop": "color", "value": "#333"},
+  {"section": "css", "desc": "Czcionka Lato dodana regułami @font-face dla regular i bold", "type": "manual"},
+  {"section": "css", "desc": "Bloki nagłówkowe: wysokość 100 px", "type": "css", "selector": "header", "all": true, "prop": "height", "value": "100px"},
+  {"section": "css", "desc": "Stopki: wysokość 100 px", "type": "css", "selector": "footer", "all": true, "prop": "height", "value": "100px"},
+  {"section": "css", "desc": "Blok nagłówkowy 1: szerokość 30%", "type": "css", "selector": "header:nth-of-type(1)", "prop": "width", "value": "30%"},
+  {"section": "css", "desc": "Stopka 1: szerokość 30%", "type": "css", "selector": "footer:nth-of-type(1)", "prop": "width", "value": "30%"},
+  {"section": "css", "desc": "Blok nagłówkowy 2: szerokość 70%", "type": "css", "selector": "header:nth-of-type(2)", "prop": "width", "value": "70%"},
+  {"section": "css", "desc": "Stopka 2: szerokość 70%", "type": "css", "selector": "footer:nth-of-type(2)", "prop": "width", "value": "70%"},
+  {"section": "css", "desc": "Blok główny: kolor tła #E0F2F1", "type": "css", "selector": "main", "prop": "background-color", "value": "#E0F2F1"},
+  {"section": "css", "desc": "Blok główny: marginesy wewnętrzne 100 px", "type": "css", "selector": "main", "prop": "padding", "value": "100px"},
+  {"section": "css", "desc": "Blok sekcji: wysokość 90 px", "type": "css", "selector": "section", "prop": "height", "value": "90px"},
+  {"section": "css", "desc": "Blok sekcji: ukryta zawartość przepełnienia", "type": "css", "selector": "section", "prop": "overflow", "value": "hidden"},
+  {"section": "css", "desc": "Klasa miniatury: wysokość 90 px", "type": "cssRule", "selector": ".miniatury", "prop": "height", "value": "90px", "hint": "obrazy tworzone skryptem 2 z klasą miniatury"},
+  {"section": "css", "desc": "Selektor elementu listy: wyrównanie tekstu do lewej (wyłącznie selektor li)", "type": "cssRule", "selector": "li", "prop": "text-align", "value": "left"},
+  {"section": "css", "desc": "Selektor span: margines wewnętrzny lewy 30 px (wyłącznie selektor span)", "type": "cssRule", "selector": "span", "prop": "padding-left", "value": "30px"},
+  {"section": "css", "desc": "Potomek 2 selektora span: rozmiar czcionki 200%", "type": "cssRule", "selector": "span:nth-child(2)", "prop": "font-size", "value": "200%", "hint": "elementy span tworzone skryptem 1"},
+  {"section": "css", "desc": "Potomek 11 selektora span: rozmiar czcionki 200%", "type": "cssRule", "selector": "span:nth-child(11)", "prop": "font-size", "value": "200%", "hint": "elementy span tworzone skryptem 1"},
+  {"section": "css", "desc": "Potomek 3 selektora span: rozmiar czcionki 150%", "type": "cssRule", "selector": "span:nth-child(3)", "prop": "font-size", "value": "150%", "hint": "elementy span tworzone skryptem 1"},
+  {"section": "css", "desc": "Potomek 15 selektora span: rozmiar czcionki 150%", "type": "cssRule", "selector": "span:nth-child(15)", "prop": "font-size", "value": "150%", "hint": "elementy span tworzone skryptem 1"},
+  {"section": "css", "desc": "Potomek 4 selektora span: rozmiar czcionki 120%", "type": "cssRule", "selector": "span:nth-child(4)", "prop": "font-size", "value": "120%", "hint": "elementy span tworzone skryptem 1"},
+  {"section": "css", "desc": "Potomek 17 selektora span: rozmiar czcionki 120%", "type": "cssRule", "selector": "span:nth-child(17)", "prop": "font-size", "value": "120%", "hint": "elementy span tworzone skryptem 1"},
+  {"section": "css", "desc": "Potomek 5 selektora span: rozmiar czcionki 170%", "type": "cssRule", "selector": "span:nth-child(5)", "prop": "font-size", "value": "170%", "hint": "elementy span tworzone skryptem 1"},
+  {"section": "css", "desc": "Potomek 21 selektora span: rozmiar czcionki 170%", "type": "cssRule", "selector": "span:nth-child(21)", "prop": "font-size", "value": "170%", "hint": "elementy span tworzone skryptem 1"},
+  {"section": "css", "desc": "Potomek 7 selektora span: rozmiar czcionki 130%", "type": "cssRule", "selector": "span:nth-child(7)", "prop": "font-size", "value": "130%", "hint": "elementy span tworzone skryptem 1"},
+  {"section": "css", "desc": "Potomek 27 selektora span: rozmiar czcionki 130%", "type": "cssRule", "selector": "span:nth-child(27)", "prop": "font-size", "value": "130%", "hint": "elementy span tworzone skryptem 1"},
+  {"section": "css", "desc": "Potomek 9 selektora span: rozmiar czcionki 160%", "type": "cssRule", "selector": "span:nth-child(9)", "prop": "font-size", "value": "160%", "hint": "elementy span tworzone skryptem 1"},
+  {"section": "css", "desc": "Potomek 25 selektora span: rozmiar czcionki 160%", "type": "cssRule", "selector": "span:nth-child(25)", "prop": "font-size", "value": "160%", "hint": "elementy span tworzone skryptem 1"},
+  {"section": "css", "desc": "Układ: nagłówkowy 1 obok nagłówkowego 2", "type": "layout", "a": "header:nth-of-type(1)", "b": "header:nth-of-type(2)", "relation": "sameRow"},
+  {"section": "css", "desc": "Układ: nagłówkowy 1 po lewej od nagłówkowego 2", "type": "layout", "a": "header:nth-of-type(1)", "b": "header:nth-of-type(2)", "relation": "leftOf"},
+  {"section": "css", "desc": "Układ: blok główny pod nagłówkami", "type": "layout", "a": "header:nth-of-type(1)", "b": "main", "relation": "above"},
+  {"section": "css", "desc": "Układ: blok sekcji pod głównym", "type": "layout", "a": "main", "b": "section", "relation": "above"},
+  {"section": "css", "desc": "Układ: stopki pod sekcją", "type": "layout", "a": "section", "b": "footer:nth-of-type(1)", "relation": "above"},
+  {"section": "css", "desc": "Układ: stopka 1 obok stopki 2", "type": "layout", "a": "footer:nth-of-type(1)", "b": "footer:nth-of-type(2)", "relation": "leftOf"},
+  {"section": "css", "desc": "Układ: blok główny na całą szerokość", "type": "layout", "a": "main", "relation": "fullWidth"}
 ]

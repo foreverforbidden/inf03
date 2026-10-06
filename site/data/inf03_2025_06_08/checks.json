@@ -1,636 +1,72 @@
 [
- {
-  "section": "grafika",
-  "desc": "smok1.jpg: wysokość 300 px z zachowaniem proporcji",
-  "type": "image",
-  "name": "smok1.jpg",
-  "height": 300
- },
- {
-  "section": "pliki",
-  "desc": "Strona smoki.php",
-  "type": "file",
-  "name": "smoki.php"
- },
- {
-  "section": "pliki",
-  "desc": "Arkusz stylów styl.css",
-  "type": "file",
-  "name": "styl.css"
- },
- {
-  "section": "pliki",
-  "desc": "Skrypt skrypt.js",
-  "type": "file",
-  "name": "skrypt.js"
- },
- {
-  "section": "html",
-  "desc": "HTML5, polski język, kodowanie UTF-8",
-  "type": "head",
-  "lang": "pl",
-  "charset": true
- },
- {
-  "section": "html",
-  "desc": "Tytuł strony „Smoki”",
-  "type": "head",
-  "doctype": false,
-  "title": "Smoki"
- },
- {
-  "section": "html",
-  "desc": "Arkusz styl.css prawidłowo połączony",
-  "type": "head",
-  "doctype": false,
-  "stylesheet": "styl.css"
- },
- {
-  "section": "html",
-  "desc": "Bloki semantyczne: nagłówkowy, nawigacyjny, główny, stopka",
-  "type": "exists",
-  "selector": "header ~ nav ~ main ~ footer"
- },
- {
-  "section": "html",
-  "desc": "Nagłówek drugiego stopnia „Poznaj smoki!”",
-  "type": "text",
-  "selector": "header h2",
-  "equals": "Poznaj smoki!"
- },
- {
-  "section": "html",
-  "desc": "Blok 1 nawigacji z treścią „Baza”",
-  "type": "text",
-  "selector": "nav > :nth-child(1)",
-  "equals": "Baza"
- },
- {
-  "section": "html",
-  "desc": "Blok 2 nawigacji z treścią „Opisy”",
-  "type": "text",
-  "selector": "nav > :nth-child(2)",
-  "equals": "Opisy"
- },
- {
-  "section": "html",
-  "desc": "Blok 3 nawigacji z treścią „Galeria”",
-  "type": "text",
-  "selector": "nav > :nth-child(3)",
-  "equals": "Galeria"
- },
- {
-  "section": "html",
-  "desc": "Blok główny: trzy sekcje",
-  "type": "exists",
-  "selector": "main > section",
-  "count": 3
- },
- {
-  "section": "html",
-  "desc": "Sekcja 1: nagłówek trzeciego stopnia „Baza Smoków”",
-  "type": "text",
-  "selector": "main section:nth-of-type(1) h3",
-  "equals": "Baza Smoków"
- },
- {
-  "section": "html",
-  "desc": "Sekcja 1: formularz metodą bezpieczną",
-  "type": "attr",
-  "selector": "main section:nth-of-type(1) form",
-  "attr": "method",
-  "equals": "post"
- },
- {
-  "section": "html",
-  "desc": "Formularz wysyła dane do tego samego pliku",
-  "type": "attr",
-  "selector": "main section:nth-of-type(1) form",
-  "attr": "action",
-  "contains": "smoki.php"
- },
- {
-  "section": "html",
-  "desc": "Formularz: lista rozwijana",
-  "type": "exists",
-  "selector": "main section:nth-of-type(1) form select"
- },
- {
-  "section": "html",
-  "desc": "Formularz: przycisk „Szukaj”",
-  "type": "exists",
-  "selector": "main section:nth-of-type(1) form input[type=submit][value='Szukaj'], main section:nth-of-type(1) form button"
- },
- {
-  "section": "html",
-  "desc": "Tabela o trzech kolumnach w sekcji 1",
-  "type": "exists",
-  "selector": "main section:nth-of-type(1) table tr:first-child th",
-  "count": 3
- },
- {
-  "section": "html",
-  "desc": "Komórka nagłówkowa „Nazwa”",
-  "type": "text",
-  "selector": "main section:nth-of-type(1) table tr:first-child th",
-  "index": 0,
-  "equals": "Nazwa"
- },
- {
-  "section": "html",
-  "desc": "Komórka nagłówkowa „Długość”",
-  "type": "text",
-  "selector": "main section:nth-of-type(1) table tr:first-child th",
-  "index": 1,
-  "equals": "Długość"
- },
- {
-  "section": "html",
-  "desc": "Komórka nagłówkowa „Szerokość”",
-  "type": "text",
-  "selector": "main section:nth-of-type(1) table tr:first-child th",
-  "index": 2,
-  "equals": "Szerokość"
- },
- {
-  "section": "html",
-  "desc": "Sekcja 2: nagłówek trzeciego stopnia „Opisy smoków”",
-  "type": "text",
-  "selector": "main section:nth-of-type(2) h3",
-  "equals": "Opisy smoków"
- },
- {
-  "section": "html",
-  "desc": "Sekcja 2: lista definicji z terminami i opisami",
-  "type": "exists",
-  "selector": "main section:nth-of-type(2) dl dt ~ dd"
- },
- {
-  "section": "html",
-  "desc": "Sekcja 3: nagłówek trzeciego stopnia „Galeria”",
-  "type": "text",
-  "selector": "main section:nth-of-type(3) h3",
-  "equals": "Galeria"
- },
- {
-  "section": "html",
-  "desc": "Obraz smok1.jpg",
-  "type": "attr",
-  "selector": "main section:nth-of-type(3) img",
-  "index": 0,
-  "attr": "src",
-  "equals": "smok1.jpg"
- },
- {
-  "section": "html",
-  "desc": "Obraz smok1.jpg z tekstem alternatywnym „Smok czerwony”",
-  "type": "attr",
-  "selector": "main section:nth-of-type(3) img",
-  "index": 0,
-  "attr": "alt",
-  "equals": "Smok czerwony"
- },
- {
-  "section": "html",
-  "desc": "Obraz smok2.jpg",
-  "type": "attr",
-  "selector": "main section:nth-of-type(3) img",
-  "index": 1,
-  "attr": "src",
-  "equals": "smok2.jpg"
- },
- {
-  "section": "html",
-  "desc": "Obraz smok2.jpg z tekstem alternatywnym „Smok wielki”",
-  "type": "attr",
-  "selector": "main section:nth-of-type(3) img",
-  "index": 1,
-  "attr": "alt",
-  "equals": "Smok wielki"
- },
- {
-  "section": "html",
-  "desc": "Obraz smok3.jpg",
-  "type": "attr",
-  "selector": "main section:nth-of-type(3) img",
-  "index": 2,
-  "attr": "src",
-  "equals": "smok3.jpg"
- },
- {
-  "section": "html",
-  "desc": "Obraz smok3.jpg z tekstem alternatywnym „Skrzydlaty łaciaty”",
-  "type": "attr",
-  "selector": "main section:nth-of-type(3) img",
-  "index": 2,
-  "attr": "alt",
-  "equals": "Skrzydlaty łaciaty"
- },
- {
-  "section": "html",
-  "desc": "Stopka: paragraf „Stronę opracował: ” i numer zdającego",
-  "type": "text",
-  "selector": "footer p",
-  "startsWith": "Stronę opracował:"
- },
- {
-  "section": "php",
-  "desc": "Lista rozwijana wypełniona skryptem 1 (zapytanie 2)",
-  "type": "php"
- },
- {
-  "section": "php",
-  "desc": "Tabela wypełniona skryptem 2 (zmodyfikowane zapytanie 1, kraj z formularza, tylko gdy formularz wysłał dane)",
-  "type": "php"
- },
- {
-  "section": "php",
-  "desc": "Połączenie z bazą smoki (localhost, root, bez hasła) i zamknięcie połączenia na końcu skryptów",
-  "type": "php"
- },
- {
-  "section": "css",
-  "desc": "Domyślnie dla wszystkich selektorów: wyrównanie tekstu do środka",
-  "type": "css",
-  "selector": "h3",
-  "prop": "text-align",
-  "value": "center"
- },
- {
-  "section": "css",
-  "desc": "Domyślnie dla wszystkich selektorów: krój czcionki Georgia",
-  "type": "css",
-  "selector": "h3",
-  "prop": "font-family",
-  "value": "Georgia"
- },
- {
-  "section": "css",
-  "desc": "Blok nagłówkowy: kolor tła Tomato",
-  "type": "css",
-  "selector": "header",
-  "prop": "background-color",
-  "value": "Tomato"
- },
- {
-  "section": "css",
-  "desc": "Blok nagłówkowy: kolor czcionki MistyRose",
-  "type": "css",
-  "selector": "header",
-  "prop": "color",
-  "value": "MistyRose"
- },
- {
-  "section": "css",
-  "desc": "Blok nagłówkowy: marginesy wewnętrzne 10 px",
-  "type": "css",
-  "selector": "header",
-  "prop": "padding",
-  "value": "10px"
- },
- {
-  "section": "css",
-  "desc": "Blok stopka: kolor tła Tomato",
-  "type": "css",
-  "selector": "footer",
-  "prop": "background-color",
-  "value": "Tomato"
- },
- {
-  "section": "css",
-  "desc": "Blok stopka: kolor czcionki MistyRose",
-  "type": "css",
-  "selector": "footer",
-  "prop": "color",
-  "value": "MistyRose"
- },
- {
-  "section": "css",
-  "desc": "Blok stopka: marginesy wewnętrzne 10 px",
-  "type": "css",
-  "selector": "footer",
-  "prop": "padding",
-  "value": "10px"
- },
- {
-  "section": "css",
-  "desc": "Blok nawigacyjny: szerokość 20%",
-  "type": "css",
-  "selector": "nav",
-  "prop": "width",
-  "value": "20%"
- },
- {
-  "section": "css",
-  "desc": "Bloki 1-3: kolor tła #FFAEA5",
-  "type": "css",
-  "selector": "nav > :nth-child(n+2)",
-  "all": true,
-  "prop": "background-color",
-  "value": "#FFAEA5"
- },
- {
-  "section": "css",
-  "desc": "Bloki 1-3: wysokość 170 px",
-  "type": "css",
-  "selector": "nav > *",
-  "all": true,
-  "prop": "height",
-  "value": "170px"
- },
- {
-  "section": "css",
-  "desc": "Bloki 1-3: rozmiar czcionki 200%",
-  "type": "css",
-  "selector": "nav > *",
-  "all": true,
-  "prop": "font-size",
-  "value": "32px"
- },
- {
-  "section": "css",
-  "desc": "Jedynie blok 1: kolor tła MistyRose",
-  "type": "css",
-  "selector": "nav > :nth-child(1)",
-  "prop": "background-color",
-  "value": "MistyRose"
- },
- {
-  "section": "css",
-  "desc": "Blok główny: kolor tła MistyRose",
-  "type": "css",
-  "selector": "main",
-  "prop": "background-color",
-  "value": "MistyRose"
- },
- {
-  "section": "css",
-  "desc": "Blok główny: szerokość 80%",
-  "type": "css",
-  "selector": "main",
-  "prop": "width",
-  "value": "80%"
- },
- {
-  "section": "css",
-  "desc": "Blok główny: wysokość 510 px",
-  "type": "css",
-  "selector": "main",
-  "prop": "height",
-  "value": "510px"
- },
- {
-  "section": "css",
-  "desc": "Blok główny: paski przewijania tylko przy przepełnieniu",
-  "type": "css",
-  "selector": "main",
-  "prop": "overflow",
-  "value": "auto"
- },
- {
-  "section": "css",
-  "desc": "Sekcja 2 usunięta z DOM (display none)",
-  "type": "css",
-  "selector": "main section:nth-of-type(2)",
-  "prop": "display",
-  "value": "none"
- },
- {
-  "section": "css",
-  "desc": "Sekcja 3 usunięta z DOM (display none)",
-  "type": "css",
-  "selector": "main section:nth-of-type(3)",
-  "prop": "display",
-  "value": "none"
- },
- {
-  "section": "css",
-  "desc": "Tabela: marginesy zewnętrzne automatyczne (wyłącznie selektor tabeli)",
-  "type": "cssRule",
-  "selector": "table",
-  "prop": "margin",
-  "value": "auto"
- },
- {
-  "section": "css",
-  "desc": "Tabela: szerokość 60%",
-  "type": "cssRule",
-  "selector": "table",
-  "prop": "width",
-  "value": "60%"
- },
- {
-  "section": "css",
-  "desc": "Tabela: obramowanie 1 px kreskowane Indigo",
-  "type": "cssRule",
-  "selector": "table",
-  "prop": "border",
-  "value": "1px dashed Indigo"
- },
- {
-  "section": "css",
-  "desc": "Lista rozwijana: marginesy zewnętrzne 20 px",
-  "type": "css",
-  "selector": "select",
-  "prop": "margin",
-  "value": "20px"
- },
- {
-  "section": "css",
-  "desc": "Przycisk: marginesy zewnętrzne 20 px",
-  "type": "css",
-  "selector": "form input[type=submit], form button",
-  "prop": "margin",
-  "value": "20px"
- },
- {
-  "section": "css",
-  "desc": "Termin dt: czcionka pogrubiona (wyłącznie selektor dt)",
-  "type": "cssRule",
-  "selector": "dt",
-  "prop": "font-weight",
-  "value": "bold"
- },
- {
-  "section": "css",
-  "desc": "Termin dt: czcionka pochylona (wyłącznie selektor dt)",
-  "type": "cssRule",
-  "selector": "dt",
-  "prop": "font-style",
-  "value": "italic"
- },
- {
-  "section": "css",
-  "desc": "Kursor na terminie: rozmiar czcionki 180%",
-  "type": "hover",
-  "selector": "dt",
-  "prop": "font-size",
-  "value": "180%"
- },
- {
-  "section": "css",
-  "desc": "Układ: nagłówek nad blokiem nawigacyjnym",
-  "type": "layout",
-  "a": "header",
-  "b": "nav",
-  "relation": "above"
- },
- {
-  "section": "css",
-  "desc": "Układ: blok nawigacyjny z lewej od głównego",
-  "type": "layout",
-  "a": "nav",
-  "b": "main",
-  "relation": "leftOf"
- },
- {
-  "section": "css",
-  "desc": "Układ: blok nawigacyjny i główny w jednym rzędzie",
-  "type": "layout",
-  "a": "nav",
-  "b": "main",
-  "relation": "sameRow"
- },
- {
-  "section": "css",
-  "desc": "Układ: stopka pod blokiem głównym",
-  "type": "layout",
-  "a": "footer",
-  "b": "main",
-  "relation": "below"
- },
- {
-  "section": "css",
-  "desc": "Układ: bloki 1-3 jeden pod drugim",
-  "type": "layout",
-  "a": "nav > :nth-child(1)",
-  "b": "nav > :nth-child(3)",
-  "relation": "above"
- },
- {
-  "section": "js",
-  "desc": "Kliknięty blok 1: tło bloku 1 MistyRose, pozostałe #FFAEA5; widoczna tylko sekcja 1",
-  "type": "js",
-  "steps": [
-   {
-    "click": "nav > :nth-child(1)"
-   }
-  ],
-  "expect": [
-   {
-    "selector": "nav > :nth-child(1)",
-    "css": "background-color",
-    "value": "MistyRose"
-   },
-   {
-    "selector": "nav > :nth-child(2)",
-    "css": "background-color",
-    "value": "#FFAEA5"
-   },
-   {
-    "selector": "nav > :nth-child(3)",
-    "css": "background-color",
-    "value": "#FFAEA5"
-   },
-   {
-    "selector": "main section:nth-of-type(1)",
-    "css": "display",
-    "value": "block"
-   },
-   {
-    "selector": "main section:nth-of-type(2)",
-    "css": "display",
-    "value": "none"
-   },
-   {
-    "selector": "main section:nth-of-type(3)",
-    "css": "display",
-    "value": "none"
-   }
-  ]
- },
- {
-  "section": "js",
-  "desc": "Kliknięty blok 2: tło bloku 2 MistyRose, pozostałe #FFAEA5; widoczna tylko sekcja 2",
-  "type": "js",
-  "steps": [
-   {
-    "click": "nav > :nth-child(2)"
-   }
-  ],
-  "expect": [
-   {
-    "selector": "nav > :nth-child(1)",
-    "css": "background-color",
-    "value": "#FFAEA5"
-   },
-   {
-    "selector": "nav > :nth-child(2)",
-    "css": "background-color",
-    "value": "MistyRose"
-   },
-   {
-    "selector": "nav > :nth-child(3)",
-    "css": "background-color",
-    "value": "#FFAEA5"
-   },
-   {
-    "selector": "main section:nth-of-type(1)",
-    "css": "display",
-    "value": "none"
-   },
-   {
-    "selector": "main section:nth-of-type(2)",
-    "css": "display",
-    "value": "block"
-   },
-   {
-    "selector": "main section:nth-of-type(3)",
-    "css": "display",
-    "value": "none"
-   }
-  ]
- },
- {
-  "section": "js",
-  "desc": "Kliknięty blok 3: tło bloku 3 MistyRose, pozostałe #FFAEA5; widoczna tylko sekcja 3",
-  "type": "js",
-  "steps": [
-   {
-    "click": "nav > :nth-child(3)"
-   }
-  ],
-  "expect": [
-   {
-    "selector": "nav > :nth-child(1)",
-    "css": "background-color",
-    "value": "#FFAEA5"
-   },
-   {
-    "selector": "nav > :nth-child(2)",
-    "css": "background-color",
-    "value": "#FFAEA5"
-   },
-   {
-    "selector": "nav > :nth-child(3)",
-    "css": "background-color",
-    "value": "MistyRose"
-   },
-   {
-    "selector": "main section:nth-of-type(1)",
-    "css": "display",
-    "value": "none"
-   },
-   {
-    "selector": "main section:nth-of-type(2)",
-    "css": "display",
-    "value": "none"
-   },
-   {
-    "selector": "main section:nth-of-type(3)",
-    "css": "display",
-    "value": "block"
-   }
-  ]
- }
+  {"section": "grafika", "desc": "smok1.jpg: wysokość 300 px z zachowaniem proporcji", "type": "image", "name": "smok1.jpg", "height": 300},
+  {"section": "pliki", "desc": "Strona smoki.php", "type": "file", "name": "smoki.php"},
+  {"section": "pliki", "desc": "Arkusz stylów styl.css", "type": "file", "name": "styl.css"},
+  {"section": "pliki", "desc": "Skrypt skrypt.js", "type": "file", "name": "skrypt.js"},
+  {"section": "html", "desc": "HTML5, polski język, kodowanie UTF-8", "type": "head", "lang": "pl", "charset": true},
+  {"section": "html", "desc": "Tytuł strony „Smoki”", "type": "head", "doctype": false, "title": "Smoki"},
+  {"section": "html", "desc": "Arkusz styl.css prawidłowo połączony", "type": "head", "doctype": false, "stylesheet": "styl.css"},
+  {"section": "html", "desc": "Bloki semantyczne: nagłówkowy, nawigacyjny, główny, stopka", "type": "exists", "selectors": ["header", "nav", "main", "footer"]},
+  {"section": "html", "desc": "Nagłówek drugiego stopnia „Poznaj smoki!”", "type": "text", "selector": "header h2", "equals": "Poznaj smoki!"},
+  {"section": "html", "desc": "Blok 1 nawigacji z treścią „Baza”", "type": "text", "selector": "nav > :nth-child(1)", "equals": "Baza"},
+  {"section": "html", "desc": "Blok 2 nawigacji z treścią „Opisy”", "type": "text", "selector": "nav > :nth-child(2)", "equals": "Opisy"},
+  {"section": "html", "desc": "Blok 3 nawigacji z treścią „Galeria”", "type": "text", "selector": "nav > :nth-child(3)", "equals": "Galeria"},
+  {"section": "html", "desc": "Blok główny: trzy sekcje", "type": "exists", "selector": "main > section", "count": 3},
+  {"section": "html", "desc": "Sekcja 1: nagłówek trzeciego stopnia „Baza Smoków”", "type": "text", "selector": "main section:nth-of-type(1) h3", "equals": "Baza Smoków"},
+  {"section": "html", "desc": "Sekcja 1: formularz metodą bezpieczną", "type": "attr", "selector": "main section:nth-of-type(1) form", "attr": "method", "equals": "post"},
+  {"section": "html", "desc": "Formularz wysyła dane do tego samego pliku", "type": "attr", "selector": "main section:nth-of-type(1) form", "attr": "action", "contains": "smoki.php"},
+  {"section": "html", "desc": "Formularz: lista rozwijana", "type": "exists", "selector": "main section:nth-of-type(1) form select"},
+  {"section": "html", "desc": "Formularz: przycisk „Szukaj”", "type": "exists", "selector": "main section:nth-of-type(1) form input[type=submit][value='Szukaj'], main section:nth-of-type(1) form button"},
+  {"section": "html", "desc": "Tabela o trzech kolumnach w sekcji 1", "type": "exists", "selector": "main section:nth-of-type(1) table tr:first-child th", "count": 3},
+  {"section": "html", "desc": "Komórka nagłówkowa „Nazwa”", "type": "text", "selector": "main section:nth-of-type(1) table tr:first-child th", "index": 0, "equals": "Nazwa"},
+  {"section": "html", "desc": "Komórka nagłówkowa „Długość”", "type": "text", "selector": "main section:nth-of-type(1) table tr:first-child th", "index": 1, "equals": "Długość"},
+  {"section": "html", "desc": "Komórka nagłówkowa „Szerokość”", "type": "text", "selector": "main section:nth-of-type(1) table tr:first-child th", "index": 2, "equals": "Szerokość"},
+  {"section": "html", "desc": "Sekcja 2: nagłówek trzeciego stopnia „Opisy smoków”", "type": "text", "selector": "main section:nth-of-type(2) h3", "equals": "Opisy smoków"},
+  {"section": "html", "desc": "Sekcja 2: lista definicji z terminami i opisami", "type": "exists", "selector": "main section:nth-of-type(2) dl dt ~ dd"},
+  {"section": "html", "desc": "Sekcja 3: nagłówek trzeciego stopnia „Galeria”", "type": "text", "selector": "main section:nth-of-type(3) h3", "equals": "Galeria"},
+  {"section": "html", "desc": "Obraz smok1.jpg", "type": "attr", "selector": "main section:nth-of-type(3) img", "index": 0, "attr": "src", "equals": "smok1.jpg"},
+  {"section": "html", "desc": "Obraz smok1.jpg z tekstem alternatywnym „Smok czerwony”", "type": "attr", "selector": "main section:nth-of-type(3) img", "index": 0, "attr": "alt", "equals": "Smok czerwony"},
+  {"section": "html", "desc": "Obraz smok2.jpg", "type": "attr", "selector": "main section:nth-of-type(3) img", "index": 1, "attr": "src", "equals": "smok2.jpg"},
+  {"section": "html", "desc": "Obraz smok2.jpg z tekstem alternatywnym „Smok wielki”", "type": "attr", "selector": "main section:nth-of-type(3) img", "index": 1, "attr": "alt", "equals": "Smok wielki"},
+  {"section": "html", "desc": "Obraz smok3.jpg", "type": "attr", "selector": "main section:nth-of-type(3) img", "index": 2, "attr": "src", "equals": "smok3.jpg"},
+  {"section": "html", "desc": "Obraz smok3.jpg z tekstem alternatywnym „Skrzydlaty łaciaty”", "type": "attr", "selector": "main section:nth-of-type(3) img", "index": 2, "attr": "alt", "equals": "Skrzydlaty łaciaty"},
+  {"section": "html", "desc": "Stopka: paragraf „Stronę opracował: ” i numer zdającego", "type": "text", "selector": "footer p", "startsWith": "Stronę opracował:"},
+  {"section": "php", "desc": "Lista rozwijana wypełniona skryptem 1 (zapytanie 2)", "type": "php"},
+  {"section": "php", "desc": "Tabela wypełniona skryptem 2 (zmodyfikowane zapytanie 1, kraj z formularza, tylko gdy formularz wysłał dane)", "type": "php"},
+  {"section": "php", "desc": "Połączenie z bazą smoki (localhost, root, bez hasła) i zamknięcie połączenia na końcu skryptów", "type": "php"},
+  {"section": "css", "desc": "Domyślnie dla wszystkich selektorów: wyrównanie tekstu do środka", "type": "css", "selector": "h3", "prop": "text-align", "value": "center"},
+  {"section": "css", "desc": "Domyślnie dla wszystkich selektorów: krój czcionki Georgia", "type": "css", "selector": "h3", "prop": "font-family", "value": "Georgia"},
+  {"section": "css", "desc": "Blok nagłówkowy: kolor tła Tomato", "type": "css", "selector": "header", "prop": "background-color", "value": "Tomato"},
+  {"section": "css", "desc": "Blok nagłówkowy: kolor czcionki MistyRose", "type": "css", "selector": "header", "prop": "color", "value": "MistyRose"},
+  {"section": "css", "desc": "Blok nagłówkowy: marginesy wewnętrzne 10 px", "type": "css", "selector": "header", "prop": "padding", "value": "10px"},
+  {"section": "css", "desc": "Blok stopka: kolor tła Tomato", "type": "css", "selector": "footer", "prop": "background-color", "value": "Tomato"},
+  {"section": "css", "desc": "Blok stopka: kolor czcionki MistyRose", "type": "css", "selector": "footer", "prop": "color", "value": "MistyRose"},
+  {"section": "css", "desc": "Blok stopka: marginesy wewnętrzne 10 px", "type": "css", "selector": "footer", "prop": "padding", "value": "10px"},
+  {"section": "css", "desc": "Blok nawigacyjny: szerokość 20%", "type": "css", "selector": "nav", "prop": "width", "value": "20%"},
+  {"section": "css", "desc": "Bloki 1-3: kolor tła #FFAEA5", "type": "css", "selector": "nav > :nth-child(n+2)", "all": true, "prop": "background-color", "value": "#FFAEA5"},
+  {"section": "css", "desc": "Bloki 1-3: wysokość 170 px", "type": "css", "selector": "nav > *", "all": true, "prop": "height", "value": "170px"},
+  {"section": "css", "desc": "Bloki 1-3: rozmiar czcionki 200%", "type": "css", "selector": "nav > *", "all": true, "prop": "font-size", "value": "32px"},
+  {"section": "css", "desc": "Jedynie blok 1: kolor tła MistyRose", "type": "css", "selector": "nav > :nth-child(1)", "prop": "background-color", "value": "MistyRose"},
+  {"section": "css", "desc": "Blok główny: kolor tła MistyRose", "type": "css", "selector": "main", "prop": "background-color", "value": "MistyRose"},
+  {"section": "css", "desc": "Blok główny: szerokość 80%", "type": "css", "selector": "main", "prop": "width", "value": "80%"},
+  {"section": "css", "desc": "Blok główny: wysokość 510 px", "type": "css", "selector": "main", "prop": "height", "value": "510px"},
+  {"section": "css", "desc": "Blok główny: paski przewijania tylko przy przepełnieniu", "type": "css", "selector": "main", "prop": "overflow", "value": "auto"},
+  {"section": "css", "desc": "Sekcja 2 usunięta z DOM (display none)", "type": "css", "selector": "main section:nth-of-type(2)", "prop": "display", "value": "none"},
+  {"section": "css", "desc": "Sekcja 3 usunięta z DOM (display none)", "type": "css", "selector": "main section:nth-of-type(3)", "prop": "display", "value": "none"},
+  {"section": "css", "desc": "Tabela: marginesy zewnętrzne automatyczne (wyłącznie selektor tabeli)", "type": "cssRule", "selector": "table", "prop": "margin", "value": "auto"},
+  {"section": "css", "desc": "Tabela: szerokość 60%", "type": "cssRule", "selector": "table", "prop": "width", "value": "60%"},
+  {"section": "css", "desc": "Tabela: obramowanie 1 px kreskowane Indigo", "type": "cssRule", "selector": "table", "prop": "border", "value": "1px dashed Indigo"},
+  {"section": "css", "desc": "Lista rozwijana: marginesy zewnętrzne 20 px", "type": "css", "selector": "select", "prop": "margin", "value": "20px"},
+  {"section": "css", "desc": "Przycisk: marginesy zewnętrzne 20 px", "type": "css", "selector": "form input[type=submit], form button", "prop": "margin", "value": "20px"},
+  {"section": "css", "desc": "Termin dt: czcionka pogrubiona (wyłącznie selektor dt)", "type": "cssRule", "selector": "dt", "prop": "font-weight", "value": "bold"},
+  {"section": "css", "desc": "Termin dt: czcionka pochylona (wyłącznie selektor dt)", "type": "cssRule", "selector": "dt", "prop": "font-style", "value": "italic"},
+  {"section": "css", "desc": "Kursor na terminie: rozmiar czcionki 180%", "type": "hover", "selector": "dt", "prop": "font-size", "value": "180%"},
+  {"section": "css", "desc": "Układ: nagłówek nad blokiem nawigacyjnym", "type": "layout", "a": "header", "b": "nav", "relation": "above"},
+  {"section": "css", "desc": "Układ: blok nawigacyjny z lewej od głównego", "type": "layout", "a": "nav", "b": "main", "relation": "leftOf"},
+  {"section": "css", "desc": "Układ: blok nawigacyjny i główny w jednym rzędzie", "type": "layout", "a": "nav", "b": "main", "relation": "sameRow"},
+  {"section": "css", "desc": "Układ: stopka pod blokiem głównym", "type": "layout", "a": "footer", "b": "main", "relation": "below"},
+  {"section": "css", "desc": "Układ: bloki 1-3 jeden pod drugim", "type": "layout", "a": "nav > :nth-child(1)", "b": "nav > :nth-child(3)", "relation": "above"},
+  {"section": "js", "desc": "Kliknięty blok 1: tło bloku 1 MistyRose, pozostałe #FFAEA5; widoczna tylko sekcja 1", "type": "js", "steps": [{"click": "nav > :nth-child(1)"}], "expect": [{"selector": "nav > :nth-child(1)", "css": "background-color", "value": "MistyRose"}, {"selector": "nav > :nth-child(2)", "css": "background-color", "value": "#FFAEA5"}, {"selector": "nav > :nth-child(3)", "css": "background-color", "value": "#FFAEA5"}, {"selector": "main section:nth-of-type(1)", "css": "display", "value": "block"}, {"selector": "main section:nth-of-type(2)", "css": "display", "value": "none"}, {"selector": "main section:nth-of-type(3)", "css": "display", "value": "none"}]},
+  {"section": "js", "desc": "Kliknięty blok 2: tło bloku 2 MistyRose, pozostałe #FFAEA5; widoczna tylko sekcja 2", "type": "js", "steps": [{"click": "nav > :nth-child(2)"}], "expect": [{"selector": "nav > :nth-child(1)", "css": "background-color", "value": "#FFAEA5"}, {"selector": "nav > :nth-child(2)", "css": "background-color", "value": "MistyRose"}, {"selector": "nav > :nth-child(3)", "css": "background-color", "value": "#FFAEA5"}, {"selector": "main section:nth-of-type(1)", "css": "display", "value": "none"}, {"selector": "main section:nth-of-type(2)", "css": "display", "value": "block"}, {"selector": "main section:nth-of-type(3)", "css": "display", "value": "none"}]},
+  {"section": "js", "desc": "Kliknięty blok 3: tło bloku 3 MistyRose, pozostałe #FFAEA5; widoczna tylko sekcja 3", "type": "js", "steps": [{"click": "nav > :nth-child(3)"}], "expect": [{"selector": "nav > :nth-child(1)", "css": "background-color", "value": "#FFAEA5"}, {"selector": "nav > :nth-child(2)", "css": "background-color", "value": "#FFAEA5"}, {"selector": "nav > :nth-child(3)", "css": "background-color", "value": "MistyRose"}, {"selector": "main section:nth-of-type(1)", "css": "display", "value": "none"}, {"selector": "main section:nth-of-type(2)", "css": "display", "value": "none"}, {"selector": "main section:nth-of-type(3)", "css": "display", "value": "block"}]}
 ]

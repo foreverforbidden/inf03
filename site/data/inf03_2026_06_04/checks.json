@@ -3,11 +3,10 @@
   {"section": "pliki", "desc": "Podstrona wycieczki.html", "type": "file", "name": "wycieczki.html"},
   {"section": "pliki", "desc": "Podstrona rezerwacja (HTML)", "type": "file", "name": "rezerwacja.html"},
   {"section": "html", "desc": "W pliku wycieczki.html zapisano „Strona w trakcie budowy”", "type": "text", "page": "wycieczki.html", "selector": "body", "contains": "Strona w trakcie budowy"},
-
   {"section": "html", "desc": "Zapisana w języku HTML5, polski język, kodowanie UTF-8", "type": "head", "page": "rezerwacja.html", "lang": "pl", "charset": true},
   {"section": "html", "desc": "Tytuł strony „Biuro turystyczne”", "type": "head", "page": "rezerwacja.html", "doctype": false, "title": "Biuro turystyczne"},
   {"section": "html", "desc": "Arkusz stylów styl.css połączony z kodem strony", "type": "head", "page": "rezerwacja.html", "doctype": false, "stylesheet": "styl.css"},
-  {"section": "html", "desc": "Bloki semantyczne: nagłówkowy, główny, stopka", "type": "exists", "page": "rezerwacja.html", "selector": "body > header ~ main ~ footer"},
+  {"section": "html", "desc": "Bloki semantyczne: nagłówkowy, główny, stopka", "type": "exists", "page": "rezerwacja.html", "selectors": ["header", "main", "footer"]},
   {"section": "html", "desc": "Blok główny zawiera blok nawigacyjny, dwa bloki sekcji i blok boczny", "type": "exists", "page": "rezerwacja.html", "selector": "main > nav ~ section ~ section"},
   {"section": "html", "desc": "Blok boczny w bloku głównym", "type": "exists", "page": "rezerwacja.html", "selector": "main > aside"},
   {"section": "html", "desc": "Blok nagłówkowy: nagłówek pierwszego stopnia „Rezerwacja wycieczek”", "type": "text", "page": "rezerwacja.html", "selector": "header h1", "equals": "Rezerwacja wycieczek"},
@@ -42,7 +41,6 @@
   {"section": "html", "desc": "Przycisk „Sprawdź cenę”", "type": "text", "page": "rezerwacja.html", "selector": "main section:nth-of-type(2) button", "equals": "Sprawdź cenę"},
   {"section": "html", "desc": "Stopka: paragraf „Autor strony: ” i numer zdającego", "type": "text", "page": "rezerwacja.html", "selector": "footer p", "startsWith": "Autor strony:"},
   {"section": "html", "desc": "Numer zdającego w znaczniku tekstu uwypuklonego (em)", "type": "exists", "page": "rezerwacja.html", "selector": "footer p em"},
-
   {"section": "css", "desc": "Dla wszystkich selektorów: krój „Bookman Old Style”", "type": "css", "page": "rezerwacja.html", "selector": "main section:nth-of-type(1) h2", "prop": "font-family", "value": "Bookman Old Style"},
   {"section": "css", "desc": "Dla ciała strony: tło AliceBlue", "type": "css", "page": "rezerwacja.html", "selector": "body", "prop": "background-color", "value": "AliceBlue"},
   {"section": "css", "desc": "Nagłówek i stopka: tło SkyBlue", "type": "css", "page": "rezerwacja.html", "selector": "footer", "prop": "background-color", "value": "SkyBlue"},
@@ -65,7 +63,6 @@
   {"section": "css", "desc": "Układ: dwa bloki sekcji obok siebie", "type": "layout", "page": "rezerwacja.html", "a": "main section:nth-of-type(1)", "b": "main section:nth-of-type(2)", "relation": "leftOf"},
   {"section": "css", "desc": "Układ: blok boczny po prawej, obok bloku nawigacyjnego", "type": "layout", "page": "rezerwacja.html", "a": "aside", "b": "nav", "relation": "rightOf"},
   {"section": "css", "desc": "Układ: stopka pod blokiem bocznym", "type": "layout", "page": "rezerwacja.html", "a": "footer", "b": "aside", "relation": "below"},
-
   {"section": "js", "desc": "Stan początkowy: tło przycisku „Uczestnik” DodgerBlue", "type": "js", "page": "rezerwacja.html", "steps": [], "expect": [{"selector": "nav button:nth-of-type(1)", "css": "background-color", "value": "DodgerBlue"}]},
   {"section": "js", "desc": "„Rezerwacja”: kolory przycisków „Uczestnik” SkyBlue, „Rezerwacja” DodgerBlue", "type": "js", "page": "rezerwacja.html", "steps": [{"click": "nav button:nth-of-type(2)"}], "expect": [{"selector": "nav button:nth-of-type(1)", "css": "background-color", "value": "SkyBlue"}, {"selector": "nav button:nth-of-type(2)", "css": "background-color", "value": "DodgerBlue"}]},
   {"section": "js", "desc": "„Rezerwacja”: kontrolki pierwszej sekcji nieaktywne, drugiej aktywne", "type": "js", "page": "rezerwacja.html", "steps": [{"click": "nav button:nth-of-type(2)"}], "expect": [{"selector": "main section:nth-of-type(1) input", "attr": "disabled", "all": true}, {"selector": "main section:nth-of-type(2) select", "attr": "disabled", "absent": true}, {"selector": "main section:nth-of-type(2) input[type=number]", "attr": "disabled", "absent": true}]},

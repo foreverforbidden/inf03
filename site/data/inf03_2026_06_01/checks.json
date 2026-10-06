@@ -1,814 +1,100 @@
 [
- {
-  "section": "pliki",
-  "desc": "Plik islandia.php",
-  "type": "file",
-  "name": "islandia.php"
- },
- {
-  "section": "pliki",
-  "desc": "Plik obiekty.php",
-  "type": "file",
-  "name": "obiekty.php"
- },
- {
-  "section": "pliki",
-  "desc": "Plik styl.css",
-  "type": "file",
-  "name": "styl.css"
- },
- {
-  "section": "html",
-  "desc": "Zapisana w HTML5, polski język, kodowanie UTF-8",
-  "type": "head",
-  "page": "islandia.php",
-  "lang": "pl",
-  "charset": true
- },
- {
-  "section": "html",
-  "desc": "Tytuł strony „Islandia”",
-  "type": "head",
-  "page": "islandia.php",
-  "doctype": false,
-  "title": "Islandia"
- },
- {
-  "section": "html",
-  "desc": "Arkusz stylów styl.css prawidłowo połączony",
-  "type": "head",
-  "page": "islandia.php",
-  "doctype": false,
-  "stylesheet": "styl.css"
- },
- {
-  "section": "html",
-  "desc": "Bloki: nagłówkowy, boczny, główny, stopki (znaczniki semantyczne)",
-  "type": "exists",
-  "page": "islandia.php",
-  "selector": "header ~ aside ~ main ~ footer"
- },
- {
-  "section": "html",
-  "desc": "Blok główny zawiera blok sekcji",
-  "type": "exists",
-  "page": "islandia.php",
-  "selector": "main > section"
- },
- {
-  "section": "html",
-  "desc": "Blok nagłówkowy: nagłówek pierwszego stopnia „Zwiedzaj Islandię”",
-  "type": "text",
-  "page": "islandia.php",
-  "selector": "header h1",
-  "equals": "Zwiedzaj Islandię"
- },
- {
-  "section": "html",
-  "desc": "Treść nagłówka jest odnośnikiem do strony islandia.php",
-  "type": "attr",
-  "page": "islandia.php",
-  "selector": "header h1 a",
-  "attr": "href",
-  "equals": "islandia.php"
- },
- {
-  "section": "html",
-  "desc": "Blok boczny: nagłówek trzeciego stopnia „Do zwiedzania”",
-  "type": "text",
-  "page": "islandia.php",
-  "selector": "aside h3",
-  "equals": "Do zwiedzania"
- },
- {
-  "section": "html",
-  "desc": "Blok boczny: lista punktowana z dwoma elementami",
-  "type": "exists",
-  "page": "islandia.php",
-  "selector": "aside > ul > li",
-  "count": 2
- },
- {
-  "section": "html",
-  "desc": "Element „Wodospady:”",
-  "type": "text",
-  "page": "islandia.php",
-  "selector": "aside > ul > li:nth-child(1)",
-  "startsWith": "Wodospady:"
- },
- {
-  "section": "html",
-  "desc": "Element „Siedliska zwierząt:”",
-  "type": "text",
-  "page": "islandia.php",
-  "selector": "aside > ul > li:nth-child(2)",
-  "startsWith": "Siedliska zwierząt:"
- },
- {
-  "section": "html",
-  "desc": "Elementy zawierają listy numerowane",
-  "type": "exists",
-  "page": "islandia.php",
-  "selector": "aside > ul > li > ol",
-  "count": 2
- },
- {
-  "section": "php",
-  "desc": "Skrypt 1: lista „Wodospady:” wypełniona nazwami z zapytania 3",
-  "type": "php"
- },
- {
-  "section": "php",
-  "desc": "Skrypt 2: lista „Siedliska zwierząt:” z zapytania 3 z idRodzaj równym 14",
-  "type": "php"
- },
- {
-  "section": "html",
-  "desc": "Stopka: linia pozioma",
-  "type": "exists",
-  "page": "islandia.php",
-  "selector": "footer hr"
- },
- {
-  "section": "html",
-  "desc": "Stopka: paragraf „Autor: ” i numer zdającego",
-  "type": "text",
-  "page": "islandia.php",
-  "selector": "footer p",
-  "startsWith": "Autor:"
- },
- {
-  "section": "html",
-  "desc": "Zapisana w HTML5, polski język, kodowanie UTF-8",
-  "type": "head",
-  "page": "obiekty.php",
-  "lang": "pl",
-  "charset": true
- },
- {
-  "section": "html",
-  "desc": "Tytuł strony „Islandia”",
-  "type": "head",
-  "page": "obiekty.php",
-  "doctype": false,
-  "title": "Islandia"
- },
- {
-  "section": "html",
-  "desc": "Arkusz stylów styl.css prawidłowo połączony",
-  "type": "head",
-  "page": "obiekty.php",
-  "doctype": false,
-  "stylesheet": "styl.css"
- },
- {
-  "section": "html",
-  "desc": "Bloki: nagłówkowy, boczny, główny, stopki (znaczniki semantyczne)",
-  "type": "exists",
-  "page": "obiekty.php",
-  "selector": "header ~ aside ~ main ~ footer"
- },
- {
-  "section": "html",
-  "desc": "Blok główny zawiera blok sekcji",
-  "type": "exists",
-  "page": "obiekty.php",
-  "selector": "main > section"
- },
- {
-  "section": "html",
-  "desc": "Blok nagłówkowy: nagłówek pierwszego stopnia „Zwiedzaj Islandię”",
-  "type": "text",
-  "page": "obiekty.php",
-  "selector": "header h1",
-  "equals": "Zwiedzaj Islandię"
- },
- {
-  "section": "html",
-  "desc": "Treść nagłówka jest odnośnikiem do strony islandia.php",
-  "type": "attr",
-  "page": "obiekty.php",
-  "selector": "header h1 a",
-  "attr": "href",
-  "equals": "islandia.php"
- },
- {
-  "section": "html",
-  "desc": "Blok boczny: nagłówek trzeciego stopnia „Do zwiedzania”",
-  "type": "text",
-  "page": "obiekty.php",
-  "selector": "aside h3",
-  "equals": "Do zwiedzania"
- },
- {
-  "section": "html",
-  "desc": "Blok boczny: lista punktowana z dwoma elementami",
-  "type": "exists",
-  "page": "obiekty.php",
-  "selector": "aside > ul > li",
-  "count": 2
- },
- {
-  "section": "html",
-  "desc": "Element „Wodospady:”",
-  "type": "text",
-  "page": "obiekty.php",
-  "selector": "aside > ul > li:nth-child(1)",
-  "startsWith": "Wodospady:"
- },
- {
-  "section": "html",
-  "desc": "Element „Siedliska zwierząt:”",
-  "type": "text",
-  "page": "obiekty.php",
-  "selector": "aside > ul > li:nth-child(2)",
-  "startsWith": "Siedliska zwierząt:"
- },
- {
-  "section": "html",
-  "desc": "Elementy zawierają listy numerowane",
-  "type": "exists",
-  "page": "obiekty.php",
-  "selector": "aside > ul > li > ol",
-  "count": 2
- },
- {
-  "section": "php",
-  "desc": "Skrypt 1: lista „Wodospady:” wypełniona nazwami z zapytania 3",
-  "type": "php"
- },
- {
-  "section": "php",
-  "desc": "Skrypt 2: lista „Siedliska zwierząt:” z zapytania 3 z idRodzaj równym 14",
-  "type": "php"
- },
- {
-  "section": "html",
-  "desc": "Stopka: linia pozioma",
-  "type": "exists",
-  "page": "obiekty.php",
-  "selector": "footer hr"
- },
- {
-  "section": "html",
-  "desc": "Stopka: paragraf „Autor: ” i numer zdającego",
-  "type": "text",
-  "page": "obiekty.php",
-  "selector": "footer p",
-  "startsWith": "Autor:"
- },
- {
-  "section": "html",
-  "desc": "Strona główna: nagłówek drugiego stopnia „Galeria”",
-  "type": "text",
-  "page": "islandia.php",
-  "selector": "main > h2",
-  "equals": "Galeria"
- },
- {
-  "section": "php",
-  "desc": "Skrypt 3: odnośniki do obiekty.php z parametrem GET idObiekt, obraz (src=plik, alt=nazwa, dymek title=nazwa, klasa miniatury)",
-  "type": "php"
- },
- {
-  "section": "html",
-  "desc": "Strona obiekty.php: nagłówek drugiego stopnia „Opis miejsca”",
-  "type": "text",
-  "page": "obiekty.php",
-  "selector": "main > h2",
-  "equals": "Opis miejsca"
- },
- {
-  "section": "php",
-  "desc": "Skrypt 4: obraz, h2 nazwa, h3 rodzaj, „<nazwaCechy>: <wartoscCechy>”, opis; zapytanie 2 z id z GET",
-  "type": "php"
- },
- {
-  "section": "php",
-  "desc": "Skrypty w PHP, łączą się z localhost, root bez hasła, baza islandia, na końcu zamykają połączenie",
-  "type": "php"
- },
- {
-  "section": "manual",
-  "desc": "Znaczące nazewnictwo zmiennych",
-  "type": "manual"
- },
- {
-  "section": "css",
-  "desc": "Domyślnie dla wszystkich selektorów: Comic Sans MS, sans-serif",
-  "type": "css",
-  "selector": "h2",
-  "prop": "font-family",
-  "value": "\"Comic Sans MS\", sans-serif",
-  "page": "islandia.php"
- },
- {
-  "section": "css",
-  "desc": "Blok nagłówkowy: szerokość 70%",
-  "type": "css",
-  "selector": "header",
-  "prop": "width",
-  "value": "70%",
-  "page": "islandia.php"
- },
- {
-  "section": "css",
-  "desc": "Blok główny: szerokość 70%",
-  "type": "css",
-  "selector": "main",
-  "prop": "width",
-  "value": "70%",
-  "page": "islandia.php"
- },
- {
-  "section": "css",
-  "desc": "Blok nagłówkowy: wyrównanie tekstu do środka",
-  "type": "css",
-  "selector": "header",
-  "prop": "text-align",
-  "value": "center",
-  "page": "islandia.php"
- },
- {
-  "section": "css",
-  "desc": "Blok główny: wyrównanie tekstu do środka",
-  "type": "css",
-  "selector": "main",
-  "prop": "text-align",
-  "value": "center",
-  "page": "islandia.php"
- },
- {
-  "section": "css",
-  "desc": "Blok nagłówkowy: tło PaleTurquoise",
-  "type": "css",
-  "selector": "header",
-  "prop": "background-color",
-  "value": "PaleTurquoise",
-  "page": "islandia.php"
- },
- {
-  "section": "css",
-  "desc": "Blok boczny: tło PaleTurquoise",
-  "type": "css",
-  "selector": "aside",
-  "prop": "background-color",
-  "value": "PaleTurquoise",
-  "page": "islandia.php"
- },
- {
-  "section": "css",
-  "desc": "Blok nagłówkowy: zaokrąglenie rogów 20 px",
-  "type": "css",
-  "selector": "header",
-  "prop": "border-top-left-radius",
-  "value": "20px",
-  "page": "islandia.php"
- },
- {
-  "section": "css",
-  "desc": "Blok boczny: zaokrąglenie rogów 20 px",
-  "type": "css",
-  "selector": "aside",
-  "prop": "border-top-left-radius",
-  "value": "20px",
-  "page": "islandia.php"
- },
- {
-  "section": "css",
-  "desc": "Blok nagłówkowy: wysokość 100 px",
-  "type": "css",
-  "selector": "header",
-  "prop": "height",
-  "value": "100px",
-  "page": "islandia.php"
- },
- {
-  "section": "css",
-  "desc": "Blok nagłówkowy: marginesy wewnętrzne 2%",
-  "type": "css",
-  "selector": "header",
-  "prop": "padding-left",
-  "value": "2%",
-  "page": "islandia.php"
- },
- {
-  "section": "css",
-  "desc": "Blok boczny: szerokość 25%",
-  "type": "css",
-  "selector": "aside",
-  "prop": "width",
-  "value": "25%",
-  "page": "islandia.php"
- },
- {
-  "section": "css",
-  "desc": "Blok boczny: wysokość 700 px",
-  "type": "css",
-  "selector": "aside",
-  "prop": "height",
-  "value": "700px",
-  "page": "islandia.php"
- },
- {
-  "section": "css",
-  "desc": "Blok boczny: interlinia 2",
-  "type": "css",
-  "selector": "aside",
-  "prop": "line-height",
-  "value": "2",
-  "page": "islandia.php"
- },
- {
-  "section": "css",
-  "desc": "Stopka: margines wewnętrzny górny 10 px",
-  "type": "css",
-  "selector": "footer",
-  "prop": "padding-top",
-  "value": "10px",
-  "page": "islandia.php"
- },
- {
-  "section": "css",
-  "desc": "Blok sekcji: obramowanie kreskowe 1 px DimGray",
-  "type": "css",
-  "selector": "section",
-  "prop": "border-top",
-  "value": "1px dashed DimGray",
-  "page": "islandia.php"
- },
- {
-  "section": "css",
-  "desc": "Blok sekcji: margines zewnętrzny górny 10 px",
-  "type": "css",
-  "selector": "section",
-  "prop": "margin-top",
-  "value": "10px",
-  "page": "islandia.php"
- },
- {
-  "section": "css",
-  "desc": "Blok sekcji: margines zewnętrzny dolny 10 px",
-  "type": "css",
-  "selector": "section",
-  "prop": "margin-bottom",
-  "value": "10px",
-  "page": "islandia.php"
- },
- {
-  "section": "css",
-  "desc": "Blok sekcji: marginesy zewnętrzne lewy 50 px",
-  "type": "css",
-  "selector": "section",
-  "prop": "margin-left",
-  "value": "50px",
-  "page": "islandia.php"
- },
- {
-  "section": "css",
-  "desc": "Blok sekcji: marginesy zewnętrzne prawy 50 px",
-  "type": "css",
-  "selector": "section",
-  "prop": "margin-right",
-  "value": "50px",
-  "page": "islandia.php"
- },
- {
-  "section": "css",
-  "desc": "Blok sekcji: wysokość 400 px",
-  "type": "css",
-  "selector": "section",
-  "prop": "height",
-  "value": "400px",
-  "page": "islandia.php"
- },
- {
-  "section": "css",
-  "desc": "Blok sekcji: paski przewijania tylko przy przepełnieniu",
-  "type": "css",
-  "selector": "section",
-  "prop": "overflow",
-  "value": "auto",
-  "page": "islandia.php"
- },
- {
-  "section": "layout",
-  "desc": "Układ: blok nagłówkowy nad głównym",
-  "type": "layout",
-  "a": "header",
-  "b": "main",
-  "relation": "above",
-  "page": "islandia.php"
- },
- {
-  "section": "layout",
-  "desc": "Układ: blok boczny obok (z prawej) bloku głównego",
-  "type": "layout",
-  "a": "main",
-  "b": "aside",
-  "relation": "leftOf",
-  "page": "islandia.php"
- },
- {
-  "section": "layout",
-  "desc": "Układ: stopka pod blokami",
-  "type": "layout",
-  "a": "aside",
-  "b": "footer",
-  "relation": "above",
-  "page": "islandia.php"
- },
- {
-  "section": "layout",
-  "desc": "Układ: stopka pod blokiem głównym",
-  "type": "layout",
-  "a": "main",
-  "b": "footer",
-  "relation": "above",
-  "page": "islandia.php"
- },
- {
-  "section": "css",
-  "desc": "Domyślnie dla wszystkich selektorów: Comic Sans MS, sans-serif",
-  "type": "css",
-  "selector": "h2",
-  "prop": "font-family",
-  "value": "\"Comic Sans MS\", sans-serif",
-  "page": "obiekty.php"
- },
- {
-  "section": "css",
-  "desc": "Blok nagłówkowy: szerokość 70%",
-  "type": "css",
-  "selector": "header",
-  "prop": "width",
-  "value": "70%",
-  "page": "obiekty.php"
- },
- {
-  "section": "css",
-  "desc": "Blok główny: szerokość 70%",
-  "type": "css",
-  "selector": "main",
-  "prop": "width",
-  "value": "70%",
-  "page": "obiekty.php"
- },
- {
-  "section": "css",
-  "desc": "Blok nagłówkowy: wyrównanie tekstu do środka",
-  "type": "css",
-  "selector": "header",
-  "prop": "text-align",
-  "value": "center",
-  "page": "obiekty.php"
- },
- {
-  "section": "css",
-  "desc": "Blok główny: wyrównanie tekstu do środka",
-  "type": "css",
-  "selector": "main",
-  "prop": "text-align",
-  "value": "center",
-  "page": "obiekty.php"
- },
- {
-  "section": "css",
-  "desc": "Blok nagłówkowy: tło PaleTurquoise",
-  "type": "css",
-  "selector": "header",
-  "prop": "background-color",
-  "value": "PaleTurquoise",
-  "page": "obiekty.php"
- },
- {
-  "section": "css",
-  "desc": "Blok boczny: tło PaleTurquoise",
-  "type": "css",
-  "selector": "aside",
-  "prop": "background-color",
-  "value": "PaleTurquoise",
-  "page": "obiekty.php"
- },
- {
-  "section": "css",
-  "desc": "Blok nagłówkowy: zaokrąglenie rogów 20 px",
-  "type": "css",
-  "selector": "header",
-  "prop": "border-top-left-radius",
-  "value": "20px",
-  "page": "obiekty.php"
- },
- {
-  "section": "css",
-  "desc": "Blok boczny: zaokrąglenie rogów 20 px",
-  "type": "css",
-  "selector": "aside",
-  "prop": "border-top-left-radius",
-  "value": "20px",
-  "page": "obiekty.php"
- },
- {
-  "section": "css",
-  "desc": "Blok nagłówkowy: wysokość 100 px",
-  "type": "css",
-  "selector": "header",
-  "prop": "height",
-  "value": "100px",
-  "page": "obiekty.php"
- },
- {
-  "section": "css",
-  "desc": "Blok nagłówkowy: marginesy wewnętrzne 2%",
-  "type": "css",
-  "selector": "header",
-  "prop": "padding-left",
-  "value": "2%",
-  "page": "obiekty.php"
- },
- {
-  "section": "css",
-  "desc": "Blok boczny: szerokość 25%",
-  "type": "css",
-  "selector": "aside",
-  "prop": "width",
-  "value": "25%",
-  "page": "obiekty.php"
- },
- {
-  "section": "css",
-  "desc": "Blok boczny: wysokość 700 px",
-  "type": "css",
-  "selector": "aside",
-  "prop": "height",
-  "value": "700px",
-  "page": "obiekty.php"
- },
- {
-  "section": "css",
-  "desc": "Blok boczny: interlinia 2",
-  "type": "css",
-  "selector": "aside",
-  "prop": "line-height",
-  "value": "2",
-  "page": "obiekty.php"
- },
- {
-  "section": "css",
-  "desc": "Stopka: margines wewnętrzny górny 10 px",
-  "type": "css",
-  "selector": "footer",
-  "prop": "padding-top",
-  "value": "10px",
-  "page": "obiekty.php"
- },
- {
-  "section": "css",
-  "desc": "Blok sekcji: obramowanie kreskowe 1 px DimGray",
-  "type": "css",
-  "selector": "section",
-  "prop": "border-top",
-  "value": "1px dashed DimGray",
-  "page": "obiekty.php"
- },
- {
-  "section": "css",
-  "desc": "Blok sekcji: margines zewnętrzny górny 10 px",
-  "type": "css",
-  "selector": "section",
-  "prop": "margin-top",
-  "value": "10px",
-  "page": "obiekty.php"
- },
- {
-  "section": "css",
-  "desc": "Blok sekcji: margines zewnętrzny dolny 10 px",
-  "type": "css",
-  "selector": "section",
-  "prop": "margin-bottom",
-  "value": "10px",
-  "page": "obiekty.php"
- },
- {
-  "section": "css",
-  "desc": "Blok sekcji: marginesy zewnętrzne lewy 50 px",
-  "type": "css",
-  "selector": "section",
-  "prop": "margin-left",
-  "value": "50px",
-  "page": "obiekty.php"
- },
- {
-  "section": "css",
-  "desc": "Blok sekcji: marginesy zewnętrzne prawy 50 px",
-  "type": "css",
-  "selector": "section",
-  "prop": "margin-right",
-  "value": "50px",
-  "page": "obiekty.php"
- },
- {
-  "section": "css",
-  "desc": "Blok sekcji: wysokość 400 px",
-  "type": "css",
-  "selector": "section",
-  "prop": "height",
-  "value": "400px",
-  "page": "obiekty.php"
- },
- {
-  "section": "css",
-  "desc": "Blok sekcji: paski przewijania tylko przy przepełnieniu",
-  "type": "css",
-  "selector": "section",
-  "prop": "overflow",
-  "value": "auto",
-  "page": "obiekty.php"
- },
- {
-  "section": "layout",
-  "desc": "Układ: blok nagłówkowy nad głównym",
-  "type": "layout",
-  "a": "header",
-  "b": "main",
-  "relation": "above",
-  "page": "obiekty.php"
- },
- {
-  "section": "layout",
-  "desc": "Układ: blok boczny obok (z prawej) bloku głównego",
-  "type": "layout",
-  "a": "main",
-  "b": "aside",
-  "relation": "leftOf",
-  "page": "obiekty.php"
- },
- {
-  "section": "layout",
-  "desc": "Układ: stopka pod blokami",
-  "type": "layout",
-  "a": "aside",
-  "b": "footer",
-  "relation": "above",
-  "page": "obiekty.php"
- },
- {
-  "section": "layout",
-  "desc": "Układ: stopka pod blokiem głównym",
-  "type": "layout",
-  "a": "main",
-  "b": "footer",
-  "relation": "above",
-  "page": "obiekty.php"
- },
- {
-  "section": "css",
-  "desc": "Klasa miniatury: height 200px",
-  "type": "cssRule",
-  "page": "islandia.php",
-  "selector": ".miniatury",
-  "prop": "height",
-  "value": "200px",
-  "hint": "obrazy tworzone skryptem 3: klasa miniatury"
- },
- {
-  "section": "css",
-  "desc": "Klasa miniatury: padding 10px",
-  "type": "cssRule",
-  "page": "islandia.php",
-  "selector": ".miniatury",
-  "prop": "padding",
-  "value": "10px",
-  "hint": "obrazy tworzone skryptem 3: klasa miniatury"
- },
- {
-  "section": "css",
-  "desc": "Klasa miniatury: opacity 0.8",
-  "type": "cssRule",
-  "page": "islandia.php",
-  "selector": ".miniatury",
-  "prop": "opacity",
-  "value": "0.8",
-  "hint": "obrazy tworzone skryptem 3: klasa miniatury"
- },
- {
-  "section": "css",
-  "desc": "Klasa miniatury: transition 1s",
-  "type": "cssRule",
-  "page": "islandia.php",
-  "selector": ".miniatury",
-  "prop": "transition",
-  "value": "opacity 1s",
-  "hint": "obrazy tworzone skryptem 3: klasa miniatury"
- },
- {
-  "section": "css",
-  "desc": "Kursor na miniaturze: przezroczystość 1",
-  "type": "cssRule",
-  "page": "islandia.php",
-  "selector": ".miniatury:hover",
-  "prop": "opacity",
-  "value": "1",
-  "hint": "obrazy tworzone skryptem 3: klasa miniatury"
- }
+  {"section": "pliki", "desc": "Plik islandia.php", "type": "file", "name": "islandia.php"},
+  {"section": "pliki", "desc": "Plik obiekty.php", "type": "file", "name": "obiekty.php"},
+  {"section": "pliki", "desc": "Plik styl.css", "type": "file", "name": "styl.css"},
+  {"section": "html", "desc": "Zapisana w HTML5, polski język, kodowanie UTF-8", "type": "head", "page": "islandia.php", "lang": "pl", "charset": true},
+  {"section": "html", "desc": "Tytuł strony „Islandia”", "type": "head", "page": "islandia.php", "doctype": false, "title": "Islandia"},
+  {"section": "html", "desc": "Arkusz stylów styl.css prawidłowo połączony", "type": "head", "page": "islandia.php", "doctype": false, "stylesheet": "styl.css"},
+  {"section": "html", "desc": "Bloki: nagłówkowy, boczny, główny, stopki (znaczniki semantyczne)", "type": "exists", "page": "islandia.php", "selectors": ["header", "aside", "main", "footer"]},
+  {"section": "html", "desc": "Blok główny zawiera blok sekcji", "type": "exists", "page": "islandia.php", "selector": "main > section"},
+  {"section": "html", "desc": "Blok nagłówkowy: nagłówek pierwszego stopnia „Zwiedzaj Islandię”", "type": "text", "page": "islandia.php", "selector": "header h1", "equals": "Zwiedzaj Islandię"},
+  {"section": "html", "desc": "Treść nagłówka jest odnośnikiem do strony islandia.php", "type": "attr", "page": "islandia.php", "selector": "header h1 a", "attr": "href", "equals": "islandia.php"},
+  {"section": "html", "desc": "Blok boczny: nagłówek trzeciego stopnia „Do zwiedzania”", "type": "text", "page": "islandia.php", "selector": "aside h3", "equals": "Do zwiedzania"},
+  {"section": "html", "desc": "Blok boczny: lista punktowana z dwoma elementami", "type": "exists", "page": "islandia.php", "selector": "aside > ul > li", "count": 2},
+  {"section": "html", "desc": "Element „Wodospady:”", "type": "text", "page": "islandia.php", "selector": "aside > ul > li:nth-child(1)", "startsWith": "Wodospady:"},
+  {"section": "html", "desc": "Element „Siedliska zwierząt:”", "type": "text", "page": "islandia.php", "selector": "aside > ul > li:nth-child(2)", "startsWith": "Siedliska zwierząt:"},
+  {"section": "html", "desc": "Elementy zawierają listy numerowane", "type": "exists", "page": "islandia.php", "selector": "aside > ul > li > ol", "count": 2},
+  {"section": "php", "desc": "Skrypt 1: lista „Wodospady:” wypełniona nazwami z zapytania 3", "type": "php"},
+  {"section": "php", "desc": "Skrypt 2: lista „Siedliska zwierząt:” z zapytania 3 z idRodzaj równym 14", "type": "php"},
+  {"section": "html", "desc": "Stopka: linia pozioma", "type": "exists", "page": "islandia.php", "selector": "footer hr"},
+  {"section": "html", "desc": "Stopka: paragraf „Autor: ” i numer zdającego", "type": "text", "page": "islandia.php", "selector": "footer p", "startsWith": "Autor:"},
+  {"section": "html", "desc": "Zapisana w HTML5, polski język, kodowanie UTF-8", "type": "head", "page": "obiekty.php", "lang": "pl", "charset": true},
+  {"section": "html", "desc": "Tytuł strony „Islandia”", "type": "head", "page": "obiekty.php", "doctype": false, "title": "Islandia"},
+  {"section": "html", "desc": "Arkusz stylów styl.css prawidłowo połączony", "type": "head", "page": "obiekty.php", "doctype": false, "stylesheet": "styl.css"},
+  {"section": "html", "desc": "Bloki: nagłówkowy, boczny, główny, stopki (znaczniki semantyczne)", "type": "exists", "page": "obiekty.php", "selectors": ["header", "aside", "main", "footer"]},
+  {"section": "html", "desc": "Blok główny zawiera blok sekcji", "type": "exists", "page": "obiekty.php", "selector": "main > section"},
+  {"section": "html", "desc": "Blok nagłówkowy: nagłówek pierwszego stopnia „Zwiedzaj Islandię”", "type": "text", "page": "obiekty.php", "selector": "header h1", "equals": "Zwiedzaj Islandię"},
+  {"section": "html", "desc": "Treść nagłówka jest odnośnikiem do strony islandia.php", "type": "attr", "page": "obiekty.php", "selector": "header h1 a", "attr": "href", "equals": "islandia.php"},
+  {"section": "html", "desc": "Blok boczny: nagłówek trzeciego stopnia „Do zwiedzania”", "type": "text", "page": "obiekty.php", "selector": "aside h3", "equals": "Do zwiedzania"},
+  {"section": "html", "desc": "Blok boczny: lista punktowana z dwoma elementami", "type": "exists", "page": "obiekty.php", "selector": "aside > ul > li", "count": 2},
+  {"section": "html", "desc": "Element „Wodospady:”", "type": "text", "page": "obiekty.php", "selector": "aside > ul > li:nth-child(1)", "startsWith": "Wodospady:"},
+  {"section": "html", "desc": "Element „Siedliska zwierząt:”", "type": "text", "page": "obiekty.php", "selector": "aside > ul > li:nth-child(2)", "startsWith": "Siedliska zwierząt:"},
+  {"section": "html", "desc": "Elementy zawierają listy numerowane", "type": "exists", "page": "obiekty.php", "selector": "aside > ul > li > ol", "count": 2},
+  {"section": "php", "desc": "Skrypt 1: lista „Wodospady:” wypełniona nazwami z zapytania 3", "type": "php"},
+  {"section": "php", "desc": "Skrypt 2: lista „Siedliska zwierząt:” z zapytania 3 z idRodzaj równym 14", "type": "php"},
+  {"section": "html", "desc": "Stopka: linia pozioma", "type": "exists", "page": "obiekty.php", "selector": "footer hr"},
+  {"section": "html", "desc": "Stopka: paragraf „Autor: ” i numer zdającego", "type": "text", "page": "obiekty.php", "selector": "footer p", "startsWith": "Autor:"},
+  {"section": "html", "desc": "Strona główna: nagłówek drugiego stopnia „Galeria”", "type": "text", "page": "islandia.php", "selector": "main > h2", "equals": "Galeria"},
+  {"section": "php", "desc": "Skrypt 3: odnośniki do obiekty.php z parametrem GET idObiekt, obraz (src=plik, alt=nazwa, dymek title=nazwa, klasa miniatury)", "type": "php"},
+  {"section": "html", "desc": "Strona obiekty.php: nagłówek drugiego stopnia „Opis miejsca”", "type": "text", "page": "obiekty.php", "selector": "main > h2", "equals": "Opis miejsca"},
+  {"section": "php", "desc": "Skrypt 4: obraz, h2 nazwa, h3 rodzaj, „<nazwaCechy>: <wartoscCechy>”, opis; zapytanie 2 z id z GET", "type": "php"},
+  {"section": "php", "desc": "Skrypty w PHP, łączą się z localhost, root bez hasła, baza islandia, na końcu zamykają połączenie", "type": "php"},
+  {"section": "manual", "desc": "Znaczące nazewnictwo zmiennych", "type": "manual"},
+  {"section": "css", "desc": "Domyślnie dla wszystkich selektorów: Comic Sans MS, sans-serif", "type": "css", "selector": "h2", "prop": "font-family", "value": "\"Comic Sans MS\", sans-serif", "page": "islandia.php"},
+  {"section": "css", "desc": "Blok nagłówkowy: szerokość 70%", "type": "css", "selector": "header", "prop": "width", "value": "70%", "page": "islandia.php"},
+  {"section": "css", "desc": "Blok główny: szerokość 70%", "type": "css", "selector": "main", "prop": "width", "value": "70%", "page": "islandia.php"},
+  {"section": "css", "desc": "Blok nagłówkowy: wyrównanie tekstu do środka", "type": "css", "selector": "header", "prop": "text-align", "value": "center", "page": "islandia.php"},
+  {"section": "css", "desc": "Blok główny: wyrównanie tekstu do środka", "type": "css", "selector": "main", "prop": "text-align", "value": "center", "page": "islandia.php"},
+  {"section": "css", "desc": "Blok nagłówkowy: tło PaleTurquoise", "type": "css", "selector": "header", "prop": "background-color", "value": "PaleTurquoise", "page": "islandia.php"},
+  {"section": "css", "desc": "Blok boczny: tło PaleTurquoise", "type": "css", "selector": "aside", "prop": "background-color", "value": "PaleTurquoise", "page": "islandia.php"},
+  {"section": "css", "desc": "Blok nagłówkowy: zaokrąglenie rogów 20 px", "type": "css", "selector": "header", "prop": "border-top-left-radius", "value": "20px", "page": "islandia.php"},
+  {"section": "css", "desc": "Blok boczny: zaokrąglenie rogów 20 px", "type": "css", "selector": "aside", "prop": "border-top-left-radius", "value": "20px", "page": "islandia.php"},
+  {"section": "css", "desc": "Blok nagłówkowy: wysokość 100 px", "type": "css", "selector": "header", "prop": "height", "value": "100px", "page": "islandia.php"},
+  {"section": "css", "desc": "Blok nagłówkowy: marginesy wewnętrzne 2%", "type": "css", "selector": "header", "prop": "padding-left", "value": "2%", "page": "islandia.php"},
+  {"section": "css", "desc": "Blok boczny: szerokość 25%", "type": "css", "selector": "aside", "prop": "width", "value": "25%", "page": "islandia.php"},
+  {"section": "css", "desc": "Blok boczny: wysokość 700 px", "type": "css", "selector": "aside", "prop": "height", "value": "700px", "page": "islandia.php"},
+  {"section": "css", "desc": "Blok boczny: interlinia 2", "type": "css", "selector": "aside", "prop": "line-height", "value": "2", "page": "islandia.php"},
+  {"section": "css", "desc": "Stopka: margines wewnętrzny górny 10 px", "type": "css", "selector": "footer", "prop": "padding-top", "value": "10px", "page": "islandia.php"},
+  {"section": "css", "desc": "Blok sekcji: obramowanie kreskowe 1 px DimGray", "type": "css", "selector": "section", "prop": "border-top", "value": "1px dashed DimGray", "page": "islandia.php"},
+  {"section": "css", "desc": "Blok sekcji: margines zewnętrzny górny 10 px", "type": "css", "selector": "section", "prop": "margin-top", "value": "10px", "page": "islandia.php"},
+  {"section": "css", "desc": "Blok sekcji: margines zewnętrzny dolny 10 px", "type": "css", "selector": "section", "prop": "margin-bottom", "value": "10px", "page": "islandia.php"},
+  {"section": "css", "desc": "Blok sekcji: marginesy zewnętrzne lewy 50 px", "type": "css", "selector": "section", "prop": "margin-left", "value": "50px", "page": "islandia.php"},
+  {"section": "css", "desc": "Blok sekcji: marginesy zewnętrzne prawy 50 px", "type": "css", "selector": "section", "prop": "margin-right", "value": "50px", "page": "islandia.php"},
+  {"section": "css", "desc": "Blok sekcji: wysokość 400 px", "type": "css", "selector": "section", "prop": "height", "value": "400px", "page": "islandia.php"},
+  {"section": "css", "desc": "Blok sekcji: paski przewijania tylko przy przepełnieniu", "type": "css", "selector": "section", "prop": "overflow", "value": "auto", "page": "islandia.php"},
+  {"section": "layout", "desc": "Układ: blok nagłówkowy nad głównym", "type": "layout", "a": "header", "b": "main", "relation": "above", "page": "islandia.php"},
+  {"section": "layout", "desc": "Układ: blok boczny obok (z prawej) bloku głównego", "type": "layout", "a": "main", "b": "aside", "relation": "leftOf", "page": "islandia.php"},
+  {"section": "layout", "desc": "Układ: stopka pod blokami", "type": "layout", "a": "aside", "b": "footer", "relation": "above", "page": "islandia.php"},
+  {"section": "layout", "desc": "Układ: stopka pod blokiem głównym", "type": "layout", "a": "main", "b": "footer", "relation": "above", "page": "islandia.php"},
+  {"section": "css", "desc": "Domyślnie dla wszystkich selektorów: Comic Sans MS, sans-serif", "type": "css", "selector": "h2", "prop": "font-family", "value": "\"Comic Sans MS\", sans-serif", "page": "obiekty.php"},
+  {"section": "css", "desc": "Blok nagłówkowy: szerokość 70%", "type": "css", "selector": "header", "prop": "width", "value": "70%", "page": "obiekty.php"},
+  {"section": "css", "desc": "Blok główny: szerokość 70%", "type": "css", "selector": "main", "prop": "width", "value": "70%", "page": "obiekty.php"},
+  {"section": "css", "desc": "Blok nagłówkowy: wyrównanie tekstu do środka", "type": "css", "selector": "header", "prop": "text-align", "value": "center", "page": "obiekty.php"},
+  {"section": "css", "desc": "Blok główny: wyrównanie tekstu do środka", "type": "css", "selector": "main", "prop": "text-align", "value": "center", "page": "obiekty.php"},
+  {"section": "css", "desc": "Blok nagłówkowy: tło PaleTurquoise", "type": "css", "selector": "header", "prop": "background-color", "value": "PaleTurquoise", "page": "obiekty.php"},
+  {"section": "css", "desc": "Blok boczny: tło PaleTurquoise", "type": "css", "selector": "aside", "prop": "background-color", "value": "PaleTurquoise", "page": "obiekty.php"},
+  {"section": "css", "desc": "Blok nagłówkowy: zaokrąglenie rogów 20 px", "type": "css", "selector": "header", "prop": "border-top-left-radius", "value": "20px", "page": "obiekty.php"},
+  {"section": "css", "desc": "Blok boczny: zaokrąglenie rogów 20 px", "type": "css", "selector": "aside", "prop": "border-top-left-radius", "value": "20px", "page": "obiekty.php"},
+  {"section": "css", "desc": "Blok nagłówkowy: wysokość 100 px", "type": "css", "selector": "header", "prop": "height", "value": "100px", "page": "obiekty.php"},
+  {"section": "css", "desc": "Blok nagłówkowy: marginesy wewnętrzne 2%", "type": "css", "selector": "header", "prop": "padding-left", "value": "2%", "page": "obiekty.php"},
+  {"section": "css", "desc": "Blok boczny: szerokość 25%", "type": "css", "selector": "aside", "prop": "width", "value": "25%", "page": "obiekty.php"},
+  {"section": "css", "desc": "Blok boczny: wysokość 700 px", "type": "css", "selector": "aside", "prop": "height", "value": "700px", "page": "obiekty.php"},
+  {"section": "css", "desc": "Blok boczny: interlinia 2", "type": "css", "selector": "aside", "prop": "line-height", "value": "2", "page": "obiekty.php"},
+  {"section": "css", "desc": "Stopka: margines wewnętrzny górny 10 px", "type": "css", "selector": "footer", "prop": "padding-top", "value": "10px", "page": "obiekty.php"},
+  {"section": "css", "desc": "Blok sekcji: obramowanie kreskowe 1 px DimGray", "type": "css", "selector": "section", "prop": "border-top", "value": "1px dashed DimGray", "page": "obiekty.php"},
+  {"section": "css", "desc": "Blok sekcji: margines zewnętrzny górny 10 px", "type": "css", "selector": "section", "prop": "margin-top", "value": "10px", "page": "obiekty.php"},
+  {"section": "css", "desc": "Blok sekcji: margines zewnętrzny dolny 10 px", "type": "css", "selector": "section", "prop": "margin-bottom", "value": "10px", "page": "obiekty.php"},
+  {"section": "css", "desc": "Blok sekcji: marginesy zewnętrzne lewy 50 px", "type": "css", "selector": "section", "prop": "margin-left", "value": "50px", "page": "obiekty.php"},
+  {"section": "css", "desc": "Blok sekcji: marginesy zewnętrzne prawy 50 px", "type": "css", "selector": "section", "prop": "margin-right", "value": "50px", "page": "obiekty.php"},
+  {"section": "css", "desc": "Blok sekcji: wysokość 400 px", "type": "css", "selector": "section", "prop": "height", "value": "400px", "page": "obiekty.php"},
+  {"section": "css", "desc": "Blok sekcji: paski przewijania tylko przy przepełnieniu", "type": "css", "selector": "section", "prop": "overflow", "value": "auto", "page": "obiekty.php"},
+  {"section": "layout", "desc": "Układ: blok nagłówkowy nad głównym", "type": "layout", "a": "header", "b": "main", "relation": "above", "page": "obiekty.php"},
+  {"section": "layout", "desc": "Układ: blok boczny obok (z prawej) bloku głównego", "type": "layout", "a": "main", "b": "aside", "relation": "leftOf", "page": "obiekty.php"},
+  {"section": "layout", "desc": "Układ: stopka pod blokami", "type": "layout", "a": "aside", "b": "footer", "relation": "above", "page": "obiekty.php"},
+  {"section": "layout", "desc": "Układ: stopka pod blokiem głównym", "type": "layout", "a": "main", "b": "footer", "relation": "above", "page": "obiekty.php"},
+  {"section": "css", "desc": "Klasa miniatury: height 200px", "type": "cssRule", "page": "islandia.php", "selector": ".miniatury", "prop": "height", "value": "200px", "hint": "obrazy tworzone skryptem 3: klasa miniatury"},
+  {"section": "css", "desc": "Klasa miniatury: padding 10px", "type": "cssRule", "page": "islandia.php", "selector": ".miniatury", "prop": "padding", "value": "10px", "hint": "obrazy tworzone skryptem 3: klasa miniatury"},
+  {"section": "css", "desc": "Klasa miniatury: opacity 0.8", "type": "cssRule", "page": "islandia.php", "selector": ".miniatury", "prop": "opacity", "value": "0.8", "hint": "obrazy tworzone skryptem 3: klasa miniatury"},
+  {"section": "css", "desc": "Klasa miniatury: transition 1s", "type": "cssRule", "page": "islandia.php", "selector": ".miniatury", "prop": "transition", "value": "opacity 1s", "hint": "obrazy tworzone skryptem 3: klasa miniatury"},
+  {"section": "css", "desc": "Kursor na miniaturze: przezroczystość 1", "type": "cssRule", "page": "islandia.php", "selector": ".miniatury:hover", "prop": "opacity", "value": "1", "hint": "obrazy tworzone skryptem 3: klasa miniatury"}
 ]

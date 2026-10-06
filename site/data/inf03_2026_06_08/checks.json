@@ -1,689 +1,81 @@
 [
-{
-"section": "grafika",
-"desc": "gra10.jpg: szerokość 1024 px",
-"type": "image",
-"name": "gra10.jpg",
-"width": 1024
-},
-{
-"section": "grafika",
-"desc": "gra10.jpg: wykadrowana w pionie do 576 px",
-"type": "image",
-"name": "gra10.jpg",
-"height": 576
-},
-{
-"section": "pliki",
-"desc": "Plik index.html",
-"type": "file",
-"name": "index.html"
-},
-{
-"section": "pliki",
-"desc": "Plik onas.html",
-"type": "file",
-"name": "onas.html"
-},
-{
-"section": "pliki",
-"desc": "Plik skrypty.js",
-"type": "file",
-"name": "skrypty.js"
-},
-{
-"section": "pliki",
-"desc": "Plik styl_gier.css",
-"type": "file",
-"name": "styl_gier.css"
-},
-{
-"section": "html",
-"desc": "Zapisane w HTML5, polski język, kodowanie UTF-8",
-"type": "head",
-"page": "index.html",
-"lang": "pl",
-"charset": true
-},
-{
-"section": "html",
-"desc": "Tytuł strony „Najlepsze gry | PoGRAJmy!”",
-"type": "head",
-"page": "index.html",
-"doctype": false,
-"title": "Najlepsze gry | PoGRAJmy!"
-},
-{
-"section": "html",
-"desc": "Arkusz styl_gier.css połączony z kodem strony",
-"type": "head",
-"page": "index.html",
-"doctype": false,
-"stylesheet": "styl_gier.css"
-},
-{
-"section": "html",
-"desc": "Podział na bloki: nagłówkowy 1, nagłówkowy 2, główny, stopki",
-"type": "exists",
-"page": "index.html",
-"selector": "header",
-"hint": "blok nagłówkowy 1 jako header, nagłówkowy 2 jako nav"
-},
-{
-"section": "html",
-"desc": "Bloki nagłówkowy 2, główny, stopki",
-"type": "exists",
-"page": "index.html",
-"selector": "header ~ nav ~ main ~ footer",
-"hint": "blok nagłówkowy 1 jako header, nagłówkowy 2 jako nav"
-},
-{
-"section": "html",
-"desc": "Blok nagłówkowy 1: nagłówek drugiego stopnia z odnośnikiem „PoGRAJmy!”",
-"type": "text",
-"page": "index.html",
-"selector": "header h2 a",
-"equals": "PoGRAJmy!"
-},
-{
-"section": "html",
-"desc": "Odnośnik w nagłówku 1 do index.html",
-"type": "attr",
-"page": "index.html",
-"selector": "header h2 a",
-"attr": "href",
-"equals": "index.html"
-},
-{
-"section": "html",
-"desc": "Blok nagłówkowy 2: lista punktowana z dwoma elementami",
-"type": "exists",
-"page": "index.html",
-"selector": "nav ul li",
-"count": 2,
-"hint": "blok nagłówkowy 1 jako header, nagłówkowy 2 jako nav"
-},
-{
-"section": "html",
-"desc": "Odnośnik „Strona główna” do index.html",
-"type": "text",
-"page": "index.html",
-"selector": "nav ul li a",
-"index": 0,
-"equals": "Strona główna"
-},
-{
-"section": "html",
-"desc": "Odnośnik „Strona główna” do index.html",
-"type": "attr",
-"page": "index.html",
-"selector": "nav ul li a",
-"index": 0,
-"attr": "href",
-"equals": "index.html"
-},
-{
-"section": "html",
-"desc": "Odnośnik „O nas” do onas.html",
-"type": "text",
-"page": "index.html",
-"selector": "nav ul li a",
-"index": 1,
-"equals": "O nas"
-},
-{
-"section": "html",
-"desc": "Odnośnik „O nas” do onas.html",
-"type": "attr",
-"page": "index.html",
-"selector": "nav ul li a",
-"index": 1,
-"attr": "href",
-"equals": "onas.html"
-},
-{
-"section": "html",
-"desc": "Stopka: paragraf „Autor:” i numer zdającego",
-"type": "text",
-"page": "index.html",
-"selector": "footer p",
-"index": 0,
-"startsWith": "Autor:"
-},
-{
-"section": "html",
-"desc": "Numer zdającego w znaczniku strong",
-"type": "exists",
-"page": "index.html",
-"selector": "footer p strong"
-},
-{
-"section": "html",
-"desc": "Stopka: drugi paragraf z efektem funkcji licznik",
-"type": "exists",
-"page": "index.html",
-"selector": "footer p:nth-of-type(2)"
-},
-{
-"section": "html",
-"desc": "Zapisane w HTML5, polski język, kodowanie UTF-8",
-"type": "head",
-"page": "onas.html",
-"lang": "pl",
-"charset": true,
-"doctype": true
-},
-{
-"section": "html",
-"desc": "Tytuł strony „O nas | PoGRAJmy!”",
-"type": "head",
-"page": "onas.html",
-"doctype": false,
-"title": "O nas | PoGRAJmy!"
-},
-{
-"section": "html",
-"desc": "Arkusz styl_gier.css połączony z kodem strony",
-"type": "head",
-"page": "onas.html",
-"doctype": false,
-"stylesheet": "styl_gier.css"
-},
-{
-"section": "html",
-"desc": "Podział na bloki: nagłówkowy 1, nagłówkowy 2, główny, stopki",
-"type": "exists",
-"page": "onas.html",
-"selector": "header",
-"hint": "blok nagłówkowy 1 jako header, nagłówkowy 2 jako nav"
-},
-{
-"section": "html",
-"desc": "Bloki nagłówkowy 2, główny, stopki",
-"type": "exists",
-"page": "onas.html",
-"selector": "header ~ nav ~ main ~ footer",
-"hint": "blok nagłówkowy 1 jako header, nagłówkowy 2 jako nav"
-},
-{
-"section": "html",
-"desc": "Blok nagłówkowy 1: nagłówek drugiego stopnia z odnośnikiem „PoGRAJmy!”",
-"type": "text",
-"page": "onas.html",
-"selector": "header h2 a",
-"equals": "PoGRAJmy!"
-},
-{
-"section": "html",
-"desc": "Odnośnik w nagłówku 1 do index.html",
-"type": "attr",
-"page": "onas.html",
-"selector": "header h2 a",
-"attr": "href",
-"equals": "index.html"
-},
-{
-"section": "html",
-"desc": "Blok nagłówkowy 2: lista punktowana z dwoma elementami",
-"type": "exists",
-"page": "onas.html",
-"selector": "nav ul li",
-"count": 2,
-"hint": "blok nagłówkowy 1 jako header, nagłówkowy 2 jako nav"
-},
-{
-"section": "html",
-"desc": "Odnośnik „Strona główna” do index.html",
-"type": "text",
-"page": "onas.html",
-"selector": "nav ul li a",
-"index": 0,
-"equals": "Strona główna"
-},
-{
-"section": "html",
-"desc": "Odnośnik „Strona główna” do index.html",
-"type": "attr",
-"page": "onas.html",
-"selector": "nav ul li a",
-"index": 0,
-"attr": "href",
-"equals": "index.html"
-},
-{
-"section": "html",
-"desc": "Odnośnik „O nas” do onas.html",
-"type": "text",
-"page": "onas.html",
-"selector": "nav ul li a",
-"index": 1,
-"equals": "O nas"
-},
-{
-"section": "html",
-"desc": "Odnośnik „O nas” do onas.html",
-"type": "attr",
-"page": "onas.html",
-"selector": "nav ul li a",
-"index": 1,
-"attr": "href",
-"equals": "onas.html"
-},
-{
-"section": "html",
-"desc": "Stopka: paragraf „Autor:” i numer zdającego",
-"type": "text",
-"page": "onas.html",
-"selector": "footer p",
-"index": 0,
-"startsWith": "Autor:"
-},
-{
-"section": "html",
-"desc": "Numer zdającego w znaczniku strong",
-"type": "exists",
-"page": "onas.html",
-"selector": "footer p strong"
-},
-{
-"section": "html",
-"desc": "Stopka: drugi paragraf z efektem funkcji licznik",
-"type": "exists",
-"page": "onas.html",
-"selector": "footer p:nth-of-type(2)"
-},
-{
-"section": "html",
-"desc": "Nagłówek pierwszego stopnia „Oto nasz wybór najciekawszych gier”",
-"type": "text",
-"page": "index.html",
-"selector": "main h1",
-"equals": "Oto nasz wybór najciekawszych gier"
-},
-{
-"section": "html",
-"desc": "Blok główny: dziesięć obrazów",
-"type": "exists",
-"page": "index.html",
-"selector": "main img",
-"count": 10
-},
-{
-"section": "html",
-"desc": "Pierwszy obraz gra1.jpg",
-"type": "attr",
-"page": "index.html",
-"selector": "main img",
-"index": 0,
-"attr": "src",
-"equals": "gra1.jpg"
-},
-{
-"section": "html",
-"desc": "Dziesiąty obraz gra10.jpg",
-"type": "attr",
-"page": "index.html",
-"selector": "main img",
-"index": 9,
-"attr": "src",
-"equals": "gra10.jpg"
-},
-{
-"section": "html",
-"desc": "Tekst alternatywny „Miniatura gry”",
-"type": "attr",
-"page": "index.html",
-"selector": "main img",
-"attr": "alt",
-"equals": "Miniatura gry",
-"all": true
-},
-{
-"section": "html",
-"desc": "Podpowiedź „Tytuł gry”",
-"type": "attr",
-"page": "index.html",
-"selector": "main img",
-"attr": "title",
-"equals": "Tytuł gry",
-"all": true
-},
-{
-"section": "html",
-"desc": "Nagłówek pierwszego stopnia „Twoje centrum rozrywki”",
-"type": "text",
-"page": "onas.html",
-"selector": "main h1",
-"equals": "Twoje centrum rozrywki"
-},
-{
-"section": "html",
-"desc": "Blok zawierający trzy obrazy",
-"type": "exists",
-"page": "onas.html",
-"selector": "main img",
-"count": 3
-},
-{
-"section": "html",
-"desc": "Obraz 1: gra10.jpg",
-"type": "attr",
-"page": "onas.html",
-"selector": "main img",
-"index": 0,
-"attr": "src",
-"equals": "gra10.jpg"
-},
-{
-"section": "html",
-"desc": "Obraz 2: gra5.jpg",
-"type": "attr",
-"page": "onas.html",
-"selector": "main img",
-"index": 1,
-"attr": "src",
-"equals": "gra5.jpg"
-},
-{
-"section": "html",
-"desc": "Obraz 3: gra1.jpg",
-"type": "attr",
-"page": "onas.html",
-"selector": "main img",
-"index": 2,
-"attr": "src",
-"equals": "gra1.jpg"
-},
-{
-"section": "html",
-"desc": "Trzy paragrafy z treścią z teksty_marketingowe.txt",
-"type": "exists",
-"page": "onas.html",
-"selector": "main p",
-"count": 3
-},
-{
-"section": "html",
-"desc": "Pierwszy paragraf: treść z pliku",
-"type": "text",
-"page": "onas.html",
-"selector": "main p",
-"index": 0,
-"startsWith": "Zapraszamy do naszej wypożyczalni gier konsolowych i komputerowych"
-},
-{
-"section": "html",
-"desc": "Fragmenty między gwiazdkami w strong",
-"type": "exists",
-"page": "onas.html",
-"selector": "main p strong",
-"min": 2
-},
-{
-"section": "html",
-"desc": "Fragmenty między podkreśleniami w em",
-"type": "exists",
-"page": "onas.html",
-"selector": "main p em",
-"min": 2
-},
-{
-"section": "html",
-"desc": "Usunięte znaki gwiazdki i podkreślenia",
-"type": "text",
-"page": "onas.html",
-"selector": "main",
-"matches": "^[^*_]*$"
-},
-{
-"section": "css",
-"desc": "Krój czcionki „Segoe UI”, Tahoma",
-"type": "css",
-"page": "index.html",
-"selector": "h2",
-"prop": "font-family",
-"value": "\"Segoe UI\", Tahoma"
-},
-{
-"section": "css",
-"desc": "Krój czcionki dla wszystkich selektorów",
-"type": "css",
-"page": "index.html",
-"selector": "p",
-"prop": "font-family",
-"value": "\"Segoe UI\", Tahoma"
-},
-{
-"section": "css",
-"desc": "Blok nagłówkowy 1: szerokość 40%",
-"type": "css",
-"page": "index.html",
-"selector": "header",
-"prop": "width",
-"value": "40%",
-"hint": "blok nagłówkowy 1 jako header, nagłówkowy 2 jako nav"
-},
-{
-"section": "css",
-"desc": "Blok nagłówkowy 2: szerokość 60%",
-"type": "css",
-"page": "index.html",
-"selector": "nav",
-"prop": "width",
-"value": "60%",
-"hint": "blok nagłówkowy 1 jako header, nagłówkowy 2 jako nav"
-},
-{
-"section": "css",
-"desc": "Blok nagłówkowy 2: zawartość do prawej",
-"type": "css",
-"page": "index.html",
-"selector": "nav",
-"prop": "text-align",
-"value": "right",
-"hint": "blok nagłówkowy 1 jako header, nagłówkowy 2 jako nav"
-},
-{
-"section": "css",
-"desc": "Lista punktowana: brak punktora",
-"type": "css",
-"page": "index.html",
-"selector": "ul",
-"prop": "list-style-type",
-"value": "none"
-},
-{
-"section": "css",
-"desc": "Element listy: wyświetlany liniowo",
-"type": "css",
-"page": "index.html",
-"selector": "li",
-"prop": "display",
-"value": "inline"
-},
-{
-"section": "css",
-"desc": "Odnośnik: brak podkreślenia",
-"type": "css",
-"page": "index.html",
-"selector": "a",
-"prop": "text-decoration-line",
-"value": "none"
-},
-{
-"section": "css",
-"desc": "Odnośnik: kolor #0077A2",
-"type": "css",
-"page": "index.html",
-"selector": "a",
-"prop": "color",
-"value": "#0077A2"
-},
-{
-"section": "css",
-"desc": "Odnośnik w elemencie listy: padding 1 em",
-"type": "css",
-"page": "index.html",
-"selector": "li a",
-"prop": "padding",
-"value": "1em"
-},
-{
-"section": "css",
-"desc": "Nagłówek pierwszego stopnia: wyrównanie do środka",
-"type": "css",
-"page": "index.html",
-"selector": "h1",
-"prop": "text-align",
-"value": "center"
-},
-{
-"section": "css",
-"desc": "Obraz: szerokość 20 em",
-"type": "css",
-"page": "index.html",
-"selector": "img",
-"prop": "width",
-"value": "20em",
-"all": true
-},
-{
-"section": "css",
-"desc": "Obraz: marginesy zewnętrzne 1 em",
-"type": "css",
-"page": "index.html",
-"selector": "img",
-"prop": "margin",
-"value": "1em"
-},
-{
-"section": "css",
-"desc": "Nagłówek h1 wyłącznie selektorem znacznika",
-"type": "cssRule",
-"page": "index.html",
-"selector": "h1",
-"prop": "text-align",
-"value": "center"
-},
-{
-"section": "css",
-"desc": "Obraz wyłącznie selektorem znacznika: szerokość",
-"type": "cssRule",
-"page": "index.html",
-"selector": "img",
-"prop": "width",
-"value": "20em"
-},
-{
-"section": "css",
-"desc": "Obraz wyłącznie selektorem znacznika: marginesy",
-"type": "cssRule",
-"page": "index.html",
-"selector": "img",
-"prop": "margin",
-"value": "1em"
-},
-{
-"section": "css",
-"desc": "Obraz po najechaniu: obrys 3 px linią kreskową #E30613",
-"type": "hover",
-"page": "index.html",
-"selector": "main img",
-"prop": "outline",
-"value": "3px dashed #E30613"
-},
-{
-"section": "css",
-"desc": "Układ: blok nagłówkowy 1 obok bloku nagłówkowego 2",
-"type": "layout",
-"page": "index.html",
-"a": "header",
-"b": "nav",
-"relation": "leftOf",
-"hint": "blok nagłówkowy 1 jako header, nagłówkowy 2 jako nav"
-},
-{
-"section": "css",
-"desc": "Układ: blok główny pod blokami nagłówkowymi",
-"type": "layout",
-"page": "index.html",
-"a": "main",
-"b": "header",
-"relation": "below"
-},
-{
-"section": "css",
-"desc": "Układ: blok główny pod blokiem nagłówkowym 2",
-"type": "layout",
-"page": "index.html",
-"a": "main",
-"b": "nav",
-"relation": "below"
-},
-{
-"section": "css",
-"desc": "Układ: stopka pod blokiem głównym",
-"type": "layout",
-"page": "index.html",
-"a": "footer",
-"b": "main",
-"relation": "below"
-},
-{
-"section": "css",
-"desc": "Układ: stopka na całą szerokość",
-"type": "layout",
-"page": "index.html",
-"a": "footer",
-"relation": "fullWidth"
-},
-{
-"section": "css",
-"desc": "Obrazy obok siebie (onas.html)",
-"type": "layout",
-"page": "onas.html",
-"a": "main img:nth-of-type(1)",
-"b": "main img:nth-of-type(2)",
-"relation": "leftOf"
-},
-{
-"section": "css",
-"desc": "Obrazy obok siebie (index.html)",
-"type": "layout",
-"page": "index.html",
-"a": "main img:nth-of-type(1)",
-"b": "main img:nth-of-type(2)",
-"relation": "sameRow"
-},
-{
-"section": "js",
-"desc": "Funkcja licznik wywoływana przy załadowaniu index.html: „Liczba wejść na stronę: X”",
-"type": "js",
-"page": "index.html",
-"steps": [],
-"expect": [
-{
-"selector": "footer p:nth-of-type(2)",
-"contains": "Liczba wejść na stronę: "
-}
-]
-},
-{
-"section": "js",
-"desc": "Funkcja licznik wywoływana przy załadowaniu onas.html",
-"type": "js",
-"page": "onas.html",
-"steps": [],
-"expect": [
-{
-"selector": "footer p:nth-of-type(2)",
-"contains": "Liczba wejść na stronę: "
-}
-]
-},
-{
-"section": "js",
-"desc": "Licznik z localStorage, zwiększany o 1, znaczące nazewnictwo",
-"type": "manual"
-}
+  {"section": "grafika", "desc": "gra10.jpg: szerokość 1024 px", "type": "image", "name": "gra10.jpg", "width": 1024},
+  {"section": "grafika", "desc": "gra10.jpg: wykadrowana w pionie do 576 px", "type": "image", "name": "gra10.jpg", "height": 576},
+  {"section": "pliki", "desc": "Plik index.html", "type": "file", "name": "index.html"},
+  {"section": "pliki", "desc": "Plik onas.html", "type": "file", "name": "onas.html"},
+  {"section": "pliki", "desc": "Plik skrypty.js", "type": "file", "name": "skrypty.js"},
+  {"section": "pliki", "desc": "Plik styl_gier.css", "type": "file", "name": "styl_gier.css"},
+  {"section": "html", "desc": "Zapisane w HTML5, polski język, kodowanie UTF-8", "type": "head", "page": "index.html", "lang": "pl", "charset": true},
+  {"section": "html", "desc": "Tytuł strony „Najlepsze gry | PoGRAJmy!”", "type": "head", "page": "index.html", "doctype": false, "title": "Najlepsze gry | PoGRAJmy!"},
+  {"section": "html", "desc": "Arkusz styl_gier.css połączony z kodem strony", "type": "head", "page": "index.html", "doctype": false, "stylesheet": "styl_gier.css"},
+  {"section": "html", "desc": "Podział na bloki: nagłówkowy 1, nagłówkowy 2, główny, stopki", "type": "exists", "page": "index.html", "selector": "header", "hint": "blok nagłówkowy 1 jako header, nagłówkowy 2 jako nav"},
+  {"section": "html", "desc": "Bloki nagłówkowy 2, główny, stopki", "type": "exists", "page": "index.html", "hint": "blok nagłówkowy 1 jako header, nagłówkowy 2 jako nav", "selectors": ["header", "nav", "main", "footer"]},
+  {"section": "html", "desc": "Blok nagłówkowy 1: nagłówek drugiego stopnia z odnośnikiem „PoGRAJmy!”", "type": "text", "page": "index.html", "selector": "header h2 a", "equals": "PoGRAJmy!"},
+  {"section": "html", "desc": "Odnośnik w nagłówku 1 do index.html", "type": "attr", "page": "index.html", "selector": "header h2 a", "attr": "href", "equals": "index.html"},
+  {"section": "html", "desc": "Blok nagłówkowy 2: lista punktowana z dwoma elementami", "type": "exists", "page": "index.html", "selector": "nav ul li", "count": 2, "hint": "blok nagłówkowy 1 jako header, nagłówkowy 2 jako nav"},
+  {"section": "html", "desc": "Odnośnik „Strona główna” do index.html", "type": "text", "page": "index.html", "selector": "nav ul li a", "index": 0, "equals": "Strona główna"},
+  {"section": "html", "desc": "Odnośnik „Strona główna” do index.html", "type": "attr", "page": "index.html", "selector": "nav ul li a", "index": 0, "attr": "href", "equals": "index.html"},
+  {"section": "html", "desc": "Odnośnik „O nas” do onas.html", "type": "text", "page": "index.html", "selector": "nav ul li a", "index": 1, "equals": "O nas"},
+  {"section": "html", "desc": "Odnośnik „O nas” do onas.html", "type": "attr", "page": "index.html", "selector": "nav ul li a", "index": 1, "attr": "href", "equals": "onas.html"},
+  {"section": "html", "desc": "Stopka: paragraf „Autor:” i numer zdającego", "type": "text", "page": "index.html", "selector": "footer p", "index": 0, "startsWith": "Autor:"},
+  {"section": "html", "desc": "Numer zdającego w znaczniku strong", "type": "exists", "page": "index.html", "selector": "footer p strong"},
+  {"section": "html", "desc": "Stopka: drugi paragraf z efektem funkcji licznik", "type": "exists", "page": "index.html", "selector": "footer p:nth-of-type(2)"},
+  {"section": "html", "desc": "Zapisane w HTML5, polski język, kodowanie UTF-8", "type": "head", "page": "onas.html", "lang": "pl", "charset": true, "doctype": true},
+  {"section": "html", "desc": "Tytuł strony „O nas | PoGRAJmy!”", "type": "head", "page": "onas.html", "doctype": false, "title": "O nas | PoGRAJmy!"},
+  {"section": "html", "desc": "Arkusz styl_gier.css połączony z kodem strony", "type": "head", "page": "onas.html", "doctype": false, "stylesheet": "styl_gier.css"},
+  {"section": "html", "desc": "Podział na bloki: nagłówkowy 1, nagłówkowy 2, główny, stopki", "type": "exists", "page": "onas.html", "selector": "header", "hint": "blok nagłówkowy 1 jako header, nagłówkowy 2 jako nav"},
+  {"section": "html", "desc": "Bloki nagłówkowy 2, główny, stopki", "type": "exists", "page": "onas.html", "hint": "blok nagłówkowy 1 jako header, nagłówkowy 2 jako nav", "selectors": ["header", "nav", "main", "footer"]},
+  {"section": "html", "desc": "Blok nagłówkowy 1: nagłówek drugiego stopnia z odnośnikiem „PoGRAJmy!”", "type": "text", "page": "onas.html", "selector": "header h2 a", "equals": "PoGRAJmy!"},
+  {"section": "html", "desc": "Odnośnik w nagłówku 1 do index.html", "type": "attr", "page": "onas.html", "selector": "header h2 a", "attr": "href", "equals": "index.html"},
+  {"section": "html", "desc": "Blok nagłówkowy 2: lista punktowana z dwoma elementami", "type": "exists", "page": "onas.html", "selector": "nav ul li", "count": 2, "hint": "blok nagłówkowy 1 jako header, nagłówkowy 2 jako nav"},
+  {"section": "html", "desc": "Odnośnik „Strona główna” do index.html", "type": "text", "page": "onas.html", "selector": "nav ul li a", "index": 0, "equals": "Strona główna"},
+  {"section": "html", "desc": "Odnośnik „Strona główna” do index.html", "type": "attr", "page": "onas.html", "selector": "nav ul li a", "index": 0, "attr": "href", "equals": "index.html"},
+  {"section": "html", "desc": "Odnośnik „O nas” do onas.html", "type": "text", "page": "onas.html", "selector": "nav ul li a", "index": 1, "equals": "O nas"},
+  {"section": "html", "desc": "Odnośnik „O nas” do onas.html", "type": "attr", "page": "onas.html", "selector": "nav ul li a", "index": 1, "attr": "href", "equals": "onas.html"},
+  {"section": "html", "desc": "Stopka: paragraf „Autor:” i numer zdającego", "type": "text", "page": "onas.html", "selector": "footer p", "index": 0, "startsWith": "Autor:"},
+  {"section": "html", "desc": "Numer zdającego w znaczniku strong", "type": "exists", "page": "onas.html", "selector": "footer p strong"},
+  {"section": "html", "desc": "Stopka: drugi paragraf z efektem funkcji licznik", "type": "exists", "page": "onas.html", "selector": "footer p:nth-of-type(2)"},
+  {"section": "html", "desc": "Nagłówek pierwszego stopnia „Oto nasz wybór najciekawszych gier”", "type": "text", "page": "index.html", "selector": "main h1", "equals": "Oto nasz wybór najciekawszych gier"},
+  {"section": "html", "desc": "Blok główny: dziesięć obrazów", "type": "exists", "page": "index.html", "selector": "main img", "count": 10},
+  {"section": "html", "desc": "Pierwszy obraz gra1.jpg", "type": "attr", "page": "index.html", "selector": "main img", "index": 0, "attr": "src", "equals": "gra1.jpg"},
+  {"section": "html", "desc": "Dziesiąty obraz gra10.jpg", "type": "attr", "page": "index.html", "selector": "main img", "index": 9, "attr": "src", "equals": "gra10.jpg"},
+  {"section": "html", "desc": "Tekst alternatywny „Miniatura gry”", "type": "attr", "page": "index.html", "selector": "main img", "attr": "alt", "equals": "Miniatura gry", "all": true},
+  {"section": "html", "desc": "Podpowiedź „Tytuł gry”", "type": "attr", "page": "index.html", "selector": "main img", "attr": "title", "equals": "Tytuł gry", "all": true},
+  {"section": "html", "desc": "Nagłówek pierwszego stopnia „Twoje centrum rozrywki”", "type": "text", "page": "onas.html", "selector": "main h1", "equals": "Twoje centrum rozrywki"},
+  {"section": "html", "desc": "Blok zawierający trzy obrazy", "type": "exists", "page": "onas.html", "selector": "main img", "count": 3},
+  {"section": "html", "desc": "Obraz 1: gra10.jpg", "type": "attr", "page": "onas.html", "selector": "main img", "index": 0, "attr": "src", "equals": "gra10.jpg"},
+  {"section": "html", "desc": "Obraz 2: gra5.jpg", "type": "attr", "page": "onas.html", "selector": "main img", "index": 1, "attr": "src", "equals": "gra5.jpg"},
+  {"section": "html", "desc": "Obraz 3: gra1.jpg", "type": "attr", "page": "onas.html", "selector": "main img", "index": 2, "attr": "src", "equals": "gra1.jpg"},
+  {"section": "html", "desc": "Trzy paragrafy z treścią z teksty_marketingowe.txt", "type": "exists", "page": "onas.html", "selector": "main p", "count": 3},
+  {"section": "html", "desc": "Pierwszy paragraf: treść z pliku", "type": "text", "page": "onas.html", "selector": "main p", "index": 0, "startsWith": "Zapraszamy do naszej wypożyczalni gier konsolowych i komputerowych"},
+  {"section": "html", "desc": "Fragmenty między gwiazdkami w strong", "type": "exists", "page": "onas.html", "selector": "main p strong", "min": 2},
+  {"section": "html", "desc": "Fragmenty między podkreśleniami w em", "type": "exists", "page": "onas.html", "selector": "main p em", "min": 2},
+  {"section": "html", "desc": "Usunięte znaki gwiazdki i podkreślenia", "type": "text", "page": "onas.html", "selector": "main", "matches": "^[^*_]*$"},
+  {"section": "css", "desc": "Krój czcionki „Segoe UI”, Tahoma", "type": "css", "page": "index.html", "selector": "h2", "prop": "font-family", "value": "\"Segoe UI\", Tahoma"},
+  {"section": "css", "desc": "Krój czcionki dla wszystkich selektorów", "type": "css", "page": "index.html", "selector": "p", "prop": "font-family", "value": "\"Segoe UI\", Tahoma"},
+  {"section": "css", "desc": "Blok nagłówkowy 1: szerokość 40%", "type": "css", "page": "index.html", "selector": "header", "prop": "width", "value": "40%", "hint": "blok nagłówkowy 1 jako header, nagłówkowy 2 jako nav"},
+  {"section": "css", "desc": "Blok nagłówkowy 2: szerokość 60%", "type": "css", "page": "index.html", "selector": "nav", "prop": "width", "value": "60%", "hint": "blok nagłówkowy 1 jako header, nagłówkowy 2 jako nav"},
+  {"section": "css", "desc": "Blok nagłówkowy 2: zawartość do prawej", "type": "css", "page": "index.html", "selector": "nav", "prop": "text-align", "value": "right", "hint": "blok nagłówkowy 1 jako header, nagłówkowy 2 jako nav"},
+  {"section": "css", "desc": "Lista punktowana: brak punktora", "type": "css", "page": "index.html", "selector": "ul", "prop": "list-style-type", "value": "none"},
+  {"section": "css", "desc": "Element listy: wyświetlany liniowo", "type": "css", "page": "index.html", "selector": "li", "prop": "display", "value": "inline"},
+  {"section": "css", "desc": "Odnośnik: brak podkreślenia", "type": "css", "page": "index.html", "selector": "a", "prop": "text-decoration-line", "value": "none"},
+  {"section": "css", "desc": "Odnośnik: kolor #0077A2", "type": "css", "page": "index.html", "selector": "a", "prop": "color", "value": "#0077A2"},
+  {"section": "css", "desc": "Odnośnik w elemencie listy: padding 1 em", "type": "css", "page": "index.html", "selector": "li a", "prop": "padding", "value": "1em"},
+  {"section": "css", "desc": "Nagłówek pierwszego stopnia: wyrównanie do środka", "type": "css", "page": "index.html", "selector": "h1", "prop": "text-align", "value": "center"},
+  {"section": "css", "desc": "Obraz: szerokość 20 em", "type": "css", "page": "index.html", "selector": "img", "prop": "width", "value": "20em", "all": true},
+  {"section": "css", "desc": "Obraz: marginesy zewnętrzne 1 em", "type": "css", "page": "index.html", "selector": "img", "prop": "margin", "value": "1em"},
+  {"section": "css", "desc": "Nagłówek h1 wyłącznie selektorem znacznika", "type": "cssRule", "page": "index.html", "selector": "h1", "prop": "text-align", "value": "center"},
+  {"section": "css", "desc": "Obraz wyłącznie selektorem znacznika: szerokość", "type": "cssRule", "page": "index.html", "selector": "img", "prop": "width", "value": "20em"},
+  {"section": "css", "desc": "Obraz wyłącznie selektorem znacznika: marginesy", "type": "cssRule", "page": "index.html", "selector": "img", "prop": "margin", "value": "1em"},
+  {"section": "css", "desc": "Obraz po najechaniu: obrys 3 px linią kreskową #E30613", "type": "hover", "page": "index.html", "selector": "main img", "prop": "outline", "value": "3px dashed #E30613"},
+  {"section": "css", "desc": "Układ: blok nagłówkowy 1 obok bloku nagłówkowego 2", "type": "layout", "page": "index.html", "a": "header", "b": "nav", "relation": "leftOf", "hint": "blok nagłówkowy 1 jako header, nagłówkowy 2 jako nav"},
+  {"section": "css", "desc": "Układ: blok główny pod blokami nagłówkowymi", "type": "layout", "page": "index.html", "a": "main", "b": "header", "relation": "below"},
+  {"section": "css", "desc": "Układ: blok główny pod blokiem nagłówkowym 2", "type": "layout", "page": "index.html", "a": "main", "b": "nav", "relation": "below"},
+  {"section": "css", "desc": "Układ: stopka pod blokiem głównym", "type": "layout", "page": "index.html", "a": "footer", "b": "main", "relation": "below"},
+  {"section": "css", "desc": "Układ: stopka na całą szerokość", "type": "layout", "page": "index.html", "a": "footer", "relation": "fullWidth"},
+  {"section": "css", "desc": "Obrazy obok siebie (onas.html)", "type": "layout", "page": "onas.html", "a": "main img:nth-of-type(1)", "b": "main img:nth-of-type(2)", "relation": "leftOf"},
+  {"section": "css", "desc": "Obrazy obok siebie (index.html)", "type": "layout", "page": "index.html", "a": "main img:nth-of-type(1)", "b": "main img:nth-of-type(2)", "relation": "sameRow"},
+  {"section": "js", "desc": "Funkcja licznik wywoływana przy załadowaniu index.html: „Liczba wejść na stronę: X”", "type": "js", "page": "index.html", "steps": [], "expect": [{"selector": "footer p:nth-of-type(2)", "contains": "Liczba wejść na stronę: "}]},
+  {"section": "js", "desc": "Funkcja licznik wywoływana przy załadowaniu onas.html", "type": "js", "page": "onas.html", "steps": [], "expect": [{"selector": "footer p:nth-of-type(2)", "contains": "Liczba wejść na stronę: "}]},
+  {"section": "js", "desc": "Licznik z localStorage, zwiększany o 1, znaczące nazewnictwo", "type": "manual"}
 ]

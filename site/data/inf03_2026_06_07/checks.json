@@ -1,554 +1,63 @@
 [
-{
-"section": "pliki",
-"desc": "Nazwa pliku gra.html",
-"type": "file",
-"name": "gra.html"
-},
-{
-"section": "pliki",
-"desc": "Arkusz stylów w pliku styl.css",
-"type": "file",
-"name": "styl.css"
-},
-{
-"section": "html",
-"desc": "Zapisana w HTML5, polski język, kodowanie UTF-8",
-"type": "head",
-"lang": "pl",
-"charset": true
-},
-{
-"section": "html",
-"desc": "Tytuł strony „Gra”",
-"type": "head",
-"doctype": false,
-"title": "Gra"
-},
-{
-"section": "html",
-"desc": "Arkusz stylów styl.css połączony z kodem strony",
-"type": "head",
-"doctype": false,
-"stylesheet": "styl.css"
-},
-{
-"section": "html",
-"desc": "Bloki: nagłówkowy, główny, stopka",
-"type": "exists",
-"selector": "body > header ~ main ~ footer"
-},
-{
-"section": "html",
-"desc": "Blok główny zawiera trzy bloki sekcji",
-"type": "exists",
-"selector": "main > section",
-"count": 3
-},
-{
-"section": "html",
-"desc": "Układ: sekcja lewa obok środkowej",
-"type": "layout",
-"a": "main section:nth-of-type(1)",
-"b": "main section:nth-of-type(2)",
-"relation": "leftOf",
-"hint": "bloki sekcji jako section w main"
-},
-{
-"section": "html",
-"desc": "Układ: sekcja środkowa obok prawej",
-"type": "layout",
-"a": "main section:nth-of-type(2)",
-"b": "main section:nth-of-type(3)",
-"relation": "leftOf"
-},
-{
-"section": "html",
-"desc": "Układ: nagłówek nad blokiem głównym",
-"type": "layout",
-"a": "header",
-"b": "main",
-"relation": "above"
-},
-{
-"section": "html",
-"desc": "Układ: stopka pod blokiem głównym",
-"type": "layout",
-"a": "footer",
-"b": "main",
-"relation": "below"
-},
-{
-"section": "html",
-"desc": "Nagłówek pierwszego stopnia „Zagraj w kółko i krzyżyk”",
-"type": "text",
-"selector": "header h1",
-"equals": "Zagraj w kółko i krzyżyk"
-},
-{
-"section": "html",
-"desc": "Sekcja lewa: nagłówek drugiego stopnia „Gra kółko”",
-"type": "text",
-"selector": "main section:nth-of-type(1) h2",
-"equals": "Gra kółko"
-},
-{
-"section": "html",
-"desc": "Sekcja środkowa: tabela",
-"type": "exists",
-"selector": "main section:nth-of-type(2) table",
-"count": 1
-},
-{
-"section": "html",
-"desc": "Tabela ma trzy wiersze",
-"type": "exists",
-"selector": "table tr",
-"count": 3
-},
-{
-"section": "html",
-"desc": "Tabela ma trzy kolumny (9 komórek)",
-"type": "exists",
-"selector": "table td",
-"count": 9
-},
-{
-"section": "html",
-"desc": "Każda komórka wypełniona obrazem",
-"type": "exists",
-"selector": "table td img",
-"count": 9
-},
-{
-"section": "html",
-"desc": "Obrazy nic.png",
-"type": "attr",
-"selector": "table td img",
-"attr": "src",
-"equals": "nic.png",
-"all": true
-},
-{
-"section": "html",
-"desc": "Sekcja prawa: nagłówek drugiego stopnia „Gra krzyżyk”",
-"type": "text",
-"selector": "main section:nth-of-type(3) h2",
-"equals": "Gra krzyżyk"
-},
-{
-"section": "html",
-"desc": "Stopka: odnośnik „Zagraj w statki”",
-"type": "text",
-"selector": "footer a",
-"equals": "Zagraj w statki"
-},
-{
-"section": "html",
-"desc": "Odnośnik do https://pl.battleship-game.org/",
-"type": "attr",
-"selector": "footer a",
-"attr": "href",
-"equals": "https://pl.battleship-game.org/"
-},
-{
-"section": "html",
-"desc": "Odnośnik otwiera się w nowym oknie",
-"type": "attr",
-"selector": "footer a",
-"attr": "target",
-"equals": "_blank"
-},
-{
-"section": "html",
-"desc": "Paragraf „Grę opracował: ” i numer zdającego",
-"type": "text",
-"selector": "footer p",
-"startsWith": "Grę opracował:"
-},
-{
-"section": "css",
-"desc": "Krój czcionki Lucida Console, monospace",
-"type": "css",
-"selector": "h2",
-"prop": "font-family",
-"value": "Lucida Console"
-},
-{
-"section": "css",
-"desc": "Krój czcionki Lucida Console, monospace (rezerwowy)",
-"type": "css",
-"selector": "p",
-"prop": "font-family",
-"value": "Lucida Console"
-},
-{
-"section": "css",
-"desc": "Ciało strony: kolor tła HoneyDew",
-"type": "css",
-"selector": "body",
-"prop": "background-color",
-"value": "HoneyDew"
-},
-{
-"section": "css",
-"desc": "Ciało strony: tekst wyrównany do środka",
-"type": "css",
-"selector": "body",
-"prop": "text-align",
-"value": "center"
-},
-{
-"section": "css",
-"desc": "Nagłówek i stopka: marginesy wewnętrzne 20 px",
-"type": "css",
-"selector": "header",
-"prop": "padding",
-"value": "20px"
-},
-{
-"section": "css",
-"desc": "Stopka: marginesy wewnętrzne 20 px",
-"type": "css",
-"selector": "footer",
-"prop": "padding",
-"value": "20px"
-},
-{
-"section": "css",
-"desc": "Sekcje lewa i prawa: kolor tła PaleGreen",
-"type": "css",
-"selector": "main section:nth-of-type(1)",
-"prop": "background-color",
-"value": "PaleGreen"
-},
-{
-"section": "css",
-"desc": "Sekcja prawa: kolor tła PaleGreen",
-"type": "css",
-"selector": "main section:nth-of-type(3)",
-"prop": "background-color",
-"value": "PaleGreen"
-},
-{
-"section": "css",
-"desc": "Sekcja lewa: szerokość 20%",
-"type": "cssRule",
-"selector": "#lewa",
-"prop": "width",
-"value": "20%",
-"hint": "szerokość ustaw w regule dla bloku sekcji (np. #lewa, #srodek)"
-},
-{
-"section": "css",
-"desc": "Sekcja prawa: szerokość 20%",
-"type": "cssRule",
-"selector": "#prawa",
-"prop": "width",
-"value": "20%",
-"hint": "szerokość ustaw w regule dla bloku sekcji (np. #lewa, #srodek)"
-},
-{
-"section": "css",
-"desc": "Sekcja lewa: padding górny 80 px",
-"type": "css",
-"selector": "main section:nth-of-type(1)",
-"prop": "padding-top",
-"value": "80px"
-},
-{
-"section": "css",
-"desc": "Sekcja lewa: padding dolny 80 px",
-"type": "css",
-"selector": "main section:nth-of-type(1)",
-"prop": "padding-bottom",
-"value": "80px"
-},
-{
-"section": "css",
-"desc": "Sekcja lewa: padding boczny 0",
-"type": "css",
-"selector": "main section:nth-of-type(1)",
-"prop": "padding-left",
-"value": "0px"
-},
-{
-"section": "css",
-"desc": "Sekcja lewa: padding boczny 0 (prawy)",
-"type": "css",
-"selector": "main section:nth-of-type(1)",
-"prop": "padding-right",
-"value": "0px"
-},
-{
-"section": "css",
-"desc": "Sekcja prawa: padding górny 80 px",
-"type": "css",
-"selector": "main section:nth-of-type(3)",
-"prop": "padding-top",
-"value": "80px"
-},
-{
-"section": "css",
-"desc": "Sekcja prawa: padding dolny 80 px",
-"type": "css",
-"selector": "main section:nth-of-type(3)",
-"prop": "padding-bottom",
-"value": "80px"
-},
-{
-"section": "css",
-"desc": "Sekcja prawa: padding boczny 0",
-"type": "css",
-"selector": "main section:nth-of-type(3)",
-"prop": "padding-left",
-"value": "0px"
-},
-{
-"section": "css",
-"desc": "Sekcja prawa: padding boczny 0 (prawy)",
-"type": "css",
-"selector": "main section:nth-of-type(3)",
-"prop": "padding-right",
-"value": "0px"
-},
-{
-"section": "css",
-"desc": "Sekcja lewa: zaokrąglenie rogów 40 px",
-"type": "css",
-"selector": "main section:nth-of-type(1)",
-"prop": "border-top-left-radius",
-"value": "40px"
-},
-{
-"section": "css",
-"desc": "Sekcja prawa: zaokrąglenie rogów 40 px",
-"type": "css",
-"selector": "main section:nth-of-type(3)",
-"prop": "border-top-left-radius",
-"value": "40px"
-},
-{
-"section": "css",
-"desc": "Sekcja prawa: blok niewidoczny (ukryty)",
-"type": "css",
-"selector": "main section:nth-of-type(3)",
-"prop": "visibility",
-"value": "hidden"
-},
-{
-"section": "css",
-"desc": "Sekcja środkowa: szerokość 60%",
-"type": "cssRule",
-"selector": "#srodek",
-"prop": "width",
-"value": "60%",
-"hint": "szerokość ustaw w regule dla bloku sekcji (np. #lewa, #srodek)"
-},
-{
-"section": "css",
-"desc": "Sekcja środkowa: cień bez przesunięcia, rozmycie 10 px, DarkGreen",
-"type": "css",
-"selector": "main section:nth-of-type(2)",
-"prop": "box-shadow",
-"value": "0px 0px 10px 0px DarkGreen"
-},
-{
-"section": "css",
-"desc": "Obraz: szerokość 80%",
-"type": "cssRule",
-"selector": "img",
-"prop": "width",
-"value": "80%"
-},
-{
-"section": "css",
-"desc": "Obraz: marginesy zewnętrzne 10 px",
-"type": "cssRule",
-"selector": "img",
-"prop": "margin",
-"value": "10px"
-},
-{
-"section": "css",
-"desc": "Obraz: kursor pointer",
-"type": "cssRule",
-"selector": "img",
-"prop": "cursor",
-"value": "pointer"
-},
-{
-"section": "css",
-"desc": "Tabela: szerokość 90%",
-"type": "cssRule",
-"selector": "table",
-"prop": "width",
-"value": "90%"
-},
-{
-"section": "css",
-"desc": "Tabela: marginesy zewnętrzne 10 px",
-"type": "cssRule",
-"selector": "table",
-"prop": "margin",
-"value": "10px"
-},
-{
-"section": "css",
-"desc": "Tabela: obramowanie połączone",
-"type": "cssRule",
-"selector": "table",
-"prop": "border-collapse",
-"value": "collapse"
-},
-{
-"section": "css",
-"desc": "Komórka: obramowanie ciągłe 3 px SeaGreen",
-"type": "cssRule",
-"selector": "td",
-"prop": "border",
-"value": "3px solid SeaGreen"
-},
-{
-"section": "css",
-"desc": "Kliknięta komórka: kolor tła SeaGreen",
-"type": "manual"
-},
-{
-"section": "js",
-"desc": "Kółko: klik w nic.png podmienia obraz na o.png",
-"type": "js",
-"steps": [
-{
-"click": "table td:nth-of-type(1) img"
-}
-],
-"expect": [
-{
-"selector": "table td:nth-of-type(1) img",
-"attr": "src",
-"contains": "o.png"
-}
-]
-},
-{
-"section": "js",
-"desc": "Kółko: sekcja lewa ukryta, prawa widoczna",
-"type": "js",
-"steps": [
-{
-"click": "table td:nth-of-type(1) img"
-}
-],
-"expect": [
-{
-"selector": "main section:nth-of-type(1)",
-"css": "visibility",
-"value": "hidden"
-},
-{
-"selector": "main section:nth-of-type(3)",
-"css": "visibility",
-"value": "visible"
-}
-]
-},
-{
-"section": "js",
-"desc": "Krzyżyk: klik w nic.png podmienia obraz na x.png",
-"type": "js",
-"steps": [
-{
-"click": "table td:nth-of-type(1) img"
-},
-{
-"click": "table td:nth-of-type(2) img"
-}
-],
-"expect": [
-{
-"selector": "table td:nth-of-type(2) img",
-"attr": "src",
-"contains": "x.png"
-}
-]
-},
-{
-"section": "js",
-"desc": "Krzyżyk: sekcja lewa widoczna, prawa ukryta",
-"type": "js",
-"steps": [
-{
-"click": "table td:nth-of-type(1) img"
-},
-{
-"click": "table td:nth-of-type(2) img"
-}
-],
-"expect": [
-{
-"selector": "main section:nth-of-type(1)",
-"css": "visibility",
-"value": "visible"
-},
-{
-"selector": "main section:nth-of-type(3)",
-"css": "visibility",
-"value": "hidden"
-}
-]
-},
-{
-"section": "js",
-"desc": "Po krzyżyku gra znów kółko (o.png)",
-"type": "js",
-"steps": [
-{
-"click": "table td:nth-of-type(1) img"
-},
-{
-"click": "table td:nth-of-type(2) img"
-},
-{
-"click": "table td:nth-of-type(3) img"
-}
-],
-"expect": [
-{
-"selector": "table td:nth-of-type(3) img",
-"attr": "src",
-"contains": "o.png"
-}
-]
-},
-{
-"section": "js",
-"desc": "Klik w komórkę z kółkiem lub krzyżykiem: brak akcji",
-"type": "js",
-"steps": [
-{
-"click": "table td:nth-of-type(1) img"
-},
-{
-"click": "table td:nth-of-type(1) img"
-}
-],
-"expect": [
-{
-"selector": "table td:nth-of-type(1) img",
-"attr": "src",
-"contains": "o.png"
-},
-{
-"selector": "main section:nth-of-type(3)",
-"css": "visibility",
-"value": "visible"
-}
-]
-},
-{
-"section": "js",
-"desc": "Znaczące nazewnictwo zmiennych i funkcji",
-"type": "manual"
-}
+  {"section": "pliki", "desc": "Nazwa pliku gra.html", "type": "file", "name": "gra.html"},
+  {"section": "pliki", "desc": "Arkusz stylów w pliku styl.css", "type": "file", "name": "styl.css"},
+  {"section": "html", "desc": "Zapisana w HTML5, polski język, kodowanie UTF-8", "type": "head", "lang": "pl", "charset": true},
+  {"section": "html", "desc": "Tytuł strony „Gra”", "type": "head", "doctype": false, "title": "Gra"},
+  {"section": "html", "desc": "Arkusz stylów styl.css połączony z kodem strony", "type": "head", "doctype": false, "stylesheet": "styl.css"},
+  {"section": "html", "desc": "Bloki: nagłówkowy, główny, stopka", "type": "exists", "selectors": ["header", "main", "footer"]},
+  {"section": "html", "desc": "Blok główny zawiera trzy bloki sekcji", "type": "exists", "selector": "main > section", "count": 3},
+  {"section": "html", "desc": "Układ: sekcja lewa obok środkowej", "type": "layout", "a": "main section:nth-of-type(1)", "b": "main section:nth-of-type(2)", "relation": "leftOf", "hint": "bloki sekcji jako section w main"},
+  {"section": "html", "desc": "Układ: sekcja środkowa obok prawej", "type": "layout", "a": "main section:nth-of-type(2)", "b": "main section:nth-of-type(3)", "relation": "leftOf"},
+  {"section": "html", "desc": "Układ: nagłówek nad blokiem głównym", "type": "layout", "a": "header", "b": "main", "relation": "above"},
+  {"section": "html", "desc": "Układ: stopka pod blokiem głównym", "type": "layout", "a": "footer", "b": "main", "relation": "below"},
+  {"section": "html", "desc": "Nagłówek pierwszego stopnia „Zagraj w kółko i krzyżyk”", "type": "text", "selector": "header h1", "equals": "Zagraj w kółko i krzyżyk"},
+  {"section": "html", "desc": "Sekcja lewa: nagłówek drugiego stopnia „Gra kółko”", "type": "text", "selector": "main section:nth-of-type(1) h2", "equals": "Gra kółko"},
+  {"section": "html", "desc": "Sekcja środkowa: tabela", "type": "exists", "selector": "main section:nth-of-type(2) table", "count": 1},
+  {"section": "html", "desc": "Tabela ma trzy wiersze", "type": "exists", "selector": "table tr", "count": 3},
+  {"section": "html", "desc": "Tabela ma trzy kolumny (9 komórek)", "type": "exists", "selector": "table td", "count": 9},
+  {"section": "html", "desc": "Każda komórka wypełniona obrazem", "type": "exists", "selector": "table td img", "count": 9},
+  {"section": "html", "desc": "Obrazy nic.png", "type": "attr", "selector": "table td img", "attr": "src", "equals": "nic.png", "all": true},
+  {"section": "html", "desc": "Sekcja prawa: nagłówek drugiego stopnia „Gra krzyżyk”", "type": "text", "selector": "main section:nth-of-type(3) h2", "equals": "Gra krzyżyk"},
+  {"section": "html", "desc": "Stopka: odnośnik „Zagraj w statki”", "type": "text", "selector": "footer a", "equals": "Zagraj w statki"},
+  {"section": "html", "desc": "Odnośnik do https://pl.battleship-game.org/", "type": "attr", "selector": "footer a", "attr": "href", "equals": "https://pl.battleship-game.org/"},
+  {"section": "html", "desc": "Odnośnik otwiera się w nowym oknie", "type": "attr", "selector": "footer a", "attr": "target", "equals": "_blank"},
+  {"section": "html", "desc": "Paragraf „Grę opracował: ” i numer zdającego", "type": "text", "selector": "footer p", "startsWith": "Grę opracował:"},
+  {"section": "css", "desc": "Krój czcionki Lucida Console, monospace", "type": "css", "selector": "h2", "prop": "font-family", "value": "Lucida Console"},
+  {"section": "css", "desc": "Krój czcionki Lucida Console, monospace (rezerwowy)", "type": "css", "selector": "p", "prop": "font-family", "value": "Lucida Console"},
+  {"section": "css", "desc": "Ciało strony: kolor tła HoneyDew", "type": "css", "selector": "body", "prop": "background-color", "value": "HoneyDew"},
+  {"section": "css", "desc": "Ciało strony: tekst wyrównany do środka", "type": "css", "selector": "body", "prop": "text-align", "value": "center"},
+  {"section": "css", "desc": "Nagłówek i stopka: marginesy wewnętrzne 20 px", "type": "css", "selector": "header", "prop": "padding", "value": "20px"},
+  {"section": "css", "desc": "Stopka: marginesy wewnętrzne 20 px", "type": "css", "selector": "footer", "prop": "padding", "value": "20px"},
+  {"section": "css", "desc": "Sekcje lewa i prawa: kolor tła PaleGreen", "type": "css", "selector": "main section:nth-of-type(1)", "prop": "background-color", "value": "PaleGreen"},
+  {"section": "css", "desc": "Sekcja prawa: kolor tła PaleGreen", "type": "css", "selector": "main section:nth-of-type(3)", "prop": "background-color", "value": "PaleGreen"},
+  {"section": "css", "desc": "Sekcja lewa: szerokość 20%", "type": "cssRule", "selector": "#lewa", "prop": "width", "value": "20%", "hint": "szerokość ustaw w regule dla bloku sekcji (np. #lewa, #srodek)"},
+  {"section": "css", "desc": "Sekcja prawa: szerokość 20%", "type": "cssRule", "selector": "#prawa", "prop": "width", "value": "20%", "hint": "szerokość ustaw w regule dla bloku sekcji (np. #lewa, #srodek)"},
+  {"section": "css", "desc": "Sekcja lewa: padding górny 80 px", "type": "css", "selector": "main section:nth-of-type(1)", "prop": "padding-top", "value": "80px"},
+  {"section": "css", "desc": "Sekcja lewa: padding dolny 80 px", "type": "css", "selector": "main section:nth-of-type(1)", "prop": "padding-bottom", "value": "80px"},
+  {"section": "css", "desc": "Sekcja lewa: padding boczny 0", "type": "css", "selector": "main section:nth-of-type(1)", "prop": "padding-left", "value": "0px"},
+  {"section": "css", "desc": "Sekcja lewa: padding boczny 0 (prawy)", "type": "css", "selector": "main section:nth-of-type(1)", "prop": "padding-right", "value": "0px"},
+  {"section": "css", "desc": "Sekcja prawa: padding górny 80 px", "type": "css", "selector": "main section:nth-of-type(3)", "prop": "padding-top", "value": "80px"},
+  {"section": "css", "desc": "Sekcja prawa: padding dolny 80 px", "type": "css", "selector": "main section:nth-of-type(3)", "prop": "padding-bottom", "value": "80px"},
+  {"section": "css", "desc": "Sekcja prawa: padding boczny 0", "type": "css", "selector": "main section:nth-of-type(3)", "prop": "padding-left", "value": "0px"},
+  {"section": "css", "desc": "Sekcja prawa: padding boczny 0 (prawy)", "type": "css", "selector": "main section:nth-of-type(3)", "prop": "padding-right", "value": "0px"},
+  {"section": "css", "desc": "Sekcja lewa: zaokrąglenie rogów 40 px", "type": "css", "selector": "main section:nth-of-type(1)", "prop": "border-top-left-radius", "value": "40px"},
+  {"section": "css", "desc": "Sekcja prawa: zaokrąglenie rogów 40 px", "type": "css", "selector": "main section:nth-of-type(3)", "prop": "border-top-left-radius", "value": "40px"},
+  {"section": "css", "desc": "Sekcja prawa: blok niewidoczny (ukryty)", "type": "css", "selector": "main section:nth-of-type(3)", "prop": "visibility", "value": "hidden"},
+  {"section": "css", "desc": "Sekcja środkowa: szerokość 60%", "type": "cssRule", "selector": "#srodek", "prop": "width", "value": "60%", "hint": "szerokość ustaw w regule dla bloku sekcji (np. #lewa, #srodek)"},
+  {"section": "css", "desc": "Sekcja środkowa: cień bez przesunięcia, rozmycie 10 px, DarkGreen", "type": "css", "selector": "main section:nth-of-type(2)", "prop": "box-shadow", "value": "0px 0px 10px 0px DarkGreen"},
+  {"section": "css", "desc": "Obraz: szerokość 80%", "type": "cssRule", "selector": "img", "prop": "width", "value": "80%"},
+  {"section": "css", "desc": "Obraz: marginesy zewnętrzne 10 px", "type": "cssRule", "selector": "img", "prop": "margin", "value": "10px"},
+  {"section": "css", "desc": "Obraz: kursor pointer", "type": "cssRule", "selector": "img", "prop": "cursor", "value": "pointer"},
+  {"section": "css", "desc": "Tabela: szerokość 90%", "type": "cssRule", "selector": "table", "prop": "width", "value": "90%"},
+  {"section": "css", "desc": "Tabela: marginesy zewnętrzne 10 px", "type": "cssRule", "selector": "table", "prop": "margin", "value": "10px"},
+  {"section": "css", "desc": "Tabela: obramowanie połączone", "type": "cssRule", "selector": "table", "prop": "border-collapse", "value": "collapse"},
+  {"section": "css", "desc": "Komórka: obramowanie ciągłe 3 px SeaGreen", "type": "cssRule", "selector": "td", "prop": "border", "value": "3px solid SeaGreen"},
+  {"section": "css", "desc": "Kliknięta komórka: kolor tła SeaGreen", "type": "manual"},
+  {"section": "js", "desc": "Kółko: klik w nic.png podmienia obraz na o.png", "type": "js", "steps": [{"click": "table td:nth-of-type(1) img"}], "expect": [{"selector": "table td:nth-of-type(1) img", "attr": "src", "contains": "o.png"}]},
+  {"section": "js", "desc": "Kółko: sekcja lewa ukryta, prawa widoczna", "type": "js", "steps": [{"click": "table td:nth-of-type(1) img"}], "expect": [{"selector": "main section:nth-of-type(1)", "css": "visibility", "value": "hidden"}, {"selector": "main section:nth-of-type(3)", "css": "visibility", "value": "visible"}]},
+  {"section": "js", "desc": "Krzyżyk: klik w nic.png podmienia obraz na x.png", "type": "js", "steps": [{"click": "table td:nth-of-type(1) img"}, {"click": "table td:nth-of-type(2) img"}], "expect": [{"selector": "table td:nth-of-type(2) img", "attr": "src", "contains": "x.png"}]},
+  {"section": "js", "desc": "Krzyżyk: sekcja lewa widoczna, prawa ukryta", "type": "js", "steps": [{"click": "table td:nth-of-type(1) img"}, {"click": "table td:nth-of-type(2) img"}], "expect": [{"selector": "main section:nth-of-type(1)", "css": "visibility", "value": "visible"}, {"selector": "main section:nth-of-type(3)", "css": "visibility", "value": "hidden"}]},
+  {"section": "js", "desc": "Po krzyżyku gra znów kółko (o.png)", "type": "js", "steps": [{"click": "table td:nth-of-type(1) img"}, {"click": "table td:nth-of-type(2) img"}, {"click": "table td:nth-of-type(3) img"}], "expect": [{"selector": "table td:nth-of-type(3) img", "attr": "src", "contains": "o.png"}]},
+  {"section": "js", "desc": "Klik w komórkę z kółkiem lub krzyżykiem: brak akcji", "type": "js", "steps": [{"click": "table td:nth-of-type(1) img"}, {"click": "table td:nth-of-type(1) img"}], "expect": [{"selector": "table td:nth-of-type(1) img", "attr": "src", "contains": "o.png"}, {"selector": "main section:nth-of-type(3)", "css": "visibility", "value": "visible"}]},
+  {"section": "js", "desc": "Znaczące nazewnictwo zmiennych i funkcji", "type": "manual"}
 ]

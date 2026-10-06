@@ -1,775 +1,93 @@
 [
-{
-"section": "grafika",
-"desc": "roza.jpg: przycięta do proporcji 1:1, 250 px na 250 px, format JPEG",
-"type": "image",
-"name": "roza.jpg",
-"width": 250,
-"height": 250
-},
-{
-"section": "grafika",
-"desc": "gerbera.jpg: przycięta do proporcji 1:1, 250 px na 250 px, format JPEG",
-"type": "image",
-"name": "gerbera.jpg",
-"width": 250,
-"height": 250
-},
-{
-"section": "grafika",
-"desc": "gozdzik.jpg: przycięty do proporcji 1:1, 250 px na 250 px, format JPEG",
-"type": "image",
-"name": "gozdzik.jpg",
-"width": 250,
-"height": 250
-},
-{
-"section": "pliki",
-"desc": "Plik index.html",
-"type": "file",
-"name": "index.html"
-},
-{
-"section": "pliki",
-"desc": "Plik znajdz.php",
-"type": "file",
-"name": "znajdz.php"
-},
-{
-"section": "pliki",
-"desc": "Plik styl3.css",
-"type": "file",
-"name": "styl3.css"
-},
-{
-"section": "html",
-"desc": "Zapisana w języku HTML 5, język polski, kodowanie UTF-8",
-"type": "head",
-"page": "index.html",
-"lang": "pl",
-"charset": true
-},
-{
-"section": "html",
-"desc": "Tytuł strony „Kwiaty”",
-"type": "head",
-"page": "index.html",
-"doctype": false,
-"title": "Kwiaty"
-},
-{
-"section": "html",
-"desc": "Arkusz stylów styl3.css prawidłowo połączony z kodem strony",
-"type": "head",
-"page": "index.html",
-"doctype": false,
-"stylesheet": "styl3.css"
-},
-{
-"section": "html",
-"desc": "Podział na bloki: baner, blok lewy i prawy, stopka (znaczniki sekcji)",
-"type": "exists",
-"page": "index.html",
-"selector": "header ~ nav ~ main ~ footer",
-"hint": "bloki: header, nav (lewy), main (prawy), footer"
-},
-{
-"section": "html",
-"desc": "Baner: nagłówek pierwszego stopnia „Grupa Polskich Kwiaciarni”",
-"type": "text",
-"page": "index.html",
-"selector": "header h1",
-"equals": "Grupa Polskich Kwiaciarni"
-},
-{
-"section": "html",
-"desc": "Blok lewy: nagłówek drugiego stopnia „Menu”",
-"type": "text",
-"page": "index.html",
-"selector": "nav h2",
-"equals": "Menu",
-"hint": "blok lewy jako nav"
-},
-{
-"section": "html",
-"desc": "Blok lewy: lista numerowana z trzema elementami",
-"type": "exists",
-"page": "index.html",
-"selector": "nav > ol > li",
-"count": 3
-},
-{
-"section": "html",
-"desc": "Zagnieżdżona lista punktowana z trzema elementami",
-"type": "exists",
-"page": "index.html",
-"selector": "nav ol li ul > li",
-"count": 3
-},
-{
-"section": "html",
-"desc": "Elementy listy punktowanej: w Warszawie, w Malborku, w Poznaniu",
-"type": "text",
-"page": "index.html",
-"selector": "nav ol li ul",
-"matches": "^w Warszawie w Malborku w Poznaniu$"
-},
-{
-"section": "html",
-"desc": "„Strona główna” prowadzi do strony index.html",
-"type": "attr",
-"page": "index.html",
-"selector": "nav ol > li:nth-of-type(1) a",
-"attr": "href",
-"equals": "index.html"
-},
-{
-"section": "html",
-"desc": "Odnośnik z tekstem „Strona główna”",
-"type": "text",
-"page": "index.html",
-"selector": "nav ol > li:nth-of-type(1) a",
-"equals": "Strona główna"
-},
-{
-"section": "html",
-"desc": "„Rozpoznaj kwiaty” prowadzi do „https://www.kwiaty.pl/”",
-"type": "attr",
-"page": "index.html",
-"selector": "nav ol > li:nth-of-type(2) a",
-"attr": "href",
-"equals": "https://www.kwiaty.pl/"
-},
-{
-"section": "html",
-"desc": "Odnośnik „Rozpoznaj kwiaty” z tekstem",
-"type": "text",
-"page": "index.html",
-"selector": "nav ol > li:nth-of-type(2) a",
-"equals": "Rozpoznaj kwiaty"
-},
-{
-"section": "html",
-"desc": "„Rozpoznaj kwiaty” otwiera się w osobnej karcie przeglądarki",
-"type": "attr",
-"page": "index.html",
-"selector": "nav ol > li:nth-of-type(2) a",
-"attr": "target",
-"equals": "_blank"
-},
-{
-"section": "html",
-"desc": "„Znajdź kwiaciarnię” prowadzi do strony znajdz.php",
-"type": "attr",
-"page": "index.html",
-"selector": "nav ol > li:nth-of-type(3) > a",
-"attr": "href",
-"equals": "znajdz.php"
-},
-{
-"section": "html",
-"desc": "Odnośnik z tekstem „Znajdź kwiaciarnię”",
-"type": "text",
-"page": "index.html",
-"selector": "nav ol > li:nth-of-type(3) > a",
-"equals": "Znajdź kwiaciarnię"
-},
-{
-"section": "html",
-"desc": "Stopka: paragraf „Stronę opracował:” i numer zdającego",
-"type": "text",
-"page": "index.html",
-"selector": "footer p",
-"startsWith": "Stronę opracował:"
-},
-{
-"section": "css",
-"desc": "Układ: baner na górze, nad blokami lewym i prawym",
-"type": "layout",
-"page": "index.html",
-"a": "header",
-"b": "nav",
-"relation": "above"
-},
-{
-"section": "css",
-"desc": "Układ: blok lewy i prawy obok siebie (lewy po lewej)",
-"type": "layout",
-"page": "index.html",
-"a": "nav",
-"b": "main",
-"relation": "leftOf"
-},
-{
-"section": "css",
-"desc": "Układ: bloki lewy i prawy w jednym rzędzie",
-"type": "layout",
-"page": "index.html",
-"a": "nav",
-"b": "main",
-"relation": "sameRow"
-},
-{
-"section": "css",
-"desc": "Układ: stopka na dole, pod blokami",
-"type": "layout",
-"page": "index.html",
-"a": "footer",
-"b": "main",
-"relation": "below"
-},
-{
-"section": "html",
-"desc": "Zapisana w języku HTML 5, język polski, kodowanie UTF-8",
-"type": "head",
-"page": "znajdz.php",
-"lang": "pl",
-"charset": true
-},
-{
-"section": "html",
-"desc": "Tytuł strony „Kwiaty”",
-"type": "head",
-"page": "znajdz.php",
-"doctype": false,
-"title": "Kwiaty"
-},
-{
-"section": "html",
-"desc": "Arkusz stylów styl3.css prawidłowo połączony z kodem strony",
-"type": "head",
-"page": "znajdz.php",
-"doctype": false,
-"stylesheet": "styl3.css"
-},
-{
-"section": "html",
-"desc": "Podział na bloki: baner, blok lewy i prawy, stopka (znaczniki sekcji)",
-"type": "exists",
-"page": "znajdz.php",
-"selector": "header ~ nav ~ main ~ footer",
-"hint": "bloki: header, nav (lewy), main (prawy), footer"
-},
-{
-"section": "html",
-"desc": "Baner: nagłówek pierwszego stopnia „Grupa Polskich Kwiaciarni”",
-"type": "text",
-"page": "znajdz.php",
-"selector": "header h1",
-"equals": "Grupa Polskich Kwiaciarni"
-},
-{
-"section": "html",
-"desc": "Blok lewy: nagłówek drugiego stopnia „Menu”",
-"type": "text",
-"page": "znajdz.php",
-"selector": "nav h2",
-"equals": "Menu",
-"hint": "blok lewy jako nav"
-},
-{
-"section": "html",
-"desc": "Blok lewy: lista numerowana z trzema elementami",
-"type": "exists",
-"page": "znajdz.php",
-"selector": "nav > ol > li",
-"count": 3
-},
-{
-"section": "html",
-"desc": "Zagnieżdżona lista punktowana z trzema elementami",
-"type": "exists",
-"page": "znajdz.php",
-"selector": "nav ol li ul > li",
-"count": 3
-},
-{
-"section": "html",
-"desc": "Elementy listy punktowanej: w Warszawie, w Malborku, w Poznaniu",
-"type": "text",
-"page": "znajdz.php",
-"selector": "nav ol li ul",
-"matches": "^w Warszawie w Malborku w Poznaniu$"
-},
-{
-"section": "html",
-"desc": "„Strona główna” prowadzi do strony index.html",
-"type": "attr",
-"page": "znajdz.php",
-"selector": "nav ol > li:nth-of-type(1) a",
-"attr": "href",
-"equals": "index.html"
-},
-{
-"section": "html",
-"desc": "Odnośnik z tekstem „Strona główna”",
-"type": "text",
-"page": "znajdz.php",
-"selector": "nav ol > li:nth-of-type(1) a",
-"equals": "Strona główna"
-},
-{
-"section": "html",
-"desc": "„Rozpoznaj kwiaty” prowadzi do „https://www.kwiaty.pl/”",
-"type": "attr",
-"page": "znajdz.php",
-"selector": "nav ol > li:nth-of-type(2) a",
-"attr": "href",
-"equals": "https://www.kwiaty.pl/"
-},
-{
-"section": "html",
-"desc": "Odnośnik „Rozpoznaj kwiaty” z tekstem",
-"type": "text",
-"page": "znajdz.php",
-"selector": "nav ol > li:nth-of-type(2) a",
-"equals": "Rozpoznaj kwiaty"
-},
-{
-"section": "html",
-"desc": "„Rozpoznaj kwiaty” otwiera się w osobnej karcie przeglądarki",
-"type": "attr",
-"page": "znajdz.php",
-"selector": "nav ol > li:nth-of-type(2) a",
-"attr": "target",
-"equals": "_blank"
-},
-{
-"section": "html",
-"desc": "„Znajdź kwiaciarnię” prowadzi do strony znajdz.php",
-"type": "attr",
-"page": "znajdz.php",
-"selector": "nav ol > li:nth-of-type(3) > a",
-"attr": "href",
-"equals": "znajdz.php"
-},
-{
-"section": "html",
-"desc": "Odnośnik z tekstem „Znajdź kwiaciarnię”",
-"type": "text",
-"page": "znajdz.php",
-"selector": "nav ol > li:nth-of-type(3) > a",
-"equals": "Znajdź kwiaciarnię"
-},
-{
-"section": "html",
-"desc": "Stopka: paragraf „Stronę opracował:” i numer zdającego",
-"type": "text",
-"page": "znajdz.php",
-"selector": "footer p",
-"startsWith": "Stronę opracował:"
-},
-{
-"section": "css",
-"desc": "Układ: baner na górze, nad blokami lewym i prawym",
-"type": "layout",
-"page": "znajdz.php",
-"a": "header",
-"b": "nav",
-"relation": "above"
-},
-{
-"section": "css",
-"desc": "Układ: blok lewy i prawy obok siebie (lewy po lewej)",
-"type": "layout",
-"page": "znajdz.php",
-"a": "nav",
-"b": "main",
-"relation": "leftOf"
-},
-{
-"section": "css",
-"desc": "Układ: bloki lewy i prawy w jednym rzędzie",
-"type": "layout",
-"page": "znajdz.php",
-"a": "nav",
-"b": "main",
-"relation": "sameRow"
-},
-{
-"section": "css",
-"desc": "Układ: stopka na dole, pod blokami",
-"type": "layout",
-"page": "znajdz.php",
-"a": "footer",
-"b": "main",
-"relation": "below"
-},
-{
-"section": "html",
-"desc": "Blok prawy index.html: nagłówek drugiego stopnia „Strona dla miłośników kwiatów”",
-"type": "text",
-"page": "index.html",
-"selector": "main h2",
-"equals": "Strona dla miłośników kwiatów",
-"hint": "blok prawy jako main"
-},
-{
-"section": "html",
-"desc": "Blok prawy index.html: trzy obrazy",
-"type": "exists",
-"page": "index.html",
-"selector": "main img",
-"count": 3
-},
-{
-"section": "html",
-"desc": "Obraz 1: gerbera.jpg",
-"type": "attr",
-"page": "index.html",
-"selector": "main img",
-"index": 0,
-"attr": "src",
-"equals": "gerbera.jpg"
-},
-{
-"section": "html",
-"desc": "Obraz 1 z tekstem alternatywnym będącym nazwą kwiatu („gerbera”)",
-"type": "attr",
-"page": "index.html",
-"selector": "main img",
-"index": 0,
-"attr": "alt",
-"equals": "gerbera"
-},
-{
-"section": "html",
-"desc": "Obraz 2: gozdzik.jpg",
-"type": "attr",
-"page": "index.html",
-"selector": "main img",
-"index": 1,
-"attr": "src",
-"equals": "gozdzik.jpg"
-},
-{
-"section": "html",
-"desc": "Obraz 2 z tekstem alternatywnym będącym nazwą kwiatu („goździk”)",
-"type": "attr",
-"page": "index.html",
-"selector": "main img",
-"index": 1,
-"attr": "alt",
-"equals": "goździk"
-},
-{
-"section": "html",
-"desc": "Obraz 3: roza.jpg",
-"type": "attr",
-"page": "index.html",
-"selector": "main img",
-"index": 2,
-"attr": "src",
-"equals": "roza.jpg"
-},
-{
-"section": "html",
-"desc": "Obraz 3 z tekstem alternatywnym będącym nazwą kwiatu („róża”)",
-"type": "attr",
-"page": "index.html",
-"selector": "main img",
-"index": 2,
-"attr": "alt",
-"equals": "róża"
-},
-{
-"section": "css",
-"desc": "Obok siebie trzy obrazy",
-"type": "layout",
-"page": "index.html",
-"a": "main img:nth-of-type(1)",
-"b": "main img:nth-of-type(3)",
-"relation": "sameRow"
-},
-{
-"section": "html",
-"desc": "Blok prawy znajdz.php: nagłówek drugiego stopnia „Znajdź kwiaciarnię”",
-"type": "text",
-"page": "znajdz.php",
-"selector": "main h2",
-"equals": "Znajdź kwiaciarnię",
-"hint": "blok prawy jako main"
-},
-{
-"section": "html",
-"desc": "Formularz wysyłający dane metodą bezpieczną",
-"type": "attr",
-"page": "znajdz.php",
-"selector": "main form",
-"attr": "method",
-"equals": "post"
-},
-{
-"section": "html",
-"desc": "Pole edycyjne w formularzu",
-"type": "exists",
-"page": "znajdz.php",
-"selector": "main form input[type=text], main form input:not([type])"
-},
-{
-"section": "html",
-"desc": "Pole edycyjne poprzedzone napisem „Podaj nazwę miasta:”",
-"type": "text",
-"page": "znajdz.php",
-"selector": "main form",
-"startsWith": "Podaj nazwę miasta:"
-},
-{
-"section": "html",
-"desc": "Przycisk „SPRAWDŹ” wysyłający dane",
-"type": "exists",
-"page": "znajdz.php",
-"selector": "main form input[type=submit][value='SPRAWDŹ'], main form button:not([type=button]):not([type=reset])"
-},
-{
-"section": "php",
-"desc": "Skrypt pobiera dane z pola edycyjnego i wysyła do bazy zmodyfikowane zapytanie 1 z wpisanym miastem",
-"type": "php"
-},
-{
-"section": "php",
-"desc": "Pod przyciskiem w nagłówku trzeciego stopnia wyświetlane nazwa i ulica oddzielone przecinkiem",
-"type": "php"
-},
-{
-"section": "php",
-"desc": "Skrypt łączy się z bazą kwiaciarnia (localhost, root, bez hasła) i po operacjach zamyka połączenie",
-"type": "php"
-},
-{
-"section": "css",
-"desc": "Domyślnie dla wszystkich selektorów: krój czcionki Georgia",
-"type": "css",
-"page": "index.html",
-"selector": "h2",
-"prop": "font-family",
-"value": "Georgia"
-},
-{
-"section": "css",
-"desc": "Domyślnie dla wszystkich selektorów (*): krój czcionki Georgia",
-"type": "cssRule",
-"page": "index.html",
-"selector": "*",
-"prop": "font-family",
-"value": "Georgia"
-},
-{
-"section": "css",
-"desc": "Baner i stopka: kolor tła #C75B39 (header)",
-"type": "css",
-"page": "index.html",
-"selector": "header",
-"prop": "background-color",
-"value": "#C75B39"
-},
-{
-"section": "css",
-"desc": "Baner i stopka: biały kolor czcionki (header)",
-"type": "css",
-"page": "index.html",
-"selector": "header",
-"prop": "color",
-"value": "white"
-},
-{
-"section": "css",
-"desc": "Baner i stopka: marginesy wewnętrzne 10 px (header)",
-"type": "css",
-"page": "index.html",
-"selector": "header",
-"prop": "padding",
-"value": "10px"
-},
-{
-"section": "css",
-"desc": "Baner i stopka: wyrównanie tekstu do środka (header)",
-"type": "css",
-"page": "index.html",
-"selector": "header",
-"prop": "text-align",
-"value": "center"
-},
-{
-"section": "css",
-"desc": "Baner i stopka: kolor tła #C75B39 (footer)",
-"type": "css",
-"page": "index.html",
-"selector": "footer",
-"prop": "background-color",
-"value": "#C75B39"
-},
-{
-"section": "css",
-"desc": "Baner i stopka: biały kolor czcionki (footer)",
-"type": "css",
-"page": "index.html",
-"selector": "footer",
-"prop": "color",
-"value": "white"
-},
-{
-"section": "css",
-"desc": "Baner i stopka: marginesy wewnętrzne 10 px (footer)",
-"type": "css",
-"page": "index.html",
-"selector": "footer",
-"prop": "padding",
-"value": "10px"
-},
-{
-"section": "css",
-"desc": "Baner i stopka: wyrównanie tekstu do środka (footer)",
-"type": "css",
-"page": "index.html",
-"selector": "footer",
-"prop": "text-align",
-"value": "center"
-},
-{
-"section": "css",
-"desc": "Blok lewy: kolor tła #FF8A65",
-"type": "css",
-"page": "index.html",
-"selector": "nav",
-"prop": "background-color",
-"value": "#FF8A65"
-},
-{
-"section": "css",
-"desc": "Blok lewy: szerokość 25%",
-"type": "css",
-"page": "index.html",
-"selector": "nav",
-"prop": "width",
-"value": "25%"
-},
-{
-"section": "css",
-"desc": "Blok lewy: wysokość 500 px",
-"type": "css",
-"page": "index.html",
-"selector": "nav",
-"prop": "height",
-"value": "500px"
-},
-{
-"section": "css",
-"desc": "Blok lewy: margines wewnętrzny górny 50 px",
-"type": "css",
-"page": "index.html",
-"selector": "nav",
-"prop": "padding-top",
-"value": "50px"
-},
-{
-"section": "css",
-"desc": "Blok prawy: kolor tła Snow",
-"type": "css",
-"page": "index.html",
-"selector": "main",
-"prop": "background-color",
-"value": "Snow"
-},
-{
-"section": "css",
-"desc": "Blok prawy: szerokość 75%",
-"type": "css",
-"page": "index.html",
-"selector": "main",
-"prop": "width",
-"value": "75%"
-},
-{
-"section": "css",
-"desc": "Blok prawy: wysokość 500 px",
-"type": "css",
-"page": "index.html",
-"selector": "main",
-"prop": "height",
-"value": "500px"
-},
-{
-"section": "css",
-"desc": "Blok prawy: wyrównanie tekstu do środka",
-"type": "css",
-"page": "index.html",
-"selector": "main",
-"prop": "text-align",
-"value": "center"
-},
-{
-"section": "css",
-"desc": "Blok prawy: margines wewnętrzny górny 50 px",
-"type": "css",
-"page": "index.html",
-"selector": "main",
-"prop": "padding-top",
-"value": "50px"
-},
-{
-"section": "css",
-"desc": "Obraz: szerokość 25% wyłącznie selektorem znacznika img",
-"type": "cssRule",
-"page": "index.html",
-"selector": "img",
-"prop": "width",
-"value": "25%"
-},
-{
-"section": "css",
-"desc": "Obraz: marginesy zewnętrzne 10 px wyłącznie selektorem img",
-"type": "cssRule",
-"page": "index.html",
-"selector": "img",
-"prop": "margin",
-"value": "10px"
-},
-{
-"section": "css",
-"desc": "Obraz: cień wyłącznie selektorem img",
-"type": "cssRule",
-"page": "index.html",
-"selector": "img",
-"prop": "box-shadow",
-"value": "15px 15px 10px DimGray"
-},
-{
-"section": "css",
-"desc": "Element listy: marginesy zewnętrzne 5 px",
-"type": "css",
-"page": "index.html",
-"selector": "nav ol > li",
-"prop": "margin",
-"value": "5px"
-},
-{
-"section": "css",
-"desc": "Element listy: marginesy zewnętrzne 5 px wyłącznie selektorem li",
-"type": "cssRule",
-"page": "index.html",
-"selector": "li",
-"prop": "margin",
-"value": "5px"
-},
-{
-"section": "css",
-"desc": "Marker elementu listy: kolor czcionki Snow (li::marker)",
-"type": "cssRule",
-"page": "index.html",
-"selector": "li::marker",
-"match": "li",
-"prop": "color",
-"value": "Snow"
-},
-{
-"section": "css",
-"desc": "Nagłówek trzeciego stopnia: marginesy zewnętrzne górny i dolny 50 px, pozostałe 0",
-"type": "cssRule",
-"page": "znajdz.php",
-"selector": "h3",
-"match": "main",
-"prop": "margin",
-"value": "50px 0"
-}
+  {"section": "grafika", "desc": "roza.jpg: przycięta do proporcji 1:1, 250 px na 250 px, format JPEG", "type": "image", "name": "roza.jpg", "width": 250, "height": 250},
+  {"section": "grafika", "desc": "gerbera.jpg: przycięta do proporcji 1:1, 250 px na 250 px, format JPEG", "type": "image", "name": "gerbera.jpg", "width": 250, "height": 250},
+  {"section": "grafika", "desc": "gozdzik.jpg: przycięty do proporcji 1:1, 250 px na 250 px, format JPEG", "type": "image", "name": "gozdzik.jpg", "width": 250, "height": 250},
+  {"section": "pliki", "desc": "Plik index.html", "type": "file", "name": "index.html"},
+  {"section": "pliki", "desc": "Plik znajdz.php", "type": "file", "name": "znajdz.php"},
+  {"section": "pliki", "desc": "Plik styl3.css", "type": "file", "name": "styl3.css"},
+  {"section": "html", "desc": "Zapisana w języku HTML 5, język polski, kodowanie UTF-8", "type": "head", "page": "index.html", "lang": "pl", "charset": true},
+  {"section": "html", "desc": "Tytuł strony „Kwiaty”", "type": "head", "page": "index.html", "doctype": false, "title": "Kwiaty"},
+  {"section": "html", "desc": "Arkusz stylów styl3.css prawidłowo połączony z kodem strony", "type": "head", "page": "index.html", "doctype": false, "stylesheet": "styl3.css"},
+  {"section": "html", "desc": "Podział na bloki: baner, blok lewy i prawy, stopka (znaczniki sekcji)", "type": "exists", "page": "index.html", "hint": "bloki: header, nav (lewy), main (prawy), footer", "selectors": ["header", "nav", "main", "footer"]},
+  {"section": "html", "desc": "Baner: nagłówek pierwszego stopnia „Grupa Polskich Kwiaciarni”", "type": "text", "page": "index.html", "selector": "header h1", "equals": "Grupa Polskich Kwiaciarni"},
+  {"section": "html", "desc": "Blok lewy: nagłówek drugiego stopnia „Menu”", "type": "text", "page": "index.html", "selector": "nav h2", "equals": "Menu", "hint": "blok lewy jako nav"},
+  {"section": "html", "desc": "Blok lewy: lista numerowana z trzema elementami", "type": "exists", "page": "index.html", "selector": "nav > ol > li", "count": 3},
+  {"section": "html", "desc": "Zagnieżdżona lista punktowana z trzema elementami", "type": "exists", "page": "index.html", "selector": "nav ol li ul > li", "count": 3},
+  {"section": "html", "desc": "Elementy listy punktowanej: w Warszawie, w Malborku, w Poznaniu", "type": "text", "page": "index.html", "selector": "nav ol li ul", "matches": "^w Warszawie w Malborku w Poznaniu$"},
+  {"section": "html", "desc": "„Strona główna” prowadzi do strony index.html", "type": "attr", "page": "index.html", "selector": "nav ol > li:nth-of-type(1) a", "attr": "href", "equals": "index.html"},
+  {"section": "html", "desc": "Odnośnik z tekstem „Strona główna”", "type": "text", "page": "index.html", "selector": "nav ol > li:nth-of-type(1) a", "equals": "Strona główna"},
+  {"section": "html", "desc": "„Rozpoznaj kwiaty” prowadzi do „https://www.kwiaty.pl/”", "type": "attr", "page": "index.html", "selector": "nav ol > li:nth-of-type(2) a", "attr": "href", "equals": "https://www.kwiaty.pl/"},
+  {"section": "html", "desc": "Odnośnik „Rozpoznaj kwiaty” z tekstem", "type": "text", "page": "index.html", "selector": "nav ol > li:nth-of-type(2) a", "equals": "Rozpoznaj kwiaty"},
+  {"section": "html", "desc": "„Rozpoznaj kwiaty” otwiera się w osobnej karcie przeglądarki", "type": "attr", "page": "index.html", "selector": "nav ol > li:nth-of-type(2) a", "attr": "target", "equals": "_blank"},
+  {"section": "html", "desc": "„Znajdź kwiaciarnię” prowadzi do strony znajdz.php", "type": "attr", "page": "index.html", "selector": "nav ol > li:nth-of-type(3) > a", "attr": "href", "equals": "znajdz.php"},
+  {"section": "html", "desc": "Odnośnik z tekstem „Znajdź kwiaciarnię”", "type": "text", "page": "index.html", "selector": "nav ol > li:nth-of-type(3) > a", "equals": "Znajdź kwiaciarnię"},
+  {"section": "html", "desc": "Stopka: paragraf „Stronę opracował:” i numer zdającego", "type": "text", "page": "index.html", "selector": "footer p", "startsWith": "Stronę opracował:"},
+  {"section": "css", "desc": "Układ: baner na górze, nad blokami lewym i prawym", "type": "layout", "page": "index.html", "a": "header", "b": "nav", "relation": "above"},
+  {"section": "css", "desc": "Układ: blok lewy i prawy obok siebie (lewy po lewej)", "type": "layout", "page": "index.html", "a": "nav", "b": "main", "relation": "leftOf"},
+  {"section": "css", "desc": "Układ: bloki lewy i prawy w jednym rzędzie", "type": "layout", "page": "index.html", "a": "nav", "b": "main", "relation": "sameRow"},
+  {"section": "css", "desc": "Układ: stopka na dole, pod blokami", "type": "layout", "page": "index.html", "a": "footer", "b": "main", "relation": "below"},
+  {"section": "html", "desc": "Zapisana w języku HTML 5, język polski, kodowanie UTF-8", "type": "head", "page": "znajdz.php", "lang": "pl", "charset": true},
+  {"section": "html", "desc": "Tytuł strony „Kwiaty”", "type": "head", "page": "znajdz.php", "doctype": false, "title": "Kwiaty"},
+  {"section": "html", "desc": "Arkusz stylów styl3.css prawidłowo połączony z kodem strony", "type": "head", "page": "znajdz.php", "doctype": false, "stylesheet": "styl3.css"},
+  {"section": "html", "desc": "Podział na bloki: baner, blok lewy i prawy, stopka (znaczniki sekcji)", "type": "exists", "page": "znajdz.php", "hint": "bloki: header, nav (lewy), main (prawy), footer", "selectors": ["header", "nav", "main", "footer"]},
+  {"section": "html", "desc": "Baner: nagłówek pierwszego stopnia „Grupa Polskich Kwiaciarni”", "type": "text", "page": "znajdz.php", "selector": "header h1", "equals": "Grupa Polskich Kwiaciarni"},
+  {"section": "html", "desc": "Blok lewy: nagłówek drugiego stopnia „Menu”", "type": "text", "page": "znajdz.php", "selector": "nav h2", "equals": "Menu", "hint": "blok lewy jako nav"},
+  {"section": "html", "desc": "Blok lewy: lista numerowana z trzema elementami", "type": "exists", "page": "znajdz.php", "selector": "nav > ol > li", "count": 3},
+  {"section": "html", "desc": "Zagnieżdżona lista punktowana z trzema elementami", "type": "exists", "page": "znajdz.php", "selector": "nav ol li ul > li", "count": 3},
+  {"section": "html", "desc": "Elementy listy punktowanej: w Warszawie, w Malborku, w Poznaniu", "type": "text", "page": "znajdz.php", "selector": "nav ol li ul", "matches": "^w Warszawie w Malborku w Poznaniu$"},
+  {"section": "html", "desc": "„Strona główna” prowadzi do strony index.html", "type": "attr", "page": "znajdz.php", "selector": "nav ol > li:nth-of-type(1) a", "attr": "href", "equals": "index.html"},
+  {"section": "html", "desc": "Odnośnik z tekstem „Strona główna”", "type": "text", "page": "znajdz.php", "selector": "nav ol > li:nth-of-type(1) a", "equals": "Strona główna"},
+  {"section": "html", "desc": "„Rozpoznaj kwiaty” prowadzi do „https://www.kwiaty.pl/”", "type": "attr", "page": "znajdz.php", "selector": "nav ol > li:nth-of-type(2) a", "attr": "href", "equals": "https://www.kwiaty.pl/"},
+  {"section": "html", "desc": "Odnośnik „Rozpoznaj kwiaty” z tekstem", "type": "text", "page": "znajdz.php", "selector": "nav ol > li:nth-of-type(2) a", "equals": "Rozpoznaj kwiaty"},
+  {"section": "html", "desc": "„Rozpoznaj kwiaty” otwiera się w osobnej karcie przeglądarki", "type": "attr", "page": "znajdz.php", "selector": "nav ol > li:nth-of-type(2) a", "attr": "target", "equals": "_blank"},
+  {"section": "html", "desc": "„Znajdź kwiaciarnię” prowadzi do strony znajdz.php", "type": "attr", "page": "znajdz.php", "selector": "nav ol > li:nth-of-type(3) > a", "attr": "href", "equals": "znajdz.php"},
+  {"section": "html", "desc": "Odnośnik z tekstem „Znajdź kwiaciarnię”", "type": "text", "page": "znajdz.php", "selector": "nav ol > li:nth-of-type(3) > a", "equals": "Znajdź kwiaciarnię"},
+  {"section": "html", "desc": "Stopka: paragraf „Stronę opracował:” i numer zdającego", "type": "text", "page": "znajdz.php", "selector": "footer p", "startsWith": "Stronę opracował:"},
+  {"section": "css", "desc": "Układ: baner na górze, nad blokami lewym i prawym", "type": "layout", "page": "znajdz.php", "a": "header", "b": "nav", "relation": "above"},
+  {"section": "css", "desc": "Układ: blok lewy i prawy obok siebie (lewy po lewej)", "type": "layout", "page": "znajdz.php", "a": "nav", "b": "main", "relation": "leftOf"},
+  {"section": "css", "desc": "Układ: bloki lewy i prawy w jednym rzędzie", "type": "layout", "page": "znajdz.php", "a": "nav", "b": "main", "relation": "sameRow"},
+  {"section": "css", "desc": "Układ: stopka na dole, pod blokami", "type": "layout", "page": "znajdz.php", "a": "footer", "b": "main", "relation": "below"},
+  {"section": "html", "desc": "Blok prawy index.html: nagłówek drugiego stopnia „Strona dla miłośników kwiatów”", "type": "text", "page": "index.html", "selector": "main h2", "equals": "Strona dla miłośników kwiatów", "hint": "blok prawy jako main"},
+  {"section": "html", "desc": "Blok prawy index.html: trzy obrazy", "type": "exists", "page": "index.html", "selector": "main img", "count": 3},
+  {"section": "html", "desc": "Obraz 1: gerbera.jpg", "type": "attr", "page": "index.html", "selector": "main img", "index": 0, "attr": "src", "equals": "gerbera.jpg"},
+  {"section": "html", "desc": "Obraz 1 z tekstem alternatywnym będącym nazwą kwiatu („gerbera”)", "type": "attr", "page": "index.html", "selector": "main img", "index": 0, "attr": "alt", "equals": "gerbera"},
+  {"section": "html", "desc": "Obraz 2: gozdzik.jpg", "type": "attr", "page": "index.html", "selector": "main img", "index": 1, "attr": "src", "equals": "gozdzik.jpg"},
+  {"section": "html", "desc": "Obraz 2 z tekstem alternatywnym będącym nazwą kwiatu („goździk”)", "type": "attr", "page": "index.html", "selector": "main img", "index": 1, "attr": "alt", "equals": "goździk"},
+  {"section": "html", "desc": "Obraz 3: roza.jpg", "type": "attr", "page": "index.html", "selector": "main img", "index": 2, "attr": "src", "equals": "roza.jpg"},
+  {"section": "html", "desc": "Obraz 3 z tekstem alternatywnym będącym nazwą kwiatu („róża”)", "type": "attr", "page": "index.html", "selector": "main img", "index": 2, "attr": "alt", "equals": "róża"},
+  {"section": "css", "desc": "Obok siebie trzy obrazy", "type": "layout", "page": "index.html", "a": "main img:nth-of-type(1)", "b": "main img:nth-of-type(3)", "relation": "sameRow"},
+  {"section": "html", "desc": "Blok prawy znajdz.php: nagłówek drugiego stopnia „Znajdź kwiaciarnię”", "type": "text", "page": "znajdz.php", "selector": "main h2", "equals": "Znajdź kwiaciarnię", "hint": "blok prawy jako main"},
+  {"section": "html", "desc": "Formularz wysyłający dane metodą bezpieczną", "type": "attr", "page": "znajdz.php", "selector": "main form", "attr": "method", "equals": "post"},
+  {"section": "html", "desc": "Pole edycyjne w formularzu", "type": "exists", "page": "znajdz.php", "selector": "main form input[type=text], main form input:not([type])"},
+  {"section": "html", "desc": "Pole edycyjne poprzedzone napisem „Podaj nazwę miasta:”", "type": "text", "page": "znajdz.php", "selector": "main form", "startsWith": "Podaj nazwę miasta:"},
+  {"section": "html", "desc": "Przycisk „SPRAWDŹ” wysyłający dane", "type": "exists", "page": "znajdz.php", "selector": "main form input[type=submit][value='SPRAWDŹ'], main form button:not([type=button]):not([type=reset])"},
+  {"section": "php", "desc": "Skrypt pobiera dane z pola edycyjnego i wysyła do bazy zmodyfikowane zapytanie 1 z wpisanym miastem", "type": "php"},
+  {"section": "php", "desc": "Pod przyciskiem w nagłówku trzeciego stopnia wyświetlane nazwa i ulica oddzielone przecinkiem", "type": "php"},
+  {"section": "php", "desc": "Skrypt łączy się z bazą kwiaciarnia (localhost, root, bez hasła) i po operacjach zamyka połączenie", "type": "php"},
+  {"section": "css", "desc": "Domyślnie dla wszystkich selektorów: krój czcionki Georgia", "type": "css", "page": "index.html", "selector": "h2", "prop": "font-family", "value": "Georgia"},
+  {"section": "css", "desc": "Domyślnie dla wszystkich selektorów (*): krój czcionki Georgia", "type": "cssRule", "page": "index.html", "selector": "*", "prop": "font-family", "value": "Georgia"},
+  {"section": "css", "desc": "Baner i stopka: kolor tła #C75B39 (header)", "type": "css", "page": "index.html", "selector": "header", "prop": "background-color", "value": "#C75B39"},
+  {"section": "css", "desc": "Baner i stopka: biały kolor czcionki (header)", "type": "css", "page": "index.html", "selector": "header", "prop": "color", "value": "white"},
+  {"section": "css", "desc": "Baner i stopka: marginesy wewnętrzne 10 px (header)", "type": "css", "page": "index.html", "selector": "header", "prop": "padding", "value": "10px"},
+  {"section": "css", "desc": "Baner i stopka: wyrównanie tekstu do środka (header)", "type": "css", "page": "index.html", "selector": "header", "prop": "text-align", "value": "center"},
+  {"section": "css", "desc": "Baner i stopka: kolor tła #C75B39 (footer)", "type": "css", "page": "index.html", "selector": "footer", "prop": "background-color", "value": "#C75B39"},
+  {"section": "css", "desc": "Baner i stopka: biały kolor czcionki (footer)", "type": "css", "page": "index.html", "selector": "footer", "prop": "color", "value": "white"},
+  {"section": "css", "desc": "Baner i stopka: marginesy wewnętrzne 10 px (footer)", "type": "css", "page": "index.html", "selector": "footer", "prop": "padding", "value": "10px"},
+  {"section": "css", "desc": "Baner i stopka: wyrównanie tekstu do środka (footer)", "type": "css", "page": "index.html", "selector": "footer", "prop": "text-align", "value": "center"},
+  {"section": "css", "desc": "Blok lewy: kolor tła #FF8A65", "type": "css", "page": "index.html", "selector": "nav", "prop": "background-color", "value": "#FF8A65"},
+  {"section": "css", "desc": "Blok lewy: szerokość 25%", "type": "css", "page": "index.html", "selector": "nav", "prop": "width", "value": "25%"},
+  {"section": "css", "desc": "Blok lewy: wysokość 500 px", "type": "css", "page": "index.html", "selector": "nav", "prop": "height", "value": "500px"},
+  {"section": "css", "desc": "Blok lewy: margines wewnętrzny górny 50 px", "type": "css", "page": "index.html", "selector": "nav", "prop": "padding-top", "value": "50px"},
+  {"section": "css", "desc": "Blok prawy: kolor tła Snow", "type": "css", "page": "index.html", "selector": "main", "prop": "background-color", "value": "Snow"},
+  {"section": "css", "desc": "Blok prawy: szerokość 75%", "type": "css", "page": "index.html", "selector": "main", "prop": "width", "value": "75%"},
+  {"section": "css", "desc": "Blok prawy: wysokość 500 px", "type": "css", "page": "index.html", "selector": "main", "prop": "height", "value": "500px"},
+  {"section": "css", "desc": "Blok prawy: wyrównanie tekstu do środka", "type": "css", "page": "index.html", "selector": "main", "prop": "text-align", "value": "center"},
+  {"section": "css", "desc": "Blok prawy: margines wewnętrzny górny 50 px", "type": "css", "page": "index.html", "selector": "main", "prop": "padding-top", "value": "50px"},
+  {"section": "css", "desc": "Obraz: szerokość 25% wyłącznie selektorem znacznika img", "type": "cssRule", "page": "index.html", "selector": "img", "prop": "width", "value": "25%"},
+  {"section": "css", "desc": "Obraz: marginesy zewnętrzne 10 px wyłącznie selektorem img", "type": "cssRule", "page": "index.html", "selector": "img", "prop": "margin", "value": "10px"},
+  {"section": "css", "desc": "Obraz: cień wyłącznie selektorem img", "type": "cssRule", "page": "index.html", "selector": "img", "prop": "box-shadow", "value": "15px 15px 10px DimGray"},
+  {"section": "css", "desc": "Element listy: marginesy zewnętrzne 5 px", "type": "css", "page": "index.html", "selector": "nav ol > li", "prop": "margin", "value": "5px"},
+  {"section": "css", "desc": "Element listy: marginesy zewnętrzne 5 px wyłącznie selektorem li", "type": "cssRule", "page": "index.html", "selector": "li", "prop": "margin", "value": "5px"},
+  {"section": "css", "desc": "Marker elementu listy: kolor czcionki Snow (li::marker)", "type": "cssRule", "page": "index.html", "selector": "li::marker", "match": "li", "prop": "color", "value": "Snow"},
+  {"section": "css", "desc": "Nagłówek trzeciego stopnia: marginesy zewnętrzne górny i dolny 50 px, pozostałe 0", "type": "cssRule", "page": "znajdz.php", "selector": "h3", "match": "main", "prop": "margin", "value": "50px 0"}
 ]

@@ -4,11 +4,10 @@
   {"section": "grafika", "desc": "biblioteka.png: w pustym obszarze zdublowany stos książek zgodnie z obrazem 3b", "type": "manual"},
   {"section": "pliki", "desc": "Strona o nazwie biblioteka.php", "type": "file", "name": "biblioteka.php"},
   {"section": "pliki", "desc": "Arkusz stylów w pliku style.css", "type": "file", "name": "style.css"},
-
   {"section": "html", "desc": "Zapisana w języku HTML5, język polski, jawne kodowanie UTF-8", "type": "head", "lang": "pl", "charset": true},
   {"section": "html", "desc": "Tytuł strony „Biblioteka publiczna”", "type": "head", "doctype": false, "title": "Biblioteka publiczna"},
   {"section": "html", "desc": "Arkusz stylów style.css prawidłowo połączony z kodem strony", "type": "head", "doctype": false, "stylesheet": "style.css"},
-  {"section": "html", "desc": "Podział na bloki za pomocą znaczników sekcji: baner, cztery sekcje (lewy, środkowy, dwa prawe), stopka", "type": "exists", "selector": "header ~ section ~ section ~ section ~ section ~ footer", "hint": "baner jako header, stopka jako footer, cztery bloki jako section"},
+  {"section": "html", "desc": "Podział na bloki za pomocą znaczników sekcji: baner, cztery sekcje (lewy, środkowy, dwa prawe), stopka", "type": "exists", "hint": "baner jako header, stopka jako footer, cztery bloki jako section", "selectors": ["header", "section", "section", "section", "section", "footer"]},
   {"section": "html", "desc": "Cztery bloki sekcji", "type": "exists", "selector": "section", "count": 4},
   {"section": "html", "desc": "Baner: nagłówek pierwszego stopnia „Biblioteka w Książkowicach Wielkich”", "type": "text", "selector": "header h1", "equals": "Biblioteka w Książkowicach Wielkich", "hint": "baner jako header"},
   {"section": "html", "desc": "Blok lewy: nagłówek trzeciego stopnia „Polecamy dzieła autorów:”", "type": "text", "selector": "section:nth-of-type(1) h3", "equals": "Polecamy dzieła autorów:"},
@@ -28,7 +27,6 @@
   {"section": "html", "desc": "Formularz: przycisk DODAJ wysyłający dane", "type": "exists", "selector": "section:nth-of-type(3) form input[type=submit][value='DODAJ'], section:nth-of-type(3) form button[type=submit], section:nth-of-type(3) form button:not([type])"},
   {"section": "php", "desc": "Blok prawy dolny: efekt działania skryptu 2 (napis „Czytelnik <imie> <nazwisko> został(a) dodany do bazy danych”)", "type": "php"},
   {"section": "html", "desc": "Stopka: paragraf „Projekt strony: ” i numer zdającego", "type": "text", "selector": "footer p", "startsWith": "Projekt strony:"},
-
   {"section": "css", "desc": "Domyślnie dla wszystkich selektorów: krój czcionki Verdana", "type": "css", "selector": "h3", "prop": "font-family", "value": "Verdana"},
   {"section": "css", "desc": "Baner: kolor tła #004D40", "type": "css", "selector": "header", "prop": "background-color", "value": "#004D40"},
   {"section": "css", "desc": "Baner: biały kolor czcionki", "type": "css", "selector": "header", "prop": "color", "value": "white"},
@@ -60,14 +58,12 @@
   {"section": "css", "desc": "Selektor obrazu: obramowanie zdefiniowane wyłącznie selektorem znacznika", "type": "cssRule", "selector": "img", "prop": "border-radius", "value": "5px"},
   {"section": "css", "desc": "Selektor pola edycyjnego: marginesy zewnętrzne 10 px", "type": "css", "selector": "section:nth-of-type(3) form input[type=text], section:nth-of-type(3) form input:not([type])", "prop": "margin", "value": "10px", "all": true},
   {"section": "css", "desc": "Selektor pola edycyjnego: marginesy zewnętrzne 10 px (wyłącznie selektor znacznika)", "type": "cssRule", "selector": "input", "prop": "margin", "value": "10px"},
-
   {"section": "css", "desc": "Układ: baner nad blokiem lewym", "type": "layout", "a": "header", "b": "section:nth-of-type(1)", "relation": "above"},
   {"section": "css", "desc": "Układ: blok lewy z lewej strony bloku środkowego", "type": "layout", "a": "section:nth-of-type(1)", "b": "section:nth-of-type(2)", "relation": "leftOf"},
   {"section": "css", "desc": "Układ: blok środkowy z lewej strony bloków prawych", "type": "layout", "a": "section:nth-of-type(2)", "b": "section:nth-of-type(3)", "relation": "leftOf"},
   {"section": "css", "desc": "Układ: blok prawy górny nad blokiem prawym dolnym", "type": "layout", "a": "section:nth-of-type(3)", "b": "section:nth-of-type(4)", "relation": "above"},
   {"section": "css", "desc": "Układ: stopka pod blokami", "type": "layout", "a": "footer", "b": "section:nth-of-type(1)", "relation": "below"},
   {"section": "css", "desc": "Układ: stopka pod blokiem prawym dolnym", "type": "layout", "a": "footer", "b": "section:nth-of-type(4)", "relation": "below"},
-
   {"section": "php", "desc": "Skrypt w pliku biblioteka.php łączy się z serwerem bazodanowym (localhost, root bez hasła, baza biblioteka)", "type": "php"},
   {"section": "php", "desc": "Skrypt 1: zapytanie 1 (imię i nazwisko autorów posortowane rosnąco po nazwisku), wynik jako elementy listy numerowanej", "type": "php"},
   {"section": "php", "desc": "Skrypt 2: pobiera dane z formularza i wyświetla „Czytelnik <imie> <nazwisko> został(a) dodany do bazy danych”", "type": "php"},
